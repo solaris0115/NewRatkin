@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AlienRace.ThingDef_AlienRace ParentName="RK_PawnBase">
+		<defName>Ratkin</defName>
+		<label>Ratkin</label>
+		<description>rat human</description>
+		<alienRace>
+			<generalSettings>
+				<maleGenderProbability>0.1</maleGenderProbability>
+				<useOnlyPawnkindBackstories>true</useOnlyPawnkindBackstories>
+				<immuneToAge>true</immuneToAge>
+				<canLayDown>true</canLayDown>
+				<immuneToXenophobia>false</immuneToXenophobia>
+				<humanRecipeImport>true</humanRecipeImport>
+
+				<alienPartGenerator>
+					<!-- 얼굴 및 신체 바리에이션 -->
+					<aliencrowntypes>
+						<li>Average_Normal</li>
+						<li>Average_Wide</li>
+						<li>Average_Pointy</li>
+					</aliencrowntypes>
+					<alienbodytypes>
+						<li>Thin</li>
+					</alienbodytypes>
+					<headOffset>(0.0, -0.06)</headOffset>	
+					<!-- 성별 별개사용 유무 -->
+					<useGenderedHeads>false</useGenderedHeads>
+					<useGenderedBodies>false</useGenderedBodies>
+					<!--색상관련 -->
+					<alienskincolorgen Class="ColorGenerator_Options">
+						<options>
+							<li>
+								<weight>1</weight>
+								<only>RGBA(1.0,1.0,1.0,1)</only>
+							</li>
+						</options>
+					</alienskincolorgen> 
+					<useSkincolorForHair>false</useSkincolorForHair>
+					<!-- 신체 드로잉 크기 -->
+					<customDrawSize>(0.95, 0.95)</customDrawSize>
+					<customPortraitDrawSize>(1, 1)</customPortraitDrawSize>
+					<!-- 신체 부착물 -->
+					<bodyAddons>
+						<li>
+							<drawSize>1</drawSize>
+							<path>Body/RK_Tail</path>
+							<bodyPart>tail</bodyPart>
+							<inFrontOfBody>false</inFrontOfBody>
+							<useSkinColor>true</useSkinColor>
+							<offsets>
+								<south>
+									<bodyTypes>
+										<Thin>(-0.1,-0.2)</Thin>
+									</bodyTypes>
+									<crownTypes>
+										<Normal_Average>(0,0)</Normal_Average>
+									</crownTypes>
+								</south>
+								<north>
+									<bodyTypes>
+										<Thin>(0,-0.05)</Thin>
+									</bodyTypes>
+									<crownTypes>
+										<Normal_Average>(0,0)</Normal_Average>
+									</crownTypes>
+								</north>
+								<east>
+									<bodyTypes>
+										<Thin>(0.05,-0.2)</Thin>
+									</bodyTypes>
+									<crownTypes>
+										<Normal_Average>(0,0)</Normal_Average>
+									</crownTypes>
+								</east>
+							</offsets>
+						</li>
+						<li>
+							<drawSize>1</drawSize>
+							<path>Body/RK_EarLeft</path>
+							<bodyPart>left ear</bodyPart>
+							<inFrontOfBody>true</inFrontOfBody>
+							<useSkinColor>true</useSkinColor>
+							<offsets>
+								<south>
+									<bodyTypes>
+										<Thin>(-0.475,0.67)</Thin>
+									</bodyTypes>
+									<portraitBodyTypes>
+										<Thin>(-0.45,0.67)</Thin>
+									</portraitBodyTypes>
+									<crownTypes>
+										<Normal_Average>(0,0)</Normal_Average>
+									</crownTypes>
+								</south>
+								<north>
+									<bodyTypes>
+										<Thin>(0.05,0.98)</Thin>
+									</bodyTypes>
+									<portraitBodyTypes>
+										<Thin>(-0.04,0.89)</Thin>
+									</portraitBodyTypes>
+									<crownTypes>
+										<Normal_Average>(0,0)</Normal_Average>
+									</crownTypes>
+								</north>
+								<east>
+									<bodyTypes>
+										<Thin>(-0.44,0.75)</Thin>
+									</bodyTypes>
+									<portraitBodyTypes>
+										<Thin>(-0.44,0.58)</Thin>
+									</portraitBodyTypes>
+									<crownTypes>
+										<Normal_Average>(0,0)</Normal_Average>
+									</crownTypes>
+								</east>
+							</offsets>
+
+							<hiddenUnderApparelFor>
+								<li>FullHead</li>
+							</hiddenUnderApparelFor>
+						</li>
+						<li>
+							<drawSize>1</drawSize>
+							<path>Body/RK_EarRight</path>
+							<bodyPart>right ear</bodyPart>
+							<inFrontOfBody>true</inFrontOfBody>
+							<useSkinColor>true</useSkinColor>
+							<offsets>
+								<south>
+									<bodyTypes>
+										<Thin>(-0.375,0.67)</Thin>
+									</bodyTypes>
+									<portraitBodyTypes>
+										<Thin>(-0.4,0.67)</Thin>
+									</portraitBodyTypes>
+									<crownTypes>
+										<Normal_Average>(0,0)</Normal_Average>
+									</crownTypes>
+								</south>
+								<north>
+									<bodyTypes>
+										<Thin>(-0.038,0.98)</Thin>
+									</bodyTypes>
+									<portraitBodyTypes>
+										<Thin>(-0.01,1)</Thin>
+									</portraitBodyTypes>
+									<crownTypes>
+										<Normal_Average>(0,0)</Normal_Average>
+									</crownTypes>
+								</north>
+								<east>
+									<bodyTypes>
+										<Thin>(-0.44,0.75)</Thin>
+									</bodyTypes>
+									<portraitBodyTypes>
+										<Thin>(-0.44,0.58)</Thin>
+									</portraitBodyTypes>
+									<crownTypes>
+										<Normal_Average>(0,0)</Normal_Average>
+									</crownTypes>
+								</east>
+							</offsets>
+							<hiddenUnderApparelFor>
+								<li>FullHead</li>
+							</hiddenUnderApparelFor>
+						</li>
+					</bodyAddons>
+				</alienPartGenerator>
+			</generalSettings>
+
+			<graphicPaths>
+				<li>
+					<body>Body/Bodies</body>
+					<head>Head/Heads</head>
+					<skeleton>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</skeleton>
+				</li>
+			</graphicPaths>
+
+			<hairSettings>
+				<hasHair>true</hasHair>
+				<hairTags>
+					<li>RK_Hair</li>
+				</hairTags>        
+			</hairSettings>
+
+			<thoughtSettings>
+				<cannotReceiveThoughts>
+					<li>EnvironmentDark</li>
+					<li>CabinFever</li>
+				</cannotReceiveThoughts>
+			</thoughtSettings>
+
+			<relationSettings>
+
+			</relationSettings>
+
+			<raceRestriction>
+				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
+				<apparelList>
+					<li>RK_ApronSkirt</li>
+					<li>RK_SummerDress</li>
+					<li>RK_StrawHat</li>
+					<li>RK_Muffler</li>
+					<li>RK_CrossBack</li>
+					<li>RK_Cardigan</li>
+					<li>RK_WoolenHat</li>
+					<li>RK_Backpack</li>
+					<li>RK_WorkerWear</li>
+					<li>RK_Coif</li>
+					<li>RK_ResearchGown</li>
+					<li>RK_ResearchGlasses</li>
+					<li>RK_ExplorerWear</li>
+					<li>RK_ExplorerHat</li>
+					<li>RK_ChefSuit</li>
+					<li>RK_ChefHat</li>
+					<li>RK_GaurdenUniform</li>
+					<li>RK_WinterRobe</li>
+					<li>RK_OutdoorBackpack</li>
+					<li>RK_OrderUniform</li>
+					<li>RK_BulletProofHelmet</li>
+					<li>RK_FlatColorCoat</li>
+					<li>RK_FrillOnepiece</li>
+					<li>RK_HairCorsage</li>
+					<li>RK_RibbonHairBand</li>
+				</apparelList>
+				<weaponList>
+					<li>RK_Axe</li>
+					<li>RK_Cleaver</li>
+					<li>RK_Hockey</li>
+					<li>RK_Fork</li>
+					<li>RK_LongSword</li>
+					
+					<li>RK_Crossbow</li>
+					<li>RK_EnhanceCrossBow</li>
+					<li>RK_AutoCrossBow</li>
+					<li>RK_Rifle</li>
+					<li>RK_SniperRifle</li>
+					<li>RK_FlechetteRifle</li>
+					<li>RK_FlechetteSniperRifle</li>
+					<li>RK_PrototypeRUG</li>
+				</weaponList>
+			</raceRestriction>
+		</alienRace>
+		<statBases>
+			<!-- 기본 -->
+			<MarketValue>1400</MarketValue>
+			<Mass>50</Mass>
+			<MoveSpeed>4.85</MoveSpeed> 
+			<Flammability>1.0</Flammability>
+			<ComfyTemperatureMax>31</ComfyTemperatureMax>
+			<ComfyTemperatureMin>6</ComfyTemperatureMin>
+			<ImmunityGainSpeed>1.10</ImmunityGainSpeed>
+			<CarryingCapacity>45</CarryingCapacity>
+			<PainShockThreshold>0.7</PainShockThreshold>
+
+			<ToxicSensitivity>0.9</ToxicSensitivity>
+
+			<HungerRateMultiplier>1.05</HungerRateMultiplier>
+			<EatingSpeed>1.1</EatingSpeed>
+
+			<MeatAmount>35</MeatAmount>
+			<LeatherAmount>30</LeatherAmount>
+
+			<!-- 전투 -->
+			<MeleeDodgeChance>1.15</MeleeDodgeChance>
+			<MeleeHitChance>0.90</MeleeHitChance>
+			<MeleeArmorPenetration>-0.15</MeleeArmorPenetration>
+
+			<AimingDelayFactor>1.15</AimingDelayFactor>
+
+			<!-- 사회 -->
+			<SocialImpact>0.9</SocialImpact>		
+
+			<!-- 작업 -->
+			<MiningSpeed>1.05</MiningSpeed>
+			<MiningYield>1.05</MiningYield>
+			<PlantWorkSpeed>1.10</PlantWorkSpeed>
+			<HuntingStealth>1.15</HuntingStealth>
+
+			<ConstructionSpeed>0.9</ConstructionSpeed>
+			<ResearchSpeed>0.9</ResearchSpeed>
+		</statBases>
+		<tools>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.4</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Bite</def>
+							<amount>12</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Scratch</def>
+							<amount>8</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Scratch</def>
+							<amount>8</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+		</tools>
+		<race>
+			<thinkTreeMain>Humanlike</thinkTreeMain>
+			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+			<intelligence>Humanlike</intelligence>
+			<makesFootprints>true</makesFootprints>
+			<lifeExpectancy>70</lifeExpectancy>
+			<leatherDef>Leather_Light</leatherDef>
+			<nameCategory>HumanStandard</nameCategory>
+			<hasGenders>true</hasGenders>
+			<body>Ratkin</body>
+			<baseBodySize>0.85</baseBodySize>
+			<baseHealthScale>1</baseHealthScale>
+			<foodType>OmnivoreHuman</foodType>
+			<gestationPeriodDays>21</gestationPeriodDays>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 0.30)</li>
+					<li>(2, 0.40)</li>
+					<li>(3, 0.10)</li>
+					<li>(4, 0.20)</li>
+					<li>(5, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeStageAges>
+				<li>
+					<def>HumanlikeBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>HumanlikeToddler</def>
+					<minAge>1.2</minAge>
+				</li>
+				<li>
+					<def>HumanlikeChild</def>
+					<minAge>4</minAge>
+				</li>
+				<li>
+					<def>HumanlikeTeenager</def>
+					<minAge>11</minAge>
+				</li>
+				<li>
+					<def>HumanlikeAdult</def>
+					<minAge>16</minAge>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+			<specialShadowData>
+				<volume>(0.3, 0.8, 0.4)</volume>
+				<offset>(0,0,-0.3)</offset>
+			</specialShadowData>
+			<ageGenerationCurve>
+				<points>
+					<li>(3,0)</li>
+					<li>(10,0)</li>
+					<li>(18,100)</li>
+					<li>(30,100)</li>
+					<li>(50,20)</li>
+					<li>(60,3)</li>
+					<li>(80,0)</li>
+					<li>(90,0)</li>
+					<li>(100,0)</li>
+				</points>
+			</ageGenerationCurve>
+			<hediffGiverSets>
+				<li>OrganicStandard</li>
+			</hediffGiverSets>
+		</race>
+		<recipes>   
+			<li>InstallArchotechEye</li>
+			<li>InstallArchotechArm</li>
+			<li>InstallArchotechLeg</li>
+			<li>InstallPowerClaw</li>
+			<li>InstallBionicEye</li>
+			<li>InstallBionicArm</li>
+			<li>InstallBionicLeg</li>
+			<li>InstallBionicSpine</li>
+			<li>InstallBionicHeart</li>
+			<li>InstallBionicStomach</li>
+			<li>InstallBionicEar</li>
+			<li>InstallSimpleProstheticArm</li>
+			<li>InstallSimpleProstheticLeg</li>
+			<li>InstallSimpleProstheticHeart</li>
+			<li>InstallCochlearImplant</li>
+			<li>InstallPegLeg</li>
+			<li>InstallWoodenFoot</li>
+			<li>InstallDenture</li>
+			<li>InstallJoywire</li>
+			<li>InstallPainstopper</li>
+			<li>InstallNaturalHeart</li>
+			<li>InstallNaturalLung</li>
+			<li>InstallNaturalKidney</li>
+			<li>InstallNaturalLiver</li>
+			<li>ExciseCarcinoma</li>
+			<li>AdministerMechSerumHealer</li>
+			<li>RemoveBodyPart</li>
+			<li>Euthanize</li>
+			<li>Anesthetize</li>
+		</recipes>
+	</AlienRace.ThingDef_AlienRace>
+</Defs>

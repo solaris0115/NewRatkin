@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<StorytellerDef ParentName="BaseStoryteller">
+		<defName>Retti</defName>
+		<label>Retti Rodent</label>
+		<description>Retti Rodent is generally generous but may occasionally throw mischievous hazards and hardships on your way! Think of her as a friendlier version of Randy Random!</description>
+		<portraitLarge>Storyteller/RK_STORY</portraitLarge>
+		<portraitTiny>Storyteller/RK_STORY_TINY</portraitTiny>
+		<listOrder>60</listOrder>
+		<comps>
+			<!-- Home all -->
+			<li Class="StorytellerCompProperties_RandomMain">
+				<allowedTargetTags>
+					<li>Map_PlayerHome</li>
+				</allowedTargetTags>
+				<minDaysPassed>0.6</minDaysPassed>
+				<mtbDays>1.00</mtbDays>
+				<maxThreatBigIntervalDays>9</maxThreatBigIntervalDays>
+				<minIncChancePopulationIntentFactor>0.2</minIncChancePopulationIntentFactor>
+				<randomPointsFactorRange>0.7~1.8</randomPointsFactorRange>
+				<skipThreatBigIfRaidBeacon>true</skipThreatBigIfRaidBeacon>
+				<categoryWeights>
+					<Misc>6.2</Misc>
+					<ThreatBig>1.5</ThreatBig>
+					<OrbitalVisitor>2.0</OrbitalVisitor>
+					<FactionArrival>0.4</FactionArrival>
+					<ThreatSmall>1.2</ThreatSmall>
+					<ShipChunkDrop>1.5</ShipChunkDrop>
+				</categoryWeights>
+			</li>
+			<li Class="StorytellerCompProperties_Disease">
+				<category>DiseaseHuman</category>
+				<minDaysPassed>0</minDaysPassed>
+			</li>
+			<li Class="StorytellerCompProperties_Disease">
+				<category>DiseaseAnimal</category>
+				<minDaysPassed>0</minDaysPassed>
+			</li>
+			<!-- Home special threats -->
+			<li Class="StorytellerCompProperties_OnOffCycle">
+				<category>RaidBeacon</category>
+				<allowedTargetTags>
+					<li>Map_RaidBeacon</li>
+				</allowedTargetTags>
+				<onDays>1.0</onDays>
+				<offDays>0.5</offDays>
+				<minSpacingDays>0.04</minSpacingDays>
+				<applyRaidBeaconThreatMtbFactor>true</applyRaidBeaconThreatMtbFactor>
+				<numIncidentsRange>1~2</numIncidentsRange>
+			</li>
+			<!-- Ally/neutral interaction -->
+			<li Class="StorytellerCompProperties_FactionInteraction">
+				<incident>RaidFriendly</incident>
+				<baseIncidentsPerYear>10</baseIncidentsPerYear>
+				<minSpacingDays>0.4</minSpacingDays>
+				<fullAlliesOnly>true</fullAlliesOnly>
+				<minDanger>High</minDanger>
+			</li>
+			<!-- Caravan / temp map -->
+			<li Class="StorytellerCompProperties_CategoryIndividualMTBByBiome">
+				<category>Misc</category>
+				<allowedTargetTags>
+					<li>Caravan</li>
+					<li>Map_TempIncident</li>
+				</allowedTargetTags>
+			</li>
+			<li Class="StorytellerCompProperties_CategoryIndividualMTBByBiome">
+				<category>ThreatSmall</category>
+				<applyCaravanVisibility>true</applyCaravanVisibility>
+				<allowedTargetTags>
+					<li>Caravan</li>
+					<li>Map_TempIncident</li>
+				</allowedTargetTags>
+			</li>
+			<li Class="StorytellerCompProperties_CategoryIndividualMTBByBiome">
+				<category>ThreatBig</category>
+				<applyCaravanVisibility>true</applyCaravanVisibility>
+				<allowedTargetTags>
+					<li>Caravan</li>
+					<li>Map_TempIncident</li>
+				</allowedTargetTags>
+			</li>
+			<!-- World -->
+			<li Class="StorytellerCompProperties_JourneyOffer" />
+			<li Class="StorytellerCompProperties_OnOffCycle">
+				<category>WorldQuest</category>
+				<allowedTargetTags>
+					<li>World</li>
+				</allowedTargetTags>
+				<onDays>30</onDays>
+				<minSpacingDays>0.2</minSpacingDays>
+				<numIncidentsRange>4</numIncidentsRange>
+				<acceptFractionByDaysPassedCurve>
+					<points>
+						<li>(5, 0)</li>
+						<li>(30, 1)</li>
+					</points>
+				</acceptFractionByDaysPassedCurve>
+			</li>
+			<li Class="StorytellerCompProperties_CategoryMTB">
+				<category>Misc</category>
+				<allowedTargetTags>
+					<li>World</li>
+				</allowedTargetTags>
+				<minDaysPassed>1</minDaysPassed>
+				<mtbDays>15</mtbDays>
+			</li>
+			<!-- Triggered -->
+			<li Class="StorytellerCompProperties_Triggered">
+				<incident>StrangerInBlackJoin</incident>
+				<delayTicks>180</delayTicks>
+			</li>
+		</comps>
+	</StorytellerDef>
+</Defs>
