@@ -3,9 +3,9 @@
 	<ScenarioDef>
 		<defName>RK_Scenario</defName>
 		<label>ratkin colony</label>
-		<description>인간도시에서 탈출한 랫킨들의 이야기입니다.</description>
+		<description>각자의 사연을 갖고 새로운 삶을 위해 나온 네 랫킨의 이야기입니다. 서로 다른 꿈을 꾸고 있지만 지금은 잠시 접어두기로 하였습니다.</description>
 		<scenario>
-			<summary>A tale of four ratkins trying to survive in a harsh world.</summary>
+			<summary>It's a story of Ratkins, each with a story.</summary>
 			<playerFaction>
 				<def>PlayerFaction</def>
 				<factionDef>RK_PlayerFaction</factionDef>
@@ -31,34 +31,41 @@
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
+					<thingDef>RK_Crossbow</thingDef>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>RK_Rifle</thingDef>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
 					<thingDef>MedicineUltratech</thingDef>
 					<count>5</count>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<thingDef>ComponentIndustrial</thingDef>
-					<count>50</count>
+					<count>30</count>
 				</li>
-				<!-- <li Class="ScenPart_StartingAnimal"> -->
-					<!-- <def>StartingAnimal</def> -->
-					<!-- <animalKind>Rottie</animalKind> -->
-					<!-- <count>2</count> -->
-					<!-- <bondToRandomPlayerPawnChance>1</bondToRandomPlayerPawnChance> -->
-				<!-- </li> -->
 				<li Class="ScenPart_ScatterThingsNearPlayerStart">
 					<def>ScatterThingsNearPlayerStart</def>
 					<thingDef>Steel</thingDef>
-					<count>500</count>
+					<count>400</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>RK_Axe</thingDef>
+					<stuff>Steel</stuff>
 				</li>
 				<li Class="ScenPart_ScatterThingsNearPlayerStart">
 					<def>ScatterThingsNearPlayerStart</def>
 					<thingDef>WoodLog</thingDef>
-					<count>200</count>
+					<count>300</count>
 				</li>
 				<li Class="ScenPart_ScatterThingsAnywhere">
 					<def>ScatterThingsAnywhere</def>
 					<thingDef>ShipChunk</thingDef>
-					<count>15</count>
+					<count>5</count>
 				</li>
 				<li Class="ScenPart_ScatterThingsAnywhere">
 					<def>ScatterThingsAnywhere</def>

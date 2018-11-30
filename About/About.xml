@@ -1,7 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <name>NewRatkin</name>
-  <author>Gloomylynx Nukafrog</author>
-  <targetVersion>1.0.0</targetVersion>
-  <description></description>
+	<name>NewRatkinPlus</name>
+	<author>Gloomylynx Nukafrog</author>
+	<targetVersion>1.0.0</targetVersion>
+	<description>
+New Ratkin Race Mod.
+What is different from the old version?
+
+- Rebalance race stat and equipment
+- Add new clothes and weapons
+- Add fuctional and race characteristics.
+- Add race research
+- Add a variety of different jobs and fashions.
+- Add BackStory
+
+Ratkin weapons have the following characteristics.
++ Higher penetration
+- Lower Damage and Short Range
+
+Ratkin's equipment consists of a total of 3 tires.
+And from 2 tires, it adds a professional effect.
+
+The Ratkin Kingdom, where you meet, will be merciful.
+
+Storyteller Rotty Milden 
+- Increases the frequency of minor accidents
+- Reduces the frequency of major accidents. 
+- Mitigated the destruction of events by overlapping events with complete randomness.
+
+
+	</description>
 </ModMetaData>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BodyPartProstheticBase">
+		<defName>FakeRatkinEar</defName>
+		<label>fake ear</label>
+		<description>천으로 만들어진 가짜 귀입니다. 랫킨의 큰 귀는 단순히 소리를 듣는것 뿐만 아닌 하나의 상징이자 랫킨 사회에서의 큰 의미를 갖습니다.</description>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Cloth>50</Cloth>
+		</costList>
+		<statBases>
+			<WorkToMake>4500</WorkToMake>
+			<Mass>0.5</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+
+</Defs>

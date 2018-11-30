@@ -103,16 +103,16 @@ namespace NewRatkin
             int count = this.countRange.RandomInRange;
             for (int i = 0; i < count; i++)
             {
-                Faction slaveFaction;
+                Faction mercenaryFaction;
                 if (!(from fac in Find.FactionManager.AllFactionsVisible
                       where fac != Faction.OfPlayer && fac.def.humanlikeFaction
-                      select fac).TryRandomElement(out slaveFaction))
+                      select fac).TryRandomElement(out mercenaryFaction))
                 {
                     yield break;
                 }
-                PawnKindDef slave = PawnKindDefOf.Slave;
-                Faction faction = slaveFaction;
-                PawnGenerationRequest request = new PawnGenerationRequest(slave, faction, PawnGenerationContext.NonPlayer, forTile, false, false, false, false, true, false, 1f, !this.trader.orbital, true, true, false, false, false, false, null, null, null, null, null, null, null, null);
+                PawnKindDef mercenary = RatkinPawnKindDefOf.RatkinMercenary;
+                Faction faction = mercenaryFaction;
+                PawnGenerationRequest request = new PawnGenerationRequest(mercenary, faction, PawnGenerationContext.NonPlayer, forTile, false, false, false, false, true, true, 0.5f, !this.trader.orbital, true, true, false, false, false, false, null, null, null, null, null, null, null, null);
                 yield return PawnGenerator.GeneratePawn(request);
             }
             yield break;
@@ -126,12 +126,26 @@ namespace NewRatkin
     [DefOf]
     public static class RatkinPawnKindDefOf
     {
-        public static PawnKindDef Colonist;
+        public static PawnKindDef RatkinNoble;
 
-        public static PawnKindDef Slave;
+        public static PawnKindDef RatkinColonist;
 
-        public static PawnKindDef Villager;
+        public static PawnKindDef RatkinServant;
 
-        public static PawnKindDef Drifter;
+        public static PawnKindDef RatkinCombatant;
+
+        public static PawnKindDef RatkinSoldier;
+
+        public static PawnKindDef RatkinSubject;
+
+        public static PawnKindDef RatkinMercenary;
+
+        public static PawnKindDef RatkinEliteGuardener;
+
+        public static PawnKindDef RatkinPriest;
+
+        public static PawnKindDef RatkinMerchant;
+
+        public static PawnKindDef RatkinMurderer;
     }
 }

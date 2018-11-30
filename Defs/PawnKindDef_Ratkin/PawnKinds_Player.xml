@@ -2,14 +2,11 @@
 <Defs>
 	<PawnKindDef Name="RKBasePawnKind" Abstract="True">
 		<combatPower>20</combatPower>
-		<baseRecruitDifficulty>0.50</baseRecruitDifficulty>
+		<baseRecruitDifficulty>0.80</baseRecruitDifficulty>
 		<race>Ratkin</race>
-		<defaultFactionType>RK_PlayerFaction</defaultFactionType>
-		<backstoryCategories>
-			<li>Civil</li>
-		</backstoryCategories>
-		<itemQuality>Normal</itemQuality>
-		<maxGenerationAge>30</maxGenerationAge>
+		<minGenerationAge>15</minGenerationAge>
+		<maxGenerationAge>35</maxGenerationAge>
+		<defaultFactionType>Rakinia</defaultFactionType>
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
 		<apparelColor>(255,255,255)</apparelColor>
 	</PawnKindDef>
@@ -17,10 +14,17 @@
 	<PawnKindDef ParentName="RKBasePawnKind">
 		<defName>RatkinNoble</defName>
 		<label>ratkin noble</label>
-		<combatPower>10</combatPower>
+		<combatPower>35</combatPower>
+		<isFighter>false</isFighter>
+		<factionLeader>true</factionLeader>
+		<baseRecruitDifficulty>0.80</baseRecruitDifficulty>
+		<backstoryCategories>
+			<li>RatkinNoble</li>
+		</backstoryCategories>
+		<itemQuality>Excellent</itemQuality>
 		<apparelMoney>
-			<min>400</min>
-			<max>600</max>
+			<min>1500</min>
+			<max>5000</max>
 		</apparelMoney>
 		<apparelTags>
 			<li>RK_Noble</li>
@@ -52,65 +56,77 @@
 	<PawnKindDef ParentName="RKBasePawnKind">
 		<defName>RatkinColonist</defName>
 		<label>ratkin colonist</label>
+		<backstoryCategories>
+			<li>RatkinStory</li>
+		</backstoryCategories>
+		<defaultFactionType>RK_PlayerFaction</defaultFactionType>
+		<itemQuality>Normal</itemQuality>
 		<apparelMoney>
-			<min>200</min>
-			<max>300</max>
+			<min>300</min>
+			<max>500</max>
 		</apparelMoney>
 		<apparelTags>
 			<li>RK_Worker</li>
 		</apparelTags>
-		<apparelAllowHeadgearChance>0.1</apparelAllowHeadgearChance>
+		<apparelAllowHeadgearChance>0.0</apparelAllowHeadgearChance>
 	</PawnKindDef>
 	<!-- 하인 -->
 	<PawnKindDef ParentName="RKBasePawnKind">
 		<defName>RatkinServant</defName>
 		<label>ratkin servant</label>
+		<backstoryCategories>
+			<li>RatkinServant</li>
+		</backstoryCategories>
 		<apparelMoney>
-			<min>200</min>
-			<max>500</max>
+			<min>500</min>
+			<max>1500</max>
 		</apparelMoney>
 		<apparelTags>
 			<li>RK_Servant</li>
 		</apparelTags>
-		<apparelAllowHeadgearChance>0.0</apparelAllowHeadgearChance>
 	</PawnKindDef>
 
-	<!-- 정원사 -->
+	<!-- 전투원 -->
 	<PawnKindDef ParentName="RKBasePawnKind">
 		<defName>RatkinCombatant</defName>
 		<label>ratkin combatant</label>
-		<combatPower>100</combatPower>
+		<combatPower>50</combatPower>
 		<isFighter>false</isFighter>
+		<backstoryCategories>
+			<li>RatkinCombatant</li>
+		</backstoryCategories>
 		<apparelMoney>
-			<min>300</min>
-			<max>500</max>
+			<min>800</min>
+			<max>2000</max>
 		</apparelMoney>
 		<weaponMoney>
-			<min>400</min>
-			<max>500</max>
+			<min>800</min>
+			<max>2000</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>RK_Knight</li>
+			<li>RK_Combatant</li>
 		</weaponTags>
 		<apparelTags>
-			<li>RK_Gaurdner</li>
+			<li>RK_Combatant</li>
 		</apparelTags>
-		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
 	</PawnKindDef>
 
 	<!-- 군인 -->
 	<PawnKindDef ParentName="RKBasePawnKind">
 		<defName>RatkinSoldier</defName>
 		<label>ratkin soldier</label>
-		<combatPower>120</combatPower>
-		<isFighter>false</isFighter>
+		<combatPower>55</combatPower>
+		<isFighter>true</isFighter>
+		<backstoryCategories>
+			<li>RatkinSoldier</li>
+		</backstoryCategories>
 		<apparelMoney>
 			<min>650</min>
-			<max>1000</max>
+			<max>2500</max>
 		</apparelMoney>
 		<weaponMoney>
-			<min>300</min>
-			<max>500</max>
+			<min>500</min>
+			<max>1500</max>
 		</weaponMoney>
 		<weaponTags>
 			<li>RK_Rifle</li>
@@ -118,28 +134,31 @@
 		<apparelTags>
 			<li>RK_Soldier</li>
 		</apparelTags>
-		<apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
+		<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
 	</PawnKindDef>
 	<!-- 실험체 -->
 	<PawnKindDef ParentName="RKBasePawnKind">
 		<defName>RatkinSubject</defName>
 		<label>ratkin subject</label>
-		<combatPower>45</combatPower>
+		<backstoryCategories>
+			<li>RatkinSubject</li>
+		</backstoryCategories>
+		<combatPower>35</combatPower>
 		<isFighter>false</isFighter>
-		<techHediffsChance>0.3</techHediffsChance>
+		<techHediffsChance>0.8</techHediffsChance>
 		<techHediffsTags>
 			<li>Advanced</li>
 		</techHediffsTags>
 		<techHediffsMoney>
-			<min>1000</min>
-			<max>2000</max>
+			<min>2000</min>
+			<max>5000</max>
 		</techHediffsMoney>
 		<apparelMoney>
 			<min>20</min>
 			<max>200</max>
 		</apparelMoney>
 		<weaponMoney>
-			<min>3000</min>
+			<min>1500</min>
 			<max>3500</max>
 		</weaponMoney>
 		<weaponTags>
@@ -150,8 +169,218 @@
 		</apparelTags>
 		<apparelAllowHeadgearChance>0.0</apparelAllowHeadgearChance>
 	</PawnKindDef>
-	
+
 	<!-- 랫킨 용병 -->
+	<PawnKindDef ParentName="RKBasePawnKind">
+		<defName>RatkinMercenary</defName>
+		<label>ratkin mercenary</label>
+		<backstoryCategories>
+			<li>RatkinMercenary</li>
+		</backstoryCategories>
+		<minGenerationAge>30</minGenerationAge>
+		<combatPower>45</combatPower>
+		<isFighter>false</isFighter>
+		<techHediffsChance>0.1</techHediffsChance>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<techHediffsMoney>
+			<min>3000</min>
+			<max>5000</max>
+		</techHediffsMoney>
+		<apparelMoney>
+			<min>4000</min>
+			<max>8000</max>
+		</apparelMoney>
+		<weaponMoney>
+			<min>1500</min>
+			<max>3500</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>RK_RangeWeapon</li>
+		</weaponTags>
+		<apparelTags>
+			<li>RK_Soldier</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+	</PawnKindDef>
 	<!-- 랫킨 정예정원사 -->
+	<PawnKindDef ParentName="RKBasePawnKind">
+		<defName>RatkinEliteGuardener</defName>
+		<label>ratkin EliteGuardener</label>
+		<baseRecruitDifficulty>0.80</baseRecruitDifficulty>
+		<combatPower>35</combatPower>
+		<isFighter>true</isFighter>
+		<itemQuality>Excellent</itemQuality>
+		<backstoryCategories>
+			<li>RatkinGuardener</li>
+		</backstoryCategories>
+		<apparelMoney>
+			<min>6000</min>
+			<max>6000</max>
+		</apparelMoney>
+		<weaponMoney>
+			<min>3000</min>
+			<max>5000</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>RK_MeleeWeapon</li>
+			<li>RK_RangeWeapon</li>
+		</weaponTags>
+		<apparelTags>
+			<li>RK_Gaurdener</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0.0</apparelAllowHeadgearChance>
+	</PawnKindDef>
+	<!-- 랫킨 사제 -->
+	<PawnKindDef ParentName="RKBasePawnKind">
+		<defName>RatkinPriest</defName>
+		<label>ratkin Priest</label>
+		<isFighter>false</isFighter>
+		<combatPower>25</combatPower>
+		<itemQuality>Excellent</itemQuality>
+		<backstoryCategories>
+			<li>RatkinPriest</li>
+		</backstoryCategories>
+		<apparelMoney>
+			<min>5000</min>
+			<max>5000</max>
+		</apparelMoney>
+		<apparelTags>
+			<li>RK_Priest</li>
+		</apparelTags>		
+		<apparelRequired>
+			<li>RK_SistersVeil</li>
+		</apparelRequired>
+	</PawnKindDef>
+	<!-- 랫킨 상단 -->	
+	<PawnKindDef ParentName="RKBasePawnKind">
+		<defName>RatkinMerchant</defName>
+		<label>ratkin Merchant</label>
+		<combatPower>45</combatPower>
+		<isFighter>true</isFighter>
+		<backstoryCategories>
+			<li>RatkinMerchant</li>
+		</backstoryCategories>
+		<apparelMoney>
+			<min>500</min>
+			<max>2000</max>
+		</apparelMoney>
+		<weaponMoney>
+			<min>3000</min>
+			<max>3500</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>RK_Rifle</li>
+		</weaponTags>
+		<apparelTags>
+			<li>RK_Noble</li>
+		</apparelTags>
+		<trader>true</trader>
+	</PawnKindDef>
+	<!-- 랫킨 살인마 -->
+	<PawnKindDef ParentName="RKBasePawnKind">
+		<defName>RatkinMurderer</defName>
+		<label>ratkin Murderer</label>
+		<combatPower>40</combatPower>
+		<isFighter>true</isFighter>
+		<backstoryCategories>
+			<li>RatkinMurderer</li>
+		</backstoryCategories>
+		<techHediffsChance>0.5</techHediffsChance>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<techHediffsMoney>
+			<min>4000</min>
+			<max>5000</max>
+		</techHediffsMoney>
+		<apparelMoney>
+			<min>5000</min>
+			<max>5000</max>
+		</apparelMoney>
+		<weaponMoney>
+			<min>3000</min>
+			<max>3500</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>RK_Murderer</li>
+		</weaponTags>
+		<apparelTags>
+			<li>RK_Murderer</li>
+			<li>RK_Worker</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>RK_ResearchGlasses</li>
+		</apparelRequired>
+	</PawnKindDef>
+	<PawnKindDef ParentName="RKBasePawnKind">
+		<defName>RatkinVagabond</defName>
+		<label>Vagabond</label>
+		<baseRecruitDifficulty>0.98</baseRecruitDifficulty>
+		<combatPower>50</combatPower>
+		<isFighter>true</isFighter>
+		<backstoryCategories>
+			<li>RatkinVagabond</li>
+		</backstoryCategories>
+		<apparelMoney>
+			<min>2800</min>
+			<max>4800</max>
+		</apparelMoney>
+		<weaponMoney>
+			<min>3000</min>
+			<max>5000</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>RK_MeleeWeapon</li>
+			<li>RK_RangeWeapon</li>
+		</weaponTags>
+		<apparelTags>
+			<li>RK_Gaurdener</li>
+		</apparelTags>
+		<inventoryOptions>
+			<skipChance>0.9</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>MedicineHerbal</thingDef>
+					<countRange>
+						<min>5</min>
+						<max>8</max>
+					</countRange>
+				</li>
+				<li>
+					<thingDef>Pemmican</thingDef>
+					<countRange>
+						<min>3</min>
+						<max>6</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
 	
+	<PawnKindDef ParentName="RKBasePawnKind">
+		<defName>RatkinMercenaryLight</defName>
+		<label>ratkin Mercenary</label>
+		<combatPower>35</combatPower>
+		<isFighter>true</isFighter>
+		<backstoryCategories>
+			<li>RatkinStory</li>
+		</backstoryCategories>
+		<apparelMoney>
+			<min>800</min>
+			<max>1500</max>
+		</apparelMoney>
+		<apparelTags>
+			<li>RK_Soldier</li>
+		</apparelTags>
+		<weaponMoney>
+			<min>1500</min>
+			<max>3000</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>RK_RangeWeapon</li>
+		</weaponTags>
+	</PawnKindDef>
+
 </Defs>

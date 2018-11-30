@@ -24,6 +24,7 @@
 		</graphicData>
 		<techLevel>Medieval</techLevel>
 		<weaponTags Inherit="false">
+			<li>RK_Murderer</li>
 			<li>RK_WorkerTool</li>
 		</weaponTags>
 		<costList>
@@ -71,13 +72,14 @@
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>RK_Cleaver</defName>
 		<label>cleaver</label>
-		<description>고기를 자를 때 쓰는 식칼입니다. 인간의 것보단 조금 작습니다.</description>
+		<description>고기를 자를 때 쓰는 식칼입니다. 고기를 더 많이 얻을 수 있습니다. 무기로 쓰기엔 적합해 보이지 않습니다.</description>
 		<graphicData>
 			<texPath>Weapon/RK_Cleaver</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
 		<weaponTags Inherit="false">
+			<li>RK_Murderer</li>
 			<li>RK_ChefTool</li>
 		</weaponTags>
 		<costList>
@@ -239,7 +241,8 @@
 		</graphicData>
 		<techLevel>Medieval</techLevel>
 		<weaponTags Inherit="false">
-			<li>RK_Knight</li>
+			<li>RK_Combatant</li>
+			<li>RK_MeleeWeapon</li>
 		</weaponTags>
 		<costList>
 			<WoodLog>40</WoodLog>
@@ -287,7 +290,7 @@
 
 
 	<!-- 원거리 무기 -->
-	<!-- 석궁 스탤스 +5%-->
+	<!-- 석궁 스탤스 +10%-->
 	<ThingDef ParentName="BaseWeaponNeolithic">
 		<defName>RK_Crossbow</defName>
 		<label>cross bow</label>
@@ -317,12 +320,14 @@
 			<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
-			<HuntingStealth>0.05</HuntingStealth>
+			<HuntingStealth>0.07</HuntingStealth>
 		</equippedStatOffsets>
 		<weaponTags Inherit="false">
 			<li>RK_1TierRange</li>
 			<li>RK_Crossbow</li>
 			<li>RK_Weapon</li>
+			<li>RK_RangeWeapon</li>
+			<li>RK_Combatant</li>
 		</weaponTags>
 		<verbs>
 			<li>
@@ -373,7 +378,7 @@
 	<!-- 개량석궁 -->
 	<ThingDef ParentName="BaseWeaponNeolithic">
 		<defName>RK_EnhanceCrossBow</defName>
-		<label>cross bow</label>
+		<label>enhanced cross bow</label>
 		<description>개량된 석궁입니다. 보다 멀리나가며 관통력도 우수합니다.</description>
 		<graphicData>
 			<texPath>Weapon/RK_EnhanceCrossBow</texPath>
@@ -400,10 +405,15 @@
 			<AccuracyLong>0.50</AccuracyLong>
 			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
 		</statBases>
+		<equippedStatOffsets>
+			<HuntingStealth>0.15</HuntingStealth>
+		</equippedStatOffsets>
 		<weaponTags Inherit="false">
 			<li>RK_1TierRange</li>
 			<li>RK_Crossbow</li>
 			<li>RK_Weapon</li>
+			<li>RK_RangeWeapon</li>
+			<li>RK_Combatant</li>
 		</weaponTags>
 		<verbs>
 			<li>
@@ -454,7 +464,7 @@
 	<!-- 연발석궁 -->
 	<ThingDef ParentName="BaseWeaponNeolithic">
 		<defName>RK_AutoCrossBow</defName>
-		<label>cross bow</label>
+		<label>autocross bow</label>
 		<description>기계식으로 발사되는 반자동 석궁입니다. 원형 탄창에서 빠른속도로 볼트를 발사할 수 있습니다.</description>
 		<graphicData>
 			<texPath>Weapon/RK_AutoCrossBow</texPath>
@@ -473,18 +483,20 @@
 			</skillRequirements>
 		</recipeMaker>
 		<statBases>
-			<WorkToMake>2400</WorkToMake>
+			<WorkToMake>7500</WorkToMake>
 			<Mass>0.8</Mass>
 			<AccuracyTouch>0.70</AccuracyTouch>
 			<AccuracyShort>0.70</AccuracyShort>
 			<AccuracyMedium>0.65</AccuracyMedium>
-			<AccuracyLong>0.45</AccuracyLong>
+			<AccuracyLong>0.50</AccuracyLong>
 			<RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
 		</statBases>
 		<weaponTags Inherit="false">
 			<li>RK_1TierRange</li>
 			<li>RK_Crossbow</li>
 			<li>RK_Weapon</li>
+			<li>RK_RangeWeapon</li>
+			<li>RK_Combatant</li>
 		</weaponTags>
 		<verbs>
 			<li>
@@ -599,6 +611,8 @@
 			<li>RK_2TierWeapon</li>
 			<li>RK_Rifle</li>
 			<li>RK_Weapon</li>
+			<li>RK_RangeWeapon</li>
+			<li>RK_Combatant</li>
 		</weaponTags>
 		<equippedAngleOffset>45</equippedAngleOffset>
 	</ThingDef>
@@ -683,6 +697,8 @@
 			<li>RK_2TierWeapon</li>
 			<li>RK_Rifle</li>
 			<li>RK_Weapon</li>
+			<li>RK_RangeWeapon</li>
+			<li>RK_Combatant</li>
 		</weaponTags>
 		<equippedAngleOffset>45</equippedAngleOffset>
 	</ThingDef>
@@ -775,6 +791,8 @@
 			<li>RK_3TierWeapon</li>
 			<li>RK_Rifle</li>
 			<li>RK_Weapon</li>
+			<li>RK_RangeWeapon</li>
+			<li>RK_Combatant</li>
 		</weaponTags>
 		<equippedAngleOffset>45</equippedAngleOffset>
 	</ThingDef>
@@ -867,6 +885,8 @@
 			<li>RK_3TierWeapon</li>
 			<li>RK_Rifle</li>
 			<li>RK_Weapon</li>
+			<li>RK_RangeWeapon</li>
+			<li>RK_Combatant</li>
 		</weaponTags>
 		<equippedAngleOffset>45</equippedAngleOffset>
 	</ThingDef>
@@ -877,7 +897,7 @@
 			<damageDef>ArrowHighVelocity</damageDef>
 			<damageAmountBase>20</damageAmountBase>
 			<stoppingPower>1.5</stoppingPower>
-			<armorPenetrationBase>0.41</armorPenetrationBase>
+			<armorPenetrationBase>0.42</armorPenetrationBase>
 			<speed>75</speed>
 		</projectile>
 		<graphicData>
@@ -890,7 +910,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>RK_PrototypePulseRifle</defName>
 		<label>prototype pulse rifle</label>
-		<description>실험용 에너지 소총입니다. 실험용 랫킨들을 위해 제작되었으며 랫킨식 플레셰트탄환에서 아이디어를 얻어 제작되었습니다. 쇄기모양의 에너지탄은 관통력이 우수하며 더 먼곳까지 빠르게 날아갑니다.</description>
+		<description>실험용 에너지 소총입니다. 실험용 랫킨들을 위해 제작되어 특수망원렌즈가 근거리 원거리 모두 정밀하게 조준해줍니다. 랫킨식 플레셰트탄환에서 아이디어를 얻어 제작한 이 무기는 쇄기모양의 고관통 에너지탄을 빠르게 발사합니다.</description>
 		<graphicData>
 			<texPath>Weapon/RK_PrototypePulseRifle</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -900,10 +920,10 @@
 			<WorkToMake>40000</WorkToMake>
 			<Mass>3.5</Mass>
 			<AccuracyTouch>0.60</AccuracyTouch>
-			<AccuracyShort>0.64</AccuracyShort>
-			<AccuracyMedium>0.55</AccuracyMedium>
-			<AccuracyLong>0.45</AccuracyLong>
-			<RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+			<AccuracyShort>0.75</AccuracyShort>
+			<AccuracyMedium>0.60</AccuracyMedium>
+			<AccuracyLong>0.75</AccuracyLong>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
 			<Plasteel>80</Plasteel>
@@ -915,8 +935,8 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_RK_PrototypePulseRifle</defaultProjectile>
-				<warmupTime>1.2</warmupTime>
-				<range>27</range>
+				<warmupTime>1.5</warmupTime>
+				<range>40</range>
 				<burstShotCount>2</burstShotCount>
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
 				<soundCast>PrototypePulse</soundCast>
@@ -924,6 +944,7 @@
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
+		<recipeMaker Inherit="false"/>
 		<weaponTags Inherit="false">
 			<li>RK_4TierWeapon</li>
 			<li>RK_Weapon</li>

@@ -159,7 +159,7 @@
 	<!-- 여름모자 더위저항 +5 -->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_HatMakeableBase">
 		<defName>RK_StrawHat</defName>
-		<label>woolen hat</label>
+		<label>Straw Hat</label>
 		<description>건초로 만든 밀짚모자입니다. 뜨거운 땡볕으로부터 몸을 지켜줍니다.</description>
 		<graphicData>
 			<texPath>Apparel/RK_StrawHat</texPath>
@@ -208,7 +208,7 @@
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
 		<defName>RK_Muffler</defName>
 		<label>muffler</label>
-		<description>목에 두르는 목도리입니다. 목에 두를 수 있습니다.</description>
+		<description>목에 두르는 목도리입니다. 목을 통해 체온이 빠져나가는걸 방지해줍니다. 사막을 횡단할때 쓸 수 있습니다.</description>
 		<graphicData>
 			<texPath>Apparel/RK_Muffler</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -272,7 +272,7 @@
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
 		<defName>RK_Cardigan</defName>
 		<label>cardigan</label>
-		<description>옷 겉에 입는 외투입니다. 몸을 따듯하게 해줍니다.</description>
+		<description>옷 겉에 입는 외투입니다. 옷을 한겹 더입어 추위로부터 몸을 지킬 수 있습니다.</description>
 		<graphicData>
 			<texPath>Apparel/RK_Cardigan</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -341,7 +341,7 @@
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
 		<defName>RK_WoolenHat</defName>
 		<label>woolen hat</label>
-		<description>털달린 모자입니다. 추위를 덜어줍니다.</description>
+		<description>털 달린 모자입니다.</description>
 		<graphicData>
 			<texPath>Apparel/RK_WoolenHat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -461,6 +461,9 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>RatkinClothing</researchPrerequisite>
+		</recipeMaker>
 		<costStuffCount>45</costStuffCount>
 		<stuffCategories>
 			<li>Leathery</li>
@@ -554,12 +557,15 @@
 				<li>RK_2Tier</li>
 			</tags>
 		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>RatkinClothing</researchPrerequisite>
+		</recipeMaker>
 	</ThingDef>
 	<!-- 작업모  식중독 예방 +5% 동물채집량 +5% -->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_HatMakeableBase">
 		<defName>RK_Coif</defName>
 		<label>coif</label>
-		<description>작업할 때 쓰는 모자입니다. 머리칼이 넘어오지 않도록 방지해줍니다.</description>
+		<description>작업할 때 쓰는 모자입니다. 머리카락이 넘어오지 않도록 방지해줍니다.</description>
 		<graphicData>
 			<texPath>Apparel/RK_Coif</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -597,6 +603,9 @@
 				<li>Worker</li>
 			</defaultOutfitTags>
 		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>RatkinClothing</researchPrerequisite>
+		</recipeMaker>
 	</ThingDef>
 
 	<!-- 연구가운 연구 속도 +10% 수술속도 +5% 치료속도 +5% 약조리속도 +5% 제약속도 +5%-->
@@ -636,6 +645,7 @@
 			<DrugCookingSpeed>0.05</DrugCookingSpeed>
 			<DrugSynthesisSpeed>0.05</DrugSynthesisSpeed>
 			<FoodPoisonChance>0.10</FoodPoisonChance>
+			<CookSpeed>-0.15</CookSpeed>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
@@ -657,6 +667,9 @@
 				<li>RK_2Tier</li>
 			</tags>
 		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>RatkinClothing</researchPrerequisite>
+		</recipeMaker>
 	</ThingDef>
 	<!-- 공돌이 수술 성공률 +5% 치료품질 +5%-->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
@@ -699,23 +712,27 @@
 			</layers>
 			<tags>
 				<li>RK_Doctor</li>
+				<li>RK_Murderer</li>
 				<li>RK_2Tier</li>
 			</tags>
 		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>RatkinClothing</researchPrerequisite>
+		</recipeMaker>
 	</ThingDef>
 
 	<!-- 탐험복 이동속도 +0.2 더위저항 +10 스탤스효과 +7% 조련확률 +5% 훈련확률 +5% 근접회피 +5%-->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
 		<defName>RK_ExplorerWear</defName>
 		<label>explorer wear</label>
-		<description>탐험할때 입는 옷입니다. 이동에 편리하고 몸에서 나는 소리를 줄여줍니다.</description>
+		<description>오지를 탐험할때 입는 옷입니다. 이동에 편리하고 몸에서 나는 소리를 줄여줍니다.</description>
 		<graphicData>
 			<texPath>Apparel/RK_ExplorerWear</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<recipeMaker>
-			<researchPrerequisite>Electricity</researchPrerequisite>
+			<researchPrerequisite>RatkinClothing</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<Steel>15</Steel>
@@ -812,22 +829,26 @@
 			<tags>
 				<li>RK_Explorer</li>
 				<li>RK_2Tier</li>
+				<li>RK_Combatant</li>
 			</tags>
 		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>RatkinClothing</researchPrerequisite>
+		</recipeMaker>
 	</ThingDef>
 
 	<!-- 쉐프복 요리속도 +15% 해체속도 +5% -->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
 		<defName>RK_ChefSuit</defName>
 		<label>chef suit</label>
-		<description>쉐프 복장입니다. 요리하기 편한 복장입니다.</description>
+		<description>쉐프 복장입니다. 요리하기 편하도록 디자인 되어 조리속도를 상승시켜줍니다.</description>
 		<graphicData>
 			<texPath>Apparel/RK_ChefSuit</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<recipeMaker>
-			<researchPrerequisite>Electricity</researchPrerequisite>
+			<researchPrerequisite>RatkinClothing</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<Cloth>25</Cloth>
@@ -925,13 +946,16 @@
 				<li>RK_2Tier</li>
 			</tags>
 		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>RatkinClothing</researchPrerequisite>
+		</recipeMaker>
 	</ThingDef>
 
 	<!-- 정원복 수확속도 +15% 수확량 +5% 근접정확도 +5% 근접회피 +10% 이동속도 +0.1 -->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
 		<defName>RK_GaurdenUniform</defName>
 		<label>gaurden uniform</label>
-		<description>정원 지킴이들이 입는 정장입니다. 랫킨 사회에서 정원을 가꾸고 지키는것은 가장 큰 명예로 생각합니다.</description>
+		<description>정원 지킴이들이 입는 정장입니다. 농경이 중요한 랫킨의 사회에서 정원을 지키는것은 중요한 일이며 가장 유능한 인재들만이 정원사가 될 수 있습니다.</description>
 		<graphicData>
 			<texPath>Apparel/RK_GardenWear</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -983,10 +1007,14 @@
 				<li>OnSkin</li>
 			</layers>
 			<tags>
-				<li>RK_Gaurdner</li>
+				<li>RK_Gaurdener</li>
 				<li>RK_2Tier</li>
+				<li>RK_Combatant</li>
 			</tags>
 		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>RatkinClothing</researchPrerequisite>
+		</recipeMaker>
 	</ThingDef>
 
 	<!-- 겨울외투 사회적영향력 5% 추위저항 +35 -->
@@ -1000,7 +1028,7 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<recipeMaker>
-			<researchPrerequisite>Electricity</researchPrerequisite>
+			<researchPrerequisite>RatkinClothing</researchPrerequisite>
 		</recipeMaker>
 		<costStuffCount>85</costStuffCount>
 		<stuffCategories>
@@ -1043,6 +1071,7 @@
 			</layers>
 			<tags>
 				<li>RK_Ambassador</li>	
+				<li>RK_Gaurdener</li>	
 				<li>RK_2Tier</li>
 			</tags>
 		</apparel>
@@ -1055,7 +1084,7 @@
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
 		<defName>RK_OutdoorBackpack</defName>
 		<label>ratkin outdoor backpack</label>
-		<description>랫킨용 등짐 가방입니다. 랫킨 체구에 맞도록 고안된 가방으로 더욱 많은 짐을 들 수 있도록 해줍니다.</description>
+		<description>랫킨용 등짐 가방입니다. 랫킨 신체에 맞도록 고안된 가방으로 더욱 많은 짐을 들 수 있도록 해줍니다.</description>
 		<graphicData>
 			<texPath>Apparel/RK_OutdoorBackpack</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1111,7 +1140,7 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<recipeMaker>
-			<researchPrerequisite>Electricity</researchPrerequisite>
+			<researchPrerequisite>HighClassClothing</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<DevilstrandCloth>35</DevilstrandCloth>
@@ -1165,6 +1194,7 @@
 				<li>RK_Ambassador</li>
 				<li>RK_Soldier</li>
 				<li>RK_3Tier</li>
+				<li>RK_Combatant</li>
 			</tags>
 		</apparel>
 	</ThingDef>
@@ -1215,8 +1245,12 @@
 				<li>RK_Ambassador</li>	
 				<li>RK_Soldier</li>
 				<li>RK_3Tier</li>
+				<li>RK_Combatant</li>
 			</tags>
 		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>HighClassClothing</researchPrerequisite>
+		</recipeMaker>
 	</ThingDef>
 
 	<!-- 플랫칼라코트 사회적영향력 +10% 협상 +10%  -->
@@ -1229,9 +1263,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<recipeMaker>
-			<researchPrerequisite>Electricity</researchPrerequisite>
-		</recipeMaker>
 		<costList>
 			<DevilstrandCloth>35</DevilstrandCloth>
 		</costList>
@@ -1279,6 +1310,9 @@
 				<li>RK_3Tier</li>
 			</tags>
 		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>HighClassClothing</researchPrerequisite>
+		</recipeMaker>
 	</ThingDef>
 
 	<!-- 프릴원피스 거래가격개선 +10% 협상 +10%  -->
@@ -1291,9 +1325,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<recipeMaker>
-			<researchPrerequisite>Electricity</researchPrerequisite>
-		</recipeMaker>
 		<costList>
 			<DevilstrandCloth>35</DevilstrandCloth>
 		</costList>		
@@ -1341,6 +1372,9 @@
 				<li>RK_3Tier</li>
 			</tags>
 		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>HighClassClothing</researchPrerequisite>
+		</recipeMaker>
 	</ThingDef>
 
 	<!-- 코사주 사회적 영향력 10% -->
@@ -1386,6 +1420,9 @@
 				<li>RK_3Tier</li>
 			</tags>
 		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>HighClassClothing</researchPrerequisite>
+		</recipeMaker>
 	</ThingDef>
 	<!-- 리본 거래가격 개선 +10% -->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_HatMakeableBase">
@@ -1429,43 +1466,45 @@
 				<li>RK_3Tier</li>
 			</tags>
 		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>HighClassClothing</researchPrerequisite>
+		</recipeMaker>
 	</ThingDef>
 
-	<!-- 번외 -->
-	<!-- 랫킨 귀 헤어밴드 사회적영향력 -5% -->
+	<!-- 수녀복 사회적영향력 +10% 치료속도 +10%  -->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
-		<defName>RK_EarCostume</defName>
-		<label>ratkin ear costume</label>
-		<description>귀여운 랫킨을 흉내내기 위한 귀 코스튬 입니다. 덩치가 큰 사람이 사용하면 전혀 귀엽지 않습니다.</description>
+		<defName>RK_SistersDerss</defName>
+		<label>Sisters Derss</label>
+		<description>수녀들이 입는 단아한 원피스입니다. 약간의 옆트임이 있어 움직임이 편합니다. 랫킨의 수녀들은 아픈 사람들을 돌보기도 합니다.</description>
 		<graphicData>
-			<texPath>Apparel/RK_EarCostume</texPath>
+			<texPath>Apparel/RK_SistersDerss</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<recipeMaker>
-			<researchPrerequisite>Electricity</researchPrerequisite>
-		</recipeMaker>
 		<costList>
-			<Cloth>100</Cloth>
+			<DevilstrandCloth>35</DevilstrandCloth>
 		</costList>
+		<costStuffCount>100</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
 		<techLevel>Industrial</techLevel>
 		<thingCategories>
 			<li>Apparel</li>
 		</thingCategories>
 		<statBases>
-			<MaxHitPoints>200</MaxHitPoints>
-			<WorkToMake>15000</WorkToMake>
-			<Mass>7</Mass>
-			<Flammability>0.4</Flammability>
-			<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.24</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.40</ArmorRating_Heat>
-			<Insulation_Cold>10</Insulation_Cold>
-			<Insulation_Heat>10</Insulation_Heat>
-			<EquipDelay>6</EquipDelay>
+			<MaxHitPoints>135</MaxHitPoints>
+			<WorkToMake>20000</WorkToMake>
+			<Mass>0.35</Mass>	
+			<StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.2</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<SocialImpact>-0.05</SocialImpact>
+			<SocialImpact>0.10</SocialImpact>
+			<MedicalTendSpeed>0.10</MedicalTendSpeed>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
@@ -1479,15 +1518,118 @@
 				<li>Worker</li>
 				<li>Soldier</li>
 			</defaultOutfitTags>
-			<wornGraphicPath>Apparel/RK_EarCostume</wornGraphicPath>
+			<wornGraphicPath>Apparel/RK_SistersDerss</wornGraphicPath>
 			<layers>
 				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>RK_Priest</li>
+				<li>RK_3Tier</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>HighClassClothing</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+	<!-- 수녀모자 치료품질 +10% -->
+	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_HatMakeableBase">
+		<defName>RK_SistersVeil</defName>
+		<label>Veil</label>
+		<description>수녀들이 머리에 쓰는 베일입니다. 머리를 단정하게 해줍니다.</description>
+		<graphicData>
+			<texPath>Apparel/RK_SistersVeil</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costList>
+			<DevilstrandCloth>20</DevilstrandCloth>
+		</costList>
+		<costStuffCount>35</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>60</MaxHitPoints>
+			<WorkToMake>15000</WorkToMake>
+			<Mass>0.1</Mass>
+			<EquipDelay>0.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MedicalTendQuality>0.10</MedicalTendQuality>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/RK_SistersVeil</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<tags>
+				<li>RK_Priest</li>
+				<li>RK_Noble</li>
+				<li>RK_3Tier</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>HighClassClothing</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+
+	<!-- 번외 -->
+	<!-- 랫킨 귀 헤어밴드 사회적영향력 -5% -->
+	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
+		<defName>RK_EarCostume</defName>
+		<label>ratkin ear costume</label>
+		<description>귀여운 랫킨을 흉내내기 위한 귀 코스튬 입니다. 덩치가 큰 사람이 사용하면 전혀 귀엽지 않습니다.</description>
+		<graphicData>
+			<texPath>Apparel/RK_EarCostume</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costList>
+			<Cloth>100</Cloth>
+		</costList>
+		<techLevel>Industrial</techLevel>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>15000</WorkToMake>
+			<Mass>7</Mass>
+			<Flammability>0.4</Flammability>
+			<ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.14</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.10</ArmorRating_Heat>
+			<Insulation_Cold>5</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>-0.05</SocialImpact>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<wornGraphicPath>Apparel/RK_EarCostume</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
 			</layers>
 			<tags>
 				<li>NonRatkin</li>
 			</tags>
 		</apparel>
-		<followStuffColor>true</followStuffColor>
 	</ThingDef>
 
 
@@ -1507,10 +1649,15 @@
 		<label>outer clothing</label>
 		<drawOrder>275</drawOrder>
 	</ApparelLayerDef>
-	
+
 	<ApparelLayerDef>
 		<defName>OnFace</defName>
 		<label>onface</label>
 		<drawOrder>425</drawOrder>
 	</ApparelLayerDef>
+
+	<StuffCategoryDef>
+		<defName>Straw</defName>
+		<label>straw</label>
+	</StuffCategoryDef>
 </Defs>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>InstallFakeEar</defName>
+		<label>install fake ear</label>
+		<description>Install a fake ear.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing fake ear.</jobString>
+		<workAmount>2000</workAmount>
+		<skillRequirements>
+			<Medicine>3</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>FakeRatkinEar</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>FakeRatkinEar</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Ear</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>FakeEar</addsHediff>
+	</RecipeDef>
+</Defs>

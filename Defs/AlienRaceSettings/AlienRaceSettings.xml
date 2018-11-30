@@ -21,15 +21,15 @@
 			<alienslavekinds>
 				<li>
 					<kindDefs>
-						<li>RatkinServant</li>
+						<li>RatkinMercenary</li>
 					</kindDefs>
-					<chance>85.0</chance>
+					<chance>40.0</chance>
 				</li>
 				<li>
 					<kindDefs>
-						<li>RatkinSubject</li>
+						<li>RatkinCombatant</li>
 					</kindDefs>
-					<chance>5.0</chance>
+					<chance>60.0</chance>
 				</li>
 			</alienslavekinds>
 			<alienrefugeekinds>
@@ -67,9 +67,52 @@
 							</kindDefs>
 							<chance>50.0</chance>
 						</li>
+						<li>
+							<kindDefs>
+								<li>RatkinServant</li>
+							</kindDefs>
+							<chance>40.0</chance>
+						</li>
+						<li>
+							<kindDefs>
+								<li>RatkinNoble</li>
+							</kindDefs>
+							<chance>30.0</chance>
+						</li>
+						<li>
+							<kindDefs>
+								<li>RatkinPriest</li>
+							</kindDefs>
+							<chance>5.0</chance>
+						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>RatkinEnclave</li> 
+						<li>Rakinia</li> 
+					</factionDefs>
+				</li>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>RatkinColonist</li>
+							</kindDefs>
+							<chance>20.0</chance>
+						</li>
+						<li>
+							<kindDefs>
+								<li>RatkinServant</li>
+							</kindDefs>
+							<chance>40.0</chance>
+						</li>
+						<li>
+							<kindDefs>
+								<li>RatkinMerchant</li>
+							</kindDefs>
+							<chance>10.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>RatkinCaravan</li> 
 					</factionDefs>
 				</li>
 			</alienwandererkinds>

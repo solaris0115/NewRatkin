@@ -3,7 +3,7 @@
 	<AlienRace.ThingDef_AlienRace ParentName="RK_PawnBase">
 		<defName>Ratkin</defName>
 		<label>Ratkin</label>
-		<description>rat human</description>
+		<description>설치류 유전자와 흡사한 인간입니다. 출처는 알 수 없으나 주로 농경사회를 기반으로 한 왕정을 이루고 살고 있습니다. 주로 여성개체가 많으며 남성개체 또한 자신이 남자인것을 잘 인지하지 못합니다.</description>
 		<alienRace>
 			<generalSettings>
 				<maleGenderProbability>0.1</maleGenderProbability>
@@ -53,25 +53,16 @@
 									<bodyTypes>
 										<Thin>(-0.1,-0.2)</Thin>
 									</bodyTypes>
-									<crownTypes>
-										<Normal_Average>(0,0)</Normal_Average>
-									</crownTypes>
 								</south>
 								<north>
 									<bodyTypes>
 										<Thin>(0,-0.05)</Thin>
 									</bodyTypes>
-									<crownTypes>
-										<Normal_Average>(0,0)</Normal_Average>
-									</crownTypes>
 								</north>
 								<east>
 									<bodyTypes>
 										<Thin>(0.05,-0.2)</Thin>
 									</bodyTypes>
-									<crownTypes>
-										<Normal_Average>(0,0)</Normal_Average>
-									</crownTypes>
 								</east>
 							</offsets>
 						</li>
@@ -89,9 +80,6 @@
 									<portraitBodyTypes>
 										<Thin>(-0.45,0.67)</Thin>
 									</portraitBodyTypes>
-									<crownTypes>
-										<Normal_Average>(0,0)</Normal_Average>
-									</crownTypes>
 								</south>
 								<north>
 									<bodyTypes>
@@ -100,9 +88,6 @@
 									<portraitBodyTypes>
 										<Thin>(-0.04,0.89)</Thin>
 									</portraitBodyTypes>
-									<crownTypes>
-										<Normal_Average>(0,0)</Normal_Average>
-									</crownTypes>
 								</north>
 								<east>
 									<bodyTypes>
@@ -111,9 +96,6 @@
 									<portraitBodyTypes>
 										<Thin>(-0.44,0.58)</Thin>
 									</portraitBodyTypes>
-									<crownTypes>
-										<Normal_Average>(0,0)</Normal_Average>
-									</crownTypes>
 								</east>
 							</offsets>
 
@@ -135,9 +117,6 @@
 									<portraitBodyTypes>
 										<Thin>(-0.4,0.67)</Thin>
 									</portraitBodyTypes>
-									<crownTypes>
-										<Normal_Average>(0,0)</Normal_Average>
-									</crownTypes>
 								</south>
 								<north>
 									<bodyTypes>
@@ -146,9 +125,6 @@
 									<portraitBodyTypes>
 										<Thin>(-0.01,1)</Thin>
 									</portraitBodyTypes>
-									<crownTypes>
-										<Normal_Average>(0,0)</Normal_Average>
-									</crownTypes>
 								</north>
 								<east>
 									<bodyTypes>
@@ -157,9 +133,6 @@
 									<portraitBodyTypes>
 										<Thin>(-0.44,0.58)</Thin>
 									</portraitBodyTypes>
-									<crownTypes>
-										<Normal_Average>(0,0)</Normal_Average>
-									</crownTypes>
 								</east>
 							</offsets>
 							<hiddenUnderApparelFor>
@@ -168,12 +141,18 @@
 						</li>
 					</bodyAddons>
 				</alienPartGenerator>
+			
+				<disallowedTraits>
+					<li>AnnoyingVoice</li>
+					<li>CreepyBreathing</li>
+				</disallowedTraits>
+			
 			</generalSettings>
 
 			<graphicPaths>
 				<li>
-					<body>Body/Bodies</body>
-					<head>Head/Heads</head>
+					<body>Things/Ratkin/Bodies/</body>
+					<head>Things/Ratkin/Heads/</head>
 					<skeleton>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</skeleton>
 				</li>
 			</graphicPaths>
@@ -184,14 +163,6 @@
 					<li>RK_Hair</li>
 				</hairTags>        
 			</hairSettings>
-
-			<thoughtSettings>
-				<cannotReceiveThoughts>
-					<li>EnvironmentDark</li>
-					<li>CabinFever</li>
-				</cannotReceiveThoughts>
-			</thoughtSettings>
-
 			<relationSettings>
 
 			</relationSettings>
@@ -224,6 +195,10 @@
 					<li>RK_FrillOnepiece</li>
 					<li>RK_HairCorsage</li>
 					<li>RK_RibbonHairBand</li>
+					<li>RK_SistersDerss</li>
+					<li>RK_SistersVeil</li>
+					<li>Apparel_ShieldBelt</li>
+					<li>SmokepopBelt</li>
 				</apparelList>
 				<weaponList>
 					<li>RK_Axe</li>
@@ -231,7 +206,7 @@
 					<li>RK_Hockey</li>
 					<li>RK_Fork</li>
 					<li>RK_LongSword</li>
-					
+
 					<li>RK_Crossbow</li>
 					<li>RK_EnhanceCrossBow</li>
 					<li>RK_AutoCrossBow</li>
@@ -242,10 +217,16 @@
 					<li>RK_PrototypeRUG</li>
 				</weaponList>
 			</raceRestriction>
+			<thoughtSettings>
+				<cannotReceiveThoughts>
+					<li>EnvironmentDark</li>
+					<li>CabinFever</li>
+				</cannotReceiveThoughts>
+			</thoughtSettings>
 		</alienRace>
 		<statBases>
 			<!-- 기본 -->
-			<MarketValue>1400</MarketValue>
+			<MarketValue>2000</MarketValue>
 			<Mass>50</Mass>
 			<MoveSpeed>4.85</MoveSpeed> 
 			<Flammability>1.0</Flammability>
@@ -256,8 +237,6 @@
 			<PainShockThreshold>0.7</PainShockThreshold>
 
 			<ToxicSensitivity>0.9</ToxicSensitivity>
-
-			<HungerRateMultiplier>1.05</HungerRateMultiplier>
 			<EatingSpeed>1.1</EatingSpeed>
 
 			<MeatAmount>35</MeatAmount>
@@ -265,16 +244,13 @@
 
 			<!-- 전투 -->
 			<MeleeDodgeChance>1.15</MeleeDodgeChance>
-			<MeleeHitChance>0.90</MeleeHitChance>
-			<MeleeArmorPenetration>-0.15</MeleeArmorPenetration>
-
-			<AimingDelayFactor>1.15</AimingDelayFactor>
+			<AimingDelayFactor>1.18</AimingDelayFactor>
 
 			<!-- 사회 -->
-			<SocialImpact>0.9</SocialImpact>		
+			<SocialImpact>0.85</SocialImpact>		
 
 			<!-- 작업 -->
-			<MiningSpeed>1.05</MiningSpeed>
+			<MiningSpeed>1.1</MiningSpeed>
 			<MiningYield>1.05</MiningYield>
 			<PlantWorkSpeed>1.10</PlantWorkSpeed>
 			<HuntingStealth>1.15</HuntingStealth>
@@ -312,7 +288,7 @@
 					<extraMeleeDamages>
 						<li>
 							<def>Scratch</def>
-							<amount>8</amount>
+							<amount>7</amount>
 						</li>
 					</extraMeleeDamages>
 				</surpriseAttack>
@@ -329,7 +305,7 @@
 					<extraMeleeDamages>
 						<li>
 							<def>Scratch</def>
-							<amount>8</amount>
+							<amount>7</amount>
 						</li>
 					</extraMeleeDamages>
 				</surpriseAttack>
@@ -390,15 +366,12 @@
 			</specialShadowData>
 			<ageGenerationCurve>
 				<points>
-					<li>(3,0)</li>
-					<li>(10,0)</li>
-					<li>(18,100)</li>
-					<li>(30,100)</li>
-					<li>(50,20)</li>
+					<li>(14,0)</li>
+					<li>(18,50)</li>
+					<li>(23,100)</li>
+					<li>(30,20)</li>
 					<li>(60,3)</li>
 					<li>(80,0)</li>
-					<li>(90,0)</li>
-					<li>(100,0)</li>
 				</points>
 			</ageGenerationCurve>
 			<hediffGiverSets>
@@ -420,6 +393,7 @@
 			<li>InstallSimpleProstheticArm</li>
 			<li>InstallSimpleProstheticLeg</li>
 			<li>InstallSimpleProstheticHeart</li>
+			<li>InstallFakeEar</li>
 			<li>InstallCochlearImplant</li>
 			<li>InstallPegLeg</li>
 			<li>InstallWoodenFoot</li>

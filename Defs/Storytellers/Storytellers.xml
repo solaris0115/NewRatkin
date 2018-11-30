@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<StorytellerDef ParentName="BaseStoryteller">
-		<defName>Retti</defName>
-		<label>Retti Rodent</label>
-		<description>Retti Rodent is generally generous but may occasionally throw mischievous hazards and hardships on your way! Think of her as a friendlier version of Randy Random!</description>
+		<defName>RottyMilden</defName>
+		<label>Rotty Milden</label>
+		<description>로티 마일던은 작은 장난들을 좋아하는 시골 소녀입니다.\n\n 그녀의 자잘한 장난들은 지루하지 않게 해주지만 가끔은 큰 사고도 저지릅니다.\n\n랜덤기반의 작은 이벤트가 자주 발생하는 대신 이벤트를 보다 적게 발생합니다.</description>
 		<portraitLarge>Storyteller/RK_STORY</portraitLarge>
 		<portraitTiny>Storyteller/RK_STORY_TINY</portraitTiny>
 		<listOrder>60</listOrder>
@@ -13,28 +13,28 @@
 				<allowedTargetTags>
 					<li>Map_PlayerHome</li>
 				</allowedTargetTags>
-				<minDaysPassed>0.6</minDaysPassed>
+				<minDaysPassed>1</minDaysPassed>
 				<mtbDays>1.00</mtbDays>
-				<maxThreatBigIntervalDays>9</maxThreatBigIntervalDays>
+				<maxThreatBigIntervalDays>10</maxThreatBigIntervalDays>
 				<minIncChancePopulationIntentFactor>0.2</minIncChancePopulationIntentFactor>
-				<randomPointsFactorRange>0.7~1.8</randomPointsFactorRange>
+				<randomPointsFactorRange>0.5~1.5</randomPointsFactorRange>
 				<skipThreatBigIfRaidBeacon>true</skipThreatBigIfRaidBeacon>
 				<categoryWeights>
-					<Misc>6.2</Misc>
-					<ThreatBig>1.5</ThreatBig>
-					<OrbitalVisitor>2.0</OrbitalVisitor>
-					<FactionArrival>0.4</FactionArrival>
+					<Misc>5</Misc>
+					<ThreatBig>0.8</ThreatBig>
+					<OrbitalVisitor>1.3</OrbitalVisitor>
+					<FactionArrival>1.5</FactionArrival>
 					<ThreatSmall>1.2</ThreatSmall>
-					<ShipChunkDrop>1.5</ShipChunkDrop>
+					<ShipChunkDrop>0.5</ShipChunkDrop>
 				</categoryWeights>
 			</li>
 			<li Class="StorytellerCompProperties_Disease">
 				<category>DiseaseHuman</category>
-				<minDaysPassed>0</minDaysPassed>
+				<minDaysPassed>4</minDaysPassed>
 			</li>
 			<li Class="StorytellerCompProperties_Disease">
 				<category>DiseaseAnimal</category>
-				<minDaysPassed>0</minDaysPassed>
+				<minDaysPassed>4</minDaysPassed>
 			</li>
 			<!-- Home special threats -->
 			<li Class="StorytellerCompProperties_OnOffCycle">
@@ -46,7 +46,7 @@
 				<offDays>0.5</offDays>
 				<minSpacingDays>0.04</minSpacingDays>
 				<applyRaidBeaconThreatMtbFactor>true</applyRaidBeaconThreatMtbFactor>
-				<numIncidentsRange>1~2</numIncidentsRange>
+				<numIncidentsRange>0.5~1.5</numIncidentsRange>
 			</li>
 			<!-- Ally/neutral interaction -->
 			<li Class="StorytellerCompProperties_FactionInteraction">
@@ -107,9 +107,27 @@
 			</li>
 			<!-- Triggered -->
 			<li Class="StorytellerCompProperties_Triggered">
-				<incident>StrangerInBlackJoin</incident>
+				<incident>RatkinVagabondJoin</incident>
 				<delayTicks>180</delayTicks>
 			</li>
 		</comps>
 	</StorytellerDef>
+
+	<IncidentDef>
+		<defName>RatkinVagabondJoin</defName>
+		<label>Vagabond</label>
+		<category>Special</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>IncidentWorker_WandererJoin</workerClass>
+		<letterLabel>Vagabond</letterLabel>
+		<letterText>피어오르는 연기를 본 [PAWN_kind]는 이곳으로 달려왔습니다.</letterText>
+		<baseChance>0</baseChance>
+		<minRefireDays>60</minRefireDays>
+		<minGreatestPopulation>3</minGreatestPopulation>
+		<pawnKind>RatkinVagabond</pawnKind>
+		<pawnFixedGender>Male</pawnFixedGender>
+		<pawnMustBeCapableOfViolence>true</pawnMustBeCapableOfViolence>
+	</IncidentDef>
 </Defs>

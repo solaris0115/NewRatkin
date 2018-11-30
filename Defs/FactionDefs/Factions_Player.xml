@@ -9,27 +9,23 @@
 
 	<FactionDef ParentName="RK_PlayerFactionBase">
 		<defName>RK_PlayerFaction</defName>
-		<label>New Arrivals</label>
-		<description>A Ratkin colony.</description>
+		<label>New Beginning</label>
+		<description>당신의 랫킨 정착지입니다. 각자의 사연과 운명이 이곳에 모이게 했습니다.</description>
 		<isPlayer>true</isPlayer>
 		<basicMemberKind>RatkinColonist</basicMemberKind>
 		<pawnSingular>Ratkin</pawnSingular>
 		<pawnsPlural>Ratkins</pawnsPlural>
-		<techLevel>Medieval</techLevel>
+		<techLevel>Industrial</techLevel>
 		<backstoryCategories>
-			<li>Civil</li>
+			<li>RatkinStory</li>
 		</backstoryCategories>
 		<expandingIconTexture>Icon/RK_icon</expandingIconTexture>
-		<!--요기-->
 		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
-		<!--요기-->
 		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
-		<!--요기-->
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
-		<!--요기-->
 		<geneticVariance>1</geneticVariance>
 		<startingResearchTags>
-			<li>TribalStart</li>
+			<li>RatkinStart</li>
 		</startingResearchTags>
 		<hairTags>
 			<li>RK_Hair</li>
@@ -41,7 +37,7 @@
 		</apparelStuffFilter>
 	</FactionDef>
 
-	<FactionDef ParentName="HumanFactionBase" Name="OutlanderFactionBase" Abstract="True">
+	<FactionDef ParentName="HumanFactionBase" Name="RatkinLandFactionBase" Abstract="True">
 		<pawnSingular>ratkin</pawnSingular>
 		<pawnsPlural>Ratkins</pawnsPlural>
 		<listOrderPriority>30</listOrderPriority>
@@ -52,19 +48,19 @@
 		<expandingIconTexture>Icon/RK_icon</expandingIconTexture>
 		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
-		<techLevel>Medieval</techLevel>
+		<techLevel>Industrial</techLevel>
 		<backstoryCategories>
-			<li>Civil</li>
+			<li>RatkinStory</li>
 		</backstoryCategories>
-		<geneticVariance>0.8</geneticVariance>
+		<geneticVariance>0.7</geneticVariance>
 		<hairTags>
 			<li>RK_Hair</li>
 		</hairTags>
 		<caravanTraderKinds>
-			<li>Caravan_Outlander_BulkGoods</li>
-			<li>Caravan_Outlander_CombatSupplier</li>
-			<li>Caravan_Outlander_Exotic</li>
-			<li>Caravan_Outlander_PirateMerchant</li>
+			<li>Caravan_Ratkin_BulkGoods</li>
+			<li>Caravan_Ratkin_DressMerchant</li>
+			<li>Caravan_Ratkin_CombatSupplier</li>
+			<li>Caravan_Ratkin_Free_company</li>
 		</caravanTraderKinds>
 		<visitorTraderKinds>
 			<li>Visitor_Outlander_Standard</li>
@@ -87,84 +83,107 @@
 		</maxPawnCostPerTotalPointsCurve>
 		<pawnGroupMakers>
 			<li>
-				<!-- Normal fights, standard mix -->
+				<!-- 원거리 전투병과 -->
 				<kindDef>Combat</kindDef>
+				<commonality>30</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+				</disallowedStrategies>
 				<options>
-					<Villager>5</Villager>
-					<Town_Guard>10</Town_Guard>
-					<Grenadier_Destructive>1.5</Grenadier_Destructive>
-					<Mercenary_Slasher>7</Mercenary_Slasher>
-					<Mercenary_Gunner>10</Mercenary_Gunner>
-					<Mercenary_Elite>10</Mercenary_Elite>
-					<Town_Councilman>10</Town_Councilman>
+					<RatkinCombatant>10</RatkinCombatant>
+					<RatkinSoldier>20</RatkinSoldier>
+					<RatkinEliteGuardener>8</RatkinEliteGuardener>
+					<RatkinNoble>1</RatkinNoble>
+				</options>
+			</li>
+			<li>
+				<!-- 근접과 공성 -->
+				<kindDef>Combat</kindDef>
+				<commonality>15</commonality>
+				<options>
+					<RatkinCombatant>10</RatkinCombatant>
+					<RatkinSoldier>15</RatkinSoldier>
+					<RatkinEliteGuardener>20</RatkinEliteGuardener>
+					<RatkinNoble>1</RatkinNoble>
+				</options>
+			</li>
+			<li>
+				<!-- 저격제대 -->
+				<kindDef>Combat</kindDef>
+				<commonality>10</commonality>
+				<options>
+					<RatkinSoldier>15</RatkinSoldier>
 				</options>
 			</li>
 			<li>
 				<kindDef>Peaceful</kindDef>
 				<options>
-					<Villager>20</Villager>
-					<Town_Guard>10</Town_Guard>
-					<Town_Councilman>10</Town_Councilman>
+					<RatkinNoble>2</RatkinNoble>
+					<RatkinColonist>5</RatkinColonist>
+					<RatkinServant>3</RatkinServant>
+					<RatkinSoldier>5</RatkinSoldier>
+					<RatkinEliteGuardener>8</RatkinEliteGuardener>
+					<RatkinPriest>1</RatkinPriest>
 				</options>
 			</li>
 			<li>
 				<kindDef>Trader</kindDef>
 				<traders>
-					<Town_Trader>1</Town_Trader>
+					<RatkinMerchant>1</RatkinMerchant>
 				</traders>
-				<carriers>
+				<carriers> 
 					<Muffalo>6</Muffalo>
 					<Dromedary>5</Dromedary>
 					<Alpaca>2</Alpaca>
 					<Elephant>1</Elephant>
 				</carriers>
 				<guards>
-					<Villager>3</Villager>
-					<Town_Guard>10</Town_Guard>
-					<Grenadier_Destructive>1.5</Grenadier_Destructive>
-					<Mercenary_Slasher>7</Mercenary_Slasher>
-					<Mercenary_Gunner>10</Mercenary_Gunner>
-					<Mercenary_Elite>10</Mercenary_Elite>
+					<RatkinCombatant>10</RatkinCombatant>
+					<RatkinMercenaryLight>10</RatkinMercenaryLight>
+					<RatkinSoldier>10</RatkinSoldier>
+					<RatkinEliteGuardener>8</RatkinEliteGuardener>
 				</guards>
 			</li>
 			<li>
 				<kindDef>Settlement</kindDef>
 				<options>
-					<Villager>10</Villager>
-					<Town_Guard>10</Town_Guard>
-					<Grenadier_Destructive>1.5</Grenadier_Destructive>
-					<Mercenary_Slasher>7</Mercenary_Slasher>
-					<Mercenary_Gunner>10</Mercenary_Gunner>
-					<Mercenary_Elite>10</Mercenary_Elite>
-					<Town_Councilman>10</Town_Councilman>
+					<RatkinNoble>1</RatkinNoble>
+					<RatkinColonist>10</RatkinColonist>
+					<RatkinServant>5</RatkinServant>
+					<RatkinCombatant>8</RatkinCombatant>
+					<RatkinEliteGuardener>5</RatkinEliteGuardener>
+					<RatkinPriest>1</RatkinPriest>
 				</options>
 			</li>
 		</pawnGroupMakers>
 		<homeIconPath>Icon/RK_icon</homeIconPath>
 	</FactionDef>
 
-	<FactionDef ParentName="OutlanderFactionBase">
+	<FactionDef ParentName="RatkinLandFactionBase">
 		<defName>Rakinia</defName>
 		<label>ratkin kingdom</label>
-		<description>These people have lived here for decades or centuries, and have lost most of the technology that brought them to this world. They usually work with simple machinery and defend themselves with advanced gunpowder weapons.\n\nThey are concerned with the practical matters of trade, trust, and survival.\n\nThis particular group holds civil behavior in high regard.</description>
+		<description>랫킨 왕국입니다. 인간들 눈에 띄지 않도록 숨어서 살고 있으며 농경생활을 위주로 생활하는 비 침략적인 종족입니다.</description>
 		<colorSpectrum>
-			<li>(0.35, 0.30, 0.60)</li>
-			<li>(0.45, 0.40, 0.90)</li>
+			<li>(0.45, 0.50, 0.30)</li>
+			<li>(0.65, 0.60, 0.20)</li>
 		</colorSpectrum>
 		<startingGoodwill>
-			<min>20</min>
-			<max>60</max>
+			<min>40</min>
+			<max>100</max>
 		</startingGoodwill>
 		<naturalColonyGoodwill>
 			<min>0</min>
-			<max>20</max>
+			<max>10</max>
 		</naturalColonyGoodwill>
 	</FactionDef>
 
-	<FactionDef ParentName="OutlanderFactionBase">
+	<FactionDef ParentName="RatkinLandFactionBase">
 		<defName>RatkinCaravan</defName>
 		<label>ratkin caravan union</label>
-		<description>These people have lived here for decades or centuries, and have lost most of the technology that brought them to this world. They usually work with simple machinery and defend themselves with advanced gunpowder weapons.\n\nThey are concerned with the practical matters of trade, trust, and survival.\n\nThis particular group has a streak of barbarity in them.</description>
+		<backstoryCategories>
+			<li>RatkinStory</li>
+		</backstoryCategories>
+		<description>랫킨 유랑단입니다. 방방곡곡을 유랑하며 거래를 하기도 하고 용병을 사고 팔기도 합니다.</description>
 		<colorSpectrum>
 			<li>(0.00, 0.30, 0.70)</li>
 			<li>(0.00, 0.40, 1.00)</li>
@@ -177,7 +196,27 @@
 			<min>0</min>
 			<max>100</max>
 		</naturalColonyGoodwill>
-		<hidden>true</hidden>
+		<hidden>true</hidden>		
+		<pawnGroupMakers>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<RatkinMerchant>1</RatkinMerchant>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2</Alpaca>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<RatkinColonist>3</RatkinColonist>
+					<RatkinNoble>1</RatkinNoble>
+					<RatkinMercenary>10</RatkinMercenary>
+					<RatkinSoldier>15</RatkinSoldier>
+				</guards>
+			</li>
+		</pawnGroupMakers>
 	</FactionDef>
 
 </Defs>
