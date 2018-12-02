@@ -126,7 +126,7 @@
 	<!-- 쟁기 수확속도 +5% 수확량 +15%-->
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>RK_Hockey</defName>
-		<label>hockey</label>
+		<label>hoe</label>
 		<description>밭을 갈때 쓰는 쟁기입니다. 땅을 파기 편합니다.</description>
 		<graphicData>
 			<texPath>Weapon/RK_Hockey</texPath>
@@ -485,7 +485,7 @@
 		<statBases>
 			<WorkToMake>7500</WorkToMake>
 			<Mass>0.8</Mass>
-			<AccuracyTouch>0.70</AccuracyTouch>
+			<AccuracyTouch>0.75</AccuracyTouch>
 			<AccuracyShort>0.70</AccuracyShort>
 			<AccuracyMedium>0.65</AccuracyMedium>
 			<AccuracyLong>0.50</AccuracyLong>
@@ -561,9 +561,9 @@
 			<WorkToMake>12000</WorkToMake>
 			<Mass>2</Mass>
 			<AccuracyTouch>0.65</AccuracyTouch>
-			<AccuracyShort>0.80</AccuracyShort>
-			<AccuracyMedium>0.85</AccuracyMedium>
-			<AccuracyLong>0.75</AccuracyLong>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.65</AccuracyLong>
 			<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
@@ -732,9 +732,9 @@
 			<WorkToMake>12000</WorkToMake>
 			<Mass>2</Mass>
 			<AccuracyTouch>0.65</AccuracyTouch>
-			<AccuracyShort>0.80</AccuracyShort>
-			<AccuracyMedium>0.85</AccuracyMedium>
-			<AccuracyLong>0.75</AccuracyLong>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.65</AccuracyLong>
 			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
@@ -826,7 +826,7 @@
 			<WorkToMake>12000</WorkToMake>
 			<Mass>2</Mass>
 			<AccuracyTouch>0.60</AccuracyTouch>
-			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyShort>0.65</AccuracyShort>
 			<AccuracyMedium>0.80</AccuracyMedium>
 			<AccuracyLong>0.80</AccuracyLong>
 			<RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
@@ -917,12 +917,13 @@
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
+			<MarketValue>2000</MarketValue>
 			<WorkToMake>40000</WorkToMake>
 			<Mass>3.5</Mass>
 			<AccuracyTouch>0.60</AccuracyTouch>
-			<AccuracyShort>0.75</AccuracyShort>
-			<AccuracyMedium>0.60</AccuracyMedium>
-			<AccuracyLong>0.75</AccuracyLong>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.45</AccuracyMedium>
+			<AccuracyLong>0.70</AccuracyLong>
 			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
@@ -936,7 +937,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_RK_PrototypePulseRifle</defaultProjectile>
 				<warmupTime>1.5</warmupTime>
-				<range>40</range>
+				<range>37</range>
 				<burstShotCount>2</burstShotCount>
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
 				<soundCast>PrototypePulse</soundCast>
@@ -948,6 +949,7 @@
 		<weaponTags Inherit="false">
 			<li>RK_4TierWeapon</li>
 			<li>RK_Weapon</li>
+			<li>RK_RangeWeapon</li>
 		</weaponTags>
 		<tradeTags>
 			<li>ExoticMisc</li>
@@ -971,7 +973,7 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
-		<tradeability>Buyable</tradeability>
+		<tradeability>All</tradeability>
 	</ThingDef>
 	<ThingDef ParentName="RK_BaseBullet">
 		<defName>Bullet_RK_PrototypePulseRifle</defName>

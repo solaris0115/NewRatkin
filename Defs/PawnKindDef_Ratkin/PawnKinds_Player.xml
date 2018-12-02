@@ -15,7 +15,7 @@
 		<defName>RatkinNoble</defName>
 		<label>ratkin noble</label>
 		<combatPower>35</combatPower>
-		<isFighter>false</isFighter>
+		<isFighter>true</isFighter>
 		<factionLeader>true</factionLeader>
 		<baseRecruitDifficulty>0.80</baseRecruitDifficulty>
 		<backstoryCategories>
@@ -51,6 +51,7 @@
 				</li>
 			</subOptionsChooseOne>
 		</inventoryOptions>
+		<trader>true</trader>
 	</PawnKindDef>
 	<!-- 일반시민 -->
 	<PawnKindDef ParentName="RKBasePawnKind">
@@ -91,7 +92,7 @@
 		<defName>RatkinCombatant</defName>
 		<label>ratkin combatant</label>
 		<combatPower>50</combatPower>
-		<isFighter>false</isFighter>
+		<isFighter>true</isFighter>
 		<backstoryCategories>
 			<li>RatkinCombatant</li>
 		</backstoryCategories>
@@ -117,6 +118,7 @@
 		<label>ratkin soldier</label>
 		<combatPower>55</combatPower>
 		<isFighter>true</isFighter>
+		<itemQuality>Excellent</itemQuality>
 		<backstoryCategories>
 			<li>RatkinSoldier</li>
 		</backstoryCategories>
@@ -140,6 +142,7 @@
 	<PawnKindDef ParentName="RKBasePawnKind">
 		<defName>RatkinSubject</defName>
 		<label>ratkin subject</label>
+		<baseRecruitDifficulty>0.55</baseRecruitDifficulty>
 		<backstoryCategories>
 			<li>RatkinSubject</li>
 		</backstoryCategories>
@@ -158,8 +161,8 @@
 			<max>200</max>
 		</apparelMoney>
 		<weaponMoney>
-			<min>1500</min>
-			<max>3500</max>
+			<min>4500</min>
+			<max>5000</max>
 		</weaponMoney>
 		<weaponTags>
 			<li>RK_4TierWeapon</li>
@@ -208,7 +211,7 @@
 	<PawnKindDef ParentName="RKBasePawnKind">
 		<defName>RatkinEliteGuardener</defName>
 		<label>ratkin EliteGuardener</label>
-		<baseRecruitDifficulty>0.80</baseRecruitDifficulty>
+		<baseRecruitDifficulty>0.95</baseRecruitDifficulty>
 		<combatPower>35</combatPower>
 		<isFighter>true</isFighter>
 		<itemQuality>Excellent</itemQuality>
@@ -216,8 +219,8 @@
 			<li>RatkinGuardener</li>
 		</backstoryCategories>
 		<apparelMoney>
-			<min>6000</min>
-			<max>6000</max>
+			<min>1500</min>
+			<max>3000</max>
 		</apparelMoney>
 		<weaponMoney>
 			<min>3000</min>
@@ -243,8 +246,8 @@
 			<li>RatkinPriest</li>
 		</backstoryCategories>
 		<apparelMoney>
-			<min>5000</min>
-			<max>5000</max>
+			<min>1200</min>
+			<max>3000</max>
 		</apparelMoney>
 		<apparelTags>
 			<li>RK_Priest</li>
@@ -284,6 +287,7 @@
 		<label>ratkin Murderer</label>
 		<combatPower>40</combatPower>
 		<isFighter>true</isFighter>
+		<aiAvoidCover>true</aiAvoidCover>
 		<backstoryCategories>
 			<li>RatkinMurderer</li>
 		</backstoryCategories>
@@ -363,7 +367,7 @@
 		<defName>RatkinMercenaryLight</defName>
 		<label>ratkin Mercenary</label>
 		<combatPower>35</combatPower>
-		<isFighter>true</isFighter>
+		<isFighter>false</isFighter>
 		<backstoryCategories>
 			<li>RatkinStory</li>
 		</backstoryCategories>

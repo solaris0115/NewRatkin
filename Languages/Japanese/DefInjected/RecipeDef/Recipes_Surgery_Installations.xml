@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <InstallFakeEar.label>install fake ear</InstallFakeEar.label>
+  <InstallFakeEar.description>Install a fake ear.</InstallFakeEar.description>
+  <InstallFakeEar.jobString>Installing fake ear.</InstallFakeEar.jobString>
+
+
+</LanguageData>

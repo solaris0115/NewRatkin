@@ -9,7 +9,8 @@
 				<maleGenderProbability>0.1</maleGenderProbability>
 				<useOnlyPawnkindBackstories>true</useOnlyPawnkindBackstories>
 				<immuneToAge>true</immuneToAge>
-				<canLayDown>true</canLayDown>
+				<canLayDown>true</canLayDown>   
+				<maxDamageForSocialfight>6</maxDamageForSocialfight>
 				<immuneToXenophobia>false</immuneToXenophobia>
 				<humanRecipeImport>true</humanRecipeImport>
 
@@ -247,7 +248,8 @@
 			<AimingDelayFactor>1.18</AimingDelayFactor>
 
 			<!-- 사회 -->
-			<SocialImpact>0.85</SocialImpact>		
+			<NegotiationAbility>0.85</NegotiationAbility>
+			<SocialImpact>1.07</SocialImpact>		
 
 			<!-- 작업 -->
 			<MiningSpeed>1.1</MiningSpeed>

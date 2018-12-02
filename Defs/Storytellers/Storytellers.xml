@@ -15,9 +15,9 @@
 				</allowedTargetTags>
 				<minDaysPassed>1</minDaysPassed>
 				<mtbDays>1.00</mtbDays>
-				<maxThreatBigIntervalDays>10</maxThreatBigIntervalDays>
+				<maxThreatBigIntervalDays>15</maxThreatBigIntervalDays>
 				<minIncChancePopulationIntentFactor>0.2</minIncChancePopulationIntentFactor>
-				<randomPointsFactorRange>0.5~1.5</randomPointsFactorRange>
+				<randomPointsFactorRange>0.5~2</randomPointsFactorRange>
 				<skipThreatBigIfRaidBeacon>true</skipThreatBigIfRaidBeacon>
 				<categoryWeights>
 					<Misc>5</Misc>
@@ -42,9 +42,9 @@
 				<allowedTargetTags>
 					<li>Map_RaidBeacon</li>
 				</allowedTargetTags>
+				<minDaysPassed>8.0</minDaysPassed>
 				<onDays>1.0</onDays>
 				<offDays>0.5</offDays>
-				<minSpacingDays>0.04</minSpacingDays>
 				<applyRaidBeaconThreatMtbFactor>true</applyRaidBeaconThreatMtbFactor>
 				<numIncidentsRange>0.5~1.5</numIncidentsRange>
 			</li>
@@ -109,6 +109,14 @@
 			<li Class="StorytellerCompProperties_Triggered">
 				<incident>RatkinVagabondJoin</incident>
 				<delayTicks>180</delayTicks>
+			</li>
+			<li Class="StorytellerCompProperties_FactionInteraction">
+				<incident>TraderCaravanArrival</incident>
+				<minDaysPassed>3</minDaysPassed>
+				<baseIncidentsPerYear>7</baseIncidentsPerYear>
+				<allowedTargetTags>
+					<li>Map_PlayerHome</li>
+				</allowedTargetTags>
 			</li>
 		</comps>
 	</StorytellerDef>

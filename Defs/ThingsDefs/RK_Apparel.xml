@@ -30,6 +30,14 @@
 				<compClass>CompQuality</compClass>
 			</li>
 		</comps>
+		<apparel>
+			<tags>
+				<li>RK_Apparel</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>RK_Apparel</li>
+		</tradeTags>
 	</ThingDef>
 	<ThingDef Class="NewRatkin.CustomThingDef" Name="RK_ApparelMakeableBase" ParentName="RK_ApparelBase" Abstract="True">
 		<recipeMaker>
@@ -644,7 +652,7 @@
 			<MedicalOperationSpeed>0.05</MedicalOperationSpeed>
 			<DrugCookingSpeed>0.05</DrugCookingSpeed>
 			<DrugSynthesisSpeed>0.05</DrugSynthesisSpeed>
-			<FoodPoisonChance>0.10</FoodPoisonChance>
+			<FoodPoisonChance>-0.50</FoodPoisonChance>
 			<CookSpeed>-0.15</CookSpeed>
 		</equippedStatOffsets>
 		<apparel>
@@ -781,6 +789,7 @@
 			<tags>
 				<li>RK_Explorer</li>
 				<li>RK_2Tier</li>
+				<li>RK_Combatant</li>
 			</tags>
 		</apparel>
 	</ThingDef>
@@ -928,7 +937,8 @@
 			<EquipDelay>0.8</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<FoodPoisonChance>0.12</FoodPoisonChance>
+			<CookSpeed>0.05</CookSpeed>
+			<FoodPoisonChance>-0.35</FoodPoisonChance>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
@@ -1169,9 +1179,10 @@
 			<EquipDelay>3</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<SocialImpact>0.05</SocialImpact>
-			<MeleeHitChance>0.05</MeleeHitChance>
-			<MentalBreakThreshold>0.05</MentalBreakThreshold>
+			<SocialImpact>-0.05</SocialImpact>
+			<NegotiationAbility>0.10</NegotiationAbility>
+			<MeleeDodgeChance>0.05</MeleeDodgeChance>
+			<MentalBreakThreshold>-0.05</MentalBreakThreshold>
 			<PainShockThreshold>0.1</PainShockThreshold>
 		</equippedStatOffsets>
 		<apparel>
@@ -1228,7 +1239,7 @@
 			<EquipDelay>1.5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<AimingDelayFactor>0.15</AimingDelayFactor>
+			<AimingDelayFactor>-0.15</AimingDelayFactor>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
@@ -1242,7 +1253,6 @@
 				<li>Worker</li>
 			</defaultOutfitTags>
 			<tags>
-				<li>RK_Ambassador</li>	
 				<li>RK_Soldier</li>
 				<li>RK_3Tier</li>
 				<li>RK_Combatant</li>
@@ -1401,7 +1411,8 @@
 			<EquipDelay>0.5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<SocialImpact>0.10</SocialImpact>
+			<SocialImpact>0.05</SocialImpact>
+			<NegotiationAbility>0.10</NegotiationAbility>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
@@ -1448,6 +1459,7 @@
 			<EquipDelay>0.5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
+			<SocialImpact>0.05</SocialImpact>
 			<TradePriceImprovement>0.10</TradePriceImprovement>
 		</equippedStatOffsets>
 		<apparel>
@@ -1583,7 +1595,7 @@
 
 
 	<!-- 번외 -->
-	<!-- 랫킨 귀 헤어밴드 사회적영향력 -5% -->
+	<!-- 랫킨 귀 헤어밴드 사회적영향력 +5% -->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
 		<defName>RK_EarCostume</defName>
 		<label>ratkin ear costume</label>
@@ -1612,7 +1624,7 @@
 			<EquipDelay>3</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<SocialImpact>-0.05</SocialImpact>
+			<SocialImpact>0.05</SocialImpact>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>

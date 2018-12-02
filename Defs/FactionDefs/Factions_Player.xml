@@ -93,7 +93,7 @@
 					<RatkinCombatant>10</RatkinCombatant>
 					<RatkinSoldier>20</RatkinSoldier>
 					<RatkinEliteGuardener>8</RatkinEliteGuardener>
-					<RatkinNoble>1</RatkinNoble>
+					<RatkinNoble>3</RatkinNoble>
 				</options>
 			</li>
 			<li>
@@ -102,9 +102,9 @@
 				<commonality>15</commonality>
 				<options>
 					<RatkinCombatant>10</RatkinCombatant>
-					<RatkinSoldier>15</RatkinSoldier>
+					<RatkinSoldier>10</RatkinSoldier>
 					<RatkinEliteGuardener>20</RatkinEliteGuardener>
-					<RatkinNoble>1</RatkinNoble>
+					<RatkinNoble>5</RatkinNoble>
 				</options>
 			</li>
 			<li>
@@ -112,24 +112,25 @@
 				<kindDef>Combat</kindDef>
 				<commonality>10</commonality>
 				<options>
-					<RatkinSoldier>15</RatkinSoldier>
+					<RatkinSoldier>10</RatkinSoldier>
 				</options>
 			</li>
 			<li>
 				<kindDef>Peaceful</kindDef>
 				<options>
-					<RatkinNoble>2</RatkinNoble>
+					<RatkinNoble>3</RatkinNoble>
 					<RatkinColonist>5</RatkinColonist>
-					<RatkinServant>3</RatkinServant>
-					<RatkinSoldier>5</RatkinSoldier>
-					<RatkinEliteGuardener>8</RatkinEliteGuardener>
-					<RatkinPriest>1</RatkinPriest>
+					<RatkinServant>5</RatkinServant>
+					<RatkinSoldier>4</RatkinSoldier>
+					<RatkinEliteGuardener>5</RatkinEliteGuardener>
+					<RatkinPriest>3</RatkinPriest>
 				</options>
 			</li>
 			<li>
 				<kindDef>Trader</kindDef>
 				<traders>
-					<RatkinMerchant>1</RatkinMerchant>
+					<RatkinMerchant>10</RatkinMerchant>
+					<RatkinNoble>4</RatkinNoble>
 				</traders>
 				<carriers> 
 					<Muffalo>6</Muffalo>
@@ -147,12 +148,12 @@
 			<li>
 				<kindDef>Settlement</kindDef>
 				<options>
-					<RatkinNoble>1</RatkinNoble>
-					<RatkinColonist>10</RatkinColonist>
-					<RatkinServant>5</RatkinServant>
-					<RatkinCombatant>8</RatkinCombatant>
-					<RatkinEliteGuardener>5</RatkinEliteGuardener>
-					<RatkinPriest>1</RatkinPriest>
+					<RatkinNoble>3</RatkinNoble>
+					<RatkinColonist>6</RatkinColonist>
+					<RatkinServant>8</RatkinServant>
+					<RatkinCombatant>5</RatkinCombatant>
+					<RatkinEliteGuardener>8</RatkinEliteGuardener>
+					<RatkinPriest>3</RatkinPriest>
 				</options>
 			</li>
 		</pawnGroupMakers>
