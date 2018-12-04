@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <RatkinVagabondJoin.label>Vagabond</RatkinVagabondJoin.label>
-  <RatkinVagabondJoin.letterText>피어오르는 연기를 본 [PAWN_kind]는 이곳으로 달려왔습니다.</RatkinVagabondJoin.letterText>
-  <RatkinVagabondJoin.letterLabel>Vagabond</RatkinVagabondJoin.letterLabel>
+  <RatkinVagabondJoin.label>바람을 타고온 방랑자</RatkinVagabondJoin.label>
+  <RatkinVagabondJoin.letterText>이상한 낌새를 느낀 [PAWN_kind]가 이곳으로 달려왔습니다.</RatkinVagabondJoin.letterText>
+  <RatkinVagabondJoin.letterLabel>방랑자</RatkinVagabondJoin.letterLabel>
 
 
 </LanguageData>

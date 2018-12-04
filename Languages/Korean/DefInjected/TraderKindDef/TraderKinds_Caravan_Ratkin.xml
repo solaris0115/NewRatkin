@@ -3,22 +3,22 @@
 
   <!-- 랫킨 물자상단! -->
 
-  <Caravan_Ratkin_BulkGoods.label>bulk goods trader</Caravan_Ratkin_BulkGoods.label>
+  <Caravan_Ratkin_BulkGoods.label>물자 상인</Caravan_Ratkin_BulkGoods.label>
 
 
   <!-- 랫킨 의류 상단! -->
 
-  <Caravan_Ratkin_DressMerchant.label>dress merchant</Caravan_Ratkin_DressMerchant.label>
+  <Caravan_Ratkin_DressMerchant.label>의류 상인</Caravan_Ratkin_DressMerchant.label>
 
 
   <!-- 랫킨 전투상단 -->
 
-  <Caravan_Ratkin_CombatSupplier.label>combat supplier</Caravan_Ratkin_CombatSupplier.label>
+  <Caravan_Ratkin_CombatSupplier.label>무기 판매자</Caravan_Ratkin_CombatSupplier.label>
 
 
   <!-- 랫킨 용병단 -->
 
-  <Caravan_Ratkin_Free_company.label>ratkin free company</Caravan_Ratkin_Free_company.label>
+  <Caravan_Ratkin_Free_company.label>랫킨 용병단</Caravan_Ratkin_Free_company.label>
 
 
 </LanguageData>

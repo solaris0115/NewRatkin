@@ -2,16 +2,16 @@
 <LanguageData>
 
   <MicroOptical.label>micro optical</MicroOptical.label>
-  <MicroOptical.description>인간의 광학장비를 모방하여 연구합니다. 시력이 나쁜 랫킨이 쓸 수 있도록 디자인을 다시해야합니다.</MicroOptical.description>
+  <MicroOptical.description>Imitate human optical equipment. Redesigned for use by Ratkin with poor vision.</MicroOptical.description>
 
   <FlechetteBullet.label>flechette bullet</FlechetteBullet.label>
-  <FlechetteBullet.description>랫킨 고유의 화살촉을 총알에 적용시킵니다. 랫킨식 플레셰트 탄환은 조금 무겁지만 두꺼운 장갑을 관통할 수 있도록 디자인되었습니다.</FlechetteBullet.description>
+  <FlechetteBullet.description>Apply Ratkin arrowheads to bullets. 랫킨식 플레셰트 탄환은 조금 무겁지만 두꺼운 장갑을 관통할 수 있도록 디자인되었습니다.</FlechetteBullet.description>
 
   <RatkinClothing.label>Ratkin clothing</RatkinClothing.label>
-  <RatkinClothing.description>랫킨이 입기 편리한 의류들을 고안해냅니다. 조금 더 다양한 의류를 생산할 수 있습니다.</RatkinClothing.description>
+  <RatkinClothing.description>Ratkin designs clothes that are easy to wear. Produces professional and convenient clothes.</RatkinClothing.description>
 
   <HighClassClothing.label>high class clothing</HighClassClothing.label>
-  <HighClassClothing.description>랫킨 사회의 고위직이 입는 의류들을 연구합니다. 더 고풍스럽고 질좋은 의류들을 생산할 수 있습니다.</HighClassClothing.description>
+  <HighClassClothing.description>Antique, enhanced clothing. Antique clothes for combat and diplomacy.</HighClassClothing.description>
 
 
 </LanguageData>

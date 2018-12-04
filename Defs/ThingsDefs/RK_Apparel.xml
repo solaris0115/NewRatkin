@@ -300,8 +300,8 @@
 			<StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.00</StuffEffectMultiplierInsulation_Heat>
-			<Insulation_Cold>6</Insulation_Cold>
-			<Insulation_Heat>-3</Insulation_Heat>
+			<Insulation_Cold>8</Insulation_Cold>
+			<Insulation_Heat>-4</Insulation_Heat>
 			<EquipDelay>1.5</EquipDelay>
 		</statBases>
 		<apparel>
@@ -1056,8 +1056,8 @@
 			<StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>1.2</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
-			<Insulation_Cold>5</Insulation_Cold>
-			<Insulation_Heat>-5</Insulation_Heat>
+			<Insulation_Cold>8</Insulation_Cold>
+			<Insulation_Heat>-6</Insulation_Heat>
 			<EquipDelay>2.5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>

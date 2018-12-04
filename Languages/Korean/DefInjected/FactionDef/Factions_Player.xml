@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <RK_PlayerFaction.label>New Beginning</RK_PlayerFaction.label>
+  <RK_PlayerFaction.label>새로운 시작</RK_PlayerFaction.label>
   <RK_PlayerFaction.description>당신의 랫킨 정착지입니다. 각자의 사연과 운명이 이곳에 모이게 했습니다.</RK_PlayerFaction.description>
-  <RK_PlayerFaction.pawnsPlural>Ratkins</RK_PlayerFaction.pawnsPlural>
+  <RK_PlayerFaction.pawnsPlural>랫킨들</RK_PlayerFaction.pawnsPlural>
 
-  <Rakinia.label>ratkin kingdom</Rakinia.label>
+  <Rakinia.label>랫킨 왕국</Rakinia.label>
   <Rakinia.description>랫킨 왕국입니다. 인간들 눈에 띄지 않도록 숨어서 살고 있으며 농경생활을 위주로 생활하는 비 침략적인 종족입니다.</Rakinia.description>
-  <Rakinia.pawnsPlural>Ratkins</Rakinia.pawnsPlural>
-  <Rakinia.leaderTitle>prime executor</Rakinia.leaderTitle>
+  <Rakinia.pawnsPlural>랫킨들</Rakinia.pawnsPlural>
+  <Rakinia.leaderTitle>집행관</Rakinia.leaderTitle>
 
-  <RatkinCaravan.label>ratkin caravan union</RatkinCaravan.label>
+  <RatkinCaravan.label>랫킨 유랑단</RatkinCaravan.label>
   <RatkinCaravan.description>랫킨 유랑단입니다. 방방곡곡을 유랑하며 거래를 하기도 하고 용병을 사고 팔기도 합니다.</RatkinCaravan.description>
-  <RatkinCaravan.pawnsPlural>Ratkins</RatkinCaravan.pawnsPlural>
-  <RatkinCaravan.leaderTitle>prime executor</RatkinCaravan.leaderTitle>
+  <RatkinCaravan.pawnsPlural>랫킨들</RatkinCaravan.pawnsPlural>
+  <RatkinCaravan.leaderTitle>단장</RatkinCaravan.leaderTitle>
 
 
 </LanguageData>

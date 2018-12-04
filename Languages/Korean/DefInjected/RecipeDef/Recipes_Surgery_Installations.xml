@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <InstallFakeEar.label>install fake ear</InstallFakeEar.label>
-  <InstallFakeEar.description>Install a fake ear.</InstallFakeEar.description>
-  <InstallFakeEar.jobString>Installing fake ear.</InstallFakeEar.jobString>
+  <InstallFakeEar.label>가짜 귀 설치</InstallFakeEar.label>
+  <InstallFakeEar.description>가짜 귀를 설치합니다.</InstallFakeEar.description>
+  <InstallFakeEar.jobString>가짜귀 설치중</InstallFakeEar.jobString>
 
 
 </LanguageData>

@@ -3,10 +3,10 @@
 
   <!-- 랫킨 귀 헤어밴드 사회적영향력 +5% -->
 
-  <InnerCoat.label>inner coat</InnerCoat.label>
-  <BackPack.label>backpack</BackPack.label>
-  <OuterClothing.label>outer clothing</OuterClothing.label>
-  <OnFace.label>onface</OnFace.label>
+  <InnerCoat.label>내피</InnerCoat.label>
+  <BackPack.label>가방</BackPack.label>
+  <OuterClothing.label>외투</OuterClothing.label>
+  <OnFace.label>얼굴</OnFace.label>
 
 
 </LanguageData>
