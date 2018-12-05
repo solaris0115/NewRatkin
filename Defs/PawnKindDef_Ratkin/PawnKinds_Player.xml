@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<PawnKindDef Name="RKBasePawnKind" Abstract="True">
 		<combatPower>20</combatPower>
 		<baseRecruitDifficulty>0.80</baseRecruitDifficulty>
 		<race>Ratkin</race>
 		<itemQuality>Normal</itemQuality>
-		<invNutrition>2</invNutrition>
 		<minGenerationAge>15</minGenerationAge>
 		<maxGenerationAge>35</maxGenerationAge>
 		<defaultFactionType>Rakinia</defaultFactionType>
+		<invNutrition>2</invNutrition>
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
 		<apparelColor>(255,255,255)</apparelColor>
 	</PawnKindDef>	
@@ -241,18 +241,6 @@
 			<li>RK_Gaurdener</li>
 		</apparelTags>
 		<apparelAllowHeadgearChance>0.0</apparelAllowHeadgearChance>
-		<inventoryOptions>
-			<skipChance>0.6</skipChance>
-			<subOptionsChooseOne>
-				<li>
-					<thingDef>MealFine</thingDef>
-					<countRange>
-						<min>1</min>
-						<max>1</max>
-					</countRange>
-				</li>
-			</subOptionsChooseOne>
-		</inventoryOptions>
 	</PawnKindDef>
 	<!-- 랫킨 사제 -->
 	<PawnKindDef ParentName="RKBasePawnKind">
