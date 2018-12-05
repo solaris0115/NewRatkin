@@ -142,12 +142,12 @@
 						</li>
 					</bodyAddons>
 				</alienPartGenerator>
-			
+
 				<disallowedTraits>
 					<li>AnnoyingVoice</li>
 					<li>CreepyBreathing</li>
 				</disallowedTraits>
-			
+
 			</generalSettings>
 
 			<graphicPaths>
@@ -198,9 +198,11 @@
 					<li>RK_RibbonHairBand</li>
 					<li>RK_SistersDerss</li>
 					<li>RK_SistersVeil</li>
-					<li>Apparel_ShieldBelt</li>
 					<li>SmokepopBelt</li>
 				</apparelList>
+				<whiteApparelList>
+					<li>Apparel_ShieldBelt</li>
+				</whiteApparelList>
 				<weaponList>
 					<li>RK_Axe</li>
 					<li>RK_Cleaver</li>

@@ -39,8 +39,8 @@
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>MedicineUltratech</thingDef>
-					<count>5</count>
+					<thingDef>MedicineIndustrial</thingDef>
+					<count>10</count>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>

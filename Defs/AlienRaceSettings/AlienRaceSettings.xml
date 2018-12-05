@@ -25,12 +25,6 @@
 					</kindDefs>
 					<chance>40.0</chance>
 				</li>
-				<li>
-					<kindDefs>
-						<li>RatkinCombatant</li>
-					</kindDefs>
-					<chance>60.0</chance>
-				</li>
 			</alienslavekinds>
 			<alienrefugeekinds>
 				<li>
