@@ -30,7 +30,7 @@
 		</apparelTags>
 		<apparelAllowHeadgearChance>0.3</apparelAllowHeadgearChance>
 	</PawnKindDef>
-	
+
 	<!-- 귀족 -->
 	<PawnKindDef ParentName="RKBasePawnKind">
 		<defName>RatkinNoble</defName>
@@ -257,7 +257,10 @@
 		</apparelMoney>
 		<apparelTags>
 			<li>RK_Priest</li>
-		</apparelTags>		
+		</apparelTags>
+		<apparelRequired>
+			<li>RK_SistersVeil</li>
+		</apparelRequired>		
 	</PawnKindDef>
 	<!-- 랫킨 상단 -->	
 	<PawnKindDef ParentName="RKBasePawnKind">
@@ -362,7 +365,7 @@
 			</subOptionsChooseOne>
 		</inventoryOptions>
 	</PawnKindDef>
-	
+
 	<PawnKindDef ParentName="RKBasePawnKind">
 		<defName>RatkinMercenaryLight</defName>
 		<label>ratkin Mercenary</label>

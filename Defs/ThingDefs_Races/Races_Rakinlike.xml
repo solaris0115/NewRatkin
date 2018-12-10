@@ -198,10 +198,10 @@
 					<li>RK_RibbonHairBand</li>
 					<li>RK_SistersDerss</li>
 					<li>RK_SistersVeil</li>
-					<li>SmokepopBelt</li>
 				</apparelList>
 				<whiteApparelList>
 					<li>Apparel_ShieldBelt</li>
+					<li>SmokepopBelt</li>
 				</whiteApparelList>
 				<weaponList>
 					<li>RK_Axe</li>
@@ -209,7 +209,6 @@
 					<li>RK_Hockey</li>
 					<li>RK_Fork</li>
 					<li>RK_LongSword</li>
-
 					<li>RK_Crossbow</li>
 					<li>RK_EnhanceCrossBow</li>
 					<li>RK_AutoCrossBow</li>
@@ -387,6 +386,7 @@
 			<li>InstallArchotechArm</li>
 			<li>InstallArchotechLeg</li>
 			<li>InstallPowerClaw</li>
+			<li>InstallBionicTail</li>
 			<li>InstallBionicEye</li>
 			<li>InstallBionicArm</li>
 			<li>InstallBionicLeg</li>
@@ -398,6 +398,7 @@
 			<li>InstallSimpleProstheticLeg</li>
 			<li>InstallSimpleProstheticHeart</li>
 			<li>InstallFakeEar</li>
+			<li>InstallFakeTail</li>
 			<li>InstallCochlearImplant</li>
 			<li>InstallPegLeg</li>
 			<li>InstallWoodenFoot</li>

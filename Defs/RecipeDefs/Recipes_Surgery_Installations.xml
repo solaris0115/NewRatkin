@@ -31,4 +31,79 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>FakeEar</addsHediff>
 	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>InstallFakeTail</defName>
+		<label>install fake tail</label>
+		<description>Install a fake tail.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing fake tail.</jobString>
+		<workAmount>2000</workAmount>
+		<skillRequirements>
+			<Medicine>3</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>FakeRatkinTail</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>FakeRatkinTail</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>RK_RatTail</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>FakeTail</addsHediff>
+	</RecipeDef>
+
+	
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>InstallBionicTail</defName>
+		<label>install bionic tail</label>
+		<description>Install a bionic tail.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing bionic tail.</jobString>
+		<workAmount>2000</workAmount>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicTail</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>BionicTail</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>RK_RatTail</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicTail</addsHediff>
+	</RecipeDef>
+	
 </Defs>
