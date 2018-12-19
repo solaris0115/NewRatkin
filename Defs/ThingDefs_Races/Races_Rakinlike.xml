@@ -62,7 +62,7 @@
 								</north>
 								<east>
 									<bodyTypes>
-										<Thin>(0.05,-0.2)</Thin>
+										<Thin>(0.02,-0.2)</Thin>
 									</bodyTypes>
 								</east>
 							</offsets>

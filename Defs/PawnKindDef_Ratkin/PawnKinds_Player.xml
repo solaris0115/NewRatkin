@@ -28,7 +28,7 @@
 		<apparelTags>
 			<li>RK_Worker</li>
 		</apparelTags>
-		<apparelAllowHeadgearChance>0.3</apparelAllowHeadgearChance>
+		<apparelAllowHeadgearChance>0.0</apparelAllowHeadgearChance>
 	</PawnKindDef>
 
 	<!-- 귀족 -->
