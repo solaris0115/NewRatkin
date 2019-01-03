@@ -24,7 +24,7 @@
 					<alienbodytypes>
 						<li>Thin</li>
 					</alienbodytypes>
-					<headOffset>(0.0, -0.06)</headOffset>	
+					<headOffset>(0.0, -0.09)</headOffset>	
 					<!-- 성별 별개사용 유무 -->
 					<useGenderedHeads>false</useGenderedHeads>
 					<useGenderedBodies>false</useGenderedBodies>

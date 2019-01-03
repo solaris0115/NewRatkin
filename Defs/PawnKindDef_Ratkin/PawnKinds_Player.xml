@@ -9,6 +9,7 @@
 		<maxGenerationAge>35</maxGenerationAge>
 		<defaultFactionType>Rakinia</defaultFactionType>
 		<invNutrition>2</invNutrition>
+		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
 		<apparelColor>(255,255,255)</apparelColor>
 	</PawnKindDef>	

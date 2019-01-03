@@ -70,7 +70,7 @@
 		</baseTraderKinds>
 		<allowedArrivalTemperatureRange>
 			<min>-70</min>
-			<max>50</max>
+			<max>45</max>
 		</allowedArrivalTemperatureRange>
 		<maxPawnCostPerTotalPointsCurve>
 			<points>
