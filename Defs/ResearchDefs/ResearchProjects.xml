@@ -5,7 +5,37 @@
 		<defName>RatkinTech</defName>
 		<label>ratkin tech</label>
 	</ResearchTabDef>
+
+	<ResearchProjectDef>
+		<defName>Ballista</defName>
+		<label>ballista</label>
+		<description>커다란 노포를 연구합니다. 체구가 작은 랫킨도 다루기 쉽습니다.</description>
+		<tab>RatkinTech</tab>
+		<baseCost>600</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>Greatbow</li>
+			<li>Stonecutting</li>
+		</prerequisites>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>	
 	
+	<ResearchProjectDef>
+		<defName>Advanced_BallistaBolt</defName>
+		<label>advanced ballista bolt</label>
+		<description>더 다양한 발리스타용 탄환을 연구합니다.</description>
+		<tab>RatkinTech</tab>
+		<baseCost>600</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>Greatbow</li>
+			<li>Stonecutting</li>
+		</prerequisites> 
+		<researchViewX>1</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>	
+		
 	<ResearchProjectDef>
 		<defName>MicroOptical</defName>
 		<label>micro optical</label>
@@ -17,8 +47,8 @@
 			<li>MicroelectronicsBasics</li>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>   
-		<researchViewX>0</researchViewX>
-		<researchViewY>0</researchViewY>
+		<researchViewX>1</researchViewX>
+		<researchViewY>1</researchViewY>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -32,8 +62,8 @@
 			<li>MicroOptical</li>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>   
-		<researchViewX>1</researchViewX>
-		<researchViewY>0</researchViewY>
+		<researchViewX>2</researchViewX>
+		<researchViewY>1</researchViewY>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -60,8 +90,8 @@
 		<prerequisites>
 			<li>RatkinClothing</li>
 		</prerequisites>
-		<researchViewX>1</researchViewX>
-		<researchViewY>1</researchViewY>
+		<researchViewX>0</researchViewX>
+		<researchViewY>2</researchViewY>
 	</ResearchProjectDef>
 	
 	<ResearchProjectTagDef>
