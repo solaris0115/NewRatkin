@@ -1,11 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <Ballista.label>ballista</Ballista.label>
+  <Ballista.description>Researching a ballista. RAtkin are made for easy handling.</Ballista.description>
+
+  <Advanced_BallistaBolt.label>advanced ballista bolt</Advanced_BallistaBolt.label>
+  <Advanced_BallistaBolt.description>Researching a variety of ballista bolts.</Advanced_BallistaBolt.description>
+
   <MicroOptical.label>micro optical</MicroOptical.label>
   <MicroOptical.description>Imitate human optical equipment. Redesigned for use by Ratkin with poor vision.</MicroOptical.description>
 
   <FlechetteBullet.label>flechette bullet</FlechetteBullet.label>
-  <FlechetteBullet.description>Apply Ratkin arrowheads to bullets. 랫킨식 플레셰트 탄환은 조금 무겁지만 두꺼운 장갑을 관통할 수 있도록 디자인되었습니다.</FlechetteBullet.description>
+  <FlechetteBullet.description>Apply Ratkin arrowheads to bullets. The Ratkin style placelet bullet is a little heavy but designed to penetrate armor.</FlechetteBullet.description>
 
   <RatkinClothing.label>Ratkin clothing</RatkinClothing.label>
   <RatkinClothing.description>Ratkin designs clothes that are easy to wear. Produces professional and convenient clothes.</RatkinClothing.description>
