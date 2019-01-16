@@ -227,8 +227,8 @@ namespace NewRatkin
             {
                 return false;
             }
-            float num = Mathf.Lerp(0.8f, 1, VerbUtility.InterceptChanceFactorFromDistance(origin, c));
-            Log.Message("Chance Intercept : " + num.ToString());
+            float num = Mathf.Lerp(0.6f, 1, VerbUtility.InterceptChanceFactorFromDistance(origin, c));
+            //Log.Message("Chance Intercept : " + num.ToString());
             if (num <= 0f)
             {
                 return false;
@@ -264,7 +264,7 @@ namespace NewRatkin
                         }
                         if (launcher != null && pawn.Faction != null && launcher.Faction != null && !pawn.Faction.HostileTo(launcher.Faction))
                         {
-                            num2 *= 0.9f;
+                            num2 *= 0.8f;
                         }
                     }
                     else if (thing.def.fillPercent > 0.2f)
@@ -485,7 +485,7 @@ namespace NewRatkin
                     MoteMaker.MakeWaterSplash(ExactPosition, map, Mathf.Sqrt(DamageAmount) * 1f, 4f);
                 }
             }
-            if (currentPenetrationCount <= ((ProjectileProperties_BallistaBoltAP)def.projectile).maxPenetrationCount)
+            if (currentPenetrationCount < ((ProjectileProperties_BallistaBoltAP)def.projectile).maxPenetrationCount)
             {
                 if (hitThing != null && hitThing.def.category == ThingCategory.Building || ticksToImpact <= 0)
                 {

@@ -29,7 +29,7 @@
 		<baseCost>600</baseCost>
 		<techLevel>Medieval</techLevel>
 		<prerequisites>
-			<li>Machining</li>
+			<li>Ballista</li>
 		</prerequisites> 
 		<researchViewX>1</researchViewX>
 		<researchViewY>0</researchViewY>
@@ -38,7 +38,7 @@
 	<ResearchProjectDef>
 		<defName>MicroOptical</defName>
 		<label>micro optical</label>
-		<description>인간의 광학장비를 모방하여 연구합니다. 시력이 나쁜 랫킨이 쓸 수 있도록 디자인을 다시해야합니다.</description>
+		<description>인간의 광학장비를 모방하여 연구합니다. 시력이 나쁜 랫킨이 쓸 수 있도록 디자인을 다시해야합니다. 연구용 안경이 필요합니다.</description>
 		<tab>RatkinTech</tab>
 		<baseCost>600</baseCost>
 		<techLevel>Industrial</techLevel>
@@ -53,7 +53,7 @@
 	<ResearchProjectDef>
 		<defName>FlechetteBullet</defName>
 		<label>flechette bullet</label>
-		<description>랫킨 고유의 화살촉을 총알에 적용시킵니다. 랫킨식 플레셰트 탄환은 조금 무겁지만 두꺼운 장갑을 관통할 수 있도록 디자인되었습니다.</description>
+		<description>랫킨 고유의 화살촉을 총알에 적용시킵니다. 랫킨식 플레셰트 탄환은 조금 무겁지만 두꺼운 장갑을 관통할 수 있도록 디자인되었습니다. 연구용 안경이 필요합니다.</description>
 		<tab>RatkinTech</tab>
 		<baseCost>1200</baseCost>
 		<techLevel>Industrial</techLevel>
@@ -82,7 +82,7 @@
 	<ResearchProjectDef>
 		<defName>HighClassClothing</defName>
 		<label>high class clothing</label>
-		<description>랫킨 사회의 고위직이 입는 의류들을 연구합니다. 더 고풍스럽고 질좋은 의류들을 생산할 수 있습니다.</description>
+		<description>랫킨 사회의 고위직이 입는 의류들을 연구합니다. 더 고풍스럽고 질좋은 의류들을 생산할 수 있습니다. 연구용 안경이 필요합니다.</description>
 		<tab>RatkinTech</tab>
 		<baseCost>1200</baseCost>
 		<techLevel>Industrial</techLevel>

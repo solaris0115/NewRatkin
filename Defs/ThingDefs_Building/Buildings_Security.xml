@@ -93,9 +93,9 @@
 		<statBases>
 			<Mass>40</Mass>
 			<AccuracyTouch>0.9</AccuracyTouch>
-			<AccuracyShort>0.85</AccuracyShort>
-			<AccuracyMedium>0.8</AccuracyMedium>
-			<AccuracyLong>0.75</AccuracyLong>
+			<AccuracyShort>0.8</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.7</AccuracyLong>
 			<RangedWeapon_Cooldown>10</RangedWeapon_Cooldown>
 		</statBases>
 		<weaponTags>
@@ -263,7 +263,7 @@
 		<projectile Class="NewRatkin.ProjectileProperties_BallistaBoltAP">
 			<shockWaveDef>ShockWaveLight</shockWaveDef>
 			<maxPenetrationCount>2</maxPenetrationCount>
-			<damageReduceRate>0.2</damageReduceRate>
+			<damageReduceRate>0.4</damageReduceRate>
 			<damageDef>RangedStab</damageDef>
 			<damageAmountBase>40</damageAmountBase>
 			<armorPenetrationBase>0.40</armorPenetrationBase>
