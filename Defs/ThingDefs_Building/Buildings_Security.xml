@@ -35,7 +35,7 @@
 		<tickerType>Normal</tickerType>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<designationCategory>Security</designationCategory>
-		<costStuffCount>120</costStuffCount>
+		<costStuffCount>240</costStuffCount>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 		<costList>
 			<Steel>80</Steel>
@@ -63,7 +63,7 @@
 			<RangedWeapon_Cooldown>0.1</RangedWeapon_Cooldown>
 		</statBases>
 		<building>
-			<turretBurstWarmupTime>3.0</turretBurstWarmupTime>
+			<turretBurstWarmupTime>4.0</turretBurstWarmupTime>
 			<turretBurstCooldownTime>10.0</turretBurstCooldownTime>
 			<buildingTags>
 				<li>RK_Artillery</li>
@@ -93,10 +93,10 @@
 		<statBases>
 			<Mass>40</Mass>
 			<AccuracyTouch>0.9</AccuracyTouch>
-			<AccuracyShort>0.8</AccuracyShort>
-			<AccuracyMedium>0.75</AccuracyMedium>
-			<AccuracyLong>0.70</AccuracyLong>
-			<RangedWeapon_Cooldown>0.1</RangedWeapon_Cooldown>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.8</AccuracyMedium>
+			<AccuracyLong>0.75</AccuracyLong>
+			<RangedWeapon_Cooldown>10</RangedWeapon_Cooldown>
 		</statBases>
 		<weaponTags>
 			<li>RK_Artillery</li>
@@ -290,8 +290,8 @@
 		</graphicData>
 		<projectileWhenLoaded>Bullet_BallistaBolt_HE</projectileWhenLoaded>
 		<costList>
-			<Steel>30</Steel>
-			<WoodLog>10</WoodLog>
+			<Steel>40</Steel>
+			<WoodLog>20</WoodLog>
 		</costList>		
 		<recipeMaker>
 			<researchPrerequisite>Advanced_BallistaBolt</researchPrerequisite>
@@ -337,8 +337,8 @@
 		</graphicData>
 		<projectileWhenLoaded>Bullet_BallistaBolt_AP</projectileWhenLoaded>
 		<costList>
-			<Steel>25</Steel>
-			<WoodLog>15</WoodLog>
+			<Steel>30</Steel>
+			<WoodLog>30</WoodLog>
 		</costList>
 		<recipeMaker>
 			<researchPrerequisite>Advanced_BallistaBolt</researchPrerequisite>
@@ -357,8 +357,8 @@
 		<thingClass>NewRatkin.Projectile_BallistaBoltAP</thingClass>
 		<projectile Class="NewRatkin.ProjectileProperties_BallistaBoltAP">
 			<shockWaveDef>ShockWaveLight</shockWaveDef>
-			<maxPenetrationCount>4</maxPenetrationCount>
-			<damageReduceRate>0.1</damageReduceRate>
+			<maxPenetrationCount>5</maxPenetrationCount>
+			<damageReduceRate>0.2</damageReduceRate>
 			<damageDef>RangedStab</damageDef>
 			<damageAmountBase>35</damageAmountBase>
 			<armorPenetrationBase>0.70</armorPenetrationBase>
@@ -414,10 +414,10 @@
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
 		<impactSoundType>Blunt</impactSoundType>
 		<armorCategory>Blunt</armorCategory>
-		<minDamageToFragment>2</minDamageToFragment>
+		<minDamageToFragment>4</minDamageToFragment>
 		<defaultDamage>20</defaultDamage>
 		<defaultStoppingPower>4</defaultStoppingPower>
-		<defaultArmorPenetration>0.10</defaultArmorPenetration>
+		<defaultArmorPenetration>0.30</defaultArmorPenetration>
 		<buildingDamageFactor>4</buildingDamageFactor>
 		<plantDamageFactor>4</plantDamageFactor>
 		<explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>

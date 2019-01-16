@@ -29,8 +29,7 @@
 		<baseCost>600</baseCost>
 		<techLevel>Medieval</techLevel>
 		<prerequisites>
-			<li>Greatbow</li>
-			<li>Stonecutting</li>
+			<li>Machining</li>
 		</prerequisites> 
 		<researchViewX>1</researchViewX>
 		<researchViewY>0</researchViewY>

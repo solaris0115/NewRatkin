@@ -218,6 +218,48 @@
 					<li>RK_FlechetteSniperRifle</li>
 					<li>RK_PrototypeRUG</li>
 				</weaponList>
+				<researchList>
+					<li>
+						<projects>
+							<li>Ballista</li>
+						</projects>
+					</li>
+					<li>
+						<projects>
+							<li>Advanced_BallistaBolt</li>
+						</projects>
+					</li>
+					<li>
+						<projects>
+							<li>MicroOptical</li>
+						</projects>
+						<apparelList>
+							<li>RK_ResearchGlasses</li>
+						</apparelList>
+					</li>
+					<li>
+						<projects>
+							<li>FlechetteBullet</li>
+						</projects>
+						<apparelList>
+							<li>RK_ResearchGown</li>
+							<li>RK_ResearchGlasses</li>
+						</apparelList>
+					</li>
+					<li>
+						<projects>
+							<li>RatkinClothing</li>
+						</projects>
+					</li>
+					<li>
+						<projects>
+							<li>HighClassClothing</li>
+						</projects>
+						<apparelList>
+							<li>RK_ResearchGlasses</li>
+						</apparelList>
+					</li>
+				</researchList>
 			</raceRestriction>
 			<thoughtSettings>
 				<cannotReceiveThoughts>
@@ -225,6 +267,7 @@
 					<li>CabinFever</li>
 				</cannotReceiveThoughts>
 			</thoughtSettings>
+
 		</alienRace>
 		<statBases>
 			<!-- 기본 -->
