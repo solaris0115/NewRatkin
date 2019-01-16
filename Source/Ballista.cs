@@ -227,7 +227,7 @@ namespace NewRatkin
             {
                 return false;
             }
-            float num = Mathf.Lerp(0.6f, 1, VerbUtility.InterceptChanceFactorFromDistance(origin, c));
+            float num = Mathf.Lerp(0.8f, 1, VerbUtility.InterceptChanceFactorFromDistance(origin, c));
             //Log.Message("Chance Intercept : " + num.ToString());
             if (num <= 0f)
             {
