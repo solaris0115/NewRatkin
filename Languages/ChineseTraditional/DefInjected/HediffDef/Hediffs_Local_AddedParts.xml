@@ -4,5 +4,11 @@
   <FakeEar.label>fake ear</FakeEar.label>
   <FakeEar.labelNoun>a fake ear</FakeEar.labelNoun>
 
+  <BionicTail.label>bionic tail</BionicTail.label>
+  <BionicTail.labelNoun>a bionic tail</BionicTail.labelNoun>
+
+  <FakeTail.label>fake tail</FakeTail.label>
+  <FakeTail.labelNoun>a fake tail</FakeTail.labelNoun>
+
 
 </LanguageData>

@@ -1,16 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <!-- 귀족 -->
-
-  <RatkinNoble.label>ratkin noble</RatkinNoble.label>
-  <RatkinNoble.labelPlural>ratkin nobles</RatkinNoble.labelPlural>
-  <RatkinNoble.labelMale>male ratkin noble</RatkinNoble.labelMale>
-  <RatkinNoble.labelMalePlural>male ratkin nobles</RatkinNoble.labelMalePlural>
-  <RatkinNoble.labelFemale>female ratkin noble</RatkinNoble.labelFemale>
-  <RatkinNoble.labelFemalePlural>female ratkin nobles</RatkinNoble.labelFemalePlural>
-
-
   <!-- 일반시민 -->
 
   <RatkinColonist.label>ratkin colonist</RatkinColonist.label>
@@ -19,6 +9,16 @@
   <RatkinColonist.labelMalePlural>male ratkin colonists</RatkinColonist.labelMalePlural>
   <RatkinColonist.labelFemale>female ratkin colonist</RatkinColonist.labelFemale>
   <RatkinColonist.labelFemalePlural>female ratkin colonists</RatkinColonist.labelFemalePlural>
+
+
+  <!-- 귀족 -->
+
+  <RatkinNoble.label>ratkin noble</RatkinNoble.label>
+  <RatkinNoble.labelPlural>ratkin nobles</RatkinNoble.labelPlural>
+  <RatkinNoble.labelMale>male ratkin noble</RatkinNoble.labelMale>
+  <RatkinNoble.labelMalePlural>male ratkin nobles</RatkinNoble.labelMalePlural>
+  <RatkinNoble.labelFemale>female ratkin noble</RatkinNoble.labelFemale>
+  <RatkinNoble.labelFemalePlural>female ratkin nobles</RatkinNoble.labelFemalePlural>
 
 
   <!-- 하인 -->
