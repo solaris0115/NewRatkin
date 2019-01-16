@@ -132,8 +132,7 @@
 	<ThingDef ParentName="RK_BaseArtilleryBuilding">
 		<defName>RK_Ballista_Strait_Body</defName>
 		<label>ballista</label>
-		<description>큰 화살을 발사하는 노포. 맞으면 끔살당함.</description>
-		<designationHotKey>Misc4</designationHotKey>
+		<description>It is a machine that fires large arrows. It is designed to be easy to operate by Ratkin.</description>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<building>
 			<turretGunDef>RK_Turret_Ballista_Strait</turretGunDef>
@@ -148,8 +147,8 @@
 
 	<ThingDef ParentName="RK_BaseArtilleryWeapon">
 		<defName>RK_Turret_Ballista_Strait</defName>
-		<label>mortar</label>
-		<description>Mortar launcher. Lobs bombs over walls. Very inaccurate but long-ranged.</description>
+		<label>ballista</label>
+		<description>ballista bolt launcher. accurate and long-ranged.</description>
 		<weaponTags>
 			<li>Ratkin_Artillery</li>
 		</weaponTags>
@@ -236,7 +235,7 @@
 	<ThingDef ParentName="RK_MakeableBallistaBoltBase">
 		<defName>BallistaBolt_Normal</defName>
 		<label>ballista bolt (normal)</label>
-		<description>일반탄 맞으면 주금</description>
+		<description>It is a ballista bolt. It will be hard to survive if hit by this big arrow.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/Ballista_Bolt_Normal</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -270,7 +269,7 @@
 			<armorPenetrationBase>0.40</armorPenetrationBase>
 			<stoppingPower>3</stoppingPower>
 			<speed>51</speed>
-			<explosionRadius>1</explosionRadius>
+			<explosionRadius>1.7</explosionRadius>
 			<alwaysFreeIntercept>true</alwaysFreeIntercept>
 			<flyOverhead>false</flyOverhead>
 			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
@@ -284,7 +283,7 @@
 	<ThingDef ParentName="RK_MakeableBallistaBoltBase">
 		<defName>BallistaBolt_Heavy</defName>
 		<label>ballista bolt (HE)</label>
-		<description>일반탄 맞으면 주금</description>
+		<description>It is a heavy ballista bolt. Increased the weight to increase impact.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/Ballista_Bolt_HE</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -331,7 +330,7 @@
 	<ThingDef ParentName="RK_MakeableBallistaBoltBase">
 		<defName>BallistaBolt_AP</defName>
 		<label>ballista bolt (AP)</label>
-		<description>일반탄 맞으면 주금</description>
+		<description>The ballistic bolt has high penetration. It can penetrate multiple target in firing lines.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/Ballista_Bolt_AP</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -365,7 +364,7 @@
 			<armorPenetrationBase>0.70</armorPenetrationBase>
 			<stoppingPower>3</stoppingPower>
 			<speed>70</speed>
-			<explosionRadius>1.5</explosionRadius>
+			<explosionRadius>1</explosionRadius>
 			<alwaysFreeIntercept>true</alwaysFreeIntercept>
 			<flyOverhead>false</flyOverhead>
 			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
