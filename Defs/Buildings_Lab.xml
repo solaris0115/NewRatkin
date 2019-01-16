@@ -82,7 +82,7 @@
 	<ThingDef Name="RK_BaseArtilleryWeapon" Abstract="True">
 		<category>Item</category>
 		<thingClass>ThingWithComps</thingClass>
-		<label>artillery error</label>
+		<label>ballista error</label>
 		<useHitPoints>false</useHitPoints>
 		<equipmentType>Primary</equipmentType>
 		<tickerType>Never</tickerType>
@@ -176,9 +176,9 @@
 	<!--================ 발리스타 탄 기본 ================-->
 	<ThingCategoryDef>
 		<defName>BallistaBolt</defName>
-		<label>ballista arrow</label>
+		<label>ballista bolt</label>
 		<parent>Manufactured</parent>
-		<iconPath>UI/Icons/ThingCategories/MortarShells</iconPath>
+		<iconPath>UI/Icons/BallistaBolt</iconPath>
 	</ThingCategoryDef>
 
 	<ThingDef Name="BallistaBoltBase" ParentName="ResourceBase" Abstract="True">
@@ -219,7 +219,7 @@
 			</skillRequirements>
 		</recipeMaker>
 	</ThingDef>
-	<ThingDef Name="BaseBullet" Abstract="True">
+	<ThingDef Name="BaseBolt" Abstract="True">
 		<category>Projectile</category>
 		<tickerType>Normal</tickerType>
 		<altitudeLayer>Projectile</altitudeLayer>
@@ -235,7 +235,7 @@
 	<!--================ 발리스타 탄 (일반) ================-->
 	<ThingDef ParentName="RK_MakeableBallistaBoltBase">
 		<defName>BallistaBolt_Normal</defName>
-		<label>ballista arrow (normal)</label>
+		<label>ballista bolt (normal)</label>
 		<description>일반탄 맞으면 주금</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/Ballista_Bolt_Normal</texPath>
@@ -251,9 +251,9 @@
 		</recipeMaker>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="BaseBolt">
 		<defName>Bullet_BallistaBolt_Normal</defName>
-		<label>ballista arrow (normal)</label>
+		<label>ballista bolt (normal)</label>
 		<graphicData>
 			<texPath>Things/Projectile/Ballista_Bolt_Normal</texPath>
 			<drawSize>(2,2)</drawSize>
@@ -283,7 +283,7 @@
 	<!--================ 발리스타 탄 (중량) ================-->
 	<ThingDef ParentName="RK_MakeableBallistaBoltBase">
 		<defName>BallistaBolt_Heavy</defName>
-		<label>ballista arrow (HE)</label>
+		<label>ballista bolt (HE)</label>
 		<description>일반탄 맞으면 주금</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/Ballista_Bolt_HE</texPath>
@@ -299,9 +299,9 @@
 		</recipeMaker>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="BaseBolt">
 		<defName>Bullet_BallistaBolt_HE</defName>
-		<label>ballista arrow (HE)</label>
+		<label>ballista bolt (HE)</label>
 		<graphicData>
 			<texPath>Things/Projectile/Ballista_Bolt_HE</texPath>
 			<drawSize>(2,2)</drawSize>
@@ -330,7 +330,7 @@
 	<!--================ 발리스타 탄 (고관통) ================-->
 	<ThingDef ParentName="RK_MakeableBallistaBoltBase">
 		<defName>BallistaBolt_AP</defName>
-		<label>ballista arrow (AP)</label>
+		<label>ballista bolt (AP)</label>
 		<description>일반탄 맞으면 주금</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/Ballista_Bolt_AP</texPath>
@@ -346,9 +346,9 @@
 		</recipeMaker>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="BaseBolt">
 		<defName>Bullet_BallistaBolt_AP</defName>
-		<label>ballista arrow (AP)</label>
+		<label>ballista bolt (AP)</label>
 		<graphicData>
 			<texPath>Things/Projectile/Ballista_Bolt_AP</texPath>
 			<drawSize>(2,2)</drawSize>

@@ -1,16 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <!-- 귀족 -->
-
-  <RatkinNoble.label>랫킨 귀족</RatkinNoble.label>
-  <RatkinNoble.labelPlural>랫킨 귀족들</RatkinNoble.labelPlural>
-  <RatkinNoble.labelMale>남자 랫킨 귀족</RatkinNoble.labelMale>
-  <RatkinNoble.labelMalePlural>남자 랫킨 귀족들</RatkinNoble.labelMalePlural>
-  <RatkinNoble.labelFemale>여자 랫킨 귀족</RatkinNoble.labelFemale>
-  <RatkinNoble.labelFemalePlural>여자 랫킨 귀족들</RatkinNoble.labelFemalePlural>
-
-
   <!-- 일반시민 -->
 
   <RatkinColonist.label>랫킨 정착민</RatkinColonist.label>
@@ -19,6 +9,16 @@
   <RatkinColonist.labelMalePlural>남자 랫킨 정착민</RatkinColonist.labelMalePlural>
   <RatkinColonist.labelFemale>여자 랫킨 정착민</RatkinColonist.labelFemale>
   <RatkinColonist.labelFemalePlural>여자 랫킨 정착민</RatkinColonist.labelFemalePlural>
+
+
+  <!-- 귀족 -->
+
+  <RatkinNoble.label>랫킨 귀족</RatkinNoble.label>
+  <RatkinNoble.labelPlural>랫킨 귀족들</RatkinNoble.labelPlural>
+  <RatkinNoble.labelMale>남자 랫킨 귀족</RatkinNoble.labelMale>
+  <RatkinNoble.labelMalePlural>남자 랫킨 귀족들</RatkinNoble.labelMalePlural>
+  <RatkinNoble.labelFemale>여자 랫킨 귀족</RatkinNoble.labelFemale>
+  <RatkinNoble.labelFemalePlural>여자 랫킨 귀족들</RatkinNoble.labelFemalePlural>
 
 
   <!-- 하인 -->

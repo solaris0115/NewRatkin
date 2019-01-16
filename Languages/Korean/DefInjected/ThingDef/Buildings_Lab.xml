@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 직사 발리스타 -->
+
+  <RK_Ballista_Strait_Body.label>발리스타</RK_Ballista_Strait_Body.label>
+  <RK_Ballista_Strait_Body.description>큰 화살을 발사하는 노포. 맞으면 끔살당함.</RK_Ballista_Strait_Body.description>
+
+  <RK_Turret_Ballista_Strait.label>직사 노포</RK_Turret_Ballista_Strait.label>
+  <RK_Turret_Ballista_Strait.description>Mortar launcher. Lobs bombs over walls. Very inaccurate but long-ranged.</RK_Turret_Ballista_Strait.description>
+
+
+  <!-- 발리스타 탄 (일반) -->
+
+  <BallistaBolt_Normal.label>ballista arrow (normal)</BallistaBolt_Normal.label>
+  <BallistaBolt_Normal.description>일반탄 맞으면 주금</BallistaBolt_Normal.description>
+
+  <Bullet_BallistaBolt_Normal.label>ballista arrow (normal)</Bullet_BallistaBolt_Normal.label>
+
+
+  <!-- 발리스타 탄 (중량) -->
+
+  <BallistaBolt_Heavy.label>ballista arrow (HE)</BallistaBolt_Heavy.label>
+  <BallistaBolt_Heavy.description>일반탄 맞으면 주금</BallistaBolt_Heavy.description>
+
+  <Bullet_BallistaBolt_HE.label>ballista arrow (HE)</Bullet_BallistaBolt_HE.label>
+
+
+  <!-- 발리스타 탄 (고관통) -->
+
+  <BallistaBolt_AP.label>ballista arrow (AP)</BallistaBolt_AP.label>
+  <BallistaBolt_AP.description>일반탄 맞으면 주금</BallistaBolt_AP.description>
+
+  <Bullet_BallistaBolt_AP.label>ballista arrow (AP)</Bullet_BallistaBolt_AP.label>
+
+
+</LanguageData>

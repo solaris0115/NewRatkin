@@ -1,6 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <Ballista.label>발리스타</Ballista.label>
+  <Ballista.description>커다란 노포를 연구합니다. 체구가 작은 랫킨도 다루기 쉽습니다.</Ballista.description>
+
+  <Advanced_BallistaBolt.label>발라스타 탄환</Advanced_BallistaBolt.label>
+  <Advanced_BallistaBolt.description>더 다양한 발리스타용 탄환을 연구합니다.</Advanced_BallistaBolt.description>
+
   <MicroOptical.label>광학 장비</MicroOptical.label>
   <MicroOptical.description>인간의 광학장비를 모방하여 연구합니다. 시력이 나쁜 랫킨이 쓸 수 있도록 디자인을 다시해야합니다.</MicroOptical.description>
 

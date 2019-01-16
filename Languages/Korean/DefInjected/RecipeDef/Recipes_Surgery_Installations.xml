@@ -5,5 +5,13 @@
   <InstallFakeEar.description>가짜 귀를 설치합니다.</InstallFakeEar.description>
   <InstallFakeEar.jobString>가짜귀 설치중</InstallFakeEar.jobString>
 
+  <InstallFakeTail.label>install fake tail</InstallFakeTail.label>
+  <InstallFakeTail.description>Install a fake tail.</InstallFakeTail.description>
+  <InstallFakeTail.jobString>Installing fake tail.</InstallFakeTail.jobString>
+
+  <InstallBionicTail.label>install bionic tail</InstallBionicTail.label>
+  <InstallBionicTail.description>Install a bionic tail.</InstallBionicTail.description>
+  <InstallBionicTail.jobString>Installing bionic tail.</InstallBionicTail.jobString>
+
 
 </LanguageData>

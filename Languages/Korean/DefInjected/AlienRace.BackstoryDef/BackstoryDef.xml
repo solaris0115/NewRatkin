@@ -381,8 +381,8 @@
 
   <!-- 농학가 -->
 
-  <Ratkin_Agriculturist.title>랫킨 Agriculturist</Ratkin_Agriculturist.title>
-  <Ratkin_Agriculturist.titleShort>Agriculturist</Ratkin_Agriculturist.titleShort>
+  <Ratkin_Agriculturist.title>랫킨 농학가</Ratkin_Agriculturist.title>
+  <Ratkin_Agriculturist.titleShort>농학가</Ratkin_Agriculturist.titleShort>
   <Ratkin_Agriculturist.baseDescription>[PAWN_nameDef](은)는 랫킨의 농경계를 더 발전시키고자 도시로 나온 농학가입니다. [PAWN_pronoun](은)는 언젠가 자신의 고향으로 돌아가 농경계를 발전시킬 그날을 꿈꾸고 있습니다.</Ratkin_Agriculturist.baseDescription>
 
 
