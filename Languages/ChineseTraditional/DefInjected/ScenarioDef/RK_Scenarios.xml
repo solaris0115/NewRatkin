@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <RK_Scenario.label>ratkin colony</RK_Scenario.label>
-  <RK_Scenario.description>각자의 사연을 갖고 새로운 삶을 위해 나온 네 랫킨의 이야기입니다. 서로 다른 꿈을 꾸고 있지만 지금은 잠시 접어두기로 하였습니다.</RK_Scenario.description>
-  <RK_Scenario.scenario.name>ratkin colony</RK_Scenario.scenario.name>
-  <RK_Scenario.scenario.summary>It's a story of Ratkins, each with a story.</RK_Scenario.scenario.summary>
-  <RK_Scenario.scenario.description>각자의 사연을 갖고 새로운 삶을 위해 나온 네 랫킨의 이야기입니다. 서로 다른 꿈을 꾸고 있지만 지금은 잠시 접어두기로 하였습니다.</RK_Scenario.scenario.description>
+  <RK_Scenario.label>鼠族聚落</RK_Scenario.label>
+  <RK_Scenario.description>這是四名鼠族為新生活帶來的故事。 即使彼此有不同的夢想，但現在是該放下了。</RK_Scenario.description>
+  <RK_Scenario.scenario.name>鼠族聚落</RK_Scenario.scenario.name>
+  <RK_Scenario.scenario.summary>與四名鼠族的冒險，每個人都有屬於自己的故事。</RK_Scenario.scenario.summary>
+  <RK_Scenario.scenario.description>這是四個鼠族為新生活帶來的故事。 即使有不同的夢想，但現在是該放下了。</RK_Scenario.scenario.description>
 
 
 </LanguageData>

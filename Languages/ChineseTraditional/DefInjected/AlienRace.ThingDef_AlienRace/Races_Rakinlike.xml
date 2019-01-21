@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <Ratkin.label>Ratkin</Ratkin.label>
-  <Ratkin.description>설치류 유전자와 흡사한 인간입니다. 출처는 알 수 없으나 주로 농경사회를 기반으로 한 왕정을 이루고 살고 있습니다. 주로 여성개체가 많으며 남성개체 또한 자신이 남자인것을 잘 인지하지 못합니다.</Ratkin.description>
-  <Ratkin.tools.0.label>teeth</Ratkin.tools.0.label>
-  <Ratkin.tools.1.label>left fist</Ratkin.tools.1.label>
-  <Ratkin.tools.2.label>right fist</Ratkin.tools.2.label>
+  <Ratkin.label>鼠族</Ratkin.label>
+  <Ratkin.description>人類和囓齒類動物也有類似的基因。 雖然來源不明，但它們以農業社會為基礎，生活在君主制之中。 有許多女性物品，即使是男性鼠族也不清楚它們自己是男性。</Ratkin.description>
+  <Ratkin.tools.0.label>牙齒</Ratkin.tools.0.label>
+  <Ratkin.tools.1.label>左拳</Ratkin.tools.1.label>
+  <Ratkin.tools.2.label>右拳</Ratkin.tools.2.label>
 
 
 </LanguageData>

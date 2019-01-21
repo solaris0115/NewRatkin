@@ -1,23 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <Ballista.label>ballista</Ballista.label>
-  <Ballista.description>커다란 노포를 연구합니다. 체구가 작은 랫킨도 다루기 쉽습니다.</Ballista.description>
+  <Ballista.label>弩箭發射器</Ballista.label>
+  <Ballista.description>研究偉大的弩箭發射器。 即使是嬌小的鼠族，也可以輕易操作。</Ballista.description>
 
-  <Advanced_BallistaBolt.label>advanced ballista bolt</Advanced_BallistaBolt.label>
-  <Advanced_BallistaBolt.description>더 다양한 발리스타용 탄환을 연구합니다.</Advanced_BallistaBolt.description>
+  <Advanced_BallistaBolt.label>先進的弩箭矢</Advanced_BallistaBolt.label>
+  <Advanced_BallistaBolt.description>我們研究更多性能的箭矢。</Advanced_BallistaBolt.description>
 
-  <MicroOptical.label>micro optical</MicroOptical.label>
-  <MicroOptical.description>인간의 광학장비를 모방하여 연구합니다. 시력이 나쁜 랫킨이 쓸 수 있도록 디자인을 다시해야합니다.</MicroOptical.description>
+  <MicroOptical.label>微光學</MicroOptical.label>
+  <MicroOptical.description>我們模仿人類的光學設備。 您需要重新設計，以便改善鼠族視力不佳的情況。</MicroOptical.description>
 
-  <FlechetteBullet.label>flechette bullet</FlechetteBullet.label>
-  <FlechetteBullet.description>랫킨 고유의 화살촉을 총알에 적용시킵니다. 랫킨식 플레셰트 탄환은 조금 무겁지만 두꺼운 장갑을 관통할 수 있도록 디자인되었습니다.</FlechetteBullet.description>
+  <FlechetteBullet.label>鏢箭子彈</FlechetteBullet.label>
+  <FlechetteBullet.description>應用鼠族獨特的鏢箭子彈。 鏢彈有點重量，但他的穿透力卻很好。</FlechetteBullet.description>
 
-  <RatkinClothing.label>Ratkin clothing</RatkinClothing.label>
-  <RatkinClothing.description>랫킨이 입기 편리한 의류들을 고안해냅니다. 조금 더 다양한 의류를 생산할 수 있습니다.</RatkinClothing.description>
+  <RatkinClothing.label>鼠族服裝</RatkinClothing.label>
+  <RatkinClothing.description>鼠族設計了一些方便的服裝。 可以生產多一點不同的衣服。</RatkinClothing.description>
 
-  <HighClassClothing.label>high class clothing</HighClassClothing.label>
-  <HighClassClothing.description>랫킨 사회의 고위직이 입는 의류들을 연구합니다. 더 고풍스럽고 질좋은 의류들을 생산할 수 있습니다.</HighClassClothing.description>
+  <HighClassClothing.label>貴族服裝</HighClassClothing.label>
+  <HighClassClothing.description>我們研究鼠人貴族所穿的服裝。 可以生產更多古雅且高品質的衣服。</HighClassClothing.description>
 
 
 </LanguageData>

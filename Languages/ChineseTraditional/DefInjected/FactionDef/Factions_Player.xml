@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <RK_PlayerFaction.label>New Beginning</RK_PlayerFaction.label>
-  <RK_PlayerFaction.description>당신의 랫킨 정착지입니다. 각자의 사연과 운명이 이곳에 모이게 했습니다.</RK_PlayerFaction.description>
-  <RK_PlayerFaction.pawnsPlural>Ratkins</RK_PlayerFaction.pawnsPlural>
+  <RK_PlayerFaction.label>鼠族新移民</RK_PlayerFaction.label>
+  <RK_PlayerFaction.description>你的鼠族新據點。 他們的故事和命運將聚集在這裡。</RK_PlayerFaction.description>
+  <RK_PlayerFaction.pawnsPlural>鼠族</RK_PlayerFaction.pawnsPlural>
 
-  <Rakinia.label>ratkin kingdom</Rakinia.label>
-  <Rakinia.description>랫킨 왕국입니다. 인간들 눈에 띄지 않도록 숨어서 살고 있으며 농경생활을 위주로 생활하는 비 침략적인 종족입니다.</Rakinia.description>
-  <Rakinia.pawnsPlural>Ratkins</Rakinia.pawnsPlural>
-  <Rakinia.leaderTitle>prime executor</Rakinia.leaderTitle>
+  <Rakinia.label>鼠族王國</Rakinia.label>
+  <Rakinia.description>鼠族的王國。 他們總是躲躲藏藏並且居住在一個隱蔽的部落，主要從事農業生活。</Rakinia.description>
+  <Rakinia.pawnsPlural>鼠族</Rakinia.pawnsPlural>
+  <Rakinia.leaderTitle>首長</Rakinia.leaderTitle>
 
-  <RatkinCaravan.label>ratkin caravan union</RatkinCaravan.label>
-  <RatkinCaravan.description>랫킨 유랑단입니다. 방방곡곡을 유랑하며 거래를 하기도 하고 용병을 사고 팔기도 합니다.</RatkinCaravan.description>
-  <RatkinCaravan.pawnsPlural>Ratkins</RatkinCaravan.pawnsPlural>
-  <RatkinCaravan.leaderTitle>prime executor</RatkinCaravan.leaderTitle>
+  <RatkinCaravan.label>鼠族商隊盟會</RatkinCaravan.label>
+  <RatkinCaravan.description>鼠族的商對。 經常在各地貿易並買賣僱傭兵。</RatkinCaravan.description>
+  <RatkinCaravan.pawnsPlural>鼠族</RatkinCaravan.pawnsPlural>
+  <RatkinCaravan.leaderTitle>商隊隊長</RatkinCaravan.leaderTitle>
 
 
 </LanguageData>

@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <FakeEar.label>fake ear</FakeEar.label>
-  <FakeEar.labelNoun>a fake ear</FakeEar.labelNoun>
+  <FakeEar.label>假鼠耳朵</FakeEar.label>
+  <FakeEar.labelNoun>一對假的鼠耳朵</FakeEar.labelNoun>
 
-  <BionicTail.label>bionic tail</BionicTail.label>
-  <BionicTail.labelNoun>a bionic tail</BionicTail.labelNoun>
+  <BionicTail.label>仿生尾巴</BionicTail.label>
+  <BionicTail.labelNoun>一個仿生的鼠尾巴</BionicTail.labelNoun>
 
-  <FakeTail.label>fake tail</FakeTail.label>
-  <FakeTail.labelNoun>a fake tail</FakeTail.labelNoun>
+  <FakeTail.label>假尾巴</FakeTail.label>
+  <FakeTail.labelNoun>一個假的鼠尾巴</FakeTail.labelNoun>
 
 
 </LanguageData>
