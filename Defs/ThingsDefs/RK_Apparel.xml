@@ -1484,7 +1484,7 @@
 	<!-- 수녀복 사회적영향력 +10% 치료속도 +10%  -->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
 		<defName>RK_SistersDerss</defName>
-		<label>Sisters Derss</label>
+		<label>Sisters Dress</label>
 		<description>수녀들이 입는 단아한 원피스입니다. 약간의 옆트임이 있어 움직임이 편합니다. 랫킨의 수녀들은 아픈 사람들을 돌보기도 합니다.</description>
 		<graphicData>
 			<texPath>Apparel/RK_SistersDerss</texPath>
