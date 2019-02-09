@@ -917,32 +917,63 @@
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
-			<MarketValue>2000</MarketValue>
+			<MarketValue>2500</MarketValue>
 			<WorkToMake>40000</WorkToMake>
 			<Mass>3.5</Mass>
 			<AccuracyTouch>0.60</AccuracyTouch>
-			<AccuracyShort>0.70</AccuracyShort>
-			<AccuracyMedium>0.45</AccuracyMedium>
-			<AccuracyLong>0.70</AccuracyLong>
+			<AccuracyShort>0.40</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.40</AccuracyLong>
 			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
 			<Plasteel>80</Plasteel>
 			<ComponentIndustrial>7</ComponentIndustrial>
 			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-		<verbs>
+		</costList>		
+		<comps>
 			<li>
+				<compClass>NewRatkin.Comp_VerbSaveable</compClass>
+			</li>
+		</comps>
+		<verbs>
+			<li Class="NewRatkin.VerbProperties_Custom">
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_RK_PrototypePulseRifle</defaultProjectile>
+				<defaultProjectile>Bullet_RK_PrototypePulseRifleLight</defaultProjectile>
 				<warmupTime>1.5</warmupTime>
-				<range>37</range>
+				<range>30</range>
+				<burstShotCount>4</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<soundCast>PrototypePulse</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+				<desc>Take 4 burst shot at mid-range target.\nRange Bounus\nShort: +45%</desc>
+				<label>Rapid Fire</label>
+				<texPath>UI/Commands/Pew</texPath>
+				<accuracyTouch>0.0</accuracyTouch>
+				<accuracyShort>0.45</accuracyShort>
+				<accuracyMedium>0</accuracyMedium>
+				<accuracyLong>0</accuracyLong>
+			</li>	
+			<li Class="NewRatkin.VerbProperties_Custom">
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_RK_PrototypePulseRifleHeavy</defaultProjectile>
+				<warmupTime>2</warmupTime>
+				<range>42</range>
 				<burstShotCount>2</burstShotCount>
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
 				<soundCast>PrototypePulse</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
+				<desc>Take 2 burst shot at long-range target.\nRange Bounus\nLong: +45%</desc>
+				<label>Precisely Fire</label>
+				<texPath>UI/Commands/Snipe</texPath>
+				<accuracyTouch>0.0</accuracyTouch>
+				<accuracyShort>0</accuracyShort>
+				<accuracyMedium>0</accuracyMedium>
+				<accuracyLong>0.45</accuracyLong>
 			</li>
 		</verbs>
 		<recipeMaker Inherit="false"/>
@@ -976,7 +1007,7 @@
 		<tradeability>All</tradeability>
 	</ThingDef>
 	<ThingDef ParentName="RK_BaseBullet">
-		<defName>Bullet_RK_PrototypePulseRifle</defName>
+		<defName>Bullet_RK_PrototypePulseRifleLight</defName>
 		<label>wedge bullet</label>
 		<graphicData>
 			<texPath>Things/Projectile/ChargeLanceShot</texPath>
@@ -984,9 +1015,23 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>13</damageAmountBase>
+			<damageAmountBase>7</damageAmountBase>
+			<speed>85</speed>
+			<armorPenetrationBase>0.45</armorPenetrationBase>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="RK_BaseBullet">
+		<defName>Bullet_RK_PrototypePulseRifleHeavy</defName>
+		<label>wedge bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/ChargeLanceShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>16</damageAmountBase>
 			<speed>120</speed>
-			<armorPenetrationBase>0.40</armorPenetrationBase>
+			<armorPenetrationBase>0.60</armorPenetrationBase>
 		</projectile>
 	</ThingDef>
 </Defs>

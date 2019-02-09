@@ -1242,6 +1242,8 @@
 		<apparel>
 			<bodyPartGroups>
 				<li>UpperHead</li>
+				<li>Eyes</li>
+				<li>Teeth</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/RK_BulletProofHelmet</wornGraphicPath>
 			<layers>

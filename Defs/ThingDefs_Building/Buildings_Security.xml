@@ -63,8 +63,8 @@
 			<RangedWeapon_Cooldown>0.1</RangedWeapon_Cooldown>
 		</statBases>
 		<building>
-			<turretBurstWarmupTime>4.0</turretBurstWarmupTime>
-			<turretBurstCooldownTime>10.0</turretBurstCooldownTime>
+			<turretBurstWarmupTime>3.0</turretBurstWarmupTime>
+			<turretBurstCooldownTime>7.0</turretBurstCooldownTime>
 			<buildingTags>
 				<li>RK_Artillery</li>
 			</buildingTags>
@@ -207,6 +207,7 @@
 			<effectWorking>Smith</effectWorking>
 			<soundWorking>Recipe_Machining</soundWorking>
 			<workAmount>250</workAmount>
+			<productCount>2</productCount>
 			<targetCountAdjustment>4</targetCountAdjustment>
 			<workSkill>Crafting</workSkill>
 			<recipeUsers>

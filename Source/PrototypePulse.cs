@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -11,237 +12,393 @@ using Verse.Sound;
 
 namespace NewRatkin
 {
-    /*
+
     [StaticConstructorOnStartup]
-    public static class LabPatch
+    public static class CustomVerbPatch
     {
-        private static readonly Type patchType = typeof(LabPatch);
-        static LabPatch()
+        public static Texture2D currentCommandTexture;
+        public enum RangeCategory
         {
-            
-            HarmonyInstance harmonyInstance = HarmonyInstance.Create("com.Lab.rimworld.mod");
-            harmonyInstance.Patch(AccessTools.Method(typeof(VerbTracker), "CreateVerbTargetCommand", null, null), null, new HarmonyMethod(patchType, "CreateVerbTargetCommandPostfix", null));
-            harmonyInstance.Patch(AccessTools.Method(typeof(Pawn_EquipmentTracker), "GetGizmos", null, null), null, new HarmonyMethod(patchType, "GetGizmosPostfix", null));
+            Touch,
+            Short,
+            Medium,
+            Long
         }
-        public static void CreateVerbTargetCommandPostfix(Command_VerbTarget __result)
-        {
-            Log.Message(__result.verb.EquipmentSource.def.ToString() + " : " + __result.verb.verbProps.burstShotCount);
-        }
-        public static void GetGizmosPostfix(Gizmo __result)
-        {
-            //Log.Message(((Command)__result).defaultLabel);
-        }
-    }*/
 
-
-
-    /*
-    public class Verb_Shoot : Verb_LaunchProjectile
-    {
-        protected override int ShotsPerBurst
+        
+        private static readonly Type patchType = typeof(CustomVerbPatch);
+        static CustomVerbPatch()
         {
-            get
+            HarmonyInstance harmonyInstance = HarmonyInstance.Create("com.NewRatkin.rimworld.mod");
+            HarmonyInstance labInstance = HarmonyInstance.Create("com.AdditionalVerb.rimworld.mod");
+            if (!harmonyInstance.HasAnyPatches("com.AdditionalVerb.rimworld.mod"))
             {
-                return this.verbProps.burstShotCount;
-            }
-        }
+                harmonyInstance.Patch(AccessTools.Method(typeof(Pawn_EquipmentTracker), "GetGizmos", null, null), null, new HarmonyMethod(patchType, "GetGizmosPostfix", null));
 
-        protected override bool TryCastShot()
-        {
-            bool flag = base.TryCastShot();
-            if (flag && base.CasterIsPawn)
-            {
-                base.CasterPawn.records.Increment(RecordDefOf.ShotsFired);
-            }
-            return flag;
-        }
-    }
+                harmonyInstance.Patch(AccessTools.Method(typeof(Targeter), "BeginTargeting", new Type[] { typeof(Verb) }), new HarmonyMethod(patchType, "BeginTargetingPrefix", null));
+                harmonyInstance.Patch(AccessTools.Method(typeof(Targeter), "OrderPawnForceTarget", null, null), null, new HarmonyMethod(patchType, "OrderPawnForceTargetPostfix", null));
+                harmonyInstance.Patch(AccessTools.Method(typeof(Targeter), "GetTargetingVerb", null, null), new HarmonyMethod(patchType, "GetTargetingVerbPostfix", null));
+                harmonyInstance.Patch(AccessTools.Method(typeof(Targeter), "StopTargeting", null, null), new HarmonyMethod(patchType, "StopTargetingPrefix", null));
 
-    public class Verb_LaunchProjectile : Verb
-    {
-        public virtual ThingDef Projectile
-        {
-            get
-            {
-                if (base.EquipmentSource != null)
-                {
-                    CompChangeableProjectile comp = base.EquipmentSource.GetComp<CompChangeableProjectile>();
-                    if (comp != null && comp.Loaded)
+                harmonyInstance.Patch(AccessTools.Method(typeof(VerbTracker), "CreateVerbTargetCommand", null, null), new HarmonyMethod(patchType, "CreateVerbTargetCommandPrefix", null));
+                harmonyInstance.Patch(AccessTools.Property(typeof(VerbTracker), "PrimaryVerb").GetGetMethod(), new HarmonyMethod(patchType, "PrimaryVerbPrefix", null));
+
+                harmonyInstance.Patch(AccessTools.Method(typeof(VerbProperties), "AdjustedAccuracy", null, null), null, new HarmonyMethod(patchType, "AdjustedAccuracyPostfix", null));
+
+                harmonyInstance.Patch(AccessTools.Method(typeof(TooltipUtility), "ShotCalculationTipString", null, null), new HarmonyMethod(patchType, "ShotCalculationTipStringPrefix", null));
+                LongEventHandler.ExecuteWhenFinished
+                (
+                    delegate
                     {
-                        return comp.Projectile;
+                        currentCommandTexture = ContentFinder<Texture2D>.Get("UI/Commands/Select");
+                    }
+                );
+                Log.Message("Done");
+            }
+        }
+        public static IEnumerable<Gizmo> GetGizmosPostfix(IEnumerable<Gizmo> __result, Pawn_EquipmentTracker __instance)
+        {
+            int count = 0;
+            foreach (Gizmo g in __result)
+            {
+                if (g is Command)
+                {
+                    switch (count)
+                    {
+                        case 0:
+                            ((Command)g).hotKey = KeyBindingDefOf.Misc1;
+                            break;
+                        case 1:
+                            ((Command)g).hotKey = KeyBindingDefOf.Misc3;
+                            break;
+                        case 2:
+                            ((Command)g).hotKey = KeyBindingDefOf.Misc4;
+                            break;
+                        case 3:
+                            ((Command)g).hotKey = KeyBindingDefOf.Misc5;
+                            break;
+                        case 4:
+                            ((Command)g).hotKey = KeyBindingDefOf.Misc7;
+                            break;
+                        case 5:
+                            ((Command)g).hotKey = KeyBindingDefOf.Misc8;
+                            break;
+                        case 6:
+                            ((Command)g).hotKey = KeyBindingDefOf.Misc9;
+                            break;
+                        case 7:
+                            ((Command)g).hotKey = KeyBindingDefOf.Misc10;
+                            break;
+                        case 8:
+                            ((Command)g).hotKey = KeyBindingDefOf.Misc11;
+                            break;
+                        default:
+                            ((Command)g).hotKey = KeyBindingDefOf.Misc12;
+                            break;
                     }
                 }
-                return this.verbProps.defaultProjectile;
+                yield return g;
+                count++;
             }
         }
-
-        public override void WarmupComplete()
+        public static void BeginTargetingPrefix(Verb verb)
         {
-            base.WarmupComplete();
-            Find.BattleLog.Add(new BattleLogEntry_RangedFire(this.caster, (!this.currentTarget.HasThing) ? null : this.currentTarget.Thing, (base.EquipmentSource == null) ? null : base.EquipmentSource.def, this.Projectile, this.ShotsPerBurst > 1));
-            Pawn pawn = this.currentTarget.Thing as Pawn;
-            if (pawn != null && !pawn.Downed && base.CasterIsPawn && base.CasterPawn.skills != null)
+            Comp_VerbSaveable comp = ((CompEquippable)verb.DirectOwner).parent.GetComp<Comp_VerbSaveable>();
+            if (comp != null)
             {
-                float num = (!pawn.HostileTo(this.caster)) ? 20f : 170f;
-                float num2 = this.verbProps.AdjustedFullCycleTime(this, base.CasterPawn);
-                base.CasterPawn.skills.Learn(SkillDefOf.Shooting, num * num2, false);
+                comp.tempVerb = verb;
             }
         }
-
-        protected override bool TryCastShot()
+        public static void OrderPawnForceTargetPostfix(Targeter __instance, Verb verb)
         {
-            if (this.currentTarget.HasThing && this.currentTarget.Thing.Map != this.caster.Map)
+            Comp_VerbSaveable comp = ((CompEquippable)verb.DirectOwner).parent.GetComp<Comp_VerbSaveable>();
+            if (comp != null)
             {
+                if (!(Traverse.Create(__instance).Method("CurrentTargetUnderMouse", true).GetValue<LocalTargetInfo>().IsValid))
+                {
+                    return;
+                }
+                comp.currentVerb = verb;
+            }
+        }
+        public static bool GetTargetingVerbPostfix(ref Verb __result, Pawn pawn)
+        {
+            Comp_VerbSaveable comp = pawn.equipment.Primary.GetComp<Comp_VerbSaveable>();
+            if (comp != null)
+            {
+                __result = comp.currentVerb;
                 return false;
-            }
-            ThingDef projectile = this.Projectile;
-            if (projectile == null)
-            {
-                return false;
-            }
-            ShootLine shootLine;
-            bool flag = base.TryFindShootLineFromTo(this.caster.Position, this.currentTarget, out shootLine);
-            if (this.verbProps.stopBurstWithoutLos && !flag)
-            {
-                return false;
-            }
-            if (base.EquipmentSource != null)
-            {
-                CompChangeableProjectile comp = base.EquipmentSource.GetComp<CompChangeableProjectile>();
-                if (comp != null)
-                {
-                    comp.Notify_ProjectileLaunched();
-                }
-            }
-            Thing launcher = this.caster;
-            Thing equipment = base.EquipmentSource;
-            CompMannable compMannable = this.caster.TryGetComp<CompMannable>();
-            if (compMannable != null && compMannable.ManningPawn != null)
-            {
-                launcher = compMannable.ManningPawn;
-                equipment = this.caster;
-            }
-            Vector3 drawPos = this.caster.DrawPos;
-            Projectile projectile2 = (Projectile)GenSpawn.Spawn(projectile, shootLine.Source, this.caster.Map, WipeMode.Vanish);
-            if (this.verbProps.forcedMissRadius > 0.5f)
-            {
-                float num = VerbUtility.CalculateAdjustedForcedMiss(this.verbProps.forcedMissRadius, this.currentTarget.Cell - this.caster.Position);
-                if (num > 0.5f)
-                {
-                    int max = GenRadial.NumCellsInRadius(num);
-                    int num2 = Rand.Range(0, max);
-                    if (num2 > 0)
-                    {
-                        IntVec3 c = this.currentTarget.Cell + GenRadial.RadialPattern[num2];
-                        this.ThrowDebugText("ToRadius");
-                        this.ThrowDebugText("Rad\nDest", c);
-                        ProjectileHitFlags projectileHitFlags = ProjectileHitFlags.NonTargetWorld;
-                        if (Rand.Chance(0.5f))
-                        {
-                            projectileHitFlags = ProjectileHitFlags.All;
-                        }
-                        if (!this.canHitNonTargetPawnsNow)
-                        {
-                            projectileHitFlags &= ~ProjectileHitFlags.NonTargetPawns;
-                        }
-                        projectile2.Launch(launcher, drawPos, c, this.currentTarget, projectileHitFlags, equipment, null);
-                        return true;
-                    }
-                }
-            }
-            ShotReport shotReport = ShotReport.HitReportFor(this.caster, this, this.currentTarget);
-            Thing randomCoverToMissInto = shotReport.GetRandomCoverToMissInto();
-            ThingDef targetCoverDef = (randomCoverToMissInto == null) ? null : randomCoverToMissInto.def;
-            if (!Rand.Chance(shotReport.AimOnTargetChance_IgnoringPosture))
-            {
-                shootLine.ChangeDestToMissWild(shotReport.AimOnTargetChance_StandardTarget);
-                this.ThrowDebugText("ToWild" + ((!this.canHitNonTargetPawnsNow) ? string.Empty : "\nchntp"));
-                this.ThrowDebugText("Wild\nDest", shootLine.Dest);
-                ProjectileHitFlags projectileHitFlags2 = ProjectileHitFlags.NonTargetWorld;
-                if (Rand.Chance(0.5f) && this.canHitNonTargetPawnsNow)
-                {
-                    projectileHitFlags2 |= ProjectileHitFlags.NonTargetPawns;
-                }
-                projectile2.Launch(launcher, drawPos, shootLine.Dest, this.currentTarget, projectileHitFlags2, equipment, targetCoverDef);
-                return true;
-            }
-            if (this.currentTarget.Thing != null && this.currentTarget.Thing.def.category == ThingCategory.Pawn && !Rand.Chance(shotReport.PassCoverChance))
-            {
-                this.ThrowDebugText("ToCover" + ((!this.canHitNonTargetPawnsNow) ? string.Empty : "\nchntp"));
-                this.ThrowDebugText("Cover\nDest", randomCoverToMissInto.Position);
-                ProjectileHitFlags projectileHitFlags3 = ProjectileHitFlags.NonTargetWorld;
-                if (this.canHitNonTargetPawnsNow)
-                {
-                    projectileHitFlags3 |= ProjectileHitFlags.NonTargetPawns;
-                }
-                projectile2.Launch(launcher, drawPos, randomCoverToMissInto, this.currentTarget, projectileHitFlags3, equipment, targetCoverDef);
-                return true;
-            }
-            ProjectileHitFlags projectileHitFlags4 = ProjectileHitFlags.IntendedTarget;
-            if (this.canHitNonTargetPawnsNow)
-            {
-                projectileHitFlags4 |= ProjectileHitFlags.NonTargetPawns;
-            }
-            if (!this.currentTarget.HasThing || this.currentTarget.Thing.def.Fillage == FillCategory.Full)
-            {
-                projectileHitFlags4 |= ProjectileHitFlags.NonTargetWorld;
-            }
-            this.ThrowDebugText("ToHit" + ((!this.canHitNonTargetPawnsNow) ? string.Empty : "\nchntp"));
-            if (this.currentTarget.Thing != null)
-            {
-                projectile2.Launch(launcher, drawPos, this.currentTarget, this.currentTarget, projectileHitFlags4, equipment, targetCoverDef);
-                this.ThrowDebugText("Hit\nDest", this.currentTarget.Cell);
-            }
-            else
-            {
-                projectile2.Launch(launcher, drawPos, shootLine.Dest, this.currentTarget, projectileHitFlags4, equipment, targetCoverDef);
-                this.ThrowDebugText("Hit\nDest", shootLine.Dest);
             }
             return true;
         }
-
-        private void ThrowDebugText(string text)
+        public static void StopTargetingPrefix(Verb ___targetingVerb)
         {
-            if (DebugViewSettings.drawShooting)
+            if (___targetingVerb != null)
             {
-                MoteMaker.ThrowText(this.caster.DrawPos, this.caster.Map, text, -1f);
+                Comp_VerbSaveable comp = ((CompEquippable)___targetingVerb.DirectOwner).parent.GetComp<Comp_VerbSaveable>();
+                if (comp != null)
+                {
+                    comp.tempVerb = null;
+                }
             }
         }
 
-        private void ThrowDebugText(string text, IntVec3 c)
+        public static bool CreateVerbTargetCommandPrefix(ref Command_VerbTarget __result, Thing ownerThing, Verb verb)
         {
-            if (DebugViewSettings.drawShooting)
+            Command_VerbTarget command_VerbTarget = new Command_VerbTarget();
+            VerbProperties_Custom verbProps = verb.verbProps as VerbProperties_Custom;
+            if (verbProps != null)
             {
-                MoteMaker.ThrowText(c.ToVector3Shifted(), this.caster.Map, text, -1f);
+                command_VerbTarget.defaultDesc = verbProps.desc;
+                command_VerbTarget.defaultLabel = verbProps.label;
+                Comp_VerbSaveable comp_VerbSaveable = ownerThing.TryGetComp<Comp_VerbSaveable>();
+                if (comp_VerbSaveable != null && comp_VerbSaveable.currentVerb == verb)
+                {
+                    command_VerbTarget.icon = currentCommandTexture;
+                }
+                else
+                {
+                    command_VerbTarget.icon = verbProps.texture;
+                }
             }
+            else
+            {
+                command_VerbTarget.icon = ownerThing.def.uiIcon;
+                command_VerbTarget.defaultDesc = ownerThing.LabelCap + ": " + ownerThing.def.description.CapitalizeFirst();
+            }
+            command_VerbTarget.iconAngle = ownerThing.def.uiIconAngle;
+            command_VerbTarget.iconOffset = ownerThing.def.uiIconOffset;
+            command_VerbTarget.tutorTag = "VerbTarget";
+            command_VerbTarget.verb = verb;
+            if (verb.caster.Faction != Faction.OfPlayer)
+            {
+                command_VerbTarget.Disable("CannotOrderNonControlled".Translate());
+            }
+            else if (verb.CasterIsPawn)
+            {
+                if (verb.CasterPawn.story.WorkTagIsDisabled(WorkTags.Violent))
+                {
+                    command_VerbTarget.Disable("IsIncapableOfViolence".Translate(verb.CasterPawn.LabelShort, verb.CasterPawn));
+                }
+                else if (!verb.CasterPawn.drafter.Drafted)
+                {
+                    command_VerbTarget.Disable("IsNotDrafted".Translate(verb.CasterPawn.LabelShort, verb.CasterPawn));
+                }
+            }
+            __result = command_VerbTarget;
+            return false;
         }
-
-        public override float HighlightFieldRadiusAroundTarget(out bool needLOSToCenter)
+        public static bool PrimaryVerbPrefix(VerbTracker __instance, ref Verb __result)
         {
-            needLOSToCenter = true;
-            ThingDef projectile = this.Projectile;
-            if (projectile == null)
+            Comp_VerbSaveable comp = ((CompEquippable)__instance.directOwner).parent.GetComp<Comp_VerbSaveable>();
+            if (comp != null)
             {
-                return 0f;
-            }
-            return projectile.projectile.explosionRadius;
-        }
-
-        public override bool Available()
-        {
-            if (!base.Available())
-            {
-                return false;
-            }
-            if (base.CasterIsPawn)
-            {
-                Pawn casterPawn = base.CasterPawn;
-                if (casterPawn.Faction != Faction.OfPlayer && casterPawn.mindState.MeleeThreatStillThreat && casterPawn.mindState.meleeThreat.Position.AdjacentTo8WayOrInside(casterPawn.Position))
+                __result = comp.currentVerb;
+                if (__result != null)
                 {
                     return false;
                 }
             }
-            return this.Projectile != null;
+            return true;
         }
-    }*/
+
+        public static void AdjustedAccuracyPostfix(VerbProperties __instance, ref float __result, RangeCategory cat)
+        {
+            if (__instance is VerbProperties_Custom)
+            {
+                switch (cat)
+                {
+                    case RangeCategory.Touch:
+                        __result += __instance.accuracyTouch;
+                        break;
+                    case RangeCategory.Short:
+                        __result += __instance.accuracyShort;
+                        break;
+                    case RangeCategory.Medium:
+                        __result += __instance.accuracyMedium;
+                        break;
+                    case RangeCategory.Long:
+                        __result += __instance.accuracyLong;
+                        break;
+                    default:
+                        throw new InvalidOperationException();
+                }
+            }
+        }
+
+        public static bool ShotCalculationTipStringPrefix(ref string __result, Thing target)
+        {
+            StringBuilder stringBuilder = new StringBuilder();
+            if (Find.Selector.SingleSelectedThing != null)
+            {
+                Thing singleSelectedThing = Find.Selector.SingleSelectedThing;
+                Verb verb = null;
+                Pawn pawn = singleSelectedThing as Pawn;
+                if (pawn != null && pawn != target && pawn.equipment != null && pawn.equipment.Primary != null)
+                {
+                    Comp_VerbSaveable compsav = pawn.equipment.Primary.GetComp<Comp_VerbSaveable>();
+                    if (compsav != null && compsav.tempVerb != null && compsav.tempVerb is Verb_LaunchProjectile)
+                    {
+                        verb = compsav.tempVerb;
+                    }
+                    else
+                    {
+                        verb = pawn.equipment.PrimaryEq.PrimaryVerb;
+                    }
+                }
+                Building_TurretGun building_TurretGun = singleSelectedThing as Building_TurretGun;
+                if (building_TurretGun != null && building_TurretGun != target)
+                {
+                    verb = building_TurretGun.AttackVerb;
+                }
+                if (verb != null)
+                {
+                    stringBuilder.Append("ShotBy".Translate(Find.Selector.SingleSelectedThing.LabelShort, Find.Selector.SingleSelectedThing) + ": ");
+                    if (verb.CanHitTarget(target))
+                    {
+                        stringBuilder.Append(ShotReport.HitReportFor(verb.caster, verb, target).GetTextReadout());
+                    }
+                    else
+                    {
+                        stringBuilder.AppendLine("CannotHit".Translate());
+                    }
+                    Pawn pawn2 = target as Pawn;
+                    if (pawn2 != null && pawn2.Faction == null && !pawn2.InAggroMentalState)
+                    {
+                        float manhunterOnDamageChance;
+                        if (verb.IsMeleeAttack)
+                        {
+                            manhunterOnDamageChance = PawnUtility.GetManhunterOnDamageChance(pawn2, 0f, singleSelectedThing);
+                        }
+                        else
+                        {
+                            manhunterOnDamageChance = PawnUtility.GetManhunterOnDamageChance(pawn2, singleSelectedThing);
+                        }
+                        if (manhunterOnDamageChance > 0f)
+                        {
+                            stringBuilder.AppendLine();
+                            stringBuilder.AppendLine(string.Format("{0}: {1}", "ManhunterPerHit".Translate(), manhunterOnDamageChance.ToStringPercent()));
+                        }
+                    }
+                }
+            }
+            __result = stringBuilder.ToString();
+            return false;
+        }
+    }
+
+    public class Comp_VerbSaveable : ThingComp
+    {
+        public Verb currentVerb;
+        public Verb tempVerb;
+        public override void PostSpawnSetup(bool respawningAfterLoad)
+        {
+            CompEquippable comp = parent.GetComp<CompEquippable>();
+            if (currentVerb == null)
+            {
+                List<Verb> verbs = comp.AllVerbs;
+                for (int i = 0; i < verbs.Count; i++)
+                {
+                    if (verbs[i].verbProps.isPrimary)
+                    {
+                        currentVerb = verbs[i];
+                        return;
+                    }
+                }
+            }
+        }
+        public override void PostExposeData()
+        {
+            base.PostExposeData();
+            Scribe_References.Look(ref currentVerb, "currentVerb");
+            if (Scribe.mode == LoadSaveMode.PostLoadInit && currentVerb == null)
+            {
+                CompEquippable comp = parent.GetComp<CompEquippable>();
+                List<Verb> verbs = comp.AllVerbs;
+                for (int i = 0; i < verbs.Count; i++)
+                {
+                    if (verbs[i].verbProps.isPrimary)
+                    {
+                        currentVerb = verbs[i];
+                        return;
+                    }
+                }
+            }
+        }
+    }
+
+
+    [StaticConstructorOnStartup]
+    public class VerbProperties_Custom : VerbProperties
+    {
+        public string desc;
+        public string texPath;
+        public Texture2D texture;
+
+        public VerbProperties_Custom()
+        {
+            LongEventHandler.ExecuteWhenFinished(delegate
+            {
+                if (!texPath.NullOrEmpty())
+                {
+                    texture = ContentFinder<Texture2D>.Get(texPath);
+                }
+            });
+        }
+
+
+    }
+
+    public class VerbPorps_Consumeable : VerbProperties
+    {
+        public int maxMagazine;
+    }
+    public class Verb_ShootConsumeable : Verb_Shoot
+    {
+        public int remainBullet = 0;
+        //초기화할때 verbproperties랑remainBullet 동기화해야되
+
+        public override void ExposeData()
+        {
+            base.ExposeData();
+            Scribe_Values.Look(ref remainBullet, "remainBullet");
+        }
+        protected override bool TryCastShot()
+        {
+            if (base.TryCastShot())
+            {
+                if (burstShotsLeft <= 1)
+                {
+                    SelfConsume();
+                }
+                return true;
+            }
+            if (burstShotsLeft < verbProps.burstShotCount)
+            {
+                SelfConsume();
+            }
+            return false;
+        }
+
+        public override void Notify_EquipmentLost()
+        {
+            base.Notify_EquipmentLost();
+            if (state == VerbState.Bursting && burstShotsLeft < verbProps.burstShotCount)
+            {
+                SelfConsume();
+            }
+        }
+
+        private void SelfConsume()
+        {
+            if (remainBullet > 0)
+            {
+                remainBullet--;
+            }
+            else
+            {
+                EquipmentSource.GetComp<CompEquippable>().AllVerbs.Remove(this);
+            }
+        }
+    }
 }
