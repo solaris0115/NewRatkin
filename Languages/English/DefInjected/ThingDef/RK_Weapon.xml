@@ -116,8 +116,13 @@
   <RK_PrototypePulseRifle.description>Experimental energy rifle. Made for experimental Ratkins. Special sights have been added to improve near and far sighting. This weapon, inspired by the Ratkin Flechette bullet, fires a wedge-shaped, high-penetration energy projectile.</RK_PrototypePulseRifle.description>
   <RK_PrototypePulseRifle.tools.0.label>stock</RK_PrototypePulseRifle.tools.0.label>
   <RK_PrototypePulseRifle.tools.1.label>barrel</RK_PrototypePulseRifle.tools.1.label>
+  <RK_PrototypePulseRifle.verbs.0.label>Rapid Fire</RK_PrototypePulseRifle.verbs.0.label>
+  <RK_PrototypePulseRifle.verbs.1.label>Precisely Fire</RK_PrototypePulseRifle.verbs.1.label>
 
-  <Bullet_RK_PrototypePulseRifle.label>wedge bullet</Bullet_RK_PrototypePulseRifle.label>
+  <Bullet_RK_PrototypePulseRifleLight.label>wedge bullet</Bullet_RK_PrototypePulseRifleLight.label>
+  <Bullet_RK_PrototypePulseRifleHeavy.label>wedge bullet</Bullet_RK_PrototypePulseRifleHeavy.label>
 
+
+  <!--<Bullet_RK_PrototypePulseRifle.label>wedge bullet</Bullet_RK_PrototypePulseRifle.label>-->
 
 </LanguageData>

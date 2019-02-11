@@ -207,7 +207,7 @@
 			<effectWorking>Smith</effectWorking>
 			<soundWorking>Recipe_Machining</soundWorking>
 			<workAmount>250</workAmount>
-			<productCount>2</productCount>
+			<productCount>3</productCount>
 			<targetCountAdjustment>4</targetCountAdjustment>
 			<workSkill>Crafting</workSkill>
 			<recipeUsers>

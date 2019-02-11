@@ -113,11 +113,16 @@
   <!-- 랫킨용 실험용총 2연발 -->
 
   <RK_PrototypePulseRifle.label>랫킨 실험용 펄스 소총</RK_PrototypePulseRifle.label>
-  <RK_PrototypePulseRifle.description>실험용 에너지 소총입니다. 실험용 랫킨들을 위해 제작되어 특수망원렌즈가 근거리 원거리 모두 정밀하게 조준해줍니다. 랫킨식 플레셰트탄환에서 아이디어를 얻어 제작한 이 무기는 쇄기모양의 고관통 에너지탄을 빠르게 발사합니다.</RK_PrototypePulseRifle.description>
+  <RK_PrototypePulseRifle.description>실험용 에너지 소총입니다. 실험용 랫킨들을 위해 제작되어 특수망원렌즈가 근거리 원거리 모두 정밀하게 조준해줍니다. 랫킨식 플레셰트탄환에서 아이디어를 얻어 제작한 이 무기는 쇄기모양의 고관통 에너지탄을 빠르게 발사합니다.속사와 정밀사격 모드를 통해 상황에 따라 유동적으로 선택이 가능합니다.</RK_PrototypePulseRifle.description>
   <RK_PrototypePulseRifle.tools.0.label>개머리판</RK_PrototypePulseRifle.tools.0.label>
   <RK_PrototypePulseRifle.tools.1.label>총열</RK_PrototypePulseRifle.tools.1.label>
+  <RK_PrototypePulseRifle.verbs.0.label>속사</RK_PrototypePulseRifle.verbs.0.label>
+  <RK_PrototypePulseRifle.verbs.1.label>정밀사격</RK_PrototypePulseRifle.verbs.1.label>
 
-  <Bullet_RK_PrototypePulseRifle.label>쐐기탄</Bullet_RK_PrototypePulseRifle.label>
+  <Bullet_RK_PrototypePulseRifleLight.label>쇄기탄</Bullet_RK_PrototypePulseRifleLight.label>
+  <Bullet_RK_PrototypePulseRifleHeavy.label>쇄기탄</Bullet_RK_PrototypePulseRifleHeavy.label>
 
+
+  <!--<Bullet_RK_PrototypePulseRifle.label>쐐기탄</Bullet_RK_PrototypePulseRifle.label>-->
 
 </LanguageData>

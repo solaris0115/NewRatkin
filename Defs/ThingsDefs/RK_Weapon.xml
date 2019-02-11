@@ -948,7 +948,7 @@
 				<soundCast>PrototypePulse</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
-				<desc>Take 4 burst shot at mid-range target.\nRange Bounus\nShort: +45%</desc>
+				<desc>Take 4 burst shot at mid-range target.\nAcc Bonus\nShort Acc: +45%</desc>
 				<label>Rapid Fire</label>
 				<texPath>UI/Commands/Pew</texPath>
 				<accuracyTouch>0.0</accuracyTouch>
@@ -967,7 +967,7 @@
 				<soundCast>PrototypePulse</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
-				<desc>Take 2 burst shot at long-range target.\nRange Bounus\nLong: +45%</desc>
+				<desc>Take 2 burst shot at long-range target.\nAcc Bonus\nLong Acc: +45%</desc>
 				<label>Precisely Fire</label>
 				<texPath>UI/Commands/Snipe</texPath>
 				<accuracyTouch>0.0</accuracyTouch>

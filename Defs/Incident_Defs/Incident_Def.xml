@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- <IncidentDef> -->
+		<!-- <defName>RaidRatkin</defName> -->
+		<!-- <label>ratkin raid</label> -->
+		<!-- <targetTags> -->
+			<!-- <li>Map_PlayerHome</li> -->
+		<!-- </targetTags> -->
+		<!-- <workerClass>NewRatkin.IncidentWorker_RaidRatkin</workerClass> -->
+		<!-- <baseChance>7.4</baseChance> -->
+		<!-- <category>ThreatBig</category> -->
+		<!-- <pointsScaleable>true</pointsScaleable> -->
+		<!-- <tale>Raid</tale> -->
+	<!-- </IncidentDef> -->
+
+	<!-- <IncidentDef> -->
+		<!-- <defName>RatkinHive</defName> -->
+		<!-- <label>RatkinHive</label> -->
+		<!-- <targetTags> -->
+			<!-- <li>Map_PlayerHome</li> -->
+		<!-- </targetTags> -->
+		<!-- <workerClass>NewRatkin.IncidentWorker_RatkinHive</workerClass> -->
+		<!-- <letterLabel>RatkinHive</letterLabel> -->
+		<!-- <letterText>Giant insects are tunneling towards you! They will break through in a few seconds and plant hives.\n\nThe hives will spawn more insects and more hives.\n\nIf you don't want the insects to infest the whole area, destroy the hives. But beware - the bugs will defend their home.</letterText> -->
+		<!-- <letterDef>ThreatBig</letterDef> -->
+		<!-- <baseChance>2.7</baseChance> -->
+		<!-- <minRefireDays>20</minRefireDays> -->
+		<!-- <category>ThreatBig</category> -->
+		<!-- <pointsScaleable>true</pointsScaleable> -->
+		<!-- <minThreatPoints>400</minThreatPoints> -->
+		<!-- <tale>Infestation</tale> -->
+	<!-- </IncidentDef> -->
+
+	<!-- <RaidStrategyDef> -->
+		<!-- <defName>TacticalRaid</defName> -->
+		<!-- <workerClass>NewRatkin.RaidStrategyWorker_RatkinHive</workerClass> -->
+		<!-- <letterLabelEnemy>RatkinHive!</letterLabelEnemy> -->
+		<!-- <arrivalTextEnemy>지진파가 탐지되었습니다. 땅굴망을 통해 적들이 침투하려는 것 같습니다.</arrivalTextEnemy> -->
+		<!-- <pointsFactor>1.20</pointsFactor> -->
+		<!-- <selectionChance>1.5</selectionChance> -->
+		<!-- <minPawns>2</minPawns> -->
+		<!-- <minDaysPassed>30</minDaysPassed> -->
+		<!-- <arriveModes> -->
+			<!-- <li>EdgeDrop</li> -->
+			<!-- <li>EdgeWalkIn</li> -->
+		<!-- </arriveModes> -->
+	<!-- </RaidStrategyDef> -->
+
+</Defs>
