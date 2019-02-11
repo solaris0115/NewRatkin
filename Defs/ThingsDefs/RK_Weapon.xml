@@ -920,10 +920,10 @@
 			<MarketValue>2500</MarketValue>
 			<WorkToMake>40000</WorkToMake>
 			<Mass>3.5</Mass>
-			<AccuracyTouch>0.60</AccuracyTouch>
-			<AccuracyShort>0.40</AccuracyShort>
-			<AccuracyMedium>0.65</AccuracyMedium>
-			<AccuracyLong>0.40</AccuracyLong>
+			<AccuracyTouch>0.40</AccuracyTouch>
+			<AccuracyShort>0.35</AccuracyShort>
+			<AccuracyMedium>0.40</AccuracyMedium>
+			<AccuracyLong>0.35</AccuracyLong>
 			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
@@ -942,18 +942,18 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_RK_PrototypePulseRifleLight</defaultProjectile>
 				<warmupTime>1.5</warmupTime>
-				<range>30</range>
+				<range>31</range>
 				<burstShotCount>4</burstShotCount>
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
 				<soundCast>PrototypePulse</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
-				<desc>Take 4 burst shot at mid-range target.\nAcc Bonus\nShort Acc: +45%</desc>
+				<desc>Take 4 burst shot at mid-range target.\nAcc Bonus\nShort Acc: +50%\nMid Acc: +25%</desc>
 				<label>Rapid Fire</label>
 				<texPath>UI/Commands/Pew</texPath>
-				<accuracyTouch>0.0</accuracyTouch>
-				<accuracyShort>0.45</accuracyShort>
-				<accuracyMedium>0</accuracyMedium>
+				<accuracyTouch>0.35</accuracyTouch>
+				<accuracyShort>0.50</accuracyShort>
+				<accuracyMedium>0.25</accuracyMedium>
 				<accuracyLong>0</accuracyLong>
 			</li>	
 			<li Class="NewRatkin.VerbProperties_Custom">
@@ -963,17 +963,17 @@
 				<warmupTime>2</warmupTime>
 				<range>42</range>
 				<burstShotCount>2</burstShotCount>
-				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<ticksBetweenBurstShots>13</ticksBetweenBurstShots>
 				<soundCast>PrototypePulse</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
-				<desc>Take 2 burst shot at long-range target.\nAcc Bonus\nLong Acc: +45%</desc>
+				<desc>Take 2 burst shot at long-range target.\nAcc Bonus\nMid Acc: +25%\nLong Acc: +50%</desc>
 				<label>Precisely Fire</label>
 				<texPath>UI/Commands/Snipe</texPath>
 				<accuracyTouch>0.0</accuracyTouch>
 				<accuracyShort>0</accuracyShort>
-				<accuracyMedium>0</accuracyMedium>
-				<accuracyLong>0.45</accuracyLong>
+				<accuracyMedium>0.25</accuracyMedium>
+				<accuracyLong>0.50</accuracyLong>
 			</li>
 		</verbs>
 		<recipeMaker Inherit="false"/>
@@ -1015,7 +1015,7 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>7</damageAmountBase>
+			<damageAmountBase>9</damageAmountBase>
 			<speed>85</speed>
 			<armorPenetrationBase>0.45</armorPenetrationBase>
 		</projectile>
@@ -1029,7 +1029,7 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>16</damageAmountBase>
+			<damageAmountBase>20</damageAmountBase>
 			<speed>120</speed>
 			<armorPenetrationBase>0.60</armorPenetrationBase>
 		</projectile>
