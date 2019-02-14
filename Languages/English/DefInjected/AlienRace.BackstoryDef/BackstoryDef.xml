@@ -19,35 +19,35 @@
 
   <Ratkin_CountryKid.title>Ratkin country kid</Ratkin_CountryKid.title>
   <Ratkin_CountryKid.titleShort>country kid</Ratkin_CountryKid.titleShort>
-  <Ratkin_CountryKid.baseDescription>[PAWN_nameDef]의 조부모는 농부였으며 부모님도 농부입니다. 그리고 [PAWN_pronoun]또한 가족 전통에 따라 농부가 될것입니다. 앞으로도 이어질겁니다.</Ratkin_CountryKid.baseDescription>
+  <Ratkin_CountryKid.baseDescription>[PAWN_nameDef]'s grandparents were farmers and parents were farmers too. And [PAWN_pronoun] also be a farmer along with his family. Forever.</Ratkin_CountryKid.baseDescription>
 
 
   <!-- 꼬마목동 -->
 
   <Ratkin_ShepherdBoy.title>Ratkin shepherd boy</Ratkin_ShepherdBoy.title>
   <Ratkin_ShepherdBoy.titleShort>shepherd boy</Ratkin_ShepherdBoy.titleShort>
-  <Ratkin_ShepherdBoy.baseDescription>[PAWN_nameDef]은 어려서부터 다양한 가축들 사이에서 자랐습니다. [PAWN_pronoun]은 동물들을 친구처럼 생각하고 있습니다.</Ratkin_ShepherdBoy.baseDescription>
+  <Ratkin_ShepherdBoy.baseDescription>[PAWN_nameDef]grew up with animals since childhood. [PAWN_pronoun] regards animals as friends.</Ratkin_ShepherdBoy.baseDescription>
 
 
   <!-- 고아 -->
 
   <Ratkin_Orphan.title>Ratkin orphan</Ratkin_Orphan.title>
   <Ratkin_Orphan.titleShort>orphan</Ratkin_Orphan.titleShort>
-  <Ratkin_Orphan.baseDescription>일찍이 버려진 [PAWN_nameDef]에게 부모님은 존재하지 않았습니다. [PAWN_pronoun]은 혼자서 살아남아야 했기에 전문적 지식은 없지만 다양한 일을 해낼 수 있습니다.</Ratkin_Orphan.baseDescription>
+  <Ratkin_Orphan.baseDescription>Abandoned, [PAWN_nameDef] grew up without his parents. [PAWN_pronoun] has to live alone, so [PAWN_pronoun] doesn't have any technical knowledge, but he can do various things.</Ratkin_Orphan.baseDescription>
 
 
   <!-- 학생 -->
 
   <Ratkin_Student.title>Ratkin student</Ratkin_Student.title>
   <Ratkin_Student.titleShort>student</Ratkin_Student.titleShort>
-  <Ratkin_Student.baseDescription>[PAWN_nameDef]의 집안은 부유하진 않았지만 공부를 하지 못할만큼 가난하지도 않았습니다. [PAWN_pronoun]은 머리를 쓰는 공부에 능숙했지만 체육과목에 대한 점수는 그리 좋지 못했습니다.</Ratkin_Student.baseDescription>
+  <Ratkin_Student.baseDescription>[PAWN_nameDef]'s family wasn't wealthy, nor wasn't poor enough to study. [PAWN_pronoun] had a talent for studying but not a workout.</Ratkin_Student.baseDescription>
 
 
   <!-- 사서자식 -->
 
   <Ratkin_LittleLibrarian.title>Ratkin little librarian</Ratkin_LittleLibrarian.title>
   <Ratkin_LittleLibrarian.titleShort>little librarian</Ratkin_LittleLibrarian.titleShort>
-  <Ratkin_LittleLibrarian.baseDescription>사서를 부모로 둔 [PAWN_nameDef]은 책더미속에서 지냈습니다. 많은 책들은 [PAWN_pronoun]의 학문수준을 더 깊고 넓혀주었지만 덕분에 안경없이는 보기 힘든 시력을 갖게되었습니다.</Ratkin_LittleLibrarian.baseDescription>
+  <Ratkin_LittleLibrarian.baseDescription>[PAWN_nameDef] was a bookworm with [PAWN_nameDef]'s librarian as parents. [PAWN_pronoun] has a wide knowledge,and terrible eye sight too.</Ratkin_LittleLibrarian.baseDescription>
 
 
   <!-- 금수저 -->

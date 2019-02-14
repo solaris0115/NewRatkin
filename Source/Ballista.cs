@@ -37,7 +37,7 @@ namespace NewRatkin
                 {
                     pawn.stances.StaggerFor(95);
                 }
-                SoundDefOf.Ballista_Impact.PlayOneShot(new TargetInfo(hitThing.Position, map, false));
+                RKSoundDefOf.Ballista_Impact.PlayOneShot(new TargetInfo(hitThing.Position, map, false));
                 FilthMaker.MakeFilth(Position, map, ThingDefOf.Filth_Blood, 4);
             }
             else
@@ -469,7 +469,7 @@ namespace NewRatkin
                 if(pawn!=null)
                 {
                     FilthMaker.MakeFilth(Position, map, ThingDefOf.Filth_Blood, 4);
-                    SoundDefOf.Ballista_Impact.PlayOneShot(new TargetInfo(Position, map, false));
+                    RKSoundDefOf.Ballista_Impact.PlayOneShot(new TargetInfo(Position, map, false));
                     if (pawn.stances != null && pawn.BodySize <= def.projectile.StoppingPower + 0.001f)
                     {
                         pawn.stances.StaggerFor(95);
@@ -533,7 +533,7 @@ namespace NewRatkin
         public static DamageDef ShockWaveHeavy;
     }
     [DefOf]
-    public static class SoundDefOf
+    public static class RKSoundDefOf
     {
         public static SoundDef Ballista_Impact;
     }
