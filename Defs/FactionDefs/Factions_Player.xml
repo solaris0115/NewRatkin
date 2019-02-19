@@ -81,9 +81,8 @@
 				<li>(100000, 10000)</li>
 			</points>
 		</maxPawnCostPerTotalPointsCurve>
-		<pawnGroupMakers>
+		<pawnGroupMakers>				
 			<li>
-				<!-- 원거리 전투병과 -->
 				<kindDef>Combat</kindDef>
 				<commonality>30</commonality>
 				<disallowedStrategies>
@@ -93,18 +92,18 @@
 					<RatkinCombatant>10</RatkinCombatant>
 					<RatkinSoldier>20</RatkinSoldier>
 					<RatkinEliteGuardener>8</RatkinEliteGuardener>
-					<RatkinNoble>3</RatkinNoble>
+					<RatkinNoble>1</RatkinNoble>
 				</options>
 			</li>
 			<li>
 				<!-- 근접과 공성 -->
 				<kindDef>Combat</kindDef>
-				<commonality>15</commonality>
+				<commonality>20</commonality>
 				<options>
 					<RatkinCombatant>10</RatkinCombatant>
 					<RatkinSoldier>10</RatkinSoldier>
 					<RatkinEliteGuardener>20</RatkinEliteGuardener>
-					<RatkinNoble>5</RatkinNoble>
+					<RatkinNoble>1</RatkinNoble>
 				</options>
 			</li>
 			<li>
@@ -112,17 +111,18 @@
 				<kindDef>Combat</kindDef>
 				<commonality>10</commonality>
 				<options>
-					<RatkinSoldier>10</RatkinSoldier>
+					<RatkinSoldier>20</RatkinSoldier>
+					<RatkinEliteSoldier>5</RatkinEliteSoldier>
 				</options>
 			</li>
 			<li>
 				<kindDef>Peaceful</kindDef>
 				<options>
 					<RatkinNoble>3</RatkinNoble>
-					<RatkinColonist>5</RatkinColonist>
-					<RatkinServant>5</RatkinServant>
-					<RatkinSoldier>4</RatkinSoldier>
-					<RatkinEliteGuardener>5</RatkinEliteGuardener>
+					<RatkinColonist>10</RatkinColonist>
+					<RatkinServant>10</RatkinServant>
+					<RatkinSoldier>5</RatkinSoldier>
+					<RatkinEliteGuardener>15</RatkinEliteGuardener>
 					<RatkinPriest>3</RatkinPriest>
 				</options>
 			</li>

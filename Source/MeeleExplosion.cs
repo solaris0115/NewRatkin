@@ -12,6 +12,11 @@ using Verse.Sound;
 
 namespace NewRatkin
 {
+    [DefOf]
+    public static class WeaponDefOf
+    {
+        public static ThingDef RK_FaceCleaner;
+    }
     public class Verb_MeleeAttackDamage : Verb_MeleeAttack
     {
         protected override DamageWorker.DamageResult ApplyMeleeDamageToTarget(LocalTargetInfo target)
@@ -129,6 +134,15 @@ namespace NewRatkin
                     chanceToStartFire: 0,
                     damageFalloff: true
                 );
+            if(CasterPawn!=null && CasterPawn.inventory!=null)
+            {
+                Thing faceCleaner = CasterPawn.inventory.innerContainer.First((Thing t) => t.def == WeaponDefOf.RK_FaceCleaner);
+                if(faceCleaner!=null)
+                {
+                    faceCleaner.Destroy(DestroyMode.Vanish);
+                }
+            }
+
             if (EquipmentSource != null && !EquipmentSource.Destroyed)
             {
                 EquipmentSource.Destroy(DestroyMode.Vanish);

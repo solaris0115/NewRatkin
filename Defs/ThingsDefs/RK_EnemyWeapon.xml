@@ -1,14 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-		<defName>RK_Cleaner</defName>
-		<label>ratkin cleaner</label>
-		<description>막대기 끝에 폭발물이 장착되어 있습니다. 제정신인 랫킨이라면 이것을 던졌을 겁니다.</description>
+		<defName>RK_FaceCleaner</defName>
+		<label>ratkin face cleaner</label>
+		<description>충격에 민감한 랫킨제 얼룩 제거기입니다. 제정신인 랫킨이라면 이것을 던지겠지만...</description>
 		<graphicData>
 			<texPath>Weapon/RK_Cleaner</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<techLevel>Medieval</techLevel>
+		<tickerType>Normal</tickerType>
+		<techLevel>Industrial</techLevel>
 		<weaponTags Inherit="false">
 			<li>RK_Demoman</li>
 		</weaponTags>
@@ -24,7 +25,7 @@
 		<comps>
 			<li Class="CompProperties_Explosive">
 				<explosiveRadius>2.5</explosiveRadius>
-				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveDamageType>DemoBomb</explosiveDamageType>
 			</li>
 		</comps>
 		<tools>
@@ -60,7 +61,7 @@
 		<requiredCapacity>Kaboom</requiredCapacity>
 		<verb>
 			<verbClass>NewRatkin.Verb_MeleeAttackDamage</verbClass>
-			<meleeDamageDef>Bomb</meleeDamageDef>
+			<meleeDamageDef>DemoBomb</meleeDamageDef>
 		</verb>
 		<logEntryDef>MeleeAttack</logEntryDef>
 		<combatLogRulesHit>Maneuver_Smash_MeleeHit</combatLogRulesHit>
@@ -68,4 +69,31 @@
 		<combatLogRulesMiss>Maneuver_Smash_MeleeMiss</combatLogRulesMiss>
 		<combatLogRulesDodge>Maneuver_Smash_MeleeDodge</combatLogRulesDodge>
 	</ManeuverDef>
+
+	<DamageDef>
+		<defName>DemoBomb</defName>
+		<label>bomb</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<isExplosive>true</isExplosive>
+		<deathMessage>{0} has died in an explosion.</deathMessage>
+		<hediff>Shredded</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Blunt</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<minDamageToFragment>20</minDamageToFragment>
+		<defaultDamage>40</defaultDamage>
+		<defaultStoppingPower>1</defaultStoppingPower>
+		<defaultArmorPenetration>0.50</defaultArmorPenetration>
+		<buildingDamageFactor>10</buildingDamageFactor>
+		<plantDamageFactor>4</plantDamageFactor>
+		<explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+		<explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
+		<explosionCellMote>Mote_BlastDry</explosionCellMote>
+		<explosionColorCenter>(1, 0.5, 0.3)</explosionColorCenter>
+		<explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
+		<soundExplosion>Explosion_Bomb</soundExplosion>
+		<combatLogRules>Damage_Bomb</combatLogRules>
+	</DamageDef>
 </Defs>

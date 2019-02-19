@@ -4,7 +4,6 @@
 		<combatPower>20</combatPower>
 		<baseRecruitDifficulty>0.80</baseRecruitDifficulty>
 		<race>Ratkin</race>
-		<itemQuality>Normal</itemQuality>
 		<minGenerationAge>15</minGenerationAge>
 		<maxGenerationAge>35</maxGenerationAge>
 		<defaultFactionType>Rakinia</defaultFactionType>
@@ -13,6 +12,7 @@
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
 		<apparelColor>(255,255,255)</apparelColor>
 	</PawnKindDef>	
+	
 	<!-- 일반시민 -->
 	<PawnKindDef ParentName="RKBasePawnKind">
 		<defName>RatkinColonist</defName>
@@ -21,7 +21,6 @@
 			<li>RatkinStory</li>
 		</backstoryCategories>
 		<defaultFactionType>RK_PlayerFaction</defaultFactionType>
-		<itemQuality>Normal</itemQuality>
 		<apparelMoney>
 			<min>200</min>
 			<max>500</max>
@@ -390,5 +389,109 @@
 			<li>RK_RangeWeapon</li>
 		</weaponTags>
 	</PawnKindDef>
+	
+	<!-- 특작 부대 찍찍이 -->
+	<PawnKindDef ParentName="RKBasePawnKind">
+		<defName>RatkinEliteSoldier</defName>
+		<label>ratkin elite soldier</label>
+		<combatPower>40</combatPower>
+		<isFighter>true</isFighter>
+		<itemQuality>Excellent</itemQuality>
+		<backstoryCategories>
+			<li>RatkinSoldier</li>
+		</backstoryCategories>
+		<apparelMoney>
+			<min>2500</min>
+			<max>4500</max>
+		</apparelMoney>
+		<weaponMoney>
+			<min>2500</min>
+			<max>4500</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>RK_4TierWeapon</li>
+		</weaponTags>
+		<apparelTags>
+			<li>RK_EliteSoldier</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+	</PawnKindDef>
 
+
+	<!-- 찍찍이 데모맨 -->
+	<PawnKindDef ParentName="RKBasePawnKind">
+		<defName>RatkinDemonMan</defName>
+		<label>ratkin demoman</label>
+		<combatPower>20</combatPower>
+		<isFighter>true</isFighter>
+		<baseRecruitDifficulty>0.95</baseRecruitDifficulty>
+		<backstoryCategories>
+			<li>RatkinDemoman</li>
+		</backstoryCategories>
+		<apparelMoney>
+			<min>1500</min>
+			<max>2500</max>
+		</apparelMoney>
+		<apparelRequired>
+			<!-- <li>Apparel_ShieldBelt</li> -->
+			<li>RK_HeadBand</li>
+			<!-- <li>Apparel_SmokepopBelt</li> -->
+		</apparelRequired>
+		<apparelTags>
+			<li>RK_Demoman</li>
+			<li>Belt</li>
+		</apparelTags>
+		<weaponMoney>
+			<min>1500</min>
+			<max>3000</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>RK_Demoman</li>
+		</weaponTags>
+		<inventoryOptions>
+			<skipChance>0.5</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>RK_FaceCleaner</thingDef>
+					<choiceChance>0.8</choiceChance>
+					<countRange>
+						<min>1</min>
+						<max>2</max>
+					</countRange>
+				</li>
+				<li>
+					<thingDef>RK_FaceCleaner</thingDef>
+					<choiceChance>0.05</choiceChance>
+					<countRange>
+						<min>3</min>
+						<max>5</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+	</PawnKindDef>
+	
+	<!-- 곳간털이범 -->
+	<PawnKindDef ParentName="RKBasePawnKind">
+		<defName>RatkinPettyThief</defName>
+		<label>ratkin petty thief</label>
+		<combatPower>10</combatPower>
+		<isFighter>true</isFighter>
+		<backstoryCategories>
+			<li>RatkinThief</li>
+		</backstoryCategories>
+		<apparelMoney>
+			<min>800</min>
+			<max>3500</max>
+		</apparelMoney>
+		<apparelRequired>
+			<li>RK_Sack</li>
+		</apparelRequired>
+		<apparelTags>
+			<li>RK_Thief</li>
+		</apparelTags>
+		<apparelColor>(100,100,100)</apparelColor>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+	</PawnKindDef>
 </Defs>

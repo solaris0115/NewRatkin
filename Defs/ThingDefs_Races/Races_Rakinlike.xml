@@ -37,6 +37,124 @@
 							</li>
 						</options>
 					</alienskincolorgen> 
+					<alienhaircolorgen Class="ColorGenerator_Options">
+						<options>
+							
+							<!-- 다크브라운3:2:0.5 -->								
+							<li>
+								<weight>15</weight>
+								<min>(0.25,0.1,0)</min>
+								<max>(0.4,0.15,0.05)</max>
+							</li>
+							<!-- 브라운5:4:1 -->							
+							<li>
+								<weight>20</weight>
+								<min>(0.5,0.35,0.1)</min>
+								<max>(0.6,0.40,0.2)</max>
+							</li>
+							<!-- 블랙 -->							
+							<li>
+								<weight>8</weight>
+								<min>(0.1,0.0,0)</min>
+								<max>(0.2,0.1,0.05)</max>
+							</li>	<!-- 블론드 -->
+							<li>
+								<weight>8</weight>
+								<min>(0.9,0.85,0.7)</min>
+								<max>(1.0,0.9,0.8)</max>
+							</li>						
+							<!-- 베이지 -->						
+							<li>
+								<weight>6</weight>
+								<min>(0.8,0.6,0.4)</min>
+								<max>(1.0,0.75,0.45)</max>
+							</li>	
+							<!-- 어두운 베이지 -->
+							<li>
+								<weight>5</weight>
+								<min>(0.6,0.4,0.2)</min>
+								<max>(0.8,0.5,0.25)</max>
+							</li>
+							<!-- 라이트 레드 -->
+							<li>
+								<weight>1</weight>
+								<min>(0.9,0.6,0.4)</min>
+								<max>(1.0,0.8,0.6)</max>
+							</li>
+							<!-- 블루 펄 -->
+							<li>
+								<weight>3</weight>
+								<min>(0.6,0.78,0.78)</min>
+								<max>(0.8,0.8,0.8)</max>
+							</li>
+							<!-- 탁금발 -->
+							<li>
+								<weight>3</weight>
+								<min>(0.65,0.6,0.4)</min>
+								<max>(0.75,0.7,0.6)</max>
+							</li>
+							<!-- 적갈 -->
+							<li>
+								<weight>3</weight>
+								<min>(0.65,0.4,0.3)</min>
+								<max>(0.75,0.55,0.4)</max>
+							</li>
+							<!--  탁갈 -->
+							<li>
+								<weight>3</weight>
+								<min>(0.55,0.4,0.35)</min>
+								<max>(0.62,0.55,0.4)</max>
+							</li>
+							<!--  흑갈 -->
+							<li>
+								<weight>4</weight>
+								<min>(0.4,0.2,0.12)</min>
+								<max>(0.62,0.4,0.35)</max>
+							</li>
+							<!--  탁파랑 -->
+							<li>
+								<weight>2</weight>
+								<min>(0.42,0.47,0.45)</min>
+								<max>(0.55,0.57,0.6)</max>
+							</li>
+							<!--  흑파랑 -->
+							<li>
+								<weight>2</weight>
+								<min>(0.32,0.32,0.27)</min>
+								<max>(0.38,0.33,0.38)</max>
+							</li>
+							<!--  흑파랑 -->
+							<li>
+								<weight>1</weight>
+								<min>(0.28,0.07,0.1)</min>
+								<max>(0.35,0.25,0.27)</max>
+							</li>
+							<!--  미드나잇 블루 -->
+							<li>
+								<weight>1</weight>
+								<min>(0.1,0.15,0.25)</min>
+								<max>(0.25,0.32,0.4)</max>
+							</li>
+							<!--  흑파랑 -->
+							<li>
+								<weight>1</weight>
+								<min>(0.35,0.2,0.1)</min>
+								<max>(0.7,0.3,0.2)</max>
+							</li>
+							<!-- 오렌지 -->							
+							<li>
+								<weight>1</weight>
+								<min>(0.9,0.3,0)</min>
+								<max>(1.0,0.5,0.15)</max>
+							</li>	
+							<!-- 오렌지 -->
+							<li>
+								<weight>1</weight>
+								<min>(0.9,0.5,0)</min>
+								<max>(1.0,0.6,0.5)</max>
+							</li>
+						</options>
+					</alienhaircolorgen>
 					<useSkincolorForHair>false</useSkincolorForHair>
 					<!-- 신체 드로잉 크기 -->
 					<customDrawSize>(0.9, 0.9)</customDrawSize>
@@ -169,7 +287,7 @@
 			</relationSettings>
 
 			<raceRestriction>
-				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
+				<onlyUseRaceRestrictedApparel>false</onlyUseRaceRestrictedApparel>
 				<apparelList>
 					<li>RK_ApronSkirt</li>
 					<li>RK_SummerDress</li>
@@ -198,10 +316,14 @@
 					<li>RK_RibbonHairBand</li>
 					<li>RK_SistersDerss</li>
 					<li>RK_SistersVeil</li>
+					<li>RK_Sack</li>
+					<li>RK_BattleSuit</li>
+					<li>RK_Mask</li>
+					<li>RK_HeadBand</li>
 				</apparelList>
 				<whiteApparelList>
 					<li>Apparel_ShieldBelt</li>
-					<li>SmokepopBelt</li>
+					<li>Apparel_SmokepopBelt</li>
 				</whiteApparelList>
 				<weaponList>
 					<li>RK_Axe</li>

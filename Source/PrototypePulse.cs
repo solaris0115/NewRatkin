@@ -12,20 +12,10 @@ using Verse.Sound;
 
 namespace NewRatkin
 {
-
+/*
     [StaticConstructorOnStartup]
     public static class CustomVerbPatch
     {
-        public static Texture2D currentCommandTexture;
-        public enum RangeCategory
-        {
-            Touch,
-            Short,
-            Medium,
-            Long
-        }
-
-        
         private static readonly Type patchType = typeof(CustomVerbPatch);
         static CustomVerbPatch()
         {
@@ -55,6 +45,14 @@ namespace NewRatkin
                 );
                 Log.Message("Done");
             }
+        }
+        public static Texture2D currentCommandTexture;
+        public enum RangeCategory
+        {
+            Touch,
+            Short,
+            Medium,
+            Long
         }
         public static IEnumerable<Gizmo> GetGizmosPostfix(IEnumerable<Gizmo> __result, Pawn_EquipmentTracker __instance)
         {
@@ -358,58 +356,5 @@ namespace NewRatkin
         }
 
 
-    }
-
-    public class VerbPorps_Consumeable : VerbProperties
-    {
-        public int maxMagazine;
-    }
-    public class Verb_ShootConsumeable : Verb_Shoot
-    {
-        public int remainBullet = 0;
-        //초기화할때 verbproperties랑remainBullet 동기화해야되
-
-        public override void ExposeData()
-        {
-            base.ExposeData();
-            Scribe_Values.Look(ref remainBullet, "remainBullet");
-        }
-        protected override bool TryCastShot()
-        {
-            if (base.TryCastShot())
-            {
-                if (burstShotsLeft <= 1)
-                {
-                    SelfConsume();
-                }
-                return true;
-            }
-            if (burstShotsLeft < verbProps.burstShotCount)
-            {
-                SelfConsume();
-            }
-            return false;
-        }
-
-        public override void Notify_EquipmentLost()
-        {
-            base.Notify_EquipmentLost();
-            if (state == VerbState.Bursting && burstShotsLeft < verbProps.burstShotCount)
-            {
-                SelfConsume();
-            }
-        }
-
-        private void SelfConsume()
-        {
-            if (remainBullet > 0)
-            {
-                remainBullet--;
-            }
-            else
-            {
-                EquipmentSource.GetComp<CompEquippable>().AllVerbs.Remove(this);
-            }
-        }
-    }
+    }*/
 }

@@ -16,7 +16,7 @@
 		</disallowedTraits>
 	</AlienRace.BackstoryDef>
 
-	<!-- 랫킨 자유 유년기! -->
+	<!-- 랫킨 자유 유년기 -->
 	<!-- 들쥐 -->
 	<AlienRace.BackstoryDef ParentName="BaseRatkinBackStory">
 		<defName>Ratkin_WildChild</defName>
@@ -52,8 +52,10 @@
 			<li>RatkinStory</li>
 			<li>RatkinMurderer</li>
 			<li>RatkinWild</li>
+			<li>RatkinThief</li>
 			<li>RatkinSubject</li>
 			<li>RatkinUneducated</li>
+			<li>RatkinDemoman</li>
 		</spawnCategories>
 	</AlienRace.BackstoryDef>
 	<!-- 땅쥐 -->
@@ -91,7 +93,9 @@
 			<li>RatkinStory</li>
 			<li>RatkinSubject</li>
 			<li>RatkinWild</li>
+			<li>RatkinThief</li>
 			<li>RatkinMurderer</li>
+			<li>RatkinDemoman</li>
 		</spawnCategories>
 	</AlienRace.BackstoryDef>
 	<!-- 시골아이 -->
@@ -120,6 +124,7 @@
 			<li>RatkinStory</li>
 			<li>RatkinPriest</li>
 			<li>RatkinFarm</li>
+			<li>RatkinThief</li>
 			<li>RatkinUneducated</li>
 			<li>RatkinServant</li>
 			<li>RatkinSoldier</li>
@@ -204,6 +209,7 @@
 			<li>RatkinSubject</li>
 			<li>RatkinServant</li>
 			<li>RatkinUneducated</li>
+			<li>RatkinThief</li>
 			<li>RatkinPriest</li>
 			<li>RatkinSoldier</li>
 		</spawnCategories>
@@ -254,6 +260,7 @@
 			<li>RatkinKingdom</li>
 			<li>RatkinEducated</li>
 			<li>RatkinSoldier</li>
+			<li>RatkinDemoman</li>
 		</spawnCategories>
 	</AlienRace.BackstoryDef>	
 	<!-- 사서자식 -->
@@ -512,6 +519,7 @@
 			<li>RatkinWanderer</li>
 			<li>RatkinVagabond</li>
 			<li>RatkinServant</li>
+			<li>RatkinThief</li>
 			<li>RatkinUneducated</li>
 		</spawnCategories>
 	</AlienRace.BackstoryDef>	
@@ -672,6 +680,7 @@
 			<li>RatkinCombatant</li>
 			<li>RatkinCity</li>
 			<li>RatkinServant</li>
+			<li>RatkinThief</li>
 			<li>RatkinUneducated</li>
 		</spawnCategories>
 	</AlienRace.BackstoryDef>	
@@ -713,6 +722,7 @@
 			<li>RatkinServant</li>
 			<li>RatkinMerchant</li>
 			<li>RatkinEducated</li>
+			<li>RatkinDemoman</li>
 		</spawnCategories>
 	</AlienRace.BackstoryDef>	
 	<!-- 도시쥐자식 -->	
@@ -753,6 +763,7 @@
 			<li>RatkinCity</li>
 			<li>RatkinServant</li>
 			<li>RatkinSubject</li>
+			<li>RatkinThief</li>
 			<li>RatkinEducated</li>
 		</spawnCategories>
 	</AlienRace.BackstoryDef>
@@ -799,6 +810,8 @@
 			<li>RatkinSubject</li>
 			<li>RatkinUneducated</li>
 			<li>RatkinCombatant</li>
+			<li>RatkinThief</li>
+			<li>RatkinDemoman</li>
 		</spawnCategories>
 	</AlienRace.BackstoryDef>
 	<!-- 실험실쥐 -->	
@@ -836,6 +849,7 @@
 			<li>RatkinSubject</li>
 			<li>RatkinCity</li>
 			<li>RatkinUneducated</li>
+			<li>RatkinDemoman</li>
 		</spawnCategories>
 	</AlienRace.BackstoryDef>
 	<!-- 좀도둑 -->
@@ -890,6 +904,8 @@
 			<li>RatkinServant</li>
 			<li>RatkinMerchant</li>
 			<li>RatkinUneducated</li>
+			<li>RatkinThief</li>
+			<li>RatkinDemoman</li>
 		</spawnCategories>
 	</AlienRace.BackstoryDef>	
 
@@ -1330,6 +1346,7 @@
 			<li>RatkinKingdom</li>
 			<li>RatkinWild</li>
 			<li>RatkinWanderer</li>
+			<li>RatkinThief</li>
 		</spawnCategories>
 	</AlienRace.BackstoryDef>
 	<!-- 외교관 -->
@@ -2085,7 +2102,40 @@
 		</spawnCategories>		
 	</AlienRace.BackstoryDef>
 
-
+	<!-- 데모맨 -->
+	<AlienRace.BackstoryDef ParentName="BaseRatkinBackStory">
+		<defName>Ratkin_Demoman</defName>
+		<title>Ratkin Demoman</title>
+		<titleShort>Demoman</titleShort>
+		<baseDescription>[PAWN_nameDef]은 다른 랫킨과 달리 폭발에 광적으로 집착합니다. [PAWN_pronoun]는 자신의 재능을 살려 랫킨 특공대에 지원하였습니다.</baseDescription>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Melee</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Mining</defName>
+				<amount>4</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>Caring</li>
+		</workDisables>
+		<spawnCategories>
+			<li>RatkinDemoman</li>
+		</spawnCategories>				
+		<forcedTraits>
+			<li>
+				<defName>Psychopath</defName>
+			</li>
+			<li>
+				<defName>Pyromaniac</defName>
+			</li>
+		</forcedTraits>
+	</AlienRace.BackstoryDef>
 
 
 

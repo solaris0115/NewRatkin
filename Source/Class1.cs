@@ -123,6 +123,7 @@ namespace NewRatkin
             return thingDef.category == ThingCategory.Pawn && thingDef.race.Humanlike && thingDef.tradeability != Tradeability.None;
         }
     }
+
     [DefOf]
     public static class RatkinPawnKindDefOf
     {
@@ -147,5 +148,9 @@ namespace NewRatkin
         public static PawnKindDef RatkinMerchant;
 
         public static PawnKindDef RatkinMurderer;
+
+        public static PawnKindDef RatkinDemonMan;
+        public static PawnKindDef RatkinEliteSoldier;
+
     }
 }

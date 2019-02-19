@@ -933,11 +933,11 @@
 		</costList>		
 		<comps>
 			<li>
-				<compClass>NewRatkin.Comp_VerbSaveable</compClass>
+				<compClass>AdditionalVerb.Comp_VerbSaveable</compClass>
 			</li>
 		</comps>
 		<verbs>
-			<li Class="NewRatkin.VerbProperties_Custom">
+			<li Class="AdditionalVerb.VerbProperties_Custom">
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_RK_PrototypePulseRifleLight</defaultProjectile>
@@ -956,7 +956,7 @@
 				<accuracyMedium>0.25</accuracyMedium>
 				<accuracyLong>0</accuracyLong>
 			</li>	
-			<li Class="NewRatkin.VerbProperties_Custom">
+			<li Class="AdditionalVerb.VerbProperties_Custom">
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_RK_PrototypePulseRifleHeavy</defaultProjectile>
