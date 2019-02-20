@@ -75,14 +75,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Ballista.cs" />
-    <Compile Include="Class1.cs" />
-    <Compile Include="IncidentWorker_Infestation.cs" />
-    <Compile Include="MeeleExplosion.cs" />
+    <Compile Include="Release\Ballista.cs" />
+    <Compile Include="Release\Class1.cs" />
+    <Compile Include="Release\MeeleExplosion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PrototypePulse.cs" />
-    <Compile Include="RatkinTunnel.cs" />
-    <Compile Include="TunnelBuilding.cs" />
+    <Compile Include="DefOf.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
