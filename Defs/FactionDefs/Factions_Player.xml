@@ -112,7 +112,7 @@
 				<commonality>10</commonality>
 				<options>
 					<RatkinSoldier>20</RatkinSoldier>
-					<!-- <RatkinEliteSoldier>5</RatkinEliteSoldier> -->
+					<RatkinEliteSoldier>5</RatkinEliteSoldier>
 				</options>
 			</li>
 			<li>
