@@ -23,24 +23,8 @@ namespace NewRatkin
              * 5개 미만, 적절한 공간이 있으면 격발
              */
             Map map = (Map)parms.target;
-            Zone zone = map.zoneManager.AllZones.FindAll((Zone z) => z is Zone_Stockpile).RandomElement<Zone>();
-            if(zone !=null)
-            {
-                Log.Message("StockPile" + zone.Position);
-                Log.Message("Room " + map.regionGrid.GetValidRegionAt(zone.Position).Room.ID);
-
-                Log.Message("---------FoodSource---------");
-                foreach (Thing t in map.regionGrid.GetValidRegionAt(zone.Position).ListerThings.ThingsInGroup(ThingRequestGroup.Everything))
-                {
-                    Log.Message(t.Label);
-                }
-                Log.Message("---------FoodSourceNotPlantOrTree---------");
-                foreach (Thing t in map.regionGrid.GetValidRegionAt(zone.Position).ListerThings.ThingsInGroup(ThingRequestGroup.FoodSourceNotPlantOrTree))
-                {
-                    Log.Message(t.Label);
-                }
-            }
-            return base.CanFireNowSub(parms) && RatkinTunnelUtility.TotalSpawnedTunnelCount(map) < 2 /*셀 여부 확인*/;
+            IntVec3 intVec;
+            return base.CanFireNowSub(parms) && RatkinTunnelUtility.TotalSpawnedTunnelCount(map) < 2 && RatkinTunnelCellFinder.TryFindCell(out intVec,map);
         }
         protected override bool TryExecuteWorker(IncidentParms parms)
         {

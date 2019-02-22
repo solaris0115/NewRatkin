@@ -16,7 +16,19 @@ namespace NewRatkin
     {
         public static bool TryFindCell(out IntVec3 cell, Map map)
         {
-            cell = new IntVec3();
+            foreach(Zone zone in map.zoneManager.AllZones.FindAll((Zone z) => z is Zone_Stockpile))
+            {
+                zone.
+            }
+            if (zone != null)
+            {
+                Log.Message("StockPile" + zone.Position);
+                foreach (Region region in RegionAndRoomQuery.RoomAt(zone.Position, map).Regions)
+                {
+                    Log.Message("region" + region.id + ": " + region.ListerThings.ThingsInGroup(ThingRequestGroup.FoodSourceNotPlantOrTree).Count);
+                }
+            }
+            cell = 
             return true;
         }
     }
