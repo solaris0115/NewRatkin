@@ -13,7 +13,11 @@ using Verse.AI;
 
 namespace NewRatkin
 {
-    public class Building_GuerrillaTunnel:ThingWithComps
+    public class Building_GuerrillaTunnel : ThingWithComps
+    {
+
+    }
+    public class Building_ThiefTunnel : ThingWithComps
     {
 
     }

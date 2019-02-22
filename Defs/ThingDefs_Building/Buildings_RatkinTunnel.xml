@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BuildingNaturalBase">
+		<defName>RK_ThiefTunnel</defName>
+		<label>rat hole</label>
+		<description>쥐구멍입니다. 아무래도 체구가 작은 누군가가 드나들기 위해 벽에 구멍을 낸것같습니다.</description>
+		<thingClass>NewRatkin.Building_ThiefTunnel</thingClass>
+		<graphicData>
+			<texPath>Things/Building/RK_ThiefTunnel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>false</rotatable>
+		<fillPercent>0.8</fillPercent>
+		<statBases>
+			<MaxHitPoints>340</MaxHitPoints>
+			<Flammability>0.0</Flammability>
+		</statBases>
+		<pathCost>50</pathCost>
+		<blockWind>true</blockWind>
+		<tickerType>Normal</tickerType>
+		<passability>PassThroughOnly</passability>
+		<killedLeavings>
+			<InsectJelly>30</InsectJelly>
+		</killedLeavings>
+	</ThingDef>
+	<ThingDef ParentName="BuildingNaturalBase">
+		<defName>RK_GuerrillaTunnel</defName>
+		<label>drill tunnel</label>
+		<description>드릴이 달린 수송포드입니다. 수송포드로 하늘에서 진입하는 경로가 막히자 랫킨들은 자신들의 장점을 이용해 지하로 침투하는 포드를 만들어냈습니다.</description>
+		<thingClass>NewRatkin.Building_ThiefTunnel</thingClass>
+		<graphicData>
+			<texPath>Things/Building/RK_GuerrillaTunnel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.6</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.8</fillPercent>
+		<statBases>
+			<MaxHitPoints>840</MaxHitPoints>
+			<Flammability>0.0</Flammability>
+		</statBases>
+		<blockWind>false</blockWind>
+		<tickerType>Normal</tickerType>
+		<passability>Impassable</passability>
+		<killedLeavings>
+			<Steel>480</Steel>
+			<ComponentIndustrial>12</ComponentIndustrial>
+			<Chemfuel>150</Chemfuel>
+		</killedLeavings>
+	</ThingDef>
+</Defs>
