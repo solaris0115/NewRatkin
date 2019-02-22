@@ -75,6 +75,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="RatkinGuerrilla\Building_GuerrillaTunnel.cs" />
+    <Compile Include="RatkinGuerrilla\CellFinder.cs" />
+    <Compile Include="RatkinGuerrilla\CompSpawer.cs" />
+    <Compile Include="RatkinGuerrilla\IncidentWorker_Infestation.cs" />
+    <Compile Include="RatkinGuerrilla\IncidentWorker_RatkinGuerrillaTunner.cs" />
+    <Compile Include="RatkinGuerrilla\RatkinTunnelUtility.cs" />
     <Compile Include="Release\Ballista.cs" />
     <Compile Include="Release\BasePatch.cs" />
     <Compile Include="Release\MeeleExplosion.cs" />
