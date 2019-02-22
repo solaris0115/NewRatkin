@@ -79,7 +79,7 @@
     <Compile Include="Release\BasePatch.cs" />
     <Compile Include="Release\MeeleExplosion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="DefOf.cs" />
+    <Compile Include="Release\DefOf.cs" />
     <Compile Include="Release\StockGen_Mercenary.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
