@@ -14,21 +14,63 @@ namespace NewRatkin
 {
     public static class RatkinTunnelCellFinder
     {
-        public static bool TryFindCell(out IntVec3 cell, Map map)
+
+        public static bool FindFoodStockpile(out IntVec3 cell, Map map)
         {
-            foreach(Zone zone in map.zoneManager.AllZones.FindAll((Zone z) => z is Zone_Stockpile))
+            List<IntVec3> candidate = new List<IntVec3>();
+            int zoneCount;
+            foreach (Zone_Stockpile zone in map.zoneManager.AllZones.FindAll((Zone z) => z is Zone_Stockpile))
             {
-                zone.
-            }
-            if (zone != null)
-            {
-                Log.Message("StockPile" + zone.Position);
+                zoneCount = 0;
+                
                 foreach (Region region in RegionAndRoomQuery.RoomAt(zone.Position, map).Regions)
                 {
-                    Log.Message("region" + region.id + ": " + region.ListerThings.ThingsInGroup(ThingRequestGroup.FoodSourceNotPlantOrTree).Count);
+                    zoneCount += region.ListerThings.ThingsInGroup(ThingRequestGroup.FoodSourceNotPlantOrTree).Count;
+                    if (zoneCount > 5)
+                    {
+                        foreach(Region r in RegionAndRoomQuery.RoomAt(zone.Position,map).Regions)
+                        {
+                            int wallIndex = r.extentsClose.maxZ + 1;
+                            int maxZ = r.extentsClose.maxZ;
+
+                            for (int index = r.extentsClose.minX; index <= r.extentsClose.maxX; index++)
+                            {
+                                IntVec3 wallPosition = new IntVec3(index, 0, wallIndex);
+                                Thing wall = map.thingGrid.ThingAt(wallPosition, ThingCategory.Building);
+                                Thing passingPoint = map.thingGrid.ThingAt(new IntVec3(index, 0, maxZ), ThingCategory.Building);
+
+                                if (wall != null && wall.def.fillPercent >= 1 && wall.def.graphicData.linkType == LinkDrawerType.CornerFiller && (passingPoint == null || passingPoint.def.passability != Traversability.Impassable))
+                                {
+                                    candidate.Add(wallPosition);
+                                }
+                            }
+                        }
+                        break;
+                    }
                 }
             }
-            cell = 
+            cell = candidate.RandomElement();
+            return true;
+        }
+
+        public static bool TryFindCell(out IntVec3 cell, Map map)
+        {
+            List<IntVec3> candidate = new List<IntVec3>();
+            int zoneCount;
+            foreach (Zone_Stockpile zone in map.zoneManager.AllZones.FindAll((Zone z) => z is Zone_Stockpile))
+            {
+                zoneCount = 0;
+                foreach (Region region in RegionAndRoomQuery.RoomAt(zone.Position, map).Regions)
+                {
+                    zoneCount += region.ListerThings.ThingsInGroup(ThingRequestGroup.FoodSourceNotPlantOrTree).Count;
+                    if (zoneCount > 5)
+                    {
+                        candidate.Add(zone.Cells.RandomElement());
+                        break;
+                    }
+                }
+            }
+            cell = candidate.RandomElement();
             return true;
         }
     }

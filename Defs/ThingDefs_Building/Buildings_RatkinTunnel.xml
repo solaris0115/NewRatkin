@@ -10,20 +10,20 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1</drawSize>
 		</graphicData>
-		<altitudeLayer>Building</altitudeLayer>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<rotatable>false</rotatable>
 		<fillPercent>0.8</fillPercent>
 		<statBases>
 			<MaxHitPoints>340</MaxHitPoints>
 			<Flammability>0.0</Flammability>
 		</statBases>
-		<pathCost>50</pathCost>
-		<blockWind>true</blockWind>
 		<tickerType>Normal</tickerType>
-		<passability>PassThroughOnly</passability>
-		<killedLeavings>
-			<InsectJelly>30</InsectJelly>
-		</killedLeavings>
+		<building>
+			<isEdifice>false</isEdifice>
+			<canPlaceOverWall>true</canPlaceOverWall>
+		</building>
+		<clearBuildingArea>false</clearBuildingArea>
+		<defaultPlacingRot>South</defaultPlacingRot>
 	</ThingDef>
 	<ThingDef ParentName="BuildingNaturalBase">
 		<defName>RK_GuerrillaTunnel</defName>
@@ -33,7 +33,7 @@
 		<graphicData>
 			<texPath>Things/Building/RK_GuerrillaTunnel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.6</drawSize>
+			<drawSize>1</drawSize>
 		</graphicData>
 		<rotatable>false</rotatable>
 		<altitudeLayer>Building</altitudeLayer>
@@ -50,5 +50,22 @@
 			<ComponentIndustrial>12</ComponentIndustrial>
 			<Chemfuel>150</Chemfuel>
 		</killedLeavings>
+	</ThingDef>
+
+	<ThingDef ParentName="EtherealThingBase">
+		<defName>RK_GuerrillaTunnelSpawner</defName>
+		<label>tunnel</label>
+		<thingClass>NewRatkin.GuerrillaTunnelSpawner</thingClass>
+		<tickerType>Normal</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
+		<alwaysFlee>true</alwaysFlee>
+	</ThingDef>	
+	<ThingDef ParentName="EtherealThingBase">
+		<defName>RK_ThiefTunnelSpawner</defName>
+		<label>tunnel</label>
+		<thingClass>NewRatkin.ThiefTunnelSpawner</thingClass>
+		<tickerType>Normal</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
+		<alwaysFlee>true</alwaysFlee>
 	</ThingDef>
 </Defs>

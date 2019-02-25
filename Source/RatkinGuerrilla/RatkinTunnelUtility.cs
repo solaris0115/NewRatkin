@@ -13,8 +13,23 @@ using Verse.AI;
 
 namespace NewRatkin
 {
+    [StaticConstructorOnStartup]
     public static class RatkinTunnelUtility
     {
+        public static List<PawnKindDef> spawnableElitePawnKinds = new List<PawnKindDef>();
+        public static List<ThingDef> filthTypes = new List<ThingDef>();
+
+        static RatkinTunnelUtility()
+        {
+            filthTypes.Clear();
+            filthTypes.Add(ThingDefOf.Filth_Dirt);
+            filthTypes.Add(ThingDefOf.Filth_Dirt);
+            filthTypes.Add(ThingDefOf.Filth_Dirt);
+            filthTypes.Add(ThingDefOf.Filth_RubbleRock);
+            spawnableElitePawnKinds.Add(RatkinPawnKindDefOf.RatkinEliteSoldier);
+            spawnableElitePawnKinds.Add(RatkinPawnKindDefOf.RatkinDemonMan);
+        }
+
         private const float TunnelPreventsClaimingInRadius = 2f;
 
         public static int TotalSpawnedTunnelCount(Map map)
@@ -51,7 +66,7 @@ namespace NewRatkin
                     List<Thing> thingList = c.GetThingList(map);
                     for (int j = 0; j < thingList.Count; j++)
                     {
-                        if (thingList[j].Faction == Faction.OfInsects && !RatkinTunnelUtility.AnyTunnelPreventsClaiming(thingList[j]))
+                        if (thingList[j].Faction == Faction.OfInsects && !AnyTunnelPreventsClaiming(thingList[j]))
                         {
                             thingList[j].SetFaction(null, null);
                         }

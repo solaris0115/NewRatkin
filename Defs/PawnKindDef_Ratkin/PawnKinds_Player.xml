@@ -482,13 +482,16 @@
 		<backstoryCategories>
 			<li>RatkinThief</li>
 		</backstoryCategories>
+		<apparelRequired>
+			<li>RK_Sack</li>
+			<li>RK_Cardigan</li>
+			<li>RK_Muffler</li>
+			<li>RK_WoolenHat</li>
+		</apparelRequired>
 		<apparelMoney>
 			<min>800</min>
 			<max>3500</max>
 		</apparelMoney>
-		<apparelRequired>
-			<li>RK_Sack</li>
-		</apparelRequired>
 		<apparelTags>
 			<li>RK_Thief</li>
 		</apparelTags>

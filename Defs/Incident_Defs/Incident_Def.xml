@@ -18,5 +18,22 @@
 		<minThreatPoints>400</minThreatPoints>
 		<tale>Infestation</tale>
 	</IncidentDef>
+	<IncidentDef>
+		<defName>RatkinTunnel_Thief</defName>
+		<label>ratkin hole</label>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>NewRatkin.IncidentWorker_RatkinThiefTunner</workerClass>
+		<letterLabel>tunnel</letterLabel>
+		<letterText>랫킨 땅굴망이 열렸습니다.\n\n곧 랫킨들이 들이닥쳐 닥치는데로 물건을 훔칠것입니다.</letterText>
+		<letterDef>ThreatBig</letterDef>
+		<baseChance>2.7</baseChance>
+		<minRefireDays>20</minRefireDays>
+		<category>ThreatBig</category>
+		<pointsScaleable>true</pointsScaleable>
+		<minThreatPoints>400</minThreatPoints>
+		<tale>Infestation</tale>
+	</IncidentDef>
 
 </Defs>

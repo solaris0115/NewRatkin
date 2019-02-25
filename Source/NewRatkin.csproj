@@ -75,10 +75,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="RatkinGuerrilla\Building_GuerrillaTunnel.cs" />
+    <Compile Include="IncidentWoker_RatkinThiefTunnel.cs" />
+    <Compile Include="RatkinGuerrilla\Building_Tunnel.cs" />
     <Compile Include="RatkinGuerrilla\CellFinder.cs" />
-    <Compile Include="RatkinGuerrilla\CompSpawer.cs" />
-    <Compile Include="RatkinGuerrilla\IncidentWorker_Infestation.cs" />
+    <Compile Include="RatkinGuerrilla\TunnelSpawner.cs" />
     <Compile Include="RatkinGuerrilla\IncidentWorker_RatkinGuerrillaTunner.cs" />
     <Compile Include="RatkinGuerrilla\RatkinTunnelUtility.cs" />
     <Compile Include="Release\Ballista.cs" />

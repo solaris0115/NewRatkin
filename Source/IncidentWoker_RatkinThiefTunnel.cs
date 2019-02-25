@@ -12,20 +12,15 @@ using UnityEngine;
 using Verse.AI;
 namespace NewRatkin
 {
-    //침투
-    public class IncidentWorker_RatkinGuerrillaTunner : IncidentWorker
+    public class IncidentWorker_RatkinThiefTunner : IncidentWorker
     {
         private const float tunnelPoints = 220f;
 
         protected override bool CanFireNowSub(IncidentParms parms)
         {
-            /*
-             * 5개 미만, 적절한 공간이 있으면 격발
-             */
             Map map = (Map)parms.target;
             IntVec3 intVec;
-            //Log.Message("totalCount:" + (base.CanFireNowSub(parms) && (RatkinTunnelUtility.TotalSpawnedTunnelCount(map) < 2) && RatkinTunnelCellFinder.TryFindCell(out intVec, map)));
-            return base.CanFireNowSub(parms) && (RatkinTunnelUtility.TotalSpawnedTunnelCount(map) < 2) && RatkinTunnelCellFinder.TryFindCell(out intVec,map);
+            return base.CanFireNowSub(parms) && (RatkinTunnelUtility.TotalSpawnedTunnelCount(map) < 2) && RatkinTunnelCellFinder.FindFoodStockpile(out intVec, map);
         }
         protected override bool TryExecuteWorker(IncidentParms parms)
         {
@@ -38,11 +33,11 @@ namespace NewRatkin
         private Thing SpawnTunnels(Map map)
         {
             IntVec3 loc;
-            if (!RatkinTunnelCellFinder.TryFindCell(out loc, map))
+            if (!RatkinTunnelCellFinder.FindFoodStockpile(out loc, map))
             {
                 return null;
             }
-            Thing thing = GenSpawn.Spawn(ThingMaker.MakeThing(RatkinBuildingDefOf.RK_GuerrillaTunnel, null), loc, map, WipeMode.FullRefund);
+            Thing thing = GenSpawn.Spawn(ThingMaker.MakeThing(RatkinBuildingDefOf.RK_ThiefTunnelSpawner, null), loc, map, WipeMode.FullRefund);
             return thing;
         }
     }

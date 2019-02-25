@@ -316,6 +316,10 @@
 					<li>RK_RibbonHairBand</li>
 					<li>RK_SistersDerss</li>
 					<li>RK_SistersVeil</li>
+					<li>RK_Sack</li>
+					<li>RK_BattleSuit</li>
+					<li>RK_Mask</li>
+					<li>RK_HeadBand</li>					
 				</apparelList>
 				<whiteApparelList>
 					<li>Apparel_ShieldBelt</li>
