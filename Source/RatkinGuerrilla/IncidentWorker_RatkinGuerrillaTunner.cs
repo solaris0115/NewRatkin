@@ -19,21 +19,21 @@ namespace NewRatkin
 
         protected override bool CanFireNowSub(IncidentParms parms)
         {
-            /*
-             * 5개 미만, 적절한 공간이 있으면 격발
-             */
             Map map = (Map)parms.target;
             IntVec3 intVec;
-            //Log.Message("totalCount:" + (base.CanFireNowSub(parms) && (RatkinTunnelUtility.TotalSpawnedTunnelCount(map) < 2) && RatkinTunnelCellFinder.TryFindCell(out intVec, map)));
-            return base.CanFireNowSub(parms) && (RatkinTunnelUtility.TotalSpawnedTunnelCount(map) < 2) && RatkinTunnelCellFinder.TryFindCell(out intVec,map);
+            return base.CanFireNowSub(parms) && Find.FactionManager.FirstFactionOfDef(RatkinFactionDefOf.Rakinia).HostileTo(Faction.OfPlayer) && (RatkinTunnelUtility.TotalSpawnedTunnelCount(map) < 2) && RatkinTunnelCellFinder.TryFindCell(out intVec, map);
         }
         protected override bool TryExecuteWorker(IncidentParms parms)
         {
             Map map = (Map)parms.target;
             Thing t = SpawnTunnels(map);
-            SendStandardLetter(t, null, new string[0]);
-            Find.TickManager.slower.SignalForceNormalSpeedShort();
-            return true;
+            if (t != null)
+            {
+                SendStandardLetter(t, null, new string[0]);
+                Find.TickManager.slower.SignalForceNormalSpeedShort();
+                return true;
+            }
+            return false;
         }
         private Thing SpawnTunnels(Map map)
         {
@@ -42,7 +42,7 @@ namespace NewRatkin
             {
                 return null;
             }
-            Thing thing = GenSpawn.Spawn(ThingMaker.MakeThing(RatkinBuildingDefOf.RK_GuerrillaTunnel, null), loc, map, WipeMode.FullRefund);
+            Thing thing = GenSpawn.Spawn(ThingMaker.MakeThing(RatkinBuildingDefOf.RK_GuerrillaTunnelSpawner, null), loc, map, WipeMode.FullRefund);
             return thing;
         }
     }

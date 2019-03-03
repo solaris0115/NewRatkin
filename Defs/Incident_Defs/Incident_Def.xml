@@ -9,7 +9,7 @@
 		</targetTags>
 		<workerClass>NewRatkin.IncidentWorker_RatkinGuerrillaTunner</workerClass>
 		<letterLabel>tunnel</letterLabel>
-		<letterText>랫킨 땅굴망이 열렸습니다.\n\n곧 랫킨들이 들이닥쳐 닥치는데로 물건을 훔칠것입니다.</letterText>
+		<letterText>랫킨 땅굴망이 열렸습니다.\n\n전략과 전술에 능통해보입니다.그들이 시설들을 마비시키기 전에 막아내야합니다.</letterText>
 		<letterDef>ThreatBig</letterDef>
 		<baseChance>2.7</baseChance>
 		<minRefireDays>20</minRefireDays>

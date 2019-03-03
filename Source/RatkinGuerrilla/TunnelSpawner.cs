@@ -187,7 +187,7 @@ namespace NewRatkin
                     Destroy(DestroyMode.Vanish);
                     if (spawnTunnel)
                     {
-                        Building_ThiefTunnel tunnel = (Building_ThiefTunnel)GenSpawn.Spawn(ThingMaker.MakeThing(RatkinBuildingDefOf.RK_GuerrillaTunnel, null), position, map, WipeMode.Vanish);
+                        Building_GuerrillaTunnel tunnel = (Building_GuerrillaTunnel)GenSpawn.Spawn(ThingMaker.MakeThing(RatkinBuildingDefOf.RK_GuerrillaTunnel, null), position, map, WipeMode.Vanish);
                         tunnel.SetFaction(Find.FactionManager.FirstFactionOfDef(RatkinFactionDefOf.Rakinia), null);
                     }
                 }

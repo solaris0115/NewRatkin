@@ -29,7 +29,7 @@
 		<defName>RK_GuerrillaTunnel</defName>
 		<label>drill tunnel</label>
 		<description>드릴이 달린 수송포드입니다. 수송포드로 하늘에서 진입하는 경로가 막히자 랫킨들은 자신들의 장점을 이용해 지하로 침투하는 포드를 만들어냈습니다.</description>
-		<thingClass>NewRatkin.Building_ThiefTunnel</thingClass>
+		<thingClass>NewRatkin.Building_GuerrillaTunnel</thingClass>
 		<graphicData>
 			<texPath>Things/Building/RK_GuerrillaTunnel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -44,7 +44,7 @@
 		</statBases>
 		<blockWind>false</blockWind>
 		<tickerType>Normal</tickerType>
-		<passability>Impassable</passability>
+		<passability>PassThroughOnly</passability>
 		<killedLeavings>
 			<Steel>480</Steel>
 			<ComponentIndustrial>12</ComponentIndustrial>

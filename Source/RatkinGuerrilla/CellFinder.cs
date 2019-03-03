@@ -49,29 +49,40 @@ namespace NewRatkin
                     }
                 }
             }
-            cell = candidate.RandomElement();
-            return true;
+            if(candidate.Count>0)
+            {
+                cell = candidate.RandomElement();
+                return true;
+            }
+            else
+            {
+                cell = new IntVec3();
+                return false;
+            }
         }
 
         public static bool TryFindCell(out IntVec3 cell, Map map)
         {
             List<IntVec3> candidate = new List<IntVec3>();
-            int zoneCount;
-            foreach (Zone_Stockpile zone in map.zoneManager.AllZones.FindAll((Zone z) => z is Zone_Stockpile))
+
+            foreach(PowerNet net in map.powerNetManager.AllNetsListForReading)
             {
-                zoneCount = 0;
-                foreach (Region region in RegionAndRoomQuery.RoomAt(zone.Position, map).Regions)
+                foreach (CompPowerTrader t in net.powerComps)
                 {
-                    zoneCount += region.ListerThings.ThingsInGroup(ThingRequestGroup.FoodSourceNotPlantOrTree).Count;
-                    if (zoneCount > 5)
+                    IntVec3 temp;
+                    if(CellFinder.TryFindRandomCellNear(t.parent.Position, map, 4,(IntVec3 vec)=> !vec.UsesOutdoorTemperature(map) && vec.Standable(map), out temp))
                     {
-                        candidate.Add(zone.Cells.RandomElement());
-                        break;
+                        candidate.Add(temp);
                     }
                 }
             }
-            cell = candidate.RandomElement();
-            return true;
+            if(candidate.Count>0)
+            {
+                cell = candidate.RandomElement();
+                return true;
+            }
+            cell = new IntVec3();
+            return false;
         }
     }
 }

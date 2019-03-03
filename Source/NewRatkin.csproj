@@ -76,8 +76,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IncidentWoker_RatkinThiefTunnel.cs" />
+    <Compile Include="RatkinGuerrilla\LordToil_DefendBomb.cs" />
     <Compile Include="RatkinGuerrilla\Building_Tunnel.cs" />
     <Compile Include="RatkinGuerrilla\CellFinder.cs" />
+    <Compile Include="RatkinGuerrilla\LordJob_DefendBomb.cs" />
     <Compile Include="RatkinGuerrilla\TunnelSpawner.cs" />
     <Compile Include="RatkinGuerrilla\IncidentWorker_RatkinGuerrillaTunner.cs" />
     <Compile Include="RatkinGuerrilla\RatkinTunnelUtility.cs" />

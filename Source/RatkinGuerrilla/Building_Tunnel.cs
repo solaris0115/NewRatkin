@@ -15,7 +15,6 @@ namespace NewRatkin
 {
     public class Building_GuerrillaTunnel : ThingWithComps
     {
-
         public bool active = true;
 
         public int nextPawnSpawnTick = -1;
@@ -34,13 +33,13 @@ namespace NewRatkin
 
         private static readonly FloatRange PawnSpawnIntervalDays = new FloatRange(0.85f, 1.15f);
 
-        public static readonly string MemoAttackedByEnemy = "HiveAttacked";
+        public static readonly string MemoAttackedByEnemy = "TunnelAttacked";
 
-        public static readonly string MemoDeSpawned = "HiveDeSpawned";
+        public static readonly string MemoDeSpawned = "TunnelDeSpawned";
 
-        public static readonly string MemoBurnedBadly = "HiveBurnedBadly";
+        public static readonly string MemoBurnedBadly = "TunnelBurnedBadly";
 
-        public static readonly string MemoDestroyedNonRoofCollapse = "HiveDestroyedNonRoofCollapse";
+        public static readonly string MemoDestroyedNonRoofCollapse = "TunnelDestroyedNonRoofCollapse";
 
         private Lord Lord
         {
@@ -49,26 +48,26 @@ namespace NewRatkin
                 Predicate<Pawn> hasDefendTunnelLord = delegate (Pawn x)
                 {
                     Lord lord = x.GetLord();
-                    return lord != null && lord.LordJob is LordJob_DefendAndExpandHive;
+                    return lord != null && lord.LordJob is LordJob_BombPlanting;
                 };
                 Pawn foundPawn = spawnedPawns.Find(hasDefendTunnelLord);
-                if (base.Spawned)
+                if (Spawned)
                 {
                     if (foundPawn == null)
                     {
                         RegionTraverser.BreadthFirstTraverse(this.GetRegion(RegionType.Set_Passable), (Region from, Region to) => true, delegate (Region r)
                         {
-                            List<Thing> list = r.ListerThings.ThingsOfDef(ThingDefOf.Hive);
+                            List<Thing> list = r.ListerThings.ThingsOfDef(RatkinBuildingDefOf.RK_GuerrillaTunnel);
                             for (int i = 0; i < list.Count; i++)
                             {
                                 if (list[i] != this)
                                 {
-                                    if (list[i].Faction == this.Faction)
+                                    if (list[i].Faction == Faction)
                                     {
-                                        foundPawn = ((Hive)list[i]).spawnedPawns.Find(hasDefendTunnelLord);
+                                        foundPawn = ((Building_GuerrillaTunnel)list[i]).spawnedPawns.Find(hasDefendTunnelLord);
                                         if (foundPawn != null)
                                         {
-                                            return true;
+                                            return true;       
                                         }
                                     }
                                 }
@@ -89,47 +88,39 @@ namespace NewRatkin
         {
             get
             {
-                this.FilterOutUnspawnedPawns();
+                FilterOutUnspawnedPawns();
                 float num = 0f;
-                for (int i = 0; i < this.spawnedPawns.Count; i++)
+                for (int i = 0; i < spawnedPawns.Count; i++)
                 {
-                    num += this.spawnedPawns[i].kindDef.combatPower;
+                    num += spawnedPawns[i].kindDef.combatPower;
                 }
                 return num;
             }
         }
 
-        public static void ResetStaticData()
-        {
-            Hive.spawnablePawnKinds.Clear();
-            Hive.spawnablePawnKinds.Add(PawnKindDefOf.Megascarab);
-            Hive.spawnablePawnKinds.Add(PawnKindDefOf.Spelopede);
-            Hive.spawnablePawnKinds.Add(PawnKindDefOf.Megaspider);
-        }
-
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
             base.SpawnSetup(map, respawningAfterLoad);
-            if (base.Faction == null)
+            if (Faction == null)
             {
-                this.SetFaction(Faction.OfInsects, null);
+                SetFaction(Find.FactionManager.FirstFactionOfDef(RatkinFactionDefOf.Rakinia), null);
             }
-            if (!respawningAfterLoad && this.active)
+            if (!respawningAfterLoad && active)
             {
-                this.SpawnInitialPawns();
+                SpawnInitialPawns();
             }
         }
 
         private void SpawnInitialPawns()
         {
-            this.SpawnPawnsUntilPoints(200f);
-            this.CalculateNextPawnSpawnTick();
+            SpawnPawnsUntilPoints(200f);
+            CalculateNextPawnSpawnTick();
         }
 
         public void SpawnPawnsUntilPoints(float points)
         {
             int num = 0;
-            while (this.SpawnedPawnsPoints < points)
+            while (SpawnedPawnsPoints < points)
             {
                 num++;
                 if (num > 1000)
@@ -138,68 +129,68 @@ namespace NewRatkin
                     break;
                 }
                 Pawn pawn;
-                if (!this.TrySpawnPawn(out pawn))
+                if (!TrySpawnPawn(out pawn))
                 {
                     break;
                 }
             }
-            this.CalculateNextPawnSpawnTick();
+            CalculateNextPawnSpawnTick();
         }
 
         public override void Tick()
         {
             base.Tick();
-            if (base.Spawned)
+            if (Spawned)
             {
-                this.FilterOutUnspawnedPawns();
-                if (!this.active && !base.Position.Fogged(base.Map))
+                FilterOutUnspawnedPawns();
+                if (!active && !Position.Fogged(Map))
                 {
-                    this.Activate();
+                    Activate();
                 }
-                if (this.active && Find.TickManager.TicksGame >= this.nextPawnSpawnTick)
+                if (active && Find.TickManager.TicksGame >= nextPawnSpawnTick)
                 {
-                    if (this.SpawnedPawnsPoints < 500f)
+                    if (SpawnedPawnsPoints < 500f)
                     {
                         Pawn pawn;
-                        bool flag = this.TrySpawnPawn(out pawn);
+                        bool flag = TrySpawnPawn(out pawn);
                         if (flag && pawn.caller != null)
                         {
                             pawn.caller.DoCall();
                         }
                     }
-                    this.CalculateNextPawnSpawnTick();
+                    CalculateNextPawnSpawnTick();
                 }
             }
         }
 
         public override void DeSpawn(DestroyMode mode = DestroyMode.Vanish)
         {
-            Map map = base.Map;
+            Map map = Map;
             base.DeSpawn(mode);
             List<Lord> lords = map.lordManager.lords;
             for (int i = 0; i < lords.Count; i++)
             {
-                lords[i].ReceiveMemo(Hive.MemoDeSpawned);
+                lords[i].ReceiveMemo(MemoDeSpawned);
             }
-            HiveUtility.Notify_HiveDespawned(this, map);
+            RatkinTunnelUtility.Notify_TunnelDespawned(this, map);
         }
 
         public override void PostApplyDamage(DamageInfo dinfo, float totalDamageDealt)
         {
             if (dinfo.Def.ExternalViolenceFor(this) && dinfo.Instigator != null && dinfo.Instigator.Faction != null)
             {
-                Lord lord = this.Lord;
+                Lord lord = Lord;
                 if (lord != null)
                 {
                     lord.ReceiveMemo(Hive.MemoAttackedByEnemy);
                 }
             }
-            if (dinfo.Def == DamageDefOf.Flame && (float)this.HitPoints < (float)base.MaxHitPoints * 0.3f)
+            if (dinfo.Def == DamageDefOf.Flame &&HitPoints < MaxHitPoints * 0.3f)
             {
-                Lord lord2 = this.Lord;
+                Lord lord2 = Lord;
                 if (lord2 != null)
                 {
-                    lord2.ReceiveMemo(Hive.MemoBurnedBadly);
+                    lord2.ReceiveMemo(MemoBurnedBadly);
                 }
             }
             base.PostApplyDamage(dinfo, totalDamageDealt);
@@ -207,12 +198,12 @@ namespace NewRatkin
 
         public override void Kill(DamageInfo? dinfo = null, Hediff exactCulprit = null)
         {
-            if (base.Spawned && (dinfo == null || dinfo.Value.Category != DamageInfo.SourceCategory.Collapse))
+            if (Spawned && (dinfo == null || dinfo.Value.Category != DamageInfo.SourceCategory.Collapse))
             {
-                List<Lord> lords = base.Map.lordManager.lords;
+                List<Lord> lords = Map.lordManager.lords;
                 for (int i = 0; i < lords.Count; i++)
                 {
-                    lords[i].ReceiveMemo(Hive.MemoDestroyedNonRoofCollapse);
+                    lords[i].ReceiveMemo(MemoDestroyedNonRoofCollapse);
                 }
             }
             base.Kill(dinfo, exactCulprit);
@@ -228,48 +219,48 @@ namespace NewRatkin
             Scribe_Values.Look<bool>(ref this.canSpawnPawns, "canSpawnPawns", true, false);
             if (Scribe.mode == LoadSaveMode.PostLoadInit)
             {
-                this.spawnedPawns.RemoveAll((Pawn x) => x == null);
+                spawnedPawns.RemoveAll((Pawn x) => x == null);
             }
         }
 
         private void Activate()
         {
-            this.active = true;
-            this.SpawnInitialPawns();
-            this.CalculateNextPawnSpawnTick();
-            CompSpawnerHives comp = base.GetComp<CompSpawnerHives>();
+            active = true;
+            SpawnInitialPawns();
+            CalculateNextPawnSpawnTick();
+            /*CompSpawnerHives comp = GetComp<CompSpawnerHives>();
             if (comp != null)
             {
                 comp.CalculateNextHiveSpawnTick();
-            }
+            }*/
         }
 
         private void CalculateNextPawnSpawnTick()
         {
-            float num = GenMath.LerpDouble(0f, 5f, 1f, 0.5f, (float)this.spawnedPawns.Count);
-            this.nextPawnSpawnTick = Find.TickManager.TicksGame + (int)(Hive.PawnSpawnIntervalDays.RandomInRange * 60000f / (num * Find.Storyteller.difficulty.enemyReproductionRateFactor));
+            float num = GenMath.LerpDouble(0f, 5f, 1f, 0.5f, spawnedPawns.Count);
+            nextPawnSpawnTick = Find.TickManager.TicksGame + (int)(PawnSpawnIntervalDays.RandomInRange * 60000f / (num * Find.Storyteller.difficulty.enemyReproductionRateFactor));
         }
 
         private void FilterOutUnspawnedPawns()
         {
-            for (int i = this.spawnedPawns.Count - 1; i >= 0; i--)
+            for (int i = spawnedPawns.Count - 1; i >= 0; i--)
             {
-                if (!this.spawnedPawns[i].Spawned)
+                if (!spawnedPawns[i].Spawned)
                 {
-                    this.spawnedPawns.RemoveAt(i);
+                    spawnedPawns.RemoveAt(i);
                 }
             }
         }
 
         private bool TrySpawnPawn(out Pawn pawn)
         {
-            if (!this.canSpawnPawns)
+            if (!canSpawnPawns)
             {
                 pawn = null;
                 return false;
             }
-            float curPoints = this.SpawnedPawnsPoints;
-            IEnumerable<PawnKindDef> source = from x in Hive.spawnablePawnKinds
+            float curPoints = SpawnedPawnsPoints;
+            IEnumerable<PawnKindDef> source = from x in RatkinTunnelUtility.spawnableElitePawnKinds
                                               where curPoints + x.combatPower <= 500f
                                               select x;
             PawnKindDef kindDef;
@@ -278,16 +269,16 @@ namespace NewRatkin
                 pawn = null;
                 return false;
             }
-            pawn = PawnGenerator.GeneratePawn(kindDef, base.Faction);
-            this.spawnedPawns.Add(pawn);
-            GenSpawn.Spawn(pawn, CellFinder.RandomClosewalkCellNear(base.Position, base.Map, 2, null), base.Map, WipeMode.Vanish);
-            Lord lord = this.Lord;
+            pawn = PawnGenerator.GeneratePawn(kindDef, Faction);
+            spawnedPawns.Add(pawn);
+            GenSpawn.Spawn(pawn, CellFinder.RandomClosewalkCellNear(Position, Map, 2, null), Map, WipeMode.Vanish);
+            Lord lord = Lord;
             if (lord == null)
             {
-                lord = this.CreateNewLord();
+                lord = CreateNewLord();
             }
             lord.AddPawn(pawn);
-            SoundDefOf.Hive_Spawn.PlayOneShot(this);
+            SoundDefOf.DropPod_Open.PlayOneShot(this);
             return true;
         }
 
@@ -306,7 +297,7 @@ namespace NewRatkin
                     action = delegate ()
                     {
                         Pawn pawn;
-                        this.TrySpawnPawn(out pawn);
+                        TrySpawnPawn(out pawn);
                     }
                 };
             }
@@ -315,11 +306,11 @@ namespace NewRatkin
 
         public override bool PreventPlayerSellingThingsNearby(out string reason)
         {
-            if (this.spawnedPawns.Count > 0)
+            if (spawnedPawns.Count > 0)
             {
-                if (this.spawnedPawns.Any((Pawn p) => !p.Downed))
+                if (spawnedPawns.Any((Pawn p) => !p.Downed))
                 {
-                    reason = this.def.label;
+                    reason = def.label;
                     return true;
                 }
             }
@@ -329,7 +320,7 @@ namespace NewRatkin
 
         private Lord CreateNewLord()
         {
-            return LordMaker.MakeNewLord(base.Faction, new LordJob_DefendAndExpandHive(!this.caveColony), base.Map, null);
+            return LordMaker.MakeNewLord(Faction, new LordJob_BombPlanting(Faction,Position,100), Map, null);
         }
     }
     public class Building_ThiefTunnel : ThingWithComps

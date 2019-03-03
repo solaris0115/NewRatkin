@@ -55,12 +55,12 @@ namespace NewRatkin
             return false;
         }
 
-        public static void Notify_TunnelDespawned(Hive hive, Map map)
+        public static void Notify_TunnelDespawned(Building_GuerrillaTunnel tunnel, Map map)
         {
             int num = GenRadial.NumCellsInRadius(2f);
             for (int i = 0; i < num; i++)
             {
-                IntVec3 c = hive.Position + GenRadial.RadialPattern[i];
+                IntVec3 c = tunnel.Position + GenRadial.RadialPattern[i];
                 if (c.InBounds(map))
                 {
                     List<Thing> thingList = c.GetThingList(map);

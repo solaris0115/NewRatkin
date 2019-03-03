@@ -20,15 +20,19 @@ namespace NewRatkin
         {
             Map map = (Map)parms.target;
             IntVec3 intVec;
-            return base.CanFireNowSub(parms) && (RatkinTunnelUtility.TotalSpawnedTunnelCount(map) < 2) && RatkinTunnelCellFinder.FindFoodStockpile(out intVec, map);
+            return base.CanFireNowSub(parms) && Find.FactionManager.FirstFactionOfDef(RatkinFactionDefOf.Rakinia).HostileTo(Faction.OfPlayer) && (RatkinTunnelUtility.TotalSpawnedTunnelCount(map) < 2) && RatkinTunnelCellFinder.FindFoodStockpile(out intVec, map);
         }
         protected override bool TryExecuteWorker(IncidentParms parms)
         {
             Map map = (Map)parms.target;
             Thing t = SpawnTunnels(map);
-            SendStandardLetter(t, null, new string[0]);
-            Find.TickManager.slower.SignalForceNormalSpeedShort();
-            return true;
+            if(t!=null)
+            {
+                SendStandardLetter(t, null, new string[0]);
+                Find.TickManager.slower.SignalForceNormalSpeedShort();
+                return true;
+            }
+            return false;
         }
         private Thing SpawnTunnels(Map map)
         {
