@@ -76,10 +76,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IncidentWoker_RatkinThiefTunnel.cs" />
+    <Compile Include="RatkinGuerrilla\Building_EmpBomb.cs" />
+    <Compile Include="RatkinGuerrilla\Graphic_CountDown.cs" />
     <Compile Include="RatkinGuerrilla\LordToil_DefendBomb.cs" />
     <Compile Include="RatkinGuerrilla\Building_Tunnel.cs" />
     <Compile Include="RatkinGuerrilla\CellFinder.cs" />
     <Compile Include="RatkinGuerrilla\LordJob_DefendBomb.cs" />
+    <Compile Include="RatkinGuerrilla\Mote_CountDown.cs" />
+    <Compile Include="RatkinGuerrilla\RatkinRaidPatch.cs" />
     <Compile Include="RatkinGuerrilla\TunnelSpawner.cs" />
     <Compile Include="RatkinGuerrilla\IncidentWorker_RatkinGuerrillaTunner.cs" />
     <Compile Include="RatkinGuerrilla\RatkinTunnelUtility.cs" />
@@ -87,7 +91,7 @@
     <Compile Include="Release\BasePatch.cs" />
     <Compile Include="Release\MeeleExplosion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RatkinGuerrilla\DefOf.cs" />
+    <Compile Include="DefOf.cs" />
     <Compile Include="Release\StockGen_Mercenary.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -68,4 +68,89 @@
 		<drawerType>RealtimeOnly</drawerType>
 		<alwaysFlee>true</alwaysFlee>
 	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>RK_EmpBomb</defName>
+		<label>emp Bomb</label>
+		<description>드릴이 달린 수송포드입니다. 수송포드로 하늘에서 진입하는 경로가 막히자 랫킨들은 자신들의 장점을 이용해 지하로 침투하는 포드를 만들어냈습니다.</description>
+		<thingClass>NewRatkin.Building_EmpBomb</thingClass>
+		<minifiedDef>MinifiedEMP</minifiedDef>		
+		<thingCategories>
+			<li>BuildingsSpecial</li>
+		</thingCategories>		
+		<graphicData>
+			<texPath>Things/Item/RK_EMP</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.2</fillPercent>
+		<costList>
+			<Steel>60</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>10</Mass>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>2500</WorkToBuild>
+			<Flammability>0</Flammability>
+		</statBases>
+		<constructEffect>ConstructMetal</constructEffect>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<blockWind>false</blockWind>
+		<tickerType>Normal</tickerType>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<passability>PassThroughOnly</passability>
+		<killedLeavings>
+			<Steel>45</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</killedLeavings>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<comps>
+			<li Class="NewRatkin.CompProperties_CountDown">
+				<compClass>NewRatkin.Comp_CountDown</compClass>
+				<timeLimit>20</timeLimit>
+			</li>
+			<li>
+				<compClass>NewRatkin.Comp_Emp</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef>
+		<defName>MinifiedEMP</defName>
+		<label>minified thing</label>
+		<thingClass>NewRatkin.MinifiedThing_Custom</thingClass>
+		<category>Item</category>
+		<useHitPoints>true</useHitPoints>
+		<selectable>true</selectable>
+		<altitudeLayer>Item</altitudeLayer>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<tickerType>Normal</tickerType>		
+		<statBases>
+			<Mass>10</Mass>
+		</statBases>
+		<!-- for CompForbiddable -->
+		<drawerType>RealtimeOnly</drawerType>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<alwaysHaulable>true</alwaysHaulable>
+		<rotatable>false</rotatable>
+		<pathCost>15</pathCost>
+	</ThingDef>
+
+	<ThingDef ParentName="MoteBase">
+		<defName>Mote_CountDown</defName>
+		<graphicData>
+			<texPath>Things/Mote/Transparent</texPath>
+		</graphicData>
+		<thingClass>NewRatkin.Mote_CountDown</thingClass>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<altitudeLayer>MetaOverlays</altitudeLayer>
+		<mote>
+			<solidTime>2</solidTime>
+		</mote>
+	</ThingDef>
 </Defs>

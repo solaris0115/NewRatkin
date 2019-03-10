@@ -182,15 +182,7 @@ namespace NewRatkin
                 Lord lord = Lord;
                 if (lord != null)
                 {
-                    lord.ReceiveMemo(Hive.MemoAttackedByEnemy);
-                }
-            }
-            if (dinfo.Def == DamageDefOf.Flame &&HitPoints < MaxHitPoints * 0.3f)
-            {
-                Lord lord2 = Lord;
-                if (lord2 != null)
-                {
-                    lord2.ReceiveMemo(MemoBurnedBadly);
+                    lord.ReceiveMemo(MemoAttackedByEnemy);
                 }
             }
             base.PostApplyDamage(dinfo, totalDamageDealt);

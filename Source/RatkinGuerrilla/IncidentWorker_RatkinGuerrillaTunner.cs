@@ -21,7 +21,7 @@ namespace NewRatkin
         {
             Map map = (Map)parms.target;
             IntVec3 intVec;
-            return base.CanFireNowSub(parms) && Find.FactionManager.FirstFactionOfDef(RatkinFactionDefOf.Rakinia).HostileTo(Faction.OfPlayer) && (RatkinTunnelUtility.TotalSpawnedTunnelCount(map) < 2) && RatkinTunnelCellFinder.TryFindCell(out intVec, map);
+            return base.CanFireNowSub(parms) && Find.FactionManager.FirstFactionOfDef(RatkinFactionDefOf.Rakinia).HostileTo(Faction.OfPlayer) && (RatkinTunnelUtility.TotalSpawnedTunnelCount(map) < 2) && RatkinTunnelCellFinder.FindPowerPlantNearCell(out intVec, map);
         }
         protected override bool TryExecuteWorker(IncidentParms parms)
         {
@@ -30,7 +30,7 @@ namespace NewRatkin
             if (t != null)
             {
                 SendStandardLetter(t, null, new string[0]);
-                Find.TickManager.slower.SignalForceNormalSpeedShort();
+                //Find.TickManager.slower.SignalForceNormalSpeedShort();
                 return true;
             }
             return false;
@@ -38,7 +38,7 @@ namespace NewRatkin
         private Thing SpawnTunnels(Map map)
         {
             IntVec3 loc;
-            if (!RatkinTunnelCellFinder.TryFindCell(out loc, map))
+            if (!RatkinTunnelCellFinder.FindPowerPlantNearCell(out loc, map))
             {
                 return null;
             }

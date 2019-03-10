@@ -20,6 +20,8 @@ namespace NewRatkin
         public static ThingDef RK_ThiefTunnel;
         public static ThingDef RK_GuerrillaTunnelSpawner;
         public static ThingDef RK_ThiefTunnelSpawner;
+
+        public static ThingDef RK_EmpBomb;
     }
 
     [DefOf]
@@ -62,6 +64,11 @@ namespace NewRatkin
     public static class RatkinFactionDefOf
     {
         public static FactionDef Rakinia;
+    }
+    [DefOf]
+    public static class RatkinMoteDefOf
+    {
+        public static ThingDef Mote_CountDown;
     }
 
 }

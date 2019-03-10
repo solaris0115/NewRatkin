@@ -61,7 +61,7 @@ namespace NewRatkin
             }
         }
 
-        public static bool TryFindCell(out IntVec3 cell, Map map)
+        public static bool FindPowerPlantNearCell(out IntVec3 cell, Map map)
         {
             List<IntVec3> candidate = new List<IntVec3>();
 
@@ -70,7 +70,7 @@ namespace NewRatkin
                 foreach (CompPowerTrader t in net.powerComps)
                 {
                     IntVec3 temp;
-                    if(CellFinder.TryFindRandomCellNear(t.parent.Position, map, 4,(IntVec3 vec)=> !vec.UsesOutdoorTemperature(map) && vec.Standable(map), out temp))
+                    if(CellFinder.TryFindRandomCellNear(t.parent.Position, map, 3,(IntVec3 vec)=> !vec.UsesOutdoorTemperature(map) && vec.Standable(map), out temp))
                     {
                         candidate.Add(temp);
                     }
