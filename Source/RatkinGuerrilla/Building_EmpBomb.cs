@@ -98,7 +98,6 @@ namespace NewRatkin
         {
             if(isPlanted)
             {
-                Log.Message("compTick");
                 remainingTick +=-1;
                 tempTick = remainingTick.TicksToSeconds();
                 if (tempTick < remainingSecond)
@@ -149,7 +148,23 @@ namespace NewRatkin
     {
         public void EmpActivate()
         {
-            Log.Message("EMP Activate");
+            int count = 3;
+            HashSet<CompPower> tempComp = new HashSet<CompPower>();
+            foreach (PowerNet pn in parent.Map.powerNetManager.AllNetsListForReading)
+            {
+                if(pn.powerComps.Count>0 && count>0)
+                {
+                    foreach(CompPower comp in pn.powerComps.TakeRandom(count))
+                    {
+                        if(tempComp.Add(comp) && comp.parent.GetComp<CompBreakdownable>() !=null)
+                        {
+                            Log.Message(comp.parent.Label);
+                            comp.parent.GetComp<CompBreakdownable>().DoBreakdown();
+                            count--;
+                        }                        
+                    }
+                }
+            }            
         }
     }
 }
