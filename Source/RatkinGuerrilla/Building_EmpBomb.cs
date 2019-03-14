@@ -161,7 +161,8 @@ namespace NewRatkin
                             Log.Message(comp.parent.Label);
                             comp.parent.GetComp<CompBreakdownable>().DoBreakdown();
                             count--;
-                        }                        
+                        }
+                        count = count ^ 3;
                     }
                 }
             }            

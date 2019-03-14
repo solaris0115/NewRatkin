@@ -1205,6 +1205,7 @@
 			<wornGraphicPath>Apparel/RK_OrderUniform</wornGraphicPath>
 			<layers>
 				<li>OnSkin</li>
+				<li>Middle</li>
 			</layers>
 			<tags>
 				<li>RK_Ambassador</li>
@@ -1652,8 +1653,8 @@
 			</tags>
 		</apparel>
 	</ThingDef>
-	
-	
+
+
 	<!-- 적대 세력 한정 -->
 	<!-- 도둑질 보따리 +50 내구도 +20 -->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
@@ -1706,7 +1707,7 @@
 			</tags>
 		</apparel>
 	</ThingDef>
-	
+
 	<!-- 특작 부대 복장-->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
 		<defName>RK_BattleSuit</defName>
@@ -1721,8 +1722,9 @@
 		</recipeMaker>
 		<costList>
 			<DevilstrandCloth>35</DevilstrandCloth>
-			<Steel>40</Steel>
+			<Steel>60</Steel>
 			<ComponentIndustrial>3</ComponentIndustrial>
+			<Plasteel>40</Plasteel>
 		</costList>
 		<costStuffCount>85</costStuffCount>
 		<stuffCategories>
@@ -1736,7 +1738,7 @@
 		<statBases>
 			<MaxHitPoints>280</MaxHitPoints>
 			<WorkToMake>35000</WorkToMake>
-			<Mass>3</Mass>
+			<Mass>5</Mass>
 			<StuffEffectMultiplierArmor>0.55</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.55</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.55</StuffEffectMultiplierInsulation_Heat>
@@ -1765,6 +1767,7 @@
 			<wornGraphicPath>Apparel/RK_BattleSuit</wornGraphicPath>
 			<layers>
 				<li>OnSkin</li>
+				<li>Middle</li>
 				<li>OuterClothing</li>
 			</layers>
 			<tags>
@@ -1773,7 +1776,7 @@
 			</tags>
 		</apparel>
 	</ThingDef>
-	
+
 	<!-- 가스마스크-->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_HatMakeableBase">
 		<defName>RK_Mask</defName>
@@ -1788,7 +1791,8 @@
 		</recipeMaker>
 		<costList>
 			<DevilstrandCloth>35</DevilstrandCloth>
-			<ComponentIndustrial>3</ComponentIndustrial>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<Plasteel>20</Plasteel>
 		</costList>
 		<costStuffCount>45</costStuffCount>
 		<stuffCategories>
@@ -1797,7 +1801,7 @@
 		<statBases>
 			<MaxHitPoints>220</MaxHitPoints>
 			<WorkToMake>18000</WorkToMake>
-			<Mass>1</Mass>			
+			<Mass>2</Mass>			
 			<StuffEffectMultiplierArmor>0.6</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.45</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat>			
@@ -1827,7 +1831,7 @@
 			</tags>
 		</apparel>
 	</ThingDef>
-	
+
 	<!-- 특공 머리띠 -->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_HatMakeableBase">
 		<defName>RK_HeadBand</defName>
@@ -1840,10 +1844,9 @@
 		</graphicData>
 		<recipeMaker Inherit="false">
 		</recipeMaker>
-		<costStuffCount>45</costStuffCount>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
+		<costList>
+			<DevilstrandCloth>35</DevilstrandCloth>
+		</costList>
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
 			<WorkToMake>18000</WorkToMake>
@@ -1873,9 +1876,285 @@
 		</apparel>
 	</ThingDef>
 
+	<!-- 판금 갑옷 높은 날카로움, 둔탁함 방어력, 느려짐-->
+	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
+		<defName>RK_Plate</defName>
+		<label>ratkin plate armor</label>
+		<description>금속으로 만든 방어구입니다. 덧입을 수 있어 방어력을 한층 더 올릴 수 있습니다.</description>
+		<graphicData>
+			<texPath>Apparel/RK_Plate</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>HighClassClothing</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Steel>60</Steel>
+		</costList>
+		<costStuffCount>125</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<techLevel>Industrial</techLevel>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>280</MaxHitPoints>
+			<WorkToMake>35000</WorkToMake>
+			<Mass>10</Mass>
+			<StuffEffectMultiplierArmor>0.45</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.40</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.40</StuffEffectMultiplierInsulation_Heat>
+			<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+			<Flammability>0.64</Flammability>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MeleeDodgeChance>-0.05</MeleeDodgeChance>
+			<MentalBreakThreshold>-0.1</MentalBreakThreshold>
+			<PainShockThreshold>0.1</PainShockThreshold>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<wornGraphicPath>Apparel/RK_Plate</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>RK_Melee</li>
+				<li>RK_Knight</li>
+				<li>RK_3Tier</li>
+			</tags>
+		</apparel>
+		<followStuffColor>True</followStuffColor>
+	</ThingDef>
+	<!-- 판금 투구 높은 날카로움, 둔탁함 방어력, 느려짐-->
+	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_HatMakeableBase">
+		<defName>RK_PlateHelm</defName>
+		<label>Ratkin plate Helm</label>
+		<description>금속으로 만든 핼맷입니다.</description>
+		<graphicData>
+			<texPath>Apparel/RK_PlateHelmet2</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costList>
+			<DevilstrandCloth>25</DevilstrandCloth>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>220</MaxHitPoints>
+			<WorkToMake>18000</WorkToMake>
+			<Mass>3</Mass>			
+			<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>			
+			<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<!-- 이동속도 -->
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+				<li>Eyes</li>
+				<li>Teeth</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/RK_PlateHelmet2</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<tags>
+				<li>RK_Melee</li>
+				<li>RK_Knight</li>
+				<li>RK_3Tier</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>HighClassClothing</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+	<!-- 산타외투 -->
+	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
+		<defName>RK_SantaRobe</defName>
+		<label>santa robe</label>
+		<description>산타들이 입는 로브입니다.</description>
+		<graphicData>
+			<texPath>Apparel/RK_SantaRobe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>RatkinClothing</researchPrerequisite>
+		</recipeMaker>
+		<costStuffCount>85</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<techLevel>Industrial</techLevel>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>3</Mass>
+			<StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>1.3</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+			<Insulation_Cold>13</Insulation_Cold>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.05</SocialImpact>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<wornGraphicPath>Apparel/RK_SantaRobe</wornGraphicPath>
+			<layers>
+				<li>InnerCoat</li>
+			</layers>
+			<tags>
+				<li>RK_Santa</li>	
+			</tags>
+		</apparel>
+	</ThingDef>
+	<!-- 산타 모자 추위저항 +5 -->
+	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
+		<defName>RK_SantaHat</defName>
+		<label>santa hat</label>
+		<description>털장식이 달린 산타모자입니다.</description>
+		<graphicData>
+			<texPath>Apparel/RK_SantaHat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<WorkToMake>2500</WorkToMake>
+			<Mass>0.1</Mass>
+			<StuffEffectMultiplierArmor>0</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.65</StuffEffectMultiplierInsulation_Cold>
+			<EquipDelay>0.5</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>			
+			<tags>
+				<li>RK_Santa</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<wornGraphicPath>Apparel/RK_SantaHat</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+		</apparel>
+	</ThingDef>
+	<!-- 산타 보따리 +50 내구도 +20 -->
+	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
+		<defName>RK_SantaSack</defName>
+		<label>santa package</label>
+		<description>선물이 한가득 들어있는 보따리 입니다.</description>
+		<graphicData>
+			<texPath>Apparel/RK_SantaSack</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker Inherit="false">
+		</recipeMaker>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+		<costStuffCount>180</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<techLevel>Industrial</techLevel>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>8000</WorkToMake>
+			<Mass>0.5</Mass>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<CarryingCapacity>60</CarryingCapacity>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<wornGraphicPath>Apparel/RK_SantaSack</wornGraphicPath>
+			<layers>
+				<li>BackPack</li>
+			</layers>
+			<tags>
+				<li>RK_Santa</li>
+			</tags>
+		</apparel>
+	</ThingDef>
 
 
 
+
+
+
+	<ApparelLayerDef>
+		<defName>MiddleSkin</defName>
+		<label>middle skin</label>
+		<drawOrder>125</drawOrder>
+	</ApparelLayerDef>
 	<ApparelLayerDef>
 		<defName>InnerCoat</defName>
 		<label>inner coat</label>
