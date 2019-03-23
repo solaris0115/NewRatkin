@@ -34,14 +34,12 @@
 				</value>
 			</li>			
 			<li Class="PatchOperationTest">
-				<xpath>*/ResearchProjectDef[defName = "Smithing"]</xpath>
+				<xpath>*/ResearchProjectDef[defName = "Smithing"]/tags</xpath>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/ResearchProjectDef[defName="Smithing"]</xpath>
+				<xpath>*/ResearchProjectDef[defName="Smithing"]/tags</xpath>
 				<value>
-					<tags>
-						<li>RatkinStart</li>
-					</tags>
+					<li>RatkinStart</li>
 				</value>
 			</li>			
 			<li Class="PatchOperationTest">
