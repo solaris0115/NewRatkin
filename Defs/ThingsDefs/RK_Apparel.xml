@@ -1896,7 +1896,7 @@
 		<graphicData>
 			<texPath>Apparel/RK_Plate</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
+			<!-- <shaderType>CutoutComplex</shaderType> -->
 		</graphicData>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
