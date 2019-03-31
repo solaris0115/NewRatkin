@@ -41,7 +41,7 @@
   <Make_BionicTail.jobString>Making bionic tail.</Make_BionicTail.jobString>
 
 
-  <!-- Recipe Users: ElectricTailoringBench, HandTailoringBench -->
+  <!-- Recipe Users: RK_ElectricTailoringBench, RK_HandTailoringBench -->
 
   <Make_RK_ApronSkirt.label>make apron skirt</Make_RK_ApronSkirt.label>
   <Make_RK_ApronSkirt.description>Make apron skirt.</Make_RK_ApronSkirt.description>
@@ -156,7 +156,26 @@
   <Make_RK_EarCostume.jobString>Making ratkin ear costume.</Make_RK_EarCostume.jobString>
 
 
-  <!-- Recipe Users: ElectricSmithy, FueledSmithy -->
+  <!-- Recipe Users: RK_ElectricTailoringBench, RK_HandTailoringBench, RK_FueledSmithy, RK_ElectricSmithy -->
+
+  <Make_RK_Plate.label>make ratkin plate armor</Make_RK_Plate.label>
+  <Make_RK_Plate.description>Make ratkin plate armor.</Make_RK_Plate.description>
+  <Make_RK_Plate.jobString>Making ratkin plate armor.</Make_RK_Plate.jobString>
+
+  <Make_RK_PlateHelmA.label>make Ratkin plate Helm A</Make_RK_PlateHelmA.label>
+  <Make_RK_PlateHelmA.description>Make Ratkin plate Helm A.</Make_RK_PlateHelmA.description>
+  <Make_RK_PlateHelmA.jobString>Making Ratkin plate Helm A.</Make_RK_PlateHelmA.jobString>
+
+  <Make_RK_PlateHelmB.label>make Ratkin plate Helm B</Make_RK_PlateHelmB.label>
+  <Make_RK_PlateHelmB.description>Make Ratkin plate Helm B.</Make_RK_PlateHelmB.description>
+  <Make_RK_PlateHelmB.jobString>Making Ratkin plate Helm B.</Make_RK_PlateHelmB.jobString>
+
+  <Make_RK_PlateHelmC.label>make Ratkin plate Helm C</Make_RK_PlateHelmC.label>
+  <Make_RK_PlateHelmC.description>Make Ratkin plate Helm C.</Make_RK_PlateHelmC.description>
+  <Make_RK_PlateHelmC.jobString>Making Ratkin plate Helm C.</Make_RK_PlateHelmC.jobString>
+
+
+  <!-- Recipe Users: ElectricSmithy, FueledSmithy, RK_FueledSmithy, RK_ElectricSmithy -->
 
   <Make_RK_Axe.label>make axe</Make_RK_Axe.label>
   <Make_RK_Axe.description>Make axe.</Make_RK_Axe.description>
@@ -209,45 +228,13 @@
   <Make_RK_FlechetteSniperRifle.description>Make flechette sniper rifle.</Make_RK_FlechetteSniperRifle.description>
   <Make_RK_FlechetteSniperRifle.jobString>Making flechette sniper rifle.</Make_RK_FlechetteSniperRifle.jobString>
 
+  <Make_RK_PrototypePulseRifle.label>make prototype pulse rifle</Make_RK_PrototypePulseRifle.label>
+  <Make_RK_PrototypePulseRifle.description>Make prototype pulse rifle.</Make_RK_PrototypePulseRifle.description>
+  <Make_RK_PrototypePulseRifle.jobString>Making prototype pulse rifle.</Make_RK_PrototypePulseRifle.jobString>
 
-  <!--<Make_FakeRatkinEar.label>make fake ear</Make_FakeRatkinEar.label>-->
-  <!--<Make_FakeRatkinEar.description>Make fake ear.</Make_FakeRatkinEar.description>-->
-  <!--<Make_FakeRatkinEar.jobString>Making fake ear.</Make_FakeRatkinEar.jobString>-->
-  <!--<Make_RK_Axe.label>make axe</Make_RK_Axe.label>-->
-  <!--<Make_RK_Axe.description>Make axe.</Make_RK_Axe.description>-->
-  <!--<Make_RK_Axe.jobString>Making axe.</Make_RK_Axe.jobString>-->
-  <!--<Make_RK_Cleaver.label>make cleaver</Make_RK_Cleaver.label>-->
-  <!--<Make_RK_Cleaver.description>Make cleaver.</Make_RK_Cleaver.description>-->
-  <!--<Make_RK_Cleaver.jobString>Making cleaver.</Make_RK_Cleaver.jobString>-->
-  <!--<Make_RK_Hockey.label>make hoe</Make_RK_Hockey.label>-->
-  <!--<Make_RK_Hockey.description>Make hoe.</Make_RK_Hockey.description>-->
-  <!--<Make_RK_Hockey.jobString>Making hoe.</Make_RK_Hockey.jobString>-->
-  <!--<Make_RK_Fork.label>make fork</Make_RK_Fork.label>-->
-  <!--<Make_RK_Fork.description>Make fork.</Make_RK_Fork.description>-->
-  <!--<Make_RK_Fork.jobString>Making fork.</Make_RK_Fork.jobString>-->
-  <!--<Make_RK_LongSword.label>make ratkin longSword</Make_RK_LongSword.label>-->
-  <!--<Make_RK_LongSword.description>Make ratkin longSword.</Make_RK_LongSword.description>-->
-  <!--<Make_RK_LongSword.jobString>Making ratkin longSword.</Make_RK_LongSword.jobString>-->
-  <!--<Make_RK_Crossbow.label>make cross bow</Make_RK_Crossbow.label>-->
-  <!--<Make_RK_Crossbow.description>Make cross bow.</Make_RK_Crossbow.description>-->
-  <!--<Make_RK_Crossbow.jobString>Making cross bow.</Make_RK_Crossbow.jobString>-->
-  <!--<Make_RK_EnhanceCrossBow.label>make enhanced cross bow</Make_RK_EnhanceCrossBow.label>-->
-  <!--<Make_RK_EnhanceCrossBow.description>Make enhanced cross bow.</Make_RK_EnhanceCrossBow.description>-->
-  <!--<Make_RK_EnhanceCrossBow.jobString>Making enhanced cross bow.</Make_RK_EnhanceCrossBow.jobString>-->
-  <!--<Make_RK_AutoCrossBow.label>make autocross bow</Make_RK_AutoCrossBow.label>-->
-  <!--<Make_RK_AutoCrossBow.description>Make autocross bow.</Make_RK_AutoCrossBow.description>-->
-  <!--<Make_RK_AutoCrossBow.jobString>Making autocross bow.</Make_RK_AutoCrossBow.jobString>-->
-  <!--<Make_RK_Rifle.label>make ratkin rifle</Make_RK_Rifle.label>-->
-  <!--<Make_RK_Rifle.description>Make ratkin rifle.</Make_RK_Rifle.description>-->
-  <!--<Make_RK_Rifle.jobString>Making ratkin rifle.</Make_RK_Rifle.jobString>-->
-  <!--<Make_RK_SniperRifle.label>make ratkin sniper rifle</Make_RK_SniperRifle.label>-->
-  <!--<Make_RK_SniperRifle.description>Make ratkin sniper rifle.</Make_RK_SniperRifle.description>-->
-  <!--<Make_RK_SniperRifle.jobString>Making ratkin sniper rifle.</Make_RK_SniperRifle.jobString>-->
-  <!--<Make_RK_FlechetteRifle.label>make flechette rifle</Make_RK_FlechetteRifle.label>-->
-  <!--<Make_RK_FlechetteRifle.description>Make flechette rifle.</Make_RK_FlechetteRifle.description>-->
-  <!--<Make_RK_FlechetteRifle.jobString>Making flechette rifle.</Make_RK_FlechetteRifle.jobString>-->
-  <!--<Make_RK_FlechetteSniperRifle.label>make flechette sniper rifle</Make_RK_FlechetteSniperRifle.label>-->
-  <!--<Make_RK_FlechetteSniperRifle.description>Make flechette sniper rifle.</Make_RK_FlechetteSniperRifle.description>-->
-  <!--<Make_RK_FlechetteSniperRifle.jobString>Making flechette sniper rifle.</Make_RK_FlechetteSniperRifle.jobString>-->
+  <Make_RK_BFR.label>make BFR 3000</Make_RK_BFR.label>
+  <Make_RK_BFR.description>Make BFR 3000.</Make_RK_BFR.description>
+  <Make_RK_BFR.jobString>Making BFR 3000.</Make_RK_BFR.jobString>
+
 
 </LanguageData>

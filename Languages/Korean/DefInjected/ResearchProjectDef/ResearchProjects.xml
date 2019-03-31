@@ -13,6 +13,9 @@
   <FlechetteBullet.label>플레셰트 탄환</FlechetteBullet.label>
   <FlechetteBullet.description>랫킨 고유의 화살촉을 총알에 적용시킵니다. 랫킨식 플레셰트 탄환은 조금 무겁지만 두꺼운 장갑을 관통할 수 있도록 디자인되었습니다. 연구용 안경이 필요합니다.</FlechetteBullet.description>
 
+  <PulseTech.label>펄스 기술</PulseTech.label>
+  <PulseTech.description>무기와 장비에 펄스 기술을 적용하는 방법을 연구합니다. 연구용 안경이 필요합니다.</PulseTech.description>
+
   <RatkinClothing.label>랫킨 의복</RatkinClothing.label>
   <RatkinClothing.description>랫킨이 입기 편리한 의류들을 고안해냅니다. 조금 더 다양한 의류를 생산할 수 있습니다.</RatkinClothing.description>
 

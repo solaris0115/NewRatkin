@@ -125,4 +125,34 @@
   <RatkinMercenaryLight.labelFemalePlural>female ratkin Mercenarys</RatkinMercenaryLight.labelFemalePlural>
 
 
+  <!-- 특수 부대 찍찍이 -->
+
+  <RatkinEliteSoldier.label>ratkin elite soldier</RatkinEliteSoldier.label>
+  <RatkinEliteSoldier.labelPlural>ratkin elite soldiers</RatkinEliteSoldier.labelPlural>
+  <RatkinEliteSoldier.labelMale>male ratkin elite soldier</RatkinEliteSoldier.labelMale>
+  <RatkinEliteSoldier.labelMalePlural>male ratkin elite soldiers</RatkinEliteSoldier.labelMalePlural>
+  <RatkinEliteSoldier.labelFemale>female ratkin elite soldier</RatkinEliteSoldier.labelFemale>
+  <RatkinEliteSoldier.labelFemalePlural>female ratkin elite soldiers</RatkinEliteSoldier.labelFemalePlural>
+
+
+  <!-- 찍찍이 데모맨 -->
+
+  <RatkinDemonMan.label>ratkin demoman</RatkinDemonMan.label>
+  <RatkinDemonMan.labelPlural>ratkin demomans</RatkinDemonMan.labelPlural>
+  <RatkinDemonMan.labelMale>male ratkin demoman</RatkinDemonMan.labelMale>
+  <RatkinDemonMan.labelMalePlural>male ratkin demomans</RatkinDemonMan.labelMalePlural>
+  <RatkinDemonMan.labelFemale>female ratkin demoman</RatkinDemonMan.labelFemale>
+  <RatkinDemonMan.labelFemalePlural>female ratkin demomans</RatkinDemonMan.labelFemalePlural>
+
+
+  <!-- 곳간털이범 -->
+
+  <RatkinPettyThief.label>ratkin petty thief</RatkinPettyThief.label>
+  <RatkinPettyThief.labelPlural>ratkin petty thiefs</RatkinPettyThief.labelPlural>
+  <RatkinPettyThief.labelMale>male ratkin petty thief</RatkinPettyThief.labelMale>
+  <RatkinPettyThief.labelMalePlural>male ratkin petty thiefs</RatkinPettyThief.labelMalePlural>
+  <RatkinPettyThief.labelFemale>female ratkin petty thief</RatkinPettyThief.labelFemale>
+  <RatkinPettyThief.labelFemalePlural>female ratkin petty thiefs</RatkinPettyThief.labelFemalePlural>
+
+
 </LanguageData>

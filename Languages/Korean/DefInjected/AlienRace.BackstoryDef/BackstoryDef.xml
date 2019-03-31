@@ -407,4 +407,11 @@
   <Ratkin_Vagabond.baseDescription>[PAWN_nameDef](은)는 정처없이 떠돌이 생활을 해왔습니다. [PAWN_pronoun]의 정확한 과거는 알 수 없지만 방랑생활을 통해 얻은 지혜는 충분히 믿음직스러워 보입니다.</Ratkin_Vagabond.baseDescription>
 
 
+  <!-- 데모맨 -->
+
+  <Ratkin_Demoman.title>랫킨 폭탄마</Ratkin_Demoman.title>
+  <Ratkin_Demoman.titleShort>폭탄마</Ratkin_Demoman.titleShort>
+  <Ratkin_Demoman.baseDescription>[PAWN_nameDef]은 다른 랫킨과 달리 폭발에 광적으로 집착합니다. 랫킨 특공대에서는 [PAWN_pronoun]처럼 위험해보이는 랫킨들을 사회로부터 격리함과 동시에 위험한 임무에 보냅니다.</Ratkin_Demoman.baseDescription>
+
+
 </LanguageData>

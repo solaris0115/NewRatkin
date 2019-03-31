@@ -13,6 +13,9 @@
   <FlechetteBullet.label>flechette bullet</FlechetteBullet.label>
   <FlechetteBullet.description>Apply Ratkin arrowheads to bullets. The Ratkin style placelet bullet is a little heavy but designed to penetrate armor. Need Ratkin glasses to research.</FlechetteBullet.description>
 
+  <PulseTech.label>pulse tech</PulseTech.label>
+  <PulseTech.description>Research how to apply pulse technology to weapons and equipment. Research glasses are required.</PulseTech.description>
+
   <RatkinClothing.label>Ratkin clothing</RatkinClothing.label>
   <RatkinClothing.description>Ratkin designs clothes that are easy to wear. Produces professional and convenient clothes.</RatkinClothing.description>
 
