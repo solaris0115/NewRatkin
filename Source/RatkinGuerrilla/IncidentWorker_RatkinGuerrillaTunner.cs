@@ -12,7 +12,6 @@ using UnityEngine;
 using Verse.AI;
 namespace NewRatkin
 {
-    //침투
     public class IncidentWorker_RatkinGuerrillaTunner : IncidentWorker
     {
         private const float tunnelPoints = 220f;
@@ -25,8 +24,9 @@ namespace NewRatkin
         }
         protected override bool TryExecuteWorker(IncidentParms parms)
         {
+            //Log.Message("IncidentWorker_RatkinGuerrillaTunner: "+ parms.points);
             Map map = (Map)parms.target;
-            Thing t = SpawnTunnels(map);
+            Thing t = SpawnTunnels(map, parms);
             if (t != null)
             {
                 SendStandardLetter(t, null, new string[0]);
@@ -35,7 +35,7 @@ namespace NewRatkin
             }
             return false;
         }
-        private Thing SpawnTunnels(Map map)
+        private Thing SpawnTunnels(Map map, IncidentParms parms)
         {
             IntVec3 loc;
             if (!RatkinTunnelCellFinder.FindPowerPlantNearCell(out loc, map))
@@ -43,6 +43,7 @@ namespace NewRatkin
                 return null;
             }
             Thing thing = GenSpawn.Spawn(ThingMaker.MakeThing(RatkinBuildingDefOf.RK_GuerrillaTunnelSpawner, null), loc, map, WipeMode.FullRefund);
+            ((GuerrillaTunnelSpawner)thing).eventPoint = parms.points*0.66f;
             return thing;
         }
     }

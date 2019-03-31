@@ -111,11 +111,11 @@
   <RatkinMurderer.labelFemalePlural>여자 랫킨 살인마들</RatkinMurderer.labelFemalePlural>
 
   <RatkinVagabond.label>랫킨 방랑자</RatkinVagabond.label>
-  <RatkinVagabond.labelPlural>Vagabond들</RatkinVagabond.labelPlural>
-  <RatkinVagabond.labelMale>남자 방랑자</RatkinVagabond.labelMale>
-  <RatkinVagabond.labelMalePlural>남자 방랑자들</RatkinVagabond.labelMalePlural>
-  <RatkinVagabond.labelFemale>여자 방랑자</RatkinVagabond.labelFemale>
-  <RatkinVagabond.labelFemalePlural>여자 방랑자들</RatkinVagabond.labelFemalePlural>
+  <RatkinVagabond.labelPlural>남자 랫킨 방랑자들</RatkinVagabond.labelPlural>
+  <RatkinVagabond.labelMale>남자 랫킨 방랑자</RatkinVagabond.labelMale>
+  <RatkinVagabond.labelMalePlural>남자 랫킨 방랑자들</RatkinVagabond.labelMalePlural>
+  <RatkinVagabond.labelFemale>여자 랫킨 방랑자</RatkinVagabond.labelFemale>
+  <RatkinVagabond.labelFemalePlural>여자 랫킨 방랑자들</RatkinVagabond.labelFemalePlural>
 
   <RatkinMercenaryLight.label>랫킨 용병</RatkinMercenaryLight.label>
   <RatkinMercenaryLight.labelPlural>랫킨 용병들</RatkinMercenaryLight.labelPlural>
@@ -123,6 +123,36 @@
   <RatkinMercenaryLight.labelMalePlural>남자 랫킨 용병들</RatkinMercenaryLight.labelMalePlural>
   <RatkinMercenaryLight.labelFemale>여자 랫킨 용병</RatkinMercenaryLight.labelFemale>
   <RatkinMercenaryLight.labelFemalePlural>여자 랫킨 용병들</RatkinMercenaryLight.labelFemalePlural>
+
+
+  <!-- 특수 부대 찍찍이 -->
+
+  <RatkinEliteSoldier.label>랫킨 특수 부대원</RatkinEliteSoldier.label>
+  <RatkinEliteSoldier.labelPlural>랫킨 특수 부대원들</RatkinEliteSoldier.labelPlural>
+  <RatkinEliteSoldier.labelMale>남자 랫킨 특수 부대원</RatkinEliteSoldier.labelMale>
+  <RatkinEliteSoldier.labelMalePlural>남자 랫킨 특수 부대원들</RatkinEliteSoldier.labelMalePlural>
+  <RatkinEliteSoldier.labelFemale>여자 랫킨 특수 부대원</RatkinEliteSoldier.labelFemale>
+  <RatkinEliteSoldier.labelFemalePlural>여자 랫킨 특수 부대원들</RatkinEliteSoldier.labelFemalePlural>
+
+
+  <!-- 찍찍이 데모맨 -->
+
+  <RatkinDemonMan.label>랫킨 폭탄마</RatkinDemonMan.label>
+  <RatkinDemonMan.labelPlural>랫킨 폭탄마들</RatkinDemonMan.labelPlural>
+  <RatkinDemonMan.labelMale>남자 랫킨 폭탄마</RatkinDemonMan.labelMale>
+  <RatkinDemonMan.labelMalePlural>남자 랫킨 폭탄마들</RatkinDemonMan.labelMalePlural>
+  <RatkinDemonMan.labelFemale>여자 랫킨 폭탄마</RatkinDemonMan.labelFemale>
+  <RatkinDemonMan.labelFemalePlural>여자 랫킨 폭탄마들</RatkinDemonMan.labelFemalePlural>
+
+
+  <!-- 곳간털이범 -->
+
+  <RatkinPettyThief.label>랫킨 좀도둑</RatkinPettyThief.label>
+  <RatkinPettyThief.labelPlural>랫킨 좀도둑들</RatkinPettyThief.labelPlural>
+  <RatkinPettyThief.labelMale>남자 랫킨 좀도둑</RatkinPettyThief.labelMale>
+  <RatkinPettyThief.labelMalePlural>남자 랫킨 좀도둑들</RatkinPettyThief.labelMalePlural>
+  <RatkinPettyThief.labelFemale>여자 랫킨 좀도둑</RatkinPettyThief.labelFemale>
+  <RatkinPettyThief.labelFemalePlural>여자 랫킨 좀도둑들</RatkinPettyThief.labelFemalePlural>
 
 
 </LanguageData>

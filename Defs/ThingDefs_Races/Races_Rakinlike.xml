@@ -287,7 +287,7 @@
 			</relationSettings>
 
 			<raceRestriction>
-				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
+				<onlyUseRaceRestrictedApparel>false</onlyUseRaceRestrictedApparel>
 				<apparelList>
 					<li>RK_ApronSkirt</li>
 					<li>RK_SummerDress</li>
@@ -330,10 +330,10 @@
 					<li>RK_SantaHat</li>
 					<li>RK_SantaSack</li>					
 				</apparelList>
-				<whiteApparelList>
-					<li>Apparel_ShieldBelt</li>
-					<li>Apparel_SmokepopBelt</li>
-				</whiteApparelList>
+				<!-- <whiteApparelList> -->
+					<!-- <li>Apparel_ShieldBelt</li> -->
+					<!-- <li>Apparel_SmokepopBelt</li> -->
+				<!-- </whiteApparelList> -->
 				<weaponList>
 					<li>RK_Axe</li>
 					<li>RK_Cleaver</li>
@@ -390,15 +390,22 @@
 							<li>RK_ResearchGlasses</li>
 						</apparelList>
 					</li>
+					<li>
+						<projects>
+							<li>PulseTech</li>
+						</projects>
+						<apparelList>
+							<li>RK_ResearchGlasses</li>
+						</apparelList>
+					</li>
 				</researchList>
 			</raceRestriction>
 			<thoughtSettings>
 				<cannotReceiveThoughts>
 					<li>EnvironmentDark</li>
-					<li>CabinFever</li>
+					<li>NeedOutdoors</li>
 				</cannotReceiveThoughts>
 			</thoughtSettings>
-
 		</alienRace>
 		<statBases>
 			<!-- 기본 -->

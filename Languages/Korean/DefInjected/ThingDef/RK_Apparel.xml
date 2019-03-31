@@ -162,8 +162,62 @@
 
   <!-- 랫킨 귀 헤어밴드 사회적영향력 +5% -->
 
-  <RK_EarCostume.label>랫킨코스프레용 머리띠</RK_EarCostume.label>
+  <RK_EarCostume.label>랫킨 코스프레용 머리띠</RK_EarCostume.label>
   <RK_EarCostume.description>귀여운 랫킨을 흉내내기 위한 귀 코스튬 입니다. 덩치가 큰 사람이 사용하면 전혀 귀엽지 않습니다.</RK_EarCostume.description>
+
+
+  <!-- 도둑질 보따리 +50 내구도 +20 -->
+
+  <RK_Sack.label>랫킨 보따리</RK_Sack.label>
+  <RK_Sack.description>등에 편하게 맬 수 있는 보따리입니다. 물건을 많이 넣을 수 있기 때문에 도둑들이 애용합니다.</RK_Sack.description>
+
+
+  <!-- 특수 부대 복장 -->
+
+  <RK_BattleSuit.label>랫킨 전투복</RK_BattleSuit.label>
+  <RK_BattleSuit.description>침투에 유리하도록 디자인된 전투복입니다. 극한의 온도상황에서 활동할 수 있도록 설계되어있습니다.</RK_BattleSuit.description>
+
+
+  <!-- 가스마스크 -->
+
+  <RK_Mask.label>랫킨 마스크 핼멧</RK_Mask.label>
+  <RK_Mask.description>마스크가 있는 헬멧입니다. 유독성 환경에서도 장시간 활동할 수 있도록 고안되었습니다.</RK_Mask.description>
+
+
+  <!-- 특공 머리띠 -->
+
+  <RK_HeadBand.label>랫킨 빨간 머리띠</RK_HeadBand.label>
+  <RK_HeadBand.description>빨간 머리띠입니다. 큰 기능은 없으나 고양감을 주어 고통을 더 참을 수 있게 해줍니다.</RK_HeadBand.description>
+
+
+  <!-- 판금 갑옷 높은 날카로움, 둔탁함 방어력, 느려짐 -->
+
+  <RK_Plate.label>랫킨 판금 갑옷</RK_Plate.label>
+  <RK_Plate.description>금속으로 만든 방어구입니다. 덧입을 수 있어 방어력을 한층 더 올릴 수 있습니다.</RK_Plate.description>
+
+
+  <!-- 판금 투구 높은 날카로움, 둔탁함 방어력, 느려짐 -->
+
+  <RK_PlateHelm.label>랫킨 판금 투구</RK_PlateHelm.label>
+  <RK_PlateHelm.description>금속으로 만든 투구입니다.</RK_PlateHelm.description>
+
+
+  <!-- 산타외투 -->
+
+  <RK_SantaRobe.label>산타 로브</RK_SantaRobe.label>
+  <RK_SantaRobe.description>산타들이 입는 로브입니다.</RK_SantaRobe.description>
+
+
+  <!-- 산타 모자 추위저항 +5 -->
+
+  <RK_SantaHat.label>산타 모자</RK_SantaHat.label>
+  <RK_SantaHat.description>털장식이 달린 산타모자입니다.</RK_SantaHat.description>
+
+
+  <!-- 산타 보따리 +50 내구도 +20 -->
+
+  <RK_SantaSack.label>산타 보따리</RK_SantaSack.label>
+  <RK_SantaSack.description>선물을 많이 넣을 수 있는 커다란 보따리입니다.</RK_SantaSack.description>
 
 
 </LanguageData>

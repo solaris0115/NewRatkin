@@ -15,23 +15,59 @@ namespace NewRatkin
     public class LordToilData_DefendBomb : LordToilData
     {
         public IntVec3 defendCenter;
+        public float eventPoint = 0;
 
         public float baseRadius = 16f;
 
         public float desiredBuilderFraction = 0.5f;
-
-        public List<Blueprint> blueprints = new List<Blueprint>();
+        
+        public Thing minifiedEmpBomb;
+        public Thing EmpBomb;
+        public bool empIsSpawned = true;
+        public bool minifiedEmpBombDestoryed = false;
+        public Blueprint blueprint;
 
         public override void ExposeData()
         {
             Scribe_Values.Look(ref defendCenter, "defendCenter", default(IntVec3), false);
             Scribe_Values.Look(ref baseRadius, "baseRadius", 16f, false);
             Scribe_Values.Look(ref desiredBuilderFraction, "desiredBuilderFraction", 0.5f, false);
+            Scribe_References.Look(ref blueprint, "blueprint");
+            Scribe_Values.Look(ref eventPoint, "eventPoint");
             if (Scribe.mode == LoadSaveMode.Saving)
             {
-                blueprints.RemoveAll((Blueprint blue) => blue.Destroyed);
+                if (minifiedEmpBomb != null && minifiedEmpBomb.Destroyed)
+                {
+                    minifiedEmpBombDestoryed = true;
+                    if (EmpBomb != null && EmpBomb.Spawned)
+                    {
+                        Scribe_References.Look(ref EmpBomb, "EmpBomb");
+                    }
+                    else
+                    {
+                        empIsSpawned = false;
+                    }
+                }
+                else
+                {
+                    Scribe_References.Look(ref minifiedEmpBomb, "minifiedEmpBomb");
+                    Scribe_References.Look(ref EmpBomb, "EmpBomb");
+                }
             }
-            Scribe_Collections.Look(ref blueprints, "blueprints", LookMode.Reference, new object[0]);
+            Scribe_Values.Look(ref empIsSpawned, "empDestroyed");
+            Scribe_Values.Look(ref minifiedEmpBombDestoryed, "minifiedEmpBombDestoryed");
+            if (Scribe.mode != LoadSaveMode.Saving)
+            {
+                if (!minifiedEmpBombDestoryed)
+                {
+                    Scribe_References.Look(ref minifiedEmpBomb, "minifiedEmpBomb");
+                    Scribe_References.Look(ref EmpBomb, "EmpBomb");
+                }
+                if (!empIsSpawned)
+                {
+                    Scribe_References.Look(ref EmpBomb, "EmpBomb");
+                }
+            }
         }
     }
 
@@ -74,10 +110,11 @@ namespace NewRatkin
         {
 
         }
-        public LordToil_DefendBomb(IntVec3 defendCenter)
+        public LordToil_DefendBomb(IntVec3 defendCenter,float eventPoint)
         {
             data = new LordToilData_DefendBomb();
             Data.defendCenter = defendCenter;
+            Data.eventPoint = eventPoint;
         }
         public override IntVec3 FlagLoc
         {
@@ -86,20 +123,31 @@ namespace NewRatkin
                 return Data.defendCenter;
             }
         }
+
+        
         public override void Init()
         {
             base.Init();
+            Current.Game.GetComponent<GameComponent_EMPCheck>().lord = lord;
             LordToilData_DefendBomb data = Data;
             data.baseRadius = Mathf.InverseLerp(14f, 25f, lord.ownedPawns.Count / 50f);
             data.baseRadius = Mathf.Clamp(data.baseRadius, 14f, 25f);
 
-            Thing bomb = ThingMaker.MakeThing(RatkinBuildingDefOf.RK_EmpBomb);
-            bomb.SetFaction(Find.FactionManager.FirstFactionOfDef(RatkinFactionDefOf.Rakinia));
+            Thing bomb = ThingMaker.MakeThing(RatkinBuildingDefOf.RK_EmpBomb);           
+            Faction ratkiniaFaction = Find.FactionManager.FirstFactionOfDef(RatkinFactionDefOf.Rakinia);
+            data.EmpBomb = bomb;
+            bomb.SetFaction(ratkiniaFaction);
+            if (bomb.TryGetComp<Comp_Emp>()!=null)
+            {
+                bomb.TryGetComp<Comp_Emp>().eventPoint = Data.eventPoint;
+            }
             MinifiedThing minified = bomb.MakeMinified();
-            IntVec3 intVec3 = CellFinder.RandomClosewalkCellNear(Data.defendCenter, Map, 1);            
+            data.minifiedEmpBomb = minified;
+            IntVec3 intVec3 = CellFinder.RandomClosewalkCellNear(Data.defendCenter, Map, 1);
             GenSpawn.Spawn(minified, intVec3, Map);
-
-            GenConstruct.PlaceBlueprintForInstall(minified, CellFinder.RandomClosewalkCellNear(intVec3, Map, 5), Map,Rot4.North, Find.FactionManager.FirstFactionOfDef(RatkinFactionDefOf.Rakinia));
+            IntVec3 bluePrintPosition = CellFinder.RandomClosewalkCellNear(intVec3, Map, 5);
+            Blueprint b =  GenConstruct.PlaceBlueprintForInstall(minified, bluePrintPosition, Map,Rot4.North, Find.FactionManager.FirstFactionOfDef(RatkinFactionDefOf.Rakinia));
+            data.blueprint= b;
             data.desiredBuilderFraction = BuilderCountFraction.RandomInRange;
         }
         public override void UpdateAllDuties()
@@ -127,14 +175,12 @@ namespace NewRatkin
                         break;
                     }
                 }
-                Log.Message("bombPlanerCount: " + bombPlanerCount);
                 if (bombPlanerCount<1)
                 {
-                    Log.Message("bombPlanerCount<0 = true");
                     Pawn bombPlaner;
-                    if ((from pa in lord.ownedPawns
-                            where !rememberedDuties.ContainsKey(pa) && CanBeBuilder(pa)
-                            select pa).TryRandomElement(out bombPlaner))
+                    if ((from pawnB in lord.ownedPawns
+                            where !rememberedDuties.ContainsKey(pawnB) && CanBeBuilder(pawnB)
+                            select pawnB).TryRandomElement(out bombPlaner))
                     {
                         rememberedDuties.Add(bombPlaner, DutyDefOf.Build);
                         SetAsBuilder(bombPlaner);
@@ -152,6 +198,7 @@ namespace NewRatkin
                 }
                 if (bombPlanerCount == 0)
                 {
+                    //Log.Message("NoBuilders");
                     lord.ReceiveMemo("NoBuilders");
                     return;
                 }
@@ -168,18 +215,32 @@ namespace NewRatkin
             {
                 UpdateAllDuties();
             }
+            if (Find.TickManager.TicksGame % 500 == 0)
+            {
+                LordToilData_DefendBomb data = Data;
+                /*
+                if (data.empBomb != null&& data.empBomb.ParentHolder !=null&&((Thing)data.empBomb.ParentHolder).Destroyed)
+                {
+                    Log.Message("data.empBomb.ParentHolder Destroyed");
+                }*/
+                if(data.EmpBomb != null && data.EmpBomb.Destroyed ||(data.minifiedEmpBomb!=null && data.minifiedEmpBomb.Destroyed && !data.EmpBomb.Spawned) )
+                {
+                    lord.ReceiveMemo("NoBomb");
+                    return;
+                }
+                if(!data.empIsSpawned && data.minifiedEmpBombDestoryed)
+                {
+                    lord.ReceiveMemo("NoBomb");
+                    return;
+                }
+            }
         }
         public override void Cleanup()
         {
             LordToilData_DefendBomb data = Data;
-            data.blueprints.RemoveAll((Blueprint blue) => blue.Destroyed);
-            for (int i = 0; i < data.blueprints.Count; i++)
+            if(data.blueprint!=null && !data.blueprint.Destroyed)
             {
-                data.blueprints[i].Destroy(DestroyMode.Cancel);
-            }
-            foreach (Frame frame in Frames.ToList())
-            {
-                frame.Destroy(DestroyMode.Cancel);
+                data.blueprint.Destroy(DestroyMode.Cancel);
             }
         }
 

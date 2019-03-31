@@ -1,12 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <!-- 랫킨 귀 헤어밴드 사회적영향력 +5% -->
-
   <InnerCoat.label>내피</InnerCoat.label>
   <BackPack.label>가방</BackPack.label>
   <OuterClothing.label>외투</OuterClothing.label>
   <OnFace.label>얼굴</OnFace.label>
+
 
 
 </LanguageData>

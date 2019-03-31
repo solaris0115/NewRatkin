@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-		<defName>RK_FaceCleaner</defName>
-		<label>ratkin face cleaner</label>
-		<description>충격에 민감한 랫킨제 얼룩 제거기입니다. 제정신인 랫킨이라면 이것을 던지겠지만...</description>
+		<defName>RK_MagicWand</defName>
+		<label>ratkin magic wand</label>
+		<description>충격에 민감한 랫킨제 요술봉입니다. 잠긴 문을 열거나 가구를 치울때 사용합니다. 제정신인 랫킨이라면 이걸 던지겠지만..</description>
 		<graphicData>
 			<texPath>Weapon/RK_Cleaner</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -34,7 +34,7 @@
 				<capacities>
 					<li>Kaboom</li>
 				</capacities>
-				<power>10</power>
+				<power>5</power>
 				<armorPenetration>0.35</armorPenetration>
 				<cooldownTime>1.5</cooldownTime>
 			</li>
@@ -43,11 +43,12 @@
 				<capacities>
 					<li>Kaboom</li>
 				</capacities>
-				<power>10</power>
+				<power>5</power>
 				<armorPenetration>0.35</armorPenetration>
 				<cooldownTime>1.5</cooldownTime>
 			</li>
 		</tools>
+		<tradeability>Sellable</tradeability>
 		<recipeMaker Inherit="false">
 		</recipeMaker>
 	</ThingDef>
@@ -82,11 +83,11 @@
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
 		<impactSoundType>Blunt</impactSoundType>
 		<armorCategory>Sharp</armorCategory>
-		<minDamageToFragment>20</minDamageToFragment>
-		<defaultDamage>40</defaultDamage>
+		<minDamageToFragment>15</minDamageToFragment>
+		<defaultDamage>25</defaultDamage>
 		<defaultStoppingPower>1</defaultStoppingPower>
-		<defaultArmorPenetration>0.50</defaultArmorPenetration>
-		<buildingDamageFactor>10</buildingDamageFactor>
+		<defaultArmorPenetration>0.60</defaultArmorPenetration>
+		<buildingDamageFactor>15</buildingDamageFactor>
 		<plantDamageFactor>4</plantDamageFactor>
 		<explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
 		<explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>

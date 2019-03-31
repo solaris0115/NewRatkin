@@ -66,6 +66,22 @@
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
+		<defName>PulseTech</defName>
+		<label>pulse tech</label>
+		<description>무기와 장비에 펄스 기술을 적용하는 방법을 연구합니다. 연구용 안경이 필요합니다.</description>
+		<tab>RatkinTech</tab>
+		<baseCost>2600</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>ChargedShot</li>
+			<li>FlechetteBullet</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>   
+		<researchViewX>3</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
 		<defName>RatkinClothing</defName>
 		<label>Ratkin clothing</label>
 		<description>랫킨이 입기 편리한 의류들을 고안해냅니다. 조금 더 다양한 의류를 생산할 수 있습니다.</description>

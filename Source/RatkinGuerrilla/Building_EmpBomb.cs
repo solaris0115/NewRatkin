@@ -53,6 +53,7 @@ namespace NewRatkin
         public int remainingTick = 0;
         public int remainingSecond = 0;
         int timeLimitTick = 0;
+        int plantedTick = 0;
 
         private float tempTick = 0;
 
@@ -73,6 +74,7 @@ namespace NewRatkin
             if (!isPlanted)
             {
                 isPlanted = true;
+                plantedTick = Find.TickManager.TicksGame;
                 remainingTick = timeLimitTick;
                 remainingSecond = Props.timeLimit;
             }
@@ -89,9 +91,10 @@ namespace NewRatkin
         public override void PostExposeData()
         {
             base.PostExposeData();
+            Scribe_Values.Look(ref plantedTick, "plantedTick");
             Scribe_Values.Look(ref isPlanted, "isPlanted");
             Scribe_Values.Look(ref remainingTick, "remainingTick");
-            Scribe_Values.Look(ref remainingSecond, "remainingSecond");
+            Scribe_Values.Look(ref remainingSecond, "remainingSecond");            
         }
 
         public override void CompTick()
@@ -146,26 +149,86 @@ namespace NewRatkin
     }
     public class Comp_Emp : ThingComp
     {
+        public float eventPoint;
         public void EmpActivate()
         {
-            int count = 3;
             HashSet<CompPower> tempComp = new HashSet<CompPower>();
             foreach (PowerNet pn in parent.Map.powerNetManager.AllNetsListForReading)
             {
-                if(pn.powerComps.Count>0 && count>0)
+                foreach (CompPower comp in pn.transmitters.FindAll((CompPower comp) => comp.parent.GetComp<CompBreakdownable>() != null).Take((int)(eventPoint*0.004f)))
                 {
-                    foreach(CompPower comp in pn.powerComps.TakeRandom(count))
+                    comp.parent.GetComp<CompBreakdownable>().DoBreakdown();
+                }
+                /*
+                Log.Message("================connectors");
+                foreach (CompPower comp in pn.connectors)
+                {
+                    Log.Message(comp.parent.Label);
+                }
+                Log.Message("================powerComps");
+                foreach (CompPower comp in pn.powerComps)
+                {
+                    Log.Message(comp.parent.Label);
+                }
+                Log.Message("================transmitters");
+                foreach (CompPower comp in pn.transmitters)
+                {
+                    Log.Message(comp.parent.Label);
+                }*/
+                /*if (pn.powerComps.Count>0 && count>0)
+                {
+                    foreach(CompPower comp in pn.transmitters.FindAll((CompPower comp)=>comp.parent.GetComp<CompBreakdownable>() != null).Take(20))
                     {
                         if(tempComp.Add(comp) && comp.parent.GetComp<CompBreakdownable>() !=null)
                         {
-                            Log.Message(comp.parent.Label);
                             comp.parent.GetComp<CompBreakdownable>().DoBreakdown();
-                            count--;
                         }
-                        count = count ^ 3;
                     }
-                }
-            }            
+                }*/
+            }
+            Current.Game.GetComponent<GameComponent_EMPCheck>().DoEmpIncident(parent);
+        }
+        public override void PostExposeData()
+        {
+            base.PostExposeData();
+            Scribe_Values.Look(ref eventPoint, "eventPoint");
+        }
+    }
+
+    public class GameComponent_EMPCheck : GameComponent
+    {
+        public Lord lord;
+        public int operableNextTick = 0;
+        public bool isEmpSet = false;
+
+        public GameComponent_EMPCheck(Game game)
+        {
+        }
+
+        public override void ExposeData()
+        {
+            Scribe_Values.Look(ref operableNextTick, "operableNextTick");
+            Scribe_Values.Look(ref isEmpSet, "isEmpSet");
+            Scribe_References.Look(ref lord, "lord");
+        }
+        public void DoEmpIncident(Thing thing)
+        {
+            if (operableNextTick < Find.TickManager.TicksGame)
+            {
+                operableNextTick = Find.TickManager.TicksGame + 60000;
+                Find.LetterStack.ReceiveLetter("EMPExplode".Translate(), "EMPExplodeDesc".Translate(), LetterDefOf.ThreatBig);
+                StorytellerComp storytellerComp = Find.Storyteller.storytellerComps.First((StorytellerComp x) => x is StorytellerComp_OnOffCycle || x is StorytellerComp_RandomMain);
+                IncidentParms parms = storytellerComp.GenerateParms(IncidentCategoryDefOf.ThreatBig, Find.CurrentMap);
+                //Log.Message("parms.storytellerComp: " + parms.points);
+                parms.faction = Find.FactionManager.FirstFactionOfDef(RatkinFactionDefOf.Rakinia);
+                parms.points *= 0.45f;
+                parms.raidStrategy = DefDatabase<RaidStrategyDef>.GetNamed("ImmediateAttackSappers");
+                //DefDatabase<RaidStrategyDef>.AllDefs.Where((RaidStrategyDef r) => r.Worker.CanUseWith(parms, PawnGroupKindDefOf.Combat)).TryRandomElement(out parms.raidStrategy);
+                parms.raidArrivalMode = PawnsArrivalModeDefOf.EdgeWalkIn;
+                //DefDatabase<PawnsArrivalModeDef>.AllDefs.Where((PawnsArrivalModeDef p) => p.Worker.CanUseWith(parms)).TryRandomElement(out parms.raidArrivalMode);
+                RatkinIncidentDefOf.RatkinFollowUpTroops.Worker.TryExecute(parms);
+                GenExplosion.DoExplosion(thing.Position, thing.Map, 15, RatkinDamageDefOf.RK_EMP, thing);
+            }
         }
     }
 }

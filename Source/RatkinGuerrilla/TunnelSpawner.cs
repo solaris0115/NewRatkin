@@ -123,6 +123,7 @@ namespace NewRatkin
     [StaticConstructorOnStartup]
     public class GuerrillaTunnelSpawner : ThingWithComps
     {
+        public float eventPoint = 0;
         private int secondarySpawnTick;
 
         public bool spawnTunnel = true;
@@ -149,6 +150,7 @@ namespace NewRatkin
             base.ExposeData();
             Scribe_Values.Look(ref secondarySpawnTick, "secondarySpawnTick", 0, false);
             Scribe_Values.Look(ref spawnTunnel, "spawnTunnel", true, false);
+            Scribe_Values.Look(ref eventPoint, "eventPoint");
         }
 
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
@@ -189,6 +191,8 @@ namespace NewRatkin
                     {
                         Building_GuerrillaTunnel tunnel = (Building_GuerrillaTunnel)GenSpawn.Spawn(ThingMaker.MakeThing(RatkinBuildingDefOf.RK_GuerrillaTunnel, null), position, map, WipeMode.Vanish);
                         tunnel.SetFaction(Find.FactionManager.FirstFactionOfDef(RatkinFactionDefOf.Rakinia), null);
+                        tunnel.eventPoint = eventPoint;
+                        tunnel.SpawnInitialPawns();
                     }
                 }
             }
@@ -210,7 +214,7 @@ namespace NewRatkin
             float num = (Find.TickManager.TicksGame - secondarySpawnTick).TicksToSeconds();
             Vector3 pos = Position.ToVector3ShiftedWithAltitude(AltitudeLayer.Filth);
             pos.y += 0.046875f * Rand.Range(0f, 1f);
-            Color value = new Color(0.470588237f, 0.384313732f, 0.3254902f, 0.7f);
+            Color value = new Color(0.47f, 0.38f, 0.32f, 0.7f);
             matPropertyBlock.SetColor(ShaderPropertyIDs.Color, value);
             Matrix4x4 matrix = Matrix4x4.TRS(pos, Quaternion.Euler(0f, initialAngle + speedMultiplier * num, 0f), Vector3.one * scale);
             Graphics.DrawMesh(MeshPool.plane10, matrix, TunnelMaterial, 0, null, 0, matPropertyBlock);

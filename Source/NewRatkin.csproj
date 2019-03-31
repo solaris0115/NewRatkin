@@ -75,18 +75,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IncidentWoker_RatkinThiefTunnel.cs" />
+    <Compile Include="RatkinGuerrilla\IncidentWoker_RatkinThiefTunnel.cs" />
     <Compile Include="RatkinGuerrilla\Building_EmpBomb.cs" />
-    <Compile Include="RatkinGuerrilla\Graphic_CountDown.cs" />
-    <Compile Include="RatkinGuerrilla\LordToil_DefendBomb.cs" />
     <Compile Include="RatkinGuerrilla\Building_Tunnel.cs" />
     <Compile Include="RatkinGuerrilla\CellFinder.cs" />
+    <Compile Include="RatkinGuerrilla\Graphic_CountDown.cs" />
+    <Compile Include="RatkinGuerrilla\IncidentWorker_AfterRaid.cs" />
+    <Compile Include="RatkinGuerrilla\IncidentWorker_RatkinGuerrillaTunner.cs" />
     <Compile Include="RatkinGuerrilla\LordJob_DefendBomb.cs" />
+    <Compile Include="RatkinGuerrilla\LordToil_DefendBomb.cs" />
     <Compile Include="RatkinGuerrilla\Mote_CountDown.cs" />
     <Compile Include="RatkinGuerrilla\RatkinRaidPatch.cs" />
-    <Compile Include="RatkinGuerrilla\TunnelSpawner.cs" />
-    <Compile Include="RatkinGuerrilla\IncidentWorker_RatkinGuerrillaTunner.cs" />
     <Compile Include="RatkinGuerrilla\RatkinTunnelUtility.cs" />
+    <Compile Include="RatkinGuerrilla\TunnelSpawner.cs" />
     <Compile Include="Release\Ballista.cs" />
     <Compile Include="Release\BasePatch.cs" />
     <Compile Include="Release\MeeleExplosion.cs" />

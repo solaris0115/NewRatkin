@@ -166,4 +166,58 @@
   <RK_EarCostume.description>It is ear costume to imitate a cute Ratkin. It is not cute at all when used by big people.</RK_EarCostume.description>
 
 
+  <!-- 도둑질 보따리 +50 내구도 +20 -->
+
+  <RK_Sack.label>ratkin package</RK_Sack.label>
+  <RK_Sack.description>It's a package. Thieves are favorite because can put in a lot of things.</RK_Sack.description>
+
+
+  <!-- 특수 부대 복장 -->
+
+  <RK_BattleSuit.label>ratkin battlesuit</RK_BattleSuit.label>
+  <RK_BattleSuit.description>It's a combat suit designed to be invasive purposes. It is designed to operate in extreme temperature conditions.</RK_BattleSuit.description>
+
+
+  <!-- 가스마스크 -->
+
+  <RK_Mask.label>Ratkin mask helmet</RK_Mask.label>
+  <RK_Mask.description>A helmet with a mask. It is designed to be active for long periods of time even in toxic environments.</RK_Mask.description>
+
+
+  <!-- 특공 머리띠 -->
+
+  <RK_HeadBand.label>Ratkin head band</RK_HeadBand.label>
+  <RK_HeadBand.description>It's a red headband. If see this headbanded ratkin, be careful. They're fanatical ratkin who don't know fear.</RK_HeadBand.description>
+
+
+  <!-- 판금 갑옷 높은 날카로움, 둔탁함 방어력, 느려짐 -->
+
+  <RK_Plate.label>ratkin plate armor</RK_Plate.label>
+  <RK_Plate.description>It's a plate armor. Overlapping allows for even greater defense.</RK_Plate.description>
+
+
+  <!-- 판금 투구 높은 날카로움, 둔탁함 방어력, 느려짐 -->
+
+  <RK_PlateHelm.label>Ratkin plate Helm</RK_PlateHelm.label>
+  <RK_PlateHelm.description>It's a plate helmet.</RK_PlateHelm.description>
+
+
+  <!-- 산타외투 -->
+
+  <RK_SantaRobe.label>santa robe</RK_SantaRobe.label>
+  <RK_SantaRobe.description>Santa Ratkin's robe.</RK_SantaRobe.description>
+
+
+  <!-- 산타 모자 추위저항 +5 -->
+
+  <RK_SantaHat.label>santa hat</RK_SantaHat.label>
+  <RK_SantaHat.description>Santa Ratkin's hat.</RK_SantaHat.description>
+
+
+  <!-- 산타 보따리 +50 내구도 +20 -->
+
+  <RK_SantaSack.label>santa package</RK_SantaSack.label>
+  <RK_SantaSack.description>It's a big package with lots of presents.</RK_SantaSack.description>
+
+
 </LanguageData>

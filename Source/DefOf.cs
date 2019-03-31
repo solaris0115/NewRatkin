@@ -14,6 +14,11 @@ using Verse.AI;
 namespace NewRatkin
 {
     [DefOf]
+    public static class RatkinDamageDefOf
+    {
+        public static DamageDef RK_EMP;
+    }
+    [DefOf]
     public static class RatkinBuildingDefOf
     {
         public static ThingDef RK_GuerrillaTunnel;
@@ -27,7 +32,7 @@ namespace NewRatkin
     [DefOf]
     public static class RatkinWeaponDefOf
     {
-        public static ThingDef RK_FaceCleaner;
+        public static ThingDef RK_MagicWand;
     }
 
     [DefOf]
@@ -71,4 +76,9 @@ namespace NewRatkin
         public static ThingDef Mote_CountDown;
     }
 
+    [DefOf]
+    public static class RatkinIncidentDefOf
+    {
+        public static IncidentDef RatkinFollowUpTroops;
+    }
 }

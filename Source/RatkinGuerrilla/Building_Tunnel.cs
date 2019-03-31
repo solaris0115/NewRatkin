@@ -15,6 +15,7 @@ namespace NewRatkin
 {
     public class Building_GuerrillaTunnel : ThingWithComps
     {
+        public float eventPoint = 0;
         public bool active = true;
 
         public int nextPawnSpawnTick = -1;
@@ -105,16 +106,11 @@ namespace NewRatkin
             {
                 SetFaction(Find.FactionManager.FirstFactionOfDef(RatkinFactionDefOf.Rakinia), null);
             }
-            if (!respawningAfterLoad && active)
-            {
-                SpawnInitialPawns();
-            }
         }
 
-        private void SpawnInitialPawns()
+        public void SpawnInitialPawns()
         {
-            SpawnPawnsUntilPoints(200f);
-            CalculateNextPawnSpawnTick();
+            SpawnPawnsUntilPoints(eventPoint*0.35f);
         }
 
         public void SpawnPawnsUntilPoints(float points)
@@ -134,7 +130,6 @@ namespace NewRatkin
                     break;
                 }
             }
-            CalculateNextPawnSpawnTick();
         }
 
         public override void Tick()
@@ -158,7 +153,6 @@ namespace NewRatkin
                             pawn.caller.DoCall();
                         }
                     }
-                    CalculateNextPawnSpawnTick();
                 }
             }
         }
@@ -209,6 +203,7 @@ namespace NewRatkin
             Scribe_Collections.Look<Pawn>(ref this.spawnedPawns, "spawnedPawns", LookMode.Reference, new object[0]);
             Scribe_Values.Look<bool>(ref this.caveColony, "caveColony", false, false);
             Scribe_Values.Look<bool>(ref this.canSpawnPawns, "canSpawnPawns", true, false);
+            Scribe_Values.Look(ref eventPoint, "eventPoint");
             if (Scribe.mode == LoadSaveMode.PostLoadInit)
             {
                 spawnedPawns.RemoveAll((Pawn x) => x == null);
@@ -220,11 +215,6 @@ namespace NewRatkin
             active = true;
             SpawnInitialPawns();
             CalculateNextPawnSpawnTick();
-            /*CompSpawnerHives comp = GetComp<CompSpawnerHives>();
-            if (comp != null)
-            {
-                comp.CalculateNextHiveSpawnTick();
-            }*/
         }
 
         private void CalculateNextPawnSpawnTick()
@@ -271,29 +261,11 @@ namespace NewRatkin
             }
             lord.AddPawn(pawn);
             SoundDefOf.DropPod_Open.PlayOneShot(this);
+            Need rest = pawn.needs.TryGetNeed(NeedDefOf.Rest);
+            rest.CurLevel = rest.MaxLevel;
+            Need food = pawn.needs.TryGetNeed(NeedDefOf.Food);
+            food.CurLevel = food.MaxLevel;
             return true;
-        }
-
-        public override IEnumerable<Gizmo> GetGizmos()
-        {
-            foreach (Gizmo g in base.GetGizmos())
-            {
-                yield return g;
-            }
-            if (Prefs.DevMode)
-            {
-                yield return new Command_Action
-                {
-                    defaultLabel = "DEBUG: Spawn pawn",
-                    icon = TexCommand.ReleaseAnimals,
-                    action = delegate ()
-                    {
-                        Pawn pawn;
-                        TrySpawnPawn(out pawn);
-                    }
-                };
-            }
-            yield break;
         }
 
         public override bool PreventPlayerSellingThingsNearby(out string reason)
@@ -312,7 +284,7 @@ namespace NewRatkin
 
         private Lord CreateNewLord()
         {
-            return LordMaker.MakeNewLord(Faction, new LordJob_BombPlanting(Faction,Position,100), Map, null);
+            return LordMaker.MakeNewLord(Faction, new LordJob_BombPlanting(Faction,Position, eventPoint), Map, null);
         }
     }
     public class Building_ThiefTunnel : ThingWithComps

@@ -407,4 +407,11 @@
   <Ratkin_Vagabond.baseDescription>[PAWN_nameDef] have been doing a aimless wandering life. [PAWN_pronoun]'s past is not known exactly, but wisdom gained from wandering life seems to be reliable enough.</Ratkin_Vagabond.baseDescription>
 
 
+  <!-- 데모맨 -->
+
+  <Ratkin_Demoman.title>Ratkin Demoman</Ratkin_Demoman.title>
+  <Ratkin_Demoman.titleShort>Demoman</Ratkin_Demoman.titleShort>
+  <Ratkin_Demoman.baseDescription>Unlike other rats, [PAWN_nameDef] is obsessed with explosions. Ratskin's commandos isolate these dangerous classes and put them on dangerous missions.</Ratkin_Demoman.baseDescription>
+
+
 </LanguageData>

@@ -2,6 +2,7 @@
 <Defs>
 	<PawnKindDef Name="RKBasePawnKind" Abstract="True">
 		<combatPower>20</combatPower>
+		<canBeSapper>true</canBeSapper>
 		<baseRecruitDifficulty>0.80</baseRecruitDifficulty>
 		<race>Ratkin</race>
 		<minGenerationAge>15</minGenerationAge>
@@ -390,11 +391,11 @@
 		</weaponTags>
 	</PawnKindDef>
 	
-	<!-- 특작 부대 찍찍이 -->
+	<!-- 특수 부대 찍찍이 -->
 	<PawnKindDef ParentName="RKBasePawnKind">
 		<defName>RatkinEliteSoldier</defName>
 		<label>ratkin elite soldier</label>
-		<combatPower>40</combatPower>
+		<combatPower>90</combatPower>
 		<isFighter>true</isFighter>
 		<itemQuality>Excellent</itemQuality>
 		<backstoryCategories>
@@ -422,7 +423,7 @@
 	<PawnKindDef ParentName="RKBasePawnKind">
 		<defName>RatkinDemonMan</defName>
 		<label>ratkin demoman</label>
-		<combatPower>20</combatPower>
+		<combatPower>70</combatPower>
 		<isFighter>true</isFighter>
 		<baseRecruitDifficulty>0.95</baseRecruitDifficulty>
 		<backstoryCategories>
@@ -453,7 +454,7 @@
 			<skipChance>0.5</skipChance>
 			<subOptionsChooseOne>
 				<li>
-					<thingDef>RK_FaceCleaner</thingDef>
+					<thingDef>RK_MagicWand</thingDef>
 					<choiceChance>0.8</choiceChance>
 					<countRange>
 						<min>1</min>
@@ -461,7 +462,7 @@
 					</countRange>
 				</li>
 				<li>
-					<thingDef>RK_FaceCleaner</thingDef>
+					<thingDef>RK_MagicWand</thingDef>
 					<choiceChance>0.05</choiceChance>
 					<countRange>
 						<min>3</min>

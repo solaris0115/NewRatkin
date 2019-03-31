@@ -28,12 +28,12 @@
 	<ThingDef ParentName="BuildingNaturalBase">
 		<defName>RK_GuerrillaTunnel</defName>
 		<label>drill tunnel</label>
-		<description>드릴이 달린 수송포드입니다. 수송포드로 하늘에서 진입하는 경로가 막히자 랫킨들은 자신들의 장점을 이용해 지하로 침투하는 포드를 만들어냈습니다.</description>
+		<description>드릴이 달린 수송포드입니다. 랫킨의 장점인 채굴을 이용해 땅으로 이동하는 포드를 만들었습니다.</description>
 		<thingClass>NewRatkin.Building_GuerrillaTunnel</thingClass>
 		<graphicData>
 			<texPath>Things/Building/RK_GuerrillaTunnel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1</drawSize>
+			<drawSize>4</drawSize>
 		</graphicData>
 		<rotatable>false</rotatable>
 		<altitudeLayer>Building</altitudeLayer>
@@ -46,9 +46,9 @@
 		<tickerType>Normal</tickerType>
 		<passability>PassThroughOnly</passability>
 		<killedLeavings>
-			<Steel>480</Steel>
-			<ComponentIndustrial>12</ComponentIndustrial>
-			<Chemfuel>150</Chemfuel>
+			<Steel>240</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<Chemfuel>75</Chemfuel>
 		</killedLeavings>
 	</ThingDef>
 
@@ -72,7 +72,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>RK_EmpBomb</defName>
 		<label>emp Bomb</label>
-		<description>드릴이 달린 수송포드입니다. 수송포드로 하늘에서 진입하는 경로가 막히자 랫킨들은 자신들의 장점을 이용해 지하로 침투하는 포드를 만들어냈습니다.</description>
+		<description>EMP폭탄입니다. 복잡하게 만들어서 폭발을 막는 방법은 직접 파괴하거나 해체를 하는 방법뿐입니다.</description>
 		<thingClass>NewRatkin.Building_EmpBomb</thingClass>
 		<minifiedDef>MinifiedEMP</minifiedDef>		
 		<thingCategories>
@@ -111,7 +111,7 @@
 		<comps>
 			<li Class="NewRatkin.CompProperties_CountDown">
 				<compClass>NewRatkin.Comp_CountDown</compClass>
-				<timeLimit>20</timeLimit>
+				<timeLimit>50</timeLimit>
 			</li>
 			<li>
 				<compClass>NewRatkin.Comp_Emp</compClass>

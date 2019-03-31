@@ -123,6 +123,19 @@
   <Bullet_RK_PrototypePulseRifleHeavy.label>wedge bullet</Bullet_RK_PrototypePulseRifleHeavy.label>
 
 
+  <!-- BFR 3000 -->
+
+  <RK_BFR.label>BFR 3000</RK_BFR.label>
+  <RK_BFR.description>Big Force Rifle 3000.</RK_BFR.description>
+  <RK_BFR.tools.0.label>stock</RK_BFR.tools.0.label>
+  <RK_BFR.tools.1.label>barrel</RK_BFR.tools.1.label>
+  <RK_BFR.verbs.0.label>AP fire</RK_BFR.verbs.0.label>
+  <RK_BFR.verbs.1.label>SC fire</RK_BFR.verbs.1.label>
+
+  <Bullet_BFR_AP.label>wedge bullet (AP)</Bullet_BFR_AP.label>
+  <Bullet_BFR_SC.label>wedge bullet (SC)</Bullet_BFR_SC.label>
+
+
   <!--<Bullet_RK_PrototypePulseRifle.label>wedge bullet</Bullet_RK_PrototypePulseRifle.label>-->
 
 </LanguageData>
