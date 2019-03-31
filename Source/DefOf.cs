@@ -17,6 +17,7 @@ namespace NewRatkin
     public static class RatkinDamageDefOf
     {
         public static DamageDef RK_EMP;
+        public static DamageDef DemoBomb;
     }
     [DefOf]
     public static class RatkinBuildingDefOf

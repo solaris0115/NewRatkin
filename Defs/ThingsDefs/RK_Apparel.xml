@@ -1961,13 +1961,73 @@
 	</ThingDef>
 	<!-- 판금 투구 높은 날카로움, 둔탁함 방어력, 느려짐-->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_HatMakeableBase">
-		<defName>RK_PlateHelm</defName>
+		<defName>RK_PlateHelmA</defName>
+		<label>Ratkin plate Helm</label>
+		<description>금속으로 만든 투구입니다.</description>
+		<graphicData>
+			<texPath>Apparel/RK_PlateHelmet1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+		</graphicData>
+		<costList>
+			<Steel>25</Steel>
+		</costList>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>18000</WorkToMake>
+			<Mass>3</Mass>			
+			<StuffEffectMultiplierArmor>0.35</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.0</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.0</StuffEffectMultiplierInsulation_Heat>			
+			<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<!-- 이동속도 -->
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+				<li>Eyes</li>
+				<li>Teeth</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/RK_PlateHelmet1</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<tags>
+				<li>RK_Melee</li>
+				<li>RK_Knight</li>
+				<li>RK_2Tier</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+			<researchPrerequisite>HighClassClothing</researchPrerequisite>
+			<recipeUsers Inherit="false">
+				<li>RK_FueledSmithy</li>
+				<li>RK_ElectricSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<followStuffColor>true</followStuffColor>
+	</ThingDef>
+	
+	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_HatMakeableBase">
+		<defName>RK_PlateHelmB</defName>
 		<label>Ratkin plate Helm</label>
 		<description>금속으로 만든 투구입니다.</description>
 		<graphicData>
 			<texPath>Apparel/RK_PlateHelmet2</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
+			<!-- <shaderType>CutoutComplex</shaderType> -->
 		</graphicData>
 		<costList>
 			<Steel>25</Steel>
@@ -2017,8 +2077,69 @@
 				<li>RK_ElectricSmithy</li>
 			</recipeUsers>
 		</recipeMaker>
-		<followStuffColor>True</followStuffColor>
+		<followStuffColor>true</followStuffColor>
 	</ThingDef>
+
+	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_HatMakeableBase">
+		<defName>RK_PlateHelmC</defName>
+		<label>Ratkin plate Helm</label>
+		<description>금속으로 만든 투구입니다.</description>
+		<graphicData>
+			<texPath>Apparel/RK_PlateHelmet3</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+		</graphicData>
+		<costList>
+			<Steel>25</Steel>
+		</costList>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>18000</WorkToMake>
+			<Mass>3</Mass>			
+			<StuffEffectMultiplierArmor>0.35</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.0</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.0</StuffEffectMultiplierInsulation_Heat>			
+			<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<!-- 이동속도 -->
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+				<li>Eyes</li>
+				<li>Teeth</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/RK_PlateHelmet3</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<tags>
+				<li>RK_Melee</li>
+				<li>RK_Knight</li>
+				<li>RK_2Tier</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+			<researchPrerequisite>HighClassClothing</researchPrerequisite>
+			<recipeUsers Inherit="false">
+				<li>RK_FueledSmithy</li>
+				<li>RK_ElectricSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<followStuffColor>true</followStuffColor>
+	</ThingDef>
+
 
 	<!-- 산타외투 -->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">

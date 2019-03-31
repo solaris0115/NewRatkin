@@ -162,9 +162,17 @@
   <Make_RK_Plate.description>Make ratkin plate armor.</Make_RK_Plate.description>
   <Make_RK_Plate.jobString>Making ratkin plate armor.</Make_RK_Plate.jobString>
 
-  <Make_RK_PlateHelm.label>make Ratkin plate Helm</Make_RK_PlateHelm.label>
-  <Make_RK_PlateHelm.description>Make Ratkin plate Helm.</Make_RK_PlateHelm.description>
-  <Make_RK_PlateHelm.jobString>Making Ratkin plate Helm.</Make_RK_PlateHelm.jobString>
+  <Make_RK_PlateHelmA.label>make Ratkin plate Helm A</Make_RK_PlateHelmA.label>
+  <Make_RK_PlateHelmA.description>Make Ratkin plate Helm A.</Make_RK_PlateHelmA.description>
+  <Make_RK_PlateHelmA.jobString>Making Ratkin plate Helm A.</Make_RK_PlateHelmA.jobString>
+
+  <Make_RK_PlateHelmB.label>make Ratkin plate Helm B</Make_RK_PlateHelmB.label>
+  <Make_RK_PlateHelmB.description>Make Ratkin plate Helm B.</Make_RK_PlateHelmB.description>
+  <Make_RK_PlateHelmB.jobString>Making Ratkin plate Helm B.</Make_RK_PlateHelmB.jobString>
+
+  <Make_RK_PlateHelmC.label>make Ratkin plate Helm C</Make_RK_PlateHelmC.label>
+  <Make_RK_PlateHelmC.description>Make Ratkin plate Helm C.</Make_RK_PlateHelmC.description>
+  <Make_RK_PlateHelmC.jobString>Making Ratkin plate Helm C.</Make_RK_PlateHelmC.jobString>
 
 
   <!-- Recipe Users: ElectricSmithy, FueledSmithy, RK_FueledSmithy, RK_ElectricSmithy -->

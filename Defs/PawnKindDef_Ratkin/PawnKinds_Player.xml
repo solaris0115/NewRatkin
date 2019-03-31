@@ -455,18 +455,18 @@
 			<subOptionsChooseOne>
 				<li>
 					<thingDef>RK_MagicWand</thingDef>
-					<choiceChance>0.8</choiceChance>
+					<choiceChance>0.6</choiceChance>
 					<countRange>
-						<min>1</min>
-						<max>2</max>
+						<min>3</min>
+						<max>6</max>
 					</countRange>
 				</li>
 				<li>
 					<thingDef>RK_MagicWand</thingDef>
-					<choiceChance>0.05</choiceChance>
+					<choiceChance>0.4</choiceChance>
 					<countRange>
-						<min>3</min>
-						<max>5</max>
+						<min>5</min>
+						<max>8</max>
 					</countRange>
 				</li>
 			</subOptionsChooseOne>

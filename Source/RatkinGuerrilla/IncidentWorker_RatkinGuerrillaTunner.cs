@@ -30,7 +30,7 @@ namespace NewRatkin
             if (t != null)
             {
                 SendStandardLetter(t, null, new string[0]);
-                //Find.TickManager.slower.SignalForceNormalSpeedShort();
+                Find.TickManager.slower.SignalForceNormalSpeedShort();
                 return true;
             }
             return false;

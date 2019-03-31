@@ -162,9 +162,17 @@
 	<Make_RK_Plate.description>랫킨 판금 갑옷 제작합니다.</Make_RK_Plate.description>
 	<Make_RK_Plate.jobString>Making 랫킨 판금 갑옷 제작 중.</Make_RK_Plate.jobString>
 
-	<Make_RK_PlateHelm.label>랫킨 판금 투구 제작</Make_RK_PlateHelm.label>
-	<Make_RK_PlateHelm.description>랫킨 판금 투구 제작합니다.</Make_RK_PlateHelm.description>
-	<Make_RK_PlateHelm.jobString>랫킨 판금 투구 제작 중.</Make_RK_PlateHelm.jobString>
+	<Make_RK_PlateHelmA.label>랫킨 판금 투구 A 제작</Make_RK_PlateHelmA.label>
+	<Make_RK_PlateHelmA.description>랫킨 판금 투구 A 제작합니다.</Make_RK_PlateHelmA.description>
+	<Make_RK_PlateHelmA.jobString>랫킨 판금 투구 A 제작 중.</Make_RK_PlateHelmA.jobString>
+
+	<Make_RK_PlateHelmB.label>랫킨 판금 투구 B 제작</Make_RK_PlateHelmB.label>
+	<Make_RK_PlateHelmB.description>랫킨 판금 투구 B 제작합니다.</Make_RK_PlateHelmB.description>
+	<Make_RK_PlateHelmB.jobString>랫킨 판금 투구 B 제작 중.</Make_RK_PlateHelmB.jobString>
+
+	<Make_RK_PlateHelmC.label>랫킨 판금 투구 C 제작</Make_RK_PlateHelmC.label>
+	<Make_RK_PlateHelmC.description>랫킨 판금 투구 C 제작합니다.</Make_RK_PlateHelmC.description>
+	<Make_RK_PlateHelmC.jobString>랫킨 판금 투구 C 제작 중.</Make_RK_PlateHelmC.jobString>
 
 
 	<!-- Recipe Users: ElectricSmithy, FueledSmithy, RK_FueledSmithy, RK_ElectricSmithy -->
@@ -220,9 +228,9 @@
 	<Make_RK_FlechetteSniperRifle.description>랫킨 플레셰트 저격 소총 제작합니다.</Make_RK_FlechetteSniperRifle.description>
 	<Make_RK_FlechetteSniperRifle.jobString>랫킨 플레셰트 저격 소총 제작 중.</Make_RK_FlechetteSniperRifle.jobString>
 
-	<Make_RK_PrototypePulseRifle.label>프로토타입 펄스 소총</Make_RK_PrototypePulseRifle.label>
-	<Make_RK_PrototypePulseRifle.description>프로토타입 펄스 소총 제작합니다.</Make_RK_PrototypePulseRifle.description>
-	<Make_RK_PrototypePulseRifle.jobString>프로토타입 펄스 소총 제작 중.</Make_RK_PrototypePulseRifle.jobString>
+	<Make_RK_PrototypePulseRifle.label>랫킨 프로토타입 펄스 소총</Make_RK_PrototypePulseRifle.label>
+	<Make_RK_PrototypePulseRifle.description>랫킨 프로토타입 펄스 소총 제작합니다.</Make_RK_PrototypePulseRifle.description>
+	<Make_RK_PrototypePulseRifle.jobString>랫킨 프로토타입 펄스 소총 제작 중.</Make_RK_PrototypePulseRifle.jobString>
 
 	<Make_RK_BFR.label>BFR 3000 제작</Make_RK_BFR.label>
 	<Make_RK_BFR.description>BFR 3000 제작합니다.</Make_RK_BFR.description>
