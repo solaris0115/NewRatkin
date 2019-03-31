@@ -436,7 +436,7 @@
 		<apparelRequired>
 			<!-- <li>Apparel_ShieldBelt</li> -->
 			<li>RK_HeadBand</li>
-			<!-- <li>Apparel_SmokepopBelt</li> -->
+			<li>Apparel_SmokepopBelt</li>
 		</apparelRequired>
 		<apparelTags>
 			<li>RK_Demoman</li>
