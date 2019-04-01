@@ -1752,6 +1752,7 @@
 		<equippedStatOffsets>
 			<SocialImpact>-0.2</SocialImpact>
 			<PainShockThreshold>0.1</PainShockThreshold>
+			<Flammability>-0.25</Flammability>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
@@ -1818,6 +1819,7 @@
 		<equippedStatOffsets>
 			<ToxicSensitivity>-0.8</ToxicSensitivity>
 			<PainShockThreshold>0.05</PainShockThreshold>
+			<Flammability>-0.1</Flammability>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
