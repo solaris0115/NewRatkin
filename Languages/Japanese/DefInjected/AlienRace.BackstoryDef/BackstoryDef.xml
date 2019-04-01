@@ -1,410 +1,185 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <!-- 들쥐 -->
-
-  <Ratkin_WildChild.title>Ratkin wild born</Ratkin_WildChild.title>
-  <Ratkin_WildChild.titleShort>wild born</Ratkin_WildChild.titleShort>
-  <Ratkin_WildChild.baseDescription>[PAWN_nameDef]은 문명의 혜택을 받지 못한 채로 야생에서 자랐습니다. 거친 야생은 [PAWN_pronoun]을 강하게 만들었지만 제대로 된 교육을 받지 못하게 하였습니다.</Ratkin_WildChild.baseDescription>
-
-
-  <!-- 땅쥐 -->
-
-  <Ratkin_LandRat.title>Ratkin land rat</Ratkin_LandRat.title>
-  <Ratkin_LandRat.titleShort>land rat</Ratkin_LandRat.titleShort>
-  <Ratkin_LandRat.baseDescription>[PAWN_nameDef]은 암흑속에서 태어났습니다. 오랜 동굴생활을 하며 [PAWN_pronoun]은 땅을 파는 일이 능숙하지만 한편으로 많은 동족이 지상으로 나갈때 이를 뒤로했습니다.</Ratkin_LandRat.baseDescription>
-
-
-  <!-- 시골아이 -->
-
-  <Ratkin_CountryKid.title>Ratkin country kid</Ratkin_CountryKid.title>
-  <Ratkin_CountryKid.titleShort>country kid</Ratkin_CountryKid.titleShort>
-  <Ratkin_CountryKid.baseDescription>[PAWN_nameDef]의 조부모는 농부였으며 부모님도 농부입니다. 그리고 [PAWN_pronoun]또한 가족 전통에 따라 농부가 될것입니다. 앞으로도 이어질겁니다.</Ratkin_CountryKid.baseDescription>
-
-
-  <!-- 꼬마목동 -->
-
-  <Ratkin_ShepherdBoy.title>Ratkin shepherd boy</Ratkin_ShepherdBoy.title>
-  <Ratkin_ShepherdBoy.titleShort>shepherd boy</Ratkin_ShepherdBoy.titleShort>
-  <Ratkin_ShepherdBoy.baseDescription>[PAWN_nameDef]은 어려서부터 다양한 가축들 사이에서 자랐습니다. [PAWN_pronoun]은 동물들을 친구처럼 생각하고 있습니다.</Ratkin_ShepherdBoy.baseDescription>
-
-
-  <!-- 고아 -->
-
-  <Ratkin_Orphan.title>Ratkin orphan</Ratkin_Orphan.title>
-  <Ratkin_Orphan.titleShort>orphan</Ratkin_Orphan.titleShort>
-  <Ratkin_Orphan.baseDescription>일찍이 버려진 [PAWN_nameDef]에게 부모님은 존재하지 않았습니다. [PAWN_pronoun]은 혼자서 살아남아야 했기에 전문적 지식은 없지만 다양한 일을 해낼 수 있습니다.</Ratkin_Orphan.baseDescription>
-
-
-  <!-- 학생 -->
-
-  <Ratkin_Student.title>Ratkin student</Ratkin_Student.title>
-  <Ratkin_Student.titleShort>student</Ratkin_Student.titleShort>
-  <Ratkin_Student.baseDescription>[PAWN_nameDef]의 집안은 부유하진 않았지만 공부를 하지 못할만큼 가난하지도 않았습니다. [PAWN_pronoun]은 머리를 쓰는 공부에 능숙했지만 체육과목에 대한 점수는 그리 좋지 못했습니다.</Ratkin_Student.baseDescription>
-
-
-  <!-- 사서자식 -->
-
-  <Ratkin_LittleLibrarian.title>Ratkin little librarian</Ratkin_LittleLibrarian.title>
-  <Ratkin_LittleLibrarian.titleShort>little librarian</Ratkin_LittleLibrarian.titleShort>
-  <Ratkin_LittleLibrarian.baseDescription>사서를 부모로 둔 [PAWN_nameDef]은 책더미속에서 지냈습니다. 많은 책들은 [PAWN_pronoun]의 학문수준을 더 깊고 넓혀주었지만 덕분에 안경없이는 보기 힘든 시력을 갖게되었습니다.</Ratkin_LittleLibrarian.baseDescription>
-
-
-  <!-- 금수저 -->
-
-  <Ratkin_GoldenSpoon.title>Ratkin golden spoon</Ratkin_GoldenSpoon.title>
-  <Ratkin_GoldenSpoon.titleShort>golden spoon</Ratkin_GoldenSpoon.titleShort>
-  <Ratkin_GoldenSpoon.baseDescription>[PAWN_nameDef]은 부족할것 없는 부잣집에서 태어났습니다. 금지옥엽으로 길러진 [PAWN_pronoun]은 다양한 미술품 사이에서 자랐지만 할줄아는것이 그리 많지 않습니다.</Ratkin_GoldenSpoon.baseDescription>
-
-
-  <!-- 서자 -->
-
-  <Ratkin_Bastard.title>Ratkin bastard</Ratkin_Bastard.title>
-  <Ratkin_Bastard.titleShort>bastard</Ratkin_Bastard.titleShort>
-  <Ratkin_Bastard.baseDescription>[PAWN_nameDef]은 첩의 자식으로 태어났습니다. [PAWN_pronoun]은 후계자가 되기위해 수를 쓰다 발각되어 도망자 신분이 되었습니다.</Ratkin_Bastard.baseDescription>
-
-
-  <!-- 후계자 -->
-
-  <Ratkin_Successor.title>Ratkin successor</Ratkin_Successor.title>
-  <Ratkin_Successor.titleShort>successor</Ratkin_Successor.titleShort>
-  <Ratkin_Successor.baseDescription>[PAWN_nameDef]은 귀족의 후계자로 태어났습니다. 한때 찬란했던 가문이 기울자 [PAWN_pronoun]은 일으키기 위해 길을 떠나야만 했습니다.</Ratkin_Successor.baseDescription>
-
-
-  <!-- 정원사지망 -->
-
-  <Ratkin_GuardenerStudent.title>Ratkin Guardener Student</Ratkin_GuardenerStudent.title>
-  <Ratkin_GuardenerStudent.titleShort>Guardener Student</Ratkin_GuardenerStudent.titleShort>
-  <Ratkin_GuardenerStudent.baseDescription>[PAWN_nameDef]은 정원사가 되기 위해 수련의 길에 올랐습니다. 오직 최고만이 랫킨사회에서 정원을 지킬 수 있기에 [PAWN_pronoun]은 피나는 노력을 해야만 했습니다.</Ratkin_GuardenerStudent.baseDescription>
-
-
-  <!-- 쉐프지망생 -->
-
-  <Ratkin_ChefStudent.title>Ratkin Chef Student</Ratkin_ChefStudent.title>
-  <Ratkin_ChefStudent.titleShort>Chef Student</Ratkin_ChefStudent.titleShort>
-  <Ratkin_ChefStudent.baseDescription>[PAWN_nameDef]은 먹는것이 좋아 요리를 시작했습니다. [PAWN_pronoun]에게 음식은 삶의 낙이자 즐거움이기에 더 맛있는 음식을 먹기위해 모험을 나섰습니다.</Ratkin_ChefStudent.baseDescription>
-
-
-  <!-- 집시아이 -->
-
-  <Ratkin_RomanyKid.title>Ratkin Romany Kid</Ratkin_RomanyKid.title>
-  <Ratkin_RomanyKid.titleShort>Romany Kid</Ratkin_RomanyKid.titleShort>
-  <Ratkin_RomanyKid.baseDescription>[PAWN_nameDef]은 유랑생활을 하며 이곳 저곳을 정처없이 떠돌아 다녔습니다. [PAWN_pronoun]은 다재다능하지만 정처없는 생활은 사람과 깊은 인연을 갖기엔 부족해 보입니다.</Ratkin_RomanyKid.baseDescription>
-
-
-  <!-- 장교의 아이 -->
-
-  <Ratkin_OfficerChild.title>Ratkin Officer Child</Ratkin_OfficerChild.title>
-  <Ratkin_OfficerChild.titleShort>Officer Child</Ratkin_OfficerChild.titleShort>
-  <Ratkin_OfficerChild.baseDescription>[PAWN_nameDef]은 장교의 자재로 태어났습니다. 어려서부터 부모에게 배운 사격솜씨와 카리스마는 [PAWN_pronoun]을 장교감으로 만들었지만 반대로 그를 거만하게 만들기도 했습니다.</Ratkin_OfficerChild.baseDescription>
-
-
-  <!-- 상인아이 -->
-
-  <Ratkin_MerchantKid.title>Ratkin Merchant Kid</Ratkin_MerchantKid.title>
-  <Ratkin_MerchantKid.titleShort>Merchant Kid</Ratkin_MerchantKid.titleShort>
-  <Ratkin_MerchantKid.baseDescription>[PAWN_nameDef]은 상단의 아이로 태어났습니다. [PAWN_pronoun]은 부모곁에서 어깨너머로 장사를 배우며 어떻게 해야 돈을 벌 수있는지에 대해 잘 알고 있습니다.</Ratkin_MerchantKid.baseDescription>
-
-
-  <!-- 일반아이 -->
-
-  <Ratkin_Kid.title>Ratkin Kid</Ratkin_Kid.title>
-  <Ratkin_Kid.titleShort>Kid</Ratkin_Kid.titleShort>
-  <Ratkin_Kid.baseDescription>[PAWN_nameDef]은 평범한 아이입니다. 일반적인 가정에서 부모님들이 하는 일을 어깨너머로 이것저것 배웠습니다. 하지만 고등 교육을 받을 기회가 없어 전문적 지식을 쌓을 수 없었습니다.</Ratkin_Kid.baseDescription>
-
-
-  <!-- 하인자식 -->
-
-  <Ratkin_ServentChild.title>Ratkin Servent Child</Ratkin_ServentChild.title>
-  <Ratkin_ServentChild.titleShort>Servent Child</Ratkin_ServentChild.titleShort>
-  <Ratkin_ServentChild.baseDescription>[PAWN_nameDef]은 하인의 자식으로 태어났습니다. 법에 따라 [PAWN_pronoun]도 하인이 될 운명이지만 스스로의 운명을 바꾸고자 도망쳤습니다.</Ratkin_ServentChild.baseDescription>
-
-
-  <!-- 인간조수 -->
-
-  <Ratkin_HumanAssistant.title>Ratkin Human Assistant</Ratkin_HumanAssistant.title>
-  <Ratkin_HumanAssistant.titleShort>Human Assistant</Ratkin_HumanAssistant.titleShort>
-  <Ratkin_HumanAssistant.baseDescription>[PAWN_nameDef]은 인간의 조수로 어려서부터 작은 일들을 도왔습니다. 하지만 주인이 사고로 죽자 [PAWN_pronoun]은 스스로의 삶을 찾기위해 길을 나섰습니다.</Ratkin_HumanAssistant.baseDescription>
-
-
-  <!-- 도시쥐자식 -->
-
-  <Ratkin_CityKid.title>Ratkin City Kid</Ratkin_CityKid.title>
-  <Ratkin_CityKid.titleShort>City Kid</Ratkin_CityKid.titleShort>
-  <Ratkin_CityKid.baseDescription>[PAWN_nameDef]은 도시에서 태어났습니다. [PAWN_pronoun]은 도시의 문명에 노출되어 다른 랫킨들과 달리 문물을 쉽게 이해할 수 있었습니다.</Ratkin_CityKid.baseDescription>
-
-
-  <!-- 노예 -->
-
-  <Ratkin_SlaveKid.title>Ratkin Slave Kid</Ratkin_SlaveKid.title>
-  <Ratkin_SlaveKid.titleShort>Slave Kid</Ratkin_SlaveKid.titleShort>
-  <Ratkin_SlaveKid.baseDescription>[PAWN_nameDef]은 어떻게 왔는지 모르지만 노예낙인이 찍혀있습니다. [PAWN_pronoun]은 온갖 잡일을 하다 견디지 못해 자유를 위하여 도망쳤습니다.</Ratkin_SlaveKid.baseDescription>
-
-
-  <!-- 실험실쥐 -->
-
-  <Ratkin_LaboratoryRats.title>Ratkin Laboratory Rats</Ratkin_LaboratoryRats.title>
-  <Ratkin_LaboratoryRats.titleShort>Laboratory Rats</Ratkin_LaboratoryRats.titleShort>
-  <Ratkin_LaboratoryRats.baseDescription>[PAWN_nameDef]은 실험실에서 태어났습니다. 군용 랫킨으로 유전적 조작이 이루어진 [PAWN_pronoun]은 어느날 자유를 향한 깊은 갈망을 느꼈고 과학자들을 죽이고 달아났습니다.</Ratkin_LaboratoryRats.baseDescription>
-
-
-  <!-- 좀도둑 -->
-
-  <Ratkin_PettyTheft.title>Ratkin Petty Theft</Ratkin_PettyTheft.title>
-  <Ratkin_PettyTheft.titleShort>Petty Theft</Ratkin_PettyTheft.titleShort>
-  <Ratkin_PettyTheft.baseDescription>[PAWN_nameDef]에게 도둑질은 잠깐 빌리는 것이였습니다. [PAWN_pronoun]의 잦은 도둑질은 결국 꼬리를 밟히게 되었고 노예로 잡혀가던중 습격을 받아 가까스로 탈출할 수 있었습니다.</Ratkin_PettyTheft.baseDescription>
-
-
-  <!-- 캐러반상인 -->
-
-  <Ratkin_CaravanMerchant.title>Ratkin Caravan Merchant</Ratkin_CaravanMerchant.title>
-  <Ratkin_CaravanMerchant.titleShort>Caravan Merchant</Ratkin_CaravanMerchant.titleShort>
-  <Ratkin_CaravanMerchant.baseDescription>[PAWN_nameDef]은 상단을 이끌고 유랑생활을 하는 상인입니다. 하지만 습격을 당해 모든것을 잃고 만 [PAWN_pronoun]은 새 삶을 살기로 결심했습니다.</Ratkin_CaravanMerchant.baseDescription>
-
-
-  <!-- 방랑자 -->
-
-  <Ratkin_Wanderer.title>Ratkin Wanderer</Ratkin_Wanderer.title>
-  <Ratkin_Wanderer.titleShort>Wanderer</Ratkin_Wanderer.titleShort>
-  <Ratkin_Wanderer.baseDescription>[PAWN_nameDef]은 그저 정처없이 떠돌이 생활을 하는 방랑자입니다. [PAWN_pronoun]에게 정원을 가꾸고 사는 삶은 그저 허울좋은 꿈에 불과합니다.</Ratkin_Wanderer.baseDescription>
-
-
-  <!-- 농부 -->
-
-  <Ratkin_Farmer.title>Ratkin Farmer</Ratkin_Farmer.title>
-  <Ratkin_Farmer.titleShort>Farmer</Ratkin_Farmer.titleShort>
-  <Ratkin_Farmer.baseDescription>[PAWN_nameDef]은 농부입니다. [PAWN_pronoun]은 부모님의 가업을 이어받아 농부가 되었고 [PAWN_pronoun]의 자식들도 농부가 될 것입니다.</Ratkin_Farmer.baseDescription>
-
-
-  <!-- 광부 -->
-
-  <Ratkin_Miner.title>Ratkin Miner</Ratkin_Miner.title>
-  <Ratkin_Miner.titleShort>Miner</Ratkin_Miner.titleShort>
-  <Ratkin_Miner.baseDescription>[PAWN_nameDef]은 장점을 살려 땅을 파는 광부가 되었습니다. [PAWN_pronoun]에게 땅파는 일은 식은죽 먹기지만 좁고 답답한 이곳을 벗어나고 싶다는 생각을 종종 해왔습니다.</Ratkin_Miner.baseDescription>
-
-
-  <!-- 사냥꾼 -->
-
-  <Ratkin_Hunter.title>Ratkin Hunter</Ratkin_Hunter.title>
-  <Ratkin_Hunter.titleShort>Hunter</Ratkin_Hunter.titleShort>
-  <Ratkin_Hunter.baseDescription>[PAWN_nameDef]은 짐승들을 사냥하는 사냥꾼입니다. [PAWN_pronoun]은 일반 랫킨과 달리 시력이 좋아 먼곳에서도 움직이는 동물들을 잘 볼 수 있었습니다.</Ratkin_Hunter.baseDescription>
-
-
-  <!-- 목동 -->
-
-  <Ratkin_Shepherd.title>Ratkin Shepherd</Ratkin_Shepherd.title>
-  <Ratkin_Shepherd.titleShort>Shepherd</Ratkin_Shepherd.titleShort>
-  <Ratkin_Shepherd.baseDescription>[PAWN_nameDef]은 목장을 운영하고 있습니다. [PAWN_pronoun]에게 많은 가축들이 있지만 오염된 함선의 추락으로 이제는 과거 이야기에 불과합니다.</Ratkin_Shepherd.baseDescription>
-
-
-  <!-- 시민 -->
-
-  <Ratkin_Civil.title>Ratkin Civil</Ratkin_Civil.title>
-  <Ratkin_Civil.titleShort>Civil</Ratkin_Civil.titleShort>
-  <Ratkin_Civil.baseDescription>[PAWN_nameDef]은 랫킨 왕국의 시민입니다. [PAWN_pronoun]은 소일거리들을 하며 왕국내에서 삶을 영위해왔습니다.</Ratkin_Civil.baseDescription>
-
-
-  <!-- 귀족 -->
-
-  <Ratkin_Noble.title>Ratkin Noble</Ratkin_Noble.title>
-  <Ratkin_Noble.titleShort>Noble</Ratkin_Noble.titleShort>
-  <Ratkin_Noble.baseDescription>[PAWN_nameDef]은 랫킨 왕국의 귀족입니다. 하지만 정치적 사건에 휘말려 망명을 할 수 밖에 없던 [PAWN_pronoun]은 다시 돌아가기 위해 방랑생활을 하게 되었습니다.</Ratkin_Noble.baseDescription>
-
-
-  <!-- 도시상인 -->
-
-  <Ratkin_CityMerchant.title>Ratkin City Merchant</Ratkin_CityMerchant.title>
-  <Ratkin_CityMerchant.titleShort>City Merchant</Ratkin_CityMerchant.titleShort>
-  <Ratkin_CityMerchant.baseDescription>[PAWN_nameDef]은 도시에서 장사하는 상인입니다. [PAWN_pronoun]은 손재주가 좋아 시장에 이것저것 물건을 팔았었습니다.</Ratkin_CityMerchant.baseDescription>
-
-
-  <!-- 사서 -->
-
-  <Ratkin_Librarian.title>Ratkin Librarian</Ratkin_Librarian.title>
-  <Ratkin_Librarian.titleShort>Librarian</Ratkin_Librarian.titleShort>
-  <Ratkin_Librarian.baseDescription>[PAWN_nameDef]은 도서관을 지키는 사서입니다. [PAWN_pronoun]은 많은 학문적 지식을 갖추었지만 책과 함께 해온 삶은 땅을 파는법을 잊게 하기에 충분히 길었나봅니다.</Ratkin_Librarian.baseDescription>
-
-
-  <!-- 정원사 -->
-
-  <Ratkin_Guardener.title>Ratkin Guardener</Ratkin_Guardener.title>
-  <Ratkin_Guardener.titleShort>Guardener</Ratkin_Guardener.titleShort>
-  <Ratkin_Guardener.baseDescription>[PAWN_nameDef]은 랫킨 사회 최고의 정원사입니다. 하지만 외지에서 임무 중 홀로 떨어지게 되었습니다. [PAWN_pronoun]은 다시 왕국으로 돌아갈 방법을 찾으려 합니다.</Ratkin_Guardener.baseDescription>
-
-
-  <!-- 교사 -->
-
-  <Ratkin_Teacher.title>Ratkin Teacher</Ratkin_Teacher.title>
-  <Ratkin_Teacher.titleShort>Teacher</Ratkin_Teacher.titleShort>
-  <Ratkin_Teacher.baseDescription>[PAWN_nameDef]은 아이들을 가르치는 교사입니다. 하지만 어린이들이 모두 떠난 시골마을에서 [PAWN_pronoun]이 할 수 있는 것은 없기에 시작이 있는 새로운 터전을 찾아 떠나야 했습니다.</Ratkin_Teacher.baseDescription>
-
-
-  <!-- 대장장이 -->
-
-  <Ratkin_Blacksmith.title>Ratkin Blacksmith</Ratkin_Blacksmith.title>
-  <Ratkin_Blacksmith.titleShort>Blacksmith</Ratkin_Blacksmith.titleShort>
-  <Ratkin_Blacksmith.baseDescription>[PAWN_nameDef]은 무기나 도구를 만드는 대장장이입니다. [PAWN_pronoun]는 더 강한 재료를 찾기위해 모험을 떠났습니다.</Ratkin_Blacksmith.baseDescription>
-
-
-  <!-- 도둑 -->
-
-  <Ratkin_Thief.title>Ratkin Thief</Ratkin_Thief.title>
-  <Ratkin_Thief.titleShort>Thief</Ratkin_Thief.titleShort>
-  <Ratkin_Thief.baseDescription>[PAWN_nameDef]은 하루하루 도둑질로 삶을 연명하고 있습니다. [PAWN_pronoun]은 도시내에서 얼굴이 알려질때 쯤이면 다른 도시로 떠나기를 반복해왔습니다.</Ratkin_Thief.baseDescription>
-
-
-  <!-- 외교관 -->
-
-  <Ratkin_Ambassador.title>Ratkin Ambassador</Ratkin_Ambassador.title>
-  <Ratkin_Ambassador.titleShort>Ambassador</Ratkin_Ambassador.titleShort>
-  <Ratkin_Ambassador.baseDescription>[PAWN_nameDef]은 랫킨 왕국의 외교관입니다. [PAWN_pronoun]은 외교문제로 인해 잠시 망명자 신분으로 망명을 하고 있습니다.</Ratkin_Ambassador.baseDescription>
-
-
-  <!-- 군인 -->
-
-  <Ratkin_Soldier.title>Ratkin Soldier</Ratkin_Soldier.title>
-  <Ratkin_Soldier.titleShort>Soldier</Ratkin_Soldier.titleShort>
-  <Ratkin_Soldier.baseDescription>[PAWN_nameDef]은 인간 도시의 군인입니다.[PAWN_pronoun]은 인간들 사이에서 훈련받아 랫킨들과 다른 전투법을 익힌 군인입니다. 하지만 임무도중 버림을 받게되어 새 삶을 찾기로 했습니다.</Ratkin_Soldier.baseDescription>
-
-
-  <!-- 탐험가 -->
-
-  <Ratkin_Explorer.title>Ratkin Explorer</Ratkin_Explorer.title>
-  <Ratkin_Explorer.titleShort>Explorer</Ratkin_Explorer.titleShort>
-  <Ratkin_Explorer.baseDescription>[PAWN_nameDef]은 세상에 대한 호기심이 넘쳐났습니다. [PAWN_pronoun]은 이 행성계를 모두 탐험할때까지 멈추지 않으려 합니다.</Ratkin_Explorer.baseDescription>
-
-
-  <!-- 요리사 -->
-
-  <Ratkin_Chef.title>Ratkin Chef</Ratkin_Chef.title>
-  <Ratkin_Chef.titleShort>Chef</Ratkin_Chef.titleShort>
-  <Ratkin_Chef.baseDescription>[PAWN_nameDef]은 요리사로 세상 모든것을 요리해버리고 싶은 욕심이 있습니다. [PAWN_pronoun]은 그중 최고의 견과를 찾기 위해 길을 나섰습니다.</Ratkin_Chef.baseDescription>
-
-
-  <!-- 시녀 -->
-
-  <Ratkin_HandMaiden.title>Ratkin HandMaiden</Ratkin_HandMaiden.title>
-  <Ratkin_HandMaiden.titleShort>HandMaiden</Ratkin_HandMaiden.titleShort>
-  <Ratkin_HandMaiden.baseDescription>[PAWN_nameDef]은 귀족의 시녀로 그들의 간단한 일부터 그들의 눈과 귀가 되기도 하였습니다.</Ratkin_HandMaiden.baseDescription>
-
-
-  <!-- 사수 -->
-
-  <Ratkin_Shooter.title>Ratkin Shooter</Ratkin_Shooter.title>
-  <Ratkin_Shooter.titleShort>Shooter</Ratkin_Shooter.titleShort>
-  <Ratkin_Shooter.baseDescription>[PAWN_nameDef]은 랫킨 치고는 시력이 좋았습니다. [PAWN_pronoun]은 그 장점을 살려 군에 자원하였고 덕분에 최고의 사수가 되었습니다.</Ratkin_Shooter.baseDescription>
-
-
-  <!-- 의사 -->
-
-  <Ratkin_Doctor.title>Ratkin Doctor</Ratkin_Doctor.title>
-  <Ratkin_Doctor.titleShort>Doctor</Ratkin_Doctor.titleShort>
-  <Ratkin_Doctor.baseDescription>[PAWN_nameDef]은 왕국의 의사였지만 귀족을 살리지 못해 변방으로 추방되었습니다. [PAWN_pronoun]은 자신이 틀리지 않음을 입증하기 위해 이곳 저곳을 다니며 자신의 의학기술을 연마하려 했습니다.</Ratkin_Doctor.baseDescription>
-
-
-  <!-- 의무관 -->
-
-  <Ratkin_ArmySurgeon.title>Ratkin Army Surgeon</Ratkin_ArmySurgeon.title>
-  <Ratkin_ArmySurgeon.titleShort>Army Surgeon</Ratkin_ArmySurgeon.titleShort>
-  <Ratkin_ArmySurgeon.baseDescription>[PAWN_nameDef]은 전쟁터속에서 랫킨을 살리는 의사였습니다. 아무리 작은 생명이지만 [PAWN_pronoun]에게는 동족이며 사명감이 있기에 자원하였지만 결국 바뀌는 것이 없다는 사실에 떠났습니다.</Ratkin_ArmySurgeon.baseDescription>
-
-
-  <!-- 건축가 -->
-
-  <Ratkin_ConstructionWorker.title>Ratkin Construction Worker</Ratkin_ConstructionWorker.title>
-  <Ratkin_ConstructionWorker.titleShort>Construction Worker</Ratkin_ConstructionWorker.titleShort>
-  <Ratkin_ConstructionWorker.baseDescription>[PAWN_nameDef]은 건축현장에서 일하는 노동가입니다. [PAWN_pronoun]은 주로 지하 갱도를 건설하는 일을 해왔습니다.</Ratkin_ConstructionWorker.baseDescription>
-
-
-  <!-- 부자 -->
-
-  <Ratkin_Rich.title>Ratkin Rich</Ratkin_Rich.title>
-  <Ratkin_Rich.titleShort>Rich</Ratkin_Rich.titleShort>
-  <Ratkin_Rich.baseDescription>[PAWN_nameDef]은 남을 속여 돈을 버는데 뛰어난 재능이 있었습니다. 하지만 머지않아 탄로나게 되었고 [PAWN_pronoun]은 도망을 쳐야할 수밖에 없었습니다.</Ratkin_Rich.baseDescription>
-
-
-  <!-- 수녀 -->
-
-  <Ratkin_Sister.title>Ratkin Sister</Ratkin_Sister.title>
-  <Ratkin_Sister.titleShort>Sister</Ratkin_Sister.titleShort>
-  <Ratkin_Sister.baseDescription>[PAWN_nameDef]은 수녀로 랫킨사회에서 제사나 종교적인 일들을 맡아왔습니다. [PAWN_pronoun]은 종교행사를 위해 먼곳을 이동하던중 습격을 받었고 가까스로 탈출할 수 있었습니다.</Ratkin_Sister.baseDescription>
-
-
-  <!-- 도축업자 -->
-
-  <Ratkin_Butcher.title>Ratkin Butcher</Ratkin_Butcher.title>
-  <Ratkin_Butcher.titleShort>Butcher</Ratkin_Butcher.titleShort>
-  <Ratkin_Butcher.baseDescription>[PAWN_nameDef]은 동물을 도축하여 판매하는 업자입니다.</Ratkin_Butcher.baseDescription>
-
-
-  <!-- 도시메이드 -->
-
-  <Ratkin_CityMaid.title>Ratkin City Maid</Ratkin_CityMaid.title>
-  <Ratkin_CityMaid.titleShort>City Maid</Ratkin_CityMaid.titleShort>
-  <Ratkin_CityMaid.baseDescription>[PAWN_nameDef]은 도시에서 집안일을 돕는 가사도우미입니다. 인간들은 주로 잘생긴 랫킨들만을 뽑아 가사도우미로 써왔고 그중 하나가 [PAWN_pronoun]이였습니다.</Ratkin_CityMaid.baseDescription>
-
-
-  <!-- 아이돌 -->
-
-  <Ratkin_Idol.title>Ratkin Idol</Ratkin_Idol.title>
-  <Ratkin_Idol.titleShort>Idol</Ratkin_Idol.titleShort>
-  <Ratkin_Idol.baseDescription>[PAWN_nameDef]은 아이돌로 연예 활동을 해왔습니다. 불행히 [PAWN_pronoun]이 타고가던 차량은 전복되었고 알 수없는 곳에서 눈을 뜨게 되었습니다.</Ratkin_Idol.baseDescription>
-
-
-  <!-- 연쇄살인마 -->
-
-  <Ratkin_Murderer.title>Ratkin Murderer</Ratkin_Murderer.title>
-  <Ratkin_Murderer.titleShort>Murderer</Ratkin_Murderer.titleShort>
-  <Ratkin_Murderer.baseDescription>[PAWN_nameDef]은 도시에서 미쳐버린 랫킨입니다. [PAWN_pronoun]은 작은 체구를 이용해 재빨리 범행현장을 벗어나며 살인을 즐겨왔습니다.</Ratkin_Murderer.baseDescription>
-
-
-  <!-- 인간조수 -->
-
-  <Ratkin_Assistant.title>Ratkin Assistant</Ratkin_Assistant.title>
-  <Ratkin_Assistant.titleShort>Assistant</Ratkin_Assistant.titleShort>
-  <Ratkin_Assistant.baseDescription>[PAWN_nameDef]은 연구원으로 인간의 작은 연구부터 큰 연구까지 다양한 일들을 도와왔습니다. [PAWN_pronoun]은 놓치지않고 틈틈히 어깨너머로 그 연구들을 배웠습니다.</Ratkin_Assistant.baseDescription>
-
-
-  <!-- 과학자 -->
-
-  <Ratkin_Scientist.title>Ratkin Scientist</Ratkin_Scientist.title>
-  <Ratkin_Scientist.titleShort>Scientist</Ratkin_Scientist.titleShort>
-  <Ratkin_Scientist.baseDescription>[PAWN_nameDef]은 과학자로 인간들 사이에서 과학을 연구해왔습니다. [PAWN_pronoun]하지만 너무 많이 연구에 몰두한 나머지 신체적으로 허약해지고 눈도 나뻐졌습니다.</Ratkin_Scientist.baseDescription>
-
-
-  <!-- 공학자 -->
-
-  <Ratkin_Engineer.title>Ratkin Engineer</Ratkin_Engineer.title>
-  <Ratkin_Engineer.titleShort>Engineer</Ratkin_Engineer.titleShort>
-  <Ratkin_Engineer.baseDescription>[PAWN_nameDef]은 공학자로 정밀 부품들을 만드는 일을 해왔습니다. [PAWN_pronoun]은 자신의 재주를 살려 메카노이드를 만들었었지만 그것이 화근이 될 줄은 몰랐습니다. </Ratkin_Engineer.baseDescription>
-
-
-  <!-- 농학가 -->
-
-  <Ratkin_Agriculturist.title>Ratkin Agriculturist</Ratkin_Agriculturist.title>
-  <Ratkin_Agriculturist.titleShort>Agriculturist</Ratkin_Agriculturist.titleShort>
-  <Ratkin_Agriculturist.baseDescription>[PAWN_nameDef]은 랫킨의 농경계를 더 발전시키고자 도시로 나온 농학가입니다. [PAWN_pronoun]은 언젠가 자신의 고향으로 돌아가 농경계를 발전시킬 그날을 꿈꾸고 있습니다.</Ratkin_Agriculturist.baseDescription>
-
-
-  <!-- 랫킨헌터 -->
-
-  <Ratkin_RatkinHunter.title>RatkinHunter</Ratkin_RatkinHunter.title>
-  <Ratkin_RatkinHunter.titleShort>RatkinHunter</Ratkin_RatkinHunter.titleShort>
-  <Ratkin_RatkinHunter.baseDescription>[PAWN_nameDef]은 도망친 랫킨을 잡아들이는 사냥꾼입니다. 하지만 어느날 어린 도망자 랫킨을 보고 [PAWN_pronoun]은 자신의 일에 회의감을 느끼며 그대로 떠났습니다.</Ratkin_RatkinHunter.baseDescription>
-
-
-  <!-- 실험체 -->
-
-  <Ratkin_Subject.title>Ratkin Subject</Ratkin_Subject.title>
-  <Ratkin_Subject.titleShort>Subject</Ratkin_Subject.titleShort>
-  <Ratkin_Subject.baseDescription>[PAWN_nameDef]은 랫킨 실험체입니다. [PAWN_pronoun]은 여러가지 실험을 통해 강화되었지만 실험도중 사고가 발생해 가까스로 탈출할 수 있었습니다.</Ratkin_Subject.baseDescription>
-
-
-  <!-- 방랑자 -->
-
-  <Ratkin_Vagabond.title>Ratkin Vagabond</Ratkin_Vagabond.title>
-  <Ratkin_Vagabond.titleShort>Vagabond</Ratkin_Vagabond.titleShort>
-  <Ratkin_Vagabond.baseDescription>[PAWN_nameDef]은 정처없이 떠돌이 생활을 해왔습니다. [PAWN_pronoun]의 정확한 과거는 알 수 없지만 방랑생활을 통해 얻은 지혜는 충분히 믿음직스러워 보입니다.</Ratkin_Vagabond.baseDescription>
-
+  <Ratkin_WildChild.title>野生のラットキン</Ratkin_WildChild.title>
+  <Ratkin_WildChild.titleShort>野生生まれ</Ratkin_WildChild.titleShort>
+  <Ratkin_WildChild.baseDescription>[PAWN_nameDef]は文明の恩恵を受けていないまま、野生で育った。経野生は、[PAWN_pronoun]を強くしたが、きちんとした教育を受けられなくしました。</Ratkin_WildChild.baseDescription>
+  <Ratkin_LandRat.title>ラットキン陸上ねずみ</Ratkin_LandRat.title>
+  <Ratkin_LandRat.titleShort>陸上ねずみ</Ratkin_LandRat.titleShort>
+  <Ratkin_LandRat.baseDescription>[PAWN_nameDef]は暗闇の中で生まれました。長い洞窟生活をし、[PAWN_pronoun]は土地を売ることが上手ですが、一方で多くの同族が地上に出て行く時、これをバックしました。</Ratkin_LandRat.baseDescription>
+  <Ratkin_CountryKid.title>ラットキン王国の子供</Ratkin_CountryKid.title>
+  <Ratkin_CountryKid.titleShort>王国の子供</Ratkin_CountryKid.titleShort>
+  <Ratkin_CountryKid.baseDescription>[PAWN_nameDef]の祖父母が農家であり、両親も農家です。そして[PAWN_pronoun]また、家族の伝統に基づいて農家になりますよ。今後も続くでしょう。</Ratkin_CountryKid.baseDescription>
+  <Ratkin_ShepherdBoy.title>ラットキン羊飼いの少年</Ratkin_ShepherdBoy.title>
+  <Ratkin_ShepherdBoy.titleShort>羊飼いの少年</Ratkin_ShepherdBoy.titleShort>
+  <Ratkin_ShepherdBoy.baseDescription>[PAWN_nameDef]は、幼い頃から様々な家畜の間で育った。 [PAWN_pronoun]は、動物を友達のように考えています。</Ratkin_ShepherdBoy.baseDescription>
+  <Ratkin_Orphan.title>ラットキンの孤児</Ratkin_Orphan.title>
+  <Ratkin_Orphan.titleShort>孤児</Ratkin_Orphan.titleShort>
+  <Ratkin_Orphan.baseDescription>かつて捨てられた[PAWN_nameDef]に両親は存在しませんでした。 [PAWN_pronoun]は一人で生き残るたので専門知識はありませんが、様々な仕事をこなすことができます。</Ratkin_Orphan.baseDescription>
+  <Ratkin_Student.title>ラットキンの学生</Ratkin_Student.title>
+  <Ratkin_Student.titleShort>学生</Ratkin_Student.titleShort>
+  <Ratkin_Student.baseDescription>[PAWN_nameDef]の家は裕福いないが、勉強をしていないほど貧しいもなかった。 [PAWN_pronoun]は頭を使う勉強に上手だったが体育科目のスコアはあまり良くんでした。</Ratkin_Student.baseDescription>
+  <Ratkin_LittleLibrarian.title>ラットキン小さな司書</Ratkin_LittleLibrarian.title>
+  <Ratkin_LittleLibrarian.titleShort>小さな司書</Ratkin_LittleLibrarian.titleShort>
+  <Ratkin_LittleLibrarian.baseDescription>司書を親に持つ[PAWN_nameDef]はチェクドミの中で過ごしました。多くの本は、[PAWN_pronoun]の調査レベルをより深く広げてくれたがおかげでメガネなし見るのが難しい視力を持つようになりました。</Ratkin_LittleLibrarian.baseDescription>
+  <Ratkin_GoldenSpoon.title>ラットキン黄金のスプーン</Ratkin_GoldenSpoon.title>
+  <Ratkin_GoldenSpoon.titleShort>黄金のスプーン</Ratkin_GoldenSpoon.titleShort>
+  <Ratkin_GoldenSpoon.baseDescription>[PAWN_nameDef]は不足のない金持ちで生まれました。金枝玉葉で培われた[PAWN_pronoun]は、様々な美術品の間で育ったがハルジュル知ることがそれほど多くありません。</Ratkin_GoldenSpoon.baseDescription>
+  <Ratkin_Bastard.title>ラットキン私生子</Ratkin_Bastard.title>
+  <Ratkin_Bastard.titleShort>私生子</Ratkin_Bastard.titleShort>
+  <Ratkin_Bastard.baseDescription>[PAWN_nameDef]は帖の子として生まれました。 [PAWN_pronoun]は後継者になるために数を撫で発覚し逃亡身分になりました。</Ratkin_Bastard.baseDescription>
+  <Ratkin_Successor.title>ラットキンの跡取り</Ratkin_Successor.title>
+  <Ratkin_Successor.titleShort>跡取り</Ratkin_Successor.titleShort>
+  <Ratkin_Successor.baseDescription>[PAWN_nameDef]は貴族の後継者として生まれました。かつてきらびやかた家が傾い者[PAWN_pronoun]は作り出すために道を離れなければならいました。</Ratkin_Successor.baseDescription>
+  <Ratkin_GuardenerStudent.title>ラットキン庭師見習い</Ratkin_GuardenerStudent.title>
+  <Ratkin_GuardenerStudent.titleShort>庭師見習い</Ratkin_GuardenerStudent.titleShort>
+  <Ratkin_GuardenerStudent.baseDescription>[PAWN_nameDef]は庭師になるために修練の道に上がりました。ただ最高だけがラットキン社会で庭園を守ることができるので、[PAWN_pronoun]は血の出る努力をしなければしました。</Ratkin_GuardenerStudent.baseDescription>
+  <Ratkin_ChefStudent.title>ラットキンシェフ見習い</Ratkin_ChefStudent.title>
+  <Ratkin_ChefStudent.titleShort>シェフ見習い</Ratkin_ChefStudent.titleShort>
+  <Ratkin_ChefStudent.baseDescription>[PAWN_nameDef]は食べることが好きな料理を始めました。 [PAWN_pronoun]に食べ物は人生の落下であり、楽しみなので、よりおいしい料理を食べるために冒険を出ました。</Ratkin_ChefStudent.baseDescription>
+  <Ratkin_RomanyKid.title>ラットキン遊牧民の子供</Ratkin_RomanyKid.title>
+  <Ratkin_RomanyKid.titleShort>遊牧民の子供</Ratkin_RomanyKid.titleShort>
+  <Ratkin_RomanyKid.baseDescription>[PAWN_nameDef]は流浪生活をしてあちこちをあてもなくさまよっ通いました。 [PAWN_pronoun]は多目的があてのない生活は、人との深い縁を持つ円足りないに見えます。</Ratkin_RomanyKid.baseDescription>
+  <Ratkin_OfficerChild.title>ラットキン将校の子供</Ratkin_OfficerChild.title>
+  <Ratkin_OfficerChild.titleShort>将校の子供</Ratkin_OfficerChild.titleShort>
+  <Ratkin_OfficerChild.baseDescription>[PAWN_nameDef]は将校の材料として生まれました。幼い頃から親に学んだ射撃とカリスマ性は、[PAWN_pronoun]を長教頭にしたが、逆に彼を自慢して作ることもしました。</Ratkin_OfficerChild.baseDescription>
+  <Ratkin_MerchantKid.title>ラットキン商人の子供</Ratkin_MerchantKid.title>
+  <Ratkin_MerchantKid.titleShort>商人の子供</Ratkin_MerchantKid.titleShort>
+  <Ratkin_MerchantKid.baseDescription>[PAWN_nameDef]は上部の子供として生まれました。 [PAWN_pronoun]は、親のそばで肩越しに商売を学び、どうすればお金を稼ぐことができるかに精通しています。</Ratkin_MerchantKid.baseDescription>
+  <Ratkin_Kid.title>ラットキンの子供</Ratkin_Kid.title>
+  <Ratkin_Kid.titleShort>子供</Ratkin_Kid.titleShort>
+  <Ratkin_Kid.baseDescription>[PAWN_nameDef]は普通の子です。一般的な家庭で両親が仕事を肩越しにあれこれ学んだ。しかし、高等教育を受ける機会がない専門知識を積むことができませんでした。</Ratkin_Kid.baseDescription>
+  <Ratkin_ServentChild.title>ラットキン使用人の子供</Ratkin_ServentChild.title>
+  <Ratkin_ServentChild.titleShort>使用人の子供</Ratkin_ServentChild.titleShort>
+  <Ratkin_ServentChild.baseDescription>[PAWN_nameDef]は使用人の子として生まれました。法に基づいて、[PAWN_pronoun]も使用人になる運命だ自らの運命を変えたい逃げた。</Ratkin_ServentChild.baseDescription>
+  <Ratkin_HumanAssistant.title>ラットキン人間の使い</Ratkin_HumanAssistant.title>
+  <Ratkin_HumanAssistant.titleShort>人間の使い</Ratkin_HumanAssistant.titleShort>
+  <Ratkin_HumanAssistant.baseDescription>[PAWN_nameDef]は、人間のアシスタントとして幼い頃から小さなことを助けた。しかし、所有者が事故で亡くなる[PAWN_pronoun]は自らの人生を見つけるために道を出ました。</Ratkin_HumanAssistant.baseDescription>
+  <Ratkin_CityKid.title>ラットキン都会の子供</Ratkin_CityKid.title>
+  <Ratkin_CityKid.titleShort>都会の子供</Ratkin_CityKid.titleShort>
+  <Ratkin_CityKid.baseDescription>[PAWN_nameDef]は、都市で生まれました。 [PAWN_pronoun]は、都市の文明にさらされて、他のラットキンとは異なり、文物を容易に理解することができました。</Ratkin_CityKid.baseDescription>
+  <Ratkin_SlaveKid.title>ラットキン奴隷の子供</Ratkin_SlaveKid.title>
+  <Ratkin_SlaveKid.titleShort>奴隷の子供</Ratkin_SlaveKid.titleShort>
+  <Ratkin_SlaveKid.baseDescription>[PAWN_nameDef]はどのように来たのか分からないが、奴隷烙印を押されています。 [PAWN_pronoun]はあらゆる雑用をして耐えられず、自由のために逃げた。</Ratkin_SlaveKid.baseDescription>
+  <Ratkin_LaboratoryRats.title>ラットキン実験ねずみ</Ratkin_LaboratoryRats.title>
+  <Ratkin_LaboratoryRats.titleShort>実験ねずみ</Ratkin_LaboratoryRats.titleShort>
+  <Ratkin_LaboratoryRats.baseDescription>[PAWN_nameDef]は、実験室で生まれました。軍用ラットキンに遺伝的操作が行われた[PAWN_pronoun]は、ある日、自由への深い憧れを感じ科学者を殺し逃げました。</Ratkin_LaboratoryRats.baseDescription>
+  <Ratkin_PettyTheft.title>ラットキンせこい泥棒</Ratkin_PettyTheft.title>
+  <Ratkin_PettyTheft.titleShort>せこい泥棒</Ratkin_PettyTheft.titleShort>
+  <Ratkin_PettyTheft.baseDescription>[PAWN_nameDef]に盗難はちょっと借りるのがあった。 [PAWN_pronoun]の頻繁な盗難は、最終的に尾を踏んヒゲされ奴隷として捕まっ向かう途中襲撃を受け、辛うじて脱出することができました。</Ratkin_PettyTheft.baseDescription>
+  <Ratkin_CaravanMerchant.title>ラットキンキャラバン商人</Ratkin_CaravanMerchant.title>
+  <Ratkin_CaravanMerchant.titleShort>キャラバン商人</Ratkin_CaravanMerchant.titleShort>
+  <Ratkin_CaravanMerchant.baseDescription>[PAWN_nameDef]は上部を率いて流浪生活をする商人です。しかし、襲撃を当該すべてを失うだけ[PAWN_pronoun]は、新しい人生を生きることを決心しました。</Ratkin_CaravanMerchant.baseDescription>
+  <Ratkin_Wanderer.title>ラットキン放浪者</Ratkin_Wanderer.title>
+  <Ratkin_Wanderer.titleShort>放浪者</Ratkin_Wanderer.titleShort>
+  <Ratkin_Wanderer.baseDescription>[PAWN_nameDef]はただあてもなく放浪生活をする放浪者です。 [PAWN_pronoun]に庭園を育て生きる人生はただ見かけ良い夢に過ぎません。</Ratkin_Wanderer.baseDescription>
+  <Ratkin_Farmer.title>ラットキン農民</Ratkin_Farmer.title>
+  <Ratkin_Farmer.titleShort>農民</Ratkin_Farmer.titleShort>
+  <Ratkin_Farmer.baseDescription>[PAWN_nameDef]は農家です。 [PAWN_pronoun]は両親の家業を受け継いで農夫となり、[PAWN_pronoun]の子たちも農家になります。</Ratkin_Farmer.baseDescription>
+  <Ratkin_Miner.title>ラットキン採掘者</Ratkin_Miner.title>
+  <Ratkin_Miner.titleShort>採掘者</Ratkin_Miner.titleShort>
+  <Ratkin_Miner.baseDescription>[PAWN_nameDef]は利点を生かし土地を売る鉱夫がしました。 [PAWN_pronoun]に土地売ることは朝飯前だ狭く息苦しい、ここを抜け出したいと思って、多くの場合きました。</Ratkin_Miner.baseDescription>
+  <Ratkin_Hunter.title>ラットキン狩人</Ratkin_Hunter.title>
+  <Ratkin_Hunter.titleShort>狩人</Ratkin_Hunter.titleShort>
+  <Ratkin_Hunter.baseDescription>[PAWN_nameDef]は獣を狩るハンターです。 [PAWN_pronoun]は、一般ラットキンとは異なり、視力が良く遠くで動く動物をよく見ることができました。</Ratkin_Hunter.baseDescription>
+  <Ratkin_Shepherd.title>ラットキン羊飼い</Ratkin_Shepherd.title>
+  <Ratkin_Shepherd.titleShort>羊飼い</Ratkin_Shepherd.titleShort>
+  <Ratkin_Shepherd.baseDescription>[PAWN_nameDef]は牧場を運営しています。 [PAWN_pronoun]に多くの家畜がありますが、汚染された船の墜落で、今、過去の話に過ぎません。</Ratkin_Shepherd.baseDescription>
+  <Ratkin_Civil.title>ラットキン市民</Ratkin_Civil.title>
+  <Ratkin_Civil.titleShort>市民</Ratkin_Civil.titleShort>
+  <Ratkin_Civil.baseDescription>[PAWN_nameDef]はラットキン王国の市民です。 [PAWN_pronoun]は娯楽をし、王国内での生活をゼロにしました。</Ratkin_Civil.baseDescription>
+  <Ratkin_Noble.title>ラットキン貴族</Ratkin_Noble.title>
+  <Ratkin_Noble.titleShort>貴族</Ratkin_Noble.titleShort>
+  <Ratkin_Noble.baseDescription>[PAWN_nameDef]はラットキン王国の貴族です。しかし、政治的事件に巻き込まれ亡命を余儀なくさなかった[PAWN_pronoun]は再び戻るために放浪生活をするようになりました。</Ratkin_Noble.baseDescription>
+  <Ratkin_CityMerchant.title>ラットキン都市商人</Ratkin_CityMerchant.title>
+  <Ratkin_CityMerchant.titleShort>都市商人</Ratkin_CityMerchant.titleShort>
+  <Ratkin_CityMerchant.baseDescription>[PAWN_nameDef]は、都市で商売するトレーダーです。 [PAWN_pronoun]は器用好き市場にあれこれ物を販売しました。</Ratkin_CityMerchant.baseDescription>
+  <Ratkin_Librarian.title>ラットキン司書</Ratkin_Librarian.title>
+  <Ratkin_Librarian.titleShort>司書</Ratkin_Librarian.titleShort>
+  <Ratkin_Librarian.baseDescription>[PAWN_nameDef]は図書館を守る買っています。 [PAWN_pronoun]は、多くの学術的な知識を備えたが、本と一緒にしてきたゆで土地を売ることを忘れるするのに十分道かとします。</Ratkin_Librarian.baseDescription>
+  <Ratkin_Guardener.title>ラットキン庭師</Ratkin_Guardener.title>
+  <Ratkin_Guardener.titleShort>庭師</Ratkin_Guardener.titleShort>
+  <Ratkin_Guardener.baseDescription>[PAWN_nameDef]はラットキン社会最高の庭師です。しかし、外地での任務中一人落ちるました。 [PAWN_pronoun]は再び王国に戻る方法を探そうとします。</Ratkin_Guardener.baseDescription>
+  <Ratkin_Teacher.title>ラットキン教師</Ratkin_Teacher.title>
+  <Ratkin_Teacher.titleShort>教師</Ratkin_Teacher.titleShort>
+  <Ratkin_Teacher.baseDescription>[PAWN_nameDef]は子供たちを教える教師です。しかし、子供たちが皆去っ田舎町で[PAWN_pronoun]ができるのはないので開始が新しい基盤を見つける残していました。</Ratkin_Teacher.baseDescription>
+  <Ratkin_Blacksmith.title>ラットキン鍛冶師</Ratkin_Blacksmith.title>
+  <Ratkin_Blacksmith.titleShort>鍛冶師</Ratkin_Blacksmith.titleShort>
+  <Ratkin_Blacksmith.baseDescription>[PAWN_nameDef]は武器やツールを作成する鍛冶屋です。 [PAWN_pronoun]はより強い材料を見つけるために冒険を思い出しました。</Ratkin_Blacksmith.baseDescription>
+  <Ratkin_Thief.title>ラットキン泥棒</Ratkin_Thief.title>
+  <Ratkin_Thief.titleShort>泥棒</Ratkin_Thief.titleShort>
+  <Ratkin_Thief.baseDescription>[PAWN_nameDef]は一日一日盗難に生活を延命しています。 [PAWN_pronoun]は都市内での顔が知ら頃、他の都市に去るを繰り返してきました。</Ratkin_Thief.baseDescription>
+  <Ratkin_Ambassador.title>ラットキン大使</Ratkin_Ambassador.title>
+  <Ratkin_Ambassador.titleShort>大使</Ratkin_Ambassador.titleShort>
+  <Ratkin_Ambassador.baseDescription>[PAWN_nameDef]はラットキン王国の外交官です。 [PAWN_pronoun]は外交問題が原因で、しばらく亡命者の身分で亡命をしています。</Ratkin_Ambassador.baseDescription>
+  <Ratkin_Soldier.title>ラットキン兵士</Ratkin_Soldier.title>
+  <Ratkin_Soldier.titleShort>兵士</Ratkin_Soldier.titleShort>
+  <Ratkin_Soldier.baseDescription>[PAWN_nameDef]は、人間の都市の兵士です。[PAWN_pronoun]は人間の間で訓練受けラットキンと他の戦闘法を身につけた兵士です。しかし、任務中に捨てを受けるされ、新しい人生を見つけるにしました。</Ratkin_Soldier.baseDescription>
+  <Ratkin_Explorer.title>ラットキン冒険者</Ratkin_Explorer.title>
+  <Ratkin_Explorer.titleShort>冒険者</Ratkin_Explorer.titleShort>
+  <Ratkin_Explorer.baseDescription>[PAWN_nameDef]は世の中に対する好奇心があふれました。 [PAWN_pronoun]は、この太陽系のすべて探索するまで停止しないようにします。</Ratkin_Explorer.baseDescription>
+  <Ratkin_Chef.title>ラットキンシェフ</Ratkin_Chef.title>
+  <Ratkin_Chef.titleShort>シェフ</Ratkin_Chef.titleShort>
+  <Ratkin_Chef.baseDescription>[PAWN_nameDef]はシェフとして世界すべてを調理してしまいたい欲があります。 [PAWN_pronoun]は、その中の最高のナットを見つけるために道を出ました。</Ratkin_Chef.baseDescription>
+  <Ratkin_HandMaiden.title>ラットキン侍女</Ratkin_HandMaiden.title>
+  <Ratkin_HandMaiden.titleShort>侍女</Ratkin_HandMaiden.titleShort>
+  <Ratkin_HandMaiden.baseDescription>[PAWN_nameDef]は貴族の侍女として彼らは簡単なことから、彼らの目と耳もありました。</Ratkin_HandMaiden.baseDescription>
+  <Ratkin_Shooter.title>ラットキンシューター</Ratkin_Shooter.title>
+  <Ratkin_Shooter.titleShort>シューター</Ratkin_Shooter.titleShort>
+  <Ratkin_Shooter.baseDescription>[PAWN_nameDef]はラットキンとしては、視力がよかったです。 [PAWN_pronoun]は、その利点を生かし軍に資源しおかげで最高の射手がしました。</Ratkin_Shooter.baseDescription>
+  <Ratkin_Doctor.title>ラットキンの医者</Ratkin_Doctor.title>
+  <Ratkin_Doctor.titleShort>医者</Ratkin_Doctor.titleShort>
+  <Ratkin_Doctor.baseDescription>[PAWN_nameDef]は王国の医師だったが、貴族を生かせず、辺境に追放された。 [PAWN_pronoun]は、自分が間違っていないことを証明するためにあちこちを通って自分の医学の技術を磨くしようとしました。</Ratkin_Doctor.baseDescription>
+  <Ratkin_ArmySurgeon.title>ラットキン軍医</Ratkin_ArmySurgeon.title>
+  <Ratkin_ArmySurgeon.titleShort>軍医</Ratkin_ArmySurgeon.titleShort>
+  <Ratkin_ArmySurgeon.baseDescription>[PAWN_nameDef]は戦場の中でラットキンを生かす医者でした。どんなに小さな命が、[PAWN_pronoun]は同族であり、使命感があるので、リソースましたが、最終的に変わることがないという事実に浮かんでいます。</Ratkin_ArmySurgeon.baseDescription>
+  <Ratkin_ConstructionWorker.title>ラットキン建設労働者</Ratkin_ConstructionWorker.title>
+  <Ratkin_ConstructionWorker.titleShort>建設労働者</Ratkin_ConstructionWorker.titleShort>
+  <Ratkin_ConstructionWorker.baseDescription>[PAWN_nameDef]は、建築現場で働くノドンガです。 [PAWN_pronoun]は、主に地下トンネルを建設することをしてきました。</Ratkin_ConstructionWorker.baseDescription>
+  <Ratkin_Rich.title>リッチなラットキン</Ratkin_Rich.title>
+  <Ratkin_Rich.titleShort>リッチ</Ratkin_Rich.titleShort>
+  <Ratkin_Rich.baseDescription>[PAWN_nameDef]は残るだまし、お金を稼ぐことに優れた才能がありました。しかし、やがてばれせるされ、[PAWN_pronoun]は逃げを打つことしかありませんでした。</Ratkin_Rich.baseDescription>
+  <Ratkin_Sister.title>ラットキンシスター</Ratkin_Sister.title>
+  <Ratkin_Sister.titleShort>シスター</Ratkin_Sister.titleShort>
+  <Ratkin_Sister.baseDescription>[PAWN_nameDef]は修道女にラットキン社会で祭事や宗教的な事柄を務めてきました。 [PAWN_pronoun]は、宗教行事のために遠くを移動していたの襲撃を受けたし、辛うじて脱出することができました。</Ratkin_Sister.baseDescription>
+  <Ratkin_Butcher.title>ラットキン肉屋</Ratkin_Butcher.title>
+  <Ratkin_Butcher.titleShort>肉屋</Ratkin_Butcher.titleShort>
+  <Ratkin_Butcher.baseDescription>[PAWN_nameDef]は、動物を屠殺して販売する業者です。</Ratkin_Butcher.baseDescription>
+  <Ratkin_CityMaid.title>ラットキン都市メイド</Ratkin_CityMaid.title>
+  <Ratkin_CityMaid.titleShort>都市メイド</Ratkin_CityMaid.titleShort>
+  <Ratkin_CityMaid.baseDescription>[PAWN_nameDef]は、都市で家事を助ける家事手伝いです。人間は、主にハンサムラットキンだけを選んで家事手伝いに書いてきたそのうちの一つが[PAWN_pronoun]でした。</Ratkin_CityMaid.baseDescription>
+  <Ratkin_Idol.title>ラットキンアイドル</Ratkin_Idol.title>
+  <Ratkin_Idol.titleShort>アイドル</Ratkin_Idol.titleShort>
+  <Ratkin_Idol.baseDescription>[PAWN_nameDef]はアイドルで、芸能活動をしてきました。残念ながら[PAWN_pronoun]が乗っていた車は、転倒され、知ることができないところで目を開けました。</Ratkin_Idol.baseDescription>
+  <Ratkin_Murderer.title>ラットキン殺人者</Ratkin_Murderer.title>
+  <Ratkin_Murderer.titleShort>殺人者</Ratkin_Murderer.titleShort>
+  <Ratkin_Murderer.baseDescription>[PAWN_nameDef]は、都市で狂ったラットキンです。 [PAWN_pronoun]は、小さな体格を利用して、いち早く犯行現場を外れ殺人を楽しんできました。</Ratkin_Murderer.baseDescription>
+  <Ratkin_Assistant.title>ラットキンアシスタント</Ratkin_Assistant.title>
+  <Ratkin_Assistant.titleShort>アシスタント</Ratkin_Assistant.titleShort>
+  <Ratkin_Assistant.baseDescription>[PAWN_nameDef]は研究者に、人間の小さな研究から大きな研究まで、様々なことを助けてきました。 [PAWN_pronoun]は逃さず合間をぬって肩越しにその研究を学びました。</Ratkin_Assistant.baseDescription>
+  <Ratkin_Scientist.title>ラットキン科学者</Ratkin_Scientist.title>
+  <Ratkin_Scientist.titleShort>科学者</Ratkin_Scientist.titleShort>
+  <Ratkin_Scientist.baseDescription>[PAWN_nameDef]は、科学者として人間の間で科学を研究してきました。 [PAWN_pronoun]しかし、あまりにも多くの研究に没頭した残りの物理的虚弱になって雪も見にくくなりました。</Ratkin_Scientist.baseDescription>
+  <Ratkin_Engineer.title>ラットキンエンジニア</Ratkin_Engineer.title>
+  <Ratkin_Engineer.titleShort>エンジニア</Ratkin_Engineer.titleShort>
+  <Ratkin_Engineer.baseDescription>[PAWN_nameDef]はエンジニアとして精密部品を作ることをしてきました。 [PAWN_pronoun]は、自分の才能を活かしてメカノイドを作成したが、それが裏目に出れるとは思わなかった。</Ratkin_Engineer.baseDescription>
+  <Ratkin_Agriculturist.title>ラットキン農学者</Ratkin_Agriculturist.title>
+  <Ratkin_Agriculturist.titleShort>農学者</Ratkin_Agriculturist.titleShort>
+  <Ratkin_Agriculturist.baseDescription>[PAWN_nameDef]はラットキンの農境界をより発展させたい都市に出てきたノンハクガです。 [PAWN_pronoun]はいつか自分の故郷に戻って農境界を発展させる、その日を夢見ています。</Ratkin_Agriculturist.baseDescription>
+  <Ratkin_RatkinHunter.title>ラットキンハンター</Ratkin_RatkinHunter.title>
+  <Ratkin_RatkinHunter.titleShort>ラットキンハンター</Ratkin_RatkinHunter.titleShort>
+  <Ratkin_RatkinHunter.baseDescription>[PAWN_nameDef]は逃げラットキンを捕まえるハンターです。しかし、ある日、幼い逃亡ラットキンを見て[PAWN_pronoun]は自分の仕事に懐疑感を感じ、そのまま浮​​かんでいました。</Ratkin_RatkinHunter.baseDescription>
+  <Ratkin_Subject.title>ラットキン実験体</Ratkin_Subject.title>
+  <Ratkin_Subject.titleShort>実験体</Ratkin_Subject.titleShort>
+  <Ratkin_Subject.baseDescription>[PAWN_nameDef]はラットキン実験体です。 [PAWN_pronoun]は様々な実験を通じて強化されたが、実験中に事故が発生して辛うじて脱出することができました。</Ratkin_Subject.baseDescription>
+  <Ratkin_Vagabond.title>ラットキン放浪者</Ratkin_Vagabond.title>
+  <Ratkin_Vagabond.titleShort>放浪者</Ratkin_Vagabond.titleShort>
+  <Ratkin_Vagabond.baseDescription>[PAWN_nameDef]はあてもなく放浪生活をしてきました。 [PAWN_pronoun]の正確な過去は知ることができないが、放浪生活を介して得られた知恵は、十分に信頼に思って見えます。</Ratkin_Vagabond.baseDescription>
+  <!-- Demoman -->
+
+  <Ratkin_Demoman.title>ラットキン爆弾魔</Ratkin_Demoman.title>
+  <Ratkin_Demoman.titleShort>デモマン</Ratkin_Demoman.titleShort>
+  <Ratkin_Demoman.baseDescription>[PAWN_nameDef]は、他のラットキンとは違い、爆発に対して異常に執着します。[PAWN_pronoun]は、自分の才能を活かしてラットキン特攻隊に志願しました。
+</Ratkin_Demoman.baseDescription>
 
 </LanguageData>

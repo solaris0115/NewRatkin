@@ -1,17 +1,16 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <InstallFakeEar.label>install fake ear</InstallFakeEar.label>
-  <InstallFakeEar.description>Install a fake ear.</InstallFakeEar.description>
-  <InstallFakeEar.jobString>Installing fake ear.</InstallFakeEar.jobString>
+  <InstallFakeEar.label>ニセ耳を付ける</InstallFakeEar.label>
+  <InstallFakeEar.description>ニセ耳を付ける。</InstallFakeEar.description>
+  <InstallFakeEar.jobString>ニセ耳を装着中</InstallFakeEar.jobString>
 
-  <InstallFakeTail.label>install fake tail</InstallFakeTail.label>
-  <InstallFakeTail.description>Install a fake tail.</InstallFakeTail.description>
-  <InstallFakeTail.jobString>Installing fake tail.</InstallFakeTail.jobString>
+  <InstallFakeTail.label>ニセ尻尾を付ける</InstallFakeTail.label>
+  <InstallFakeTail.description>ニセ尻尾を付ける。</InstallFakeTail.description>
+  <InstallFakeTail.jobString>ニセ尻尾を装着中</InstallFakeTail.jobString>
 
-  <InstallBionicTail.label>install bionic tail</InstallBionicTail.label>
-  <InstallBionicTail.description>Install a bionic tail.</InstallBionicTail.description>
-  <InstallBionicTail.jobString>Installing bionic tail.</InstallBionicTail.jobString>
-
+  <InstallBionicTail.label>強化尻尾 移植</InstallBionicTail.label>
+  <InstallBionicTail.description>強化尻尾を移植します。</InstallBionicTail.description>
+  <InstallBionicTail.jobString>強化尻尾を移植中</InstallBionicTail.jobString>
 
 </LanguageData>

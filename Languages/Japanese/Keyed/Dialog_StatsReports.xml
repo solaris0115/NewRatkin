@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <EMPExplode>EMP爆弾が爆発</EMPExplode>
+  <EMPExplodeDesc>EMP爆弾の爆発によって電力網に過負荷がかかって発電機が故障しました。</EMPExplodeDesc>
+  <MessageCommandoAssaulting>特殊部隊がコロニーに侵入し始めた。</MessageCommandoAssaulting>
+  <RatHoleGone>ネズミの穴が消えました。</RatHoleGone>
+
+</LanguageData>

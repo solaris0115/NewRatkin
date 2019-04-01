@@ -1,14 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <FakeEar.label>fake ear</FakeEar.label>
-  <FakeEar.labelNoun>a fake ear</FakeEar.labelNoun>
+  <FakeEar.label>ニセ耳</FakeEar.label>
+  <FakeEar.labelNoun>偽の耳</FakeEar.labelNoun>
 
-  <BionicTail.label>bionic tail</BionicTail.label>
-  <BionicTail.labelNoun>a bionic tail</BionicTail.labelNoun>
+  <BionicTail.label>強化尻尾</BionicTail.label>
+  <BionicTail.labelNoun>強化尻尾</BionicTail.labelNoun>
 
-  <FakeTail.label>fake tail</FakeTail.label>
-  <FakeTail.labelNoun>a fake tail</FakeTail.labelNoun>
-
+  <FakeTail.label>ニセ尻尾</FakeTail.label>
+  <FakeTail.labelNoun>ニセ尻尾</FakeTail.labelNoun>
 
 </LanguageData>
