@@ -1,12 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <!-- 랫킨 귀 헤어밴드 사회적영향력 +5% -->
+  <!-- Santa Package : Weight +50 Durability +20  -->
 
-  <InnerCoat.label>inner coat</InnerCoat.label>
-  <BackPack.label>backpack</BackPack.label>
-  <OuterClothing.label>outer clothing</OuterClothing.label>
-  <OnFace.label>onface</OnFace.label>
-
+  <InnerCoat.label>内着</InnerCoat.label>
+  <BackPack.label>バックパック</BackPack.label>
+  <OuterClothing.label>外套</OuterClothing.label>
+  <OnFace.label>マスク</OnFace.label>
 
 </LanguageData>

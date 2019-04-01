@@ -1,8 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <RottyMilden.label>Rotty Milden</RottyMilden.label>
-  <RottyMilden.description>로티 마일던은 작은 장난들을 좋아하는 시골 소녀입니다.\n\n 그녀의 자잘한 장난들은 지루하지 않게 해주지만 가끔은 큰 사고도 저지릅니다.\n\n랜덤기반의 작은 이벤트가 자주 발생하는 대신 이벤트를 보다 적게 발생합니다.</RottyMilden.description>
-
+  <RottyMilden.label>ロッティマイルダン</RottyMilden.label>
+  <RottyMilden.description>ロティマイルダンは小さないたずらを好きな田舎の少女です。\n\n彼女の細かいいたずらは退屈しないようにしてくれますが、時には大きな事故も犯します。\n\nランダムベースの小さなイベントが頻繁に発生する代わりに、イベントをより少なくなります。</RottyMilden.description>
 
 </LanguageData>

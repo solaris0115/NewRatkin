@@ -1,123 +1,140 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <!-- 도끼 수확속도 +5% 수확량 +5% -->
+  <!-- Axe Harvesting speed +5% Yield +5% -->
 
-  <RK_Axe.label>axe</RK_Axe.label>
-  <RK_Axe.description>나무를 벨 때 쓰는 도끼입니다. 조금 작지만 벌목하는데 도움이 될것같습니다.</RK_Axe.description>
-  <RK_Axe.tools.0.label>handle</RK_Axe.tools.0.label>
-  <RK_Axe.tools.1.label>edge</RK_Axe.tools.1.label>
+  <RK_Axe.label>斧</RK_Axe.label>
+  <RK_Axe.description>斧です。少し小さいが伐採に役立つはずです。</RK_Axe.description>
+  <RK_Axe.tools.handle.label>柄</RK_Axe.tools.handle.label>
+  <RK_Axe.tools.edge.label>刃</RK_Axe.tools.edge.label>
+
+  <!-- Cooking Tool Cooking speed +5% Decay amount +10% -->
+
+  <RK_Cleaver.label>肉切り包丁</RK_Cleaver.label>
+  <RK_Cleaver.description>肉を切る時に使う包丁です。肉を多く得ることができます。武器へは適して見えません。</RK_Cleaver.description>
+  <RK_Cleaver.tools.handle.label>柄</RK_Cleaver.tools.handle.label>
+  <RK_Cleaver.tools.edge.label>刃</RK_Cleaver.tools.edge.label>
+
+  <!-- Hoe Harvesting Rate +5% Yield +15% -->
+
+  <RK_Hockey.label>クワ</RK_Hockey.label>
+  <RK_Hockey.description>畑に行く時使う。土地を耕すのに向いてます。</RK_Hockey.description>
+  <RK_Hockey.tools.point.label>先端</RK_Hockey.tools.point.label>
+  <RK_Hockey.tools.edge.label>刃</RK_Hockey.tools.edge.label>
+
+  <!-- Fork Harvest Speed +10% Yield +10% -->
+
+  <RK_Fork.label>フォーク</RK_Fork.label>
+  <RK_Fork.description>わらを運ぶときに便利です。</RK_Fork.description>
+  <RK_Fork.tools.point.label>先端</RK_Fork.tools.point.label>
+  <RK_Fork.tools.edge.label>刃</RK_Fork.tools.edge.label>
+
+  <RK_LongSword.label>ラットキンロングソード</RK_LongSword.label>
+  <RK_LongSword.description>畑を守る庭師の剣です。庭のお手入れに書いたり敵を手入れするとき使います。</RK_LongSword.description>
+  <RK_LongSword.tools.point.label>切っ先</RK_LongSword.tools.point.label>
+  <RK_LongSword.tools.edge.label>刃</RK_LongSword.tools.edge.label>
+
+  <!-- Crossbow Stealth +10% -->
+
+  <Bolt_RK_Crossbow.label>クロスボウボルト</Bolt_RK_Crossbow.label>
+
+  <RK_Crossbow.label>クロスボウ</RK_Crossbow.label>
+  <RK_Crossbow.description>簡単な石弓です。狩りをするとき使われます。</RK_Crossbow.description>
+  <RK_Crossbow.tools.limb.label>持手</RK_Crossbow.tools.limb.label>
+  <RK_Crossbow.tools.arrow.label>矢</RK_Crossbow.tools.arrow.label>
+  <RK_Crossbow.verbs.Verb_Shoot.label>クロスボウボルト</RK_Crossbow.verbs.Verb_Shoot.label>
+
+  <!-- Enhance CrossBow -->
+
+  <Bolt_RK_EnhanceCrossBow.label>クロスボウボルト</Bolt_RK_EnhanceCrossBow.label>
+
+  <RK_EnhanceCrossBow.label>強化クロスボウ</RK_EnhanceCrossBow.label>
+  <RK_EnhanceCrossBow.description>改良されたクロスボウです。より遠くいき貫通力にも優れています。</RK_EnhanceCrossBow.description>
+  <RK_EnhanceCrossBow.tools.limb.label>持手</RK_EnhanceCrossBow.tools.limb.label>
+  <RK_EnhanceCrossBow.tools.arrow.label>矢</RK_EnhanceCrossBow.tools.arrow.label>
+  <RK_EnhanceCrossBow.verbs.Verb_Shoot.label>クロスボウボルト</RK_EnhanceCrossBow.verbs.Verb_Shoot.label>
+
+  <!-- Auto CrossBow -->
+
+  <Bolt_RK_AutoCrossBow.label>クロスボウボルト</Bolt_RK_AutoCrossBow.label>
+
+  <RK_AutoCrossBow.label>機械クロスボウ</RK_AutoCrossBow.label>
+  <RK_AutoCrossBow.description>機械式で発射される半自動石弓です。円形弾倉から急速にボルトを発射することができます。</RK_AutoCrossBow.description>
+  <RK_AutoCrossBow.tools.limb.label>持手</RK_AutoCrossBow.tools.limb.label>
+  <RK_AutoCrossBow.tools.arrow.label>矢</RK_AutoCrossBow.tools.arrow.label>
+  <RK_AutoCrossBow.verbs.Verb_Shoot.label>クロスボウボルト</RK_AutoCrossBow.verbs.Verb_Shoot.label>
+
+  <!-- Rifle -->
+
+  <Bullet_RK_Rifle.label>ライフル弾丸</Bullet_RK_Rifle.label>
+
+  <RK_Rifle.label>ラットキンライフル</RK_Rifle.label>
+  <RK_Rifle.description>人間のライフルを真似て作ったライフルです。石弓より射程距離が長く、小さな剣つけておいて、有事の際のウィンドウのように使用することができます。</RK_Rifle.description>
+  <RK_Rifle.tools.stock.label>ストック</RK_Rifle.tools.stock.label>
+  <RK_Rifle.tools.bayonet.label>バヨネット</RK_Rifle.tools.bayonet.label>
+  <RK_Rifle.verbs.Verb_Shoot.label>ライフル弾丸</RK_Rifle.verbs.Verb_Shoot.label>
+
+  <!-- SniperRifle -->
+
+  <Bullet_RK_SniperRifle.label>ライフル弾丸</Bullet_RK_SniperRifle.label>
+
+  <RK_SniperRifle.label>ラットキンスナイパーライフル</RK_SniperRifle.label>
+  <RK_SniperRifle.description>ラットキンシク望遠レンズが付いたライフルです。望遠装置のおかげで、より遠くまで向けることができるが近くを向けるいたしかねます。</RK_SniperRifle.description>
+  <RK_SniperRifle.tools.stock.label>ストック</RK_SniperRifle.tools.stock.label>
+  <RK_SniperRifle.tools.bayonet.label>バヨネット</RK_SniperRifle.tools.bayonet.label>
+  <RK_SniperRifle.verbs.Verb_Shoot.label>ライフル弾丸</RK_SniperRifle.verbs.Verb_Shoot.label>
+
+  <!-- Flechette Rifle -->
+
+  <Bullet_RK_FlechetteRifle.label>フレシェット弾</Bullet_RK_FlechetteRifle.label>
+
+  <RK_FlechetteRifle.label>フレシェットライフル</RK_FlechetteRifle.label>
+  <RK_FlechetteRifle.description>プレイシェトゥタンを使用するライフルです。ラットキンシクプレイポシェット弾丸を使用して交差点を少し犠牲にして貫通力を高めました。有事の際近接戦を行うことができるよう、小さな剣つけておきました。</RK_FlechetteRifle.description>
+  <RK_FlechetteRifle.tools.stock.label>ストック</RK_FlechetteRifle.tools.stock.label>
+  <RK_FlechetteRifle.tools.bayonet.label>バヨネット</RK_FlechetteRifle.tools.bayonet.label>
+  <RK_FlechetteRifle.tools.flechette.label>フレシェット</RK_FlechetteRifle.tools.flechette.label>
+  <RK_FlechetteRifle.verbs.Verb_Shoot.label>フレシェット弾</RK_FlechetteRifle.verbs.Verb_Shoot.label>
+
+  <!-- Flechette Sniper Rifle -->
+
+  <Bullet_RK_FlechetteSniperRifle.label>フレシェット弾</Bullet_RK_FlechetteSniperRifle.label>
+
+  <RK_FlechetteSniperRifle.label>フレシェットスナイパーライフル</RK_FlechetteSniperRifle.label>
+  <RK_FlechetteSniperRifle.description>プレイシェトゥタンを使用する望遠レンズが付いたライフルです。厚手の手袋を備えたこと確実に制圧することができます。有事の際近接戦のために小さな剣つけておきました。</RK_FlechetteSniperRifle.description>
+  <RK_FlechetteSniperRifle.tools.stock.label>ストック</RK_FlechetteSniperRifle.tools.stock.label>
+  <RK_FlechetteSniperRifle.tools.bayonet.label>バヨネット</RK_FlechetteSniperRifle.tools.bayonet.label>
+  <RK_FlechetteSniperRifle.tools.flechette.label>フレシェット</RK_FlechetteSniperRifle.tools.flechette.label>
+  <RK_FlechetteSniperRifle.verbs.Verb_Shoot.label>フレシェット弾</RK_FlechetteSniperRifle.verbs.Verb_Shoot.label>
+
+  <!-- for the Ratkin Experimental gun 2rounds -->
+
+  <Bullet_RK_PrototypePulseRifleLight.label>パルス弾</Bullet_RK_PrototypePulseRifleLight.label>
+  <Bullet_RK_PrototypePulseRifleHeavy.label>パルス弾</Bullet_RK_PrototypePulseRifleHeavy.label>
+
+  <RK_PrototypePulseRifle.label>試作型パルスライフル</RK_PrototypePulseRifle.label>
+  <RK_PrototypePulseRifle.description>試作型のパルスライフルです。ラットキンのために実験的に製作され、特殊望遠レンズが近距離遠距離すべて精密に照準ます。ラットキンシクプレイポシェット弾丸でアイデアを得製作したこの武器はウェッジ形の高貫通エネルギー弾を高速発射します。</RK_PrototypePulseRifle.description>
+  <RK_PrototypePulseRifle.tools.stock.label>ストック</RK_PrototypePulseRifle.tools.stock.label>
+  <RK_PrototypePulseRifle.tools.barrel.label>バレル</RK_PrototypePulseRifle.tools.barrel.label>
+  <!-- <RK_PrototypePulseRifle.verbs.Verb_Shoot.label>くさび銃弾</RK_PrototypePulseRifle.verbs.Verb_Shoot.label> -->
+
+  <RK_PrototypePulseRifle.verbs.Rapid_Fire.label>連続射撃</RK_PrototypePulseRifle.verbs.Rapid_Fire.label>
+  <RK_PrototypePulseRifle.verbs.Rapid_Fire.desc>4発連続で発射、中距離の射程を持つ。\n命中ボーナス\n短距離射程で命中：+45%</RK_PrototypePulseRifle.verbs.Rapid_Fire.desc>
+  <RK_PrototypePulseRifle.verbs.Precisely_Fire.label>精密射撃</RK_PrototypePulseRifle.verbs.Precisely_Fire.label>
+  <RK_PrototypePulseRifle.verbs.Precisely_Fire.desc>2発連続で発射、長距離の射程を持つ。\n命中ボーナス\n長距離射程で命中：+45% </RK_PrototypePulseRifle.verbs.Precisely_Fire.desc>
 
 
-  <!-- 식칼 조리 속도 +5% 해체량 +10% -->
+  <!-- BFR 3000 -->
 
-  <RK_Cleaver.label>cleaver</RK_Cleaver.label>
-  <RK_Cleaver.description>고기를 자를 때 쓰는 식칼입니다. 고기를 더 많이 얻을 수 있습니다. 무기로 쓰기엔 적합해 보이지 않습니다.</RK_Cleaver.description>
-  <RK_Cleaver.tools.0.label>handle</RK_Cleaver.tools.0.label>
-  <RK_Cleaver.tools.1.label>edge</RK_Cleaver.tools.1.label>
+  <RK_BFR.label>大型制圧ライフル3000</RK_BFR.label>
+  <RK_BFR.description>大型制圧ライフル3000型です。</RK_BFR.description>
+  <RK_BFR.tools.stock.label>ストック</RK_BFR.tools.stock.label>
+  <RK_BFR.tools.barrel.label>バレル</RK_BFR.tools.barrel.label>
+  <RK_BFR.verbs.AP_fire.label>徹甲弾射撃</RK_BFR.verbs.AP_fire.label>
+  <RK_BFR.verbs.AP_fire.desc>貫通性の高い高精度の弾丸を発射します。</RK_BFR.verbs.AP_fire.desc>
+  <RK_BFR.verbs.SC_fire.label>破片射撃</RK_BFR.verbs.SC_fire.label>
+  <RK_BFR.verbs.SC_fire.desc>命中した時に後方へ破片をまき散らす特殊な弾を発射します。</RK_BFR.verbs.SC_fire.desc>
 
-
-  <!-- 쟁기 수확속도 +5% 수확량 +15% -->
-
-  <RK_Hockey.label>hoe</RK_Hockey.label>
-  <RK_Hockey.description>밭을 갈때 쓰는 쟁기입니다. 땅을 파기 편합니다.</RK_Hockey.description>
-  <RK_Hockey.tools.0.label>point</RK_Hockey.tools.0.label>
-  <RK_Hockey.tools.1.label>edge</RK_Hockey.tools.1.label>
-
-
-  <!-- 포크삽 수확속도 +10% 수확량 +10% -->
-
-  <RK_Fork.label>fork</RK_Fork.label>
-  <RK_Fork.description>끝치 갈라진 포크형태의 삽입니다. 짚더미를 퍼 나를때 편리합니다.</RK_Fork.description>
-  <RK_Fork.tools.0.label>point</RK_Fork.tools.0.label>
-  <RK_Fork.tools.1.label>edge</RK_Fork.tools.1.label>
-
-  <RK_LongSword.label>ratkin longSword</RK_LongSword.label>
-  <RK_LongSword.description>밭을 지키는 정원사들의 검입니다. 정원손질에 쓰거나 적들을 손질할때 씁니다.</RK_LongSword.description>
-  <RK_LongSword.tools.0.label>point</RK_LongSword.tools.0.label>
-  <RK_LongSword.tools.1.label>edge</RK_LongSword.tools.1.label>
-
-
-  <!-- 석궁 스탤스 +10% -->
-
-  <RK_Crossbow.label>cross bow</RK_Crossbow.label>
-  <RK_Crossbow.description>간단한 석궁입니다. 사냥을 할때 쓰입니다.</RK_Crossbow.description>
-  <RK_Crossbow.tools.0.label>limb</RK_Crossbow.tools.0.label>
-  <RK_Crossbow.tools.1.label>arrow</RK_Crossbow.tools.1.label>
-
-  <Bolt_RK_Crossbow.label>crossbow bolt</Bolt_RK_Crossbow.label>
-
-
-  <!-- 개량석궁 -->
-
-  <RK_EnhanceCrossBow.label>enhanced cross bow</RK_EnhanceCrossBow.label>
-  <RK_EnhanceCrossBow.description>개량된 석궁입니다. 보다 멀리나가며 관통력도 우수합니다.</RK_EnhanceCrossBow.description>
-  <RK_EnhanceCrossBow.tools.0.label>limb</RK_EnhanceCrossBow.tools.0.label>
-  <RK_EnhanceCrossBow.tools.1.label>arrow</RK_EnhanceCrossBow.tools.1.label>
-
-  <Bolt_RK_EnhanceCrossBow.label>crossbow bolt</Bolt_RK_EnhanceCrossBow.label>
-
-
-  <!-- 연발석궁 -->
-
-  <RK_AutoCrossBow.label>autocross bow</RK_AutoCrossBow.label>
-  <RK_AutoCrossBow.description>기계식으로 발사되는 반자동 석궁입니다. 원형 탄창에서 빠른속도로 볼트를 발사할 수 있습니다.</RK_AutoCrossBow.description>
-  <RK_AutoCrossBow.tools.0.label>limb</RK_AutoCrossBow.tools.0.label>
-  <RK_AutoCrossBow.tools.1.label>arrow</RK_AutoCrossBow.tools.1.label>
-
-  <Bolt_RK_AutoCrossBow.label>crossbow bolt</Bolt_RK_AutoCrossBow.label>
-
-
-  <!-- 라이플 -->
-
-  <RK_Rifle.label>ratkin rifle</RK_Rifle.label>
-  <RK_Rifle.description>인간의 라이플을 흉내내 만든 라이플입니다. 석궁보다 사거리가 길고 작은 검을 달아두어 유사시 창처럼 사용할 수 있습니다.</RK_Rifle.description>
-  <RK_Rifle.tools.0.label>stock</RK_Rifle.tools.0.label>
-  <RK_Rifle.tools.1.label>bayonet</RK_Rifle.tools.1.label>
-
-  <Bullet_RK_Rifle.label>rifle bullet</Bullet_RK_Rifle.label>
-
-
-  <!-- 저격 라이플 -->
-
-  <RK_SniperRifle.label>ratkin sniper rifle</RK_SniperRifle.label>
-  <RK_SniperRifle.description>랫킨식 망원렌즈가 달린 소총입니다. 망원장비덕분에 더 먼곳까지 조준할 수 있지만 가까운 곳을 조준하기 힘듭니다.</RK_SniperRifle.description>
-  <RK_SniperRifle.tools.0.label>stock</RK_SniperRifle.tools.0.label>
-  <RK_SniperRifle.tools.1.label>bayonet</RK_SniperRifle.tools.1.label>
-
-  <Bullet_RK_SniperRifle.label>rifle bullet</Bullet_RK_SniperRifle.label>
-
-
-  <!-- 플레셰트 라이플 -->
-
-  <RK_FlechetteRifle.label>flechette rifle</RK_FlechetteRifle.label>
-  <RK_FlechetteRifle.description>플레셰트탄을 사용하는 소총입니다. 랫킨식 플레셰트 탄환을 사용하여 사거리를 조금 희생해 관통력을 높였습니다. 유사시 근접전을 할 수 있도록 작은 검 달아두었습니다.</RK_FlechetteRifle.description>
-  <RK_FlechetteRifle.tools.0.label>stock</RK_FlechetteRifle.tools.0.label>
-  <RK_FlechetteRifle.tools.1.label>bayonet</RK_FlechetteRifle.tools.1.label>
-  <RK_FlechetteRifle.tools.2.label>flechette</RK_FlechetteRifle.tools.2.label>
-
-  <Bullet_RK_FlechetteRifle.label>flechette</Bullet_RK_FlechetteRifle.label>
-
-
-  <!-- 플레셰트 저격 라이플 -->
-
-  <RK_FlechetteSniperRifle.label>flechette sniper rifle</RK_FlechetteSniperRifle.label>
-  <RK_FlechetteSniperRifle.description>플레셰트탄을 사용하는 망원렌즈가 달린 소총입니다. 두꺼운 장갑을 갖춘 적도 확실하게 제압할 수 있습니다. 유사시 근접전을 위해 작은 검을 달아두었습니다.</RK_FlechetteSniperRifle.description>
-  <RK_FlechetteSniperRifle.tools.0.label>stock</RK_FlechetteSniperRifle.tools.0.label>
-  <RK_FlechetteSniperRifle.tools.1.label>bayonet</RK_FlechetteSniperRifle.tools.1.label>
-  <RK_FlechetteSniperRifle.tools.2.label>flechette</RK_FlechetteSniperRifle.tools.2.label>
-
-  <Bullet_RK_FlechetteSniperRifle.label>flechette</Bullet_RK_FlechetteSniperRifle.label>
-
-
-  <!-- 랫킨용 실험용총 2연발 -->
-
-  <RK_PrototypePulseRifle.label>prototype pulse rifle</RK_PrototypePulseRifle.label>
-  <RK_PrototypePulseRifle.description>실험용 에너지 소총입니다. 실험용 랫킨들을 위해 제작되어 특수망원렌즈가 근거리 원거리 모두 정밀하게 조준해줍니다. 랫킨식 플레셰트탄환에서 아이디어를 얻어 제작한 이 무기는 쇄기모양의 고관통 에너지탄을 빠르게 발사합니다.</RK_PrototypePulseRifle.description>
-  <RK_PrototypePulseRifle.tools.0.label>stock</RK_PrototypePulseRifle.tools.0.label>
-  <RK_PrototypePulseRifle.tools.1.label>barrel</RK_PrototypePulseRifle.tools.1.label>
-
-  <Bullet_RK_PrototypePulseRifle.label>wedge bullet</Bullet_RK_PrototypePulseRifle.label>
-
+  <Bullet_BFR_AP.label>パルス弾(徹甲)</Bullet_BFR_AP.label>
+  <Bullet_BFR_SC.label>パルス弾(破片)</Bullet_BFR_SC.label>
 
 </LanguageData>

@@ -1,19 +1,21 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <RK_PlayerFaction.label>New Beginning</RK_PlayerFaction.label>
-  <RK_PlayerFaction.description>당신의 랫킨 정착지입니다. 각자의 사연과 운명이 이곳에 모이게 했습니다.</RK_PlayerFaction.description>
-  <RK_PlayerFaction.pawnsPlural>Ratkins</RK_PlayerFaction.pawnsPlural>
+  <RK_PlayerFaction.label>新たな始まり</RK_PlayerFaction.label>
+  <RK_PlayerFaction.description>あなたのラットキン集落です。それぞれの事情と運命がここに集まりました。</RK_PlayerFaction.description>
+  <RK_PlayerFaction.pawnsPlural>ラットキンの群れ</RK_PlayerFaction.pawnsPlural>
+  <RK_PlayerFaction.pawnSingular>ラットキン</RK_PlayerFaction.pawnSingular>
 
-  <Rakinia.label>ratkin kingdom</Rakinia.label>
-  <Rakinia.description>랫킨 왕국입니다. 인간들 눈에 띄지 않도록 숨어서 살고 있으며 농경생활을 위주로 생활하는 비 침략적인 종족입니다.</Rakinia.description>
-  <Rakinia.pawnsPlural>Ratkins</Rakinia.pawnsPlural>
-  <Rakinia.leaderTitle>prime executor</Rakinia.leaderTitle>
+  <Rakinia.label>ラットキン王国</Rakinia.label>
+  <Rakinia.description>ラットキン王国です。人間の目につかないよう隠れ住んでおり、農耕生活を中心に生活している争いを好まない種です。</Rakinia.description>
+  <Rakinia.pawnsPlural>ラットキンの群れ</Rakinia.pawnsPlural>
+  <Rakinia.leaderTitle>プライムエグゼキュータ</Rakinia.leaderTitle>
+  <Rakinia.pawnSingular>ラットキン</Rakinia.pawnSingular>
 
-  <RatkinCaravan.label>ratkin caravan union</RatkinCaravan.label>
-  <RatkinCaravan.description>랫킨 유랑단입니다. 방방곡곡을 유랑하며 거래를 하기도 하고 용병을 사고 팔기도 합니다.</RatkinCaravan.description>
-  <RatkinCaravan.pawnsPlural>Ratkins</RatkinCaravan.pawnsPlural>
-  <RatkinCaravan.leaderTitle>prime executor</RatkinCaravan.leaderTitle>
-
+  <RatkinCaravan.label>ラットキン流浪団</RatkinCaravan.label>
+  <RatkinCaravan.description>ラットキン流浪団です。津々浦々を流浪し取引をしたりして、傭兵を売買もします。</RatkinCaravan.description>
+  <RatkinCaravan.pawnsPlural>ラットキンの群れ</RatkinCaravan.pawnsPlural>
+  <RatkinCaravan.leaderTitle>プライムエグゼキュータ</RatkinCaravan.leaderTitle>
+  <RatkinCaravan.pawnSingular>ラットキン</RatkinCaravan.pawnSingular>
 
 </LanguageData>
