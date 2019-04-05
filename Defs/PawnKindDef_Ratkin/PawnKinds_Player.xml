@@ -5,7 +5,7 @@
 		<canBeSapper>true</canBeSapper>
 		<baseRecruitDifficulty>0.80</baseRecruitDifficulty>
 		<race>Ratkin</race>
-		<minGenerationAge>15</minGenerationAge>
+		<minGenerationAge>16</minGenerationAge>
 		<maxGenerationAge>35</maxGenerationAge>
 		<defaultFactionType>Rakinia</defaultFactionType>
 		<invNutrition>2</invNutrition>
@@ -405,9 +405,13 @@
 			<min>2500</min>
 			<max>4500</max>
 		</apparelMoney>
+		<apparelRequired>
+			<li>RK_BattleSuit</li>
+			<li>RK_Mask</li>
+		</apparelRequired>
 		<weaponMoney>
-			<min>2500</min>
-			<max>4500</max>
+			<min>3500</min>
+			<max>5000</max>
 		</weaponMoney>
 		<weaponTags>
 			<li>RK_4TierWeapon</li>
@@ -423,7 +427,7 @@
 	<PawnKindDef ParentName="RKBasePawnKind">
 		<defName>RatkinDemonMan</defName>
 		<label>ratkin demoman</label>
-		<combatPower>70</combatPower>
+		<combatPower>75</combatPower>
 		<isFighter>true</isFighter>
 		<baseRecruitDifficulty>0.95</baseRecruitDifficulty>
 		<backstoryCategories>
@@ -434,14 +438,13 @@
 			<max>2500</max>
 		</apparelMoney>
 		<apparelRequired>
-			<!-- <li>Apparel_ShieldBelt</li> -->
+			<li>Apparel_ShieldBelt</li>
 			<li>RK_HeadBand</li>
-			<li>Apparel_SmokepopBelt</li>
+			<li>RK_BattleSuit</li>
+			<!-- <li>Apparel_SmokepopBelt</li> -->
 		</apparelRequired>
 		<apparelTags>
 			<li>RK_Demoman</li>
-			<li>BeltDefense</li>
-			<li>BeltDefensePop</li>
 		</apparelTags>
 		<weaponMoney>
 			<min>1500</min>

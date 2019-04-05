@@ -110,7 +110,7 @@ namespace NewRatkin
 
         public void SpawnInitialPawns()
         {
-            SpawnPawnsUntilPoints(eventPoint*0.35f);
+            SpawnPawnsUntilPoints(eventPoint* 0.24f);
         }
 
         public void SpawnPawnsUntilPoints(float points)
@@ -125,7 +125,7 @@ namespace NewRatkin
                     break;
                 }
                 Pawn pawn;
-                if (!TrySpawnPawn(out pawn))
+                if (!TrySpawnPawn(out pawn, points))
                 {
                     break;
                 }
@@ -141,7 +141,7 @@ namespace NewRatkin
                 if (!active && !Position.Fogged(Map))
                 {
                     Activate();
-                }
+                }/*
                 if (active && Find.TickManager.TicksGame >= nextPawnSpawnTick)
                 {
                     if (SpawnedPawnsPoints < 500f)
@@ -153,7 +153,7 @@ namespace NewRatkin
                             pawn.caller.DoCall();
                         }
                     }
-                }
+                }*/
             }
         }
 
@@ -214,14 +214,14 @@ namespace NewRatkin
         {
             active = true;
             SpawnInitialPawns();
-            CalculateNextPawnSpawnTick();
+            //CalculateNextPawnSpawnTick();
         }
 
-        private void CalculateNextPawnSpawnTick()
+        /*private void CalculateNextPawnSpawnTick()
         {
             float num = GenMath.LerpDouble(0f, 5f, 1f, 0.5f, spawnedPawns.Count);
             nextPawnSpawnTick = Find.TickManager.TicksGame + (int)(PawnSpawnIntervalDays.RandomInRange * 60000f / (num * Find.Storyteller.difficulty.enemyReproductionRateFactor));
-        }
+        }*/
 
         private void FilterOutUnspawnedPawns()
         {
@@ -234,7 +234,7 @@ namespace NewRatkin
             }
         }
 
-        private bool TrySpawnPawn(out Pawn pawn)
+        private bool TrySpawnPawn(out Pawn pawn,float limitPoint)
         {
             if (!canSpawnPawns)
             {
@@ -243,7 +243,7 @@ namespace NewRatkin
             }
             float curPoints = SpawnedPawnsPoints;
             IEnumerable<PawnKindDef> source = from x in RatkinTunnelUtility.spawnableElitePawnKinds
-                                              where curPoints + x.combatPower <= 500f
+                                              where curPoints + x.combatPower <= limitPoint
                                               select x;
             PawnKindDef kindDef;
             if (!source.TryRandomElement(out kindDef))

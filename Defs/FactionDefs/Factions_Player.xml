@@ -85,9 +85,6 @@
 			<li>
 				<kindDef>Combat</kindDef>
 				<commonality>30</commonality>
-				<disallowedStrategies>
-					<li>Siege</li>
-				</disallowedStrategies>
 				<options>
 					<RatkinCombatant>10</RatkinCombatant>
 					<RatkinSoldier>20</RatkinSoldier>

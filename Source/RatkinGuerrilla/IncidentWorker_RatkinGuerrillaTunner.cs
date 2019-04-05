@@ -43,7 +43,7 @@ namespace NewRatkin
                 return null;
             }
             Thing thing = GenSpawn.Spawn(ThingMaker.MakeThing(RatkinBuildingDefOf.RK_GuerrillaTunnelSpawner, null), loc, map, WipeMode.FullRefund);
-            ((GuerrillaTunnelSpawner)thing).eventPoint = parms.points*0.66f;
+            ((GuerrillaTunnelSpawner)thing).eventPoint = parms.points;
             return thing;
         }
     }

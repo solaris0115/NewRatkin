@@ -221,7 +221,7 @@ namespace NewRatkin
                 IncidentParms parms = storytellerComp.GenerateParms(IncidentCategoryDefOf.ThreatBig, Find.CurrentMap);
                 //Log.Message("parms.storytellerComp: " + parms.points);
                 parms.faction = Find.FactionManager.FirstFactionOfDef(RatkinFactionDefOf.Rakinia);
-                parms.points *= 0.45f;
+                parms.points *= 0.4f;
                 parms.raidStrategy = DefDatabase<RaidStrategyDef>.GetNamed("ImmediateAttackSappers");
                 //DefDatabase<RaidStrategyDef>.AllDefs.Where((RaidStrategyDef r) => r.Worker.CanUseWith(parms, PawnGroupKindDefOf.Combat)).TryRandomElement(out parms.raidStrategy);
                 parms.raidArrivalMode = PawnsArrivalModeDefOf.EdgeWalkIn;

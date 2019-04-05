@@ -22,6 +22,7 @@
 				<li>
 					<kindDefs>
 						<li>RatkinMercenary</li>
+						<li>RatkinMercenaryLight</li>
 					</kindDefs>
 					<chance>40.0</chance>
 				</li>
