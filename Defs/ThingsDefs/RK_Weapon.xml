@@ -13,7 +13,7 @@
 	</ThingDef>
 
 	<ThingDef Abstract="True" Name="RK_MeleeWeapon" ParentName="BaseMeleeWeapon_Sharp_Quality">
-		<recipeMaker>			
+		<recipeMaker>
 			<recipeUsers>
 				<li>RK_FueledSmithy</li>
 				<li>RK_ElectricSmithy</li>
