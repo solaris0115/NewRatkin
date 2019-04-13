@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <FakeRatkinTail.label>ニセ尻尾</FakeRatkinTail.label>
+  <FakeRatkinTail.label>RK ニセ尻尾</FakeRatkinTail.label>
   <FakeRatkinTail.description>布をねじって作ったロープ製の尻尾です。ラットキンの尻尾は歩行時にバランスをとるのに使います。どうしても動かない尻尾でバランスをとるのは難しいですが、無いよりはマシでしょう。</FakeRatkinTail.description>
 
-  <FakeRatkinEar.label>ニセ耳</FakeRatkinEar.label>
+  <FakeRatkinEar.label>RK ニセ耳</FakeRatkinEar.label>
   <FakeRatkinEar.description>布で作られた偽の耳です。ラットキンの大きな耳は、単に音を聞くだけではなく、一つの象徴であり、ラットキン社会での大きな意味を持ちます。</FakeRatkinEar.description>
 
-  <BionicTail.label>強化尻尾</BionicTail.label>
+  <BionicTail.label>RK 強化尻尾</BionicTail.label>
   <BionicTail.description>生体強化された人工の尻尾です。それは同時に自動的に装着者が向かう方向へバランスをとるための小さなAIを内蔵しています。</BionicTail.description>
 
 </LanguageData>
