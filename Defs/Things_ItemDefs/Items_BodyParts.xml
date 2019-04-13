@@ -8,8 +8,8 @@
 		<techLevel>Medieval</techLevel>
 		<recipeMaker>
 			<recipeUsers Inherit="False">
-				<li>ElectricTailoringBench</li>
-				<li>HandTailoringBench</li>
+				<li>RK_ElectricTailoringBench</li>
+				<li>RK_HandTailoringBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
@@ -31,8 +31,8 @@
 		<techLevel>Medieval</techLevel>
 		<recipeMaker>
 			<recipeUsers Inherit="False">
-				<li>ElectricTailoringBench</li>
-				<li>HandTailoringBench</li>
+				<li>RK_ElectricTailoringBench</li>
+				<li>RK_HandTailoringBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
@@ -54,8 +54,8 @@
 		<techLevel>Medieval</techLevel>
 		<recipeMaker>
 			<recipeUsers Inherit="False">
-				<li>ElectricTailoringBench</li>
-				<li>HandTailoringBench</li>
+				<li>RK_ElectricTailoringBench</li>
+				<li>RK_HandTailoringBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
