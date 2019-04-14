@@ -14,7 +14,7 @@
 
 	<ThingDef Abstract="True" Name="RK_MeleeWeapon" ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<recipeMaker>
-			<recipeUsers>
+			<recipeUsers Inherit="false">
 				<li>RK_FueledSmithy</li>
 				<li>RK_ElectricSmithy</li>
 			</recipeUsers>
@@ -299,7 +299,7 @@
 
 	<ThingDef Abstract="True" Name="RK_NeolithicRangeWeapon" ParentName="BaseWeaponNeolithic">
 		<recipeMaker>			
-			<recipeUsers>
+			<recipeUsers Inherit="false" >
 				<li>RK_FueledSmithy</li>
 				<li>RK_ElectricSmithy</li>
 			</recipeUsers>

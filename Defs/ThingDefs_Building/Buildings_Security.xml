@@ -210,9 +210,9 @@
 			<productCount>3</productCount>
 			<targetCountAdjustment>4</targetCountAdjustment>
 			<workSkill>Crafting</workSkill>
-			<recipeUsers>
-				<li>ElectricSmithy</li>
-				<li>FueledSmithy</li>
+			<recipeUsers Inherit="false">
+				<li>RK_FueledSmithy</li>
+				<li>RK_ElectricSmithy</li>
 			</recipeUsers>
 			<skillRequirements>
 				<Crafting>4</Crafting>

@@ -45,7 +45,7 @@
 			<workSkill>Crafting</workSkill>
 			<effectWorking>Tailor</effectWorking>
 			<soundWorking>Recipe_Tailor</soundWorking>
-			<recipeUsers>
+			<recipeUsers Inherit="false">
 				<li>RK_ElectricTailoringBench</li>
 				<li>RK_HandTailoringBench</li>
 			</recipeUsers>
