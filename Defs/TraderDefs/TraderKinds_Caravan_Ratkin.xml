@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<!-- 랫킨 물자상단! -->
+	<!-- 랫킨 물자상단 -->
 	<TraderKindDef>
 		<defName>Caravan_Ratkin_BulkGoods</defName>
 		<label>bulk goods trader</label>
@@ -109,7 +109,24 @@
 					<max>1</max>
 				</kindCountRange>
 				<countRange>
-					<min>3</min>
+					<min>2</min>
+					<max>4</max>
+				</countRange>
+			</li>
+			<li Class="StockGenerator_Animals">
+				<maxWildness>0.70</maxWildness>
+				<tradeTagsSell>
+					<li>AnimalRatkin</li>
+				</tradeTagsSell>
+				<tradeTagsBuy>
+					<li>AnimalRatkin</li>
+				</tradeTagsBuy>
+				<kindCountRange>
+					<min>1</min>
+					<max>1</max>
+				</kindCountRange>
+				<countRange>
+					<min>2</min>
 					<max>4</max>
 				</countRange>
 			</li>
@@ -127,7 +144,7 @@
 			</li>
 		</stockGenerators>
 	</TraderKindDef>
-	<!-- 랫킨 의류 상단! -->
+	<!-- 랫킨 의류 상단 -->
 	<TraderKindDef>
 		<defName>Caravan_Ratkin_DressMerchant</defName>
 		<label>dress merchant</label>

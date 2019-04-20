@@ -130,10 +130,7 @@
 					<RatkinNoble>4</RatkinNoble>
 				</traders>
 				<carriers> 
-					<Muffalo>6</Muffalo>
-					<Dromedary>5</Dromedary>
-					<Alpaca>2</Alpaca>
-					<Elephant>1</Elephant>
+					<Ratkin_KingHamster>6</Ratkin_KingHamster>
 				</carriers>
 				<guards>
 					<RatkinCombatant>10</RatkinCombatant>
