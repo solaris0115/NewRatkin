@@ -3,14 +3,13 @@
 
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>RK_KingHamster</defName>
-		<label>king hamster</label>
-		<description>A large herding herbivore descended from buffalo and adapted for both cold and warm environments. While enraged muffalo are deadly, tamed muffalo are quite docile and can be used as pack animals.\n\nNobody is quite sure why they're blue - it might even be some early genetic modification test that just never got changed.</description>
+		<label>대왕 햄스터</label>
+		<description>큰 햄스터입니다. 성격은 온순해지는 대신 덩치가 엄청 커졌습니다. 여전히 지능수준은 햄스터와 같지만 길들여서 짐꾼으로 쓸 수 있을것 같습니다. 더운 온도에 비교적 잘 적응합니다.</description>
 		<statBases>
 			<MoveSpeed>4.5</MoveSpeed>
 			<MarketValue>450</MarketValue>
 			<ComfyTemperatureMin>-45</ComfyTemperatureMin>
-			<ComfyTemperatureMax>45</ComfyTemperatureMax>
-			<ToxicSensitivity>0.8</ToxicSensitivity>
+			<ComfyTemperatureMax>50</ComfyTemperatureMax>
 			<MeatAmount>50</MeatAmount>
 		</statBases>
 		<tools>
@@ -54,7 +53,7 @@
 		</tools>
 		<comps>
 			<li Class="CompProperties_Shearable">
-				<woolDef>RK_Woll_KingHamster</woolDef>
+				<woolDef>RK_Wool_KingHamster</woolDef>
 				<shearIntervalDays>15</shearIntervalDays>
 				<woolAmount>75</woolAmount>
 			</li>
@@ -104,9 +103,10 @@
 			<li>AnimalRatkin</li>
 		</tradeTags>
 	</ThingDef>
+	
 	<PawnKindDef Name="KingHamster" ParentName="AnimalKindBase">
 		<defName>Ratkin_KingHamster</defName>
-		<label>king Hamster</label>
+		<label>대왕 햄스터</label>
 		<race>RK_KingHamster</race>
 		<combatPower>65</combatPower>
 		<ecoSystemWeight>1.2</ecoSystemWeight>
@@ -165,7 +165,7 @@
 	<ThingDef ParentName="LeatherBase">
 		<defName>RK_Leather_KingHamster</defName>
 		<label>king hamster fur</label>
-		<description>The furry pelt of muffalo. Recognizable by its distinctive blue tint. Good at temperature regulation in cold climates.</description>
+		<description>털이 풍만한 대왕 햄스터입니다. 햄스터 특유의 귀여움은 덩치가 커져도 알아볼 수 있습니다. Good at temperature regulation in Hot climates.</description>
 		<graphicData>
 			<color>(247,230,218)</color>
 		</graphicData>
@@ -181,9 +181,9 @@
 	</ThingDef>
 
 	<ThingDef ParentName="WoolBase">
-		<defName>RK_Woll_KingHamster</defName>
+		<defName>RK_Wool_KingHamster</defName>
 		<label>king Hamster wool</label>
-		<description>Soft, light and provides very good insulation. Muffalo wool clothes can keep the body warm even in very cold conditions.</description>
+		<description>부드럽고 가벼운 좋은 단열재입니다. 대왕 햄스터 털옷은 통풍성과 보온성이 뛰어나 극지방이나 사막에서 활동하기 좋습니다.</description>
 		<graphicData>
 			<color>(236,198,170)</color>
 		</graphicData>
