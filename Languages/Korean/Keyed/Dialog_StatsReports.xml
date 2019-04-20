@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-	<EMPExplode>EMP폭발</EMPExplode>
-	<EMPExplodeDesc>EMP폭발로 인해 발전기들이 과부하가 걸려 파손되었습니다.</EMPExplodeDesc>
-	<MessageCommandoAssaulting>특수 부대가 정착지를 공격하기 시작합니다.</MessageCommandoAssaulting>
-	<RatHoleGone>쥐구멍이 사라졌습니다.</RatHoleGone>
+  <EMPExplode>EMP폭발</EMPExplode>
+  <EMPExplodeDesc>EMP폭발로 인해 발전기들이 과부하가 걸려 파손되었습니다.</EMPExplodeDesc>
+  <MessageCommandoAssaulting>특수 부대가 정착지를 공격하기 시작합니다.</MessageCommandoAssaulting>
+  <RatHoleGone>쥐구멍이 사라졌습니다.</RatHoleGone>
 
 </LanguageData>

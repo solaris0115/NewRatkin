@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-	<EMPExplode>EMP Explode</EMPExplode>
-	<EMPExplodeDesc>EMP explosion damaged the generators due to overload.</EMPExplodeDesc>
-	<MessageCommandoAssaulting>Special forces begin to attack the colony.</MessageCommandoAssaulting>
-	<RatHoleGone>The rat hole is gone.</RatHoleGone>
+  <EMPExplode>EMP Explode</EMPExplode>
+  <EMPExplodeDesc>EMP explosion damaged the generators due to overload.</EMPExplodeDesc>
+  <MessageCommandoAssaulting>Special forces begin to attack the colony.</MessageCommandoAssaulting>
+  <RatHoleGone>The rat hole is gone.</RatHoleGone>
 
 </LanguageData>
