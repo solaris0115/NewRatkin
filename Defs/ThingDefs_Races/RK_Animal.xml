@@ -59,12 +59,6 @@
 			</li>
 		</comps>
 		<race>
-			<wildBiomes>
-				<Tundra>0.5</Tundra>
-				<TropicalRainforest>0.15</TropicalRainforest>
-				<TemperateForest>0.08</TemperateForest>
-				<BorealForest>0.02</BorealForest>
-			</wildBiomes>
 			<herdAnimal>true</herdAnimal>
 			<body>QuadrupedAnimalWithHooves</body>
 			<baseBodySize>1.8</baseBodySize>
@@ -73,7 +67,7 @@
 			<foodType>VegetarianRoughAnimal</foodType>
 			<leatherDef>RK_Leather_KingHamster</leatherDef>
 			<gestationPeriodDays>16</gestationPeriodDays>
-			<wildness>0.2</wildness>
+			<wildness>0.0</wildness>
 			<trainability>Simple</trainability>
 			<packAnimal>true</packAnimal>
 			<lifeExpectancy>13</lifeExpectancy>
