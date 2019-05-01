@@ -51,7 +51,7 @@
 		</building>
 		<constructEffect>ConstructWood</constructEffect>
 		<researchPrerequisites>
-			<li>WatermillGenerator</li>
+			<li>Electricity</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>	
