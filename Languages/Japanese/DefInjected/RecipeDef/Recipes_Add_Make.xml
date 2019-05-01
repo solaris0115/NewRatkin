@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <!-- Recipe Users: ElectricSmithy, FueledSmithy -->
+  <!-- Recipe Users: RK_FueledSmithy, RK_ElectricSmithy -->
 
   <Make_BallistaBolt_Normal.label>バリスタの矢(通常)を作る</Make_BallistaBolt_Normal.label>
   <Make_BallistaBolt_Normal.description>バリスタの矢(通常)を作る。</Make_BallistaBolt_Normal.description>
