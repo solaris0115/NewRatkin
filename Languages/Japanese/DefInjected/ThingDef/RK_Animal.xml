@@ -11,9 +11,9 @@
   <Corpse_RK_KingHamster.label>キングハムスターの死骸</Corpse_RK_KingHamster.label>
   <Corpse_RK_KingHamster.description>キングハムスターの死骸</Corpse_RK_KingHamster.description>
 
-  <Leather_RK_KingHamster.label>キングハムスターの毛皮</Leather_RK_KingHamster.label>
-  <Leather_RK_KingHamster.description>キングハムスターの豊富な毛か付いた皮です。ハムスター特有の可愛さは身体が大きくなっても変わりません。断熱性に優れます。</Leather_RK_KingHamster.description>
-  <Leather_RK_KingHamster.stuffProps.stuffAdjective>キングハムスターの毛皮</Leather_RK_KingHamster.stuffProps.stuffAdjective>
+  <RK_Leather_KingHamster.label>キングハムスターの毛皮</RK_Leather_KingHamster.label>
+  <RK_Leather_KingHamster.description>キングハムスターの豊富な毛か付いた皮です。ハムスター特有の可愛さは身体が大きくなっても変わりません。断熱性に優れます。</RK_Leather_KingHamster.description>
+  <RK_Leather_KingHamster.stuffProps.stuffAdjective>キングハムスターの毛皮</RK_Leather_KingHamster.stuffProps.stuffAdjective>
 
   <RK_Wool_KingHamster.label>キングハムスター毛</RK_Wool_KingHamster.label>
   <RK_Wool_KingHamster.description>柔らかくて軽い良い断熱性を持ちます。この毛で編んだ服は、過酷な環境の極地や砂漠などでも体温を保持することができます。</RK_Wool_KingHamster.description>
