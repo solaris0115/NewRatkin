@@ -4,6 +4,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>RK_HamsterWheelGenerator</defName>
 		<label>hamster wheel generator</label>
+		<description>Produces electricity from a hamster wheel. The amount of power generated is proportional to the running speed.</description>
 		<thingClass>Building</thingClass>
 		<graphicData>
 			<texPath>Things/Building/RK_HamsterWheelGeneratorBody</texPath>
