@@ -12,7 +12,7 @@
 
   <RK_EmpBomb.label>EMP爆弾</RK_EmpBomb.label>
   <RK_EmpBomb.description>設置型のEMP爆弾です。この複雑なシステムを持つ装置の爆発を防ぐ唯一の方法は、直接破壊するか分解します。</RK_EmpBomb.description>
-  <RK_EmpBomb_Blueprint_Install.label>EMP爆弾(移動先)</RK_EmpBomb_Blueprint_Install.label>
+  <Blueprint_Install_RK_EmpBomb.label>EMP爆弾(移動先)</Blueprint_Install_RK_EmpBomb.label>
 
   <MinifiedEMP.label>(梱包)</MinifiedEMP.label>
 
