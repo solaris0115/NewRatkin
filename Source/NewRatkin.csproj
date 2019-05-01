@@ -75,6 +75,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HamsterWheel\DefOf.cs" />
+    <Compile Include="HamsterWheel\Job.cs" />
+    <Compile Include="HamsterWheel\JobGiver.cs" />
+    <Compile Include="HamsterWheel\PowerComp.cs" />
+    <Compile Include="HamsterWheel\Work.cs" />
     <Compile Include="RatkinGuerrilla\IncidentWoker_RatkinThiefTunnel.cs" />
     <Compile Include="RatkinGuerrilla\Building_EmpBomb.cs" />
     <Compile Include="RatkinGuerrilla\Building_Tunnel.cs" />

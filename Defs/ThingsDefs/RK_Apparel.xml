@@ -1188,6 +1188,7 @@
 			<MeleeDodgeChance>0.05</MeleeDodgeChance>
 			<MentalBreakThreshold>-0.05</MentalBreakThreshold>
 			<PainShockThreshold>0.1</PainShockThreshold>
+			<MoveSpeed>-0.1</MoveSpeed>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
@@ -1753,6 +1754,7 @@
 			<SocialImpact>-0.2</SocialImpact>
 			<PainShockThreshold>0.1</PainShockThreshold>
 			<Flammability>-0.25</Flammability>
+			<MoveSpeed>-0.15</MoveSpeed>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
@@ -1923,7 +1925,7 @@
 			<MaxHitPoints>280</MaxHitPoints>
 			<WorkToMake>35000</WorkToMake>
 			<Mass>10</Mass>
-			<StuffEffectMultiplierArmor>0.65</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>0.63</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.0</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.0</StuffEffectMultiplierInsulation_Heat>
 			<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
@@ -1932,10 +1934,10 @@
 			<EquipDelay>3</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MeleeDodgeChance>-0.05</MeleeDodgeChance>
+			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
 			<MentalBreakThreshold>-0.1</MentalBreakThreshold>
 			<PainShockThreshold>0.1</PainShockThreshold>
-			<MoveSpeed>-0.1</MoveSpeed>
+			<MoveSpeed>-0.65</MoveSpeed>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
@@ -1990,7 +1992,7 @@
 			<EquipDelay>1.5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<!-- 이동속도 -->
+			<MoveSpeed>-0.10</MoveSpeed>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
@@ -2021,7 +2023,7 @@
 		</recipeMaker>
 		<followStuffColor>true</followStuffColor>
 	</ThingDef>
-	
+
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_HatMakeableBase">
 		<defName>RK_PlateHelmB</defName>
 		<label>Ratkin plate Helm</label>
@@ -2050,7 +2052,7 @@
 			<EquipDelay>1.5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<!-- 이동속도 -->
+			<MoveSpeed>-0.10</MoveSpeed>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
@@ -2110,7 +2112,7 @@
 			<EquipDelay>1.5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<!-- 이동속도 -->
+			<MoveSpeed>-0.10</MoveSpeed>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
@@ -2300,9 +2302,9 @@
 		<tradeTags Inherit="false">
 		</tradeTags>
 	</ThingDef>
-	
-	
-	
+
+
+
 	<ApparelLayerDef>
 		<defName>InnerCoat</defName>
 		<label>inner coat</label>
