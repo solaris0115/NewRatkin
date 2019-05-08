@@ -25,11 +25,20 @@
   <!--[Duplicated] <Make_RK_FakeEar.description>Make fake ear.</Make_RK_FakeEar.description>-->
   <!--[Duplicated] <Make_RK_FakeEar.jobString>Making fake ear.</Make_RK_FakeEar.jobString>-->
 
+  <Make_RK_FakeTail.label>가짜 랫킨 꼬리 제작</Make_RK_FakeTail.label>
+  <Make_RK_FakeTail.description>가짜 랫킨 꼬리를 만듭니다.</Make_RK_FakeTail.description>
+  <Make_RK_FakeTail.jobString>가짜 랫킨 꼬리를 만드는 중.</Make_RK_FakeTail.jobString>
 
+  <Make_RK_FakeEar.label>가짜 랫킨 귀 제작</Make_RK_FakeEar.label>
+  <Make_RK_FakeEar.description>가짜 랫킨 귀 제작합니다.</Make_RK_FakeEar.description>
+  <Make_RK_FakeEar.jobString>가짜 랫킨 귀 제작합니다.</Make_RK_FakeEar.jobString>
 
 
   <!-- Recipe Users: TableMachining, FabricationBench -->
 
+  <Make_RK_BionicTail.label>생체공학 랫킨 꼬리 제작</Make_RK_BionicTail.label>
+  <Make_RK_BionicTail.description>생체공학 랫킨 꼬리를 제작합니다.</Make_RK_BionicTail.description>
+  <Make_RK_BionicTail.jobString>생체공학 랫킨 꼬리를 제작 중.</Make_RK_BionicTail.jobString>
 
 
   <!-- Recipe Users: RK_ElectricTailoringBench, RK_HandTailoringBench -->

@@ -25,11 +25,20 @@
   <!--[Duplicated] <Make_RK_FakeEar.description>Make fake ear.</Make_RK_FakeEar.description>-->
   <!--[Duplicated] <Make_RK_FakeEar.jobString>Making fake ear.</Make_RK_FakeEar.jobString>-->
 
+  <Make_RK_FakeTail.label>make fake Ratkin tail</Make_RK_FakeTail.label>
+  <Make_RK_FakeTail.description>Make fake Ratkin tail.</Make_RK_FakeTail.description>
+  <Make_RK_FakeTail.jobString>Making fake Ratkin tail.</Make_RK_FakeTail.jobString>
 
+  <Make_RK_FakeEar.label>make fake Ratkin ear</Make_RK_FakeEar.label>
+  <Make_RK_FakeEar.description>Make fake Ratkin ear.</Make_RK_FakeEar.description>
+  <Make_RK_FakeEar.jobString>Making fake Ratkin ear.</Make_RK_FakeEar.jobString>
 
 
   <!-- Recipe Users: TableMachining, FabricationBench -->
 
+  <Make_RK_BionicTail.label>make bionic Ratkin tail</Make_RK_BionicTail.label>
+  <Make_RK_BionicTail.description>Make bionic Ratkin tail.</Make_RK_BionicTail.description>
+  <Make_RK_BionicTail.jobString>Making bionic Ratkin tail.</Make_RK_BionicTail.jobString>
 
 
   <!-- Recipe Users: RK_ElectricTailoringBench, RK_HandTailoringBench -->
