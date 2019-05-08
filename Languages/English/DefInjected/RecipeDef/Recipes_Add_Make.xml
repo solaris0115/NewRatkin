@@ -21,24 +21,15 @@
 
   <!-- Recipe Users: TableMachining, RK_ElectricTailoringBench, RK_HandTailoringBench -->
 
-  <!--[Duplicated] <Make_FakeRatkinEar.label>make fake ear</Make_FakeRatkinEar.label>-->
-  <!--[Duplicated] <Make_FakeRatkinEar.description>Make fake ear.</Make_FakeRatkinEar.description>-->
-  <!--[Duplicated] <Make_FakeRatkinEar.jobString>Making fake ear.</Make_FakeRatkinEar.jobString>-->
+  <!--[Duplicated] <Make_RK_FakeEar.label>make fake ear</Make_RK_FakeEar.label>-->
+  <!--[Duplicated] <Make_RK_FakeEar.description>Make fake ear.</Make_RK_FakeEar.description>-->
+  <!--[Duplicated] <Make_RK_FakeEar.jobString>Making fake ear.</Make_RK_FakeEar.jobString>-->
 
-  <Make_FakeRatkinTail.label>make fake tail</Make_FakeRatkinTail.label>
-  <Make_FakeRatkinTail.description>Make fake tail.</Make_FakeRatkinTail.description>
-  <Make_FakeRatkinTail.jobString>Making fake tail.</Make_FakeRatkinTail.jobString>
 
-  <Make_FakeRatkinEar.label>make fake ear</Make_FakeRatkinEar.label>
-  <Make_FakeRatkinEar.description>Make fake ear.</Make_FakeRatkinEar.description>
-  <Make_FakeRatkinEar.jobString>Making fake ear.</Make_FakeRatkinEar.jobString>
 
 
   <!-- Recipe Users: TableMachining, FabricationBench -->
 
-  <Make_BionicTail.label>make bionic tail</Make_BionicTail.label>
-  <Make_BionicTail.description>Make bionic tail.</Make_BionicTail.description>
-  <Make_BionicTail.jobString>Making bionic tail.</Make_BionicTail.jobString>
 
 
   <!-- Recipe Users: RK_ElectricTailoringBench, RK_HandTailoringBench -->

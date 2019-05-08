@@ -4,14 +4,14 @@
   <!--[Duplicated] <FakeRatkinEar.label>fake ear</FakeRatkinEar.label>-->
   <!--[Duplicated] <FakeRatkinEar.description>천으로 만들어진 가짜 귀입니다. 랫킨의 큰 귀는 단순히 소리를 듣는것 뿐만 아닌 하나의 상징이자 랫킨 사회에서의 큰 의미를 갖습니다.</FakeRatkinEar.description>-->
 
-  <FakeRatkinTail.label>fake tail</FakeRatkinTail.label>
-  <FakeRatkinTail.description>It is a fake tail made by twisting a fabric. The tail of the Ratkin is responsible for the balance. It is hard to balance because it does not move anyhow, but it looks better than nothing.</FakeRatkinTail.description>
+  <FakeRatkinTail.label>fake Ratkin tail</FakeRatkinTail.label>
+  <FakeRatkinTail.description>It is a fake Ratkin tail made by twisting a fabric. The tail of the Ratkin is responsible for the balance. It is hard to balance because it does not move anyhow, but it looks better than nothing.</FakeRatkinTail.description>
 
-  <FakeRatkinEar.label>fake ear</FakeRatkinEar.label>
-  <FakeRatkinEar.description>Fake ears made of cloth. The big ears of the Ratkin are not only a sound but also a symbol and have great significance in the Ratkin society.</FakeRatkinEar.description>
+  <FakeRatkinEar.label>fake Ratkin ear</FakeRatkinEar.label>
+  <FakeRatkinEar.description>Fake Ratkin ears made of cloth. The big ears of the Ratkin are not only a sound but also a symbol and have great significance in the Ratkin society.</FakeRatkinEar.description>
 
-  <BionicTail.label>bionic tail</BionicTail.label>
-  <BionicTail.description>An advanced artificial tail. It also has a small AI that automatically balances the user's missing.</BionicTail.description>
+  <BionicTail.label>bionic Ratkin tail</BionicTail.label>
+  <BionicTail.description>An advanced artificial Ratkin tail. It also has a small AI that automatically balances the user's missing.</BionicTail.description>
 
 
 </LanguageData>

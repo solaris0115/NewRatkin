@@ -2,10 +2,10 @@
 <Defs>
 
 	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>FakeEar</defName>
+		<defName>RK_FakeEar</defName>
 		<label>fake ear</label>
 		<labelNoun>a fake ear</labelNoun>
-		<spawnThingOnRemoved>FakeRatkinEar</spawnThingOnRemoved>
+		<spawnThingOnRemoved>RK_FakeEar</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>0.35</partEfficiency>
@@ -14,10 +14,10 @@
 	</HediffDef>
 
 	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>BionicTail</defName>
+		<defName>RK_BionicTail</defName>
 		<label>bionic tail</label>
 		<labelNoun>a bionic tail</labelNoun>
-		<spawnThingOnRemoved>BionicTail</spawnThingOnRemoved>
+		<spawnThingOnRemoved>RK_BionicTail</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>1.25</partEfficiency>
@@ -25,10 +25,10 @@
 	</HediffDef>
 
 	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>FakeTail</defName>
+		<defName>RK_FakeTail</defName>
 		<label>fake tail</label>
 		<labelNoun>a fake tail</labelNoun>
-		<spawnThingOnRemoved>FakeRatkinTail</spawnThingOnRemoved>
+		<spawnThingOnRemoved>RK_FakeTail</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>0.35</partEfficiency>

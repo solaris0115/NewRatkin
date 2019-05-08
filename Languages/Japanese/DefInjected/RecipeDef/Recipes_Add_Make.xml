@@ -18,20 +18,20 @@
 
   <!-- Recipe Users: TableMachining, ElectricTailoringBench, HandTailoringBench -->
 
-  <Make_FakeRatkinTail.label>ニセ尻尾を作る</Make_FakeRatkinTail.label>
-  <Make_FakeRatkinTail.description>ニセ尻尾を作る。</Make_FakeRatkinTail.description>
-  <Make_FakeRatkinTail.jobString>ニセ尻尾を作成中</Make_FakeRatkinTail.jobString>
+  <Make_RK_FakeTail.label>ニセ尻尾を作る</Make_RK_FakeTail.label>
+  <Make_RK_FakeTail.description>ニセ尻尾を作る。</Make_RK_FakeTail.description>
+  <Make_RK_FakeTail.jobString>ニセ尻尾を作成中</Make_RK_FakeTail.jobString>
 
-  <Make_FakeRatkinEar.label>ニセ耳を作る</Make_FakeRatkinEar.label>
-  <Make_FakeRatkinEar.description>ニセ耳を作る。</Make_FakeRatkinEar.description>
-  <Make_FakeRatkinEar.jobString>ニセ耳を作成中</Make_FakeRatkinEar.jobString>
+  <Make_RK_FakeEar.label>ニセ耳を作る</Make_RK_FakeEar.label>
+  <Make_RK_FakeEar.description>ニセ耳を作る。</Make_RK_FakeEar.description>
+  <Make_RK_FakeEar.jobString>ニセ耳を作成中</Make_RK_FakeEar.jobString>
 
 
   <!-- Recipe Users: TableMachining, FabricationBench -->
 
-  <Make_BionicTail.label>強化尻尾を作る</Make_BionicTail.label>
-  <Make_BionicTail.description>強化尻尾を作る。</Make_BionicTail.description>
-  <Make_BionicTail.jobString>強化尻尾を作成中</Make_BionicTail.jobString>
+  <Make_RK_BionicTail.label>強化尻尾を作る</Make_RK_BionicTail.label>
+  <Make_RK_BionicTail.description>強化尻尾を作る。</Make_RK_BionicTail.description>
+  <Make_RK_BionicTail.jobString>強化尻尾を作成中</Make_RK_BionicTail.jobString>
 
 
   <!-- Recipe Users: RK_ElectricTailoringBench, RK_HandTailoringBench -->

@@ -2,7 +2,7 @@
 <Defs>
 
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>InstallFakeEar</defName>
+		<defName>RK_InstallFakeEar</defName>
 		<label>install fake ear</label>
 		<description>Install a fake ear.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -15,7 +15,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>FakeRatkinEar</li>
+						<li>RK_FakeEar</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -23,17 +23,17 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>FakeRatkinEar</li>
+				<li>RK_FakeEar</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
 			<li>Ear</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>FakeEar</addsHediff>
+		<addsHediff>RK_FakeEar</addsHediff>
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>InstallFakeTail</defName>
+		<defName>RK_InstallFakeTail</defName>
 		<label>install fake tail</label>
 		<description>Install a fake tail.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -46,7 +46,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>FakeRatkinTail</li>
+						<li>RK_FakeTail</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -54,18 +54,18 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>FakeRatkinTail</li>
+				<li>RK_FakeTail</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
 			<li>RK_RatTail</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>FakeTail</addsHediff>
+		<addsHediff>RK_FakeTail</addsHediff>
 	</RecipeDef>
 
 	
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>InstallBionicTail</defName>
+		<defName>RK_InstallBionicTail</defName>
 		<label>install bionic tail</label>
 		<description>Install a bionic tail.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -86,7 +86,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>BionicTail</li>
+						<li>RK_BionicTail</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -97,13 +97,13 @@
 				<li>Medicine</li>
 			</categories>
 			<thingDefs>
-				<li>BionicTail</li>
+				<li>RK_BionicTail</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
 			<li>RK_RatTail</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>BionicTail</addsHediff>
+		<addsHediff>RK_BionicTail</addsHediff>
 	</RecipeDef>
 	
 </Defs>

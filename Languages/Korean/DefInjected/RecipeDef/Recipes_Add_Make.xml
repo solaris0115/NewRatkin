@@ -21,24 +21,15 @@
 
   <!-- Recipe Users: TableMachining, RK_ElectricTailoringBench, RK_HandTailoringBench -->
 
-  <!--[Duplicated] <Make_FakeRatkinEar.label>make fake ear</Make_FakeRatkinEar.label>-->
-  <!--[Duplicated] <Make_FakeRatkinEar.description>Make fake ear.</Make_FakeRatkinEar.description>-->
-  <!--[Duplicated] <Make_FakeRatkinEar.jobString>Making fake ear.</Make_FakeRatkinEar.jobString>-->
+  <!--[Duplicated] <Make_RK_FakeEar.label>make fake ear</Make_RK_FakeEar.label>-->
+  <!--[Duplicated] <Make_RK_FakeEar.description>Make fake ear.</Make_RK_FakeEar.description>-->
+  <!--[Duplicated] <Make_RK_FakeEar.jobString>Making fake ear.</Make_RK_FakeEar.jobString>-->
 
-  <Make_FakeRatkinTail.label>가짜 꼬리 제작</Make_FakeRatkinTail.label>
-  <Make_FakeRatkinTail.description>가짜 꼬리를 만듭니다.</Make_FakeRatkinTail.description>
-  <Make_FakeRatkinTail.jobString>가짜 꼬리를 만드는 중.</Make_FakeRatkinTail.jobString>
 
-  <Make_FakeRatkinEar.label>랫킨 가짜 귀 제작</Make_FakeRatkinEar.label>
-  <Make_FakeRatkinEar.description>랫킨 가짜 귀 제작합니다.</Make_FakeRatkinEar.description>
-  <Make_FakeRatkinEar.jobString>랫킨 가짜 귀 제작합니다.</Make_FakeRatkinEar.jobString>
 
 
   <!-- Recipe Users: TableMachining, FabricationBench -->
 
-  <Make_BionicTail.label>생체공학 꼬리 제작</Make_BionicTail.label>
-  <Make_BionicTail.description>생체공학 꼬리를 제작합니다.</Make_BionicTail.description>
-  <Make_BionicTail.jobString>생체공학 꼬리를 제작 중.</Make_BionicTail.jobString>
 
 
   <!-- Recipe Users: RK_ElectricTailoringBench, RK_HandTailoringBench -->

@@ -1,17 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <InstallFakeEar.label>install fake ear</InstallFakeEar.label>
-  <InstallFakeEar.description>Install a fake ear.</InstallFakeEar.description>
-  <InstallFakeEar.jobString>Installing fake ear.</InstallFakeEar.jobString>
 
-  <InstallFakeTail.label>install fake tail</InstallFakeTail.label>
-  <InstallFakeTail.description>Install a fake tail.</InstallFakeTail.description>
-  <InstallFakeTail.jobString>Installing fake tail.</InstallFakeTail.jobString>
 
-  <InstallBionicTail.label>install bionic tail</InstallBionicTail.label>
-  <InstallBionicTail.description>Install a bionic tail.</InstallBionicTail.description>
-  <InstallBionicTail.jobString>Installing bionic tail.</InstallBionicTail.jobString>
 
 
 </LanguageData>

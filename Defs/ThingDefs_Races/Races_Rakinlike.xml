@@ -567,7 +567,7 @@
 			<li>InstallArchotechArm</li>
 			<li>InstallArchotechLeg</li>
 			<li>InstallPowerClaw</li>
-			<li>InstallBionicTail</li>
+			<li>RK_InstallBionicTail</li>
 			<li>InstallBionicEye</li>
 			<li>InstallBionicArm</li>
 			<li>InstallBionicLeg</li>
@@ -578,8 +578,8 @@
 			<li>InstallSimpleProstheticArm</li>
 			<li>InstallSimpleProstheticLeg</li>
 			<li>InstallSimpleProstheticHeart</li>
-			<li>InstallFakeEar</li>
-			<li>InstallFakeTail</li>
+			<li>RK_InstallFakeEar</li>
+			<li>RK_InstallFakeTail</li>
 			<li>InstallCochlearImplant</li>
 			<li>InstallPegLeg</li>
 			<li>InstallWoodenFoot</li>

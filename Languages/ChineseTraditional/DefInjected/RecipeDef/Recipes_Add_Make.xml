@@ -21,24 +21,24 @@
 
   <!-- Recipe Users: TableMachining, ElectricTailoringBench, HandTailoringBench -->
 
-  <!--[Duplicated] <Make_FakeRatkinEar.label>make fake ear</Make_FakeRatkinEar.label>-->
-  <!--[Duplicated] <Make_FakeRatkinEar.description>Make fake ear.</Make_FakeRatkinEar.description>-->
-  <!--[Duplicated] <Make_FakeRatkinEar.jobString>Making fake ear.</Make_FakeRatkinEar.jobString>-->
+  <!--[Duplicated] <Make_RK_FakeEar.label>make fake ear</Make_RK_FakeEar.label>-->
+  <!--[Duplicated] <Make_RK_FakeEar.description>Make fake ear.</Make_RK_FakeEar.description>-->
+  <!--[Duplicated] <Make_RK_FakeEar.jobString>Making fake ear.</Make_RK_FakeEar.jobString>-->
 
-  <Make_FakeRatkinTail.label>製作假尾巴</Make_FakeRatkinTail.label>
-  <Make_FakeRatkinTail.description>製作假尾巴。</Make_FakeRatkinTail.description>
-  <Make_FakeRatkinTail.jobString>正在製作假尾巴。</Make_FakeRatkinTail.jobString>
+  <Make_RK_FakeTail.label>製作假尾巴</Make_RK_FakeTail.label>
+  <Make_RK_FakeTail.description>製作假尾巴。</Make_RK_FakeTail.description>
+  <Make_RK_FakeTail.jobString>正在製作假尾巴。</Make_RK_FakeTail.jobString>
 
-  <Make_FakeRatkinEar.label>製作假耳朵</Make_FakeRatkinEar.label>
-  <Make_FakeRatkinEar.description>製作假耳朵。</Make_FakeRatkinEar.description>
-  <Make_FakeRatkinEar.jobString>正在製作假耳朵。</Make_FakeRatkinEar.jobString>
+  <Make_RK_FakeEar.label>製作假耳朵</Make_RK_FakeEar.label>
+  <Make_RK_FakeEar.description>製作假耳朵。</Make_RK_FakeEar.description>
+  <Make_RK_FakeEar.jobString>正在製作假耳朵。</Make_RK_FakeEar.jobString>
 
 
   <!-- Recipe Users: TableMachining, FabricationBench -->
 
-  <Make_BionicTail.label>製作仿生尾巴</Make_BionicTail.label>
-  <Make_BionicTail.description>製作仿生尾巴。</Make_BionicTail.description>
-  <Make_BionicTail.jobString>正在製作仿生尾巴。</Make_BionicTail.jobString>
+  <Make_RK_BionicTail.label>製作仿生尾巴</Make_RK_BionicTail.label>
+  <Make_RK_BionicTail.description>製作仿生尾巴。</Make_RK_BionicTail.description>
+  <Make_RK_BionicTail.jobString>正在製作仿生尾巴。</Make_RK_BionicTail.jobString>
 
 
   <!-- Recipe Users: ElectricTailoringBench, HandTailoringBench -->
