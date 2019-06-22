@@ -94,9 +94,9 @@
 
   <!-- 장교의 아이 -->
 
-  <Ratkin_OfficerChild.title>랫킨 장교의 자재</Ratkin_OfficerChild.title>
-  <Ratkin_OfficerChild.titleShort>장교의 자재</Ratkin_OfficerChild.titleShort>
-  <Ratkin_OfficerChild.baseDescription>[PAWN_nameDef](은)는 장교의 자재로 태어났습니다. 어려서부터 부모에게 배운 사격솜씨와 카리스마는 [PAWN_pronoun]을 장교감으로 만들었지만 반대로 그를 거만하게 만들기도 했습니다.</Ratkin_OfficerChild.baseDescription>
+  <Ratkin_OfficerChild.title>랫킨 장교의 자제</Ratkin_OfficerChild.title>
+  <Ratkin_OfficerChild.titleShort>장교의 자제</Ratkin_OfficerChild.titleShort>
+  <Ratkin_OfficerChild.baseDescription>[PAWN_nameDef](은)는 장교의 자제로 태어났습니다. 어려서부터 부모에게 배운 사격솜씨와 카리스마는 [PAWN_pronoun]을 장교감으로 만들었지만 반대로 그를 거만하게 만들기도 했습니다.</Ratkin_OfficerChild.baseDescription>
 
 
   <!-- 상인아이 -->

@@ -184,6 +184,7 @@
 									</bodyTypes>
 								</east>
 							</offsets>
+							<drawnInBed>false</drawnInBed>
 						</li>
 						<li>
 							<drawSize>1</drawSize>
@@ -217,7 +218,7 @@
 									</portraitBodyTypes>
 								</east>
 							</offsets>
-
+							<drawnInBed>True</drawnInBed>
 							<hiddenUnderApparelFor>
 								<li>FullHead</li>
 							</hiddenUnderApparelFor>
@@ -254,6 +255,7 @@
 									</portraitBodyTypes>
 								</east>
 							</offsets>
+							<drawnInBed>True</drawnInBed>
 							<hiddenUnderApparelFor>
 								<li>FullHead</li>
 							</hiddenUnderApparelFor>
