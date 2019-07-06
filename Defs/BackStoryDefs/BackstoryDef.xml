@@ -109,6 +109,10 @@
 		<slot>Childhood</slot>
 		<skillGains>
 			<li>
+				<defName>Melee</defName>
+				<amount>1</amount>
+			</li>
+			<li>
 				<defName>Cooking</defName>
 				<amount>1</amount>
 			</li>
@@ -128,6 +132,7 @@
 			<li>RatkinUneducated</li>
 			<li>RatkinServant</li>
 			<li>RatkinSoldier</li>
+			<li>RatkinKnight</li>
 		</spawnCategories>
 	</AlienRace.BackstoryDef>
 	<!-- 꼬마목동 -->
@@ -140,6 +145,10 @@
 		<bodyTypeFemale>Thin</bodyTypeFemale>
 		<slot>Childhood</slot>
 		<skillGains>
+			<li>
+				<defName>Melee</defName>
+				<amount>1</amount>
+			</li>
 			<li>
 				<defName>Animals</defName>
 				<amount>2</amount>
@@ -168,6 +177,7 @@
 			<li>RatkinPriest</li>
 			<li>RatkinFarm</li>
 			<li>RatkinUneducated</li>
+			<li>RatkinKnight</li>
 		</spawnCategories>
 	</AlienRace.BackstoryDef>
 	<!-- 고아 -->
@@ -181,12 +191,8 @@
 		<slot>Childhood</slot>
 		<skillGains>
 			<li>
-				<defName>Shooting</defName>
-				<amount>1</amount>
-			</li>
-			<li>
 				<defName>Melee</defName>
-				<amount>3</amount>
+				<amount>4</amount>
 			</li>
 			<li>
 				<defName>Cooking</defName>
@@ -212,6 +218,7 @@
 			<li>RatkinThief</li>
 			<li>RatkinPriest</li>
 			<li>RatkinSoldier</li>
+			<li>RatkinKnight</li>
 		</spawnCategories>
 	</AlienRace.BackstoryDef>
 	<!-- 학생 -->
@@ -358,7 +365,11 @@
 		<skillGains>
 			<li>
 				<defName>Shooting</defName>
-				<amount>4</amount>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>3</amount>
 			</li>
 			<li>
 				<defName>Intellectual</defName>
@@ -377,6 +388,7 @@
 			<li>RatkinSoldier</li>
 			<li>RatkinNoble</li>
 			<li>RatkinCombatant</li>
+			<li>RatkinKnight</li>
 		</spawnCategories>
 	</AlienRace.BackstoryDef>	
 	<!-- 후계자 -->
@@ -391,11 +403,11 @@
 		<skillGains>
 			<li>
 				<defName>Shooting</defName>
-				<amount>2</amount>
+				<amount>3</amount>
 			</li>
 			<li>
 				<defName>Melee</defName>
-				<amount>2</amount>
+				<amount>1</amount>
 			</li>
 			<li>
 				<defName>Social</defName>
@@ -411,6 +423,7 @@
 			<li>RatkinKingdom</li>
 			<li>RatkinEducated</li>
 			<li>RatkinNoble</li>
+			<li>RatkinKnight</li>
 		</spawnCategories>
 	</AlienRace.BackstoryDef>	
 	<!-- 정원사지망 -->
@@ -425,7 +438,7 @@
 		<skillGains>
 			<li>
 				<defName>Melee</defName>
-				<amount>3</amount>
+				<amount>4</amount>
 			</li>
 			<li>
 				<defName>Plants</defName>
@@ -444,6 +457,7 @@
 			<li>RatkinSoldier</li>
 			<li>RatkinEducated</li>
 			<li>RatkinCombatant</li>
+			<li>RatkinKnight</li>
 		</spawnCategories>
 	</AlienRace.BackstoryDef>	
 	<!-- 쉐프지망생 -->
@@ -528,18 +542,18 @@
 		<defName>Ratkin_OfficerChild</defName>
 		<title>Ratkin Officer Child</title>
 		<titleShort>Officer Child</titleShort>
-		<baseDescription>[PAWN_nameDef]은 장교의 자재로 태어났습니다. 어려서부터 부모에게 배운 사격솜씨와 카리스마는 [PAWN_pronoun]을 장교감으로 만들었지만 반대로 그를 거만하게 만들기도 했습니다.</baseDescription>
+		<baseDescription>[PAWN_nameDef]은 장교의 자제로 태어났습니다. 어려서부터 부모에게 배운 사격솜씨와 카리스마는 [PAWN_pronoun]을 장교감으로 만들었지만 반대로 그를 거만하게 만들기도 했습니다.</baseDescription>
 		<bodyTypeMale>Thin</bodyTypeMale>
 		<bodyTypeFemale>Thin</bodyTypeFemale>
 		<slot>Childhood</slot>
 		<skillGains>
 			<li>
 				<defName>Shooting</defName>
-				<amount>4</amount>
+				<amount>2</amount>
 			</li>
 			<li>
 				<defName>Melee</defName>
-				<amount>1</amount>
+				<amount>3</amount>
 			</li>
 			<li>
 				<defName>Social</defName>
@@ -557,6 +571,7 @@
 			<li>RatkinNoble</li>
 			<li>RatkinSoldier</li>
 			<li>RatkinCombatant</li>
+			<li>RatkinKnight</li>
 		</spawnCategories>
 	</AlienRace.BackstoryDef>	
 	<!-- 상인아이 -->
@@ -609,10 +624,6 @@
 				<amount>-1</amount>
 			</li>
 			<li>
-				<defName>Melee</defName>
-				<amount>-2</amount>
-			</li>
-			<li>
 				<defName>Cooking</defName>
 				<amount>2</amount>
 			</li>
@@ -640,6 +651,7 @@
 			<li>RatkinPriest</li>
 			<li>RatkinMerchant</li>
 			<li>RatkinUneducated</li>
+			<li>RatkinKnight</li>
 			<li>RatkinSoldier</li>
 		</spawnCategories>
 	</AlienRace.BackstoryDef>	
@@ -659,7 +671,7 @@
 			</li>
 			<li>
 				<defName>Melee</defName>
-				<amount>-1</amount>
+				<amount>2</amount>
 			</li>
 			<li>
 				<defName>Cooking</defName>
@@ -681,6 +693,7 @@
 			<li>RatkinCity</li>
 			<li>RatkinServant</li>
 			<li>RatkinThief</li>
+			<li>RatkinKnight</li>
 			<li>RatkinUneducated</li>
 		</spawnCategories>
 	</AlienRace.BackstoryDef>	
@@ -812,6 +825,7 @@
 			<li>RatkinCombatant</li>
 			<li>RatkinThief</li>
 			<li>RatkinDemoman</li>
+			<li>RatkinKnight</li>
 		</spawnCategories>
 	</AlienRace.BackstoryDef>
 	<!-- 실험실쥐 -->	
@@ -1070,6 +1084,7 @@
 			<li>RatkinWanderer</li>
 			<li>RatkinCombatant</li>
 			<li>RatkinWild</li>
+			<li>RatkinKnight</li>
 		</spawnCategories>
 	</AlienRace.BackstoryDef>
 	<!-- 목동 -->
@@ -1158,6 +1173,7 @@
 		<spawnCategories>
 			<li>RatkinStory</li>
 			<li>RatkinEducated</li>
+			<li>RatkinKnight</li>
 			<li>RatkinCity</li>
 			<li>RatkinMerchant</li>
 			<li>RatkinNoble</li>
@@ -1252,6 +1268,7 @@
 			<li>RatkinStory</li>
 			<li>RatkinEducated</li>
 			<li>RatkinCombatant</li>
+			<li>RatkinKnight</li>
 			<li>RatkinSoldier</li>
 			<li>RatkinGuardener</li>
 			<li>RatkinKingdom</li>
@@ -1391,11 +1408,11 @@
 		<skillGains>	
 			<li>
 				<defName>Shooting</defName>
-				<amount>4</amount>
+				<amount>3</amount>
 			</li>
 			<li>
 				<defName>Melee</defName>
-				<amount>2</amount>
+				<amount>3</amount>
 			</li>
 			<li>
 				<defName>Social</defName>
@@ -1405,6 +1422,7 @@
 		<spawnCategories>
 			<li>RatkinStory</li>
 			<li>RatkinSoldier</li>
+			<li>RatkinKnight</li>
 			<li>RatkinCombatant</li>
 			<li>RatkinCity</li>
 			<li>RatkinMercenary</li>
@@ -1447,6 +1465,7 @@
 		<spawnCategories>
 			<li>RatkinStory</li>
 			<li>RatkinWanderer</li>
+			<li>RatkinKnight</li>
 			<li>RatkinWild</li>
 			<li>RatkinMercenary</li>
 			<li>RatkinMerchant</li>
@@ -1534,6 +1553,7 @@
 			<li>RatkinServant</li>
 			<li>RatkinStory</li>
 			<li>RatkinCombatant</li>
+			<li>RatkinKnight</li>
 			<li>RatkinEducated</li>
 			<li>RatkinKingdom</li>
 		</spawnCategories>

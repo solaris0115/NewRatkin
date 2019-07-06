@@ -239,6 +239,8 @@
 			</skillRequirements>
 		</recipeMaker>
 	</ThingDef>
+	<!-- 롱소드 -->
+	<!-- 기본 근접값은  초당 8.84-->
 	<ThingDef ParentName="RK_MeleeWeapon">
 		<defName>RK_LongSword</defName>
 		<label>ratkin longSword</label>
@@ -249,7 +251,6 @@
 		</graphicData>
 		<techLevel>Medieval</techLevel>
 		<weaponTags Inherit="false">
-			<li>RK_Combatant</li>
 			<li>RK_MeleeWeapon</li>
 		</weaponTags>
 		<costList>
@@ -261,7 +262,7 @@
 		</stuffCategories>
 		<statBases>
 			<WorkToMake>6000</WorkToMake>
-			<Mass>1.6</Mass>
+			<Mass>1</Mass>
 		</statBases>
 		<equippedStatOffsets>
 			<PlantWorkSpeed>0.10</PlantWorkSpeed>
@@ -274,7 +275,7 @@
 				<capacities>
 					<li>Stab</li>
 				</capacities>
-				<power>10</power>
+				<power>14</power>
 				<armorPenetration>0.35</armorPenetration>
 				<cooldownTime>1.5</cooldownTime>
 			</li>
@@ -283,7 +284,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>10</power>
+				<power>15</power>
 				<armorPenetration>0.35</armorPenetration>
 				<cooldownTime>1.5</cooldownTime>
 			</li>
@@ -291,7 +292,7 @@
 		<recipeMaker>
 			<researchPrerequisite>Smithing</researchPrerequisite>
 			<skillRequirements>
-				<Crafting>5</Crafting>
+				<Crafting>4</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 	</ThingDef>
@@ -510,6 +511,7 @@
 		<weaponTags Inherit="false">
 			<li>RK_1TierRange</li>
 			<li>RK_Crossbow</li>
+			<li>RK_CrossbowAdvanced</li>
 			<li>RK_Weapon</li>
 			<li>RK_RangeWeapon</li>
 			<li>RK_Combatant</li>
@@ -572,7 +574,8 @@
 		<!-- </recipeMaker> -->
 	</ThingDef>
 
-	<!-- 2티어 -->
+	
+
 	<!-- 라이플 -->
 	<ThingDef ParentName="RK_IndustrialRangeWeapon">
 		<defName>RK_Rifle</defName>
@@ -944,7 +947,6 @@
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
-			<MarketValue>2500</MarketValue>
 			<WorkToMake>40000</WorkToMake>
 			<Mass>3.5</Mass>
 			<AccuracyTouch>0.40</AccuracyTouch>
@@ -1078,7 +1080,6 @@
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
-			<MarketValue>3000</MarketValue>
 			<WorkToMake>40000</WorkToMake>
 			<Mass>5.5</Mass>
 			<AccuracyTouch>0.65</AccuracyTouch>
@@ -1144,7 +1145,7 @@
 			<!-- <li>RK_4TierWeapon</li> -->
 			<!-- <li>RK_HeavyRifle</li> -->
 		</weaponTags>
-		<tradeTags>
+		<tradeTags Inherit="false">
 			<!-- <li>ExoticMisc</li> -->
 		</tradeTags>
 		<tools>
@@ -1165,7 +1166,7 @@
 				<cooldownTime>3</cooldownTime>
 			</li>
 		</tools>
-		<tradeability>All</tradeability>
+		<tradeability>None</tradeability>
 	</ThingDef>
 
 	<ThingDef ParentName="BaseBolt">
@@ -1222,4 +1223,91 @@
 			<soundAmbient>MortarRound_Ambient</soundAmbient>
 		</projectile>
 	</ThingDef>
+	
+	
+<!-- 2티어 -->
+	<!-- 샷건 	-->
+	<!-- <ThingDef ParentName="RK_IndustrialRangeWeapon"> -->
+		<!-- <defName>RK_Rifle</defName> -->
+		<!-- <label>ratkin shotgun</label> -->
+		<!-- <description>소드오프 샷건입니다. 랫킨 왕국에서는 샷건이 랫킨을 쏩니다.</description> -->
+		<!-- <graphicData> -->
+			<!-- <texPath>Weapon/RK_Shotgun</texPath> -->
+			<!-- <graphicClass>Graphic_Single</graphicClass> -->
+		<!-- </graphicData> -->
+		<!-- <soundInteract>Interact_Rifle</soundInteract> -->
+		<!-- <statBases> -->
+			<!-- <WorkToMake>12000</WorkToMake> -->
+			<!-- <Mass>2</Mass> -->
+			<!-- <AccuracyTouch>0.85</AccuracyTouch> -->
+			<!-- <AccuracyShort>0.85</AccuracyShort> -->
+			<!-- <AccuracyMedium>0.65</AccuracyMedium> -->
+			<!-- <AccuracyLong>0.55</AccuracyLong> -->
+			<!-- <RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown> -->
+		<!-- </statBases> -->
+		<!-- <costList> -->
+			<!-- <WoodLog>25</WoodLog> -->
+			<!-- <Steel>40</Steel> -->
+			<!-- <ComponentIndustrial>2</ComponentIndustrial> -->
+		<!-- </costList> -->
+		<!-- <recipeMaker> -->
+			<!-- <skillRequirements> -->
+				<!-- <Crafting>5</Crafting> -->
+			<!-- </skillRequirements> -->
+		<!-- </recipeMaker> -->
+		<!-- <verbs> -->
+			<!-- <li> -->
+				<!-- <verbClass>Verb_Shoot</verbClass> -->
+				<!-- <hasStandardCommand>true</hasStandardCommand> -->
+				<!-- <defaultProjectile>Bullet_Shotgun</defaultProjectile> -->
+				<!-- <warmupTime>0.7</warmupTime> -->
+				<!-- <range>14</range> -->
+				<!-- <soundCast>Rifle</soundCast> -->
+				<!-- <soundCastTail>GunTail_Heavy</soundCastTail> -->
+				<!-- <muzzleFlashScale>15</muzzleFlashScale> -->
+			<!-- </li> -->
+		<!-- </verbs> -->
+		<!-- <tools> -->
+			<!-- <li> -->
+				<!-- <label>stock</label> -->
+				<!-- <capacities> -->
+					<!-- <li>Blunt</li> -->
+				<!-- </capacities> -->
+				<!-- <power>7</power> -->
+				<!-- <cooldownTime>1.8</cooldownTime> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <label>barrel</label> -->
+				<!-- <capacities> -->
+					<!-- <li>Blunt</li> -->
+					<!-- <li>Poke</li> -->
+				<!-- </capacities> -->
+				<!-- <power>7</power> -->
+				<!-- <cooldownTime>1.8</cooldownTime> -->
+			<!-- </li> -->
+		<!-- </tools> -->
+		<!-- <weaponTags Inherit="false"> -->
+			<!-- <li>RK_2TierWeapon</li> -->
+			<!-- <li>RK_Rifle</li> -->
+			<!-- <li>RK_Weapon</li> -->
+			<!-- <li>RK_RangeWeapon</li> -->
+			<!-- <li>RK_Combatant</li> -->
+		<!-- </weaponTags> -->
+		<!-- <equippedAngleOffset>45</equippedAngleOffset> -->
+	<!-- </ThingDef> -->
+	<!-- <ThingDef ParentName="BaseBullet"> -->
+		<!-- <defName>Bullet_RK_Rifle</defName> -->
+		<!-- <label>rifle bullet</label> -->
+		<!-- <projectile> -->
+			<!-- <damageDef>Bullet</damageDef> -->
+			<!-- <damageAmountBase>16</damageAmountBase> -->
+			<!-- <stoppingPower>1</stoppingPower> -->
+			<!-- <armorPenetrationBase>0.28</armorPenetrationBase> -->
+			<!-- <speed>75</speed> -->
+		<!-- </projectile> -->
+		<!-- <graphicData> -->
+			<!-- <texPath>Things/Projectile/Bullet_small</texPath> -->
+			<!-- <graphicClass>Graphic_Single</graphicClass> -->
+		<!-- </graphicData> -->
+	<!-- </ThingDef> -->
 </Defs>

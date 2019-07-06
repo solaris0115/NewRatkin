@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Defs>
+<Defs> 
 	<PawnKindDef Name="RKBasePawnKind" Abstract="True">
 		<combatPower>20</combatPower>
 		<canBeSapper>true</canBeSapper>
@@ -13,7 +13,7 @@
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
 		<apparelColor>(255,255,255)</apparelColor>
 	</PawnKindDef>	
-	
+
 	<!-- 일반시민 -->
 	<PawnKindDef ParentName="RKBasePawnKind">
 		<defName>RatkinColonist</defName>
@@ -75,7 +75,6 @@
 		</inventoryOptions>
 		<trader>true</trader>
 	</PawnKindDef>
-
 
 	<!-- 하인 -->
 	<PawnKindDef ParentName="RKBasePawnKind">
@@ -208,7 +207,7 @@
 			<max>3500</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>RK_RangeWeapon</li>
+			<li>RK_Combatant</li>
 		</weaponTags>
 		<apparelTags>
 			<li>RK_Soldier</li>
@@ -218,31 +217,69 @@
 	<!-- 랫킨 정예정원사 -->
 	<PawnKindDef ParentName="RKBasePawnKind">
 		<defName>RatkinEliteGuardener</defName>
-		<label>ratkin EliteGuardener</label>
+		<label>ratkin Elite Guardener</label>
 		<baseRecruitDifficulty>0.95</baseRecruitDifficulty>
 		<combatPower>35</combatPower>
 		<isFighter>true</isFighter>
-		<itemQuality>Excellent</itemQuality>
 		<backstoryCategories>
 			<li>RatkinGuardener</li>
 		</backstoryCategories>
 		<apparelMoney>
 			<min>800</min>
-			<max>3000</max>
+			<max>3500</max>
 		</apparelMoney>
+		<apparelRequired>
+			<li>RK_GaurdenUniform</li>
+		</apparelRequired>
 		<weaponMoney>
 			<min>3000</min>
 			<max>5000</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>RK_MeleeWeapon</li>
-			<li>RK_RangeWeapon</li>
+			<li>RK_Sword</li>
+			<li>RK_CrossbowAdvanced</li>
 		</weaponTags>
 		<apparelTags>
 			<li>RK_Gaurdener</li>
 		</apparelTags>
 		<apparelAllowHeadgearChance>0.0</apparelAllowHeadgearChance>
 	</PawnKindDef>
+
+	<!-- 랫킨 기사 -->
+	<PawnKindDef ParentName="RKBasePawnKind">
+		<defName>RatkinKnight</defName>
+		<label>ratkin knight</label>
+		<baseRecruitDifficulty>0.95</baseRecruitDifficulty>
+		<combatPower>35</combatPower>
+		<isFighter>true</isFighter>
+		<backstoryCategories>
+			<li>RatkinKnight</li>
+		</backstoryCategories>
+		<apparelRequired>
+			<li>RK_Plate</li>
+			<li>RK_GaurdenUniform</li>
+		</apparelRequired>
+		<gearHealthRange>
+			<min>0.4</min>
+			<max>0.8</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>800</min>
+			<max>3500</max>
+		</apparelMoney>
+		<weaponMoney>
+			<min>2000</min>
+			<max>4000</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>RK_Knight</li>
+		</weaponTags>
+		<apparelTags>
+			<li>RK_Knight</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>1.5</apparelAllowHeadgearChance>
+	</PawnKindDef>
+
 	<!-- 랫킨 사제 -->
 	<PawnKindDef ParentName="RKBasePawnKind">
 		<defName>RatkinPriest</defName>
@@ -263,6 +300,7 @@
 			<li>RK_SistersVeil</li>
 		</apparelRequired>		
 	</PawnKindDef>
+
 	<!-- 랫킨 상단 -->	
 	<PawnKindDef ParentName="RKBasePawnKind">
 		<defName>RatkinMerchant</defName>
@@ -322,6 +360,7 @@
 			<li>RK_Worker</li>
 		</apparelTags>
 	</PawnKindDef>
+
 	<PawnKindDef ParentName="RKBasePawnKind">
 		<defName>RatkinVagabond</defName>
 		<label>Vagabond</label>
@@ -340,8 +379,8 @@
 			<max>5000</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>RK_MeleeWeapon</li>
-			<li>RK_RangeWeapon</li>
+			<li>RK_Sword</li>
+			<li>RK_Rifle</li>
 		</weaponTags>
 		<apparelTags>
 			<li>RK_Gaurdener</li>
@@ -387,10 +426,10 @@
 			<max>3000</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>RK_RangeWeapon</li>
+			<li>RK_Combatant</li>
 		</weaponTags>
 	</PawnKindDef>
-	
+
 	<!-- 특수 부대 찍찍이 -->
 	<PawnKindDef ParentName="RKBasePawnKind">
 		<defName>RatkinEliteSoldier</defName>
@@ -398,6 +437,7 @@
 		<combatPower>90</combatPower>
 		<isFighter>true</isFighter>
 		<itemQuality>Excellent</itemQuality>
+		<destroyGearOnDrop>true</destroyGearOnDrop>
 		<backstoryCategories>
 			<li>RatkinSoldier</li>
 		</backstoryCategories>
@@ -420,6 +460,19 @@
 			<li>RK_EliteSoldier</li>
 		</apparelTags>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<inventoryOptions>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>RK_PrototypePulseRifle</thingDef>
+					<skipChance>0.85</skipChance>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<modExtensions>
+			<li Class="NewRatkin.DestroyApparelExtension">
+				<destroyOnlyWeapon>true</destroyOnlyWeapon>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 
 
@@ -476,7 +529,7 @@
 		</inventoryOptions>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 	</PawnKindDef>
-	
+
 	<!-- 곳간털이범 -->
 	<PawnKindDef ParentName="RKBasePawnKind">
 		<defName>RatkinPettyThief</defName>

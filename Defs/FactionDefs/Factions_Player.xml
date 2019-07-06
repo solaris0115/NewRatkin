@@ -83,6 +83,7 @@
 		</maxPawnCostPerTotalPointsCurve>
 		<pawnGroupMakers>				
 			<li>
+				<!-- 일반 -->
 				<kindDef>Combat</kindDef>
 				<commonality>30</commonality>
 				<options>
@@ -113,30 +114,41 @@
 				</options>
 			</li>
 			<li>
+				<!-- 충격과 공포 -->
+				<kindDef>Combat</kindDef>
+				<commonality>10</commonality>
+				<options>
+					<RatkinKnight>20</RatkinKnight>
+					<RatkinEliteGuardener>15</RatkinEliteGuardener>
+					<!-- <RatkinEliteSoldier>5</RatkinEliteSoldier> -->
+				</options>
+			</li>
+			<li>
 				<kindDef>Peaceful</kindDef>
 				<options>
-					<RatkinNoble>3</RatkinNoble>
-					<RatkinColonist>10</RatkinColonist>
-					<RatkinServant>10</RatkinServant>
-					<RatkinSoldier>5</RatkinSoldier>
-					<RatkinEliteGuardener>15</RatkinEliteGuardener>
-					<RatkinPriest>3</RatkinPriest>
+					<RatkinNoble>10</RatkinNoble>
+					<RatkinColonist>20</RatkinColonist>
+					<RatkinServant>15</RatkinServant>
+					<RatkinEliteGuardener>10</RatkinEliteGuardener>
+					<RatkinKnight>10</RatkinKnight>
+					<RatkinPriest>10</RatkinPriest>
 				</options>
 			</li>
 			<li>
 				<kindDef>Trader</kindDef>
 				<traders>
-					<RatkinMerchant>10</RatkinMerchant>
-					<RatkinNoble>4</RatkinNoble>
+					<RatkinMerchant>15</RatkinMerchant>
+					<RatkinNoble>8</RatkinNoble>
 				</traders>
 				<carriers> 
 					<Ratkin_KingHamster>6</Ratkin_KingHamster>
 				</carriers>
 				<guards>
 					<RatkinCombatant>10</RatkinCombatant>
-					<RatkinMercenaryLight>10</RatkinMercenaryLight>
-					<RatkinSoldier>10</RatkinSoldier>
-					<RatkinEliteGuardener>8</RatkinEliteGuardener>
+					<RatkinMercenaryLight>15</RatkinMercenaryLight>
+					<RatkinSoldier>20</RatkinSoldier>
+					<RatkinEliteGuardener>10</RatkinEliteGuardener>
+					<RatkinKnight>10</RatkinKnight>
 				</guards>
 			</li>
 			<li>

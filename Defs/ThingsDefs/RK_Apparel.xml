@@ -1022,6 +1022,7 @@
 				<li>RK_Gaurdener</li>
 				<li>RK_2Tier</li>
 				<li>RK_Combatant</li>
+				<li>RK_Knight</li>
 			</tags>
 		</apparel>
 		<recipeMaker>
@@ -2023,7 +2024,7 @@
 		</recipeMaker>
 		<followStuffColor>true</followStuffColor>
 	</ThingDef>
-
+	<!-- 투구 -->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_HatMakeableBase">
 		<defName>RK_PlateHelmB</defName>
 		<label>Ratkin plate Helm</label>
@@ -2083,7 +2084,7 @@
 		</recipeMaker>
 		<followStuffColor>true</followStuffColor>
 	</ThingDef>
-
+	<!-- 투구 -->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_HatMakeableBase">
 		<defName>RK_PlateHelmC</defName>
 		<label>Ratkin plate Helm</label>
