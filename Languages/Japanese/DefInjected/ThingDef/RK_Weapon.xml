@@ -29,6 +29,8 @@
   <RK_Fork.tools.point.label>先端</RK_Fork.tools.point.label>
   <RK_Fork.tools.edge.label>刃</RK_Fork.tools.edge.label>
 
+  <!-- Default DPS value is 8.84 per second -->
+
   <RK_LongSword.label>RK ラットキンロングソード</RK_LongSword.label>
   <RK_LongSword.description>畑を守る庭師の剣です。庭のお手入れに書いたり敵を手入れするとき使います。</RK_LongSword.description>
   <RK_LongSword.tools.point.label>切っ先</RK_LongSword.tools.point.label>
