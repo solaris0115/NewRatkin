@@ -81,6 +81,16 @@
   <RatkinEliteGuardener.labelFemalePlural>female ratkin EliteGuardeners</RatkinEliteGuardener.labelFemalePlural>
 
 
+  <!-- 랫킨 기사 -->
+
+  <RatkinKnight.label>ratkin knight</RatkinKnight.label>
+  <RatkinKnight.labelPlural>ratkin knights</RatkinKnight.labelPlural>
+  <RatkinKnight.labelMale>male ratkin knight</RatkinKnight.labelMale>
+  <RatkinKnight.labelMalePlural>male ratkin knights</RatkinKnight.labelMalePlural>
+  <RatkinKnight.labelFemale>female ratkin knight</RatkinKnight.labelFemale>
+  <RatkinKnight.labelFemalePlural>female ratkin knights</RatkinKnight.labelFemalePlural>
+
+
   <!-- 랫킨 사제 -->
 
   <RatkinPriest.label>ratkin Priest</RatkinPriest.label>

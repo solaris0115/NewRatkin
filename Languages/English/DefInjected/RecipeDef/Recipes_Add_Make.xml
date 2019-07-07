@@ -177,6 +177,26 @@
 
   <!-- Recipe Users: ElectricSmithy, FueledSmithy, RK_FueledSmithy, RK_ElectricSmithy -->
 
+  <Make_RK_Dagger.label>make ratkin dagger</Make_RK_Dagger.label>
+  <Make_RK_Dagger.description>Make ratkin dagger.</Make_RK_Dagger.description>
+  <Make_RK_Dagger.jobString>Making ratkin dagger.</Make_RK_Dagger.jobString>
+
+  <Make_RK_OneHanded.label>make ratkin one handed sword</Make_RK_OneHanded.label>
+  <Make_RK_OneHanded.description>Make ratkin one handed sword.</Make_RK_OneHanded.description>
+  <Make_RK_OneHanded.jobString>Making ratkin one handed sword.</Make_RK_OneHanded.jobString>
+
+  <Make_RK_LightLance.label>make ratkin wooden lance</Make_RK_LightLance.label>
+  <Make_RK_LightLance.description>Make ratkin wooden lance.</Make_RK_LightLance.description>
+  <Make_RK_LightLance.jobString>Making ratkin wooden lance.</Make_RK_LightLance.jobString>
+
+  <Make_RK_TwoHanded.label>make ratkin two handed sword</Make_RK_TwoHanded.label>
+  <Make_RK_TwoHanded.description>Make ratkin two handed sword.</Make_RK_TwoHanded.description>
+  <Make_RK_TwoHanded.jobString>Making ratkin two handed sword.</Make_RK_TwoHanded.jobString>
+
+  <Make_RK_HeavyLance.label>make ratkin heavy lance</Make_RK_HeavyLance.label>
+  <Make_RK_HeavyLance.description>Make ratkin heavy lance.</Make_RK_HeavyLance.description>
+  <Make_RK_HeavyLance.jobString>Making ratkin heavy lance.</Make_RK_HeavyLance.jobString>
+
   <Make_RK_Axe.label>make axe</Make_RK_Axe.label>
   <Make_RK_Axe.description>Make axe.</Make_RK_Axe.description>
   <Make_RK_Axe.jobString>Making axe.</Make_RK_Axe.jobString>

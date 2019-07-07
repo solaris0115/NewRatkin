@@ -219,13 +219,18 @@
 		<defName>RatkinEliteGuardener</defName>
 		<label>ratkin Elite Guardener</label>
 		<baseRecruitDifficulty>0.95</baseRecruitDifficulty>
-		<combatPower>35</combatPower>
+		<combatPower>50</combatPower>
 		<isFighter>true</isFighter>
+		<itemQuality>Excellent</itemQuality>
+		<gearHealthRange>
+			<min>0.3</min>
+			<max>0.5</max>
+		</gearHealthRange>
 		<backstoryCategories>
 			<li>RatkinGuardener</li>
 		</backstoryCategories>
 		<apparelMoney>
-			<min>800</min>
+			<min>650</min>
 			<max>3500</max>
 		</apparelMoney>
 		<apparelRequired>
@@ -237,6 +242,7 @@
 		</weaponMoney>
 		<weaponTags>
 			<li>RK_Sword</li>
+			<li>RK_Rifle</li>
 			<li>RK_CrossbowAdvanced</li>
 		</weaponTags>
 		<apparelTags>
@@ -250,25 +256,27 @@
 		<defName>RatkinKnight</defName>
 		<label>ratkin knight</label>
 		<baseRecruitDifficulty>0.95</baseRecruitDifficulty>
-		<combatPower>35</combatPower>
+		<combatPower>65</combatPower>
 		<isFighter>true</isFighter>
+		<itemQuality>Excellent</itemQuality>
+		<minGenerationAge>20</minGenerationAge>
 		<backstoryCategories>
 			<li>RatkinKnight</li>
 		</backstoryCategories>
 		<apparelRequired>
-			<li>RK_Plate</li>
 			<li>RK_GaurdenUniform</li>
+			<li>RK_Plate</li>
 		</apparelRequired>
 		<gearHealthRange>
-			<min>0.4</min>
-			<max>0.8</max>
+			<min>0.3</min>
+			<max>0.5</max>
 		</gearHealthRange>
 		<apparelMoney>
-			<min>800</min>
+			<min>650</min>
 			<max>3500</max>
 		</apparelMoney>
 		<weaponMoney>
-			<min>2000</min>
+			<min>3000</min>
 			<max>4000</max>
 		</weaponMoney>
 		<weaponTags>
@@ -438,6 +446,10 @@
 		<isFighter>true</isFighter>
 		<itemQuality>Excellent</itemQuality>
 		<destroyGearOnDrop>true</destroyGearOnDrop>
+		<gearHealthRange>
+			<min>0.3</min>
+			<max>0.5</max>
+		</gearHealthRange>
 		<backstoryCategories>
 			<li>RatkinSoldier</li>
 		</backstoryCategories>
@@ -483,6 +495,10 @@
 		<combatPower>75</combatPower>
 		<isFighter>true</isFighter>
 		<baseRecruitDifficulty>0.95</baseRecruitDifficulty>
+		<gearHealthRange>
+			<min>0.3</min>
+			<max>0.5</max>
+		</gearHealthRange>
 		<backstoryCategories>
 			<li>RatkinDemoman</li>
 		</backstoryCategories>

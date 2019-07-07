@@ -177,6 +177,26 @@
 
   <!-- Recipe Users: ElectricSmithy, FueledSmithy, RK_FueledSmithy, RK_ElectricSmithy -->
 
+  <Make_RK_Dagger.label>랫킨 단검 제작</Make_RK_Dagger.label>
+  <Make_RK_Dagger.description>랫킨 단검을 제작합니다.</Make_RK_Dagger.description>
+  <Make_RK_Dagger.jobString>랫킨 단검 제작 중.</Make_RK_Dagger.jobString>
+
+  <Make_RK_OneHanded.label>랫킨 한손검 제작</Make_RK_OneHanded.label>
+  <Make_RK_OneHanded.description>랫킨 한손검을 제작합니다.</Make_RK_OneHanded.description>
+  <Make_RK_OneHanded.jobString>랫킨 한손검 제작 중.</Make_RK_OneHanded.jobString>
+
+  <Make_RK_LightLance.label>랫킨 우든 랜스 제작</Make_RK_LightLance.label>
+  <Make_RK_LightLance.description>랫킨 우든 랜스을 제작합니다.</Make_RK_LightLance.description>
+  <Make_RK_LightLance.jobString>랫킨 우든 랜스 제작 중.</Make_RK_LightLance.jobString>
+
+  <Make_RK_TwoHanded.label>랫킨 양손검 제작</Make_RK_TwoHanded.label>
+  <Make_RK_TwoHanded.description>랫킨 양손검을 제작합니다.</Make_RK_TwoHanded.description>
+  <Make_RK_TwoHanded.jobString>랫킨 양손검 제작 중.</Make_RK_TwoHanded.jobString>
+
+  <Make_RK_HeavyLance.label>랫킨 헤비 랜스 제작</Make_RK_HeavyLance.label>
+  <Make_RK_HeavyLance.description>랫킨 헤비 랜스을 제작합니다.</Make_RK_HeavyLance.description>
+  <Make_RK_HeavyLance.jobString>랫킨 헤비 랜스 제작 중.</Make_RK_HeavyLance.jobString>
+
   <Make_RK_Axe.label>랫킨 도끼 제작</Make_RK_Axe.label>
   <Make_RK_Axe.description>랫킨 도끼 제작합니다.</Make_RK_Axe.description>
   <Make_RK_Axe.jobString>랫킨 도끼 제작 중.</Make_RK_Axe.jobString>

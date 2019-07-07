@@ -81,6 +81,16 @@
   <RatkinEliteGuardener.labelFemalePlural>여자 랫킨 정예정원사들</RatkinEliteGuardener.labelFemalePlural>
 
 
+  <!-- 랫킨 기사 -->
+
+  <RatkinKnight.label>랫킨 기사</RatkinKnight.label>
+  <RatkinKnight.labelPlural>랫킨 기사들</RatkinKnight.labelPlural>
+  <RatkinKnight.labelMale>남자 랫킨 기사</RatkinKnight.labelMale>
+  <RatkinKnight.labelMalePlural>남자 랫킨 기사들</RatkinKnight.labelMalePlural>
+  <RatkinKnight.labelFemale>여자 랫킨 기사</RatkinKnight.labelFemale>
+  <RatkinKnight.labelFemalePlural>여자 랫킨 기사들</RatkinKnight.labelFemalePlural>
+
+
   <!-- 랫킨 사제 -->
 
   <RatkinPriest.label>랫킨 사제</RatkinPriest.label>

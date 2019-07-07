@@ -81,16 +81,26 @@
 				<li>(100000, 10000)</li>
 			</points>
 		</maxPawnCostPerTotalPointsCurve>
-		<pawnGroupMakers>				
+		<pawnGroupMakers>		
+			<li>
+				<!-- 충격과 공포 -->
+				<kindDef>Combat</kindDef>
+				<commonality>20</commonality>
+				<options>
+					<RatkinKnight>20</RatkinKnight>
+					<RatkinEliteGuardener>15</RatkinEliteGuardener>
+					<!-- <RatkinEliteSoldier>5</RatkinEliteSoldier> -->
+				</options>
+			</li>
 			<li>
 				<!-- 일반 -->
 				<kindDef>Combat</kindDef>
 				<commonality>30</commonality>
 				<options>
-					<RatkinCombatant>10</RatkinCombatant>
-					<RatkinSoldier>20</RatkinSoldier>
-					<RatkinEliteGuardener>8</RatkinEliteGuardener>
-					<RatkinNoble>1</RatkinNoble>
+					<RatkinCombatant>20</RatkinCombatant>
+					<RatkinSoldier>15</RatkinSoldier>
+					<RatkinEliteGuardener>10</RatkinEliteGuardener>
+					<RatkinKnight>10</RatkinKnight>
 				</options>
 			</li>
 			<li>
@@ -98,29 +108,9 @@
 				<kindDef>Combat</kindDef>
 				<commonality>20</commonality>
 				<options>
-					<RatkinCombatant>10</RatkinCombatant>
-					<RatkinSoldier>10</RatkinSoldier>
+					<RatkinSoldier>15</RatkinSoldier>
 					<RatkinEliteGuardener>20</RatkinEliteGuardener>
-					<RatkinNoble>1</RatkinNoble>
-				</options>
-			</li>
-			<li>
-				<!-- 저격제대 -->
-				<kindDef>Combat</kindDef>
-				<commonality>10</commonality>
-				<options>
-					<RatkinSoldier>20</RatkinSoldier>
-					<!-- <RatkinEliteSoldier>5</RatkinEliteSoldier> -->
-				</options>
-			</li>
-			<li>
-				<!-- 충격과 공포 -->
-				<kindDef>Combat</kindDef>
-				<commonality>10</commonality>
-				<options>
 					<RatkinKnight>20</RatkinKnight>
-					<RatkinEliteGuardener>15</RatkinEliteGuardener>
-					<!-- <RatkinEliteSoldier>5</RatkinEliteSoldier> -->
 				</options>
 			</li>
 			<li>

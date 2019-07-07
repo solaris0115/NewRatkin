@@ -1893,6 +1893,7 @@
 		</tradeTags>
 	</ThingDef>
 
+
 	<!-- 판금 갑옷 높은 날카로움, 둔탁함 방어력, 느려짐-->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
 		<defName>RK_Plate</defName>
@@ -2129,8 +2130,8 @@
 				<li>Worker</li>
 			</defaultOutfitTags>
 			<tags>
-				<li>RK_Melee</li>
 				<li>RK_Knight</li>
+				<li>RK_Melee</li>
 				<li>RK_2Tier</li>
 			</tags>
 		</apparel>
@@ -2303,7 +2304,9 @@
 		<tradeTags Inherit="false">
 		</tradeTags>
 	</ThingDef>
-
+	
+	
+	
 
 
 	<ApparelLayerDef>

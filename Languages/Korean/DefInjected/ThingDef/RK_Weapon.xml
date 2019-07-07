@@ -32,6 +32,9 @@
   <RK_Fork.tools.0.label>포크삽 끝</RK_Fork.tools.0.label>
   <RK_Fork.tools.1.label>포크삽 날</RK_Fork.tools.1.label>
 
+
+  <!-- 기본 근접값은  초당 8.84 -->
+
   <RK_LongSword.label>랫킨 정원사의 검</RK_LongSword.label>
   <RK_LongSword.description>밭을 지키는 정원사들의 검입니다. 정원 손질에 쓰거나 적들을 손질할때 씁니다.</RK_LongSword.description>
   <RK_LongSword.tools.0.label>날끝</RK_LongSword.tools.0.label>

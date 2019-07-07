@@ -32,6 +32,9 @@
   <RK_Fork.tools.0.label>point</RK_Fork.tools.0.label>
   <RK_Fork.tools.1.label>edge</RK_Fork.tools.1.label>
 
+
+  <!-- 기본 근접값은  초당 8.84 -->
+
   <RK_LongSword.label>Ratkin longSword</RK_LongSword.label>
   <RK_LongSword.description>It is the sword of the Guardener who keeps the field. It is good to take care of garden or your enemy.</RK_LongSword.description>
   <RK_LongSword.tools.0.label>point</RK_LongSword.tools.0.label>

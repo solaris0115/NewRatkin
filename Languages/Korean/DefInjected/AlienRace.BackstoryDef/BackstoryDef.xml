@@ -232,6 +232,13 @@
   <Ratkin_Guardener.baseDescription>[PAWN_nameDef](은)는 수석 정원사입니다. 하지만 외지에서 임무 중 홀로 떨어지게 되었습니다. [PAWN_pronoun](은)는 다시 왕국으로 돌아갈 방법을 찾으려 합니다.</Ratkin_Guardener.baseDescription>
 
 
+  <!-- 기사 -->
+
+  <Ratkin_Knight.title>랫킨 기사</Ratkin_Knight.title>
+  <Ratkin_Knight.titleShort>기사</Ratkin_Knight.titleShort>
+  <Ratkin_Knight.baseDescription>[PAWN_nameDef]은 랫킨 왕국의 기사입니다. 그들은 왕국을 지탱하는 기둥입니다.</Ratkin_Knight.baseDescription>
+
+
   <!-- 교사 -->
 
   <Ratkin_Teacher.title>랫킨 선생님</Ratkin_Teacher.title>

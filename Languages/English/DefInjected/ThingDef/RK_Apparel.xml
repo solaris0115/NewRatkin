@@ -201,6 +201,9 @@
   <RK_PlateHelmA.label>Ratkin plate helm A</RK_PlateHelmA.label>
   <RK_PlateHelmA.description>It's a plate helmet.</RK_PlateHelmA.description>
 
+
+  <!-- 투구 -->
+
   <RK_PlateHelmB.label>Ratkin plate helm B</RK_PlateHelmB.label>
   <RK_PlateHelmB.description>It's a plate helmet.</RK_PlateHelmB.description>
 

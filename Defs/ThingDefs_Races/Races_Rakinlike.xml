@@ -351,6 +351,12 @@
 					<li>RK_FlechetteRifle</li>
 					<li>RK_FlechetteSniperRifle</li>
 					<li>RK_PrototypeRUG</li>
+					
+					
+					<li>RK_Dagger</li>
+					<li>RK_OneHanded</li>
+					<li>RK_LightLance</li>
+					<li>RK_HeavyLance</li>
 				</weaponList>
 				<researchList>
 					<li>

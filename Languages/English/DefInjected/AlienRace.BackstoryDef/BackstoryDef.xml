@@ -232,6 +232,13 @@
   <Ratkin_Guardener.baseDescription>[PAWN_nameDef] is a senior Guardener.But during [PAWN_pronoun] assignment [PAWN_pronoun] fell alone. [PAWN_pronoun] want to find a way to go back to the kingdom.</Ratkin_Guardener.baseDescription>
 
 
+  <!-- 기사 -->
+
+  <Ratkin_Knight.title>Ratkin Knight</Ratkin_Knight.title>
+  <Ratkin_Knight.titleShort>knight</Ratkin_Knight.titleShort>
+  <Ratkin_Knight.baseDescription>[PAWN_nameDef] is knight of Ratkinia. They are the strong buttresses of the kingdom.</Ratkin_Knight.baseDescription>
+
+
   <!-- 교사 -->
 
   <Ratkin_Teacher.title>Ratkin Teacher</Ratkin_Teacher.title>

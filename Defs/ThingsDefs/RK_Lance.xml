@@ -105,6 +105,7 @@
 		<techLevel>Medieval</techLevel>
 		<weaponTags Inherit="false">
 			<li>RK_Sword</li>
+			<li>RK_Knight</li>
 		</weaponTags>
 		<statBases>
 			<WorkToMake>16000</WorkToMake>
@@ -186,7 +187,7 @@
 	<ThingDef ParentName="RK_MeleeWeapon">
 		<defName>RK_LightLance</defName>
 		<label>ratkin wooden lance</label>
-		<description>철을 덧대어 파괴력을 높힌 목재 랜스입니다. 무게 때문에 숙달되지 않으면 명중시키기 힘들어 보입니다.</description>
+		<description>철을 덧대어 파괴력을 높힌 목재 랜스입니다. 무게 때문에 숙달되지 않으면 명중시키기 힘들어 보입니다. 손잡이가 너무 작아 인간이 사용하기 힘들어 보입니다.</description>
 		<graphicData>
 			<texPath>Weapon/RK_LightLance</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -194,6 +195,7 @@
 		<techLevel>Medieval</techLevel>
 		<weaponTags Inherit="false">
 			<li>RK_MeleeWeapon_Lance</li>
+			<li>RK_Knight</li>
 		</weaponTags>
 		<costList>
 			<WoodLog>100</WoodLog>
@@ -204,7 +206,7 @@
 			<Mass>8</Mass>		
 		</statBases>
 		<equippedStatOffsets>
-			<MeleeHitChance>-4</MeleeHitChance>	
+			<MeleeHitChance>-3</MeleeHitChance>	
 		</equippedStatOffsets>
 		<equippedAngleOffset>45</equippedAngleOffset>
 		<tools>
@@ -398,7 +400,7 @@
 			<Mass>12</Mass>
 		</statBases>
 		<equippedStatOffsets>
-			<MeleeHitChance>-7</MeleeHitChance>	
+			<MeleeHitChance>-4</MeleeHitChance>	
 		</equippedStatOffsets>
 		<equippedAngleOffset>45</equippedAngleOffset>
 		<tools>

@@ -1084,7 +1084,6 @@
 			<li>RatkinWanderer</li>
 			<li>RatkinCombatant</li>
 			<li>RatkinWild</li>
-			<li>RatkinKnight</li>
 		</spawnCategories>
 	</AlienRace.BackstoryDef>
 	<!-- 목동 -->
@@ -1173,7 +1172,6 @@
 		<spawnCategories>
 			<li>RatkinStory</li>
 			<li>RatkinEducated</li>
-			<li>RatkinKnight</li>
 			<li>RatkinCity</li>
 			<li>RatkinMerchant</li>
 			<li>RatkinNoble</li>
@@ -1268,7 +1266,6 @@
 			<li>RatkinStory</li>
 			<li>RatkinEducated</li>
 			<li>RatkinCombatant</li>
-			<li>RatkinKnight</li>
 			<li>RatkinSoldier</li>
 			<li>RatkinGuardener</li>
 			<li>RatkinKingdom</li>
@@ -1280,6 +1277,51 @@
 			</li>
 		</forcedTraits>
 	</AlienRace.BackstoryDef>
+	
+	<!-- 기사 -->
+	<AlienRace.BackstoryDef ParentName="BaseRatkinBackStory">
+		<defName>Ratkin_Knight</defName>
+		<title>Ratkin Knight</title>
+		<titleShort>knight</titleShort>
+		<baseDescription>[PAWN_nameDef]은 랫킨 왕국의 기사입니다. 그들은 왕국을 지탱하는 기둥이자 강인한 전사들입니다.</baseDescription>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Melee</defName>
+				<amount>6</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>Mining</li>
+		</workDisables>
+		<spawnCategories>
+			<li>RatkinStory</li>
+			<li>RatkinKnight</li>
+		</spawnCategories>
+		<forcedTraits>
+			<li>
+				<defName>Brawler</defName>
+				<chance>30</chance>
+			</li>
+			<li>
+				<defName>Tough</defName>
+				<chance>15</chance>
+			</li>
+			<li>
+				<defName>SpeedOffset</defName>
+				<degree>1</degree>
+				<chance>10</chance>
+			</li>
+			<li>
+				<defName>SpeedOffset</defName>
+				<degree>2</degree>
+				<chance>10</chance>
+			</li>
+		</forcedTraits>
+	</AlienRace.BackstoryDef>
+	
 	<!-- 교사 -->
 	<AlienRace.BackstoryDef ParentName="BaseRatkinBackStory">
 		<defName>Ratkin_Teacher</defName>
@@ -1422,7 +1464,6 @@
 		<spawnCategories>
 			<li>RatkinStory</li>
 			<li>RatkinSoldier</li>
-			<li>RatkinKnight</li>
 			<li>RatkinCombatant</li>
 			<li>RatkinCity</li>
 			<li>RatkinMercenary</li>
@@ -1465,7 +1506,6 @@
 		<spawnCategories>
 			<li>RatkinStory</li>
 			<li>RatkinWanderer</li>
-			<li>RatkinKnight</li>
 			<li>RatkinWild</li>
 			<li>RatkinMercenary</li>
 			<li>RatkinMerchant</li>
@@ -1553,7 +1593,6 @@
 			<li>RatkinServant</li>
 			<li>RatkinStory</li>
 			<li>RatkinCombatant</li>
-			<li>RatkinKnight</li>
 			<li>RatkinEducated</li>
 			<li>RatkinKingdom</li>
 		</spawnCategories>
@@ -1755,8 +1794,15 @@
 			</li>
 			<li>
 				<defName>Kind</defName>
+				<chance>50</chance>
+			</li>
+			<li>
+				<defName>Abrasive</defName>
+				<chance>50</chance>
 			</li>
 		</forcedTraits>
+		<disallowedTraits Inherit="False">
+		</disallowedTraits>
 	</AlienRace.BackstoryDef>
 	<!-- 도축업자 -->
 	<AlienRace.BackstoryDef ParentName="BaseRatkinBackStory">

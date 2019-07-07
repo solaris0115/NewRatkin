@@ -50,7 +50,13 @@
 					<kindDefs>
 						<li>RatkinSubject</li>
 					</kindDefs>
-					<chance>1.0</chance>
+					<chance>5.0</chance>
+				</li>
+				<li>
+					<kindDefs>
+						<li>RatkinKnight</li>
+					</kindDefs>
+					<chance>5.0</chance>
 				</li>
 			</alienrefugeekinds>
 			<alienwandererkinds>
