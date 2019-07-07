@@ -31,9 +31,12 @@
   <Ratkin_Successor.title>ラットキンの跡取り</Ratkin_Successor.title>
   <Ratkin_Successor.titleShort>跡取り</Ratkin_Successor.titleShort>
   <Ratkin_Successor.baseDescription>[PAWN_nameDef]は貴族の後継者として生まれました。かつてきらびやかた家が傾い者[PAWN_pronoun]は作り出すために道を離れなければならいました。</Ratkin_Successor.baseDescription>
-  <Ratkin_GuardenerStudent.title>ラットキン庭師見習い</Ratkin_GuardenerStudent.title>
-  <Ratkin_GuardenerStudent.titleShort>庭師見習い</Ratkin_GuardenerStudent.titleShort>
-  <Ratkin_GuardenerStudent.baseDescription>[PAWN_nameDef]は庭師になるために修練の道に上がりました。ただ最高だけがラットキン社会で庭園を守ることができるので、[PAWN_pronoun]は血の出る努力をしなければしました。</Ratkin_GuardenerStudent.baseDescription>
+  <Ratkin_GuardenerStudent.title>ラットキン近衛兵見習い</Ratkin_GuardenerStudent.title>
+  <Ratkin_GuardenerStudent.titleShort>近衛兵見習い</Ratkin_GuardenerStudent.titleShort>
+  <Ratkin_GuardenerStudent.baseDescription>[PAWN_nameDef]は近衛兵になるために修練をしています。最高の者だけがラットキン社会で近衛兵になることができるので、[PAWN_pronoun]は血のにじむ努力をしなければなりませんでした。</Ratkin_GuardenerStudent.baseDescription>
+  <Ratkin_Knight.title>ラットキンの騎士</Ratkin_Knight.title>
+  <Ratkin_Knight.titleShort>騎士</Ratkin_Knight.titleShort>
+  <Ratkin_Knight.baseDescription>[PAWN_nameDef]はラットキン王国の騎士です。彼らは王国を支える柱であり、屈強な戦士たちです。</Ratkin_Knight.baseDescription>
   <Ratkin_ChefStudent.title>ラットキンシェフ見習い</Ratkin_ChefStudent.title>
   <Ratkin_ChefStudent.titleShort>シェフ見習い</Ratkin_ChefStudent.titleShort>
   <Ratkin_ChefStudent.baseDescription>[PAWN_nameDef]は食べることが好きな料理を始めました。 [PAWN_pronoun]に食べ物は人生の落下であり、楽しみなので、よりおいしい料理を食べるために冒険を出ました。</Ratkin_ChefStudent.baseDescription>
@@ -42,7 +45,7 @@
   <Ratkin_RomanyKid.baseDescription>[PAWN_nameDef]は流浪生活をしてあちこちをあてもなくさまよっ通いました。 [PAWN_pronoun]は多目的があてのない生活は、人との深い縁を持つ円足りないに見えます。</Ratkin_RomanyKid.baseDescription>
   <Ratkin_OfficerChild.title>ラットキン将校の子供</Ratkin_OfficerChild.title>
   <Ratkin_OfficerChild.titleShort>将校の子供</Ratkin_OfficerChild.titleShort>
-  <Ratkin_OfficerChild.baseDescription>[PAWN_nameDef]は将校の材料として生まれました。幼い頃から親に学んだ射撃とカリスマ性は、[PAWN_pronoun]を長教頭にしたが、逆に彼を自慢して作ることもしました。</Ratkin_OfficerChild.baseDescription>
+  <Ratkin_OfficerChild.baseDescription>[PAWN_nameDef]は将校の子供として生まれました。幼い頃から親に学んだ射撃とカリスマ性は、[PAWN_pronoun]を長教頭にしたが、逆に彼を自慢して作ることもしました。</Ratkin_OfficerChild.baseDescription>
   <Ratkin_MerchantKid.title>ラットキン商人の子供</Ratkin_MerchantKid.title>
   <Ratkin_MerchantKid.titleShort>商人の子供</Ratkin_MerchantKid.titleShort>
   <Ratkin_MerchantKid.baseDescription>[PAWN_nameDef]は上部の子供として生まれました。 [PAWN_pronoun]は、親のそばで肩越しに商売を学び、どうすればお金を稼ぐことができるかに精通しています。</Ratkin_MerchantKid.baseDescription>
