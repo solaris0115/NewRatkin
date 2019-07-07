@@ -22,9 +22,12 @@
 			<li>RatkinStory</li>
 		</backstoryCategories>
 		<defaultFactionType>RK_PlayerFaction</defaultFactionType>
+		<apparelRequired>
+			<li>RK_ApronSkirt</li>
+		</apparelRequired>
 		<apparelMoney>
-			<min>200</min>
-			<max>500</max>
+			<min>800</min>
+			<max>2500</max>
 		</apparelMoney>
 		<apparelTags>
 			<li>RK_Worker</li>
@@ -45,7 +48,7 @@
 		</backstoryCategories>
 		<itemQuality>Excellent</itemQuality>
 		<apparelMoney>
-			<min>500</min>
+			<min>800</min>
 			<max>5000</max>
 		</apparelMoney>
 		<apparelTags>
@@ -222,10 +225,6 @@
 		<combatPower>50</combatPower>
 		<isFighter>true</isFighter>
 		<itemQuality>Excellent</itemQuality>
-		<gearHealthRange>
-			<min>0.3</min>
-			<max>0.5</max>
-		</gearHealthRange>
 		<backstoryCategories>
 			<li>RatkinGuardener</li>
 		</backstoryCategories>
@@ -233,6 +232,10 @@
 			<min>650</min>
 			<max>3500</max>
 		</apparelMoney>
+		<gearHealthRange>
+			<min>0.5</min>
+			<max>0.8</max>
+		</gearHealthRange>
 		<apparelRequired>
 			<li>RK_GaurdenUniform</li>
 		</apparelRequired>
@@ -442,13 +445,14 @@
 	<PawnKindDef ParentName="RKBasePawnKind">
 		<defName>RatkinEliteSoldier</defName>
 		<label>ratkin elite soldier</label>
+		<baseRecruitDifficulty>0.99</baseRecruitDifficulty>
 		<combatPower>90</combatPower>
 		<isFighter>true</isFighter>
 		<itemQuality>Excellent</itemQuality>
 		<destroyGearOnDrop>true</destroyGearOnDrop>
 		<gearHealthRange>
-			<min>0.3</min>
-			<max>0.5</max>
+			<min>0.8</min>
+			<max>1</max>
 		</gearHealthRange>
 		<backstoryCategories>
 			<li>RatkinSoldier</li>
@@ -493,11 +497,11 @@
 		<defName>RatkinDemonMan</defName>
 		<label>ratkin demoman</label>
 		<combatPower>75</combatPower>
+		<baseRecruitDifficulty>0.99</baseRecruitDifficulty>
 		<isFighter>true</isFighter>
-		<baseRecruitDifficulty>0.95</baseRecruitDifficulty>
 		<gearHealthRange>
-			<min>0.3</min>
-			<max>0.5</max>
+			<min>0.8</min>
+			<max>1</max>
 		</gearHealthRange>
 		<backstoryCategories>
 			<li>RatkinDemoman</li>
