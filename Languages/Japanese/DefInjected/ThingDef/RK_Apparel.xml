@@ -120,6 +120,8 @@
   <RK_PlateHelmA.label>RK プレートヘルム</RK_PlateHelmA.label>
   <RK_PlateHelmA.description>金属で作られたヘルメットです。</RK_PlateHelmA.description>
 
+  <!-- Helmet -->
+
   <RK_PlateHelmB.label>RK プレートヘルム(開)</RK_PlateHelmB.label>
   <RK_PlateHelmB.description>バイザーが開いた金属で作られたヘルメットです。</RK_PlateHelmB.description>
 

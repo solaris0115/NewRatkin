@@ -170,37 +170,57 @@
 
   <!-- Recipe Users: ElectricSmithy, FueledSmithy, RK_FueledSmithy, RK_ElectricSmithy -->
 
-  <Make_RK_Axe.label>斧を作る</Make_RK_Axe.label>
-  <Make_RK_Axe.description>斧を作る。</Make_RK_Axe.description>
-  <Make_RK_Axe.jobString>斧を作成中</Make_RK_Axe.jobString>
+  <Make_RK_Dagger.label>RK ダガーを作る</Make_RK_Dagger.label>
+  <Make_RK_Dagger.description>RK ダガーを作る。</Make_RK_Dagger.description>
+  <Make_RK_Dagger.jobString>RK ダガーを作成中</Make_RK_Dagger.jobString>
 
-  <Make_RK_Cleaver.label>肉切り包丁を作る</Make_RK_Cleaver.label>
-  <Make_RK_Cleaver.description>肉切り包丁を作る。</Make_RK_Cleaver.description>
-  <Make_RK_Cleaver.jobString>肉切り包丁を作成中</Make_RK_Cleaver.jobString>
+  <Make_RK_OneHanded.label>RK ワンハンドソードを作る</Make_RK_OneHanded.label>
+  <Make_RK_OneHanded.description>RK ワンハンドソードを作る。</Make_RK_OneHanded.description>
+  <Make_RK_OneHanded.jobString>RK ワンハンドソードを作成中</Make_RK_OneHanded.jobString>
 
-  <Make_RK_Hockey.label>ホッケーを作る</Make_RK_Hockey.label>
-  <Make_RK_Hockey.description>ホッケーを作る。</Make_RK_Hockey.description>
-  <Make_RK_Hockey.jobString>ホッケーを作成中</Make_RK_Hockey.jobString>
+  <Make_RK_LightLance.label>RK 木製ランスを作る</Make_RK_LightLance.label>
+  <Make_RK_LightLance.description>RK 木製ランスを作る。</Make_RK_LightLance.description>
+  <Make_RK_LightLance.jobString>RK 木製ランスを作成中</Make_RK_LightLance.jobString>
 
-  <Make_RK_Fork.label>フォークを作る</Make_RK_Fork.label>
-  <Make_RK_Fork.description>フォークを作る。</Make_RK_Fork.description>
-  <Make_RK_Fork.jobString>フォークを作成中</Make_RK_Fork.jobString>
+  <Make_RK_TwoHanded.label>RK ツーハンドソードを作る</Make_RK_TwoHanded.label>
+  <Make_RK_TwoHanded.description>RK ツーハンドソードを作る。</Make_RK_TwoHanded.description>
+  <Make_RK_TwoHanded.jobString>RK ツーハンドソードを作成中</Make_RK_TwoHanded.jobString>
 
-  <Make_RK_LongSword.label>ラットキンロングソードを作る</Make_RK_LongSword.label>
-  <Make_RK_LongSword.description>ラットキンロングソードを作る。</Make_RK_LongSword.description>
-  <Make_RK_LongSword.jobString>ラットキンロングソードを作成中</Make_RK_LongSword.jobString>
+  <Make_RK_HeavyLance.label>RK ヘビーランスを作る</Make_RK_HeavyLance.label>
+  <Make_RK_HeavyLance.description>RK ヘビーランスを作る。</Make_RK_HeavyLance.description>
+  <Make_RK_HeavyLance.jobString>RK ヘビーランスを作成中</Make_RK_HeavyLance.jobString>
 
-  <Make_RK_Crossbow.label>クロスボウを作る</Make_RK_Crossbow.label>
-  <Make_RK_Crossbow.description>クロスボウを作る。</Make_RK_Crossbow.description>
-  <Make_RK_Crossbow.jobString>クロスボウを作成中</Make_RK_Crossbow.jobString>
+  <Make_RK_Axe.label>RK 斧を作る</Make_RK_Axe.label>
+  <Make_RK_Axe.description>RK 斧を作る。</Make_RK_Axe.description>
+  <Make_RK_Axe.jobString>RK 斧を作成中</Make_RK_Axe.jobString>
 
-  <Make_RK_EnhanceCrossBow.label>強化クロスボウを作る</Make_RK_EnhanceCrossBow.label>
-  <Make_RK_EnhanceCrossBow.description>強化クロスボウを作る。</Make_RK_EnhanceCrossBow.description>
-  <Make_RK_EnhanceCrossBow.jobString>強化クロスボウを作成中</Make_RK_EnhanceCrossBow.jobString>
+  <Make_RK_Cleaver.label>RK 肉切り包丁を作る</Make_RK_Cleaver.label>
+  <Make_RK_Cleaver.description>RK 肉切り包丁を作る。</Make_RK_Cleaver.description>
+  <Make_RK_Cleaver.jobString>RK 肉切り包丁を作成中</Make_RK_Cleaver.jobString>
 
-  <Make_RK_AutoCrossBow.label>機械クロスボウを作る</Make_RK_AutoCrossBow.label>
-  <Make_RK_AutoCrossBow.description>機械クロスボウを作る。</Make_RK_AutoCrossBow.description>
-  <Make_RK_AutoCrossBow.jobString>機械クロスボウを作成中</Make_RK_AutoCrossBow.jobString>
+  <Make_RK_Hockey.label>RK ホッケーを作る</Make_RK_Hockey.label>
+  <Make_RK_Hockey.description>RK ホッケーを作る。</Make_RK_Hockey.description>
+  <Make_RK_Hockey.jobString>RK ホッケーを作成中</Make_RK_Hockey.jobString>
+
+  <Make_RK_Fork.label>RK フォークを作る</Make_RK_Fork.label>
+  <Make_RK_Fork.description>RK フォークを作る。</Make_RK_Fork.description>
+  <Make_RK_Fork.jobString>RK フォークを作成中</Make_RK_Fork.jobString>
+
+  <Make_RK_LongSword.label>RK ラットキンロングソードを作る</Make_RK_LongSword.label>
+  <Make_RK_LongSword.description>RK ラットキンロングソードを作る。</Make_RK_LongSword.description>
+  <Make_RK_LongSword.jobString>RK ラットキンロングソードを作成中</Make_RK_LongSword.jobString>
+
+  <Make_RK_Crossbow.label>RK クロスボウを作る</Make_RK_Crossbow.label>
+  <Make_RK_Crossbow.description>RK クロスボウを作る。</Make_RK_Crossbow.description>
+  <Make_RK_Crossbow.jobString>RK クロスボウを作成中</Make_RK_Crossbow.jobString>
+
+  <Make_RK_EnhanceCrossBow.label>RK 強化クロスボウを作る</Make_RK_EnhanceCrossBow.label>
+  <Make_RK_EnhanceCrossBow.description>RK 強化クロスボウを作る。</Make_RK_EnhanceCrossBow.description>
+  <Make_RK_EnhanceCrossBow.jobString>RK 強化クロスボウを作成中</Make_RK_EnhanceCrossBow.jobString>
+
+  <Make_RK_AutoCrossBow.label>RK 機械クロスボウを作る</Make_RK_AutoCrossBow.label>
+  <Make_RK_AutoCrossBow.description>RK 機械クロスボウを作る。</Make_RK_AutoCrossBow.description>
+  <Make_RK_AutoCrossBow.jobString>RK 機械クロスボウを作成中</Make_RK_AutoCrossBow.jobString>
 
 
   <!-- Recipe Users: TableMachining -->

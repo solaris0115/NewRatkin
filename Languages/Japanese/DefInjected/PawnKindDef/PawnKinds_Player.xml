@@ -66,12 +66,21 @@
 
   <!-- Elite Guardener -->
 
-  <RatkinEliteGuardener.label>ラットキンエリート庭師</RatkinEliteGuardener.label>
-  <RatkinEliteGuardener.labelPlural>ラットキンエリート庭師</RatkinEliteGuardener.labelPlural>
-  <RatkinEliteGuardener.labelMale>男性 ラットキンエリート庭師</RatkinEliteGuardener.labelMale>
-  <RatkinEliteGuardener.labelMalePlural>男性 ラットキンエリート庭師</RatkinEliteGuardener.labelMalePlural>
-  <RatkinEliteGuardener.labelFemale>女性 ラットキンエリート庭師</RatkinEliteGuardener.labelFemale>
-  <RatkinEliteGuardener.labelFemalePlural>女性 ラットキンエリート庭師</RatkinEliteGuardener.labelFemalePlural>
+  <RatkinEliteGuardener.label>ラットキン近衛兵</RatkinEliteGuardener.label>
+  <RatkinEliteGuardener.labelPlural>ラットキンエリート近衛兵</RatkinEliteGuardener.labelPlural>
+  <RatkinEliteGuardener.labelMale>男性 ラットキンエリート近衛兵</RatkinEliteGuardener.labelMale>
+  <RatkinEliteGuardener.labelMalePlural>男性 ラットキンエリート近衛兵</RatkinEliteGuardener.labelMalePlural>
+  <RatkinEliteGuardener.labelFemale>女性 ラットキンエリート近衛兵</RatkinEliteGuardener.labelFemale>
+  <RatkinEliteGuardener.labelFemalePlural>女性 ラットキンエリート近衛兵</RatkinEliteGuardener.labelFemalePlural>
+
+  <!-- Knight -->
+
+  <RatkinKnight.label>ラットキン騎士</RatkinKnight.label>
+  <RatkinKnight.labelPlural>ラットキン騎士</RatkinKnight.labelPlural>
+  <RatkinKnight.labelMale>男性 ラットキン騎士</RatkinKnight.labelMale>
+  <RatkinKnight.labelMalePlural>男性 ラットキン騎士</RatkinKnight.labelMalePlural>
+  <RatkinKnight.labelFemale>女性 ラットキン騎士</RatkinKnight.labelFemale>
+  <RatkinKnight.labelFemalePlural>女性 ラットキン騎士</RatkinKnight.labelFemalePlural>
 
   <!-- Priest -->
 
