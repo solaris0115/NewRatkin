@@ -5,7 +5,21 @@
 		<defName>RatkinTech</defName>
 		<label>ratkin tech</label>
 	</ResearchTabDef>
-
+	
+	<ResearchProjectDef>
+		<defName>PiercingWeapon</defName>
+		<label>piercing weapon</label>
+		<description>무기의 관통력을 높이는 연구를 합니다.</description>
+		<tab>RatkinTech</tab>
+		<baseCost>600</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>LongBlades</li>
+		</prerequisites>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+	
 	<ResearchProjectDef>
 		<defName>Ballista</defName>
 		<label>ballista</label>
@@ -18,7 +32,7 @@
 			<li>Stonecutting</li>
 		</prerequisites>
 		<researchViewX>0</researchViewX>
-		<researchViewY>0</researchViewY>
+		<researchViewY>2</researchViewY>
 	</ResearchProjectDef>	
 	
 	<ResearchProjectDef>
@@ -30,9 +44,10 @@
 		<techLevel>Medieval</techLevel>
 		<prerequisites>
 			<li>Ballista</li>
+			<li>PiercingWeapon</li>
 		</prerequisites> 
 		<researchViewX>1</researchViewX>
-		<researchViewY>0</researchViewY>
+		<researchViewY>2</researchViewY>
 	</ResearchProjectDef>	
 		
 	<ResearchProjectDef>
@@ -46,7 +61,7 @@
 			<li>MicroelectronicsBasics</li>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>   
-		<researchViewX>1</researchViewX>
+		<researchViewX>0</researchViewX>
 		<researchViewY>1</researchViewY>
 	</ResearchProjectDef>
 	
@@ -59,9 +74,10 @@
 		<techLevel>Industrial</techLevel>
 		<prerequisites>
 			<li>MicroOptical</li>
+			<li>PiercingWeapon</li>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>   
-		<researchViewX>2</researchViewX>
+		<researchViewX>1</researchViewX>
 		<researchViewY>1</researchViewY>
 	</ResearchProjectDef>
 	
@@ -77,7 +93,7 @@
 			<li>FlechetteBullet</li>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>   
-		<researchViewX>3</researchViewX>
+		<researchViewX>2</researchViewX>
 		<researchViewY>1</researchViewY>
 	</ResearchProjectDef>
 	
@@ -92,7 +108,7 @@
 			<li>Machining</li>
 		</prerequisites>
 		<researchViewX>0</researchViewX>
-		<researchViewY>1</researchViewY>
+		<researchViewY>3</researchViewY>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -105,8 +121,8 @@
 		<prerequisites>
 			<li>RatkinClothing</li>
 		</prerequisites>
-		<researchViewX>0</researchViewX>
-		<researchViewY>2</researchViewY>
+		<researchViewX>1</researchViewX>
+		<researchViewY>3</researchViewY>
 	</ResearchProjectDef>
 	
 	<ResearchProjectTagDef>

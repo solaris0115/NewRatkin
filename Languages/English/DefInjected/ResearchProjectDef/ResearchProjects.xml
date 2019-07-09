@@ -1,8 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <PiercingWeapon.label>piercing weapon</PiercingWeapon.label>
+  <PiercingWeapon.description>Researching increases the penetration of a weapon.</PiercingWeapon.description>
+
   <Ballista.label>ballista</Ballista.label>
-  <Ballista.description>Researching a ballista. RAtkin are made for easy handling.</Ballista.description>
+  <Ballista.description>Researching a ballista. Ratkin are made for easy handling.</Ballista.description>
 
   <Advanced_BallistaBolt.label>advanced ballista bolt</Advanced_BallistaBolt.label>
   <Advanced_BallistaBolt.description>Researching a variety of ballista bolts.</Advanced_BallistaBolt.description>

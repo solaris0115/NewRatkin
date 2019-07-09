@@ -430,7 +430,7 @@
 			</li>
 		</tools>
 		<recipeMaker>
-			<researchPrerequisite>Smithing</researchPrerequisite>
+			<researchPrerequisite>PiercingWeapon</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>8</Crafting>
 			</skillRequirements>
