@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!--weapon metalic stuff Patch-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>Defs/ThingDef[defName = "Uranium" or defName="Steel" or defName="Plasteel"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Uranium" or defName="Steel" or defName="Plasteel"]/stuffProps/categories</xpath>
+				<value>
+					<li>WeaponMetallic</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

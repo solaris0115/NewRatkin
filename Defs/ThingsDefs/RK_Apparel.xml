@@ -30,11 +30,6 @@
 				<compClass>CompQuality</compClass>
 			</li>
 		</comps>
-		<apparel>
-			<tags>
-				<li>RK_Apparel</li>
-			</tags>
-		</apparel>
 		<tradeTags>
 			<li>RK_Apparel</li>
 		</tradeTags>
@@ -243,8 +238,10 @@
 				<li>Neck</li>
 			</bodyPartGroups>			
 			<tags>
+				<li>RK_Apparel</li>
 				<li>RK_1Tier</li>
 				<li>RK_Thief</li>
+				<li>RK_Worker</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Worker</li>
@@ -313,7 +310,9 @@
 				<li>Arms</li>
 			</bodyPartGroups>			
 			<tags>
+				<li>RK_Apparel</li>
 				<li>RK_1Tier</li>
+				<li>RK_Worker</li>
 				<li>RK_Thief</li>
 			</tags>
 			<defaultOutfitTags>
@@ -377,7 +376,9 @@
 				<li>UpperHead</li>
 			</bodyPartGroups>			
 			<tags>
+				<li>RK_Apparel</li>
 				<li>RK_1Tier</li>
+				<li>RK_Worker</li>
 				<li>RK_Thief</li>
 			</tags>
 			<defaultOutfitTags>
@@ -453,6 +454,7 @@
 				<li>BackPack</li>
 			</layers>
 			<tags>
+				<li>RK_Apparel</li>
 				<li>RK_CrossBack</li>
 				<li>RK_1Tier</li>
 			</tags>
@@ -508,6 +510,7 @@
 				<li>BackPack</li>
 			</layers>
 			<tags>
+				<li>RK_Apparel</li>
 				<li>RK_Backpack</li>
 				<li>RK_2Tier</li>
 			</tags>
@@ -564,6 +567,7 @@
 				<li>OnSkin</li>
 			</layers>
 			<tags>
+				<li>RK_Apparel</li>
 				<li>RK_Servant</li>
 				<li>RK_2Tier</li>
 			</tags>
@@ -790,6 +794,7 @@
 				<li>OnSkin</li>
 			</layers>
 			<tags>
+				<li>RK_Apparel</li>
 				<li>RK_Explorer</li>
 				<li>RK_2Tier</li>
 				<li>RK_Combatant</li>
@@ -904,6 +909,7 @@
 				<li>OnSkin</li>
 			</layers>
 			<tags>
+				<li>RK_Apparel</li>
 				<li>RK_Chef</li>
 				<li>RK_2Tier</li>
 			</tags>
@@ -1023,6 +1029,7 @@
 				<li>RK_2Tier</li>
 				<li>RK_Combatant</li>
 				<li>RK_Knight</li>
+				<li>RK_KnightCommander</li>
 			</tags>
 		</apparel>
 		<recipeMaker>
@@ -1082,8 +1089,10 @@
 				<li>Shell</li>
 			</layers>
 			<tags>
+				<li>RK_Apparel</li>
 				<li>RK_Ambassador</li>	
 				<li>RK_Gaurdener</li>	
+				<li>RK_Noble</li>
 				<li>RK_2Tier</li>
 			</tags>
 		</apparel>
@@ -1544,6 +1553,7 @@
 				<li>OnSkin</li>
 			</layers>
 			<tags>
+				<li>RK_Apparel</li>
 				<li>RK_Priest</li>
 				<li>RK_3Tier</li>
 			</tags>
@@ -1911,13 +1921,19 @@
 				<li>RK_FueledSmithy</li>
 				<li>RK_ElectricSmithy</li>
 			</recipeUsers>
+			<defaultIngredientFilter>
+				<disallowedThingDefs>
+					<li>Gold</li>
+					<li>Silver</li>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>		
 		</recipeMaker>
 		<costList>
 			<Steel>60</Steel>
 		</costList>
 		<costStuffCount>100</costStuffCount>
 		<stuffCategories>
-			<li>Metallic</li>
+			<li>WeaponMetallic</li>
 		</stuffCategories>
 		<techLevel>Industrial</techLevel>
 		<thingCategories>
@@ -1961,6 +1977,7 @@
 				<li>RK_Melee</li>
 				<li>RK_Knight</li>
 				<li>RK_2Tier</li>
+				<li>RK_KnightCommander</li>
 			</tags>
 		</apparel>
 		<followStuffColor>True</followStuffColor>
@@ -1980,7 +1997,7 @@
 		</costList>
 		<costStuffCount>40</costStuffCount>
 		<stuffCategories>
-			<li>Metallic</li>
+			<li>WeaponMetallic</li>
 		</stuffCategories>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
@@ -2022,6 +2039,12 @@
 				<li>RK_FueledSmithy</li>
 				<li>RK_ElectricSmithy</li>
 			</recipeUsers>
+			<defaultIngredientFilter>
+				<disallowedThingDefs>
+					<li>Gold</li>
+					<li>Silver</li>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>		
 		</recipeMaker>
 		<followStuffColor>true</followStuffColor>
 	</ThingDef>
@@ -2040,7 +2063,7 @@
 		</costList>
 		<costStuffCount>40</costStuffCount>
 		<stuffCategories>
-			<li>Metallic</li>
+			<li>WeaponMetallic</li>
 		</stuffCategories>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
@@ -2073,6 +2096,7 @@
 				<li>RK_Melee</li>
 				<li>RK_Knight</li>
 				<li>RK_2Tier</li>
+				<li>RK_KnightCommander</li>
 			</tags>
 		</apparel>
 		<recipeMaker>
@@ -2082,6 +2106,12 @@
 				<li>RK_FueledSmithy</li>
 				<li>RK_ElectricSmithy</li>
 			</recipeUsers>
+			<defaultIngredientFilter>
+				<disallowedThingDefs>
+					<li>Gold</li>
+					<li>Silver</li>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>		
 		</recipeMaker>
 		<followStuffColor>true</followStuffColor>
 	</ThingDef>
@@ -2100,7 +2130,7 @@
 		</costList>
 		<costStuffCount>40</costStuffCount>
 		<stuffCategories>
-			<li>Metallic</li>
+			<li>WeaponMetallic</li>
 		</stuffCategories>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
@@ -2142,6 +2172,12 @@
 				<li>RK_FueledSmithy</li>
 				<li>RK_ElectricSmithy</li>
 			</recipeUsers>
+			<defaultIngredientFilter>
+				<disallowedThingDefs>
+					<li>Gold</li>
+					<li>Silver</li>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>		
 		</recipeMaker>
 		<followStuffColor>true</followStuffColor>
 	</ThingDef>
@@ -2305,7 +2341,10 @@
 		</tradeTags>
 	</ThingDef>
 	
-	
+	<StuffCategoryDef>
+		<defName>WeaponMetallic</defName>
+		<label>weapon metallic</label>
+	</StuffCategoryDef>
 	
 
 

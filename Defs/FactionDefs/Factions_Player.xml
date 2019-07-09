@@ -85,17 +85,17 @@
 			<li>
 				<!-- 충격과 공포 -->
 				<kindDef>Combat</kindDef>
-				<commonality>20</commonality>
+				<commonality>10</commonality>
 				<options>
 					<RatkinKnight>20</RatkinKnight>
-					<RatkinEliteGuardener>15</RatkinEliteGuardener>
-					<!-- <RatkinEliteSoldier>5</RatkinEliteSoldier> -->
+					<RatkinEliteGuardener>10</RatkinEliteGuardener>
+					<RatkinKnightCommander>10</RatkinKnightCommander>
 				</options>
 			</li>
+			<!-- 일반 -->
 			<li>
-				<!-- 일반 -->
 				<kindDef>Combat</kindDef>
-				<commonality>30</commonality>
+				<commonality>35</commonality>
 				<options>
 					<RatkinCombatant>20</RatkinCombatant>
 					<RatkinSoldier>15</RatkinSoldier>
@@ -103,8 +103,8 @@
 					<RatkinKnight>10</RatkinKnight>
 				</options>
 			</li>
+			<!-- 근접과 공성 -->
 			<li>
-				<!-- 근접과 공성 -->
 				<kindDef>Combat</kindDef>
 				<commonality>20</commonality>
 				<options>

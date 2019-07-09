@@ -64,12 +64,6 @@
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>RatkinColonist</li>
-							</kindDefs>
-							<chance>50.0</chance>
-						</li>
-						<li>
-							<kindDefs>
 								<li>RatkinServant</li>
 							</kindDefs>
 							<chance>40.0</chance>
@@ -93,12 +87,6 @@
 				</li>
 				<li>
 					<pawnKindEntries>
-						<li>
-							<kindDefs>
-								<li>RatkinColonist</li>
-							</kindDefs>
-							<chance>20.0</chance>
-						</li>
 						<li>
 							<kindDefs>
 								<li>RatkinServant</li>

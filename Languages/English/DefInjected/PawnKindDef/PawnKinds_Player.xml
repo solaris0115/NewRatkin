@@ -91,6 +91,16 @@
   <RatkinKnight.labelFemalePlural>female ratkin knights</RatkinKnight.labelFemalePlural>
 
 
+  <!-- 랫킨 기사 단장 -->
+
+  <RatkinKnightCommander.label>ratkin knight commander</RatkinKnightCommander.label>
+  <RatkinKnightCommander.labelPlural>ratkin knight commanders</RatkinKnightCommander.labelPlural>
+  <RatkinKnightCommander.labelMale>male ratkin knight commander</RatkinKnightCommander.labelMale>
+  <RatkinKnightCommander.labelMalePlural>male ratkin knight commanders</RatkinKnightCommander.labelMalePlural>
+  <RatkinKnightCommander.labelFemale>female ratkin knight commander</RatkinKnightCommander.labelFemale>
+  <RatkinKnightCommander.labelFemalePlural>female ratkin knight commanders</RatkinKnightCommander.labelFemalePlural>
+
+
   <!-- 랫킨 사제 -->
 
   <RatkinPriest.label>ratkin Priest</RatkinPriest.label>

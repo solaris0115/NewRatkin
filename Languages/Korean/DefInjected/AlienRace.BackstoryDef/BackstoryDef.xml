@@ -19,7 +19,7 @@
 
   <Ratkin_CountryKid.title>랫킨 시골아이</Ratkin_CountryKid.title>
   <Ratkin_CountryKid.titleShort>시골아이</Ratkin_CountryKid.titleShort>
-  <Ratkin_CountryKid.baseDescription>[PAWN_nameDef]의 조부모는 농부였으며 부모님도 농부입니다. 그리고 [PAWN_pronoun] 또한 가족 전통에 따라 농부가 될것입니다. 앞으로도 이어질겁니다.</Ratkin_CountryKid.baseDescription>
+  <Ratkin_CountryKid.baseDescription>[PAWN_nameDef]의 조부모는 농부였으며 부모님도 농부입니다. [PAWN_pronoun](은)는 자연속에서 자라며 그 누구보다도 순수하게 자랐습니다. 운명의 순간이 오기 전까지는..</Ratkin_CountryKid.baseDescription>
 
 
   <!-- 꼬마목동 -->
@@ -237,6 +237,13 @@
   <Ratkin_Knight.title>랫킨 기사</Ratkin_Knight.title>
   <Ratkin_Knight.titleShort>기사</Ratkin_Knight.titleShort>
   <Ratkin_Knight.baseDescription>[PAWN_nameDef]은 랫킨 왕국의 기사입니다. 그들은 왕국을 지탱하는 기둥입니다.</Ratkin_Knight.baseDescription>
+
+
+  <!-- 기사단장 -->
+
+  <Ratkin_KnightCommander.title>랫킨 기사 단장</Ratkin_KnightCommander.title>
+  <Ratkin_KnightCommander.titleShort>단장</Ratkin_KnightCommander.titleShort>
+  <Ratkin_KnightCommander.baseDescription>[PAWN_nameDef]은 선택받은 랫킨 왕국의 기사입니다. 기사단 전통에 따라 기사단장의 후계자는 시골 출신의 기사들 중 선택을 하게 됩니다.</Ratkin_KnightCommander.baseDescription>
 
 
   <!-- 교사 -->

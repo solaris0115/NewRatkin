@@ -285,7 +285,7 @@
 		<equippedAngleOffset>-120</equippedAngleOffset>
 		<costStuffCount>120</costStuffCount>
 		<stuffCategories>
-			<li>Metallic</li>
+			<li>WeaponMetallic</li>
 		</stuffCategories>
 		<costList>
 			<Steel>50</Steel>
@@ -386,10 +386,11 @@
 		<techLevel>Medieval</techLevel>
 		<weaponTags Inherit="false">
 			<li>RK_Knight</li>
+			<li>RK_HeavyLance</li>
 		</weaponTags>
 		<costStuffCount>150</costStuffCount>
 		<stuffCategories>
-			<li>Metallic</li>
+			<li>WeaponMetallic</li>
 		</stuffCategories>
 		<costList>
 			<Steel>50</Steel>

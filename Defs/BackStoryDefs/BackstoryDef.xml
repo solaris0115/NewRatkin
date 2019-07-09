@@ -133,6 +133,7 @@
 			<li>RatkinServant</li>
 			<li>RatkinSoldier</li>
 			<li>RatkinKnight</li>
+			<li>RatkinKnightCommander</li>
 		</spawnCategories>
 	</AlienRace.BackstoryDef>
 	<!-- 꼬마목동 -->
@@ -1303,23 +1304,62 @@
 		<forcedTraits>
 			<li>
 				<defName>Brawler</defName>
-				<chance>30</chance>
+				<chance>0.3</chance>
 			</li>
 			<li>
 				<defName>Tough</defName>
-				<chance>15</chance>
+				<chance>0.3</chance>
 			</li>
 			<li>
 				<defName>SpeedOffset</defName>
 				<degree>1</degree>
-				<chance>10</chance>
+				<chance>0.2</chance>
 			</li>
 			<li>
 				<defName>SpeedOffset</defName>
 				<degree>2</degree>
-				<chance>10</chance>
+				<chance>0.2</chance>
 			</li>
 		</forcedTraits>
+	</AlienRace.BackstoryDef>
+	
+	<!-- 기사단장 -->
+	<AlienRace.BackstoryDef ParentName="BaseRatkinBackStory">
+		<defName>Ratkin_KnightCommander</defName>
+		<title>Ratkin Knight commander</title>
+		<titleShort>commander</titleShort>
+		<baseDescription>[PAWN_nameDef]은 선택받은 랫킨 왕국의 기사입니다. 기사단 전통에 따라 기사단장의 후계자는 시골 출신의 기사들 중 선택을 하게 됩니다.</baseDescription>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Melee</defName>
+				<amount>6</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>Mining</li>
+		</workDisables>
+		<spawnCategories>
+			<li>RatkinKnightCommander</li>
+		</spawnCategories>
+		<forcedTraits Inherit="False">
+			<li>
+				<defName>Faith</defName>
+				<chance>100</chance>
+			</li>
+			<li>
+				<defName>Tough</defName>
+				<chance>0.3</chance>
+			</li>
+		</forcedTraits>		
+		<disallowedTraits>
+			<li>
+				<defName>Wimp</defName>
+				<chance>100</chance>
+			</li>
+		</disallowedTraits>
 	</AlienRace.BackstoryDef>
 	
 	<!-- 교사 -->
@@ -1793,12 +1833,7 @@
 				<degree>2</degree>
 			</li>
 			<li>
-				<defName>Kind</defName>
-				<chance>50</chance>
-			</li>
-			<li>
-				<defName>Abrasive</defName>
-				<chance>50</chance>
+				<defName>Faith</defName>
 			</li>
 		</forcedTraits>
 		<disallowedTraits Inherit="False">

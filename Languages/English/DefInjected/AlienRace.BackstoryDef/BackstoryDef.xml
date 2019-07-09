@@ -19,7 +19,7 @@
 
   <Ratkin_CountryKid.title>Ratkin country kid</Ratkin_CountryKid.title>
   <Ratkin_CountryKid.titleShort>country kid</Ratkin_CountryKid.titleShort>
-  <Ratkin_CountryKid.baseDescription>[PAWN_nameDef]'s grandparents were farmers and parents were farmers too. And [PAWN_pronoun] also be a farmer along with his family. Forever.</Ratkin_CountryKid.baseDescription>
+  <Ratkin_CountryKid.baseDescription>[PAWN_nameDef]'s grandparents were farmers and parents were farmers too. [PAWN_pronoun] grew up with nature and was pure above all else. Until the moment of fate.</Ratkin_CountryKid.baseDescription>
 
 
   <!-- 꼬마목동 -->
@@ -237,6 +237,13 @@
   <Ratkin_Knight.title>Ratkin Knight</Ratkin_Knight.title>
   <Ratkin_Knight.titleShort>knight</Ratkin_Knight.titleShort>
   <Ratkin_Knight.baseDescription>[PAWN_nameDef] is knight of Ratkinia. They are the strong buttresses of the kingdom.</Ratkin_Knight.baseDescription>
+
+
+  <!-- 기사단장 -->
+
+  <Ratkin_KnightCommander.title>Ratkin Knight commander</Ratkin_KnightCommander.title>
+  <Ratkin_KnightCommander.titleShort>commander</Ratkin_KnightCommander.titleShort>
+  <Ratkin_KnightCommander.baseDescription>[PAWN_nameDef]is the chosen knight of the Ratkin Kingdom. In accordance with the tradition of knights, the master of knighthood will be chosen from among those from the countryside.</Ratkin_KnightCommander.baseDescription>
 
 
   <!-- 교사 -->
