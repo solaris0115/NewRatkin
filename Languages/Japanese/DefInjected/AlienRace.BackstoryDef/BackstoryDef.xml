@@ -133,7 +133,7 @@
 
   <Ratkin_PettyTheft.title>ラットキンせこい泥棒</Ratkin_PettyTheft.title>
   <Ratkin_PettyTheft.titleShort>せこい泥棒</Ratkin_PettyTheft.titleShort>
-  <Ratkin_PettyTheft.baseDescription>[PAWN_nameDef]にはちょっとしたものを盗む癖がありました。 [PAWN_pronoun]の病的な盗み癖は、最後は捕まって拷問を受けて尻尾を失い奴隷に落とされましたが、運ばれる途中で襲撃を受けて、どさくさに紛れて逃げ出すことができました。</Ratkin_PettyTheft.baseDescription>
+  <Ratkin_PettyTheft.baseDescription>[PAWN_nameDef]にはちょっとしたものを盗む癖がありました。 [PAWN_pronoun]の病的な盗み癖は、最後は捕まって拷問を受けて尻尾を失い奴隷に落とされましたが、運ばれる途中で襲撃を受け、どさくさに紛れて逃げ出すことができました。</Ratkin_PettyTheft.baseDescription>
 
   <!-- Adult -->
 
