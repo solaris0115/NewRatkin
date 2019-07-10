@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/jhjjgu0115/RimWorldModGuide/wiki">
-    <img src="https://img.shields.io/badge/NewRatkin-Wiki-4BC51D.svg?style=flat" />
+    <img src="https://img.shields.io/badge/NewRatkin-1.6v-4BC51D.svg?style=flat" />
   </a>
 </p>
 
