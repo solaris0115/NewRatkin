@@ -82,6 +82,15 @@
   <RatkinKnight.labelFemale>女性 ラットキン騎士</RatkinKnight.labelFemale>
   <RatkinKnight.labelFemalePlural>女性 ラットキン騎士</RatkinKnight.labelFemalePlural>
 
+  <!-- Knight Commander -->
+
+  <RatkinKnightCommander.label>ラットキン騎士commander</RatkinKnightCommander.label>
+  <RatkinKnightCommander.labelPlural>ラットキン騎士団長</RatkinKnightCommander.labelPlural>
+  <RatkinKnightCommander.labelMale>男性 ラットキン騎士団長</RatkinKnightCommander.labelMale>
+  <RatkinKnightCommander.labelMalePlural>男性 ラットキン騎士団長</RatkinKnightCommander.labelMalePlural>
+  <RatkinKnightCommander.labelFemale>女性 ラットキン騎士団長</RatkinKnightCommander.labelFemale>
+  <RatkinKnightCommander.labelFemalePlural>女性 ラットキン騎士団長</RatkinKnightCommander.labelFemalePlural>
+
   <!-- Priest -->
 
   <RatkinPriest.label>ラットキン司祭</RatkinPriest.label>
