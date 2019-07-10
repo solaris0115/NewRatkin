@@ -2,6 +2,6 @@
 <LanguageData>
 
   <Faith.degreeDatas.faith.label>信念</Faith.degreeDatas.faith.label>
-  <Faith.degreeDatas.faith.description>{PAWN_nameDef}は、堅固な信念を持っています。例えどのような状況でも{PAWN_objective}の信念は変わりません。</Faith.degreeDatas.faith.description>
+  <Faith.degreeDatas.faith.description>{PAWN_nameDef}は、堅固な信念を持っています。例えどのような状況でも{PAWN_objective}支える信念は変わりません。</Faith.degreeDatas.faith.description>
 
 </LanguageData>
