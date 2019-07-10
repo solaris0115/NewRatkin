@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <PiercingWeapon.label>貫通武器</PiercingWeapon.label>
+  <PiercingWeapon.description>貫通力を高めた近接戦闘用の武器を研究して、馬上槍(ランス)を作れるようになります。</PiercingWeapon.description>
+
   <Ballista.label>バリスタ</Ballista.label>
   <Ballista.description>バリスタの研究をします。ラットキン向けに取り扱いやすく作られています。</Ballista.description>
 
