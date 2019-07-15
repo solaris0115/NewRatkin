@@ -325,7 +325,9 @@
 					<li>RK_HeadBand</li>
 					
 					<li>RK_Plate</li>
-					<li>RK_PlateHelm</li>
+					<li>RK_PlateHelmA</li>
+					<li>RK_PlateHelmB</li>
+					<li>RK_PlateHelmC</li>
 
 
 					<li>RK_SantaRobe</li>
@@ -367,6 +369,11 @@
 					<li>
 						<projects>
 							<li>Advanced_BallistaBolt</li>
+						</projects>
+					</li>
+					<li>
+						<projects>
+							<li>PiercingWeapon</li>
 						</projects>
 					</li>
 					<li>
