@@ -6,14 +6,14 @@
 		<description>설치류 유전자와 흡사한 인간입니다. 출처는 알 수 없으나 주로 농경사회를 기반으로 한 왕정을 이루고 살고 있습니다. 여성 개체가 남성보다 많으며 외부에서 보았을때 개체의 성별 구분이 힘듭니다.</description>
 		<alienRace>
 			<generalSettings>
+				<!-- 기본 설정 -->
 				<maleGenderProbability>0.1</maleGenderProbability>
 				<useOnlyPawnkindBackstories>true</useOnlyPawnkindBackstories>
 				<immuneToAge>true</immuneToAge>
 				<canLayDown>true</canLayDown>   
 				<maxDamageForSocialfight>6</maxDamageForSocialfight>
 				<immuneToXenophobia>false</immuneToXenophobia>
-				<humanRecipeImport>true</humanRecipeImport>
-
+				<humanRecipeImport>true</humanRecipeImport>				
 				<alienPartGenerator>
 					<!-- 얼굴 및 신체 바리에이션 -->
 					<aliencrowntypes>
@@ -28,7 +28,7 @@
 					<!-- 성별 별개사용 유무 -->
 					<useGenderedHeads>false</useGenderedHeads>
 					<useGenderedBodies>false</useGenderedBodies>
-					<!--색상관련 -->
+					<!-- 색상관련 -->
 					<alienskincolorgen Class="ColorGenerator_Options">
 						<options>
 							<li>
@@ -39,7 +39,6 @@
 					</alienskincolorgen> 
 					<alienhaircolorgen Class="ColorGenerator_Options">
 						<options>
-							
 							<!-- 다크브라운3:2:0.5 -->								
 							<li>
 								<weight>15</weight>
@@ -57,7 +56,8 @@
 								<weight>8</weight>
 								<min>(0.1,0.0,0)</min>
 								<max>(0.2,0.1,0.05)</max>
-							</li>	<!-- 블론드 -->
+							</li>
+							<!-- 블론드 -->
 							<li>
 								<weight>8</weight>
 								<min>(0.9,0.85,0.7)</min>
@@ -318,12 +318,12 @@
 					<li>RK_RibbonHairBand</li>
 					<li>RK_SistersDerss</li>
 					<li>RK_SistersVeil</li>
-					
+
 					<li>RK_Sack</li>
 					<li>RK_BattleSuit</li>
 					<li>RK_Mask</li>
 					<li>RK_HeadBand</li>
-					
+
 					<li>RK_Plate</li>
 					<li>RK_PlateHelmA</li>
 					<li>RK_PlateHelmB</li>
@@ -335,8 +335,8 @@
 					<li>RK_SantaSack</li>					
 				</apparelList>
 				<!-- <whiteApparelList> -->
-					<!-- <li>Apparel_ShieldBelt</li> -->
-					<!-- <li>Apparel_SmokepopBelt</li> -->
+				<!-- <li>Apparel_ShieldBelt</li> -->
+				<!-- <li>Apparel_SmokepopBelt</li> -->
 				<!-- </whiteApparelList> -->
 				<weaponList>
 					<li>RK_Axe</li>
@@ -353,8 +353,8 @@
 					<li>RK_FlechetteRifle</li>
 					<li>RK_FlechetteSniperRifle</li>
 					<li>RK_PrototypeRUG</li>
-					
-					
+
+
 					<li>RK_Dagger</li>
 					<li>RK_OneHanded</li>
 					<li>RK_LightLance</li>

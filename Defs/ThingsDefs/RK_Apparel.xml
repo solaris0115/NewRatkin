@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+	<ThingCategoryDef>
+		<defName>RK_Apparel</defName>
+		<label>ratkin apparel</label>
+		<parent>Apparel</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>RK_Headgear</defName>
+		<label>ratkin headgear</label>
+		<parent>Headgear</parent>
+	</ThingCategoryDef>
+
 	<ThingDef Class="NewRatkin.CustomThingDef" Name="RK_ApparelBase" Abstract="True">	
 		<followStuffColor>false</followStuffColor>
 		<thingClass>Apparel</thingClass>
@@ -45,11 +57,14 @@
 				<li>RK_HandTailoringBench</li>
 			</recipeUsers>
 			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
-		</recipeMaker>
+		</recipeMaker>		
+		<thingCategories>
+			<li>RK_Apparel</li>
+		</thingCategories>
 	</ThingDef>
 	<ThingDef Class="NewRatkin.CustomThingDef" Name="RK_HatMakeableBase" ParentName="RK_ApparelMakeableBase" Abstract="True">
 		<thingCategories>
-			<li>Headgear</li>
+			<li>RK_Headgear</li>
 		</thingCategories>
 	</ThingDef>
 
@@ -84,9 +99,6 @@
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
-		<thingCategories>
-			<li>Apparel</li>
-		</thingCategories>
 		<equippedStatOffsets>
 			<PlantWorkSpeed>0.05</PlantWorkSpeed>
 			<CookSpeed>0.05</CookSpeed>
@@ -140,9 +152,6 @@
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
-		<thingCategories>
-			<li>Apparel</li>
-		</thingCategories>
 		<apparel>
 			<bodyPartGroups>
 				<li>Torso</li>
@@ -222,9 +231,6 @@
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
-		<thingCategories>
-			<li>Apparel</li>
-		</thingCategories>
 		<statBases>
 			<MaxHitPoints>90</MaxHitPoints>
 			<WorkToMake>2500</WorkToMake>
@@ -289,9 +295,6 @@
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
-		<thingCategories>
-			<li>Apparel</li>
-		</thingCategories>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
 			<WorkToMake>5500</WorkToMake>
@@ -360,9 +363,6 @@
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
-		<thingCategories>
-			<li>Apparel</li>
-		</thingCategories>
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
 			<WorkToMake>2500</WorkToMake>
@@ -430,9 +430,6 @@
 		<costList>
 			<Steel>5</Steel>
 		</costList>
-		<thingCategories>
-			<li>Apparel</li>
-		</thingCategories>
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
 			<WorkToMake>3500</WorkToMake>
@@ -484,9 +481,6 @@
 		<costList>
 			<Steel>10</Steel>
 		</costList>
-		<thingCategories>
-			<li>Apparel</li>
-		</thingCategories>
 		<statBases>
 			<MaxHitPoints>150</MaxHitPoints>
 			<WorkToMake>5500</WorkToMake>
@@ -540,10 +534,7 @@
 		<stuffCategories>
 			<li>Fabric</li>
 			<li>Leathery</li>
-		</stuffCategories>
-		<thingCategories>
-			<li>Apparel</li>
-		</thingCategories>		
+		</stuffCategories>	
 		<equippedStatOffsets>
 			<TailoringSpeed>0.1</TailoringSpeed>
 			<CookSpeed>0.05</CookSpeed>
@@ -641,9 +632,6 @@
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
-		<thingCategories>
-			<li>Apparel</li>
-		</thingCategories>
 		<statBases>
 			<MaxHitPoints>150</MaxHitPoints>
 			<WorkToMake>7500</WorkToMake>
@@ -700,9 +688,6 @@
 			<Steel>25</Steel>
 		</costList>
 		<techLevel>Industrial</techLevel>
-		<thingCategories>
-			<li>Apparel</li>
-		</thingCategories>
 		<statBases>
 			<MaxHitPoints>65</MaxHitPoints>
 			<WorkToMake>4000</WorkToMake>
@@ -758,9 +743,6 @@
 			<li>Leathery</li>
 		</stuffCategories>
 		<techLevel>Industrial</techLevel>
-		<thingCategories>
-			<li>Apparel</li>
-		</thingCategories>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToMake>8000</WorkToMake>
@@ -816,9 +798,6 @@
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
-		<thingCategories>
-			<li>Apparel</li>
-		</thingCategories>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
 			<WorkToMake>4000</WorkToMake>
@@ -875,9 +854,6 @@
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
-		<thingCategories>
-			<li>Apparel</li>
-		</thingCategories>
 		<techLevel>Industrial</techLevel>
 		<statBases>
 			<MaxHitPoints>180</MaxHitPoints>
@@ -933,9 +909,6 @@
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
-		<thingCategories>
-			<li>Apparel</li>
-		</thingCategories>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<WorkToMake>4000</WorkToMake>
@@ -988,9 +961,6 @@
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
-		<thingCategories>
-			<li>Apparel</li>
-		</thingCategories>
 		<techLevel>Industrial</techLevel>
 		<statBases>
 			<MaxHitPoints>240</MaxHitPoints>
@@ -1056,9 +1026,6 @@
 			<li>Leathery</li>
 		</stuffCategories>
 		<techLevel>Industrial</techLevel>
-		<thingCategories>
-			<li>Apparel</li>
-		</thingCategories>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToMake>10000</WorkToMake>
@@ -1122,9 +1089,6 @@
 			<li>Leathery</li>
 		</stuffCategories>
 		<techLevel>Industrial</techLevel>
-		<thingCategories>
-			<li>Apparel</li>
-		</thingCategories>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToMake>8000</WorkToMake>
@@ -1177,9 +1141,6 @@
 			<li>Leathery</li>
 		</stuffCategories>
 		<techLevel>Industrial</techLevel>
-		<thingCategories>
-			<li>Apparel</li>
-		</thingCategories>
 		<statBases>
 			<MaxHitPoints>280</MaxHitPoints>
 			<WorkToMake>35000</WorkToMake>
@@ -1300,9 +1261,6 @@
 			<li>Leathery</li>
 		</stuffCategories>
 		<techLevel>Industrial</techLevel>
-		<thingCategories>
-			<li>Apparel</li>
-		</thingCategories>
 		<statBases>
 			<MaxHitPoints>135</MaxHitPoints>
 			<WorkToMake>15000</WorkToMake>
@@ -1362,9 +1320,6 @@
 			<li>Leathery</li>
 		</stuffCategories>
 		<techLevel>Industrial</techLevel>
-		<thingCategories>
-			<li>Apparel</li>
-		</thingCategories>
 		<statBases>
 			<MaxHitPoints>135</MaxHitPoints>
 			<WorkToMake>15000</WorkToMake>
@@ -1520,9 +1475,6 @@
 			<li>Leathery</li>
 		</stuffCategories>
 		<techLevel>Industrial</techLevel>
-		<thingCategories>
-			<li>Apparel</li>
-		</thingCategories>
 		<statBases>
 			<MaxHitPoints>135</MaxHitPoints>
 			<WorkToMake>20000</WorkToMake>
@@ -1629,9 +1581,6 @@
 			<Cloth>100</Cloth>
 		</costList>
 		<techLevel>Industrial</techLevel>
-		<thingCategories>
-			<li>Apparel</li>
-		</thingCategories>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToMake>15000</WorkToMake>
@@ -1688,9 +1637,6 @@
 			<li>Fabric</li>
 		</stuffCategories>
 		<techLevel>Industrial</techLevel>
-		<thingCategories>
-			<li>Apparel</li>
-		</thingCategories>
 		<statBases>
 			<MaxHitPoints>240</MaxHitPoints>
 			<WorkToMake>8000</WorkToMake>
@@ -1745,9 +1691,6 @@
 			<li>Leathery</li>
 		</stuffCategories>
 		<techLevel>Industrial</techLevel>
-		<thingCategories>
-			<li>Apparel</li>
-		</thingCategories>
 		<statBases>
 			<MaxHitPoints>280</MaxHitPoints>
 			<WorkToMake>35000</WorkToMake>
@@ -1936,9 +1879,6 @@
 			<li>WeaponMetallic</li>
 		</stuffCategories>
 		<techLevel>Industrial</techLevel>
-		<thingCategories>
-			<li>Apparel</li>
-		</thingCategories>
 		<statBases>
 			<MaxHitPoints>280</MaxHitPoints>
 			<WorkToMake>35000</WorkToMake>
@@ -2201,9 +2141,6 @@
 			<li>Leathery</li>
 		</stuffCategories>
 		<techLevel>Industrial</techLevel>
-		<thingCategories>
-			<li>Apparel</li>
-		</thingCategories>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToMake>10000</WorkToMake>
@@ -2255,9 +2192,6 @@
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
-		<thingCategories>
-			<li>Apparel</li>
-		</thingCategories>
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
 			<WorkToMake>2500</WorkToMake>
@@ -2308,9 +2242,6 @@
 			<li>Fabric</li>
 		</stuffCategories>
 		<techLevel>Industrial</techLevel>
-		<thingCategories>
-			<li>Apparel</li>
-		</thingCategories>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToMake>8000</WorkToMake>
