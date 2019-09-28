@@ -24,21 +24,21 @@ namespace NewRatkin
         }
         protected override bool TryExecuteWorker(IncidentParms parms)
         {
-            //Log.Message("IncidentWorker_RatkinGuerrillaTunner: "+ parms.points);
-            Map map = (Map)parms.target;
-            Thing t = SpawnTunnels(map, parms);
-            if (t != null)
+            Map map = (Map)parms.target;        //현재 대상 맵 =>C#문법 타입 변경
+            Thing t = SpawnTunnels(map, parms); //맵 정보를 가지고 터널 생성 후 해당 터널을 캐치
+
+            if (t != null) //터널 생성후 결과가 캐치된 터널이 없으면 이벤트 실행 불발
             {
-                SendStandardLetter(t, null, new string[0]);
+                SendStandardLetter(t, null, new string[0]); //이벤트 알림 UI에 전달
                 Find.TickManager.slower.SignalForceNormalSpeedShort();
                 return true;
             }
-            return false;
+            return false;       
         }
         private Thing SpawnTunnels(Map map, IncidentParms parms)
         {
             IntVec3 loc;
-            if (!RatkinTunnelCellFinder.FindPowerPlantNearCell(out loc, map))
+            if (!RatkinTunnelCellFinder.FindPowerPlantNearCell(out loc, map))   //발전 시설이 없다면 터널을 생성하지 않는다.
             {
                 return null;
             }
