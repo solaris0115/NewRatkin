@@ -380,17 +380,11 @@
 						<projects>
 							<li>MicroOptical</li>
 						</projects>
-						<apparelList>
-							<li>RK_ResearchGlasses</li>
-						</apparelList>
 					</li>
 					<li>
 						<projects>
 							<li>FlechetteBullet</li>
 						</projects>
-						<apparelList>
-							<li>RK_ResearchGlasses</li>
-						</apparelList>
 					</li>
 					<li>
 						<projects>
@@ -401,17 +395,11 @@
 						<projects>
 							<li>HighClassClothing</li>
 						</projects>
-						<apparelList>
-							<li>RK_ResearchGlasses</li>
-						</apparelList>
 					</li>
 					<li>
 						<projects>
 							<li>PulseTech</li>
 						</projects>
-						<apparelList>
-							<li>RK_ResearchGlasses</li>
-						</apparelList>
 					</li>
 				</researchList>
 			</raceRestriction>
@@ -433,29 +421,24 @@
 			<ImmunityGainSpeed>1.10</ImmunityGainSpeed>
 			<CarryingCapacity>45</CarryingCapacity>
 			<PainShockThreshold>0.7</PainShockThreshold>
-
 			<ToxicSensitivity>0.9</ToxicSensitivity>
 			<EatingSpeed>1.1</EatingSpeed>
-
 			<MeatAmount>35</MeatAmount>
 			<LeatherAmount>30</LeatherAmount>
-
 			<!-- 전투 -->
 			<MeleeDodgeChance>1.15</MeleeDodgeChance>
 			<AimingDelayFactor>1.18</AimingDelayFactor>
-
 			<!-- 사회 -->
 			<NegotiationAbility>0.85</NegotiationAbility>
 			<SocialImpact>1.07</SocialImpact>		
-
 			<!-- 작업 -->
 			<MiningSpeed>1.1</MiningSpeed>
 			<MiningYield>1.05</MiningYield>
 			<PlantWorkSpeed>1.10</PlantWorkSpeed>
 			<HuntingStealth>1.15</HuntingStealth>
-
+			<!-- 테크 -->
 			<ConstructionSpeed>0.9</ConstructionSpeed>
-			<ResearchSpeed>0.9</ResearchSpeed>
+			<ResearchSpeed>1.0</ResearchSpeed>
 		</statBases>
 		<tools>
 			<li>
