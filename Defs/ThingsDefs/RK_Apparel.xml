@@ -695,7 +695,7 @@
 			<EquipDelay>0.5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<ResearchSpeed>0.3</ResearchSpeed>
+			<ResearchSpeed>0.4</ResearchSpeed>
 			<MedicalTendQuality>0.05</MedicalTendQuality>
 			<MedicalSurgerySuccessChance>0.05</MedicalSurgerySuccessChance>
 		</equippedStatOffsets>

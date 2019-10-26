@@ -438,7 +438,7 @@
 			<HuntingStealth>1.15</HuntingStealth>
 			<!-- 테크 -->
 			<ConstructionSpeed>0.9</ConstructionSpeed>
-			<ResearchSpeed>1.0</ResearchSpeed>
+			<ResearchSpeed>0.8</ResearchSpeed>
 		</statBases>
 		<tools>
 			<li>
