@@ -334,10 +334,10 @@
 					<li>RK_SantaHat</li>
 					<li>RK_SantaSack</li>					
 				</apparelList>
-				<!-- <whiteApparelList> -->
-				<!-- <li>Apparel_ShieldBelt</li> -->
-				<!-- <li>Apparel_SmokepopBelt</li> -->
-				<!-- </whiteApparelList> -->
+				<whiteApparelList>
+					<li>Apparel_ShieldBelt</li>
+					<li>Apparel_SmokepopBelt</li>
+				</whiteApparelList>
 				<weaponList>
 					<li>RK_Axe</li>
 					<li>RK_Cleaver</li>
@@ -361,46 +361,46 @@
 					<li>RK_HeavyLance</li>
 				</weaponList>
 				<researchList>
-					<li>
-						<projects>
-							<li>Ballista</li>
-						</projects>
-					</li>
-					<li>
-						<projects>
-							<li>Advanced_BallistaBolt</li>
-						</projects>
-					</li>
-					<li>
-						<projects>
-							<li>PiercingWeapon</li>
-						</projects>
-					</li>
-					<li>
-						<projects>
-							<li>MicroOptical</li>
-						</projects>
-					</li>
-					<li>
-						<projects>
-							<li>FlechetteBullet</li>
-						</projects>
-					</li>
-					<li>
-						<projects>
-							<li>RatkinClothing</li>
-						</projects>
-					</li>
-					<li>
-						<projects>
-							<li>HighClassClothing</li>
-						</projects>
-					</li>
-					<li>
-						<projects>
-							<li>PulseTech</li>
-						</projects>
-					</li>
+					<!-- <li> -->
+					<!-- <projects> -->
+					<!-- <li>Ballista</li> -->
+					<!-- </projects> -->
+					<!-- </li> -->
+					<!-- <li> -->
+					<!-- <projects> -->
+					<!-- <li>Advanced_BallistaBolt</li> -->
+					<!-- </projects> -->
+					<!-- </li> -->
+					<!-- <li> -->
+					<!-- <projects> -->
+					<!-- <li>PiercingWeapon</li> -->
+					<!-- </projects> -->
+					<!-- </li> -->
+					<!-- <li> -->
+					<!-- <projects> -->
+					<!-- <li>MicroOptical</li> -->
+					<!-- </projects> -->
+					<!-- </li> -->
+					<!-- <li> -->
+					<!-- <projects> -->
+					<!-- <li>FlechetteBullet</li> -->
+					<!-- </projects> -->
+					<!-- </li> -->
+					<!-- <li> -->
+					<!-- <projects> -->
+					<!-- <li>RatkinClothing</li> -->
+					<!-- </projects> -->
+					<!-- </li> -->
+					<!-- <li> -->
+					<!-- <projects> -->
+					<!-- <li>HighClassClothing</li> -->
+					<!-- </projects> -->
+					<!-- </li> -->
+					<!-- <li> -->
+					<!-- <projects> -->
+					<!-- <li>PulseTech</li> -->
+					<!-- </projects> -->
+					<!-- </li> -->
 				</researchList>
 			</raceRestriction>
 			<thoughtSettings>

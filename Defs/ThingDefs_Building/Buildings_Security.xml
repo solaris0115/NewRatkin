@@ -265,7 +265,7 @@
 			<shockWaveDef>ShockWaveLight</shockWaveDef>
 			<maxPenetrationCount>2</maxPenetrationCount>
 			<damageReduceRate>0.4</damageReduceRate>
-			<damageDef>RangedStab</damageDef>
+			<damageDef>Crush</damageDef>
 			<damageAmountBase>40</damageAmountBase>
 			<armorPenetrationBase>0.40</armorPenetrationBase>
 			<stoppingPower>3</stoppingPower>
@@ -313,7 +313,7 @@
 			<shockWaveDef>ShockWaveHeavy</shockWaveDef>
 			<maxPenetrationCount>1</maxPenetrationCount>
 			<damageReduceRate>0</damageReduceRate>
-			<damageDef>RangedStab</damageDef>
+			<damageDef>Crush</damageDef>
 			<damageAmountBase>50</damageAmountBase>
 			<armorPenetrationBase>0.50</armorPenetrationBase>
 			<stoppingPower>6</stoppingPower>
@@ -360,7 +360,7 @@
 			<shockWaveDef>ShockWaveLight</shockWaveDef>
 			<maxPenetrationCount>5</maxPenetrationCount>
 			<damageReduceRate>0.2</damageReduceRate>
-			<damageDef>RangedStab</damageDef>
+			<damageDef>Crush</damageDef>
 			<damageAmountBase>35</damageAmountBase>
 			<armorPenetrationBase>0.70</armorPenetrationBase>
 			<stoppingPower>3</stoppingPower>
