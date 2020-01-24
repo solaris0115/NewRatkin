@@ -100,6 +100,7 @@
     <Compile Include="DefOf.cs" />
     <Compile Include="Release\SPDestory.cs" />
     <Compile Include="Release\StockGen_Mercenary.cs" />
+    <Compile Include="ShieldOfRatkinia\WoodenShield.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
