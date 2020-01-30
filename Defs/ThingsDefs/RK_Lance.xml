@@ -90,6 +90,24 @@
 					<angle>-150</angle>
 				</westOffset>
 			</li>
+			<li Class="SYS.CompProperties_WeaponExtention">
+				<northOffset>
+					<position>(0.3,-0.03,-0.12)</position>
+					<angle>90</angle>
+				</northOffset>
+				<eastOffset>
+					<position>(0.3,0.03,-0.15)</position>
+					<angle>75</angle>
+				</eastOffset>
+				<southOffset>
+					<position>(-0.3,0.3,-0.22)</position>
+					<angle>90</angle>
+				</southOffset>
+				<westOffset>
+					<position>(-0.3,-0.03,-0.15)</position>
+					<angle>105</angle>
+				</westOffset>
+			</li>
 		</comps>
 	</ThingDef>
 
@@ -106,6 +124,8 @@
 		<weaponTags Inherit="false">
 			<li>RK_Sword</li>
 			<li>RK_Knight</li>
+			<li>RK_Defender</li>
+			<li>RK_EliteDefender</li>
 		</weaponTags>
 		<statBases>
 			<WorkToMake>16000</WorkToMake>
@@ -180,6 +200,24 @@
 					<angle>-150</angle>
 				</westOffset>
 			</li>
+			<li Class="SYS.CompProperties_WeaponExtention">
+				<northOffset>
+					<position>(0.3,-0.03,0.1)</position>
+					<angle>-75</angle>
+				</northOffset>
+				<eastOffset>
+					<position>(0.3,0.03,-0.15)</position>
+					<angle>-20</angle>
+				</eastOffset>
+				<southOffset>
+					<position>(-0.3,0.3,0)</position>
+					<angle>255</angle>
+				</southOffset>
+				<westOffset>
+					<position>(-0.3,-0.03,-0.15)</position>
+					<angle>200</angle>
+				</westOffset>
+			</li>
 		</comps>
 	</ThingDef>
 
@@ -196,6 +234,7 @@
 		<weaponTags Inherit="false">
 			<li>RK_MeleeWeapon_Lance</li>
 			<li>RK_Knight</li>
+			<li>RK_Defender</li>
 		</weaponTags>
 		<costList>
 			<WoodLog>100</WoodLog>
@@ -257,7 +296,7 @@
 					<angle>-45</angle>
 				</eastOffset>
 				<westOffset>
-					<position>(-0.15,0.3,0.2)</position>
+					<position>(-0.15,-0.3,0.2)</position>
 					<angle>-45</angle>
 				</westOffset>
 			</li>
@@ -277,6 +316,7 @@
 		<weaponTags Inherit="false">
 			<li>RK_Sword</li>
 			<li>RK_Knight</li>
+			<!-- <li>RK_Vanguard</li> -->
 		</weaponTags>
 		<statBases>
 			<WorkToMake>24000</WorkToMake>
@@ -387,6 +427,7 @@
 		<weaponTags Inherit="false">
 			<li>RK_Knight</li>
 			<li>RK_HeavyLance</li>
+			<li>RK_EliteDefender</li>
 		</weaponTags>
 		<costStuffCount>150</costStuffCount>
 		<stuffCategories>
@@ -452,7 +493,7 @@
 					<angle>-45</angle>
 				</eastOffset>
 				<westOffset>
-					<position>(-0.15,0.3,0.2)</position>
+					<position>(-0.15,-0.3,0.2)</position>
 					<angle>-45</angle>
 				</westOffset>
 			</li>

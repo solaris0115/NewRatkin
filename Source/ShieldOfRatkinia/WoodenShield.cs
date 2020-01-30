@@ -13,82 +13,71 @@ namespace NewRatkin
     {
         private readonly string path = "Apparel/";
         private Graphic shieldGraphic;
-        private static Graphic heavyShieldGraphic = GraphicDatabase.Get<Graphic_Multi>("Apparel/RK_HeavyShield", ShaderDatabase.Cutout, new Vector2(1, 1), new Color(1, 1, 1, 1));
-        private static Graphic woodenShieldGraphic = GraphicDatabase.Get<Graphic_Multi>("Apparel/RK_WoodenShield", ShaderDatabase.Cutout, new Vector2(1, 1), new Color(1,1,1,1));
+        private static Graphic heavyShieldGraphic = GraphicDatabase.Get<Graphic_Multi>("Apparel/RK_HeavyShield", ShaderDatabase.CutoutComplex, new Vector2(1, 1), new Color(1, 1, 1, 1));
+        private static Graphic woodenShieldGraphic = GraphicDatabase.Get<Graphic_Multi>("Apparel/RK_WoodenShield", ShaderDatabase.CutoutComplex, new Vector2(1, 1), new Color(1,1,1,1));
         /*
         private readonly Material materialSouth;//MaterialPool.MatFrom("Apparel/RK_HeavyShield_south", ShaderDatabase.Cutout);
         private readonly Material materialEast;
         private readonly Material materialNorth;
         private readonly Material materialWes;*/
-        static readonly Vector3 drawDraftedLocNorth = new Vector3(-0.15f, 0f, -0.09f);
-        static readonly Vector3 drawDraftedLocSouth = new Vector3(0.15f, 0.0390725f, -0.2f);
+        static readonly Vector3 drawDraftedLocNorth = new Vector3(-0.2f, 0f, -0.09f);
+        static readonly Vector3 drawDraftedLocSouth = new Vector3(0.2f, 0.03905f, -0.15f);
         static readonly Vector3 drawDraftedLocEast = new Vector3(0.2f, 0f, -0.2f);
-        static readonly Vector3 drawDraftedLocWest = new Vector3(-0.2f, 0.05f, -0.2f);
+        static readonly Vector3 drawDraftedLocWest = new Vector3(-0.2f, 0.05f, -0.15f);
 
         static readonly Vector3 drawBackLocNorth = new Vector3(0f, 0.5f, -0.2f);
         static readonly Vector3 drawBackLocSouth = new Vector3(0f, 0, -0.09f);
-        static readonly Vector3 drawBackLocEast = new Vector3(-0.2f, 0.0390625f, -0.15f);
-        static readonly Vector3 drawBackLocWest = new Vector3(0.2f, 0.0390625f, -0.15f);
-
-        public Shield()
-        {
-            Log.Message("Creator");
-            //graphicShieldBack=GraphicDatabase.Get<Graphic_Multi>("", ShaderDatabase.Cutout, def.graphicData.drawSize, DrawColor);
-        }
-
+        static readonly Vector3 drawBackLocEast = new Vector3(-0.15f, 0.05f, -0.07f);
+        static readonly Vector3 draWBackLocWest = new Vector3(0.15f, 0f, -0.07f);
         private bool ShouldShieldUp
         {
             get
             {
                 Pawn wearer = Wearer;
-                return wearer.Spawned &&
-                    (wearer.InAggroMentalState || wearer.Drafted || (wearer.Faction.HostileTo(Faction.OfPlayer) &&
-                    !wearer.IsPrisoner));
+                return wearer.Spawned && 
+                    (wearer.InAggroMentalState || wearer.Drafted || wearer.Drafted || (wearer.CurJob != null && wearer.CurJob.def.alwaysShowWeapon) || (wearer.mindState.duty != null && wearer.mindState.duty.def.alwaysShowWeapon));
             }
-        }
-
-        public override void SpawnSetup(Map map, bool respawningAfterLoad)
-        {
-            base.SpawnSetup(map, respawningAfterLoad);
-            Log.Message("SpawnSetup");
         }
         public override void PostMake()
         {
             base.PostMake();
             if (shieldGraphic==null)
             {
-                shieldGraphic = GraphicDatabase.Get<Graphic_Multi>(path + def.defName, ShaderDatabase.Cutout, def.graphicData.drawSize, DrawColor);
+                if (def.defName == "RK_WoodenShield")
+                {
+                    shieldGraphic = GraphicDatabase.Get<Graphic_Multi>(path + def.defName, ShaderDatabase.Cutout, def.graphicData.drawSize, Color.white);
+                }
+                else
+                {
+                    shieldGraphic = GraphicDatabase.Get<Graphic_Multi>(path + def.defName, ShaderDatabase.Cutout, def.graphicData.drawSize, Stuff.stuffProps.color);
+                }
             }
-            Log.Message("PostMake");
+            
         }
         public override void ExposeData()
         {
             base.ExposeData();
 
-            Log.Message("ExposeData");
+            //Log.Message("ExposeData");
             if(Scribe.mode == LoadSaveMode.PostLoadInit)
             {
-                if (shieldGraphic == null)
+                LongEventHandler.ExecuteWhenFinished(delegate
                 {
-                    switch(def.defName)
+                    if (shieldGraphic == null)
                     {
-                        case "RK_HeavyShield":
-                            shieldGraphic = heavyShieldGraphic;
-                            break;
-                        case "RK_WoodenShield":
-                            shieldGraphic = woodenShieldGraphic;
-                            break;
-                        default:
-                            break;
+                        if(def.defName == "RK_WoodenShield")
+                        {
+                            shieldGraphic = GraphicDatabase.Get<Graphic_Multi>(path + def.defName, ShaderDatabase.Cutout, def.graphicData.drawSize, Color.white);
+                        }
+                        else
+                        {
+                            shieldGraphic = GraphicDatabase.Get<Graphic_Multi>(path + def.defName, ShaderDatabase.Cutout, def.graphicData.drawSize, Stuff.stuffProps.color);
+                        }
                     }
-                }
+                });
             }
         }
-        public override void Destroy(DestroyMode mode = DestroyMode.Vanish)
-        {
-            base.Destroy(mode);
-            Log.Message("Destroy");
-        }
+        
 
         public override void DrawWornExtras()
         {
@@ -99,16 +88,16 @@ namespace NewRatkin
                 switch(pawn.Rotation.AsInt)
                 {
                     case 0:
-                        DrawShield(shieldGraphic.MatNorth, rootLoc +drawDraftedLocNorth);
+                        DrawShield(shieldGraphic.MatNorth, rootLoc +drawDraftedLocNorth, 0);
                         break;
                     case 1:
-                        DrawShield(shieldGraphic.MatEast, rootLoc + drawDraftedLocEast);
+                        DrawShield(shieldGraphic.MatEast, rootLoc + drawDraftedLocEast, 0);
                         break;
                     case 2:
-                        DrawShield(shieldGraphic.MatSouth, rootLoc +drawDraftedLocSouth);
+                        DrawShield(shieldGraphic.MatSouth, rootLoc +drawDraftedLocSouth, 0);
                         break;
                     case 3:
-                        DrawShield(shieldGraphic.MatWest, rootLoc + drawDraftedLocWest);
+                        DrawShield(shieldGraphic.MatWest, rootLoc + drawDraftedLocWest, 0);
                         break;
                     default:
                         break;
@@ -117,47 +106,61 @@ namespace NewRatkin
             //등에 맴
             else
             {
-                switch (pawn.Rotation.AsInt)
+                if(!Wearer.Dead && !Wearer.Downed)
                 {
-                    case 0:
-                        DrawShield(shieldGraphic.MatSouth, rootLoc + drawBackLocNorth);
-                        break;
-                    case 1:
-                        DrawShield(shieldGraphic.MatWest, rootLoc + drawBackLocEast);
-                        break;
-                    case 2:
-                        DrawShield(shieldGraphic.MatNorth, rootLoc + drawBackLocSouth);
-                        break;
-                    case 3:
-                        DrawShield(shieldGraphic.MatEast, rootLoc + drawBackLocWest);
-                        break;
-                    default:
-                        break;
+                    switch (pawn.Rotation.AsInt)
+                    {
+                        case 0:
+                            DrawShield(shieldGraphic.MatSouth, rootLoc + drawBackLocNorth, 0);
+                            break;
+                        case 1:
+                            DrawShield(shieldGraphic.MatWest, rootLoc + drawBackLocEast, 15);
+                            break;
+                        case 2:
+                            DrawShield(shieldGraphic.MatNorth, rootLoc + drawBackLocSouth, 0);
+                            break;
+                        case 3:
+                            DrawShield(shieldGraphic.MatEast, rootLoc + draWBackLocWest, -15);
+                            break;
+                        default:
+                            break;
+                    }
                 }
             }
         }
 
-        public void DrawShield(Material mat, Vector3 drawLoc)
+        public void DrawShield(Material mat, Vector3 drawLoc,float angle)
         {
             Mesh mesh = MeshPool.plane10;
-            Graphics.DrawMesh(mesh, drawLoc, Quaternion.AngleAxis(0, Vector3.up), mat, 0);
+            Graphics.DrawMesh(mesh, drawLoc, Quaternion.AngleAxis(angle, Vector3.up), mat, 0);
             //Material material2 = apparelGraphics[j].graphic.MatAt(bodyFacing, null);
             //material2 = this.graphics.flasher.GetDamagedMat(material2);
             //GenDraw.DrawMeshNowOrLater(mesh3, loc2, quaternion, material2, portrait);
         }
-        /*
 
-        public override void PreApplyDamage(ref DamageInfo dinfo, out bool absorbed)
+        public override bool CheckPreAbsorbDamage(DamageInfo dinfo)
         {
-            Log.Message("Damage:"+ dinfo.Amount+"  Piercing: "+ dinfo.ArmorPenetrationInt+"  Type: " + dinfo.Def);
-            base.PreApplyDamage(ref dinfo, out absorbed);
+            if (!Wearer.Dead && !Wearer.Downed)
+            {
+                float blockingRate = Wearer.skills.GetSkill(SkillDefOf.Melee).levelInt * 0.0375f;
+                if(this.Stuff.defName!=null)
+                {
+                    Log.Message("stuffType: " + Stuff.defName);
+                }
+
+                if (Rand.Value <= blockingRate)
+                {
+                    Log.Message("block!");
+                    return true;
+                }
+            }
+            return false;
         }
 
-        
-
-        private void DrawEquipment(Vector3 rootLoc)
+        public override bool AllowVerbCast(IntVec3 root, Map map, LocalTargetInfo targ, Verb verb)
         {
+            return !(verb is Verb_LaunchProjectile) || ReachabilityImmediate.CanReachImmediate(root, targ, map, PathEndMode.Touch, null);
+        }
 
-        }*/
     }
 }

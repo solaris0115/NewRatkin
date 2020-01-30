@@ -641,6 +641,7 @@
 			<li>RK_Rifle</li>
 			<li>RK_Weapon</li>
 			<li>RK_RangeWeapon</li>
+			<!-- <li>RK_Vanguard</li> -->
 			<li>RK_Combatant</li>
 		</weaponTags>
 		<equippedAngleOffset>45</equippedAngleOffset>
@@ -821,6 +822,7 @@
 			<li>RK_Rifle</li>
 			<li>RK_Weapon</li>
 			<li>RK_RangeWeapon</li>
+			<!-- <li>RK_Vanguard</li> -->
 			<li>RK_Combatant</li>
 		</weaponTags>
 		<equippedAngleOffset>45</equippedAngleOffset>

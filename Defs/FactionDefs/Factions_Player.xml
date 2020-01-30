@@ -82,37 +82,67 @@
 			</points>
 		</maxPawnCostPerTotalPointsCurve>
 		<pawnGroupMakers>		
+			<!-- <li> -->
+				<!-- <kindDef>Combat</kindDef> -->
+				<!-- <commonality>35</commonality> -->
+				<!-- <options> -->
+					<!-- <RatkinCombatant>20</RatkinCombatant> -->
+					<!-- <RatkinSoldier>15</RatkinSoldier> -->
+					<!-- <RatkinEliteGuardener>10</RatkinEliteGuardener> -->
+				<!-- </options> -->
+			<!-- </li>		 -->
+			<!-- <li> -->
+				<!-- <kindDef>Combat</kindDef> -->
+				<!-- <disallowedStrategies> -->
+					<!-- <li>Siege</li> -->
+				<!-- </disallowedStrategies> -->
+				<!-- <commonality>35</commonality> -->
+				<!-- <options> -->
+					<!-- <RatkinDefender>20</RatkinDefender> -->
+					<!-- <RatkinVanguard>15</RatkinVanguard> -->
+					<!-- <RatkinSoldier>10</RatkinSoldier> -->
+					<!-- <RatkinCombatant>15</RatkinCombatant> -->
+					<!-- <RatkinEliteGuardener>15</RatkinEliteGuardener> -->
+				<!-- </options> -->
+			<!-- </li>	 -->
+			<!-- <li> -->
+				<!-- <kindDef>Combat</kindDef> -->
+				<!-- <disallowedStrategies> -->
+					<!-- <li>Siege</li> -->
+				<!-- </disallowedStrategies> -->
+				<!-- <commonality>20</commonality> -->
+				<!-- <options> -->
+					<!-- <RatkinVanguard>15</RatkinVanguard> -->
+					<!-- <RatkinEliteGuardener>10</RatkinEliteGuardener> -->
+					<!-- <RatkinMercenary>10</RatkinMercenary> -->
+				<!-- </options> -->
+			<!-- </li> -->
 			<li>
-				<!-- 충격과 공포 -->
+				<!-- 근접 중장갑 -->
 				<kindDef>Combat</kindDef>
+				<disallowedStrategies>
+					<li>Siege</li>
+				</disallowedStrategies>
 				<commonality>10</commonality>
 				<options>
 					<RatkinKnight>20</RatkinKnight>
-					<RatkinEliteGuardener>10</RatkinEliteGuardener>
+					<RatkinEliteGuardener>20</RatkinEliteGuardener>
 					<RatkinKnightCommander>10</RatkinKnightCommander>
 				</options>
-			</li>
-			<!-- 일반 -->
+			</li>	
 			<li>
+				<!-- 방패병 + 원거리 -->
 				<kindDef>Combat</kindDef>
-				<commonality>35</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+					<li>StageThenAttack</li>
+				</disallowedStrategies>
+				<commonality>10</commonality>
 				<options>
-					<RatkinCombatant>20</RatkinCombatant>
-					<RatkinSoldier>15</RatkinSoldier>
-					<RatkinEliteGuardener>10</RatkinEliteGuardener>
-					<RatkinKnight>10</RatkinKnight>
+					<RatkinEliteDefender>20</RatkinEliteDefender>
+					<RatkinVanguard>15</RatkinVanguard>
 				</options>
-			</li>
-			<!-- 근접과 공성 -->
-			<li>
-				<kindDef>Combat</kindDef>
-				<commonality>20</commonality>
-				<options>
-					<RatkinSoldier>15</RatkinSoldier>
-					<RatkinEliteGuardener>20</RatkinEliteGuardener>
-					<RatkinKnight>20</RatkinKnight>
-				</options>
-			</li>
+			</li>	
 			<li>
 				<kindDef>Peaceful</kindDef>
 				<options>
