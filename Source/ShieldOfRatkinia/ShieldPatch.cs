@@ -32,7 +32,6 @@ namespace NewRatkin
         }
         public static IEnumerable<Pawn> ShieldUsersWithRangedWeapon()
         {
-            Log.Message("1");
             foreach (Pawn p in PawnsFinder.AllMaps_FreeColonistsSpawned)
             {
                 if (p.equipment.Primary != null && p.equipment.Primary.def.IsRangedWeapon)
@@ -40,7 +39,7 @@ namespace NewRatkin
                     List<Apparel> ap = p.apparel.WornApparel;
                     for (int i = 0; i < ap.Count; i++)
                     {
-                        if (ap[i] is ShieldBelt)
+                        if (ap[i] is ShieldBelt || ap[i] is Shield)
                         {
                             yield return p;
                             break;
