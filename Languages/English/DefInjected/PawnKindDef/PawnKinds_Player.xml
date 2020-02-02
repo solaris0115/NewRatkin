@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <!-- 일반시민 -->
+  <!-- 시민 -->
 
   <RatkinColonist.label>ratkin colonist</RatkinColonist.label>
   <RatkinColonist.labelPlural>ratkin colonists</RatkinColonist.labelPlural>
@@ -31,6 +31,26 @@
   <RatkinServant.labelFemalePlural>female ratkin servants</RatkinServant.labelFemalePlural>
 
 
+  <!-- 랫킨 사제 -->
+
+  <RatkinPriest.label>ratkin priest</RatkinPriest.label>
+  <RatkinPriest.labelPlural>ratkin priests</RatkinPriest.labelPlural>
+  <RatkinPriest.labelMale>male ratkin priest</RatkinPriest.labelMale>
+  <RatkinPriest.labelMalePlural>male ratkin priests</RatkinPriest.labelMalePlural>
+  <RatkinPriest.labelFemale>female ratkin priest</RatkinPriest.labelFemale>
+  <RatkinPriest.labelFemalePlural>female ratkin priests</RatkinPriest.labelFemalePlural>
+
+
+  <!-- 랫킨 상단 -->
+
+  <RatkinMerchant.label>ratkin merchant</RatkinMerchant.label>
+  <RatkinMerchant.labelPlural>ratkin merchants</RatkinMerchant.labelPlural>
+  <RatkinMerchant.labelMale>male ratkin merchant</RatkinMerchant.labelMale>
+  <RatkinMerchant.labelMalePlural>male ratkin merchants</RatkinMerchant.labelMalePlural>
+  <RatkinMerchant.labelFemale>female ratkin merchant</RatkinMerchant.labelFemale>
+  <RatkinMerchant.labelFemalePlural>female ratkin merchants</RatkinMerchant.labelFemalePlural>
+
+
   <!-- 전투원 -->
 
   <RatkinCombatant.label>ratkin combatant</RatkinCombatant.label>
@@ -39,6 +59,26 @@
   <RatkinCombatant.labelMalePlural>male ratkin combatants</RatkinCombatant.labelMalePlural>
   <RatkinCombatant.labelFemale>female ratkin combatant</RatkinCombatant.labelFemale>
   <RatkinCombatant.labelFemalePlural>female ratkin combatants</RatkinCombatant.labelFemalePlural>
+
+
+  <!-- 랫킨 선붕대, 경갑과 경무장 -->
+
+  <RatkinVanguard.label>ratkin vanguard</RatkinVanguard.label>
+  <RatkinVanguard.labelPlural>ratkin vanguards</RatkinVanguard.labelPlural>
+  <RatkinVanguard.labelMale>male ratkin vanguard</RatkinVanguard.labelMale>
+  <RatkinVanguard.labelMalePlural>male ratkin vanguards</RatkinVanguard.labelMalePlural>
+  <RatkinVanguard.labelFemale>female ratkin vanguard</RatkinVanguard.labelFemale>
+  <RatkinVanguard.labelFemalePlural>female ratkin vanguards</RatkinVanguard.labelFemalePlural>
+
+
+  <!-- 랫킨 방패병 -->
+
+  <RatkinDefender.label>ratkin defender</RatkinDefender.label>
+  <RatkinDefender.labelPlural>ratkin defenders</RatkinDefender.labelPlural>
+  <RatkinDefender.labelMale>male ratkin defender</RatkinDefender.labelMale>
+  <RatkinDefender.labelMalePlural>male ratkin defenders</RatkinDefender.labelMalePlural>
+  <RatkinDefender.labelFemale>female ratkin defender</RatkinDefender.labelFemale>
+  <RatkinDefender.labelFemalePlural>female ratkin defenders</RatkinDefender.labelFemalePlural>
 
 
   <!-- 군인 -->
@@ -51,37 +91,17 @@
   <RatkinSoldier.labelFemalePlural>female ratkin soldiers</RatkinSoldier.labelFemalePlural>
 
 
-  <!-- 실험체 -->
+  <!-- 랫킨 정예정원사(근접, 원거리) -->
 
-  <RatkinSubject.label>ratkin subject</RatkinSubject.label>
-  <RatkinSubject.labelPlural>ratkin subjects</RatkinSubject.labelPlural>
-  <RatkinSubject.labelMale>male ratkin subject</RatkinSubject.labelMale>
-  <RatkinSubject.labelMalePlural>male ratkin subjects</RatkinSubject.labelMalePlural>
-  <RatkinSubject.labelFemale>female ratkin subject</RatkinSubject.labelFemale>
-  <RatkinSubject.labelFemalePlural>female ratkin subjects</RatkinSubject.labelFemalePlural>
-
-
-  <!-- 랫킨 용병 -->
-
-  <RatkinMercenary.label>ratkin mercenary</RatkinMercenary.label>
-  <RatkinMercenary.labelPlural>ratkin mercenarys</RatkinMercenary.labelPlural>
-  <RatkinMercenary.labelMale>male ratkin mercenary</RatkinMercenary.labelMale>
-  <RatkinMercenary.labelMalePlural>male ratkin mercenarys</RatkinMercenary.labelMalePlural>
-  <RatkinMercenary.labelFemale>female ratkin mercenary</RatkinMercenary.labelFemale>
-  <RatkinMercenary.labelFemalePlural>female ratkin mercenarys</RatkinMercenary.labelFemalePlural>
+  <RatkinEliteGuardener.label>ratkin elite guardener</RatkinEliteGuardener.label>
+  <RatkinEliteGuardener.labelPlural>ratkin elite guardeners</RatkinEliteGuardener.labelPlural>
+  <RatkinEliteGuardener.labelMale>male ratkin elite guardener</RatkinEliteGuardener.labelMale>
+  <RatkinEliteGuardener.labelMalePlural>male ratkin elite guardeners</RatkinEliteGuardener.labelMalePlural>
+  <RatkinEliteGuardener.labelFemale>female ratkin elite guardener</RatkinEliteGuardener.labelFemale>
+  <RatkinEliteGuardener.labelFemalePlural>female ratkin elite guardeners</RatkinEliteGuardener.labelFemalePlural>
 
 
-  <!-- 랫킨 정예정원사 -->
-
-  <RatkinEliteGuardener.label>ratkin EliteGuardener</RatkinEliteGuardener.label>
-  <RatkinEliteGuardener.labelPlural>ratkin EliteGuardeners</RatkinEliteGuardener.labelPlural>
-  <RatkinEliteGuardener.labelMale>male ratkin EliteGuardener</RatkinEliteGuardener.labelMale>
-  <RatkinEliteGuardener.labelMalePlural>male ratkin EliteGuardeners</RatkinEliteGuardener.labelMalePlural>
-  <RatkinEliteGuardener.labelFemale>female ratkin EliteGuardener</RatkinEliteGuardener.labelFemale>
-  <RatkinEliteGuardener.labelFemalePlural>female ratkin EliteGuardeners</RatkinEliteGuardener.labelFemalePlural>
-
-
-  <!-- 랫킨 기사 -->
+  <!-- 랫킨 기사(근접 중보병) -->
 
   <RatkinKnight.label>ratkin knight</RatkinKnight.label>
   <RatkinKnight.labelPlural>ratkin knights</RatkinKnight.labelPlural>
@@ -89,6 +109,16 @@
   <RatkinKnight.labelMalePlural>male ratkin knights</RatkinKnight.labelMalePlural>
   <RatkinKnight.labelFemale>female ratkin knight</RatkinKnight.labelFemale>
   <RatkinKnight.labelFemalePlural>female ratkin knights</RatkinKnight.labelFemalePlural>
+
+
+  <!-- 랫킨 정예 방패병(근접 중보병) -->
+
+  <RatkinEliteDefender.label>ratkin elite defender</RatkinEliteDefender.label>
+  <RatkinEliteDefender.labelPlural>ratkin elite defenders</RatkinEliteDefender.labelPlural>
+  <RatkinEliteDefender.labelMale>male ratkin elite defender</RatkinEliteDefender.labelMale>
+  <RatkinEliteDefender.labelMalePlural>male ratkin elite defenders</RatkinEliteDefender.labelMalePlural>
+  <RatkinEliteDefender.labelFemale>female ratkin elite defender</RatkinEliteDefender.labelFemale>
+  <RatkinEliteDefender.labelFemalePlural>female ratkin elite defenders</RatkinEliteDefender.labelFemalePlural>
 
 
   <!-- 랫킨 기사 단장 -->
@@ -99,50 +129,6 @@
   <RatkinKnightCommander.labelMalePlural>male ratkin knight commanders</RatkinKnightCommander.labelMalePlural>
   <RatkinKnightCommander.labelFemale>female ratkin knight commander</RatkinKnightCommander.labelFemale>
   <RatkinKnightCommander.labelFemalePlural>female ratkin knight commanders</RatkinKnightCommander.labelFemalePlural>
-
-
-  <!-- 랫킨 사제 -->
-
-  <RatkinPriest.label>ratkin Priest</RatkinPriest.label>
-  <RatkinPriest.labelPlural>ratkin Priests</RatkinPriest.labelPlural>
-  <RatkinPriest.labelMale>male ratkin Priest</RatkinPriest.labelMale>
-  <RatkinPriest.labelMalePlural>male ratkin Priests</RatkinPriest.labelMalePlural>
-  <RatkinPriest.labelFemale>female ratkin Priest</RatkinPriest.labelFemale>
-  <RatkinPriest.labelFemalePlural>female ratkin Priests</RatkinPriest.labelFemalePlural>
-
-
-  <!-- 랫킨 상단 -->
-
-  <RatkinMerchant.label>ratkin Merchant</RatkinMerchant.label>
-  <RatkinMerchant.labelPlural>ratkin Merchants</RatkinMerchant.labelPlural>
-  <RatkinMerchant.labelMale>male ratkin Merchant</RatkinMerchant.labelMale>
-  <RatkinMerchant.labelMalePlural>male ratkin Merchants</RatkinMerchant.labelMalePlural>
-  <RatkinMerchant.labelFemale>female ratkin Merchant</RatkinMerchant.labelFemale>
-  <RatkinMerchant.labelFemalePlural>female ratkin Merchants</RatkinMerchant.labelFemalePlural>
-
-
-  <!-- 랫킨 살인마 -->
-
-  <RatkinMurderer.label>ratkin Murderer</RatkinMurderer.label>
-  <RatkinMurderer.labelPlural>ratkin Murderers</RatkinMurderer.labelPlural>
-  <RatkinMurderer.labelMale>male ratkin Murderer</RatkinMurderer.labelMale>
-  <RatkinMurderer.labelMalePlural>male ratkin Murderers</RatkinMurderer.labelMalePlural>
-  <RatkinMurderer.labelFemale>female ratkin Murderer</RatkinMurderer.labelFemale>
-  <RatkinMurderer.labelFemalePlural>female ratkin Murderers</RatkinMurderer.labelFemalePlural>
-
-  <RatkinVagabond.label>Vagabond</RatkinVagabond.label>
-  <RatkinVagabond.labelPlural>Vagabonds</RatkinVagabond.labelPlural>
-  <RatkinVagabond.labelMale>male Vagabond</RatkinVagabond.labelMale>
-  <RatkinVagabond.labelMalePlural>male Vagabonds</RatkinVagabond.labelMalePlural>
-  <RatkinVagabond.labelFemale>female Vagabond</RatkinVagabond.labelFemale>
-  <RatkinVagabond.labelFemalePlural>female Vagabonds</RatkinVagabond.labelFemalePlural>
-
-  <RatkinMercenaryLight.label>ratkin Mercenary</RatkinMercenaryLight.label>
-  <RatkinMercenaryLight.labelPlural>ratkin Mercenarys</RatkinMercenaryLight.labelPlural>
-  <RatkinMercenaryLight.labelMale>male ratkin Mercenary</RatkinMercenaryLight.labelMale>
-  <RatkinMercenaryLight.labelMalePlural>male ratkin Mercenarys</RatkinMercenaryLight.labelMalePlural>
-  <RatkinMercenaryLight.labelFemale>female ratkin Mercenary</RatkinMercenaryLight.labelFemale>
-  <RatkinMercenaryLight.labelFemalePlural>female ratkin Mercenarys</RatkinMercenaryLight.labelFemalePlural>
 
 
   <!-- 특수 부대 찍찍이 -->
@@ -174,5 +160,59 @@
   <RatkinPettyThief.labelFemale>female ratkin petty thief</RatkinPettyThief.labelFemale>
   <RatkinPettyThief.labelFemalePlural>female ratkin petty thiefs</RatkinPettyThief.labelFemalePlural>
 
+
+  <!-- 랫킨 살인마 -->
+
+  <RatkinMurderer.label>ratkin Murderer</RatkinMurderer.label>
+  <RatkinMurderer.labelPlural>ratkin Murderers</RatkinMurderer.labelPlural>
+  <RatkinMurderer.labelMale>male ratkin Murderer</RatkinMurderer.labelMale>
+  <RatkinMurderer.labelMalePlural>male ratkin Murderers</RatkinMurderer.labelMalePlural>
+  <RatkinMurderer.labelFemale>female ratkin Murderer</RatkinMurderer.labelFemale>
+  <RatkinMurderer.labelFemalePlural>female ratkin Murderers</RatkinMurderer.labelFemalePlural>
+
+
+  <!-- 방랑자 -->
+
+  <RatkinVagabond.label>vagabond</RatkinVagabond.label>
+  <RatkinVagabond.labelPlural>vagabonds</RatkinVagabond.labelPlural>
+  <RatkinVagabond.labelMale>male vagabond</RatkinVagabond.labelMale>
+  <RatkinVagabond.labelMalePlural>male vagabonds</RatkinVagabond.labelMalePlural>
+  <RatkinVagabond.labelFemale>female vagabond</RatkinVagabond.labelFemale>
+  <RatkinVagabond.labelFemalePlural>female vagabonds</RatkinVagabond.labelFemalePlural>
+
+
+  <!-- 랫킨 용병 판매용 -->
+
+  <RatkinMercenaryLight.label>ratkin mercenary</RatkinMercenaryLight.label>
+  <RatkinMercenaryLight.labelPlural>ratkin mercenarys</RatkinMercenaryLight.labelPlural>
+  <RatkinMercenaryLight.labelMale>male ratkin mercenary</RatkinMercenaryLight.labelMale>
+  <RatkinMercenaryLight.labelMalePlural>male ratkin mercenarys</RatkinMercenaryLight.labelMalePlural>
+  <RatkinMercenaryLight.labelFemale>female ratkin mercenary</RatkinMercenaryLight.labelFemale>
+  <RatkinMercenaryLight.labelFemalePlural>female ratkin mercenarys</RatkinMercenaryLight.labelFemalePlural>
+
+
+  <!-- 실험체 -->
+
+  <RatkinSubject.label>ratkin subject</RatkinSubject.label>
+  <RatkinSubject.labelPlural>ratkin subjects</RatkinSubject.labelPlural>
+  <RatkinSubject.labelMale>male ratkin subject</RatkinSubject.labelMale>
+  <RatkinSubject.labelMalePlural>male ratkin subjects</RatkinSubject.labelMalePlural>
+  <RatkinSubject.labelFemale>female ratkin subject</RatkinSubject.labelFemale>
+  <RatkinSubject.labelFemalePlural>female ratkin subjects</RatkinSubject.labelFemalePlural>
+
+
+  <!-- 랫킨 용병 -->
+
+  <RatkinMercenary.label>ratkin mercenary</RatkinMercenary.label>
+  <RatkinMercenary.labelPlural>ratkin mercenarys</RatkinMercenary.labelPlural>
+  <RatkinMercenary.labelMale>male ratkin mercenary</RatkinMercenary.labelMale>
+  <RatkinMercenary.labelMalePlural>male ratkin mercenarys</RatkinMercenary.labelMalePlural>
+  <RatkinMercenary.labelFemale>female ratkin mercenary</RatkinMercenary.labelFemale>
+  <RatkinMercenary.labelFemalePlural>female ratkin mercenarys</RatkinMercenary.labelFemalePlural>
+
+
+  <!-- 일반시민 -->
+  <!-- 랫킨 정예정원사 -->
+  <!-- 랫킨 기사 -->
 
 </LanguageData>

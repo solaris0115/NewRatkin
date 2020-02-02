@@ -6,17 +6,17 @@
 
   <!-- Recipe Users: RK_FueledSmithy, RK_ElectricSmithy -->
 
-  <Make_BallistaBolt_Normal.label>발리스타 볼트 (normal) 제작</Make_BallistaBolt_Normal.label>
-  <Make_BallistaBolt_Normal.description>발리스타 볼트 (normal)를 제작합니다.</Make_BallistaBolt_Normal.description>
-  <Make_BallistaBolt_Normal.jobString>발리스타 볼트 (normal) 제작 중.</Make_BallistaBolt_Normal.jobString>
+  <Make_BallistaBolt_Normal.label>발리스타 볼트 (일반) 제작</Make_BallistaBolt_Normal.label>
+  <Make_BallistaBolt_Normal.description>발리스타 볼트 (일반)를 제작합니다.</Make_BallistaBolt_Normal.description>
+  <Make_BallistaBolt_Normal.jobString>발리스타 볼트 (일반) 제작 중.</Make_BallistaBolt_Normal.jobString>
 
-  <Make_BallistaBolt_Heavy.label>발리스타 볼트 (HE) 제작</Make_BallistaBolt_Heavy.label>
-  <Make_BallistaBolt_Heavy.description>발리스타 볼트 (HE)를 제작합니다.</Make_BallistaBolt_Heavy.description>
-  <Make_BallistaBolt_Heavy.jobString>발리스타 볼트 (HE) 제작 중.</Make_BallistaBolt_Heavy.jobString>
+  <Make_BallistaBolt_Heavy.label>발리스타 볼트 (중량) 제작</Make_BallistaBolt_Heavy.label>
+  <Make_BallistaBolt_Heavy.description>발리스타 볼트 (중량)를 제작합니다.</Make_BallistaBolt_Heavy.description>
+  <Make_BallistaBolt_Heavy.jobString>발리스타 볼트 (중량) 제작 중.</Make_BallistaBolt_Heavy.jobString>
 
-  <Make_BallistaBolt_AP.label>발리스타 볼트 (AP) 제작</Make_BallistaBolt_AP.label>
-  <Make_BallistaBolt_AP.description>발리스타 볼트 (AP)를 제작합니다.</Make_BallistaBolt_AP.description>
-  <Make_BallistaBolt_AP.jobString>발리스타 볼트 (AP) 제작 중.</Make_BallistaBolt_AP.jobString>
+  <Make_BallistaBolt_AP.label>발리스타 볼트 (관통) 제작</Make_BallistaBolt_AP.label>
+  <Make_BallistaBolt_AP.description>발리스타 볼트 (관통)를 제작합니다.</Make_BallistaBolt_AP.description>
+  <Make_BallistaBolt_AP.jobString>발리스타 볼트 (관통) 제작 중.</Make_BallistaBolt_AP.jobString>
 
 
   <!-- Recipe Users: TableMachining, RK_ElectricTailoringBench, RK_HandTailoringBench -->
@@ -173,6 +173,14 @@
   <Make_RK_PlateHelmC.label>랫킨 판금 투구 C 제작</Make_RK_PlateHelmC.label>
   <Make_RK_PlateHelmC.description>랫킨 판금 투구 C 제작합니다.</Make_RK_PlateHelmC.description>
   <Make_RK_PlateHelmC.jobString>랫킨 판금 투구 C 제작 중.</Make_RK_PlateHelmC.jobString>
+
+  <Make_RK_WoodenShield.label>랫킨 목재 방패 제작</Make_RK_WoodenShield.label>
+  <Make_RK_WoodenShield.description>랫킨 목재 방패를 제작합니다.</Make_RK_WoodenShield.description>
+  <Make_RK_WoodenShield.jobString>랫킨 목재 방패 제작 중</Make_RK_WoodenShield.jobString>
+
+  <Make_RK_HeavyShield.label>랫킨 금속 방패 제작</Make_RK_HeavyShield.label>
+  <Make_RK_HeavyShield.description>랫킨 금속 방패를 제작합니다.</Make_RK_HeavyShield.description>
+  <Make_RK_HeavyShield.jobString>랫킨 금속 방패 제작 중</Make_RK_HeavyShield.jobString>
 
 
   <!-- Recipe Users: ElectricSmithy, FueledSmithy, RK_FueledSmithy, RK_ElectricSmithy -->

@@ -2138,7 +2138,7 @@
 		</graphicData>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
-			<researchPrerequisite>HighClassClothing</researchPrerequisite>
+			<researchPrerequisite>RatkinClothing</researchPrerequisite>
 			<recipeUsers Inherit="false">
 				<li>RK_FueledSmithy</li>
 				<li>RK_ElectricSmithy</li>
@@ -2167,7 +2167,7 @@
 			<StuffEffectMultiplierInsulation_Heat>0.0</StuffEffectMultiplierInsulation_Heat>
 			<ArmorRating_Sharp>0.30</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
-			<Flammability>0.0</Flammability>
+			<Flammability>0.8</Flammability>
 			<EquipDelay>1</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
@@ -2175,10 +2175,8 @@
 		<apparel>
 			<bodyPartGroups>
 				<li>Torso</li>
-				<li>Neck</li>
 				<li>Shoulders</li>
 				<li>Arms</li>
-				<li>Legs</li>
 			</bodyPartGroups>
 			<defaultOutfitTags>
 				<li>Worker</li>
@@ -2222,7 +2220,7 @@
 			</defaultIngredientFilter>		
 		</recipeMaker>
 		<costList>
-			<Steel>40</Steel>
+			<Steel>60</Steel>
 		</costList>
 		<costStuffCount>120</costStuffCount>
 		<stuffCategories>

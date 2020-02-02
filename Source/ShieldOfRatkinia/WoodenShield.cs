@@ -148,7 +148,7 @@ namespace NewRatkin
                 {
                     attackerAngle += -360;
                 }
-                if (defenderAngle- attackerAngle >=-90 && defenderAngle - attackerAngle<=90)
+                if (defenderAngle- attackerAngle >=-70 && defenderAngle - attackerAngle<=70)
                 {
                     float blockingRate = pawn.skills.GetSkill(SkillDefOf.Melee).levelInt * 0.0375f;
                     switch (dinfo.Def.armorCategory)

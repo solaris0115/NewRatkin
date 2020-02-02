@@ -174,6 +174,14 @@
   <Make_RK_PlateHelmC.description>Make Ratkin plate Helm C.</Make_RK_PlateHelmC.description>
   <Make_RK_PlateHelmC.jobString>Making Ratkin plate Helm C.</Make_RK_PlateHelmC.jobString>
 
+  <Make_RK_WoodenShield.label>make ratkin wooden Shield</Make_RK_WoodenShield.label>
+  <Make_RK_WoodenShield.description>Make ratkin wooden Shield.</Make_RK_WoodenShield.description>
+  <Make_RK_WoodenShield.jobString>Making ratkin wooden Shield.</Make_RK_WoodenShield.jobString>
+
+  <Make_RK_HeavyShield.label>make ratkin heavy Shield</Make_RK_HeavyShield.label>
+  <Make_RK_HeavyShield.description>Make ratkin heavy Shield.</Make_RK_HeavyShield.description>
+  <Make_RK_HeavyShield.jobString>Making ratkin heavy Shield.</Make_RK_HeavyShield.jobString>
+
 
   <!-- Recipe Users: ElectricSmithy, FueledSmithy, RK_FueledSmithy, RK_ElectricSmithy -->
 

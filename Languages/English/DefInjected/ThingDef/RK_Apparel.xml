@@ -211,6 +211,18 @@
   <RK_PlateHelmC.description>It's a plate helmet.</RK_PlateHelmC.description>
 
 
+  <!-- 목제 방패 -->
+
+  <RK_WoodenShield.label>ratkin wooden Shield</RK_WoodenShield.label>
+  <RK_WoodenShield.description>A round shield made of wood. Can deflect attacks from the front. Deflection chance is based on wearer's melee skill and material.</RK_WoodenShield.description>
+
+
+  <!-- 철제 방패 -->
+
+  <RK_HeavyShield.label>ratkin heavy Shield</RK_HeavyShield.label>
+  <RK_HeavyShield.description>A metal shield. Can deflect attack from the front. Deflection chance is based on wearer's melee skill and material.</RK_HeavyShield.description>
+
+
   <!-- 산타외투 -->
 
   <RK_SantaRobe.label>santa robe</RK_SantaRobe.label>

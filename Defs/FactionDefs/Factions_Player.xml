@@ -82,56 +82,63 @@
 			</points>
 		</maxPawnCostPerTotalPointsCurve>
 		<pawnGroupMakers>		
-			<li><!-- 초반 원거리만-->
+			<!-- 초반 원거리만-->
+			<li>
 				<kindDef>Combat</kindDef>
-				<commonality>50</commonality>
+				<commonality>100</commonality>
 				<maxTotalPoints>1000</maxTotalPoints>
 				<options>
 					<RatkinCombatant>20</RatkinCombatant>
 					<RatkinSoldier>10</RatkinSoldier>
 				</options>
-			</li>		
-			<li><!-- 초반 혼합-->
+			</li>	
+			<!-- 초반 혼합-->			
+			<li>
 				<kindDef>Combat</kindDef>
-				<commonality>50</commonality>
+				<commonality>100</commonality>
 				<maxTotalPoints>1000</maxTotalPoints>
 				<options>
+					<RatkinDefender>10</RatkinDefender>
 					<RatkinVanguard>20</RatkinVanguard>
-					<RatkinCombatant>20</RatkinCombatant>
+					<RatkinCombatant>10</RatkinCombatant>
 				</options>
 			</li>	
-			<li><!-- 중후반 군인-->
+			<!-- 중후반 군인-->
+			<li>
 				<kindDef>Combat</kindDef>
-				<commonality>30</commonality>
+				<commonality>50</commonality>
 				<options>
-					<RatkinSoldier>20</RatkinSoldier>
-					<RatkinEliteSoldier>10</RatkinEliteSoldier>
+					<RatkinSoldier>30</RatkinSoldier>
+					<RatkinEliteSoldier>5</RatkinEliteSoldier>
 					<RatkinDemonMan>5</RatkinDemonMan>
-					<RatkinCombatant>20</RatkinCombatant>
+					<RatkinDefender>15</RatkinDefender>
+					<RatkinEliteGuardener>15</RatkinEliteGuardener>
 				</options>
 			</li>
-			<li><!-- 중후반 디펜더, 가드너,기사-->
+			<!-- 중후반 디펜더, 가드너,기사-->
+			<li>
 				<kindDef>Combat</kindDef>
 				<disallowedStrategies>
 					<li>Siege</li>
 				</disallowedStrategies>
 				<commonality>30</commonality>
 				<options>
-					<RatkinEliteGuardener>15</RatkinEliteGuardener>
+					<RatkinEliteGuardener>30</RatkinEliteGuardener>
 					<RatkinKnight>30</RatkinKnight>
 					<RatkinEliteDefender>15</RatkinEliteDefender>
 				</options>
 			</li>
-			<li><!-- 중후반 엘리트 디펜더, 기사, 커맨더-->
+			<!-- 중후반 엘리트 디펜더, 기사, 커맨더-->
+			<li>
 				<kindDef>Combat</kindDef>
 				<disallowedStrategies>
 					<li>Siege</li>
 				</disallowedStrategies>
-				<commonality>30</commonality>
+				<commonality>20</commonality>
 				<options>
 					<RatkinKnight>30</RatkinKnight>
-					<RatkinEliteDefender>30</RatkinEliteDefender>
-					<RatkinKnightCommander>3</RatkinKnightCommander>
+					<RatkinEliteDefender>20</RatkinEliteDefender>
+					<RatkinKnightCommander>5</RatkinKnightCommander>
 				</options>
 			</li>
 			<li>
