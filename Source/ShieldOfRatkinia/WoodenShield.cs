@@ -14,7 +14,7 @@ namespace NewRatkin
         private readonly string path = "Apparel/";
         private Graphic shieldGraphic;
         private static Graphic heavyShieldGraphic = GraphicDatabase.Get<Graphic_Multi>("Apparel/RK_HeavyShield", ShaderDatabase.CutoutComplex, new Vector2(1, 1), new Color(1, 1, 1, 1));
-        private static Graphic woodenShieldGraphic = GraphicDatabase.Get<Graphic_Multi>("Apparel/RK_WoodenShield", ShaderDatabase.CutoutComplex, new Vector2(1, 1), new Color(1,1,1,1));
+        private static Graphic woodenShieldGraphic = GraphicDatabase.Get<Graphic_Multi>("Apparel/RK_WoodenShield", ShaderDatabase.Cutout, new Vector2(1, 1), new Color(1,1,1,1));
         /*
         private readonly Material materialSouth;//MaterialPool.MatFrom("Apparel/RK_HeavyShield_south", ShaderDatabase.Cutout);
         private readonly Material materialEast;
@@ -29,6 +29,7 @@ namespace NewRatkin
         static readonly Vector3 drawBackLocSouth = new Vector3(0f, 0, -0.09f);
         static readonly Vector3 drawBackLocEast = new Vector3(-0.15f, 0.05f, -0.07f);
         static readonly Vector3 draWBackLocWest = new Vector3(0.15f, 0f, -0.07f);
+
         private bool ShouldShieldUp
         {
             get
@@ -57,8 +58,6 @@ namespace NewRatkin
         public override void ExposeData()
         {
             base.ExposeData();
-
-            //Log.Message("ExposeData");
             if(Scribe.mode == LoadSaveMode.PostLoadInit)
             {
                 LongEventHandler.ExecuteWhenFinished(delegate
@@ -140,18 +139,38 @@ namespace NewRatkin
 
         public override bool CheckPreAbsorbDamage(DamageInfo dinfo)
         {
-            if (!Wearer.Dead && !Wearer.Downed)
+            Pawn pawn = Wearer;
+            if (!pawn.Dead && !pawn.Downed)
             {
-                float blockingRate = Wearer.skills.GetSkill(SkillDefOf.Melee).levelInt * 0.0375f;
-                if(this.Stuff.defName!=null)
+                float attackerAngle = dinfo.Angle+180;
+                float defenderAngle = pawn.Rotation.AsAngle;
+                if (attackerAngle >= 360)
                 {
-                    Log.Message("stuffType: " + Stuff.defName);
+                    attackerAngle += -360;
                 }
-
-                if (Rand.Value <= blockingRate)
+                if (defenderAngle- attackerAngle >=-90 && defenderAngle - attackerAngle<=90)
                 {
-                    Log.Message("block!");
-                    return true;
+                    float blockingRate = pawn.skills.GetSkill(SkillDefOf.Melee).levelInt * 0.0375f;
+                    switch (dinfo.Def.armorCategory)
+                    {
+                        case DamageArmorCategoryDef d when d == DamageArmorCategoryDefOf.Sharp:
+                            blockingRate *= this.GetStatValue(StatDefOf.ArmorRating_Sharp);
+                            break;
+                        case DamageArmorCategoryDef d when d == DamageArmorCategoryDefOf.Blunt:
+                            blockingRate *= this.GetStatValue(StatDefOf.ArmorRating_Blunt);
+                            break;
+                        case DamageArmorCategoryDef d when d == DamageArmorCategoryDefOf.Heat:
+                            blockingRate *= this.GetStatValue(StatDefOf.ArmorRating_Heat);
+                            break;
+                        default:
+                            break;
+                    }
+                    if (Rand.Value <= blockingRate)
+                    {
+                        MoteMaker.ThrowText(pawn.DrawPos, pawn.Map, "ShieldBlock".Translate(), 1.9f);
+                        EffecterDefOf.Deflect_Metal.Spawn().Trigger(pawn, dinfo.Instigator ?? pawn);
+                        return true;
+                    }
                 }
             }
             return false;
@@ -163,4 +182,5 @@ namespace NewRatkin
         }
 
     }
+
 }

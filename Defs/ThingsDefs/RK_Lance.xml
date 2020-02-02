@@ -12,13 +12,14 @@
 		<techLevel>Medieval</techLevel>
 		<weaponTags Inherit="false">
 			<li>RK_MeleeWeapon_Short</li>
+			<li>RK_LightWeapon</li>
+			<li>RK_Defender</li>
 		</weaponTags>
 		<statBases>
 			<WorkToMake>2500</WorkToMake>
 			<Mass>0.8</Mass>
 		</statBases>
 		<equippedAngleOffset>65</equippedAngleOffset>
-
 		<costList>
 			<WoodLog>15</WoodLog>
 		</costList>
@@ -124,6 +125,7 @@
 		<weaponTags Inherit="false">
 			<li>RK_Sword</li>
 			<li>RK_Knight</li>
+			<li>RK_LightWeapon</li>
 			<li>RK_Defender</li>
 			<li>RK_EliteDefender</li>
 		</weaponTags>

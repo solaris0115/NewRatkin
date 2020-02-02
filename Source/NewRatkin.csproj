@@ -100,7 +100,6 @@
     <Compile Include="DefOf.cs" />
     <Compile Include="Release\SPDestory.cs" />
     <Compile Include="Release\StockGen_Mercenary.cs" />
-    <Compile Include="ShieldOfRatkinia\Alert.cs" />
     <Compile Include="ShieldOfRatkinia\ShieldPatch.cs" />
     <Compile Include="ShieldOfRatkinia\WoodenShield.cs" />
   </ItemGroup>

@@ -14,6 +14,14 @@ using Verse.AI;
 namespace NewRatkin
 {
     [DefOf]
+    public static class DamageArmorCategoryDefOf
+    {
+        public static DamageArmorCategoryDef Sharp;
+        public static DamageArmorCategoryDef Blunt;
+        public static DamageArmorCategoryDef Heat;
+    }
+
+    [DefOf]
     public static class RatkinNeedDefOf
     {
         public static NeedDef Outdoors;

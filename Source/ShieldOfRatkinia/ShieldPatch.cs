@@ -23,11 +23,11 @@ namespace NewRatkin
         {
             HarmonyInstance harmonyInstance = HarmonyInstance.Create("com.NewRatkin.rimworld.mod");
             harmonyInstance.Patch(AccessTools.Method(typeof(WorkGiver_HunterHunt), "HasShieldAndRangedWeapon"), new HarmonyMethod(patchType, "HasShieldAndRangedWeaponPrefix"));
-            harmonyInstance.Patch(AccessTools.Property(typeof(Alert_ShieldUserHasRangedWeapon), "ShieldUsersWithRangedWeapon").GetGetMethod(true), new HarmonyMethod(patchType, "ShieldUsersWithRangedWeaponPrefix"));
-        } 
-        public static bool ShieldUsersWithRangedWeaponPrefix(ref IEnumerable<Pawn> __result)
+            harmonyInstance.Patch(AccessTools.Method(typeof(Alert_ShieldUserHasRangedWeapon), "GetReport"), new HarmonyMethod(patchType, "GetReportPrefix"));
+        }
+        public static bool GetReportPrefix(ref AlertReport __result)
         {
-            __result = ShieldUsersWithRangedWeapon();
+            __result = AlertReport.CulpritsAre(ShieldUsersWithRangedWeapon());
             return false;
         }
         public static IEnumerable<Pawn> ShieldUsersWithRangedWeapon()
@@ -39,7 +39,7 @@ namespace NewRatkin
                     List<Apparel> ap = p.apparel.WornApparel;
                     for (int i = 0; i < ap.Count; i++)
                     {
-                        if (ap[i] is ShieldBelt || ap[i] is Shield)
+                        if (ap[i] is Shield || ap[i] is ShieldBelt)
                         {
                             yield return p;
                             break;

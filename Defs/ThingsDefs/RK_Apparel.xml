@@ -1185,7 +1185,6 @@
 				<li>RK_Ambassador</li>
 				<li>RK_Soldier</li>
 				<li>RK_3Tier</li>
-				<li>RK_Combatant</li>
 			</tags>
 		</apparel>
 	</ThingDef>
@@ -1237,7 +1236,6 @@
 			<tags>
 				<li>RK_Soldier</li>
 				<li>RK_3Tier</li>
-				<li>RK_Combatant</li>
 			</tags>
 		</apparel>
 		<recipeMaker>
@@ -2136,7 +2134,7 @@
 		<graphicData>
 			<texPath>Apparel/RK_WoodenShield</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<!-- <shaderType>CutoutComplex</shaderType> -->
+			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
@@ -2161,21 +2159,18 @@
 		</stuffCategories>
 		<techLevel>Industrial</techLevel>
 		<statBases>
-			<MaxHitPoints>200</MaxHitPoints>
-			<WorkToMake>35000</WorkToMake>
-			<Mass>10</Mass>
-			<!-- <StuffEffectMultiplierArmor>0.63</StuffEffectMultiplierArmor> -->
-			<!-- <StuffEffectMultiplierInsulation_Cold>0.0</StuffEffectMultiplierInsulation_Cold> -->
-			<!-- <StuffEffectMultiplierInsulation_Heat>0.0</StuffEffectMultiplierInsulation_Heat> -->
-			<!-- <ArmorRating_Sharp>0.25</ArmorRating_Sharp> -->
-			<!-- <ArmorRating_Blunt>0.3</ArmorRating_Blunt> -->
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToMake>12500</WorkToMake>
+			<Mass>3</Mass>
+			<StuffEffectMultiplierArmor>0.50</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.0</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.0</StuffEffectMultiplierInsulation_Heat>
+			<ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
 			<Flammability>0.0</Flammability>
 			<EquipDelay>1</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
-			<PainShockThreshold>0.05</PainShockThreshold>
-			<MoveSpeed>-0.15</MoveSpeed>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
@@ -2197,7 +2192,7 @@
 				<li>RK_LightArmor</li>
 			</tags>
 		</apparel>
-		<followStuffColor>True</followStuffColor>
+		<followStuffColor>false</followStuffColor>
 	</ThingDef>
 
 
@@ -2235,21 +2230,20 @@
 		</stuffCategories>
 		<techLevel>Industrial</techLevel>
 		<statBases>
-			<MaxHitPoints>200</MaxHitPoints>
+			<MaxHitPoints>240</MaxHitPoints>
 			<WorkToMake>35000</WorkToMake>
-			<Mass>10</Mass>
-			<!-- <StuffEffectMultiplierArmor>0.63</StuffEffectMultiplierArmor> -->
-			<!-- <StuffEffectMultiplierInsulation_Cold>0.0</StuffEffectMultiplierInsulation_Cold> -->
-			<!-- <StuffEffectMultiplierInsulation_Heat>0.0</StuffEffectMultiplierInsulation_Heat> -->
-			<!-- <ArmorRating_Sharp>0.25</ArmorRating_Sharp> -->
-			<!-- <ArmorRating_Blunt>0.3</ArmorRating_Blunt> -->
+			<Mass>7</Mass>
+			<StuffEffectMultiplierArmor>0.8</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.0</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.0</StuffEffectMultiplierInsulation_Heat>
+			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
 			<Flammability>0.0</Flammability>
 			<EquipDelay>1</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
 			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
-			<PainShockThreshold>0.05</PainShockThreshold>
-			<MoveSpeed>-0.15</MoveSpeed>
+			<MoveSpeed>-0.1</MoveSpeed>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>

@@ -218,6 +218,7 @@
 			<li>RatkinUneducated</li>
 			<li>RatkinThief</li>
 			<li>RatkinPriest</li>
+			<li>RatkinDefender</li>
 			<li>RatkinSoldier</li>
 			<li>RatkinKnight</li>
 		</spawnCategories>
@@ -387,6 +388,7 @@
 			<li>RatkinVagabond</li>
 			<li>RatkinMercenary</li>
 			<li>RatkinSoldier</li>
+			<li>RatkinDefender</li>
 			<li>RatkinNoble</li>
 			<li>RatkinCombatant</li>
 			<li>RatkinKnight</li>
@@ -455,6 +457,7 @@
 			<li>RatkinKingdom</li>
 			<li>RatkinVagabond</li>
 			<li>RatkinGuardener</li>
+			<li>RatkinDefender</li>
 			<li>RatkinSoldier</li>
 			<li>RatkinEducated</li>
 			<li>RatkinCombatant</li>
@@ -569,6 +572,7 @@
 			<li>RatkinKingdom</li>
 			<li>RatkinEducated</li>
 			<li>RatkinMercenary</li>
+			<li>RatkinDefender</li>
 			<li>RatkinNoble</li>
 			<li>RatkinSoldier</li>
 			<li>RatkinCombatant</li>
@@ -819,6 +823,7 @@
 			<li>RatkinStory</li>
 			<li>RatkinCity</li>
 			<li>RatkinSoldier</li>
+			<li>RatkinDefender</li>
 			<li>RatkinServant</li>
 			<li>RatkinMercenary</li>
 			<li>RatkinSubject</li>
@@ -1268,6 +1273,7 @@
 			<li>RatkinEducated</li>
 			<li>RatkinCombatant</li>
 			<li>RatkinSoldier</li>
+			<li>RatkinDefender</li>
 			<li>RatkinGuardener</li>
 			<li>RatkinKingdom</li>
 		</spawnCategories>
@@ -1291,7 +1297,7 @@
 		<skillGains>
 			<li>
 				<defName>Melee</defName>
-				<amount>6</amount>
+				<amount>8</amount>
 			</li>
 		</skillGains>
 		<workDisables>
@@ -1300,6 +1306,7 @@
 		<spawnCategories>
 			<li>RatkinStory</li>
 			<li>RatkinKnight</li>
+			<li>RatkinDefender</li>
 		</spawnCategories>
 		<forcedTraits>
 			<li>

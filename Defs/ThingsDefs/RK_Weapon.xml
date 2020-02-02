@@ -344,7 +344,7 @@
 			<li>RK_Crossbow</li>
 			<li>RK_Weapon</li>
 			<li>RK_RangeWeapon</li>
-			<li>RK_Combatant</li>
+			<li>RK_LightWeapon</li>
 		</weaponTags>
 		<verbs>
 			<li>
@@ -431,6 +431,7 @@
 			<li>RK_Weapon</li>
 			<li>RK_RangeWeapon</li>
 			<li>RK_Combatant</li>
+			<li>RK_LightWeapon</li>
 		</weaponTags>
 		<verbs>
 			<li>
@@ -515,6 +516,7 @@
 			<li>RK_Weapon</li>
 			<li>RK_RangeWeapon</li>
 			<li>RK_Combatant</li>
+			<li>RK_LightWeapon</li>
 		</weaponTags>
 		<verbs>
 			<li>
@@ -641,7 +643,7 @@
 			<li>RK_Rifle</li>
 			<li>RK_Weapon</li>
 			<li>RK_RangeWeapon</li>
-			<!-- <li>RK_Vanguard</li> -->
+			<li>RK_LightWeapon</li>
 			<li>RK_Combatant</li>
 		</weaponTags>
 		<equippedAngleOffset>45</equippedAngleOffset>
@@ -728,7 +730,6 @@
 			<li>RK_Rifle</li>
 			<li>RK_Weapon</li>
 			<li>RK_RangeWeapon</li>
-			<li>RK_Combatant</li>
 		</weaponTags>
 		<equippedAngleOffset>45</equippedAngleOffset>
 	</ThingDef>
@@ -822,8 +823,6 @@
 			<li>RK_Rifle</li>
 			<li>RK_Weapon</li>
 			<li>RK_RangeWeapon</li>
-			<!-- <li>RK_Vanguard</li> -->
-			<li>RK_Combatant</li>
 		</weaponTags>
 		<equippedAngleOffset>45</equippedAngleOffset>
 	</ThingDef>
@@ -917,7 +916,6 @@
 			<li>RK_Rifle</li>
 			<li>RK_Weapon</li>
 			<li>RK_RangeWeapon</li>
-			<li>RK_Combatant</li>
 		</weaponTags>
 		<equippedAngleOffset>45</equippedAngleOffset>
 	</ThingDef>
