@@ -3,27 +3,7 @@
 
   <Ratkin_KingHamster.label>キングハムスター</Ratkin_KingHamster.label>
   <Ratkin_KingHamster.labelPlural>キングハムスターたち</Ratkin_KingHamster.labelPlural>
-  <Ratkin_KingHamster.lifeStages.0.label>仔キングハムスター</Ratkin_KingHamster.lifeStages.0.label>
-  <Ratkin_KingHamster.lifeStages.0.labelPlural>仔キングハムスターたち</Ratkin_KingHamster.lifeStages.0.labelPlural>
-  <Ratkin_KingHamster.lifeStages.0.labelMale>男性 仔キングハムスター</Ratkin_KingHamster.lifeStages.0.labelMale>
-  <Ratkin_KingHamster.lifeStages.0.labelMalePlural>男性 仔キングハムスターたち</Ratkin_KingHamster.lifeStages.0.labelMalePlural>
-  <Ratkin_KingHamster.lifeStages.0.labelFemale>女性 仔キングハムスター</Ratkin_KingHamster.lifeStages.0.labelFemale>
-  <Ratkin_KingHamster.lifeStages.0.labelFemalePlural>女性 仔キングハムスターたち</Ratkin_KingHamster.lifeStages.0.labelFemalePlural>
-  <Ratkin_KingHamster.lifeStages.1.label>キングハムスター</Ratkin_KingHamster.lifeStages.1.label>
-  <Ratkin_KingHamster.lifeStages.1.labelPlural>キングハムスター</Ratkin_KingHamster.lifeStages.1.labelPlural>
-  <Ratkin_KingHamster.lifeStages.1.labelMale>男性 キングハムスター</Ratkin_KingHamster.lifeStages.1.labelMale>
-  <Ratkin_KingHamster.lifeStages.1.labelMalePlural>男性 キングハムスターたち</Ratkin_KingHamster.lifeStages.1.labelMalePlural>
-  <Ratkin_KingHamster.lifeStages.1.labelFemale>女性 キングハムスター</Ratkin_KingHamster.lifeStages.1.labelFemale>
-  <Ratkin_KingHamster.lifeStages.1.labelFemalePlural>女性 キングハムスターたち</Ratkin_KingHamster.lifeStages.1.labelFemalePlural>
-  <Ratkin_KingHamster.lifeStages.2.label>キングハムスター</Ratkin_KingHamster.lifeStages.2.label>
-  <Ratkin_KingHamster.lifeStages.2.labelPlural>キングハムスター</Ratkin_KingHamster.lifeStages.2.labelPlural>
-  <Ratkin_KingHamster.lifeStages.2.labelMale>男性 キングハムスター</Ratkin_KingHamster.lifeStages.2.labelMale>
-  <Ratkin_KingHamster.lifeStages.2.labelMalePlural>男性 キングハムスターたち</Ratkin_KingHamster.lifeStages.2.labelMalePlural>
-  <Ratkin_KingHamster.lifeStages.2.labelFemale>女性 キングハムスター</Ratkin_KingHamster.lifeStages.2.labelFemale>
-  <Ratkin_KingHamster.lifeStages.2.labelFemalePlural>女性 キングハムスターたち</Ratkin_KingHamster.lifeStages.2.labelFemalePlural>
-  <Ratkin_KingHamster.labelMale>男性 キングハムスター</Ratkin_KingHamster.labelMale>
-  <Ratkin_KingHamster.labelMalePlural>男性 キングハムスターたち</Ratkin_KingHamster.labelMalePlural>
-  <Ratkin_KingHamster.labelFemale>女性 キングハムスター</Ratkin_KingHamster.labelFemale>
-  <Ratkin_KingHamster.labelFemalePlural>女性 キングハムスターたち</Ratkin_KingHamster.labelFemalePlural>
+  <Ratkin_KingHamster.lifeStages.king_hamster_calf.label>仔キングハムスター</Ratkin_KingHamster.lifeStages.king_hamster_calf.label>
+  <Ratkin_KingHamster.lifeStages.king_hamster_calf.labelPlural>仔キングハムスターたち</Ratkin_KingHamster.lifeStages.king_hamster_calf.labelPlural>
 
 </LanguageData>
