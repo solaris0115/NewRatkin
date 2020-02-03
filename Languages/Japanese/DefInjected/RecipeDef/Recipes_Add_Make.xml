@@ -167,6 +167,14 @@
   <Make_RK_PlateHelmC.description>RK グレートヘルムを作る。</Make_RK_PlateHelmC.description>
   <Make_RK_PlateHelmC.jobString>RK グレートヘルムを作成中</Make_RK_PlateHelmC.jobString>
 
+  <Make_RK_WoodenShield.label>RK ウッドシールドを作る</Make_RK_WoodenShield.label>
+  <Make_RK_WoodenShield.description>RK ウッドシールドを作る。</Make_RK_WoodenShield.description>
+  <Make_RK_WoodenShield.jobString>RK ウッドシールドを作成中</Make_RK_WoodenShield.jobString>
+
+  <Make_RK_HeavyShield.label>RK ヘビーシールドを作る</Make_RK_HeavyShield.label>
+  <Make_RK_HeavyShield.description>RK ヘビーシールドを作る。</Make_RK_HeavyShield.description>
+  <Make_RK_HeavyShield.jobString>RK ヘビーシールドを作成中</Make_RK_HeavyShield.jobString>
+
 
   <!-- Recipe Users: ElectricSmithy, FueledSmithy, RK_FueledSmithy, RK_ElectricSmithy -->
 
