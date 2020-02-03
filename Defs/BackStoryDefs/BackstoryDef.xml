@@ -54,6 +54,7 @@
 			<li>RatkinWild</li>
 			<li>RatkinThief</li>
 			<li>RatkinSubject</li>
+			<li>RatkinDefender</li>
 			<li>RatkinUneducated</li>
 			<li>RatkinDemoman</li>
 		</spawnCategories>
@@ -130,8 +131,11 @@
 			<li>RatkinFarm</li>
 			<li>RatkinThief</li>
 			<li>RatkinUneducated</li>
+			<li>RatkinEliteDefender</li>
 			<li>RatkinServant</li>
 			<li>RatkinSoldier</li>
+			<li>RatkinDefender</li>
+			<li>RatkinGuardener</li>
 			<li>RatkinKnight</li>
 			<li>RatkinKnightCommander</li>
 		</spawnCategories>
@@ -177,6 +181,8 @@
 			<li>RatkinStory</li>
 			<li>RatkinPriest</li>
 			<li>RatkinFarm</li>
+			<li>RatkinEliteDefender</li>
+			<li>RatkinGuardener</li>
 			<li>RatkinUneducated</li>
 			<li>RatkinKnight</li>
 		</spawnCategories>
@@ -216,6 +222,8 @@
 			<li>RatkinSubject</li>
 			<li>RatkinServant</li>
 			<li>RatkinUneducated</li>
+			<li>RatkinEliteDefender</li>
+			<li>RatkinGuardener</li>
 			<li>RatkinThief</li>
 			<li>RatkinPriest</li>
 			<li>RatkinDefender</li>
@@ -387,6 +395,8 @@
 			<li>RatkinEducated</li>
 			<li>RatkinVagabond</li>
 			<li>RatkinMercenary</li>
+			<li>RatkinGuardener</li>
+			<li>RatkinEliteDefender</li>
 			<li>RatkinSoldier</li>
 			<li>RatkinDefender</li>
 			<li>RatkinNoble</li>
@@ -424,6 +434,8 @@
 			<li>RatkinStory</li>
 			<li>RatkinSoldier</li>
 			<li>RatkinKingdom</li>
+			<li>RatkinGuardener</li>
+			<li>RatkinEliteDefender</li>
 			<li>RatkinEducated</li>
 			<li>RatkinNoble</li>
 			<li>RatkinKnight</li>
@@ -458,6 +470,7 @@
 			<li>RatkinVagabond</li>
 			<li>RatkinGuardener</li>
 			<li>RatkinDefender</li>
+			<li>RatkinEliteDefender</li>
 			<li>RatkinSoldier</li>
 			<li>RatkinEducated</li>
 			<li>RatkinCombatant</li>
@@ -491,6 +504,9 @@
 			<li>RatkinStory</li>
 			<li>RatkinKingdom</li>
 			<li>RatkinChef</li>
+			<li>RatkinDefender</li>
+			<li>RatkinGuardener</li>
+			<li>RatkinEliteDefender</li>
 			<li>RatkinServant</li>
 			<li>RatkinEducated</li>
 		</spawnCategories>
@@ -534,8 +550,10 @@
 			<li>RatkinMurderer</li>
 			<li>RatkinKingdom</li>
 			<li>RatkinMerchant</li>
+			<li>RatkinEliteDefender</li>
 			<li>RatkinWanderer</li>
 			<li>RatkinVagabond</li>
+			<li>RatkinGuardener</li>
 			<li>RatkinServant</li>
 			<li>RatkinThief</li>
 			<li>RatkinUneducated</li>
@@ -572,8 +590,10 @@
 			<li>RatkinKingdom</li>
 			<li>RatkinEducated</li>
 			<li>RatkinMercenary</li>
+			<li>RatkinGuardener</li>
 			<li>RatkinDefender</li>
 			<li>RatkinNoble</li>
+			<li>RatkinEliteDefender</li>
 			<li>RatkinSoldier</li>
 			<li>RatkinCombatant</li>
 			<li>RatkinKnight</li>
@@ -652,9 +672,12 @@
 			<li>RatkinStory</li>
 			<li>RatkinCombatant</li>
 			<li>RatkinKingdom</li>
+			<li>RatkinGuardener</li>
 			<li>RatkinServant</li>
 			<li>RatkinPriest</li>
 			<li>RatkinMerchant</li>
+			<li>RatkinDefender</li>
+			<li>RatkinEliteDefender</li>
 			<li>RatkinUneducated</li>
 			<li>RatkinKnight</li>
 			<li>RatkinSoldier</li>
@@ -696,7 +719,9 @@
 			<li>RatkinSoldier</li>
 			<li>RatkinCombatant</li>
 			<li>RatkinCity</li>
+			<li>RatkinDefender</li>
 			<li>RatkinServant</li>
+			<li>RatkinGuardener</li>
 			<li>RatkinThief</li>
 			<li>RatkinKnight</li>
 			<li>RatkinUneducated</li>
@@ -824,6 +849,7 @@
 			<li>RatkinCity</li>
 			<li>RatkinSoldier</li>
 			<li>RatkinDefender</li>
+			<li>RatkinEliteDefender</li>
 			<li>RatkinServant</li>
 			<li>RatkinMercenary</li>
 			<li>RatkinSubject</li>
@@ -923,6 +949,7 @@
 			<li>RatkinCity</li>
 			<li>RatkinServant</li>
 			<li>RatkinMerchant</li>
+			<li>RatkinDefender</li>
 			<li>RatkinUneducated</li>
 			<li>RatkinThief</li>
 			<li>RatkinDemoman</li>
@@ -997,6 +1024,8 @@
 			<li>RatkinSoldier</li>
 			<li>RatkinMerchant</li>
 			<li>RatkinMercenary</li>
+			<li>RatkinEliteDefender</li>
+			<li>RatkinDefender</li>
 			<li>RatkinCombatant</li>
 		</spawnCategories>
 	</AlienRace.BackstoryDef>
@@ -1031,6 +1060,7 @@
 			<li>RatkinStory</li>
 			<li>RatkinCountry</li>
 			<li>RatkinCity</li>
+			<li>RatkinDefender</li>
 		</spawnCategories>
 	</AlienRace.BackstoryDef>
 	<!-- 광부 -->
@@ -1059,6 +1089,7 @@
 		<spawnCategories>
 			<li>RatkinStory</li>
 			<li>RatkinCountry</li>
+			<li>RatkinDefender</li>
 		</spawnCategories>
 	</AlienRace.BackstoryDef>
 	<!-- 사냥꾼 -->
@@ -1086,8 +1117,11 @@
 		<spawnCategories>
 			<li>RatkinStory</li>
 			<li>RatkinMercenary</li>
+			<li>RatkinGuardener</li>
 			<li>RatkinSoldier</li>
+			<li>RatkinDefender</li>
 			<li>RatkinWanderer</li>
+			<li>RatkinEliteDefender</li>
 			<li>RatkinCombatant</li>
 			<li>RatkinWild</li>
 		</spawnCategories>
@@ -1114,6 +1148,7 @@
 		<spawnCategories>
 			<li>RatkinStory</li>
 			<li>RatkinWild</li>
+			<li>RatkinDefender</li>
 			<li>RatkinCountry</li>
 		</spawnCategories>
 	</AlienRace.BackstoryDef>
@@ -1146,6 +1181,7 @@
 		</skillGains>
 		<spawnCategories>
 			<li>RatkinStory</li>
+			<li>RatkinDefender</li>
 			<li>RatkinKingdom</li>
 		</spawnCategories>
 	</AlienRace.BackstoryDef>
@@ -1272,7 +1308,9 @@
 			<li>RatkinStory</li>
 			<li>RatkinEducated</li>
 			<li>RatkinCombatant</li>
+			<li>RatkinKnight</li>
 			<li>RatkinSoldier</li>
+			<li>RatkinEliteDefender</li>
 			<li>RatkinDefender</li>
 			<li>RatkinGuardener</li>
 			<li>RatkinKingdom</li>
@@ -1306,7 +1344,9 @@
 		<spawnCategories>
 			<li>RatkinStory</li>
 			<li>RatkinKnight</li>
+			<li>RatkinGuardener</li>
 			<li>RatkinDefender</li>
+			<li>RatkinEliteDefender</li>
 		</spawnCategories>
 		<forcedTraits>
 			<li>
@@ -1425,6 +1465,7 @@
 		<spawnCategories>
 			<li>RatkinStory</li>
 			<li>RatkinKingdom</li>
+			<li>RatkinDefender</li>
 		</spawnCategories>
 	</AlienRace.BackstoryDef>
 	<!-- 도둑 -->
@@ -1449,7 +1490,9 @@
 			<li>RatkinStory</li>
 			<li>RatkinUneducated</li>
 			<li>RatkinMercenary</li>
+			<li>RatkinEliteDefender</li>
 			<li>RatkinKingdom</li>
+			<li>RatkinDefender</li>
 			<li>RatkinWild</li>
 			<li>RatkinWanderer</li>
 			<li>RatkinThief</li>
@@ -1479,9 +1522,11 @@
 			<li>Cleaning</li>
 		</workDisables>
 		<spawnCategories>
+			<li>RatkinKnight</li>
 			<li>RatkinStory</li>
 			<li>RatkinEducated</li>
 			<li>RatkinKingdom</li>
+			<li>RatkinGuardener</li>
 			<li>RatkinNoble</li>
 		</spawnCategories>
 	</AlienRace.BackstoryDef>
@@ -1512,7 +1557,10 @@
 			<li>RatkinStory</li>
 			<li>RatkinSoldier</li>
 			<li>RatkinCombatant</li>
+			<li>RatkinKnight</li>
 			<li>RatkinCity</li>
+			<li>RatkinEliteDefender</li>
+			<li>RatkinGuardener</li>
 			<li>RatkinMercenary</li>
 		</spawnCategories>
 	</AlienRace.BackstoryDef>
@@ -1554,6 +1602,7 @@
 			<li>RatkinStory</li>
 			<li>RatkinWanderer</li>
 			<li>RatkinWild</li>
+			<li>RatkinDefender</li>
 			<li>RatkinMercenary</li>
 			<li>RatkinMerchant</li>
 			<li>RatkinSoldier</li>
@@ -1639,7 +1688,9 @@
 		<spawnCategories>
 			<li>RatkinServant</li>
 			<li>RatkinStory</li>
+			<li>RatkinEliteDefender</li>
 			<li>RatkinCombatant</li>
+			<li>RatkinGuardener</li>
 			<li>RatkinEducated</li>
 			<li>RatkinKingdom</li>
 		</spawnCategories>
@@ -1737,6 +1788,7 @@
 		<spawnCategories>
 			<li>RatkinStory</li>
 			<li>RatkinSoldier</li>
+			<li>RatkinKnight</li>
 			<li>RatkinEducated</li>
 			<li>RatkinCity</li>
 			<li>RatkinKingdom</li>
@@ -1773,6 +1825,7 @@
 			<li>RatkinStory</li>
 			<li>RatkinKingdom</li>
 			<li>RatkinCity</li>
+			<li>RatkinDefender</li>
 		</spawnCategories>
 	</AlienRace.BackstoryDef>
 	<!-- 부자 -->
@@ -1879,6 +1932,7 @@
 		<spawnCategories>
 			<li>RatkinStory</li>
 			<li>RatkinKingdom</li>
+			<li>RatkinDefender</li>
 		</spawnCategories>
 	</AlienRace.BackstoryDef>
 	<!-- 도시메이드 -->
@@ -2207,6 +2261,7 @@
 		</workDisables>
 		<spawnCategories>
 			<li>RatkinVagabond</li>
+			<li>RatkinDefender</li>
 		</spawnCategories>		
 	</AlienRace.BackstoryDef>
 

@@ -61,14 +61,14 @@
 
   <Ratkin_Bastard.title>랫킨 서자</Ratkin_Bastard.title>
   <Ratkin_Bastard.titleShort>서자</Ratkin_Bastard.titleShort>
-  <Ratkin_Bastard.baseDescription>[PAWN_nameDef](은)는 첩의 자식으로 태어났습니다. [PAWN_pronoun](은)는 후계자가 되기위해 수를 쓰다 발각되어 도망자 신분이 되었습니다.</Ratkin_Bastard.baseDescription>
+  <Ratkin_Bastard.baseDescription>[PAWN_nameDef](은)는 첩의 자식으로 태어났습니다. [PAWN_pronoun](은)는 서자의 삶을 원치 않기에 스스로의 길을 개척하고자 길을 떠났습니다.</Ratkin_Bastard.baseDescription>
 
 
   <!-- 후계자 -->
 
   <Ratkin_Successor.title>랫킨 후계자</Ratkin_Successor.title>
   <Ratkin_Successor.titleShort>후계자</Ratkin_Successor.titleShort>
-  <Ratkin_Successor.baseDescription>[PAWN_nameDef](은)는 귀족의 후계자로 태어났습니다. 한때 찬란했던 가문이 기울자 [PAWN_pronoun](은)는 일으키기 위해 길을 떠나야만 했습니다.</Ratkin_Successor.baseDescription>
+  <Ratkin_Successor.baseDescription>[PAWN_nameDef](은)는 귀족의 후계자로 태어났습니다. 한때 찬란했던 가문이 기울자 [PAWN_pronoun](은)는 가문을 일으키기 위해 길을 떠나야만 했습니다.</Ratkin_Successor.baseDescription>
 
 
   <!-- 정원사지망 -->
@@ -383,7 +383,7 @@
 
   <Ratkin_Scientist.title>랫킨 과학자</Ratkin_Scientist.title>
   <Ratkin_Scientist.titleShort>과학자</Ratkin_Scientist.titleShort>
-  <Ratkin_Scientist.baseDescription>[PAWN_nameDef](은)는 과학자로 인간들 사이에서 과학을 연구해왔습니다. [PAWN_pronoun]하지만 너무 많이 연구에 몰두한 나머지 신체적으로 허약해지고 눈도 나뻐졌습니다.</Ratkin_Scientist.baseDescription>
+  <Ratkin_Scientist.baseDescription>[PAWN_nameDef](은)는 과학자로 인간들 사이에서 과학을 연구해왔습니다. [PAWN_pronoun]하지만 너무 많이 연구에 몰두한 나머지 신체적으로 허약해지고 눈도 나빠졌습니다.</Ratkin_Scientist.baseDescription>
 
 
   <!-- 공학자 -->

@@ -89,7 +89,7 @@
 				<maxTotalPoints>1000</maxTotalPoints>
 				<options>
 					<RatkinCombatant>20</RatkinCombatant>
-					<RatkinSoldier>10</RatkinSoldier>
+					<RatkinSoldier>5</RatkinSoldier>
 				</options>
 			</li>	
 			<!-- 초반 혼합-->			
@@ -98,9 +98,9 @@
 				<commonality>100</commonality>
 				<maxTotalPoints>1000</maxTotalPoints>
 				<options>
-					<RatkinDefender>10</RatkinDefender>
-					<RatkinVanguard>20</RatkinVanguard>
-					<RatkinCombatant>10</RatkinCombatant>
+					<RatkinDefender>5</RatkinDefender>
+					<RatkinVanguard>10</RatkinVanguard>
+					<RatkinCombatant>15</RatkinCombatant>
 				</options>
 			</li>	
 			<!-- 중후반 군인-->

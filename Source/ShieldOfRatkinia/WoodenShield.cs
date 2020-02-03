@@ -5,6 +5,7 @@ using Verse;
 using Verse.AI;
 using Verse.Sound;
 using RimWorld;
+using System.Text;
 
 namespace NewRatkin
 {
@@ -102,10 +103,9 @@ namespace NewRatkin
                         break;
                 }                
             }
-            //등에 맴
             else
             {
-                if(!Wearer.Dead && !Wearer.Downed)
+                if (!pawn.Dead && pawn.GetPosture()==PawnPosture.Standing)
                 {
                     switch (pawn.Rotation.AsInt)
                     {
@@ -167,6 +167,10 @@ namespace NewRatkin
                     }
                     if (Rand.Value <= blockingRate)
                     {
+                        if (Prefs.DevMode)
+                        {
+                            Log.Message(pawn + "ShieldBlockChance".Translate() + blockingRate.ToStringPercent());
+                        }
                         MoteMaker.ThrowText(pawn.DrawPos, pawn.Map, "ShieldBlock".Translate(), 1.9f);
                         EffecterDefOf.Deflect_Metal.Spawn().Trigger(pawn, dinfo.Instigator ?? pawn);
                         return true;
@@ -179,6 +183,43 @@ namespace NewRatkin
         public override bool AllowVerbCast(IntVec3 root, Map map, LocalTargetInfo targ, Verb verb)
         {
             return !(verb is Verb_LaunchProjectile) || ReachabilityImmediate.CanReachImmediate(root, targ, map, PathEndMode.Touch, null);
+        }
+
+        public override IEnumerable<StatDrawEntry> SpecialDisplayStats()
+        {
+            StringBuilder sharp = new StringBuilder();
+            StringBuilder blunt = new StringBuilder();
+            StringBuilder heat = new StringBuilder();
+            float valueSharp= this.GetStatValue(StatDefOf.ArmorRating_Sharp);
+            float valueBlunt= this.GetStatValue(StatDefOf.ArmorRating_Blunt);
+            float valueHeat= this.GetStatValue(StatDefOf.ArmorRating_Heat);
+            sharp.AppendLine("BlockChanceDefualtDesc".Translate());
+            blunt.AppendLine("BlockChanceDefualtDesc".Translate());
+            heat.AppendLine("BlockChanceDefualtDesc".Translate());
+            if (Prefs.DevMode)
+            {
+                if (Wearer != null)
+                {
+                    float wearSkillLevel = Wearer.skills.GetSkill(SkillDefOf.Melee).levelInt;
+                    float wearerBlockRate = wearSkillLevel * 0.0375f;
+                    valueSharp *= wearerBlockRate;
+                    valueBlunt *= wearerBlockRate;
+                    valueHeat *= wearerBlockRate;
+
+                    sharp.AppendLine(string.Format("\n{0}({1}): {2}\n{3}: {4}\n{5}: {6}", SkillDefOf.Melee.LabelCap, wearSkillLevel, wearerBlockRate.ToStringPercent(), StatDefOf.ArmorRating_Sharp.LabelCap, this.GetStatValue(StatDefOf.ArmorRating_Sharp).ToStringPercent(), "StatsReport_FinalValue".Translate(), valueSharp.ToStringPercent()));
+                    blunt.AppendLine(string.Format("\n{0}({1}): {2}\n{3}: {4}\n{5}: {6}", SkillDefOf.Melee.LabelCap, wearSkillLevel, wearerBlockRate.ToStringPercent(), StatDefOf.ArmorRating_Blunt.LabelCap, this.GetStatValue(StatDefOf.ArmorRating_Blunt).ToStringPercent(), "StatsReport_FinalValue".Translate(), valueBlunt.ToStringPercent()));
+                    heat.AppendLine(string.Format("\n{0}({1}): {2}\n{3}: {4}\n{5}: {6}", SkillDefOf.Melee.LabelCap, wearSkillLevel, wearerBlockRate.ToStringPercent(), StatDefOf.ArmorRating_Heat.LabelCap, this.GetStatValue(StatDefOf.ArmorRating_Heat).ToStringPercent(), "StatsReport_FinalValue".Translate(), valueHeat.ToStringPercent()));
+                }
+                else
+                {
+                    sharp.AppendLine(string.Format("\n{0}: {1}\n{2}: {3}({4})", StatDefOf.ArmorRating_Sharp.LabelCap, this.GetStatValue(StatDefOf.ArmorRating_Sharp).ToStringPercent(), "StatsReport_FinalValue".Translate(), valueSharp.ToStringPercent(), "CanLow".Translate()));
+                    blunt.AppendLine(string.Format("\n{0}: {1}\n{2}: {3}({4})", StatDefOf.ArmorRating_Blunt.LabelCap, this.GetStatValue(StatDefOf.ArmorRating_Blunt).ToStringPercent(), "StatsReport_FinalValue".Translate(), valueBlunt.ToStringPercent(), "CanLow".Translate()));
+                    heat.AppendLine(string.Format("\n{0}: {1}\n{2}: {3}({4})", StatDefOf.ArmorRating_Heat.LabelCap, this.GetStatValue(StatDefOf.ArmorRating_Heat).ToStringPercent(), "StatsReport_FinalValue".Translate(), valueHeat.ToStringPercent(), "CanLow".Translate()));
+                }
+            }
+            yield return new StatDrawEntry(StatCategoryDefOf.Apparel, "BlockChance_Heat".Translate(), valueHeat.ToStringPercent(), 20, heat.ToString());
+            yield return new StatDrawEntry(StatCategoryDefOf.Apparel, "BlockChance_Blunt".Translate(), valueBlunt.ToStringPercent(), 20, blunt.ToString());
+            yield return new StatDrawEntry(StatCategoryDefOf.Apparel, "BlockChance_Sharp".Translate(), valueSharp.ToStringPercent(), 20,sharp.ToString());
         }
 
     }

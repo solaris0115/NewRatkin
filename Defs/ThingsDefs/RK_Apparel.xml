@@ -1059,6 +1059,7 @@
 				<li>Shell</li>
 			</layers>
 			<tags>
+				<li>RK_Knight</li>
 				<li>RK_Apparel</li>
 				<li>RK_Ambassador</li>	
 				<li>RK_Gaurdener</li>	
@@ -2165,8 +2166,8 @@
 			<StuffEffectMultiplierArmor>0.50</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.0</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.0</StuffEffectMultiplierInsulation_Heat>
-			<ArmorRating_Sharp>0.30</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
 			<Flammability>0.8</Flammability>
 			<EquipDelay>1</EquipDelay>
 		</statBases>
@@ -2235,8 +2236,8 @@
 			<StuffEffectMultiplierInsulation_Cold>0.0</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.0</StuffEffectMultiplierInsulation_Heat>
 			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
-			<Flammability>0.0</Flammability>
+			<ArmorRating_Blunt>0.0</ArmorRating_Blunt>
+			<Flammability>0.3</Flammability>
 			<EquipDelay>1</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
