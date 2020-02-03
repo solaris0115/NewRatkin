@@ -129,6 +129,18 @@
   <RK_PlateHelmC.description>バイザーの無い金属で作られたヘルメットです。</RK_PlateHelmC.description>
 
 
+  <!-- Ratkin Wooden Shield -->
+
+  <RK_WoodenShield.label>RK ウッドシールド</RK_WoodenShield.label>
+  <RK_WoodenShield.description>木製の盾です。</RK_WoodenShield.description>
+
+
+  <!-- Ratkin Heavy Shield -->
+
+  <RK_HeavyShield.label>RK ヘビーシールド</RK_HeavyShield.label>
+  <RK_HeavyShield.description>金属製の盾です。</RK_HeavyShield.description>
+
+
   <!-- Santa Coat -->
 
   <RK_SantaRobe.label>RK サンタ衣装</RK_SantaRobe.label>
