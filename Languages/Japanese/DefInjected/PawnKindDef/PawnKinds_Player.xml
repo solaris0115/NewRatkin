@@ -97,12 +97,6 @@
   <RatkinPettyThief.labelPlural>ラットキン鼠賊たち</RatkinPettyThief.labelPlural>
 
 
-  <!-- Merchant -->
-
-  <RatkinMerchant.label>ラットキン商人</RatkinMerchant.label>
-  <RatkinMerchant.labelPlural>ラットキン商人</RatkinMerchant.labelPlural>
-
-
   <!-- Murderer -->
 
   <RatkinMurderer.label>ラットキン殺人者</RatkinMurderer.label>
