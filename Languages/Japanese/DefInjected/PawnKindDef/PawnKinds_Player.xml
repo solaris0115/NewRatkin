@@ -1,169 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <!-- General citizen -->
+  <!-- Citizen -->
 
   <RatkinColonist.label>ラットキン入植者</RatkinColonist.label>
   <RatkinColonist.labelPlural>ラットキン入植者たち</RatkinColonist.labelPlural>
-  <RatkinColonist.labelMale>男性 ラットキン入植者</RatkinColonist.labelMale>
-  <RatkinColonist.labelMalePlural>男性 ラットキン入植者たち</RatkinColonist.labelMalePlural>
-  <RatkinColonist.labelFemale>女性 ラットキン入植者</RatkinColonist.labelFemale>
-  <RatkinColonist.labelFemalePlural>女性 ラットキン入植者たち</RatkinColonist.labelFemalePlural>
+
 
   <!-- Noble -->
 
   <RatkinNoble.label>ラットキン貴族</RatkinNoble.label>
   <RatkinNoble.labelPlural>ラットキン貴族</RatkinNoble.labelPlural>
-  <RatkinNoble.labelMale>男性 ラットキン貴族</RatkinNoble.labelMale>
-  <RatkinNoble.labelMalePlural>男性 ラットキン貴族</RatkinNoble.labelMalePlural>
-  <RatkinNoble.labelFemale>女性 ラットキン貴族</RatkinNoble.labelFemale>
-  <RatkinNoble.labelFemalePlural>女性 ラットキン貴族</RatkinNoble.labelFemalePlural>
+
 
   <!-- Servant -->
 
   <RatkinServant.label>ラットキン使用人</RatkinServant.label>
   <RatkinServant.labelPlural>ラットキン使用人</RatkinServant.labelPlural>
-  <RatkinServant.labelMale>男性 ラットキン使用人</RatkinServant.labelMale>
-  <RatkinServant.labelMalePlural>男性 ラットキン使用人</RatkinServant.labelMalePlural>
-  <RatkinServant.labelFemale>女性 ラットキン使用人</RatkinServant.labelFemale>
-  <RatkinServant.labelFemalePlural>女性 ラットキン使用人</RatkinServant.labelFemalePlural>
+
+
+  <!-- Ratkin Priest -->
+
+  <RatkinPriest.label>ラットキン僧侶</RatkinPriest.label>
+  <RatkinPriest.labelPlural>ラットキン僧侶</RatkinPriest.labelPlural>
+
+
+  <!-- Ratkin Merchant -->
+
+  <RatkinMerchant.label>ラットキン商人</RatkinMerchant.label>
+  <RatkinMerchant.labelPlural>ラットキン商人</RatkinMerchant.labelPlural>
+
 
   <!-- Combatant -->
 
   <RatkinCombatant.label>ラットキン戦闘員</RatkinCombatant.label>
   <RatkinCombatant.labelPlural>ラットキン戦闘員</RatkinCombatant.labelPlural>
-  <RatkinCombatant.labelMale>男性 ラットキン戦闘員</RatkinCombatant.labelMale>
-  <RatkinCombatant.labelMalePlural>男性 ラットキン戦闘員</RatkinCombatant.labelMalePlural>
-  <RatkinCombatant.labelFemale>女性 ラットキン戦闘員</RatkinCombatant.labelFemale>
-  <RatkinCombatant.labelFemalePlural>女性 ラットキン戦闘員</RatkinCombatant.labelFemalePlural>
+
+
+  <!-- Vagabond -->
+
+  <RatkinVagabond.label>ラットキン放浪者</RatkinVagabond.label>
+  <RatkinVagabond.labelPlural>ラットキン放浪者</RatkinVagabond.labelPlural>
+
+
+  <!-- Ratkin Defender -->
+
+  <RatkinDefender.label>ラットキン護衛兵</RatkinDefender.label>
+  <RatkinDefender.labelPlural>ラットキン護衛兵</RatkinDefender.labelPlural>
+
 
   <!-- Soldier -->
 
   <RatkinSoldier.label>ラットキン兵士</RatkinSoldier.label>
   <RatkinSoldier.labelPlural>ラットキン兵士</RatkinSoldier.labelPlural>
-  <RatkinSoldier.labelMale>男性 ラットキン兵士</RatkinSoldier.labelMale>
-  <RatkinSoldier.labelMalePlural>男性 ラットキン兵士</RatkinSoldier.labelMalePlural>
-  <RatkinSoldier.labelFemale>女性 ラットキン兵士</RatkinSoldier.labelFemale>
-  <RatkinSoldier.labelFemalePlural>女性 ラットキン兵士</RatkinSoldier.labelFemalePlural>
 
-  <!-- Subject -->
 
-  <RatkinSubject.label>ラットキン実験体</RatkinSubject.label>
-  <RatkinSubject.labelPlural>ラットキン実験体</RatkinSubject.labelPlural>
-  <RatkinSubject.labelMale>男性 ラットキン実験体</RatkinSubject.labelMale>
-  <RatkinSubject.labelMalePlural>男性 ラットキン実験体</RatkinSubject.labelMalePlural>
-  <RatkinSubject.labelFemale>女性 ラットキン実験体</RatkinSubject.labelFemale>
-  <RatkinSubject.labelFemalePlural>女性 ラットキン実験体</RatkinSubject.labelFemalePlural>
-
-  <!-- Mercenary -->
-
-  <RatkinMercenary.label>ラットキン傭兵</RatkinMercenary.label>
-  <RatkinMercenary.labelPlural>ラットキン傭兵</RatkinMercenary.labelPlural>
-  <RatkinMercenary.labelMale>男性 ラットキン傭兵</RatkinMercenary.labelMale>
-  <RatkinMercenary.labelMalePlural>男性 ラットキン傭兵</RatkinMercenary.labelMalePlural>
-  <RatkinMercenary.labelFemale>女性 ラットキン傭兵</RatkinMercenary.labelFemale>
-  <RatkinMercenary.labelFemalePlural>女性 ラットキン傭兵</RatkinMercenary.labelFemalePlural>
-
-  <!-- Elite Guardener -->
+  <!-- Elite Guardener (Melee, Long Range) -->
 
   <RatkinEliteGuardener.label>ラットキン近衛兵</RatkinEliteGuardener.label>
   <RatkinEliteGuardener.labelPlural>ラットキンエリート近衛兵</RatkinEliteGuardener.labelPlural>
-  <RatkinEliteGuardener.labelMale>男性 ラットキンエリート近衛兵</RatkinEliteGuardener.labelMale>
-  <RatkinEliteGuardener.labelMalePlural>男性 ラットキンエリート近衛兵</RatkinEliteGuardener.labelMalePlural>
-  <RatkinEliteGuardener.labelFemale>女性 ラットキンエリート近衛兵</RatkinEliteGuardener.labelFemale>
-  <RatkinEliteGuardener.labelFemalePlural>女性 ラットキンエリート近衛兵</RatkinEliteGuardener.labelFemalePlural>
 
-  <!-- Knight -->
+
+  <!-- Knight (Melee Infantry) -->
 
   <RatkinKnight.label>ラットキン騎士</RatkinKnight.label>
   <RatkinKnight.labelPlural>ラットキン騎士</RatkinKnight.labelPlural>
-  <RatkinKnight.labelMale>男性 ラットキン騎士</RatkinKnight.labelMale>
-  <RatkinKnight.labelMalePlural>男性 ラットキン騎士</RatkinKnight.labelMalePlural>
-  <RatkinKnight.labelFemale>女性 ラットキン騎士</RatkinKnight.labelFemale>
-  <RatkinKnight.labelFemalePlural>女性 ラットキン騎士</RatkinKnight.labelFemalePlural>
+
+
+  <!-- Ratkin Elite Defender (Melee Infantry) -->
+
+  <RatkinEliteDefender.label>ラットキン近衛護衛兵</RatkinEliteDefender.label>
+  <RatkinEliteDefender.labelPlural>ラットキン近衛護衛兵</RatkinEliteDefender.labelPlural>
+
 
   <!-- Knight Commander -->
 
-  <RatkinKnightCommander.label>ラットキン騎士commander</RatkinKnightCommander.label>
+  <RatkinKnightCommander.label>ラットキン騎士団長</RatkinKnightCommander.label>
   <RatkinKnightCommander.labelPlural>ラットキン騎士団長</RatkinKnightCommander.labelPlural>
-  <RatkinKnightCommander.labelMale>男性 ラットキン騎士団長</RatkinKnightCommander.labelMale>
-  <RatkinKnightCommander.labelMalePlural>男性 ラットキン騎士団長</RatkinKnightCommander.labelMalePlural>
-  <RatkinKnightCommander.labelFemale>女性 ラットキン騎士団長</RatkinKnightCommander.labelFemale>
-  <RatkinKnightCommander.labelFemalePlural>女性 ラットキン騎士団長</RatkinKnightCommander.labelFemalePlural>
-
-  <!-- Priest -->
-
-  <RatkinPriest.label>ラットキン司祭</RatkinPriest.label>
-  <RatkinPriest.labelPlural>ラットキン司祭</RatkinPriest.labelPlural>
-  <RatkinPriest.labelMale>男性 ラットキン司祭</RatkinPriest.labelMale>
-  <RatkinPriest.labelMalePlural>男性 ラットキン司祭</RatkinPriest.labelMalePlural>
-  <RatkinPriest.labelFemale>女性 ラットキン司祭</RatkinPriest.labelFemale>
-  <RatkinPriest.labelFemalePlural>女性 ラットキン司祭</RatkinPriest.labelFemalePlural>
-
-  <!-- Merchant -->
-
-  <RatkinMerchant.label>ラットキン商人</RatkinMerchant.label>
-  <RatkinMerchant.labelPlural>ラットキン商人</RatkinMerchant.labelPlural>
-  <RatkinMerchant.labelMale>男性 ラットキン商人</RatkinMerchant.labelMale>
-  <RatkinMerchant.labelMalePlural>男性 ラットキン商人</RatkinMerchant.labelMalePlural>
-  <RatkinMerchant.labelFemale>女性 ラットキン商人</RatkinMerchant.labelFemale>
-  <RatkinMerchant.labelFemalePlural>女性 ラットキン商人</RatkinMerchant.labelFemalePlural>
-
-  <!-- Murderer -->
-
-  <RatkinMurderer.label>ラットキン殺人者</RatkinMurderer.label>
-  <RatkinMurderer.labelPlural>ラットキン殺人者</RatkinMurderer.labelPlural>
-  <RatkinMurderer.labelMale>男性 ラットキン殺人者</RatkinMurderer.labelMale>
-  <RatkinMurderer.labelMalePlural>男性 ラットキン殺人者</RatkinMurderer.labelMalePlural>
-  <RatkinMurderer.labelFemale>女性 ラットキン殺人者</RatkinMurderer.labelFemale>
-  <RatkinMurderer.labelFemalePlural>女性 ラットキン殺人者</RatkinMurderer.labelFemalePlural>
-
-  <!-- Vagabond -->
-
-  <RatkinVagabond.label>放浪者</RatkinVagabond.label>
-  <RatkinVagabond.labelPlural>放浪者</RatkinVagabond.labelPlural>
-  <RatkinVagabond.labelMale>男性 放浪者</RatkinVagabond.labelMale>
-  <RatkinVagabond.labelMalePlural>男性 放浪者</RatkinVagabond.labelMalePlural>
-  <RatkinVagabond.labelFemale>女性 放浪者</RatkinVagabond.labelFemale>
-  <RatkinVagabond.labelFemalePlural>女性 放浪者</RatkinVagabond.labelFemalePlural>
-
-  <!-- Mercenary Light -->
-
-  <RatkinMercenaryLight.label>ラットキン傭兵</RatkinMercenaryLight.label>
-  <RatkinMercenaryLight.labelPlural>ラットキン傭兵</RatkinMercenaryLight.labelPlural>
-  <RatkinMercenaryLight.labelMale>男性 ラットキン傭兵</RatkinMercenaryLight.labelMale>
-  <RatkinMercenaryLight.labelMalePlural>男性 ラットキン傭兵</RatkinMercenaryLight.labelMalePlural>
-  <RatkinMercenaryLight.labelFemale>女性 ラットキン傭兵</RatkinMercenaryLight.labelFemale>
-  <RatkinMercenaryLight.labelFemalePlural>女性 ラットキン傭兵</RatkinMercenaryLight.labelFemalePlural>
 
 
   <!-- Elite Soldier -->
 
   <RatkinEliteSoldier.label>ラットキンエリート兵</RatkinEliteSoldier.label>
   <RatkinEliteSoldier.labelPlural>ラットキンエリート兵たち</RatkinEliteSoldier.labelPlural>
-  <RatkinEliteSoldier.labelMale>男性 ラットキンエリート兵</RatkinEliteSoldier.labelMale>
-  <RatkinEliteSoldier.labelMalePlural>男性 ラットキンエリート兵たち</RatkinEliteSoldier.labelMalePlural>
-  <RatkinEliteSoldier.labelFemale>女性 ラットキンエリート兵</RatkinEliteSoldier.labelFemale>
-  <RatkinEliteSoldier.labelFemalePlural>女性 ラットキンエリート兵たち</RatkinEliteSoldier.labelFemalePlural>
 
 
   <!-- Demoman -->
 
   <RatkinDemonMan.label>ラットキン爆弾魔</RatkinDemonMan.label>
   <RatkinDemonMan.labelPlural>ラットキン爆弾魔たち</RatkinDemonMan.labelPlural>
-  <RatkinDemonMan.labelMale>男性 ラットキン爆弾魔</RatkinDemonMan.labelMale>
-  <RatkinDemonMan.labelMalePlural>男性 ラットキン爆弾魔たち</RatkinDemonMan.labelMalePlural>
-  <RatkinDemonMan.labelFemale>女性 ラットキン爆弾魔</RatkinDemonMan.labelFemale>
-  <RatkinDemonMan.labelFemalePlural>女性 ラットキン爆弾魔たち</RatkinDemonMan.labelFemalePlural>
 
 
   <!-- Petty Thief -->
 
   <RatkinPettyThief.label>ラットキン鼠賊</RatkinPettyThief.label>
   <RatkinPettyThief.labelPlural>ラットキン鼠賊たち</RatkinPettyThief.labelPlural>
-  <RatkinPettyThief.labelMale>男性 ラットキン鼠賊</RatkinPettyThief.labelMale>
-  <RatkinPettyThief.labelMalePlural>男性 ラットキン鼠賊たち</RatkinPettyThief.labelMalePlural>
-  <RatkinPettyThief.labelFemale>女性 ラットキン鼠賊</RatkinPettyThief.labelFemale>
-  <RatkinPettyThief.labelFemalePlural>女性 ラットキン鼠賊たち</RatkinPettyThief.labelFemalePlural>
+
+
+  <!-- Merchant -->
+
+  <RatkinMerchant.label>ラットキン商人</RatkinMerchant.label>
+  <RatkinMerchant.labelPlural>ラットキン商人</RatkinMerchant.labelPlural>
+
+
+  <!-- Murderer -->
+
+  <RatkinMurderer.label>ラットキン殺人者</RatkinMurderer.label>
+  <RatkinMurderer.labelPlural>ラットキン殺人者</RatkinMurderer.labelPlural>
+
+
+  <!-- Mercenary Light -->
+
+  <RatkinMercenaryLight.label>ラットキン傭兵</RatkinMercenaryLight.label>
+  <RatkinMercenaryLight.labelPlural>ラットキン傭兵</RatkinMercenaryLight.labelPlural>
+
+
+  <!-- Subject -->
+
+  <RatkinSubject.label>ラットキン実験体</RatkinSubject.label>
+  <RatkinSubject.labelPlural>ラットキン実験体</RatkinSubject.labelPlural>
+
+
+  <!-- Mercenary -->
+
+  <RatkinMercenary.label>ラットキン傭兵</RatkinMercenary.label>
+  <RatkinMercenary.labelPlural>ラットキン傭兵</RatkinMercenary.labelPlural>
 
 </LanguageData>
