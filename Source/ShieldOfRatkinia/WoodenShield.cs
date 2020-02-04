@@ -45,14 +45,17 @@ namespace NewRatkin
             base.PostMake();
             if (shieldGraphic==null)
             {
-                if (def.defName == "RK_WoodenShield")
+                LongEventHandler.ExecuteWhenFinished(delegate
                 {
-                    shieldGraphic = GraphicDatabase.Get<Graphic_Multi>(path + def.defName, ShaderDatabase.Cutout, def.graphicData.drawSize, Color.white);
-                }
-                else
-                {
-                    shieldGraphic = GraphicDatabase.Get<Graphic_Multi>(path + def.defName, ShaderDatabase.Cutout, def.graphicData.drawSize, Stuff.stuffProps.color);
-                }
+                    if (def.defName == "RK_WoodenShield")
+                    {
+                        shieldGraphic = GraphicDatabase.Get<Graphic_Multi>(path + def.defName, ShaderDatabase.Cutout, def.graphicData.drawSize, Color.white);
+                    }
+                    else
+                    {
+                        shieldGraphic = GraphicDatabase.Get<Graphic_Multi>(path + def.defName, ShaderDatabase.Cutout, def.graphicData.drawSize, Stuff.stuffProps.color);
+                    }
+                });
             }
             
         }
@@ -132,9 +135,6 @@ namespace NewRatkin
         {
             Mesh mesh = MeshPool.plane10;
             Graphics.DrawMesh(mesh, drawLoc, Quaternion.AngleAxis(angle, Vector3.up), mat, 0);
-            //Material material2 = apparelGraphics[j].graphic.MatAt(bodyFacing, null);
-            //material2 = this.graphics.flasher.GetDamagedMat(material2);
-            //GenDraw.DrawMeshNowOrLater(mesh3, loc2, quaternion, material2, portrait);
         }
 
         public override bool CheckPreAbsorbDamage(DamageInfo dinfo)
