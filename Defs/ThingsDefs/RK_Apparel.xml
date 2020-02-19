@@ -687,7 +687,7 @@
 		<costList>
 			<Steel>25</Steel>
 		</costList>
-		<techLevel>Industrial</techLevel>
+		<techLevel>Medieval</techLevel>
 		<statBases>
 			<MaxHitPoints>65</MaxHitPoints>
 			<WorkToMake>4000</WorkToMake>
@@ -743,7 +743,7 @@
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
-		<techLevel>Industrial</techLevel>
+		<techLevel>Medieval</techLevel>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToMake>8000</WorkToMake>
@@ -855,7 +855,7 @@
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
-		<techLevel>Industrial</techLevel>
+		<techLevel>Medieval</techLevel>
 		<statBases>
 			<MaxHitPoints>180</MaxHitPoints>
 			<WorkToMake>8000</WorkToMake>
@@ -962,7 +962,7 @@
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
-		<techLevel>Industrial</techLevel>
+		<techLevel>Medieval</techLevel>
 		<statBases>
 			<MaxHitPoints>240</MaxHitPoints>
 			<WorkToMake>8500</WorkToMake>
@@ -1028,7 +1028,7 @@
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
-		<techLevel>Industrial</techLevel>
+		<techLevel>Medieval</techLevel>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToMake>10000</WorkToMake>
@@ -1092,7 +1092,7 @@
 		<stuffCategories>
 			<li>Leathery</li>
 		</stuffCategories>
-		<techLevel>Industrial</techLevel>
+		<techLevel>Medieval</techLevel>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToMake>8000</WorkToMake>
@@ -1144,7 +1144,7 @@
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
-		<techLevel>Industrial</techLevel>
+		<techLevel>Medieval</techLevel>
 		<statBases>
 			<MaxHitPoints>280</MaxHitPoints>
 			<WorkToMake>35000</WorkToMake>
@@ -1262,7 +1262,7 @@
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
-		<techLevel>Industrial</techLevel>
+		<techLevel>Medieval</techLevel>
 		<statBases>
 			<MaxHitPoints>135</MaxHitPoints>
 			<WorkToMake>15000</WorkToMake>
@@ -1321,7 +1321,7 @@
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
-		<techLevel>Industrial</techLevel>
+		<techLevel>Medieval</techLevel>
 		<statBases>
 			<MaxHitPoints>135</MaxHitPoints>
 			<WorkToMake>15000</WorkToMake>
@@ -1476,7 +1476,7 @@
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
-		<techLevel>Industrial</techLevel>
+		<techLevel>Medieval</techLevel>
 		<statBases>
 			<MaxHitPoints>135</MaxHitPoints>
 			<WorkToMake>20000</WorkToMake>
@@ -1638,7 +1638,7 @@
 			<li>Leathery</li>
 			<li>Fabric</li>
 		</stuffCategories>
-		<techLevel>Industrial</techLevel>
+		<techLevel>Medieval</techLevel>
 		<statBases>
 			<MaxHitPoints>240</MaxHitPoints>
 			<WorkToMake>8000</WorkToMake>
@@ -1691,7 +1691,7 @@
 		<costStuffCount>85</costStuffCount>
 		<stuffCategories>
 			<li>Leathery</li>
-		</stuffCategories>
+		</stuffCategories>		
 		<techLevel>Industrial</techLevel>
 		<statBases>
 			<MaxHitPoints>280</MaxHitPoints>
@@ -1759,6 +1759,7 @@
 			<Plasteel>20</Plasteel>
 		</costList>
 		<costStuffCount>45</costStuffCount>
+		<techLevel>Industrial</techLevel>
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
@@ -1806,6 +1807,7 @@
 		<defName>RK_HeadBand</defName>
 		<label>Ratkin head band</label>
 		<description>빨간 머리띠입니다. 만약 이 머리띠를 두른 랫킨을 본다면 주의하세요.</description>
+		<techLevel>Industrial</techLevel>
 		<graphicData>
 			<texPath>Apparel/RK_HeadBand</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1880,7 +1882,7 @@
 		<stuffCategories>
 			<li>WeaponMetallic</li>
 		</stuffCategories>
-		<techLevel>Industrial</techLevel>
+		<techLevel>Medieval</techLevel>
 		<statBases>
 			<MaxHitPoints>280</MaxHitPoints>
 			<WorkToMake>35000</WorkToMake>
@@ -2158,7 +2160,7 @@
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
-		<techLevel>Industrial</techLevel>
+		<techLevel>Medieval</techLevel>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
 			<WorkToMake>12500</WorkToMake>
@@ -2194,7 +2196,6 @@
 		<followStuffColor>false</followStuffColor>
 	</ThingDef>
 
-
 	<!-- 철제 방패 -->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
 		<defName>RK_HeavyShield</defName>
@@ -2227,7 +2228,7 @@
 		<stuffCategories>
 			<li>WeaponMetallic</li>
 		</stuffCategories>
-		<techLevel>Industrial</techLevel>
+		<techLevel>Medieval</techLevel>
 		<statBases>
 			<MaxHitPoints>240</MaxHitPoints>
 			<WorkToMake>35000</WorkToMake>
@@ -2284,7 +2285,7 @@
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
-		<techLevel>Industrial</techLevel>
+		<techLevel>Medieval</techLevel>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToMake>10000</WorkToMake>
@@ -2385,7 +2386,7 @@
 			<li>Leathery</li>
 			<li>Fabric</li>
 		</stuffCategories>
-		<techLevel>Industrial</techLevel>
+		<techLevel>Medieval</techLevel>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToMake>8000</WorkToMake>
@@ -2414,6 +2415,59 @@
 		<tradeability>Sellable</tradeability>
 		<tradeTags Inherit="false">
 		</tradeTags>
+	</ThingDef>
+
+	<!-- 겨울외투 사회적영향력 5% 추위저항 +35 -->
+	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
+		<defName>RK_WhiteCoat</defName>
+		<label>white coat</label>
+		<description>순백색의 두꺼운 코트입니다. 질 좋은 원단과 세심하게 마감하였습니다. 고위직을 위한 의복같아 보입니다.</description>
+		<graphicData>
+			<texPath>Apparel/RK_WhiteCoat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker Inherit="false">		
+		</recipeMaker>
+		<costList>
+			<Leather_Thrumbo>85</Leather_Thrumbo>
+			<DevilstrandCloth>45</DevilstrandCloth>
+			<Cloth>20</Cloth>
+		</costList>
+		<techLevel>Medieval</techLevel>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<WorkToMake>25000</WorkToMake>
+			<Mass>3</Mass>			
+			<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+			<Insulation_Cold>60</Insulation_Cold>
+			<Insulation_Heat>15</Insulation_Heat>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.15</SocialImpact>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<wornGraphicPath>Apparel/RK_WhiteCoat</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>RK_KnightCommander</li>
+			</tags>
+		</apparel>
 	</ThingDef>
 
 	<StuffCategoryDef>

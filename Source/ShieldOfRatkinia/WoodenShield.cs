@@ -80,7 +80,7 @@ namespace NewRatkin
                 });
             }
         }
-        
+
 
         public override void DrawWornExtras()
         {

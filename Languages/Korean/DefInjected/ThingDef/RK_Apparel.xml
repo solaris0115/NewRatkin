@@ -241,4 +241,10 @@
   <RK_SantaSack.description>선물을 많이 넣을 수 있는 커다란 보따리입니다.</RK_SantaSack.description>
 
 
+  <!-- 겨울외투 사회적영향력 5% 추위저항 +35 -->
+
+  <RK_WhiteCoat.label>순백 코트</RK_WhiteCoat.label>
+  <RK_WhiteCoat.description>순백색의 두꺼운 코트입니다. 질 좋은 원단과 세심하게 마감하였습니다. 고위직을 위한 의복같아 보입니다.</RK_WhiteCoat.description>
+
+
 </LanguageData>

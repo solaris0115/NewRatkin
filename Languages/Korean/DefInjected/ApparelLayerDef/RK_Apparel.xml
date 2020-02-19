@@ -1,12 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <!-- 산타 보따리 +50 내구도 +20 -->
+  <!-- 겨울외투 사회적영향력 5% 추위저항 +35 -->
 
   <InnerCoat.label>내피</InnerCoat.label>
   <BackPack.label>가방</BackPack.label>
   <OuterClothing.label>외투</OuterClothing.label>
   <OnFace.label>얼굴</OnFace.label>
 
+
+  <!-- 산타 보따리 +50 내구도 +20 -->
 
 </LanguageData>

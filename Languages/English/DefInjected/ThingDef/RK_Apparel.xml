@@ -241,4 +241,9 @@
   <RK_SantaSack.description>It's a big package with lots of presents.</RK_SantaSack.description>
 
 
+  <!-- 겨울외투 사회적영향력 5% 추위저항 +35 -->
+
+  <RK_WhiteCoat.label>white coat</RK_WhiteCoat.label>
+
+
 </LanguageData>

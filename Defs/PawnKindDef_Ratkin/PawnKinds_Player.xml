@@ -407,6 +407,7 @@
 			<li>RatkinKnightCommander</li>
 		</backstoryCategories>
 		<apparelRequired>
+			<li>RK_WhiteCoat</li>
 			<li>RK_GaurdenUniform</li>
 			<li>RK_Plate</li>
 			<li>RK_PlateHelmB</li>
