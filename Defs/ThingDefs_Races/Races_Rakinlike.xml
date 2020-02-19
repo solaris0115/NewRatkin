@@ -307,6 +307,7 @@
 					<li>RK_ExplorerHat</li>
 					<li>RK_ChefSuit</li>
 					<li>RK_ChefHat</li>
+
 					<li>RK_GaurdenUniform</li>
 					<li>RK_WinterRobe</li>
 					<li>RK_OutdoorBackpack</li>
@@ -334,7 +335,9 @@
 
 					<li>RK_SantaRobe</li>
 					<li>RK_SantaHat</li>
-					<li>RK_SantaSack</li>					
+					<li>RK_SantaSack</li>		
+
+					<li>RK_WhiteCoat</li>
 				</apparelList>
 				<whiteApparelList>
 					<li>Apparel_ShieldBelt</li>
