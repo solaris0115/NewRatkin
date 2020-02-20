@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!--[Duplicated] <FakeRatkinEar.label>fake ear</FakeRatkinEar.label>-->
+  <!--[Duplicated] <FakeRatkinEar.description>천으로 만들어진 가짜 귀입니다. 랫킨의 큰 귀는 단순히 소리를 듣는것 뿐만 아닌 하나의 상징이자 랫킨 사회에서의 큰 의미를 갖습니다.</FakeRatkinEar.description>-->
+
+  <FakeRatkinTail.label>假尾巴</FakeRatkinTail.label>
+  <FakeRatkinTail.description>它是通過扭曲織物製成的繩子的尾部。 老鼠的尾巴負責平衡。 因為它無論如何都不會移動的關係，使得很難維持身體的平衡，但看起來總比沒有好。</FakeRatkinTail.description>
+
+  <FakeRatkinEar.label>假鼠耳朵</FakeRatkinEar.label>
+  <FakeRatkinEar.description>用布做的假耳朵。 鼠族的大耳朵不僅僅是聽見聲音而已，更是象徵著在鼠類中的重要意義。</FakeRatkinEar.description>
+
+  <BionicTail.label>仿生尾巴</BionicTail.label>
+  <BionicTail.description>先進的人造尾巴。 它還有一個小的AI，可以自動平衡使用者的缺失。</BionicTail.description>
+
+
+</LanguageData>
