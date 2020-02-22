@@ -8,7 +8,7 @@
 			<generalSettings>
 				<!-- 기본 설정 -->
 				<maleGenderProbability>0.1</maleGenderProbability>
-				<useOnlyPawnkindBackstories>true</useOnlyPawnkindBackstories>
+				<!-- <useOnlyPawnkindBackstories>true</useOnlyPawnkindBackstories> -->
 				<immuneToAge>true</immuneToAge>
 				<canLayDown>true</canLayDown>   
 				<maxDamageForSocialfight>6</maxDamageForSocialfight>

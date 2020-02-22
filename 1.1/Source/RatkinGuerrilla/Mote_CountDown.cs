@@ -46,17 +46,18 @@ namespace NewRatkin
         {
             float a = 1f - (AgeSecs - TimeBeforeStartFadeout) / def.mote.fadeOutTime;
             Color color = new Color(textColor.r, textColor.g, textColor.b, a);
-
+            GenMapUI.DrawText(new Vector2(exactPosition.x, exactPosition.z), text, color);
+            /*
             Vector3 position = new Vector3(exactPosition.x, 0f, exactPosition.z);
             Vector2 vector = Find.Camera.WorldToScreenPoint(position) / Prefs.UIScale;
             vector.y = UI.screenHeight - vector.y;
             Text.Font = GameFont.Medium;
-            GUI.color = textColor;
+            GUIText.color = textColor;
             Text.Anchor = TextAnchor.UpperCenter;
             float x = Text.CalcSize(text).x;
             Widgets.Label(new Rect(vector.x - x / 2f, vector.y - 2f, x, 999f), text);
             GUI.color = Color.white;
-            Text.Anchor = TextAnchor.UpperLeft;
+            Text.Anchor = TextAnchor.UpperLeft;*/
         }
     }
 }

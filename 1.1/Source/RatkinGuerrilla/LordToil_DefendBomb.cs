@@ -198,7 +198,6 @@ namespace NewRatkin
                 }
                 if (bombPlanerCount == 0)
                 {
-                    //Log.Message("NoBuilders");
                     lord.ReceiveMemo("NoBuilders");
                     return;
                 }
@@ -218,11 +217,6 @@ namespace NewRatkin
             if (Find.TickManager.TicksGame % 500 == 0)
             {
                 LordToilData_DefendBomb data = Data;
-                /*
-                if (data.empBomb != null&& data.empBomb.ParentHolder !=null&&((Thing)data.empBomb.ParentHolder).Destroyed)
-                {
-                    Log.Message("data.empBomb.ParentHolder Destroyed");
-                }*/
                 if(data.EmpBomb != null && data.EmpBomb.Destroyed ||(data.minifiedEmpBomb!=null && data.minifiedEmpBomb.Destroyed && !data.EmpBomb.Spawned) )
                 {
                     lord.ReceiveMemo("NoBomb");
@@ -253,7 +247,7 @@ namespace NewRatkin
 
         private bool CanBeBuilder(Pawn p)
         {
-            return !p.story.WorkTypeIsDisabled(WorkTypeDefOf.Construction) && !p.story.WorkTypeIsDisabled(WorkTypeDefOf.Firefighter);
+            return !p.WorkTypeIsDisabled(WorkTypeDefOf.Construction) && !p.WorkTypeIsDisabled(WorkTypeDefOf.Firefighter);
         }
 
         private void SetAsBuilder(Pawn p)

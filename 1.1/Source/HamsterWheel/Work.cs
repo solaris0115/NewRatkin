@@ -82,7 +82,6 @@ namespace NewRatkin
 
         public override Job JobOnThing(Pawn pawn, Thing t, bool forced = false)
         {
-            //Log.Message("WorkGiver_HamsterWheel.JobOnThing");
             return new Job(RK_JobDefOf.RK_Job_HamsterWheel, t, 1500, true);
         }
     }

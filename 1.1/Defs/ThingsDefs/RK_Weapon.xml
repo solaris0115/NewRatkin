@@ -576,7 +576,7 @@
 		<!-- </recipeMaker> -->
 	</ThingDef>
 
-	
+
 
 	<!-- 라이플 -->
 	<ThingDef ParentName="RK_IndustrialRangeWeapon">
@@ -1123,7 +1123,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<soundCast>PrototypePulse</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
-				
+
 				<defaultProjectile>Bullet_BFR_SC</defaultProjectile>
 				<muzzleFlashScale>12</muzzleFlashScale>
 				<warmupTime>2.5</warmupTime>
@@ -1138,7 +1138,7 @@
 		<recipeMaker Inherit="false">
 			<!-- <researchPrerequisite>PulseTech</researchPrerequisite> -->
 			<!-- <skillRequirements> -->
-				<!-- <Crafting>10</Crafting> -->
+			<!-- <Crafting>10</Crafting> -->
 			<!-- </skillRequirements> -->
 		</recipeMaker>
 		<weaponTags Inherit="false">
@@ -1223,91 +1223,91 @@
 			<soundAmbient>MortarRound_Ambient</soundAmbient>
 		</projectile>
 	</ThingDef>
-	
-	
-<!-- 2티어 -->
+
+
+	<!-- 2티어 -->
 	<!-- 샷건 	-->
 	<!-- <ThingDef ParentName="RK_IndustrialRangeWeapon"> -->
-		<!-- <defName>RK_Rifle</defName> -->
-		<!-- <label>ratkin shotgun</label> -->
-		<!-- <description>소드오프 샷건입니다. 랫킨 왕국에서는 샷건이 랫킨을 쏩니다.</description> -->
-		<!-- <graphicData> -->
-			<!-- <texPath>Weapon/RK_Shotgun</texPath> -->
-			<!-- <graphicClass>Graphic_Single</graphicClass> -->
-		<!-- </graphicData> -->
-		<!-- <soundInteract>Interact_Rifle</soundInteract> -->
-		<!-- <statBases> -->
-			<!-- <WorkToMake>12000</WorkToMake> -->
-			<!-- <Mass>2</Mass> -->
-			<!-- <AccuracyTouch>0.85</AccuracyTouch> -->
-			<!-- <AccuracyShort>0.85</AccuracyShort> -->
-			<!-- <AccuracyMedium>0.65</AccuracyMedium> -->
-			<!-- <AccuracyLong>0.55</AccuracyLong> -->
-			<!-- <RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown> -->
-		<!-- </statBases> -->
-		<!-- <costList> -->
-			<!-- <WoodLog>25</WoodLog> -->
-			<!-- <Steel>40</Steel> -->
-			<!-- <ComponentIndustrial>2</ComponentIndustrial> -->
-		<!-- </costList> -->
-		<!-- <recipeMaker> -->
-			<!-- <skillRequirements> -->
-				<!-- <Crafting>5</Crafting> -->
-			<!-- </skillRequirements> -->
-		<!-- </recipeMaker> -->
-		<!-- <verbs> -->
-			<!-- <li> -->
-				<!-- <verbClass>Verb_Shoot</verbClass> -->
-				<!-- <hasStandardCommand>true</hasStandardCommand> -->
-				<!-- <defaultProjectile>Bullet_Shotgun</defaultProjectile> -->
-				<!-- <warmupTime>0.7</warmupTime> -->
-				<!-- <range>14</range> -->
-				<!-- <soundCast>Rifle</soundCast> -->
-				<!-- <soundCastTail>GunTail_Heavy</soundCastTail> -->
-				<!-- <muzzleFlashScale>15</muzzleFlashScale> -->
-			<!-- </li> -->
-		<!-- </verbs> -->
-		<!-- <tools> -->
-			<!-- <li> -->
-				<!-- <label>stock</label> -->
-				<!-- <capacities> -->
-					<!-- <li>Blunt</li> -->
-				<!-- </capacities> -->
-				<!-- <power>7</power> -->
-				<!-- <cooldownTime>1.8</cooldownTime> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <label>barrel</label> -->
-				<!-- <capacities> -->
-					<!-- <li>Blunt</li> -->
-					<!-- <li>Poke</li> -->
-				<!-- </capacities> -->
-				<!-- <power>7</power> -->
-				<!-- <cooldownTime>1.8</cooldownTime> -->
-			<!-- </li> -->
-		<!-- </tools> -->
-		<!-- <weaponTags Inherit="false"> -->
-			<!-- <li>RK_2TierWeapon</li> -->
-			<!-- <li>RK_Rifle</li> -->
-			<!-- <li>RK_Weapon</li> -->
-			<!-- <li>RK_RangeWeapon</li> -->
-			<!-- <li>RK_Combatant</li> -->
-		<!-- </weaponTags> -->
-		<!-- <equippedAngleOffset>45</equippedAngleOffset> -->
+	<!-- <defName>RK_Rifle</defName> -->
+	<!-- <label>ratkin shotgun</label> -->
+	<!-- <description>소드오프 샷건입니다. 랫킨 왕국에서는 샷건이 랫킨을 쏩니다.</description> -->
+	<!-- <graphicData> -->
+	<!-- <texPath>Weapon/RK_Shotgun</texPath> -->
+	<!-- <graphicClass>Graphic_Single</graphicClass> -->
+	<!-- </graphicData> -->
+	<!-- <soundInteract>Interact_Rifle</soundInteract> -->
+	<!-- <statBases> -->
+	<!-- <WorkToMake>12000</WorkToMake> -->
+	<!-- <Mass>2</Mass> -->
+	<!-- <AccuracyTouch>0.85</AccuracyTouch> -->
+	<!-- <AccuracyShort>0.85</AccuracyShort> -->
+	<!-- <AccuracyMedium>0.65</AccuracyMedium> -->
+	<!-- <AccuracyLong>0.55</AccuracyLong> -->
+	<!-- <RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown> -->
+	<!-- </statBases> -->
+	<!-- <costList> -->
+	<!-- <WoodLog>25</WoodLog> -->
+	<!-- <Steel>40</Steel> -->
+	<!-- <ComponentIndustrial>2</ComponentIndustrial> -->
+	<!-- </costList> -->
+	<!-- <recipeMaker> -->
+	<!-- <skillRequirements> -->
+	<!-- <Crafting>5</Crafting> -->
+	<!-- </skillRequirements> -->
+	<!-- </recipeMaker> -->
+	<!-- <verbs> -->
+	<!-- <li> -->
+	<!-- <verbClass>Verb_Shoot</verbClass> -->
+	<!-- <hasStandardCommand>true</hasStandardCommand> -->
+	<!-- <defaultProjectile>Bullet_Shotgun</defaultProjectile> -->
+	<!-- <warmupTime>0.7</warmupTime> -->
+	<!-- <range>14</range> -->
+	<!-- <soundCast>Rifle</soundCast> -->
+	<!-- <soundCastTail>GunTail_Heavy</soundCastTail> -->
+	<!-- <muzzleFlashScale>15</muzzleFlashScale> -->
+	<!-- </li> -->
+	<!-- </verbs> -->
+	<!-- <tools> -->
+	<!-- <li> -->
+	<!-- <label>stock</label> -->
+	<!-- <capacities> -->
+	<!-- <li>Blunt</li> -->
+	<!-- </capacities> -->
+	<!-- <power>7</power> -->
+	<!-- <cooldownTime>1.8</cooldownTime> -->
+	<!-- </li> -->
+	<!-- <li> -->
+	<!-- <label>barrel</label> -->
+	<!-- <capacities> -->
+	<!-- <li>Blunt</li> -->
+	<!-- <li>Poke</li> -->
+	<!-- </capacities> -->
+	<!-- <power>7</power> -->
+	<!-- <cooldownTime>1.8</cooldownTime> -->
+	<!-- </li> -->
+	<!-- </tools> -->
+	<!-- <weaponTags Inherit="false"> -->
+	<!-- <li>RK_2TierWeapon</li> -->
+	<!-- <li>RK_Rifle</li> -->
+	<!-- <li>RK_Weapon</li> -->
+	<!-- <li>RK_RangeWeapon</li> -->
+	<!-- <li>RK_Combatant</li> -->
+	<!-- </weaponTags> -->
+	<!-- <equippedAngleOffset>45</equippedAngleOffset> -->
 	<!-- </ThingDef> -->
 	<!-- <ThingDef ParentName="BaseBullet"> -->
-		<!-- <defName>Bullet_RK_Rifle</defName> -->
-		<!-- <label>rifle bullet</label> -->
-		<!-- <projectile> -->
-			<!-- <damageDef>Bullet</damageDef> -->
-			<!-- <damageAmountBase>16</damageAmountBase> -->
-			<!-- <stoppingPower>1</stoppingPower> -->
-			<!-- <armorPenetrationBase>0.28</armorPenetrationBase> -->
-			<!-- <speed>75</speed> -->
-		<!-- </projectile> -->
-		<!-- <graphicData> -->
-			<!-- <texPath>Things/Projectile/Bullet_small</texPath> -->
-			<!-- <graphicClass>Graphic_Single</graphicClass> -->
-		<!-- </graphicData> -->
+	<!-- <defName>Bullet_RK_Rifle</defName> -->
+	<!-- <label>rifle bullet</label> -->
+	<!-- <projectile> -->
+	<!-- <damageDef>Bullet</damageDef> -->
+	<!-- <damageAmountBase>16</damageAmountBase> -->
+	<!-- <stoppingPower>1</stoppingPower> -->
+	<!-- <armorPenetrationBase>0.28</armorPenetrationBase> -->
+	<!-- <speed>75</speed> -->
+	<!-- </projectile> -->
+	<!-- <graphicData> -->
+	<!-- <texPath>Things/Projectile/Bullet_small</texPath> -->
+	<!-- <graphicClass>Graphic_Single</graphicClass> -->
+	<!-- </graphicData> -->
 	<!-- </ThingDef> -->
 </Defs>

@@ -29,7 +29,7 @@ namespace NewRatkin
 
             if (t != null) //터널 생성후 결과가 캐치된 터널이 없으면 이벤트 실행 불발
             {
-                SendStandardLetter(t, null, new string[0]); //이벤트 알림 UI에 전달
+                SendStandardLetter(lookTargets: t, parms: parms);
                 Find.TickManager.slower.SignalForceNormalSpeedShort();
                 return true;
             }

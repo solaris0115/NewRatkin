@@ -97,10 +97,8 @@ namespace NewRatkin
         {
             base.PostDraw();
             Vector3 turningPosition = parent.TrueCenter();
-            ////Log.Message(parent.Rotation.FacingCell.ToVector3().ToString());
             turningPosition += parent.Rotation.FacingCell.ToVector3() * -0.1f + new Vector3(-0.65f,0,0);//양수면 위로감
             turningPosition.y = AltitudeLayer.Pawn.AltitudeFor();
-            ////Log.Message((spinPosition).ToString());
             for (int i = 0; i < 16; i++)
             {
                 float drawPosition = spinPosition + spinFactor * i / 16f;

@@ -48,7 +48,7 @@
 	</ThingDef>
 	<ThingDef Class="NewRatkin.CustomThingDef" Name="RK_ApparelMakeableBase" ParentName="RK_ApparelBase" Abstract="True">
 		<recipeMaker>
-			<workSpeedStat>TailoringSpeed</workSpeedStat>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
 			<effectWorking>Tailor</effectWorking>
 			<soundWorking>Recipe_Tailor</soundWorking>
@@ -536,10 +536,9 @@
 			<li>Leathery</li>
 		</stuffCategories>	
 		<equippedStatOffsets>
-			<TailoringSpeed>0.1</TailoringSpeed>
+			<GeneralLaborSpeed>0.1</GeneralLaborSpeed>
 			<CookSpeed>0.05</CookSpeed>
 			<PlantWorkSpeed>0.05</PlantWorkSpeed>
-			<UnskilledLaborSpeed>0.05</UnskilledLaborSpeed>
 			<AnimalGatherSpeed>0.05</AnimalGatherSpeed>
 		</equippedStatOffsets>
 		<apparel>
@@ -2126,8 +2125,8 @@
 		</recipeMaker>
 		<followStuffColor>true</followStuffColor>
 	</ThingDef>	
-	
-	
+
+
 	<!-- 목제 방패 -->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
 		<defName>RK_WoodenShield</defName>

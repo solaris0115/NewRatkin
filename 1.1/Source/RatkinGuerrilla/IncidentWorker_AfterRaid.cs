@@ -54,7 +54,8 @@ namespace NewRatkin
                 parms.points = StorytellerUtility.DefaultThreatPointsNow(parms.target);
             }
         }
-        protected override void ResolveRaidStrategy(IncidentParms parms, PawnGroupKindDef groupKind)
+
+        public override void ResolveRaidStrategy(IncidentParms parms, PawnGroupKindDef groupKind)
         {
             if (parms.raidStrategy != null)
             {

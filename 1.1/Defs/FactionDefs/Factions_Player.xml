@@ -181,7 +181,6 @@
 				</options>
 			</li>
 		</pawnGroupMakers>
-		<factionIconPath>Icon/RK_icon</factionIconPath>
 	</FactionDef>
 
 	<FactionDef ParentName="RatkinLandFactionBase">

@@ -21,7 +21,7 @@ namespace NewRatkin
         private static readonly Type patchType = typeof(ShieldPatch);
         static ShieldPatch()
         {
-            HarmonyInstance harmonyInstance = HarmonyInstance.Create("com.NewRatkin.rimworld.mod");
+            Harmony harmonyInstance = new Harmony("com.NewRatkin.rimworld.mod");
             harmonyInstance.Patch(AccessTools.Method(typeof(WorkGiver_HunterHunt), "HasShieldAndRangedWeapon"), new HarmonyMethod(patchType, "HasShieldAndRangedWeaponPrefix"));
             harmonyInstance.Patch(AccessTools.Method(typeof(Alert_ShieldUserHasRangedWeapon), "GetReport"), new HarmonyMethod(patchType, "GetReportPrefix"));
         }
@@ -30,8 +30,10 @@ namespace NewRatkin
             __result = AlertReport.CulpritsAre(ShieldUsersWithRangedWeapon());
             return false;
         }
-        public static IEnumerable<Pawn> ShieldUsersWithRangedWeapon()
+        public static List<Pawn> ShieldUsersWithRangedWeapon()
         {
+            List<Pawn> pawns = new List<Pawn>();
+
             foreach (Pawn p in PawnsFinder.AllMaps_FreeColonistsSpawned)
             {
                 if (p.equipment.Primary != null && p.equipment.Primary.def.IsRangedWeapon)
@@ -41,13 +43,13 @@ namespace NewRatkin
                     {
                         if (ap[i] is Shield || ap[i] is ShieldBelt)
                         {
-                            yield return p;
+                            pawns.Add(p);
                             break;
                         }
                     }
                 }
             }
-            yield break;
+            return pawns;
         }
         public static bool HasShieldAndRangedWeaponPrefix(ref bool __result, Pawn p)
         {

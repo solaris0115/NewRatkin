@@ -132,10 +132,6 @@
 	<ThingDef ParentName="RK_BaseArtilleryBuilding">
 		<defName>RK_Ballista_Strait_Body</defName>
 		<label>ballista</label>
-		<graphicData>
-			<texPath>Things/Building/Security/Ballista_Turret</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
 		<description>It is a machine that fires large arrows. It is designed to be easy to operate by Ratkin.</description>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<building>
@@ -153,6 +149,10 @@
 		<defName>RK_Turret_Ballista_Strait</defName>
 		<label>ballista</label>
 		<description>ballista bolt launcher. accurate and long-ranged.</description>
+		<graphicData>
+			<texPath>Things/Building/Security/Ballista_Turret</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
 		<weaponTags>
 			<li>Ratkin_Artillery</li>
 		</weaponTags>
@@ -207,7 +207,7 @@
 
 	<ThingDef Name="RK_MakeableBallistaBoltBase" ParentName="BallistaBoltBase" Abstract="True">
 		<recipeMaker>
-			<workSpeedStat>SmithingSpeed</workSpeedStat>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<effectWorking>Smith</effectWorking>
 			<soundWorking>Recipe_Machining</soundWorking>
 			<workAmount>250</workAmount>

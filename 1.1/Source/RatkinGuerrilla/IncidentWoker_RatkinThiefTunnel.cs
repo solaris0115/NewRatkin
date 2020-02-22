@@ -28,7 +28,10 @@ namespace NewRatkin
             Thing t = SpawnTunnels(map);
             if(t!=null)
             {
-                SendStandardLetter(t, null, new string[0]);
+                SendStandardLetter
+                    (lookTargets: t,
+                    parms:parms
+                    );
                 Find.TickManager.slower.SignalForceNormalSpeedShort();
                 return true;
             }

@@ -34,7 +34,6 @@ namespace NewRatkin
 
         protected override Job TryGiveJob(Pawn pawn)
         {
-            //Log.Message("JobGiver_RunningWheelPrisoner.TryGiveJob");
             Map map = pawn.Map;
             //죄수일때만
 

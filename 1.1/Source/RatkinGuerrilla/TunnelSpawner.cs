@@ -63,7 +63,7 @@ namespace NewRatkin
                 IntVec3 c;
                 if (Rand.MTBEventOccurs(FilthSpawnMTB, 1f, 5.TicksToSeconds()) && CellFinder.TryFindRandomReachableCellNear(Position, Map, FilthSpawnRadius, TraverseParms.For(TraverseMode.NoPassClosedDoors, Danger.Deadly, false), null, null, out c, 999999))
                 {
-                    FilthMaker.MakeFilth(c, Map, RatkinTunnelUtility.filthTypes.RandomElement<ThingDef>(), 1);
+                    FilthMaker.TryMakeFilth(c, Map, RatkinTunnelUtility.filthTypes.RandomElement<ThingDef>(), 1);
                 }
 
                 if (Rand.MTBEventOccurs(DustMoteSpawnMTB, 1f, 1.TicksToSeconds()))
@@ -172,7 +172,7 @@ namespace NewRatkin
                 IntVec3 c;
                 if (Rand.MTBEventOccurs(FilthSpawnMTB, 1f, 1.TicksToSeconds()) && CellFinder.TryFindRandomReachableCellNear(Position, Map, FilthSpawnRadius, TraverseParms.For(TraverseMode.NoPassClosedDoors, Danger.Deadly, false), null, null, out c, 999999))
                 {
-                    FilthMaker.MakeFilth(c, Map, RatkinTunnelUtility.filthTypes.RandomElement(), 1);
+                    FilthMaker.TryMakeFilth(c, Map, RatkinTunnelUtility.filthTypes.RandomElement(), 1);
                 }
                 if (Rand.MTBEventOccurs(DustMoteSpawnMTB, 1f, 1.TicksToSeconds()))
                 {

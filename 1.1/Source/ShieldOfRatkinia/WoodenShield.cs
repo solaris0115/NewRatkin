@@ -47,6 +47,7 @@ namespace NewRatkin
             {
                 LongEventHandler.ExecuteWhenFinished(delegate
                 {
+                    //Log.Message("2");
                     if (def.defName == "RK_WoodenShield")
                     {
                         shieldGraphic = GraphicDatabase.Get<Graphic_Multi>(path + def.defName, ShaderDatabase.Cutout, def.graphicData.drawSize, Color.white);
@@ -217,9 +218,9 @@ namespace NewRatkin
                     heat.AppendLine(string.Format("\n{0}: {1}\n{2}: {3}({4})", StatDefOf.ArmorRating_Heat.LabelCap, this.GetStatValue(StatDefOf.ArmorRating_Heat).ToStringPercent(), "StatsReport_FinalValue".Translate(), valueHeat.ToStringPercent(), "CanLow".Translate()));
                 }
             }
-            yield return new StatDrawEntry(StatCategoryDefOf.Apparel, "BlockChance_Heat".Translate(), valueHeat.ToStringPercent(), 20, heat.ToString());
-            yield return new StatDrawEntry(StatCategoryDefOf.Apparel, "BlockChance_Blunt".Translate(), valueBlunt.ToStringPercent(), 20, blunt.ToString());
-            yield return new StatDrawEntry(StatCategoryDefOf.Apparel, "BlockChance_Sharp".Translate(), valueSharp.ToStringPercent(), 20,sharp.ToString());
+            yield return new StatDrawEntry(StatCategoryDefOf.Apparel, "BlockChance_Heat".Translate(), valueHeat.ToStringPercent(), heat.ToString(),20);
+            yield return new StatDrawEntry(StatCategoryDefOf.Apparel, "BlockChance_Blunt".Translate(), valueBlunt.ToStringPercent(), blunt.ToString(), 20);
+            yield return new StatDrawEntry(StatCategoryDefOf.Apparel, "BlockChance_Sharp".Translate(), valueSharp.ToStringPercent(), sharp.ToString(), 20);
         }
 
     }

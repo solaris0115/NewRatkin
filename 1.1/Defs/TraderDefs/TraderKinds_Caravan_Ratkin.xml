@@ -133,8 +133,8 @@
 			<li Class="StockGenerator_Category">
 				<categoryDef>Drugs</categoryDef>
 			</li>
-			<li Class="StockGenerator_BuyArt" />
-			<li Class="StockGenerator_BuyWeirdOrganic" />
+			<li Class="StockGenerator_BuyExpensiveSimple" />
+			<li Class="StockGenerator_BuyExpensiveSimple" />
 			<li Class="StockGenerator_MultiDef">
 				<thingDefs>
 					<li>Chocolate</li>
@@ -191,7 +191,7 @@
 			<li Class="StockGenerator_Category">
 				<categoryDef>Textiles</categoryDef>
 			</li>
-			<li Class="StockGenerator_BuyArt" />
+			<li Class="StockGenerator_BuyExpensiveSimple" />
 		</stockGenerators>
 	</TraderKindDef>
 	<!-- 랫킨 전투상단 -->
@@ -287,8 +287,8 @@
 					<max>3</max>
 				</countRange>
 			</li>
-			<li Class="StockGenerator_BuyArt" />
-			<li Class="StockGenerator_BuyWeirdOrganic" />
+			<li Class="StockGenerator_BuyExpensiveSimple" />
+			<li Class="StockGenerator_BuyExpensiveSimple" />
 			<li Class="StockGenerator_BuySingleDef">
 				<thingDef>Gold</thingDef>
 			</li>
@@ -365,8 +365,8 @@
 					<max>3</max>
 				</countRange>
 			</li>
-			<li Class="StockGenerator_BuyArt" />
-			<li Class="StockGenerator_BuyWeirdOrganic" />
+			<li Class="StockGenerator_BuyExpensiveSimple" />
+			<li Class="StockGenerator_BuyExpensiveSimple" />
 			<li Class="StockGenerator_BuyExpensiveSimple" />
 		</stockGenerators>
 	</TraderKindDef>
