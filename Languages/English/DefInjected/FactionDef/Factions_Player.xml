@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RK_PlayerFaction.label>New Beginning</RK_PlayerFaction.label>
+  <RK_PlayerFaction.description>It is your settlement. Their stories and destiny came together here.</RK_PlayerFaction.description>
+  <RK_PlayerFaction.pawnsPlural>Ratkins</RK_PlayerFaction.pawnsPlural>
+
+  <Rakinia.label>ratkin kingdom</Rakinia.label>
+  <Rakinia.description>Ratkin Kingdom. It is a non-invasive species that lives invisible to human beings.</Rakinia.description>
+  <Rakinia.pawnsPlural>Ratkins</Rakinia.pawnsPlural>
+  <Rakinia.leaderTitle>prime executor</Rakinia.leaderTitle>
+
+  <RatkinCaravan.label>ratkin caravan union</RatkinCaravan.label>
+  <RatkinCaravan.description>Ratkin wanderers. They trade all over the place and buy and sell mercenaries.</RatkinCaravan.description>
+  <RatkinCaravan.pawnsPlural>Ratkins</RatkinCaravan.pawnsPlural>
+  <RatkinCaravan.leaderTitle>leader</RatkinCaravan.leaderTitle>
+
+
+</LanguageData>

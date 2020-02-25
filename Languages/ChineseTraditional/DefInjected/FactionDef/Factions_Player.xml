@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RK_PlayerFaction.label>鼠族新移民</RK_PlayerFaction.label>
+  <RK_PlayerFaction.description>你的鼠族新據點。 他們的故事和命運將聚集在這裡。</RK_PlayerFaction.description>
+  <RK_PlayerFaction.pawnsPlural>鼠族</RK_PlayerFaction.pawnsPlural>
+
+  <Rakinia.label>鼠族王國</Rakinia.label>
+  <Rakinia.description>鼠族的王國。 他們總是躲躲藏藏並且居住在一個隱蔽的部落，主要從事農業生活。</Rakinia.description>
+  <Rakinia.pawnsPlural>鼠族</Rakinia.pawnsPlural>
+  <Rakinia.leaderTitle>首長</Rakinia.leaderTitle>
+
+  <RatkinCaravan.label>鼠族商隊盟會</RatkinCaravan.label>
+  <RatkinCaravan.description>鼠族的商對。 經常在各地貿易並買賣僱傭兵。</RatkinCaravan.description>
+  <RatkinCaravan.pawnsPlural>鼠族</RatkinCaravan.pawnsPlural>
+  <RatkinCaravan.leaderTitle>商隊隊長</RatkinCaravan.leaderTitle>
+
+
+</LanguageData>

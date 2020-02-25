@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 랫킨 물자상단! -->
+
+  <Caravan_Ratkin_BulkGoods.label>鼠族雜貨商人</Caravan_Ratkin_BulkGoods.label>
+
+
+  <!-- 랫킨 의류 상단! -->
+
+  <Caravan_Ratkin_DressMerchant.label>鼠族禮服商人</Caravan_Ratkin_DressMerchant.label>
+
+
+  <!-- 랫킨 전투상단 -->
+
+  <Caravan_Ratkin_CombatSupplier.label>鼠族作戰供應商</Caravan_Ratkin_CombatSupplier.label>
+
+
+  <!-- 랫킨 용병단 -->
+
+  <Caravan_Ratkin_Free_company.label>鼠族自由公司</Caravan_Ratkin_Free_company.label>
+
+
+</LanguageData>
