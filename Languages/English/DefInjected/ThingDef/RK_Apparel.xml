@@ -241,10 +241,22 @@
   <RK_SantaSack.description>It's a big package with lots of presents.</RK_SantaSack.description>
 
 
-  <!-- 겨울외투 사회적영향력 5% 추위저항 +35 -->
+  <!-- 드랍 외투 -->
 
   <RK_WhiteCoat.label>white coat</RK_WhiteCoat.label>
   <RK_WhiteCoat.description>The pure white coat. Quality fabric and carefully finished. For a high-ranking position.</RK_WhiteCoat.description>
+
+
+  <!-- 로열 외투 -->
+
+  <RK_RoyalRobe.label>royal robe</RK_RoyalRobe.label>
+  <RK_RoyalRobe.description>A long flowing robe embroidered with complex decorative designs. Wildly impractical, its purpose is to mark the wearer as a powerful noble.</RK_RoyalRobe.description>
+
+
+  <!-- 왕관 -->
+
+  <RK_RoyalCrown.label>Ratkin royal crown</RK_RoyalCrown.label>
+  <RK_RoyalCrown.description>A grand crown of metal with an elaborate design. Worn by upper-ranking nobles.</RK_RoyalCrown.description>
 
 
 </LanguageData>

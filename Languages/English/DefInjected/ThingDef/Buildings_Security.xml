@@ -5,10 +5,6 @@
 
   <RK_Ballista_Strait_Body.label>ballista</RK_Ballista_Strait_Body.label>
   <RK_Ballista_Strait_Body.description>It is a machine that fires large arrows. It is designed to be easy to operate by Ratkin.</RK_Ballista_Strait_Body.description>
-  <RK_Ballista_Strait_Body_Blueprint.label>ballista (blueprint)</RK_Ballista_Strait_Body_Blueprint.label>
-  <RK_Ballista_Strait_Body_Blueprint_Install.label>ballista (blueprint)</RK_Ballista_Strait_Body_Blueprint_Install.label>
-  <RK_Ballista_Strait_Body_Frame.label>ballista (building)</RK_Ballista_Strait_Body_Frame.label>
-  <RK_Ballista_Strait_Body_Frame.description>It is a machine that fires large arrows. It is designed to be easy to operate by Ratkin.</RK_Ballista_Strait_Body_Frame.description>
 
   <RK_Turret_Ballista_Strait.label>ballista</RK_Turret_Ballista_Strait.label>
   <RK_Turret_Ballista_Strait.description>ballista bolt launcher. accurate and long-ranged.</RK_Turret_Ballista_Strait.description>

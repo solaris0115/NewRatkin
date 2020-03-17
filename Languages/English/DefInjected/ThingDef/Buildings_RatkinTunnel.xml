@@ -12,9 +12,10 @@
 
   <RK_EmpBomb.label>emp Bomb</RK_EmpBomb.label>
   <RK_EmpBomb.description>It's an EMP bomb. The only way to prevent an explosion is by directly destroying or deconstructing it.</RK_EmpBomb.description>
-  <RK_EmpBomb_Blueprint_Install.label>emp Bomb (blueprint)</RK_EmpBomb_Blueprint_Install.label>
 
   <MinifiedEMP.label>minified thing</MinifiedEMP.label>
 
+
+  <!--<RK_EmpBomb_Blueprint_Install.label>emp Bomb (blueprint)</RK_EmpBomb_Blueprint_Install.label>-->
 
 </LanguageData>

@@ -3,6 +3,10 @@
 
   <Rottie.label>Rottie</Rottie.label>
   <Rottie.labelPlural>Rotties</Rottie.labelPlural>
+  <Rottie.labelMale>male Rottie</Rottie.labelMale>
+  <Rottie.labelMalePlural>male Rotties</Rottie.labelMalePlural>
+  <Rottie.labelFemale>female Rottie</Rottie.labelFemale>
+  <Rottie.labelFemalePlural>female Rotties</Rottie.labelFemalePlural>
   <Rottie.lifeStages.0.label>Rottie</Rottie.lifeStages.0.label>
   <Rottie.lifeStages.0.labelPlural>Rottie</Rottie.lifeStages.0.labelPlural>
   <Rottie.lifeStages.0.labelMale>male Rottie</Rottie.lifeStages.0.labelMale>
@@ -21,10 +25,6 @@
   <Rottie.lifeStages.2.labelMalePlural>male Rotties</Rottie.lifeStages.2.labelMalePlural>
   <Rottie.lifeStages.2.labelFemale>female Rottie</Rottie.lifeStages.2.labelFemale>
   <Rottie.lifeStages.2.labelFemalePlural>female Rotties</Rottie.lifeStages.2.labelFemalePlural>
-  <Rottie.labelMale>male Rottie</Rottie.labelMale>
-  <Rottie.labelMalePlural>male Rotties</Rottie.labelMalePlural>
-  <Rottie.labelFemale>female Rottie</Rottie.labelFemale>
-  <Rottie.labelFemalePlural>female Rotties</Rottie.labelFemalePlural>
 
 
 </LanguageData>

@@ -1,16 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <!-- 겨울외투 사회적영향력 5% 추위저항 +35 -->
+  <!-- 왕관 -->
 
   <InnerCoat.label>inner coat</InnerCoat.label>
   <BackPack.label>backpack</BackPack.label>
   <OuterClothing.label>outer clothing</OuterClothing.label>
   <OnFace.label>onface</OnFace.label>
-
-
-  <!-- 산타 보따리 +50 내구도 +20 -->
-  <!--<MiddleSkin.label>middle skin</MiddleSkin.label>-->
-  <!-- 랫킨 귀 헤어밴드 사회적영향력 +5% -->
 
 </LanguageData>
