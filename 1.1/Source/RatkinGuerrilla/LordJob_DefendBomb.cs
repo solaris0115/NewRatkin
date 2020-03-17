@@ -46,7 +46,7 @@ namespace NewRatkin
                 return false;
             }
         }
-
+        //NewRatkin.LordJob_BombPlanting:LordJob
         public override StateGraph CreateGraph()
         {   
             StateGraph stateGraph = new StateGraph();

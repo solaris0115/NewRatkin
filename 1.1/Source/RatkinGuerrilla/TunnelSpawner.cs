@@ -212,9 +212,12 @@ namespace NewRatkin
         private void DrawDustPart(float initialAngle, float speedMultiplier, float scale)
         {
             float num = (Find.TickManager.TicksGame - secondarySpawnTick).TicksToSeconds();
+
             Vector3 pos = Position.ToVector3ShiftedWithAltitude(AltitudeLayer.Filth);
             pos.y += 0.046875f * Rand.Range(0f, 1f);
+
             Color value = new Color(0.47f, 0.38f, 0.32f, 0.7f);
+
             matPropertyBlock.SetColor(ShaderPropertyIDs.Color, value);
             Matrix4x4 matrix = Matrix4x4.TRS(pos, Quaternion.Euler(0f, initialAngle + speedMultiplier * num, 0f), Vector3.one * scale);
             Graphics.DrawMesh(MeshPool.plane10, matrix, TunnelMaterial, 0, null, 0, matPropertyBlock);

@@ -16,11 +16,7 @@ namespace NewRatkin
         private Graphic shieldGraphic;
         private static Graphic heavyShieldGraphic = GraphicDatabase.Get<Graphic_Multi>("Apparel/RK_HeavyShield", ShaderDatabase.CutoutComplex, new Vector2(1, 1), new Color(1, 1, 1, 1));
         private static Graphic woodenShieldGraphic = GraphicDatabase.Get<Graphic_Multi>("Apparel/RK_WoodenShield", ShaderDatabase.Cutout, new Vector2(1, 1), new Color(1,1,1,1));
-        /*
-        private readonly Material materialSouth;//MaterialPool.MatFrom("Apparel/RK_HeavyShield_south", ShaderDatabase.Cutout);
-        private readonly Material materialEast;
-        private readonly Material materialNorth;
-        private readonly Material materialWes;*/
+
         static readonly Vector3 drawDraftedLocNorth = new Vector3(-0.2f, 0f, -0.09f);
         static readonly Vector3 drawDraftedLocSouth = new Vector3(0.2f, 0.03905f, -0.15f);
         static readonly Vector3 drawDraftedLocEast = new Vector3(0.2f, 0f, -0.2f);

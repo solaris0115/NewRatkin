@@ -123,7 +123,6 @@ namespace NewRatkin
                 return Data.defendCenter;
             }
         }
-
         
         public override void Init()
         {

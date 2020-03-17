@@ -96,37 +96,41 @@ namespace NewRatkin
         public override void PostDraw()
         {
             base.PostDraw();
-            Vector3 turningPosition = parent.TrueCenter();
-            turningPosition += parent.Rotation.FacingCell.ToVector3() * -0.1f + new Vector3(-0.65f,0,0);//양수면 위로감
-            turningPosition.y = AltitudeLayer.Pawn.AltitudeFor();
-            for (int i = 0; i < 16; i++)
-            {
-                float drawPosition = spinPosition + spinFactor * i / 16f;
-                float cosin = Mathf.Cos(drawPosition);
-
-                Vector3 scale = new Vector3(2, 1, 3.2f);
-                Matrix4x4 matrix = default(Matrix4x4);
-                Vector3 position = turningPosition + new Vector3(Mathf.Sin(drawPosition) * 0.95f, 0.086875f * cosin, 0.9f * cosin);// + Vector3.right * Mathf.Sin(drawPosition) + Vector3.up * 0.046875f * Mathf.Cos(drawPosition) + Vector3.forward * 0.5f * Mathf.Cos(drawPosition);
-                matrix.SetTRS(position, parent.Rotation.AsQuat, scale);
-                Graphics.DrawMesh(MeshPool.plane10, matrix, BladesMat, 0);
-            }
-            float drawPosition2 = spinPosition;
-
+            //현재 회전 정보
+            float spinAngle = spinPosition;
             Vector3 scale2 = new Vector3(2, 1, 2);
+            Quaternion rotation = (spinAngle / spinFactor * 360).ToQuat();
 
-            Matrix4x4 backMatrix = default(Matrix4x4);
-            Matrix4x4 frontMatrix = default(Matrix4x4);
+            //회전 중심축
+            Vector3 centerPos = parent.TrueCenter();
+            centerPos += parent.Rotation.FacingCell.ToVector3() * -0.1f + new Vector3(-0.65f,0,0);
+            centerPos.y = AltitudeLayer.Pawn.AltitudeFor();
 
-            Vector3 frontPosition = turningPosition + Vector3.up * 1f + Vector3.back*0.2f;
-            Vector3 backPosition = turningPosition + Vector3.down + Vector3.forward*0.3f;
-
-            Quaternion rotation = (drawPosition2 / spinFactor * 360).ToQuat();
+            //쳇바퀴 테두리
+            Matrix4x4 backMatrix = default;
+            Matrix4x4 frontMatrix = default;
+            Vector3 frontPosition = centerPos + Vector3.up * 1f + Vector3.back * 0.2f;
+            Vector3 backPosition = centerPos + Vector3.down + Vector3.forward * 0.3f;
 
             frontMatrix.SetTRS(frontPosition, rotation, scale2);
             backMatrix.SetTRS(backPosition, rotation, scale2);
-
             Graphics.DrawMesh(MeshPool.plane10, frontMatrix, Front, 0);
             Graphics.DrawMesh(MeshPool.plane10, backMatrix, Back, 0);
+            
+            Vector3 scale = new Vector3(2, 1, 3.2f);
+            Matrix4x4 matrix = default;
+            Vector3 position = default;
+            float cosin = 0;
+
+            //16개의 쳇바퀴 살 회전
+            for (int i = 0; i < 16; i++)
+            {
+                spinAngle += spinFactor * i / 16f;
+                cosin = Mathf.Cos(spinAngle);
+                position = centerPos + new Vector3(Mathf.Sin(spinAngle) * 0.95f, 0.086875f * cosin, 0.9f * cosin);
+                matrix.SetTRS(position, parent.Rotation.AsQuat, scale);
+                Graphics.DrawMesh(MeshPool.plane10, matrix, BladesMat, 0);
+            }
         }
 
         public void StartTurnning(float Speed,Pawn user)

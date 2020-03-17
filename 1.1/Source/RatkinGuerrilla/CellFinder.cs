@@ -14,7 +14,6 @@ namespace NewRatkin
 {
     public static class RatkinTunnelCellFinder
     {
-
         public static bool FindFoodStockpile(out IntVec3 cell, Map map)
         {
             List<IntVec3> candidate = new List<IntVec3>();

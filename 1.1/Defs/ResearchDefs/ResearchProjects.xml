@@ -102,10 +102,10 @@
 		<label>Ratkin clothing</label>
 		<description>랫킨이 입기 편리한 의류들을 고안해냅니다. 조금 더 다양한 의류를 생산할 수 있습니다.</description>
 		<tab>RatkinTech</tab>
-		<baseCost>600</baseCost>
-		<techLevel>Industrial</techLevel>
+		<baseCost>400</baseCost>
+		<techLevel>Medieval</techLevel>
 		<prerequisites>
-			<li>Machining</li>
+			<li>ComplexClothing</li>
 		</prerequisites>
 		<researchViewX>0</researchViewX>
 		<researchViewY>3</researchViewY>
@@ -116,8 +116,8 @@
 		<label>high class clothing</label>
 		<description>랫킨 사회의 고위직이 입는 의류들을 연구합니다. 더 고풍스럽고 질좋은 의류들을 생산할 수 있습니다. 연구용 안경이 필요합니다.</description>
 		<tab>RatkinTech</tab>
-		<baseCost>1560</baseCost>
-		<techLevel>Industrial</techLevel>
+		<baseCost>400</baseCost>
+		<techLevel>Medieval</techLevel>
 		<prerequisites>
 			<li>RatkinClothing</li>
 		</prerequisites>
