@@ -510,7 +510,6 @@
 			<li>Apparel_ShieldBelt</li>
 			<li>RK_HeadBand</li>
 			<li>RK_BattleSuit</li>
-			<!-- <li>Apparel_SmokepopBelt</li> -->
 		</apparelRequired>
 		<apparelTags>
 			<li>RK_Demoman</li>
@@ -565,7 +564,7 @@
 			<li>RK_WoolenHat</li>
 		</apparelRequired>
 		<apparelMoney>
-			<min>800</min>
+			<min>1500</min>
 			<max>3500</max>
 		</apparelMoney>
 		<apparelTags>
@@ -593,7 +592,7 @@
 			<max>5000</max>
 		</techHediffsMoney>
 		<apparelMoney>
-			<min>800</min>
+			<min>1500</min>
 			<max>5000</max>
 		</apparelMoney>
 		<weaponMoney>
@@ -695,10 +694,6 @@
 			<min>2000</min>
 			<max>5000</max>
 		</techHediffsMoney>
-		<apparelMoney>
-			<min>20</min>
-			<max>200</max>
-		</apparelMoney>
 		<weaponMoney>
 			<min>4500</min>
 			<max>5000</max>

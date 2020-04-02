@@ -102,11 +102,11 @@
 				</eastOffset>
 				<southOffset>
 					<position>(-0.3,0.3,-0.22)</position>
-					<angle>90</angle>
+					<angle>-90</angle>
 				</southOffset>
 				<westOffset>
 					<position>(-0.3,-0.03,-0.15)</position>
-					<angle>105</angle>
+					<angle>-75</angle>
 				</westOffset>
 			</li>
 		</comps>
@@ -213,11 +213,11 @@
 				</eastOffset>
 				<southOffset>
 					<position>(-0.3,0.3,0)</position>
-					<angle>255</angle>
+					<angle>75</angle>
 				</southOffset>
 				<westOffset>
 					<position>(-0.3,-0.03,-0.15)</position>
-					<angle>200</angle>
+					<angle>20</angle>
 				</westOffset>
 			</li>
 		</comps>
@@ -291,7 +291,7 @@
 				</northOffset>
 				<southOffset>
 					<position>(-0.25,0.3,0.2)</position>
-					<angle>-45</angle>
+					<angle>45</angle>
 				</southOffset>
 				<eastOffset>
 					<position>(0.15,0.3,0.2)</position>
@@ -299,7 +299,7 @@
 				</eastOffset>
 				<westOffset>
 					<position>(-0.15,-0.3,0.2)</position>
-					<angle>-45</angle>
+					<angle>45</angle>
 				</westOffset>
 			</li>
 		</comps>
@@ -375,7 +375,7 @@
 				</northOffset>
 				<southOffset>
 					<position>(0.25,0.3,0.25)</position>
-					<angle>-135</angle>
+					<angle>135</angle>
 				</southOffset>
 				<eastOffset>
 					<position>(0.15,-0.03,0.25)</position>
@@ -383,7 +383,7 @@
 				</eastOffset>
 				<westOffset>
 					<position>(-0.15,0.3,0.25)</position>
-					<angle>-135</angle>
+					<angle>135</angle>
 				</westOffset>
 			</li>
 			<li Class="SYS.CompProperties_Sheath">		
@@ -488,7 +488,7 @@
 				</northOffset>
 				<southOffset>
 					<position>(-0.25,0.3,0.2)</position>
-					<angle>-45</angle>
+					<angle>45</angle>
 				</southOffset>
 				<eastOffset>
 					<position>(0.15,0.3,0.2)</position>
@@ -496,10 +496,118 @@
 				</eastOffset>
 				<westOffset>
 					<position>(-0.15,-0.3,0.2)</position>
-					<angle>-45</angle>
+					<angle>45</angle>
 				</westOffset>
 			</li>
 		</comps>
 	</ThingDef>
 
+	<!-- 건랜스 -->
+	<ThingDef ParentName="RK_MeleeWeapon">
+		<defName>RK_Gunlance</defName>
+		<label>ratkin gunlance</label>
+		<description>포격이 가능한 무거운 기계식 랜스입니다. 포격시 전방으로 화염을 방사합니다.</description>
+		<graphicData>
+			<onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
+			<texPath>Weapon/RK_GunlanceA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<weaponTags Inherit="false">
+			<li>RK_EliteDefender</li>
+		</weaponTags>
+		<costStuffCount>100</costStuffCount>
+		<stuffCategories>
+			<li>WeaponMetallic</li>
+		</stuffCategories>
+		<costList>
+			<Steel>100</Steel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>35000</WorkToMake>
+			<Mass>20</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MeleeHitChance>-4</MeleeHitChance>	
+			<MoveSpeed>-0.25</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>45</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>GunlanceFire</li>
+					<li>Cut</li>
+				</capacities>
+				<power>27</power>
+				<cooldownTime>3</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>GunlanceFire</li>
+					<li>Cut</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>3.4</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>Machining</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="SYS.CompProperties_WeaponExtention">
+				<littleDown>True</littleDown>
+				<northOffset>
+					<position>(0.35,0,0.25)</position>
+					<angle>-50</angle>
+				</northOffset>
+				<southOffset>
+					<position>(-0.35,-0.3,0.2)</position>
+					<angle>35</angle>
+				</southOffset>
+				<eastOffset>
+					<position>(0.45,0.3,-0.05)</position>
+					<angle>10</angle>
+				</eastOffset>
+				<westOffset>
+					<position>(-0.45,-0.3,-0.05)</position>
+					<angle>-10</angle>
+				</westOffset>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ToolCapacityDef>
+		<defName>GunlanceFire</defName>
+	</ToolCapacityDef>
+
+	<ManeuverDef>
+		<defName>RK_GunlanceExplosion</defName>
+		<requiredCapacity>GunlanceFire</requiredCapacity>
+		<verb Class="NewRatkin.VerbProperties_Gunlance">
+			<verbClass>NewRatkin.Verb_GunlanceFiring</verbClass>
+			<meleeDamageDef>Flame</meleeDamageDef>
+			<damageDef>Flame</damageDef>
+			<damageAmount>20</damageAmount>
+			<range>3</range>
+			<angle>70</angle>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+
+	<ThingDef ParentName="EtherealThingBase">
+		<defName>GunlanceExplosion</defName>
+		<label>explosion</label>
+		<thingClass>NewRatkin.GunlanceExplosion</thingClass>
+		<tickerType>Normal</tickerType>
+	</ThingDef>
 </Defs>

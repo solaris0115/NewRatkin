@@ -43,7 +43,6 @@ namespace NewRatkin
             {
                 LongEventHandler.ExecuteWhenFinished(delegate
                 {
-                    //Log.Message("2");
                     if (def.defName == "RK_WoodenShield")
                     {
                         shieldGraphic = GraphicDatabase.Get<Graphic_Multi>(path + def.defName, ShaderDatabase.Cutout, def.graphicData.drawSize, Color.white);

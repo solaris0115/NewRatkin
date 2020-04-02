@@ -1923,7 +1923,7 @@
 		</costList>
 		<costStuffCount>100</costStuffCount>
 		<stuffCategories>
-			<li>WeaponMetallic</li>
+			<li>Metallic</li>
 		</stuffCategories>
 		<techLevel>Medieval</techLevel>
 		<statBases>
@@ -1986,7 +1986,7 @@
 		</costList>
 		<costStuffCount>40</costStuffCount>
 		<stuffCategories>
-			<li>WeaponMetallic</li>
+			<li>Metallic</li>
 		</stuffCategories>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
@@ -2053,7 +2053,7 @@
 		</costList>
 		<costStuffCount>40</costStuffCount>
 		<stuffCategories>
-			<li>WeaponMetallic</li>
+			<li>Metallic</li>
 		</stuffCategories>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
@@ -2121,7 +2121,7 @@
 		</costList>
 		<costStuffCount>40</costStuffCount>
 		<stuffCategories>
-			<li>WeaponMetallic</li>
+			<li>Metallic</li>
 		</stuffCategories>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
@@ -2273,7 +2273,7 @@
 		</costList>
 		<costStuffCount>120</costStuffCount>
 		<stuffCategories>
-			<li>WeaponMetallic</li>
+			<li>Metallic</li>
 		</stuffCategories>
 		<techLevel>Medieval</techLevel>
 		<statBases>
@@ -2467,7 +2467,7 @@
 	<!-- 드랍 외투  -->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
 		<defName>RK_WhiteCoat</defName>
-		<label>white coat</label>
+		<label>ratkin white coat</label>
 		<description>순백색의 두꺼운 코트입니다. 질 좋은 원단과 세심하게 마감하였습니다. 고위직을 위한 의복같아 보입니다.</description>
 		<graphicData>
 			<texPath>Apparel/RK_WhiteCoat</texPath>
@@ -2525,7 +2525,7 @@
 	<!-- 로열 외투-->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
 		<defName>RK_RoyalRobe</defName>
-		<label>royal robe</label>
+		<label>ratkin royal robe</label>
 		<description>고풍스러운 귀족을 위한 외투입니다. 직물을 여러번 덧대어 튼튼하고 방풍이 잘되도록 만들었습니다.</description>
 		<graphicData>
 			<texPath>Apparel/RK_RoyalRobe</texPath>
@@ -2533,7 +2533,7 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<recipeMaker>
-			<researchPrerequisite>RatkinClothing</researchPrerequisite>
+			<researchPrerequisite>HighClassClothing</researchPrerequisite>
 		</recipeMaker>
 		<costStuffCount>120</costStuffCount>
 		<stuffCategories>
@@ -2620,6 +2620,7 @@
 				<li>RK_Noble</li>
 				<li>RK_3Tier</li>
 				<li>Royal</li>
+				<li>RoyalTier5</li>
 				<li>RoyalTier6</li>
 				<li>RoyalTier7</li>
 			</tags>
@@ -2644,7 +2645,6 @@
 				</disallowedThingDefs>
 			</defaultIngredientFilter>		
 		</recipeMaker>
-		<followStuffColor>true</followStuffColor>
 	</ThingDef>	
 
 

@@ -150,6 +150,14 @@
 			</li>
 		</pawnGroupMakers>
 		<settlementTexturePath>Icon/RK_DefaultColony</settlementTexturePath>
+		<apparelStuffFilter>
+			<stuffCategoriesToAllow>
+				<li>Woody</li>
+				<li>WeaponMetallic</li>
+				<li>Fabric</li>
+				<li>Leathery</li>
+			</stuffCategoriesToAllow>
+		</apparelStuffFilter>
 	</FactionDef>
 
 	<FactionDef ParentName="RatkinFactionBase">
