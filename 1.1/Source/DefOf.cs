@@ -13,6 +13,7 @@ using Verse.AI;
 
 namespace NewRatkin
 {
+
     [DefOf]
     public static class DamageArmorCategoryDefOf
     {

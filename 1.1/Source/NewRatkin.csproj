@@ -51,6 +51,10 @@
       <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="UnityEngine.TextRenderingModule">
       <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
       <Private>False</Private>
@@ -58,10 +62,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AutoTests\AutoTests.cs" />
+    <Compile Include="Gunlance\CompGunlanceFuel.cs" />
+    <Compile Include="Gunlance\CompProperties_GunlanceFuel.cs" />
+    <Compile Include="Gunlance\Gizmo_GunlanceStatus.cs" />
     <Compile Include="Gunlance\GunlanceDefOf.cs" />
     <Compile Include="Gunlance\GunlanceExplosion.cs" />
     <Compile Include="Gunlance\VerbProperties_Gunlance.cs" />
-    <Compile Include="Gunlance\Verb_MeleeExplosion.cs" />
+    <Compile Include="Gunlance\Verb_GunlanceFiring.cs" />
+    <Compile Include="Gunlance\Verb_WyvernFire.cs" />
+    <Compile Include="Gunlance\WorkGiver_GunlanceRefuel.cs" />
     <Compile Include="HamsterWheel\DefOf.cs" />
     <Compile Include="HamsterWheel\Job.cs" />
     <Compile Include="HamsterWheel\JobGiver.cs" />
