@@ -17,10 +17,6 @@ namespace NewRatkin
 	{
 		public VerbProperties_Gunlance verbProperties; 
 
-		private const float MeleeDamageRandomFactorMin = 0.8f;
-
-		private const float MeleeDamageRandomFactorMax = 1.2f;
-
 		protected override bool TryCastShot()
 		{
 			Pawn casterPawn = CasterPawn;
@@ -30,6 +26,10 @@ namespace NewRatkin
 			}
 
 			Thing targetThing = currentTarget.Thing;
+			if(targetThing==null)
+			{
+				return true;
+			}
 			if (!CanHitTarget(targetThing))
 			{
 				Log.Warning(string.Concat(new object[]
@@ -40,16 +40,16 @@ namespace NewRatkin
 					" from out of melee position."
 				}), false);
 			}
-			if (!IsTargetImmobile(currentTarget) && casterPawn.skills != null)
-			{
-				casterPawn.skills.Learn(SkillDefOf.Melee, 100f * verbProps.AdjustedFullCycleTime(this, casterPawn), false);
-				casterPawn.skills.Learn(SkillDefOf.Shooting, 100f * verbProps.AdjustedFullCycleTime(this, casterPawn), false);
-			}
 			Pawn targetPawn = targetThing as Pawn;
 			if (targetPawn != null && !targetPawn.Dead && (casterPawn.MentalStateDef != MentalStateDefOf.SocialFighting || targetPawn.MentalStateDef != MentalStateDefOf.SocialFighting))
 			{
 				targetPawn.mindState.meleeThreat = casterPawn;
 				targetPawn.mindState.lastMeleeThreatHarmTick = Find.TickManager.TicksGame;
+			}
+			if (!IsTargetImmobile(currentTarget) && casterPawn.skills != null)
+			{;
+				casterPawn.skills.Learn(SkillDefOf.Melee, 100f * verbProps.AdjustedFullCycleTime(this, casterPawn), false);
+				casterPawn.skills.Learn(SkillDefOf.Shooting, 100f * verbProps.AdjustedFullCycleTime(this, casterPawn), false);
 			}
 			verbProperties = verbProps as VerbProperties_Gunlance;
 			GunlanceExplosion explosion = GenSpawn.Spawn(GunlanceDefOf.GunlanceExplosion, caster.Position, caster.Map, 0) as GunlanceExplosion;
@@ -101,7 +101,7 @@ namespace NewRatkin
 		{
 			Thing thing = target.Thing;
 			Pawn pawn = thing as Pawn;
-			return thing.def.category != ThingCategory.Pawn || pawn.Downed || pawn.GetPosture() > PawnPosture.Standing;
+			return pawn==null || pawn.Downed || pawn.GetPosture() > PawnPosture.Standing;
 		}
 
 		private IEnumerable<DamageInfo> DamageInfosToApply(LocalTargetInfo target)

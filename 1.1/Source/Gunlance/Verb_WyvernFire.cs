@@ -15,6 +15,13 @@ namespace NewRatkin
     public class Verb_WyvernFire: Verb
 	{
 		public VerbProperties_Gunlance verbProperties;
+		public int BurstShotsLeft
+		{
+			get
+			{
+				return burstShotsLeft;
+			}
+		}
 
 		public override bool Available()
 		{
@@ -24,7 +31,7 @@ namespace NewRatkin
 			}
 			if (verbProps.consumeFuelPerShot > 0f)
 			{
-				CompGunlanceFuel compGunlance = this.EquipmentSource.TryGetComp<CompGunlanceFuel>();
+				CompGunlanceFuel compGunlance = EquipmentSource.TryGetComp<CompGunlanceFuel>();
 				if ((compGunlance != null && compGunlance.Fuel < verbProps.consumeFuelPerShot))
 				{
 					return false;
@@ -36,7 +43,7 @@ namespace NewRatkin
 		{
 			get
 			{
-				return this.verbProps.burstShotCount;
+				return verbProps.burstShotCount;
 			}
 		}
 		protected override bool TryCastShot()
@@ -52,9 +59,16 @@ namespace NewRatkin
 						compGunlance.ConsumeFuel(verbProps.consumeFuelPerShot);
 					}
 				}
+				AttachableThing_GunlanceIgnition ignition = ThingMaker.MakeThing(GunlanceDefOf.GunlancePreIgnition, null) as AttachableThing_GunlanceIgnition;
+				ignition.AttachTo(CasterPawn);
+				GenSpawn.Spawn(ignition, CasterPawn.Position, CasterPawn.Map, caster.Rotation, WipeMode.Vanish, false);
 			}
 			else
 			{
+				CasterPawn.GetAttachment(GunlanceDefOf.GunlancePreIgnition).Destroy();
+				AttachableThing_AfterIgnition ignition = ThingMaker.MakeThing(GunlanceDefOf.GunlanceAfterIgnition, null) as AttachableThing_AfterIgnition;
+				ignition.AttachTo(CasterPawn);
+				GenSpawn.Spawn(ignition, CasterPawn.Position, CasterPawn.Map, caster.Rotation, WipeMode.Vanish, false);
 				RatkinSoundDefOf.RK_WyvernFire.PlayOneShot(new TargetInfo(caster.Position, caster.Map, false));
 				MakeExplosion();
 			}

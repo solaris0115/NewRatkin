@@ -64,9 +64,11 @@
     <Compile Include="AutoTests\AutoTests.cs" />
     <Compile Include="Gunlance\CompGunlanceFuel.cs" />
     <Compile Include="Gunlance\CompProperties_GunlanceFuel.cs" />
+    <Compile Include="Gunlance\CompUseEffect.cs" />
     <Compile Include="Gunlance\Gizmo_GunlanceStatus.cs" />
     <Compile Include="Gunlance\GunlanceDefOf.cs" />
     <Compile Include="Gunlance\GunlanceExplosion.cs" />
+    <Compile Include="Gunlance\AttachableThing_GunlanceIgnition.cs" />
     <Compile Include="Gunlance\VerbProperties_Gunlance.cs" />
     <Compile Include="Gunlance\Verb_GunlanceFiring.cs" />
     <Compile Include="Gunlance\Verb_WyvernFire.cs" />

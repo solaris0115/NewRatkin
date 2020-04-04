@@ -18,6 +18,21 @@
 		</prerequisites>
 		<researchViewX>0</researchViewX>
 		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>	
+	
+	<ResearchProjectDef>
+		<defName>MechanicalWeapon</defName>
+		<label>mechanical weapon</label>
+		<description>기계적인 무기를 연구합니다.</description>
+		<tab>RatkinTech</tab>
+		<baseCost>2400</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>Machining</li>
+			<li>PiercingWeapon</li>
+		</prerequisites>
+		<researchViewX>1</researchViewX>
+		<researchViewY>0</researchViewY>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>

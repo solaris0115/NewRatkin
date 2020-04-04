@@ -33,7 +33,7 @@ namespace NewRatkin
 				{
 					compGunlanceFuel = this
 				};
-			}
+			}/*
 			if (Props.showAllowAutoRefuelToggle)
 			{
 				yield return new Command_Toggle
@@ -48,7 +48,7 @@ namespace NewRatkin
 						allowAutoRefuel = !allowAutoRefuel;
 					}
 				};
-			}
+			}*/
 			yield break;
 		}
 	}
