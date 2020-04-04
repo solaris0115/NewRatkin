@@ -4,6 +4,9 @@
   <PiercingWeapon.label>piercing weapon</PiercingWeapon.label>
   <PiercingWeapon.description>Researching increases the penetration of a weapon.</PiercingWeapon.description>
 
+  <MechanicalWeapon.label>mechanical weapon</MechanicalWeapon.label>
+  <MechanicalWeapon.description>Craft mechanical weapon.</MechanicalWeapon.description>
+
   <Ballista.label>ballista</Ballista.label>
   <Ballista.description>Researching a ballista. Ratkin are made for easy handling.</Ballista.description>
 
