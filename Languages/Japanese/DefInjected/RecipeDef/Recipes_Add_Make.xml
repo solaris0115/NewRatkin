@@ -16,7 +16,7 @@
   <Make_BallistaBolt_AP.jobString>バリスタの矢(貫通)を作成中</Make_BallistaBolt_AP.jobString>
 
 
-  <!-- Recipe Users: TableMachining, ElectricTailoringBench, HandTailoringBench -->
+  <!-- Recipe Users: RK_ElectricTailoringBench, RK_HandTailoringBench -->
 
   <Make_RK_FakeTail.label>ニセ尻尾を作る</Make_RK_FakeTail.label>
   <Make_RK_FakeTail.description>ニセ尻尾を作る。</Make_RK_FakeTail.description>
@@ -27,7 +27,7 @@
   <Make_RK_FakeEar.jobString>ニセ耳を作成中</Make_RK_FakeEar.jobString>
 
 
-  <!-- Recipe Users: TableMachining, FabricationBench -->
+  <!-- Recipe Users: FabricationBench -->
 
   <Make_RK_BionicTail.label>強化尻尾を作る</Make_RK_BionicTail.label>
   <Make_RK_BionicTail.description>強化尻尾を作る。</Make_RK_BionicTail.description>
@@ -174,6 +174,45 @@
   <Make_RK_HeavyShield.label>RK ヘビーシールドを作る</Make_RK_HeavyShield.label>
   <Make_RK_HeavyShield.description>RK ヘビーシールドを作る。</Make_RK_HeavyShield.description>
   <Make_RK_HeavyShield.jobString>RK ヘビーシールドを作成中</Make_RK_HeavyShield.jobString>
+
+
+  <!-- Recipe Users: RK_ElectricTailoringBench, RK_HandTailoringBench -->
+
+  <Make_RK_RoyalRobe.label>RK ロイヤルローブを作る</Make_RK_RoyalRobe.label>
+  <Make_RK_RoyalRobe.description>RK ロイヤルローブを作る。</Make_RK_RoyalRobe.description>
+  <Make_RK_RoyalRobe.jobString>RK ロイヤルローブを作成中</Make_RK_RoyalRobe.jobString>
+
+
+  <!-- Recipe Users: RK_ElectricTailoringBench, RK_HandTailoringBench, RK_FueledSmithy, RK_ElectricSmithy -->
+
+  <Make_RK_RoyalCrown.label>RK ロイヤルクラウンを作る</Make_RK_RoyalCrown.label>
+  <Make_RK_RoyalCrown.description>RK ロイヤルクラウンを作る。</Make_RK_RoyalCrown.description>
+  <Make_RK_RoyalCrown.jobString>RK ロイヤルクラウンを作成中</Make_RK_RoyalCrown.jobString>
+
+
+  <!-- Recipe Users: ElectricSmithy, FueledSmithy, RK_FueledSmithy, RK_ElectricSmithy -->
+
+  <Make_RK_Gunlance_NormalType.label>RK ガンランス(通常型)を作る</Make_RK_Gunlance_NormalType.label>
+  <Make_RK_Gunlance_NormalType.description>RK ガンランス(通常型)を作る。</Make_RK_Gunlance_NormalType.description>
+  <Make_RK_Gunlance_NormalType.jobString>RK ガンランス(通常型)を作成中</Make_RK_Gunlance_NormalType.jobString>
+
+
+  <!-- Recipe Users: ElectricSmithy, FueledSmithy, RK_FueledSmithy, RK_ElectricSmithy, TableMachining -->
+
+  <Make_RK_Gunlance_SpreadType.label>RK ガンランス(拡散型)を作る</Make_RK_Gunlance_SpreadType.label>
+  <Make_RK_Gunlance_SpreadType.description>RK ガンランス(拡散型)を作る。</Make_RK_Gunlance_SpreadType.description>
+  <Make_RK_Gunlance_SpreadType.jobString>RK ガンランス(拡散型)を作成中</Make_RK_Gunlance_SpreadType.jobString>
+
+
+  <!-- Recipe Users: TableMachining, RK_FueledSmithy, RK_ElectricSmithy -->
+
+  <Make_RK_WyvernAmmo_NormalType.label>RK 竜撃弾(通常型)を作る</Make_RK_WyvernAmmo_NormalType.label>
+  <Make_RK_WyvernAmmo_NormalType.description>RK 竜撃弾(通常型)を作る。</Make_RK_WyvernAmmo_NormalType.description>
+  <Make_RK_WyvernAmmo_NormalType.jobString>RK 竜撃弾(通常型)を作成中</Make_RK_WyvernAmmo_NormalType.jobString>
+
+  <Make_RK_WyvernAmmo_SpreadType.label>RK 竜撃弾(拡散型)を作る</Make_RK_WyvernAmmo_SpreadType.label>
+  <Make_RK_WyvernAmmo_SpreadType.description>RK 竜撃弾(拡散型)を作る。</Make_RK_WyvernAmmo_SpreadType.description>
+  <Make_RK_WyvernAmmo_SpreadType.jobString>RK 竜撃弾(拡散型)を作成中</Make_RK_WyvernAmmo_SpreadType.jobString>
 
 
   <!-- Recipe Users: ElectricSmithy, FueledSmithy, RK_FueledSmithy, RK_ElectricSmithy -->
