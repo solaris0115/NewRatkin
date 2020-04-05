@@ -27,28 +27,13 @@ namespace NewRatkin
 
 		public override IEnumerable<Gizmo> CompGetGizmosExtra()
 		{
-			if (this.Props.showFuelGizmo)
+			if (Props.showFuelGizmo && Find.Selector.SingleSelectedThing!=null)
 			{
 				yield return new Gizmo_GunlanceStatus
 				{
 					compGunlanceFuel = this
 				};
-			}/*
-			if (Props.showAllowAutoRefuelToggle)
-			{
-				yield return new Command_Toggle
-				{
-					defaultLabel = "CommandToggleAllowAutoRefuel".Translate(),
-					defaultDesc = "CommandToggleAllowAutoRefuelDesc".Translate(),
-					hotKey = KeyBindingDefOf.Command_ItemForbid,
-					icon = (allowAutoRefuel ? TexCommand.ForbidOff : TexCommand.ForbidOn),
-					isActive = (() => allowAutoRefuel),
-					toggleAction = delegate ()
-					{
-						allowAutoRefuel = !allowAutoRefuel;
-					}
-				};
-			}*/
+			}
 			yield break;
 		}
 	}

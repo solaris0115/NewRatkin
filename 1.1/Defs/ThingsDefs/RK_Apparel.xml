@@ -255,7 +255,6 @@
 			</tags>
 			<defaultOutfitTags>
 				<li>Worker</li>
-				<li>Soldier</li>
 			</defaultOutfitTags>
 			<wornGraphicPath>Apparel/RK_Muffler</wornGraphicPath>
 			<layers>
@@ -451,6 +450,7 @@
 			</bodyPartGroups>
 			<defaultOutfitTags>
 				<li>Worker</li>
+				<li>Soldier</li>
 			</defaultOutfitTags>
 			<wornGraphicPath>Apparel/RK_CrossBack</wornGraphicPath>
 			<layers>
@@ -556,7 +556,6 @@
 			</bodyPartGroups>
 			<defaultOutfitTags>
 				<li>Worker</li>
-				<li>Soldier</li>
 			</defaultOutfitTags>
 			<wornGraphicPath>Apparel/RK_WorkerWear</wornGraphicPath>
 			<layers>
@@ -664,7 +663,6 @@
 			</bodyPartGroups>
 			<defaultOutfitTags>
 				<li>Worker</li>
-				<li>Soldier</li>
 			</defaultOutfitTags>
 			<wornGraphicPath>Apparel/RK_ResearchGown</wornGraphicPath>
 			<layers>
@@ -713,7 +711,6 @@
 			</bodyPartGroups>
 			<defaultOutfitTags>
 				<li>Worker</li>
-				<li>Soldier</li>
 			</defaultOutfitTags>
 			<wornGraphicPath>Apparel/RK_ResearchGlasses</wornGraphicPath>
 			<layers>
@@ -780,7 +777,6 @@
 			</bodyPartGroups>
 			<defaultOutfitTags>
 				<li>Worker</li>
-				<li>Soldier</li>
 			</defaultOutfitTags>
 			<wornGraphicPath>Apparel/RK_ExplorerWear</wornGraphicPath>
 			<layers>
@@ -893,7 +889,6 @@
 			</bodyPartGroups>
 			<defaultOutfitTags>
 				<li>Worker</li>
-				<li>Soldier</li>
 			</defaultOutfitTags>
 			<wornGraphicPath>Apparel/RK_ChefSuit</wornGraphicPath>
 			<layers>
@@ -949,6 +944,7 @@
 			</layers>
 			<defaultOutfitTags>
 				<li>Worker</li>
+				<li>Soldier</li>
 			</defaultOutfitTags>
 			<tags>
 				<li>RK_Chef</li>
@@ -1008,6 +1004,7 @@
 			</bodyPartGroups>
 			<defaultOutfitTags>
 				<li>Worker</li>
+				<li>Soldier</li>
 			</defaultOutfitTags>
 			<wornGraphicPath>Apparel/RK_GardenWear</wornGraphicPath>
 			<layers>
@@ -1129,7 +1126,6 @@
 				<li>Shoulders</li>
 			</bodyPartGroups>
 			<defaultOutfitTags>
-				<li>Worker</li>
 				<li>Soldier</li>
 			</defaultOutfitTags>
 			<wornGraphicPath>Apparel/RK_OutdoorBackpack</wornGraphicPath>
@@ -1195,7 +1191,6 @@
 				<li>Legs</li>
 			</bodyPartGroups>
 			<defaultOutfitTags>
-				<li>Worker</li>
 				<li>Soldier</li>
 			</defaultOutfitTags>
 			<wornGraphicPath>Apparel/RK_OrderUniform</wornGraphicPath>
@@ -1254,7 +1249,7 @@
 				<li>Overhead</li>
 			</layers>
 			<defaultOutfitTags>
-				<li>Worker</li>
+				<li>Soldier</li>
 			</defaultOutfitTags>
 			<tags>
 				<li>RK_Soldier</li>
@@ -1309,7 +1304,6 @@
 			</bodyPartGroups>
 			<defaultOutfitTags>
 				<li>Worker</li>
-				<li>Soldier</li>
 			</defaultOutfitTags>
 			<wornGraphicPath>Apparel/RK_FlatColorCoat</wornGraphicPath>
 			<layers>
@@ -1371,7 +1365,6 @@
 			</bodyPartGroups>
 			<defaultOutfitTags>
 				<li>Worker</li>
-				<li>Soldier</li>
 			</defaultOutfitTags>
 			<wornGraphicPath>Apparel/RK_FrillOnepiece</wornGraphicPath>
 			<layers>
@@ -1535,7 +1528,6 @@
 			</bodyPartGroups>
 			<defaultOutfitTags>
 				<li>Worker</li>
-				<li>Soldier</li>
 			</defaultOutfitTags>
 			<wornGraphicPath>Apparel/RK_SistersDerss</wornGraphicPath>
 			<layers>
@@ -1645,7 +1637,6 @@
 			</bodyPartGroups>
 			<defaultOutfitTags>
 				<li>Worker</li>
-				<li>Soldier</li>
 			</defaultOutfitTags>
 			<wornGraphicPath>Apparel/RK_EarCostume</wornGraphicPath>
 			<layers>
@@ -1762,7 +1753,6 @@
 				<li>Legs</li>
 			</bodyPartGroups>
 			<defaultOutfitTags>
-				<li>Worker</li>
 				<li>Soldier</li>
 			</defaultOutfitTags>
 			<wornGraphicPath>Apparel/RK_BattleSuit</wornGraphicPath>
@@ -1833,7 +1823,7 @@
 				<li>Overhead</li>
 			</layers>
 			<defaultOutfitTags>
-				<li>Worker</li>
+				<li>Soldier</li>
 			</defaultOutfitTags>
 			<tags>
 				<li>RK_EliteSoldier</li>
@@ -1882,7 +1872,7 @@
 				<li>Overhead</li>
 			</layers>
 			<defaultOutfitTags>
-				<li>Worker</li>
+				<li>Soldier</li>
 			</defaultOutfitTags>
 			<tags>
 				<li>RK_Demoman</li>
@@ -1953,7 +1943,6 @@
 				<li>Legs</li>
 			</bodyPartGroups>
 			<defaultOutfitTags>
-				<li>Worker</li>
 				<li>Soldier</li>
 			</defaultOutfitTags>
 			<wornGraphicPath>Apparel/RK_Plate</wornGraphicPath>
@@ -2013,7 +2002,7 @@
 				<li>Overhead</li>
 			</layers>
 			<defaultOutfitTags>
-				<li>Worker</li>
+				<li>Soldier</li>
 			</defaultOutfitTags>
 			<tags>
 				<li>RK_Melee</li>
@@ -2080,7 +2069,7 @@
 				<li>Overhead</li>
 			</layers>
 			<defaultOutfitTags>
-				<li>Worker</li>
+				<li>Soldier</li>
 			</defaultOutfitTags>
 			<tags>
 				<li>RK_Melee</li>
@@ -2148,7 +2137,7 @@
 				<li>Overhead</li>
 			</layers>
 			<defaultOutfitTags>
-				<li>Worker</li>
+				<li>Soldier</li>
 			</defaultOutfitTags>
 			<tags>
 				<li>RK_Melee</li>
@@ -2192,31 +2181,20 @@
 			<recipeUsers Inherit="false">
 				<li>RK_FueledSmithy</li>
 				<li>RK_ElectricSmithy</li>
-			</recipeUsers>
-			<defaultIngredientFilter>
-				<disallowedThingDefs>
-					<li>Gold</li>
-					<li>Silver</li>
-				</disallowedThingDefs>
-			</defaultIngredientFilter>		
+			</recipeUsers>		
 		</recipeMaker>
 		<costList>
 			<Steel>25</Steel>
+			<WoodLog>120</WoodLog>
 		</costList>
-		<costStuffCount>120</costStuffCount>
-		<stuffCategories>
-			<li>Woody</li>
-		</stuffCategories>
 		<techLevel>Medieval</techLevel>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
 			<WorkToMake>12500</WorkToMake>
 			<Mass>3</Mass>
-			<StuffEffectMultiplierArmor>0.50</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.0</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.0</StuffEffectMultiplierInsulation_Heat>
-			<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.57</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.57</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.2</ArmorRating_Heat>
 			<Flammability>0.8</Flammability>
 			<EquipDelay>1</EquipDelay>
 		</statBases>
@@ -2401,6 +2379,7 @@
 			</tags>
 			<defaultOutfitTags>
 				<li>Worker</li>
+				<li>Soldier</li>
 			</defaultOutfitTags>
 			<wornGraphicPath>Apparel/RK_SantaHat</wornGraphicPath>
 			<layers>
@@ -2615,6 +2594,7 @@
 			</layers>
 			<defaultOutfitTags>
 				<li>Worker</li>
+				<li>Soldier</li>
 			</defaultOutfitTags>
 			<tags>
 				<li>RK_Noble</li>

@@ -13,7 +13,7 @@
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
 		<apparelColor>(255,255,255)</apparelColor>
 	</PawnKindDef>	
-	<!-- 일반 -->
+	<!-- 평화 -->
 	<!-- 시민 -->
 	<PawnKindDef ParentName="RKBasePawnKind">
 		<defName>RatkinColonist</defName>
@@ -116,8 +116,26 @@
 			<li>RK_SistersVeil</li>
 		</apparelRequired>		
 	</PawnKindDef>
+
+	
+	<!-- 전투 병과 -->
+	<PawnKindDef Name="RKCombatantBase" ParentName="RKBasePawnKind" Abstract="true">
+		<isFighter>true</isFighter>	
+		<backstoryFilters>
+			<li>				
+				<categories>
+					<li>RatkinViolence</li>
+				</categories>
+				<exclude>
+					<li>RatkinNonViolence</li>
+				</exclude>
+				<commonality>1</commonality>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>	
+	
 	<!-- 랫킨 상단 -->	
-	<PawnKindDef ParentName="RKBasePawnKind">
+	<PawnKindDef ParentName="RKCombatantBase">
 		<defName>RatkinMerchant</defName>
 		<label>ratkin Merchant</label>
 		<combatPower>45</combatPower>
@@ -142,9 +160,8 @@
 		<trader>true</trader>
 	</PawnKindDef>	
 	
-	<!-- 전투 병과(일반) -->
 	<!-- 전투원 -->
-	<PawnKindDef ParentName="RKBasePawnKind">
+	<PawnKindDef ParentName="RKCombatantBase">
 		<defName>RatkinCombatant</defName>
 		<label>ratkin combatant</label>
 		<combatPower>60</combatPower>
@@ -173,7 +190,7 @@
 		<apparelAllowHeadgearChance>0.1</apparelAllowHeadgearChance>
 	</PawnKindDef>	
 	<!-- 랫킨 선붕대, 경갑과 경무장 -->
-	<PawnKindDef ParentName="RKBasePawnKind">
+	<PawnKindDef ParentName="RKCombatantBase">
 		<defName>RatkinVanguard</defName>
 		<label>ratkin vanguard</label>
 		<baseRecruitDifficulty>0.95</baseRecruitDifficulty>
@@ -207,7 +224,7 @@
 		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
 	</PawnKindDef>
 	<!-- 랫킨 방패병 -->
-	<PawnKindDef ParentName="RKBasePawnKind">
+	<PawnKindDef ParentName="RKCombatantBase">
 		<defName>RatkinDefender</defName>
 		<label>ratkin defender</label>
 		<baseRecruitDifficulty>0.65</baseRecruitDifficulty>
@@ -239,12 +256,18 @@
 		<apparelTags>
 			<li>RK_LightArmor</li>
 		</apparelTags>
-		<apparelAllowHeadgearChance>100</apparelAllowHeadgearChance>
+		<apparelAllowHeadgearChance>100</apparelAllowHeadgearChance>				
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>8~12</range>
+			</li>
+		</skills>	
 	</PawnKindDef>	
 	
 	<!-- 전투 병과(고급) -->	
 	<!-- 군인 -->
-	<PawnKindDef ParentName="RKBasePawnKind">
+	<PawnKindDef ParentName="RKCombatantBase">
 		<defName>RatkinSoldier</defName>
 		<label>ratkin soldier</label>
 		<combatPower>90</combatPower>
@@ -273,9 +296,19 @@
 			<li>RK_Soldier</li>
 		</apparelTags>
 		<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>8~13</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>6~10</range>
+			</li>
+		</skills>
 	</PawnKindDef>
 	<!-- 랫킨 정예정원사(근접, 원거리) -->
-	<PawnKindDef ParentName="RKBasePawnKind">
+	<PawnKindDef ParentName="RKCombatantBase">
 		<defName>RatkinEliteGuardener</defName>
 		<label>ratkin elite guardener</label>
 		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
@@ -320,10 +353,21 @@
 					</countRange>
 				</li>
 			</subOptionsChooseOne>
-		</inventoryOptions>
+		</inventoryOptions>				
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>6~12</range>
+			</li>	
+			<li>
+				<skill>Melee</skill>
+				<range>6~12</range>
+			</li>
+		</skills>
+		
 	</PawnKindDef>
 	<!-- 랫킨 기사(근접 중보병) -->
-	<PawnKindDef ParentName="RKBasePawnKind">
+	<PawnKindDef ParentName="RKCombatantBase">
 		<defName>RatkinKnight</defName>
 		<label>ratkin knight</label>
 		<baseRecruitDifficulty>0.75</baseRecruitDifficulty>
@@ -357,9 +401,15 @@
 			<li>RK_Knight</li>
 		</apparelTags>
 		<apparelAllowHeadgearChance>100</apparelAllowHeadgearChance>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>8~13</range>
+			</li>
+		</skills>		
 	</PawnKindDef>
 	<!-- 랫킨 정예 방패병(근접 중보병) -->
-	<PawnKindDef ParentName="RKBasePawnKind">
+	<PawnKindDef ParentName="RKCombatantBase">
 		<defName>RatkinEliteDefender</defName>
 		<label>ratkin elite defender</label>
 		<baseRecruitDifficulty>0.85</baseRecruitDifficulty>
@@ -384,8 +434,8 @@
 			<max>8000</max>
 		</apparelMoney>
 		<weaponMoney>
-			<min>2000</min>
-			<max>3500</max>
+			<min>500</min>
+			<max>3000</max>
 		</weaponMoney>
 		<weaponTags>
 			<li>RK_EliteDefender</li>
@@ -393,10 +443,16 @@
 		<apparelTags>
 			<li>RK_HeavyArmor</li>
 		</apparelTags>
-		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>		
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>10~13</range>
+			</li>
+		</skills>
 	</PawnKindDef>
 	<!-- 랫킨 기사 단장 -->
-	<PawnKindDef ParentName="RKBasePawnKind">
+	<PawnKindDef ParentName="RKCombatantBase">
 		<defName>RatkinKnightCommander</defName>
 		<label>ratkin knight commander</label>
 		<baseRecruitDifficulty>0.99</baseRecruitDifficulty>
@@ -420,8 +476,8 @@
 			<max>3</max>
 		</gearHealthRange>
 		<apparelMoney>
-			<min>850</min>
-			<max>1000</max>
+			<min>6500</min>
+			<max>8000</max>
 		</apparelMoney>
 		<weaponMoney>
 			<min>2000</min>
@@ -435,12 +491,18 @@
 		</apparelTags>
 		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
 		<apparelColor>(254,254,254)</apparelColor>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>12~16</range>
+			</li>
+		</skills>
 	</PawnKindDef>
 
 
 	<!-- 전투 병과(특수) -->
 	<!-- 특수 부대 찍찍이 -->
-	<PawnKindDef ParentName="RKBasePawnKind">
+	<PawnKindDef ParentName="RKCombatantBase">
 		<defName>RatkinEliteSoldier</defName>
 		<label>ratkin elite soldier</label>
 		<baseRecruitDifficulty>0.99</baseRecruitDifficulty>
@@ -456,8 +518,8 @@
 			<li>RatkinSoldier</li>
 		</backstoryCategories>
 		<apparelMoney>
-			<min>2500</min>
-			<max>4500</max>
+			<min>4500</min>
+			<max>8500</max>
 		</apparelMoney>
 		<apparelRequired>
 			<li>RK_BattleSuit</li>
@@ -487,9 +549,19 @@
 				<destroyOnlyWeapon>true</destroyOnlyWeapon>
 			</li>
 		</modExtensions>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>10~15</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>8~10</range>
+			</li>
+		</skills>
 	</PawnKindDef>
 	<!-- 찍찍이 데모맨 -->
-	<PawnKindDef ParentName="RKBasePawnKind">
+	<PawnKindDef ParentName="RKCombatantBase">
 		<defName>RatkinDemonMan</defName>
 		<label>ratkin demoman</label>
 		<combatPower>120</combatPower>
@@ -503,8 +575,8 @@
 			<li>RatkinDemoman</li>
 		</backstoryCategories>
 		<apparelMoney>
-			<min>1500</min>
-			<max>2500</max>
+			<min>4500</min>
+			<max>8500</max>
 		</apparelMoney>
 		<apparelRequired>
 			<li>Apparel_ShieldBelt</li>
@@ -549,7 +621,7 @@
 	
 	<!-- 기타 -->
 	<!-- 곳간털이범 -->
-	<PawnKindDef ParentName="RKBasePawnKind">
+	<PawnKindDef ParentName="RKCombatantBase">
 		<defName>RatkinPettyThief</defName>
 		<label>ratkin petty thief</label>
 		<combatPower>10</combatPower>
@@ -574,7 +646,7 @@
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 	</PawnKindDef>
 	<!-- 랫킨 살인마 -->
-	<PawnKindDef ParentName="RKBasePawnKind">
+	<PawnKindDef ParentName="RKCombatantBase">
 		<defName>RatkinMurderer</defName>
 		<label>ratkin Murderer</label>
 		<combatPower>40</combatPower>
@@ -608,7 +680,7 @@
 		</apparelTags>
 	</PawnKindDef>
 	<!-- 방랑자-->
-	<PawnKindDef ParentName="RKBasePawnKind">
+	<PawnKindDef ParentName="RKCombatantBase">
 		<defName>RatkinVagabond</defName>
 		<label>Vagabond</label>
 		<baseRecruitDifficulty>0.98</baseRecruitDifficulty>
@@ -651,9 +723,19 @@
 				</li>
 			</subOptionsChooseOne>
 		</inventoryOptions>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>8~11</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>6~10</range>
+			</li>
+		</skills>
 	</PawnKindDef>
 	<!-- 랫킨 용병 판매용-->
-	<PawnKindDef ParentName="RKBasePawnKind">
+	<PawnKindDef ParentName="RKCombatantBase">
 		<defName>RatkinMercenaryLight</defName>
 		<label>ratkin Mercenary</label>
 		<combatPower>35</combatPower>
@@ -677,7 +759,7 @@
 		</weaponTags>
 	</PawnKindDef>
 	<!-- 실험체 -->
-	<PawnKindDef ParentName="RKBasePawnKind">
+	<PawnKindDef ParentName="RKCombatantBase">
 		<defName>RatkinSubject</defName>
 		<label>ratkin subject</label>
 		<baseRecruitDifficulty>0.55</baseRecruitDifficulty>
@@ -705,9 +787,19 @@
 			<li>RK_Subject</li>
 		</apparelTags>
 		<apparelAllowHeadgearChance>0.0</apparelAllowHeadgearChance>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>4~16</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>4~16</range>
+			</li>
+		</skills>
 	</PawnKindDef>
 	<!-- 랫킨 용병 -->
-	<PawnKindDef ParentName="RKBasePawnKind">
+	<PawnKindDef ParentName="RKCombatantBase">
 		<defName>RatkinMercenary</defName>
 		<label>ratkin mercenary</label>
 		<backstoryCategories>

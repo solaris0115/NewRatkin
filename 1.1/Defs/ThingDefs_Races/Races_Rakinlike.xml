@@ -338,6 +338,8 @@
 					<li>RK_SantaSack</li>		
 
 					<li>RK_WhiteCoat</li>
+					<li>RK_RoyalRobe</li>
+					<li>RK_RoyalCrown</li>
 				</apparelList>
 				<whiteApparelList>
 					<li>Apparel_ShieldBelt</li>
@@ -358,55 +360,13 @@
 					<li>RK_FlechetteRifle</li>
 					<li>RK_FlechetteSniperRifle</li>
 					<li>RK_PrototypeRUG</li>
-
-
 					<li>RK_Dagger</li>
 					<li>RK_OneHanded</li>
 					<li>RK_LightLance</li>
 					<li>RK_HeavyLance</li>
+					<li>RK_Gunlance_NormalType</li>
+					<li>RK_Gunlance_SpreadType</li>
 				</weaponList>
-				<researchList>
-					<!-- <li> -->
-					<!-- <projects> -->
-					<!-- <li>Ballista</li> -->
-					<!-- </projects> -->
-					<!-- </li> -->
-					<!-- <li> -->
-					<!-- <projects> -->
-					<!-- <li>Advanced_BallistaBolt</li> -->
-					<!-- </projects> -->
-					<!-- </li> -->
-					<!-- <li> -->
-					<!-- <projects> -->
-					<!-- <li>PiercingWeapon</li> -->
-					<!-- </projects> -->
-					<!-- </li> -->
-					<!-- <li> -->
-					<!-- <projects> -->
-					<!-- <li>MicroOptical</li> -->
-					<!-- </projects> -->
-					<!-- </li> -->
-					<!-- <li> -->
-					<!-- <projects> -->
-					<!-- <li>FlechetteBullet</li> -->
-					<!-- </projects> -->
-					<!-- </li> -->
-					<!-- <li> -->
-					<!-- <projects> -->
-					<!-- <li>RatkinClothing</li> -->
-					<!-- </projects> -->
-					<!-- </li> -->
-					<!-- <li> -->
-					<!-- <projects> -->
-					<!-- <li>HighClassClothing</li> -->
-					<!-- </projects> -->
-					<!-- </li> -->
-					<!-- <li> -->
-					<!-- <projects> -->
-					<!-- <li>PulseTech</li> -->
-					<!-- </projects> -->
-					<!-- </li> -->
-				</researchList>
 			</raceRestriction>
 			<thoughtSettings>
 				<cannotReceiveThoughts>

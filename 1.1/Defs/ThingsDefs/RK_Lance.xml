@@ -327,7 +327,7 @@
 		<equippedAngleOffset>-120</equippedAngleOffset>
 		<costStuffCount>120</costStuffCount>
 		<stuffCategories>
-			<li>WeaponMetallic</li>
+			<li>Metallic</li>
 		</stuffCategories>
 		<costList>
 			<Steel>50</Steel>
@@ -433,7 +433,7 @@
 		</weaponTags>
 		<costStuffCount>150</costStuffCount>
 		<stuffCategories>
-			<li>WeaponMetallic</li>
+			<li>Metallic</li>
 		</stuffCategories>
 		<costList>
 			<Steel>50</Steel>

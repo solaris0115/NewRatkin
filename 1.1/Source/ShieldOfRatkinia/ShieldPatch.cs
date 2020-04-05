@@ -36,7 +36,7 @@ namespace NewRatkin
 
             foreach (Pawn p in PawnsFinder.AllMaps_FreeColonistsSpawned)
             {
-                if (p.equipment.Primary != null && p.equipment.Primary.def.IsRangedWeapon)
+                if (p.equipment.Primary != null && p.equipment.Primary.def.IsWeaponUsingProjectiles)
                 {
                     List<Apparel> ap = p.apparel.WornApparel;
                     for (int i = 0; i < ap.Count; i++)

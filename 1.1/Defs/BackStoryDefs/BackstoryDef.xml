@@ -14,6 +14,9 @@
 				<chance>100</chance>
 			</li>
 		</disallowedTraits>
+		<spawnCategories>
+			<li>RatkinViolence</li>
+		</spawnCategories>
 	</AlienRace.BackstoryDef>
 
 	<!-- 랫킨 자유 유년기 -->
@@ -326,6 +329,7 @@
 		<spawnCategories>
 			<li>RatkinStory</li>
 			<li>RatkinKingdom</li>
+			<li>RatkinNoble</li>
 			<li>RatkinEducated</li>
 		</spawnCategories>
 	</AlienRace.BackstoryDef>	
@@ -361,6 +365,7 @@
 			<li>RatkinMerchant</li>
 			<li>RatkinEducated</li>
 			<li>RatkinNoble</li>
+			<li>RatkinNonViolence</li>
 		</spawnCategories>
 	</AlienRace.BackstoryDef>	
 	<!-- 서자 -->
@@ -1301,9 +1306,6 @@
 				<amount>4</amount>
 			</li>
 		</skillGains>
-		<workDisables>
-			<li>Mining</li>
-		</workDisables>
 		<spawnCategories>
 			<li>RatkinStory</li>
 			<li>RatkinEducated</li>
@@ -1338,9 +1340,6 @@
 				<amount>8</amount>
 			</li>
 		</skillGains>
-		<workDisables>
-			<li>Mining</li>
-		</workDisables>
 		<spawnCategories>
 			<li>RatkinStory</li>
 			<li>RatkinKnight</li>
@@ -1756,6 +1755,7 @@
 			<li>RatkinEducated</li>
 			<li>RatkinCity</li>
 			<li>RatkinKingdom</li>
+			<li>RatkinNonViolence</li>
 		</spawnCategories>
 	</AlienRace.BackstoryDef>
 	<!-- 의무관 -->
@@ -1886,6 +1886,7 @@
 			<li>RatkinNoble</li>
 			<li>RatkinPriest</li>
 			<li>RatkinKingdom</li>
+			<li>RatkinNonViolence</li>
 		</spawnCategories>		
 		<forcedTraits Inherit="False">
 			<li Inherit="False">

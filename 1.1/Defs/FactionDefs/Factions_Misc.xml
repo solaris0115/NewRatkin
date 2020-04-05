@@ -152,10 +152,10 @@
 		<settlementTexturePath>Icon/RK_DefaultColony</settlementTexturePath>
 		<apparelStuffFilter>
 			<stuffCategoriesToAllow>
-				<li>Woody</li>
 				<li>WeaponMetallic</li>
 				<li>Fabric</li>
 				<li>Leathery</li>
+				<li>Woody</li>
 			</stuffCategoriesToAllow>
 		</apparelStuffFilter>
 	</FactionDef>

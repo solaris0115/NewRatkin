@@ -4,6 +4,9 @@
   <PiercingWeapon.label>관통 무기</PiercingWeapon.label>
   <PiercingWeapon.description>무기의 관통력을 높이는 연구를 합니다.</PiercingWeapon.description>
 
+  <MechanicalWeapon.label>기계식 무기</MechanicalWeapon.label>
+  <MechanicalWeapon.description>기계식 무기를 연구합니다.</MechanicalWeapon.description>
+
   <Ballista.label>발리스타</Ballista.label>
   <Ballista.description>커다란 노포를 연구합니다. 체구가 작은 랫킨도 다루기 쉽습니다.</Ballista.description>
 

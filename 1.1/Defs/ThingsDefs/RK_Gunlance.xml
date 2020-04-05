@@ -14,6 +14,7 @@
 		<weaponTags Inherit="false">
 			<li>RK_EliteDefender</li>
 			<li>RK_Gunlance</li>
+			<li>AV</li>
 		</weaponTags>
 		<costStuffCount>100</costStuffCount>
 		<stuffCategories>
@@ -80,7 +81,7 @@
 					<angle>-10</angle>
 				</westOffset>
 			</li>			
-			<li Class="CompProperties_Refuelable">
+			<li Class="NewRatkin.CompProperties_GunlanceFuel">
 				<compClass>NewRatkin.CompGunlanceFuel</compClass>
 				<fuelLabel>Shots until barrel change</fuelLabel>
 				<fuelGizmoLabel>wyvern ammo</fuelGizmoLabel>
@@ -90,7 +91,7 @@
 					</thingDefs>
 				</fuelFilter>
 				<fuelCapacity>3</fuelCapacity>
-				<initialFuelPercent>1</initialFuelPercent>
+				<initialFuelPercent>0</initialFuelPercent>
 				<autoRefuelPercent>0.75</autoRefuelPercent>
 				<showFuelGizmo>true</showFuelGizmo>
 				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
@@ -110,7 +111,7 @@
 				<burstShotCount>2</burstShotCount>
 				<ticksBetweenBurstShots>130</ticksBetweenBurstShots>
 				<damageDef>Bomb</damageDef>
-				<damageAmount>40</damageAmount>
+				<damageAmount>25</damageAmount>
 				<stopBurstWithoutLos>false</stopBurstWithoutLos>
 				<angle>50</angle>
 			</li>
@@ -127,7 +128,7 @@
 		<verb Class="NewRatkin.VerbProperties_Gunlance">
 			<verbClass>NewRatkin.Verb_GunlanceFiring</verbClass>
 			<damageDef>Bomb</damageDef>
-			<damageAmount>30</damageAmount>
+			<damageAmount>15</damageAmount>
 			<range>1</range>
 			<angle>50</angle>	
 		</verb>
@@ -152,6 +153,7 @@
 		<weaponTags Inherit="false">
 			<li>RK_EliteDefender</li>
 			<li>RK_Gunlance</li>
+			<li>AV</li>
 		</weaponTags>
 		<costStuffCount>100</costStuffCount>
 		<stuffCategories>
@@ -197,6 +199,9 @@
 			<skillRequirements>
 				<Crafting>10</Crafting>
 			</skillRequirements>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
 		</recipeMaker>
 		<comps>
 			<li Class="SYS.CompProperties_WeaponExtention">
@@ -218,7 +223,7 @@
 					<angle>-10</angle>
 				</westOffset>
 			</li>			
-			<li Class="CompProperties_Refuelable">
+			<li Class="NewRatkin.CompProperties_GunlanceFuel">
 				<compClass>NewRatkin.CompGunlanceFuel</compClass>
 				<fuelLabel>Shots until barrel change</fuelLabel>
 				<fuelGizmoLabel>wyvern ammo</fuelGizmoLabel>
@@ -227,8 +232,8 @@
 						<li>RK_WyvernAmmo_SpreadType</li>
 					</thingDefs>
 				</fuelFilter>
-				<fuelCapacity>5</fuelCapacity>
-				<initialFuelPercent>1</initialFuelPercent>
+				<fuelCapacity>3</fuelCapacity>
+				<initialFuelPercent>0</initialFuelPercent>
 				<autoRefuelPercent>0.75</autoRefuelPercent>
 				<showFuelGizmo>true</showFuelGizmo>
 				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
@@ -248,7 +253,7 @@
 				<burstShotCount>2</burstShotCount>
 				<ticksBetweenBurstShots>130</ticksBetweenBurstShots>
 				<damageDef>Flame</damageDef>
-				<damageAmount>30</damageAmount>
+				<damageAmount>20</damageAmount>
 				<stopBurstWithoutLos>false</stopBurstWithoutLos>
 				<angle>70</angle>
 			</li>
@@ -265,7 +270,7 @@
 		<verb Class="NewRatkin.VerbProperties_Gunlance">
 			<verbClass>NewRatkin.Verb_GunlanceFiring</verbClass>
 			<damageDef>Flame</damageDef>
-			<damageAmount>20</damageAmount>
+			<damageAmount>15</damageAmount>
 			<range>2</range>
 			<angle>70</angle>	
 		</verb>
@@ -288,7 +293,7 @@
 		<label>wyvern ammo(normal)</label>
 		<description>A shell filled with high explosives. Can be fired from mortars or installed as a trap. Explodes when damaged.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/Shell/Shell_HighExplosive</texPath>
+			<texPath>Things/Item/Resource/WyvernAmmo_Normal</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>	
 		<costList>
@@ -299,7 +304,7 @@
 		<comps>
 			<li Class="CompProperties_Usable">
 				<useJob>UseItem</useJob>
-				<useLabel>Reload wyvern shell</useLabel>
+				<useLabel>Reload wyvern shell(normal)</useLabel>
 				<useDuration>600</useDuration>
 			</li>
 			<li Class="NewRatkin.CompProperties_GunlanceReload">
@@ -322,8 +327,9 @@
 			<workAmount>1000</workAmount>
 			<targetCountAdjustment>5</targetCountAdjustment>
 			<workSkill>Crafting</workSkill>
-			<recipeUsers>
-				<li>TableMachining</li>
+			<recipeUsers Inherit="false">
+				<li>RK_FueledSmithy</li>
+				<li>RK_ElectricSmithy</li>
 			</recipeUsers>
 			<skillRequirements>
 				<Crafting>8</Crafting>
@@ -332,10 +338,10 @@
 	</ThingDef>
 	<ThingDef ParentName="MakeableShellBase">
 		<defName>RK_WyvernAmmo_SpreadType</defName>
-		<label>wyvern ammo(Spread)</label>
+		<label>wyvern ammo(spread)</label>
 		<description>A shell filled with high explosives. Can be fired from mortars or installed as a trap. Explodes when damaged.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/Shell/Shell_Incendiary</texPath>
+			<texPath>Things/Item/Resource/WyvernAmmo_Spread</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>	
 		<costList>
@@ -346,7 +352,7 @@
 		<comps>
 			<li Class="CompProperties_Usable">
 				<useJob>UseItem</useJob>
-				<useLabel>Reload wyvern shell</useLabel>
+				<useLabel>Reload wyvern shell(spread)</useLabel>
 				<useDuration>600</useDuration>
 			</li>
 			<li Class="NewRatkin.CompProperties_GunlanceReload">
@@ -369,8 +375,9 @@
 			<workAmount>1000</workAmount>
 			<targetCountAdjustment>5</targetCountAdjustment>
 			<workSkill>Crafting</workSkill>
-			<recipeUsers>
-				<li>TableMachining</li>
+			<recipeUsers Inherit="false">
+				<li>RK_FueledSmithy</li>
+				<li>RK_ElectricSmithy</li>
 			</recipeUsers>
 			<skillRequirements>
 				<Crafting>8</Crafting>
