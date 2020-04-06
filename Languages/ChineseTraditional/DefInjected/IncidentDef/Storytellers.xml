@@ -2,7 +2,7 @@
 <LanguageData>
 
   <RatkinVagabondJoin.label>流浪者</RatkinVagabondJoin.label>
-  <RatkinVagabondJoin.letterText>遠方瀰漫著煙霧[PAWN_kind]來到了這個地方。</RatkinVagabondJoin.letterText>
+  <RatkinVagabondJoin.letterText>當[PAWN_kind]注意到一種奇怪的感覺[PAWN_kind]跑到了這個地方。</RatkinVagabondJoin.letterText>
   <RatkinVagabondJoin.letterLabel>流浪者</RatkinVagabondJoin.letterLabel>
 
 
