@@ -1,41 +1,37 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <!-- 직사 발리스타 -->
+  <!-- Direct Balusta -->
 
-  <RK_Ballista_Strait_Body.label>弩箭發射器</RK_Ballista_Strait_Body.label>
-  <RK_Ballista_Strait_Body.description>它是一個為鼠族而設計的機器，能夠發射大箭頭。 因特殊設計讓鼠族也能輕鬆操作。</RK_Ballista_Strait_Body.description>
-  <RK_Ballista_Strait_Body_Blueprint.label>弩箭發射器 (藍圖)</RK_Ballista_Strait_Body_Blueprint.label>
-  <RK_Ballista_Strait_Body_Blueprint_Install.label>弩箭發射器(藍圖)</RK_Ballista_Strait_Body_Blueprint_Install.label>
-  <RK_Ballista_Strait_Body_Frame.label>弩箭發射器 (建造中)</RK_Ballista_Strait_Body_Frame.label>
-  <RK_Ballista_Strait_Body_Frame.description>它是一個為鼠族而設計的機器，能夠發射大箭頭。 因特殊設計讓鼠族也能輕鬆操作。</RK_Ballista_Strait_Body_Frame.description>
+  <RK_Ballista_Strait_Body.label>弩炮</RK_Ballista_Strait_Body.label>
+  <RK_Ballista_Strait_Body.description>一種射出巨大弩箭的古代攻城機器。為了便於鼠族人操作使用而進行過特殊改造。</RK_Ballista_Strait_Body.description>
+  <Blueprint_RK_Ballista_Strait_Body.label>弩炮(藍圖)</Blueprint_RK_Ballista_Strait_Body.label>
+  <Blueprint_Install_RK_Ballista_Strait_Body.label>弩炮(藍圖)</Blueprint_Install_RK_Ballista_Strait_Body.label>
+  <Frame_RK_Ballista_Strait_Body.label>弩炮(施工中)</Frame_RK_Ballista_Strait_Body.label>
+  <Frame_RK_Ballista_Strait_Body.description>一種射出巨大弩箭的古代攻城機器。為了便於鼠族人操作使用而進行過特殊改造。</Frame_RK_Ballista_Strait_Body.description>
 
-  <RK_Turret_Ballista_Strait.label>弩箭發射器</RK_Turret_Ballista_Strait.label>
-  <RK_Turret_Ballista_Strait.description>弩箭的發射器。 精準且射程遠。</RK_Turret_Ballista_Strait.description>
+  <RK_Turret_Ballista_Strait.label>巨型弩箭</RK_Turret_Ballista_Strait.label>
+  <RK_Turret_Ballista_Strait.description>發射弩砲的弩箭。精準度極高且射程很遠。</RK_Turret_Ballista_Strait.description>
+  <RK_Turret_Ballista_Strait.verbs.Verb_Shoot.label>發射</RK_Turret_Ballista_Strait.verbs.Verb_Shoot.label>
 
+  <!-- Ballista Bolt (Normal) -->
 
-  <!-- 발리스타 탄 (일반) -->
-
-  <BallistaBolt_Normal.label>弩箭(一般)</BallistaBolt_Normal.label>
-  <BallistaBolt_Normal.description>這是一個弩箭。 如果被這個大箭擊中，將會難以存活。</BallistaBolt_Normal.description>
-
-  <Bullet_BallistaBolt_Normal.label>弩箭(一般)</Bullet_BallistaBolt_Normal.label>
-
-
-  <!-- 발리스타 탄 (중량) -->
-
-  <BallistaBolt_Heavy.label>弩箭(重量)</BallistaBolt_Heavy.label>
-  <BallistaBolt_Heavy.description>這是一個沉重的弩箭。 增加重量以增強破壞力。</BallistaBolt_Heavy.description>
-
-  <Bullet_BallistaBolt_HE.label>弩箭(重量)</Bullet_BallistaBolt_HE.label>
+  <BallistaBolt_Normal.label>巨型弩箭(通常)</BallistaBolt_Normal.label>
+  <BallistaBolt_Normal.description>這是一個弩炮使用的弩箭。如果被這支巨箭擊中，將很難有生還者。</BallistaBolt_Normal.description>
+  <Bullet_BallistaBolt_Normal.label>巨型弩箭(通常)</Bullet_BallistaBolt_Normal.label>
 
 
-  <!-- 발리스타 탄 (고관통) -->
+  <!-- Ballista Bolt (Heavy Weight) -->
 
-  <BallistaBolt_AP.label>弩箭(穿透)</BallistaBolt_AP.label>
-  <BallistaBolt_AP.description>此弩箭具有高穿透力。 它可以穿透射擊線中的多個目標。</BallistaBolt_AP.description>
+  <BallistaBolt_Heavy.label>巨型弩箭(重型)</BallistaBolt_Heavy.label>
+  <BallistaBolt_Heavy.description>這是一個極其沈重的大型弩箭。在通常弩箭的基礎上增加重量以增強落地時的衝擊力。</BallistaBolt_Heavy.description>
+  <Bullet_BallistaBolt_HE.label>巨型弩箭(重型)</Bullet_BallistaBolt_HE.label>
 
-  <Bullet_BallistaBolt_AP.label>弩箭(穿透)</Bullet_BallistaBolt_AP.label>
 
+  <!-- Ballista Bolt (High penetration) -->
+
+  <BallistaBolt_AP.label>巨型弩箭(穿透)</BallistaBolt_AP.label>
+  <BallistaBolt_AP.description>增強穿透力的大型弩箭。能在彈道飛行路線上對多個目標造成殺傷。</BallistaBolt_AP.description>
+  <Bullet_BallistaBolt_AP.label>巨型弩箭(穿透)</Bullet_BallistaBolt_AP.label>
 
 </LanguageData>
