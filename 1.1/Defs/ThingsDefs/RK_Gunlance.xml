@@ -138,7 +138,7 @@
 		<combatLogRulesMiss>RK_Maneuver_Shell_MeleeMiss</combatLogRulesMiss>
 		<combatLogRulesDodge>RK_Maneuver_Shell_MeleeDodge</combatLogRulesDodge>
 	</ManeuverDef>
-	
+
 	<!-- 건랜스 방사-->
 	<ThingDef ParentName="RK_MeleeWeapon">
 		<defName>RK_Gunlance_SpreadType</defName>
@@ -259,7 +259,7 @@
 			</li>
 		</verbs>
 	</ThingDef>
-	
+
 	<ToolCapacityDef>
 		<defName>GunlanceShell_Spread</defName>
 	</ToolCapacityDef>
@@ -335,6 +335,12 @@
 				<Crafting>8</Crafting>
 			</skillRequirements>
 		</recipeMaker>
+		<thingCategories Inherit="false">
+			<li>Manufactured</li>
+		</thingCategories>
+		<tradeTags>
+			<li>MortarShell</li>
+		</tradeTags>
 	</ThingDef>
 	<ThingDef ParentName="MakeableShellBase">
 		<defName>RK_WyvernAmmo_SpreadType</defName>
@@ -367,6 +373,9 @@
 				<wickTicks>30~60</wickTicks>
 			</li>
 		</comps>
+		<thingCategories Inherit="false">
+			<li>Manufactured</li>
+		</thingCategories>
 		<recipeMaker>
 			<researchPrerequisite>MechanicalWeapon</researchPrerequisite>			
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -383,8 +392,11 @@
 				<Crafting>8</Crafting>
 			</skillRequirements>
 		</recipeMaker>
+		<tradeTags>
+			<li>MortarShell</li>
+		</tradeTags>
 	</ThingDef>
-	
+
 	<ThingDef>
 		<defName>GunlancePreIgnition</defName>
 		<label>ignition</label>
@@ -398,7 +410,7 @@
 		<altitudeLayer>PawnState</altitudeLayer>
 		<useHitPoints>false</useHitPoints>
 	</ThingDef>
-	
+
 	<ThingDef>
 		<defName>GunlanceAfterIgnition</defName>
 		<label>ignition</label>
@@ -409,7 +421,7 @@
 			<texPath>Things/Special/WyvernFire</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData> 
-		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<altitudeLayer>Gas</altitudeLayer>
 		<useHitPoints>false</useHitPoints>
 	</ThingDef>
 </Defs>

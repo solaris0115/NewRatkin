@@ -45,7 +45,7 @@ namespace NewRatkin
 		{
 			if(currentPower<1)
 			{
-				currentPower +=0.01f;
+				currentPower +=0.02f;
 			}
 			swap = !swap;
 		}
@@ -87,7 +87,7 @@ namespace NewRatkin
 					}
 					currentGraphic.MatSingle.color = FireColor;
 					float angle = (targetVector - parent.TrueCenter()).AngleFlat();
-					Graphics.DrawMesh(MeshPool.GridPlane(new Vector2(2 - currentPower, 1)), parent.TrueCenter()+ posFix + new Vector3(Mathf.Sin(angle * Mathf.Deg2Rad) * 1.1f, 1, Mathf.Cos(angle * Mathf.Deg2Rad)) * 1.1f, Quaternion.AngleAxis(angle, Vector3.up), currentGraphic.MatSingle, 0);
+					Graphics.DrawMesh(MeshPool.GridPlane(new Vector2(3 - Mathf.Clamp(currentPower*4,0,2.5f), 1.1f - currentPower * 0.2f)), parent.TrueCenter()+ posFix + new Vector3(Mathf.Sin(angle * Mathf.Deg2Rad) * 1.1f, 1, Mathf.Cos(angle * Mathf.Deg2Rad)) * 1.1f, Quaternion.AngleAxis(angle, Vector3.up), currentGraphic.MatSingle, 0);
 				}
 			}
 
@@ -163,7 +163,7 @@ namespace NewRatkin
 					}
 					Graphic.MatSingle.color = FireColor;
 					float angle = (targetVector - parent.TrueCenter()).AngleFlat();
-					Graphics.DrawMesh(MeshPool.GridPlane(new Vector2(currentPower*4f, currentPower*2f)), parent.TrueCenter() + posFix + new Vector3(Mathf.Sin(angle * Mathf.Deg2Rad) * 1.1f, 1, Mathf.Cos(angle * Mathf.Deg2Rad)) * 1.1f, Quaternion.AngleAxis(angle, Vector3.up), Graphic.MatSingle, 0);
+					Graphics.DrawMesh(MeshPool.GridPlane(new Vector2(currentPower*4f, Mathf.Clamp01(currentPower*2f))), parent.TrueCenter() + posFix + new Vector3(Mathf.Sin(angle * Mathf.Deg2Rad) * 1.1f, 1, Mathf.Cos(angle * Mathf.Deg2Rad)) * 1.1f, Quaternion.AngleAxis(angle, Vector3.up), Graphic.MatSingle, 0);
 				}
 			}
 
