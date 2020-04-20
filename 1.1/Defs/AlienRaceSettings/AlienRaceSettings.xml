@@ -30,33 +30,9 @@
 			<alienrefugeekinds>
 				<li>
 					<kindDefs>
-						<li>RatkinColonist</li>
-					</kindDefs>
-					<chance>50.0</chance>
-				</li>
-				<li>
-					<kindDefs>
-						<li>RatkinServant</li>
-					</kindDefs>
-					<chance>30.0</chance>
-				</li>
-				<li>
-					<kindDefs>
-						<li>RatkinNoble</li>
-					</kindDefs>
-					<chance>5.0</chance>
-				</li>
-				<li>
-					<kindDefs>
 						<li>RatkinSubject</li>
 					</kindDefs>
-					<chance>5.0</chance>
-				</li>
-				<li>
-					<kindDefs>
-						<li>RatkinKnight</li>
-					</kindDefs>
-					<chance>5.0</chance>
+					<chance>50.0</chance>
 				</li>
 			</alienrefugeekinds>
 			<alienwandererkinds>

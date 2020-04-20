@@ -18,10 +18,10 @@
 	<PawnKindDef ParentName="RKBasePawnKind">
 		<defName>RatkinColonist</defName>
 		<label>ratkin colonist</label>
+		<defaultFactionType>RK_PlayerFaction</defaultFactionType>		
 		<backstoryCategories>
 			<li>RatkinStory</li>
 		</backstoryCategories>
-		<defaultFactionType>RK_PlayerFaction</defaultFactionType>
 		<apparelRequired>
 			<li>RK_ApronSkirt</li>
 		</apparelRequired>
@@ -121,17 +121,6 @@
 	<!-- 전투 병과 -->
 	<PawnKindDef Name="RKCombatantBase" ParentName="RKBasePawnKind" Abstract="true">
 		<isFighter>true</isFighter>	
-		<backstoryFilters>
-			<li>				
-				<categories>
-					<li>RatkinViolence</li>
-				</categories>
-				<exclude>
-					<li>RatkinNonViolence</li>
-				</exclude>
-				<commonality>1</commonality>
-			</li>
-		</backstoryFilters>
 	</PawnKindDef>	
 	
 	<!-- 랫킨 상단 -->	
@@ -140,9 +129,13 @@
 		<label>ratkin Merchant</label>
 		<combatPower>45</combatPower>
 		<isFighter>true</isFighter>
-		<backstoryCategories>
-			<li>RatkinMerchant</li>
-		</backstoryCategories>
+		<backstoryFiltersOverride>
+			<li>
+			<categories>
+				<li>RatkinMerchant</li>
+			</categories>
+			</li>
+		</backstoryFiltersOverride>
 		<apparelMoney>
 			<min>800</min>
 			<max>2000</max>
@@ -166,9 +159,13 @@
 		<label>ratkin combatant</label>
 		<combatPower>60</combatPower>
 		<isFighter>true</isFighter>
-		<backstoryCategories>
-			<li>RatkinCombatant</li>
-		</backstoryCategories>
+		<backstoryFiltersOverride>
+			<li>
+			<categories>
+				<li>RatkinCombatant</li>
+			</categories>
+			</li>
+		</backstoryFiltersOverride>
 		<gearHealthRange>
 			<min>0.3</min>
 			<max>0.9</max>
@@ -197,9 +194,13 @@
 		<combatPower>70</combatPower>
 		<isFighter>true</isFighter>
 		<minGenerationAge>21</minGenerationAge>
-		<backstoryCategories>
-			<li>RatkinCombatant</li>
-		</backstoryCategories>
+		<backstoryFiltersOverride>
+			<li>
+			<categories>
+				<li>RatkinCombatant</li>
+			</categories>
+			</li>
+		</backstoryFiltersOverride>
 		<apparelRequired>
 			<li>RK_GaurdenUniform</li>
 		</apparelRequired>
@@ -231,9 +232,13 @@
 		<combatPower>85</combatPower>
 		<isFighter>true</isFighter>
 		<minGenerationAge>21</minGenerationAge>
-		<backstoryCategories>
-			<li>RatkinDefender</li>
-		</backstoryCategories>
+		<backstoryFiltersOverride>
+			<li>
+			<categories>
+				<li>RatkinDefender</li>
+			</categories>
+			</li>
+		</backstoryFiltersOverride>
 		<apparelRequired>
 			<li>RK_GaurdenUniform</li>
 			<li>RK_WoodenShield</li>
@@ -273,9 +278,13 @@
 		<combatPower>90</combatPower>
 		<isFighter>true</isFighter>
 		<itemQuality>Good</itemQuality>
-		<backstoryCategories>
-			<li>RatkinSoldier</li>
-		</backstoryCategories>
+		<backstoryFiltersOverride>
+			<li>
+			<categories>
+				<li>RatkinSoldier</li>
+			</categories>
+			</li>
+		</backstoryFiltersOverride>
 		<gearHealthRange>
 			<min>0.7</min>
 			<max>1.2</max>
@@ -316,9 +325,13 @@
 		<isFighter>true</isFighter>
 		<itemQuality>Good</itemQuality>
 		<minGenerationAge>26</minGenerationAge>
-		<backstoryCategories>
-			<li>RatkinGuardener</li>
-		</backstoryCategories>
+		<backstoryFiltersOverride>
+			<li>
+			<categories>
+				<li>RatkinGuardener</li>
+			</categories>
+			</li>
+		</backstoryFiltersOverride>
 		<apparelMoney>
 			<min>3500</min>
 			<max>4500</max>
@@ -375,9 +388,13 @@
 		<isFighter>true</isFighter>
 		<itemQuality>Good</itemQuality>
 		<minGenerationAge>24</minGenerationAge>
-		<backstoryCategories>
-			<li>RatkinKnight</li>
-		</backstoryCategories>
+		<backstoryFiltersOverride>
+			<li>
+			<categories>
+				<li>RatkinKnight</li>
+			</categories>
+			</li>
+		</backstoryFiltersOverride>
 		<apparelRequired>
 			<li>RK_GaurdenUniform</li>
 			<li>RK_Plate</li>
@@ -417,9 +434,13 @@
 		<isFighter>true</isFighter>
 		<itemQuality>Good</itemQuality>
 		<minGenerationAge>27</minGenerationAge>
-		<backstoryCategories>
-			<li>RatkinEliteDefender</li>
-		</backstoryCategories>
+		<backstoryFiltersOverride>
+			<li>
+			<categories>
+				<li>RatkinEliteDefender</li>
+			</categories>
+			</li>
+		</backstoryFiltersOverride>
 		<apparelRequired>
 			<li>RK_GaurdenUniform</li>
 			<li>RK_Plate</li>
@@ -461,9 +482,13 @@
 		<factionLeader>true</factionLeader>
 		<itemQuality>Excellent</itemQuality>
 		<minGenerationAge>21</minGenerationAge>
-		<backstoryCategories>
-			<li>RatkinKnightCommander</li>
-		</backstoryCategories>
+		<backstoryFiltersOverride>
+			<li>
+			<categories>
+				<li>RatkinKnightCommander</li>
+			</categories>
+			</li>
+		</backstoryFiltersOverride>
 		<apparelRequired>
 			<li>RK_WhiteCoat</li>
 			<li>RK_GaurdenUniform</li>
@@ -514,9 +539,13 @@
 			<min>0.8</min>
 			<max>1.5</max>
 		</gearHealthRange>
-		<backstoryCategories>
-			<li>RatkinSoldier</li>
-		</backstoryCategories>
+		<backstoryFiltersOverride>
+			<li>
+			<categories>
+				<li>RatkinSoldier</li>
+			</categories>
+			</li>
+		</backstoryFiltersOverride>
 		<apparelMoney>
 			<min>4500</min>
 			<max>8500</max>
@@ -571,9 +600,13 @@
 			<min>0.8</min>
 			<max>1</max>
 		</gearHealthRange>
-		<backstoryCategories>
-			<li>RatkinDemoman</li>
-		</backstoryCategories>
+		<backstoryFiltersOverride>
+			<li>
+			<categories>
+				<li>RatkinDemoman</li>
+			</categories>
+			</li>
+		</backstoryFiltersOverride>
 		<apparelMoney>
 			<min>4500</min>
 			<max>8500</max>
@@ -626,9 +659,13 @@
 		<label>ratkin petty thief</label>
 		<combatPower>10</combatPower>
 		<isFighter>true</isFighter>
-		<backstoryCategories>
-			<li>RatkinThief</li>
-		</backstoryCategories>
+		<backstoryFiltersOverride>
+			<li>
+			<categories>
+				<li>RatkinThief</li>
+			</categories>
+			</li>
+		</backstoryFiltersOverride>
 		<apparelRequired>
 			<li>RK_Sack</li>
 			<li>RK_Cardigan</li>
@@ -652,9 +689,13 @@
 		<combatPower>40</combatPower>
 		<isFighter>true</isFighter>
 		<aiAvoidCover>true</aiAvoidCover>
-		<backstoryCategories>
-			<li>RatkinMurderer</li>
-		</backstoryCategories>
+		<backstoryFiltersOverride>
+			<li>
+			<categories>
+				<li>RatkinMurderer</li>
+			</categories>
+			</li>
+		</backstoryFiltersOverride>
 		<techHediffsChance>0.5</techHediffsChance>
 		<techHediffsTags>
 			<li>Advanced</li>
@@ -686,9 +727,13 @@
 		<baseRecruitDifficulty>0.98</baseRecruitDifficulty>
 		<combatPower>50</combatPower>
 		<isFighter>true</isFighter>
-		<backstoryCategories>
-			<li>RatkinVagabond</li>
-		</backstoryCategories>
+		<backstoryFiltersOverride>
+			<li>
+			<categories>
+				<li>RatkinVagabond</li>
+			</categories>
+			</li>
+		</backstoryFiltersOverride>
 		<apparelMoney>
 			<min>800</min>
 			<max>4800</max>
@@ -739,10 +784,18 @@
 		<defName>RatkinMercenaryLight</defName>
 		<label>ratkin Mercenary</label>
 		<combatPower>35</combatPower>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>RatkinViolence</li>
+					<li>RatkinMerchant</li>
+				</categories>
+				<exclude>
+					<li>RatkinNonViolence</li>
+				</exclude>
+			</li>
+		</backstoryFiltersOverride>
 		<isFighter>false</isFighter>
-		<backstoryCategories>
-			<li>RatkinStory</li>
-		</backstoryCategories>
 		<apparelMoney>
 			<min>800</min>
 			<max>1500</max>
@@ -763,9 +816,13 @@
 		<defName>RatkinSubject</defName>
 		<label>ratkin subject</label>
 		<baseRecruitDifficulty>0.55</baseRecruitDifficulty>
-		<backstoryCategories>
-			<li>RatkinSubject</li>
-		</backstoryCategories>
+		<backstoryFiltersOverride>
+			<li>
+			<categories>
+				<li>RatkinSubject</li>
+			</categories>
+			</li>
+		</backstoryFiltersOverride>
 		<combatPower>35</combatPower>
 		<isFighter>false</isFighter>
 		<techHediffsChance>0.8</techHediffsChance>
@@ -802,9 +859,17 @@
 	<PawnKindDef ParentName="RKCombatantBase">
 		<defName>RatkinMercenary</defName>
 		<label>ratkin mercenary</label>
-		<backstoryCategories>
-			<li>RatkinMercenary</li>
-		</backstoryCategories>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>RatkinViolence</li>
+					<li>RatkinMerchant</li>
+				</categories>
+				<exclude>
+					<li>RatkinNonViolence</li>
+				</exclude>
+			</li>
+		</backstoryFiltersOverride>
 		<minGenerationAge>30</minGenerationAge>
 		<combatPower>45</combatPower>
 		<isFighter>false</isFighter>
