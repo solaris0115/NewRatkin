@@ -7,17 +7,11 @@
 			<rulesStrings>
 				<li>RK_FirstName->[RK_Noun_Prefix_Flower]</li>				
 				<li>RK_FirstName->[RK_First_ElfStyle]</li>
-				
-				<!-- <li>RK_LastName(p=2)->[RK_Noun_Prefix_Flower][RK_Noun_Postfix_Bloom]</li> -->
-				<li>RK_LastName->[RK_Noun_Prefix_Nut]</li>
-				
-				<li>RK_LastName(p=0.7)->[RK_Noun_Prefix_Iron][RK_Noun_Postfix_Ironlike]</li>
-								
-				<li>RK_LastName(p=0.3)->Royal[RK_Noun_Postfix_BodyPart]</li>			
-				<li>RK_LastName(p=0.3)->Wild[RK_Noun_Postfix_BodyPart]</li>
-				<li>RK_LastName(p=0.7)->[RK_Noun_Prefix_Nature][RK_Noun_Postfix_Mover]</li>
-				
-				<!-- <li>RK_LastName(p=0.7)->[RK_Noun_Prefix_Nut][RK_Noun_Postfix_Actor]</li> -->
+				<li>RK_LastName(p=3)->[RK_Noun_Prefix_Nut]</li>				
+				<li>RK_LastName(p=2)->[RK_Noun_Prefix_Iron][RK_Noun_Postfix_Ironlike]</li>								
+				<li>RK_LastName->Royal[RK_Noun_Postfix_BodyPart]</li>			
+				<li>RK_LastName->Wild[RK_Noun_Postfix_BodyPart]</li>
+				<li>RK_LastName->[RK_Noun_Prefix_Nature][RK_Noun_Postfix_Mover]</li>
 				<li>RK_LastName->[RK_Last_Single]</li>
 			</rulesStrings>
 			<rulesFiles>
@@ -71,11 +65,9 @@
 		<rulePack>
 			<rulesStrings>
 				<!--이름 + 가문명-->
-				<li>r_name(p=1)->[RK_FirstName] [RK_LastName]</li>
-				<li>r_name(p=0.4)->[RK_First_ElfStyle] [RK_Noun_Prefix_Flower]</li>
-				<li>r_name(p=0.2)->[RK_First_ElfStyle] [RK_Noun_Prefix_Flower]tea</li>				
-				<!-- <li>r_name(p=0.1)->[RK_First_ElfStyle] [RK_Noun_Prefix_Flower][RK_Noun_Postfix_Actor]</li> -->
-				<!-- <li>r_name(p=5)->[RK_First_ElfStyle] [RK_LastName_SylB]</li> -->
+				<li>r_name(p=4)->[RK_FirstName] [RK_LastName]</li>
+				<li>r_name(p=2)->[RK_First_ElfStyle] [RK_Noun_Prefix_Flower]</li>
+				<li>r_name(p=1)->[RK_First_ElfStyle] [RK_Noun_Prefix_Flower]tea</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>

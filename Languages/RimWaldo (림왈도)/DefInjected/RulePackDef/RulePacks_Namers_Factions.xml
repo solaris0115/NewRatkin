@@ -3,19 +3,19 @@
 
 	<RatkinKingdomNameUtility.rulePack.rulesStrings.0>RK_FirstName->[RK_Noun_Prefix_Flower]</RatkinKingdomNameUtility.rulePack.rulesStrings.0>
 	<RatkinKingdomNameUtility.rulePack.rulesStrings.1>RK_FirstName->[RK_First_ElfStyle]</RatkinKingdomNameUtility.rulePack.rulesStrings.1>
-	<RatkinKingdomNameUtility.rulePack.rulesStrings.2>RK_LastName->[RK_Noun_Prefix_Nut]</RatkinKingdomNameUtility.rulePack.rulesStrings.2>
-	<RatkinKingdomNameUtility.rulePack.rulesStrings.3>RK_LastName(p=0.7)->[RK_Noun_Prefix_Iron][RK_Noun_Postfix_Ironlike]</RatkinKingdomNameUtility.rulePack.rulesStrings.3>
-	<RatkinKingdomNameUtility.rulePack.rulesStrings.4>RK_LastName(p=0.3)->로열[RK_Noun_Postfix_BodyPart]</RatkinKingdomNameUtility.rulePack.rulesStrings.4>
-	<RatkinKingdomNameUtility.rulePack.rulesStrings.5>RK_LastName(p=0.3)->와일드[RK_Noun_Postfix_BodyPart]</RatkinKingdomNameUtility.rulePack.rulesStrings.5>
-	<RatkinKingdomNameUtility.rulePack.rulesStrings.6>RK_LastName(p=0.7)->[RK_Noun_Prefix_Nature][RK_Noun_Postfix_Mover]</RatkinKingdomNameUtility.rulePack.rulesStrings.6>
+	<RatkinKingdomNameUtility.rulePack.rulesStrings.2>RK_LastName(p=3)->[RK_Noun_Prefix_Nut]</RatkinKingdomNameUtility.rulePack.rulesStrings.2>
+	<RatkinKingdomNameUtility.rulePack.rulesStrings.3>RK_LastName(p=2)->[RK_Noun_Prefix_Iron][RK_Noun_Postfix_Ironlike]</RatkinKingdomNameUtility.rulePack.rulesStrings.3>
+	<RatkinKingdomNameUtility.rulePack.rulesStrings.4>RK_LastName->로열[RK_Noun_Postfix_BodyPart]</RatkinKingdomNameUtility.rulePack.rulesStrings.4>
+	<RatkinKingdomNameUtility.rulePack.rulesStrings.5>RK_LastName->와일드[RK_Noun_Postfix_BodyPart]</RatkinKingdomNameUtility.rulePack.rulesStrings.5>
+	<RatkinKingdomNameUtility.rulePack.rulesStrings.6>RK_LastName->[RK_Noun_Prefix_Nature][RK_Noun_Postfix_Mover]</RatkinKingdomNameUtility.rulePack.rulesStrings.6>
 	<RatkinKingdomNameUtility.rulePack.rulesStrings.7>RK_LastName->[RK_Last_Single]</RatkinKingdomNameUtility.rulePack.rulesStrings.7>
 
 
 	<!-- 이름 조합 규칙 -->
 
-	<NamerPerson_RatkinKingdom.rulePack.rulesStrings.0>r_name(p=1)->[RK_FirstName] [RK_LastName]</NamerPerson_RatkinKingdom.rulePack.rulesStrings.0>
-	<NamerPerson_RatkinKingdom.rulePack.rulesStrings.1>r_name(p=0.4)->[RK_First_ElfStyle] [RK_Noun_Prefix_Flower]</NamerPerson_RatkinKingdom.rulePack.rulesStrings.1>
-	<NamerPerson_RatkinKingdom.rulePack.rulesStrings.2>r_name(p=0.2)->[RK_First_ElfStyle] [RK_Noun_Prefix_Flower]티</NamerPerson_RatkinKingdom.rulePack.rulesStrings.2>
+	<NamerPerson_RatkinKingdom.rulePack.rulesStrings.0>r_name(p=4)->[RK_FirstName] [RK_LastName]</NamerPerson_RatkinKingdom.rulePack.rulesStrings.0>
+	<NamerPerson_RatkinKingdom.rulePack.rulesStrings.1>r_name(p=2)->[RK_First_ElfStyle] [RK_Noun_Prefix_Flower]</NamerPerson_RatkinKingdom.rulePack.rulesStrings.1>
+	<NamerPerson_RatkinKingdom.rulePack.rulesStrings.2>r_name(p=1)->[RK_First_ElfStyle] [RK_Noun_Prefix_Flower]티</NamerPerson_RatkinKingdom.rulePack.rulesStrings.2>
 
 	<NamerFaction_RatkinKingdom.rulePack.rulesStrings.0>r_name(p=2)->[ofThing]의 [empire]</NamerFaction_RatkinKingdom.rulePack.rulesStrings.0>
 	<NamerFaction_RatkinKingdom.rulePack.rulesStrings.1>r_name(p=2)->[ofThing] [empire]</NamerFaction_RatkinKingdom.rulePack.rulesStrings.1>

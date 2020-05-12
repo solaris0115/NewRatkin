@@ -1324,7 +1324,7 @@
 			</li>
 		</forcedTraits>
 	</AlienRace.BackstoryDef>
-	
+
 	<!-- 기사 -->
 	<AlienRace.BackstoryDef ParentName="BaseRatkinBackStory">
 		<defName>Ratkin_Knight</defName>
@@ -1368,7 +1368,7 @@
 			</li>
 		</forcedTraits>
 	</AlienRace.BackstoryDef>
-	
+
 	<!-- 기사단장 -->
 	<AlienRace.BackstoryDef ParentName="BaseRatkinBackStory">
 		<defName>Ratkin_KnightCommander</defName>
@@ -1407,7 +1407,7 @@
 			</li>
 		</disallowedTraits>
 	</AlienRace.BackstoryDef>
-	
+
 	<!-- 교사 -->
 	<AlienRace.BackstoryDef ParentName="BaseRatkinBackStory">
 		<defName>Ratkin_Teacher</defName>
