@@ -10,8 +10,11 @@
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
 		<canMakeRandomly>true</canMakeRandomly>
 		<leaderTitle>prime executor</leaderTitle>
-		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
-		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+
+		<factionNameMaker>NamerFaction_RatkinKingdom</factionNameMaker>
+		<settlementNameMaker>NamerSettlement_RatkinKingdom</settlementNameMaker>
+		<pawnNameMaker>NamerPerson_RatkinKingdom</pawnNameMaker>
+
 		<canSiege>true</canSiege>
 		<canStageAttacks>true</canStageAttacks>
 		<factionIconPath>Icon/RK_icon</factionIconPath>
@@ -171,6 +174,7 @@
 		<startingGoodwill>40~80</startingGoodwill>
 		<naturalColonyGoodwill>0~10</naturalColonyGoodwill>
 	</FactionDef>
+
 
 	<!-- <FactionDef ParentName="RatkinLandFactionBase"> -->
 	<!-- <defName>RatkinCaravan</defName> -->
