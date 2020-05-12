@@ -37,10 +37,10 @@
   <RatkinCombatant.labelPlural>ラットキン戦闘員</RatkinCombatant.labelPlural>
 
 
-  <!-- Vagabond -->
+  <!-- Vanguard -->
 
-  <RatkinVagabond.label>ラットキン放浪者</RatkinVagabond.label>
-  <RatkinVagabond.labelPlural>ラットキン放浪者</RatkinVagabond.labelPlural>
+  <RatkinVanguard.label>ラットキン先導者</RatkinVanguard.label>
+  <RatkinVanguard.labelPlural>ラットキン先導者</RatkinVanguard.labelPlural>
 
 
   <!-- Ratkin Defender -->
@@ -101,6 +101,12 @@
 
   <RatkinMurderer.label>ラットキン殺人者</RatkinMurderer.label>
   <RatkinMurderer.labelPlural>ラットキン殺人者</RatkinMurderer.labelPlural>
+
+
+  <!-- Vagabond -->
+
+  <RatkinVagabond.label>ラットキン放浪者</RatkinVagabond.label>
+  <RatkinVagabond.labelPlural>ラットキン放浪者</RatkinVagabond.labelPlural>
 
 
   <!-- Mercenary Light -->
