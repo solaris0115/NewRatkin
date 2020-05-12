@@ -16,7 +16,7 @@
 
     <!-- <li>RK_LastName(p=0.7)->[RK_Noun_Prefix_Nut][RK_Noun_Postfix_Actor]</li> -->
     <li>RK_LastName->[RK_Last_Single]</li>
-  <RatkinKingdomNameUtility.rulePack.rulesStrings>
+  </RatkinKingdomNameUtility.rulePack.rulesStrings>
 
 
   <!-- Name Combination Rule -->
@@ -45,7 +45,7 @@
     <li>ofThing->ヒマワリ</li>
     <li>ofThing->ピーナッツ</li>
     <li>ofThing->鋼のラットキン</li>
-  <NamerFaction_RatkinKingdom.rulePack.rulesStrings>
+  </NamerFaction_RatkinKingdom.rulePack.rulesStrings>
 
   <NamerSettlement_RatkinKingdom.rulePack.rulesStrings>
     <li>r_name->[townname_wordgen]</li>
