@@ -141,7 +141,7 @@
 				<li>Ratkin_Artillery</li>
 			</buildingTags>
 		</building>
-		<uiIconPath>Things/Building/Security/Ballista_Turret</uiIconPath>
+		<uiIconPath>Things/Building/Security/Ballista_Turret_Icon</uiIconPath>
 		<uiIconScale>1</uiIconScale>
 	</ThingDef>
 
