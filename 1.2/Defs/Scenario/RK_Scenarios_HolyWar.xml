@@ -1,42 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!--왕국 프렌들리 (왕국과 노말로 시작) -->
-	<ScenarioDef>
-		<defName>RK_Scenario_Village</defName>
-		<label>Ratkin town</label>
-		<description>왕국으로부터 나온 5명의 랫킨 주민으로 시작합니다. 마을을 건설하고 왕국과 교류하여 </description>
-		<scenario>
-			<summary>Three crashlanded survivors - the classic RimWorld experience.</summary>
-			<playerFaction>
-				<def>PlayerFaction</def>
-				<factionDef>RK_PlayerKingdomFaction</factionDef>
-			</playerFaction>
-			<parts>				
-				<!-- Config pages -->
-				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
-					<def>ConfigPage_ConfigureStartingPawns</def>
-					<pawnCount>5</pawnCount>
-					<pawnChoiceCount>8</pawnChoiceCount>
-				</li>
-
-				<!-- Player starting stuff spawn method-->
-				<li Class="ScenPart_PlayerPawnsArriveMethod">
-					<def>PlayerPawnsArriveMethod</def>
-					<method>Standing</method>
-				</li>				
-				
-				<!-- 보유 자원 -->
-				<li Class="ScenPart_StartingThing_Defined">
-					<def>StartingThing_Defined</def>
-					<thingDef>ComponentIndustrial</thingDef>
-					<count>30</count>
-				</li>
-			</parts>
-		</scenario>
-	</ScenarioDef>
+	<!-- <ScenarioDef> -->
+		<!-- <defName>RK_Scenario_Village</defName> -->
+		<!-- <label>Ratkin town</label> -->
+		<!-- <description>왕국으로부터 나온 5명의 랫킨 주민으로 시작합니다. 마을을 건설하고 왕국과 교류하여 </description> -->
+		<!-- <scenario> -->
+			<!-- <summary>Three crashlanded survivors - the classic RimWorld experience.</summary> -->
+			<!-- <playerFaction> -->
+				<!-- <def>PlayerFaction</def> -->
+				<!-- <factionDef>RK_PlayerFaction</factionDef> -->
+			<!-- </playerFaction> -->
+			<!-- <parts> -->
+				<!-- <li Class="ScenPart_ConfigPage_ConfigureStartingPawns"> -->
+					<!-- <def>ConfigPage_ConfigureStartingPawns</def> -->
+					<!-- <pawnCount>5</pawnCount> -->
+					<!-- <pawnChoiceCount>8</pawnChoiceCount> -->
+				<!-- </li> -->
+				<!-- <li Class="ScenPart_PlayerPawnsArriveMethod"> -->
+					<!-- <def>PlayerPawnsArriveMethod</def> -->
+					<!-- <method>Standing</method> -->
+				<!-- </li>				 -->
+				<!-- <li Class="ScenPart_StartingThing_Defined"> -->
+					<!-- <def>StartingThing_Defined</def> -->
+					<!-- <thingDef>ComponentIndustrial</thingDef> -->
+					<!-- <count>30</count> -->
+				<!-- </li> -->
+			<!-- </parts> -->
+		<!-- </scenario> -->
+	<!-- </ScenarioDef> -->
 	
 	<!--랫킨 도망자들 (왕국과 적대로 시작)  -->
-	<ScenarioDef>
+	<!--<ScenarioDef>
 		<defName>RK_Scenario_Rebellion</defName>
 		<label>Ratkin rebellion</label>
 		<description>왕국으로부터 벗어나 새 삶을 시작하려는 찍찍이들</description>
@@ -47,20 +42,17 @@
 				<factionDef>RK_PlayerKingdomFaction</factionDef>
 			</playerFaction>
 			<parts>
-				<!-- Config pages -->
 				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
 					<def>ConfigPage_ConfigureStartingPawns</def>
 					<pawnCount>4</pawnCount>
 					<pawnChoiceCount>8</pawnChoiceCount>
 				</li>
 
-				<!-- Player starting stuff spawn method-->
 				<li Class="ScenPart_PlayerPawnsArriveMethod">
 					<def>PlayerPawnsArriveMethod</def>
 					<method>Standing</method>
 				</li>				
 				
-				<!-- 캐릭터 건강 추가 -->
 				<li Class="ScenPart_ForcedHediff">
 					<def>ForcedHediff</def>
 					<visible>false</visible>
@@ -70,20 +62,17 @@
 					<hideOffMap>true</hideOffMap>
 					<severityRange>1~1</severityRange>
 				</li>				
-				<!-- 게임 시작시 안내문 -->
 				<li Class="ScenPart_GameStartDialog">
 					<def>GameStartDialog</def>
 					<text>흠흠</text>
 					<closeSound>GameStartSting</closeSound>
 				</li>				
 				
-				<!-- 보유 자원 -->
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<thingDef>ComponentIndustrial</thingDef>
 					<count>30</count>
 				</li>
-				<!-- 흩어진 자원 -->
 				<li Class="ScenPart_ScatterThingsNearPlayerStart">
 					<def>ScatterThingsNearPlayerStart</def>
 					<thingDef>Steel</thingDef>
@@ -96,7 +85,7 @@
 				</li>
 			</parts>
 		</scenario>
-	</ScenarioDef>
+	</ScenarioDef>-->
 
 	<!-- <ScenarioDef> -->
 	<!-- <defName>RK_Scenario</defName> -->
