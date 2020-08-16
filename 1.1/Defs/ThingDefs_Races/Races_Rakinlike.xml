@@ -264,12 +264,8 @@
 				</alienPartGenerator>
 
 				<disallowedTraits>
-					<li>
-						<defName>AnnoyingVoice</defName>
-					</li>
-					<li>
-						<defName>CreepyBreathing</defName>
-					</li>
+					<li>AnnoyingVoice</li>
+					<li>CreepyBreathing</li>
 				</disallowedTraits>
 
 			</generalSettings>
