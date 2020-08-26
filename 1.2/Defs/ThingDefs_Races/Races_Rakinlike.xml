@@ -31,7 +31,7 @@
 					<!-- 색상관련 -->
 					<colorChannels>
 						<li>
-							<name>RK_ColorChannelSkin</name>
+							<name>skin</name>
 							<first Class="ColorGenerator_Options">
 								<options>
 									<li>
@@ -42,7 +42,7 @@
 							</first>
 						</li>
 						<li>
-							<name>RK_ColorChannelHair</name>
+							<name>hair</name>
 							<first Class="ColorGenerator_Options">
 								<options>
 									<!-- 다크브라운3:2:0.5 -->
@@ -174,7 +174,7 @@
 							<path>Body/RK_Tail</path>
 							<bodyPart>tail</bodyPart>
 							<inFrontOfBody>false</inFrontOfBody>
-							<colorChannel>RK_ColorChannelSkin</colorChannel>
+							<colorChannel>skin</colorChannel>
 							<offsets>
 								<south>
 									<bodyTypes>
@@ -199,7 +199,7 @@
 							<path>Body/RK_EarLeft</path>
 							<bodyPart>left ear</bodyPart>
 							<inFrontOfBody>true</inFrontOfBody>
-							<colorChannel>RK_ColorChannelSkin</colorChannel>
+							<colorChannel>skin</colorChannel>
 							<offsets>
 								<south>
 									<bodyTypes>
@@ -236,7 +236,7 @@
 							<path>Body/RK_EarRight</path>
 							<bodyPart>right ear</bodyPart>
 							<inFrontOfBody>true</inFrontOfBody>
-							<colorChannel>RK_ColorChannelSkin</colorChannel>
+							<colorChannel>skin</colorChannel>
 							<offsets>
 								<south>
 									<bodyTypes>
