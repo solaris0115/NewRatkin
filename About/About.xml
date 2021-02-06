@@ -8,33 +8,20 @@
 		<li>1.2</li>
 	</supportedVersions>
 	<packageId>Solaris.RatkinRaceMod</packageId>
-	<description>
-New Ratkin Race Mod.
-What is different from the old version?
+	<description>An updated version of the original Ratkin mod, which adds a rodent-like humanoid race.
 
-- Rebalance race stat and equipment
-- Add new clothes and weapons
-- Add fuctional and race characteristics.
-- Add race research
-- Add a variety of different jobs and fashions.
-- Add BackStory
+Small and agile but weak in strength, Ratkins are good at agriculture and mining, but less adept at fighting; however, this disadvantage can be mitigated through research.
 
-Ratkin weapons have the following characteristics.
-+ Higher penetration
-- Lower Damage and Short Range
+&lt;b&gt;Not backwards compatible with the old Ratkin mod; Please start a new savegame.&lt;/b&gt;
 
-Ratkin's equipment consists of a total of 3 tires.
-And from 2 tires, it adds a professional effect.
-
-The Ratkin Kingdom, where you meet, will be merciful.
-
-Storyteller Rotty Milden 
-- Increases the frequency of minor accidents
-- Reduces the frequency of major accidents. 
-- Mitigated the destruction of events by overlapping events with complete randomness.
-
-
-	</description>
+&lt;size=24&gt;Features&lt;/size&gt;
+• Rebalanced race and equipment stats
+• Ratkin-unique backstories
+• Ratkin apparel
+• Ratkin weapons, which have high penetration but lower range and less damage
+• Ratkin-specific research projects
+• Ratkin Kingdom faction, who are initially friendly
+• Rotty Milden storyteller, which triggers fewer major incidents in favor of lots of minor ones; small random events also occur less frequently</description>
 	<modDependencies>
 		<li>
 			<packageId>erdelf.HumanoidAlienRaces</packageId>
