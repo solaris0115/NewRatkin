@@ -6,9 +6,13 @@
 	<RK_Ballista_Strait_Body.label>ballista</RK_Ballista_Strait_Body.label>
 	<RK_Ballista_Strait_Body.description>A giant crossbow-like siege weapon that fires large bolts at distant targets. This particular ballista has been designed and built to be easily operated by Ratkins.</RK_Ballista_Strait_Body.description>
 	
-	<Blueprint_RK_Ballista_Strait_Body>ballista (blueprint)</Blueprint_RK_Ballista_Strait_Body>
-	<Blueprint_Install_RK_Ballista_Strait_Body>ballista (blueprint)</Blueprint_Install_RK_Ballista_Strait_Body>
-	<Frame_RK_Ballista_Strait_Body>ballista (building)</Frame_RK_Ballista_Strait_Body>
+	<Blueprint_RK_Ballista_Strait_Body.label>ballista (blueprint)</Blueprint_RK_Ballista_Strait_Body.label>
+	
+	<Blueprint_Install_RK_Ballista_Strait_Body.label>ballista (blueprint)</Blueprint_Install_RK_Ballista_Strait_Body.label>
+	
+	<Frame_RK_Ballista_Strait_Body.label>ballista (building.label)</Frame_RK_Ballista_Strait_Body>
+	<Frame_RK_Ballista_Strait_Body.description>A giant crossbow-like siege weapon that fires large bolts at distant targets. This particular ballista has been designed and built to be easily operated by Ratkins.</Frame_RK_Ballista_Strait_Body.description>
+	
 	
 	<RK_Turret_Ballista_Strait.label>ballista</RK_Turret_Ballista_Strait.label>
 	<RK_Turret_Ballista_Strait.description>The giant crossbow-like bolt launcher from a ballista. Accurate and long-ranged.</RK_Turret_Ballista_Strait.description>
