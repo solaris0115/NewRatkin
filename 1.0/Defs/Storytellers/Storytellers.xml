@@ -135,7 +135,6 @@
 		<minRefireDays>60</minRefireDays>
 		<minGreatestPopulation>3</minGreatestPopulation>
 		<pawnKind>RatkinVagabond</pawnKind>
-		<pawnFixedGender>Male</pawnFixedGender>
 		<pawnMustBeCapableOfViolence>true</pawnMustBeCapableOfViolence>
 	</IncidentDef>
 </Defs>
