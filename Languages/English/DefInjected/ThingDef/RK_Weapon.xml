@@ -106,7 +106,9 @@
 	<RK_PrototypePulseRifle.label>Ratkin prototype pulse rifle</RK_PrototypePulseRifle.label>
 	<RK_PrototypePulseRifle.description>An experimental energy rifle designed to be used by laboratory-enhanced Ratkin test subjects, this firearm takes inspiration from Ratkin flechette rifles and fires wedge-shaped high-penetration energy projectiles. It comes equipped with a special telescopic lens optimized for near and far targets, as well as a mode selector to switch between rapid fire and precision shots.</RK_PrototypePulseRifle.description>
 	<RK_PrototypePulseRifle.verbs.0.label>Rapid Fire</RK_PrototypePulseRifle.verbs.0.label>
+	<RK_PrototypePulseRifle.verbs.0.desc>Fire a 4-round burst at a mid-range target.\n\nBonuses:\n- Accuracy (short): +50%\n- Accuracy (medium): +25%</RK_PrototypePulseRifle.verbs.0.desc>
 	<RK_PrototypePulseRifle.verbs.1.label>Aimed Fire</RK_PrototypePulseRifle.verbs.1.label>
+	<RK_PrototypePulseRifle.verbs.1.desc>Fire a 2-round burst at a long-range target.\n\nBonuses:\n- Accuracy (medium): +25%\n- Accuracy (long): +50%</RK_PrototypePulseRifle.verbs.1.desc>
 	<RK_PrototypePulseRifle.tools.0.label>stock</RK_PrototypePulseRifle.tools.0.label>
 	<RK_PrototypePulseRifle.tools.1.label>barrel</RK_PrototypePulseRifle.tools.1.label>
 
@@ -118,7 +120,9 @@
 	<RK_BFR.label>BFR 3000</RK_BFR.label>
 	<RK_BFR.description>The Big Force Rifle (BFR) 3000 is a heavy sniper rifle patterned after full-sized human anti-materiel rifles,  and fires wedge-shaped high-penetration energy projectiles. It comes equipped with a special telescopic lens optimized for near and far targets, as well as a mode selector to switch between armor-piercing (AP) and scattershot (SC) rounds.</RK_BFR.description>
 	<RK_BFR.verbs.0.label>AP fire</RK_BFR.verbs.0.label>
+	<RK_BFR.verbs.0.desc>Fire an armor-piercing (AP) round at high precision.</RK_BFR.verbs.0.desc>
 	<RK_BFR.verbs.1.label>SC fire</RK_BFR.verbs.1.label>
+	<RK_BFR.verbs.1.desc>Fire an scattershot (SC) round that scatters shrapnel on impact.</RK_BFR.verbs.1.desc>
 	<RK_BFR.tools.0.label>stock</RK_BFR.tools.0.label>
 	<RK_BFR.tools.1.label>barrel</RK_BFR.tools.1.label>
 
