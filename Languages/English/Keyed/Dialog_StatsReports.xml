@@ -5,6 +5,8 @@
 	<EMPExplodeDesc>An EMP explosion has overloaded and damaged your power generators.</EMPExplodeDesc>
 	<MessageCommandoAssaulting>Ratkin commandos are assaulting the colony. </MessageCommandoAssaulting>
 	<RatHoleGone>The rat hole is gone.</RatHoleGone>
+	
+	<RK_MakeGeneratePower>Generating power</RK_MakeGeneratePower>
 
 	<ShieldBlock>Blocked!</ShieldBlock>
 	<ShieldBlockChance>Deflect Chance:</ShieldBlockChance>
