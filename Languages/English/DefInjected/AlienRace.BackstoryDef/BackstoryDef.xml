@@ -103,7 +103,7 @@
 
 	<Ratkin_KnightStudent.title>Ratkin squire</Ratkin_KnightStudent.title>
 	<Ratkin_KnightStudent.titleShort>Squire</Ratkin_KnightStudent.titleShort>
-	<Ratkin_KnightStudent.baseDescription>A[PAWN_nameDef] left [PAWN_possessive] home village after becoming apprenticed to a knight of the Ratkin Kingdom.\n\n[PAWN_pronoun] spent his days cleaning [PAWN_possessive] master's armor and weapons, as well as looking after [PAWN_possessive] master's king hamster mount. In return, [PAWN_possessive] master trained [PAWN_objective] in basic swordsmanship.</Ratkin_KnightStudent.baseDescription>
+	<Ratkin_KnightStudent.baseDescription>[PAWN_nameDef] left [PAWN_possessive] home village after becoming apprenticed to a knight of the Ratkin Kingdom.\n\n[PAWN_pronoun] spent [PAWN_possessive] days cleaning [PAWN_possessive] master's armor and weapons, as well as looking after [PAWN_possessive] master's king hamster mount. In return, [PAWN_possessive] master trained [PAWN_objective] in basic swordsmanship.</Ratkin_KnightStudent.baseDescription>
 
 
 	<!-- 집시아이 -->

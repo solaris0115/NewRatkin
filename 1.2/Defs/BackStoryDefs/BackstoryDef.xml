@@ -1164,7 +1164,7 @@
 			<li>RatkinStory</li>
 			<li>RatkinUneducated</li>
 			<li>RatkinCountry</li>
-			<li>RatkinWanderer</li>
+			<li>RatkinDefender</li>
 		</spawnCategories>
 	</AlienRace.BackstoryDef>
 	<!-- 광부 -->
@@ -1464,7 +1464,6 @@
 				<chance>50</chance>
 			</li>
 		</forcedTraits>
-		<linkedBackstory>Ratkin_GuardenerStudent</linkedBackstory>
 	</AlienRace.BackstoryDef>
 
 	<!-- 기사 -->
