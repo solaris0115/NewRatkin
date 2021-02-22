@@ -25,7 +25,9 @@
 	<!-- 꼬마목동 -->
 
 	<Ratkin_ShepherdBoy.title>Ratkin shepherd boy</Ratkin_ShepherdBoy.title>
+	<Ratkin_ShepherdBoy.titleFemale>Ratkin shepherd girl</Ratkin_ShepherdBoy.titleFemale>
 	<Ratkin_ShepherdBoy.titleShort>Shepherd boy</Ratkin_ShepherdBoy.titleShort>
+	<Ratkin_ShepherdBoy.titleShortFemale>shepherd girl</Ratkin_ShepherdBoy.titleShortFemale>
 	<Ratkin_ShepherdBoy.baseDescription>[PAWN_nameDef] grew up alongside animals, and came to regard them as friends.</Ratkin_ShepherdBoy.baseDescription>
 
 
@@ -69,8 +71,10 @@
 
 	<!-- 후계자 -->
 
-	<Ratkin_Successor.title>Ratkin successor</Ratkin_Successor.title>
-	<Ratkin_Successor.titleShort>Successor</Ratkin_Successor.titleShort>
+	<Ratkin_Successor.title>Ratkin heir</Ratkin_Successor.title>
+	<Ratkin_Successor.titleFemale>Ratkin heiress</Ratkin_Successor.titleFemale>
+	<Ratkin_Successor.titleShort>Heir</Ratkin_Successor.titleShort>
+	<Ratkin_Successor.titleShortFemale>Heiress</Ratkin_Successor.titleShortFemale>
 	<Ratkin_Successor.baseDescription>[PAWN_nameDef] was the heir of a noble family.\n\nAfter the clan fell on hard times, [PAWN_pronoun] left home to try and restore [PAWN_possessive] family's fortunes.</Ratkin_Successor.baseDescription>
 
 
@@ -86,6 +90,20 @@
 	<Ratkin_ChefStudent.title>Ratkin apprentice chef</Ratkin_ChefStudent.title>
 	<Ratkin_ChefStudent.titleShort>Apprentice chef</Ratkin_ChefStudent.titleShort>
 	<Ratkin_ChefStudent.baseDescription>[PAWN_nameDef] is a gourmand who learned to cook from a young age to satiate [PAWN_possessive] appetite.\n\nFor [PAWN_objective], food is the ultimate expression of life and enjoyment, so [PAWN_pronoun] often set out on adventures in search of ever-more exquisite delicacies.</Ratkin_ChefStudent.baseDescription>
+	
+	
+	<!-- 견습 재봉사 Apprentice seamstress -->
+
+	<Ratkin_SeamstressStudent.title>Ratkin apprentice seamstress</Ratkin_SeamstressStudent.title>
+	<Ratkin_SeamstressStudent.titleShort>Apprentice seamstress</Ratkin_SeamstressStudent.titleShort>
+	<Ratkin_SeamstressStudent.baseDescription>As the apprentice of a master dressmaker, [PAWN_nameDef] spun thread, tidied rolls of fabric and swept the shop floor clean.\n\nIn time, [PAWN_pronoun] was also entrusted with sewing buttons, handkerchiefs and other small, simple items.</Ratkin_SeamstressStudent.baseDescription>
+
+
+	<!-- 향사 Squire (apprentice knight) -->
+
+	<Ratkin_KnightStudent.title>Ratkin squire</Ratkin_KnightStudent.title>
+	<Ratkin_KnightStudent.titleShort>Squire</Ratkin_KnightStudent.titleShort>
+	<Ratkin_KnightStudent.baseDescription>[PAWN_nameDef] left [PAWN_possessive] home village after becoming apprenticed to a knight of the Ratkin Kingdom.\n\n[PAWN_pronoun] spent [PAWN_possessive] days cleaning [PAWN_possessive] master's armor and weapons, as well as looking after [PAWN_possessive] master's king hamster mount. In return, [PAWN_possessive] master trained [PAWN_objective] in basic swordsmanship.</Ratkin_KnightStudent.baseDescription>
 
 
 	<!-- 집시아이 -->
@@ -177,6 +195,13 @@
 	<Ratkin_Farmer.title>Ratkin farmer</Ratkin_Farmer.title>
 	<Ratkin_Farmer.titleShort>Farmer</Ratkin_Farmer.titleShort>
 	<Ratkin_Farmer.baseDescription>[PAWN_nameDef] is a farmer, having inherited the family farm from [PAWN_possessive] parents, and [PAWN_possessive] children are also destined to become farmers themselves.</Ratkin_Farmer.baseDescription>
+	
+	
+	<!-- 농장 노동자 Farmhand  -->
+
+	<Ratkin_FarmLaborer.title>Ratkin farmhand</Ratkin_FarmLaborer.title>
+	<Ratkin_FarmLaborer.titleShort>Farmhand</Ratkin_FarmLaborer.titleShort>
+	<Ratkin_FarmLaborer.baseDescription>[PAWN_nameDef] worked as a laborer on various farms in the countryside, ploughing the fields, mending fences and caring for farm animals, as well as sowing and harvesting crops.\n\nWhenever work dried up, [PAWN_pronoun] would move on to a different village.</Ratkin_FarmLaborer.baseDescription>
 
 
 	<!-- 광부 -->
@@ -233,6 +258,13 @@
 	<Ratkin_Guardener.title>Ratkin Guardener</Ratkin_Guardener.title>
 	<Ratkin_Guardener.titleShort>Guardener</Ratkin_Guardener.titleShort>
 	<Ratkin_Guardener.baseDescription>[PAWN_nameDef] was a Senior Guardener, responsible for tending to the Ratkin Kingdom's gardens and defending them from enemies. However, [PAWN_pronoun] was exiled after deserting [PAWN_possessive] post during the Kingdom's greatest hour of need.\n\n[PAWN_nameDef] now seeks a way to return to [PAWN_possessive] homeland.</Ratkin_Guardener.baseDescription>
+
+
+	<!-- 정원사 (B) -->
+
+	<Ratkin_GuardenerB.title>Ratkin Guardener</Ratkin_GuardenerB.title>
+	<Ratkin_GuardenerB.titleShort>Guardener</Ratkin_GuardenerB.titleShort>
+	<Ratkin_GuardenerB.baseDescription>[PAWN_nameDef] was a Guardener, responsible for tending to the Ratkin Kingdom's gardens and defending them from enemies.\n\n[PAWN_pronoun] fought in the Battle of Whitefur's Keep, where [PAWN_pronoun] was part of the successful counterattack that decisively defeated invaders from the Grimalkin Dominion.</Ratkin_GuardenerB.baseDescription>
 
 
 	<!-- 기사 -->
@@ -415,6 +447,13 @@
 	<Ratkin_Subject.title>Ratkin test subject</Ratkin_Subject.title>
 	<Ratkin_Subject.titleShort>Test subject</Ratkin_Subject.titleShort>
 	<Ratkin_Subject.baseDescription>[PAWN_nameDef] was used as a biological test specimen for various experiments, which resulted in a number of physical enhancements.\n\nAfter a laboratory accident, [PAWN_pronoun] barely managed to escape.</Ratkin_Subject.baseDescription>
+	
+	
+	<!-- 침모 Seamstress -->
+
+	<Ratkin_Seamstress.title>Ratkin seamstress</Ratkin_Seamstress.title>
+	<Ratkin_Seamstress.titleShort>Seamstress</Ratkin_Seamstress.titleShort>
+	<Ratkin_Seamstress.baseDescription>[PAWN_nameDef] became good at making a variety of clothes, ranging from simple workers' dresses to elaborate formal outfits. Many Ratkin nobles often travelled all the way to [PAWN_possessive] humble workshop to commission apparel for special occasions.\n\n[PAWN_possessive] own apprentice later went on to become a successful seamstress in her own right.</Ratkin_Seamstress.baseDescription>
 
 
 	<!-- 방랑자 -->
