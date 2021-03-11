@@ -418,7 +418,7 @@
 
 	<Ratkin_Scientist.title>Ratkin scientist</Ratkin_Scientist.title>
 	<Ratkin_Scientist.titleShort>Scientist</Ratkin_Scientist.titleShort>
-	<Ratkin_Scientist.baseDescription>[PAWN_nameDef] is a scientist who worked closely alongside human researchers.\n\n[PAWN_possessive] intensive devotion to science came at the detriment of [PAWN_possessive] health, including deteriorating eyesight.</Ratkin_Scientist.baseDescription>
+	<Ratkin_Scientist.baseDescription>[PAWN_nameDef] is a scientist who specializes in reverse-engineering human technologies.\n\n[PAWN_possessive] intensive devotion to science came at the detriment of [PAWN_possessive] health, including deteriorating eyesight.</Ratkin_Scientist.baseDescription>
 
 
 	<!-- 공학자 -->
