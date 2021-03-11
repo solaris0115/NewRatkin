@@ -1,11 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <Ratkin.label>鼠族</Ratkin.label>
-  <Ratkin.description>這是一種像嚙齒動物一樣的類人物種。雖然起源不明，但它是一個以農業社會為基礎的君主制社會。由許多女性與少數的男性所構成。但是她們不會承認他們是男性。</Ratkin.description>
-  <Ratkin.tools.0.label>牙齒</Ratkin.tools.0.label>
-  <Ratkin.tools.1.label>左拳</Ratkin.tools.1.label>
-  <Ratkin.tools.2.label>右拳</Ratkin.tools.2.label>
-
-
+	<!-- EN: Ratkin -->
+	<Ratkin.label>鼠族</Ratkin.label>
+	
+	<!-- EN: A humanoid race with rodent genes, readily identified by their large, round ears and thin, scaly tails.\n\nWhile their origins are unknown, most Ratkin societies are generally organized around agricultural monarchies, although a small number of individual Ratkins have been observed seeking employment in predominantly-human cities.\n\nFemales typically outnumber males at a ratio of 9 to 1, but it is often difficult to determine a Ratkin's gender from their outward appearance. -->
+	<Ratkin.description>一種像嚙齒動物一樣的類人物種，很容易通過它們大而圓的耳朵和細細的尾巴來識別。雖然起源不明，但他們通常會以農業社會為基礎組成君主制社會，偶爾也會有少數鼠族會在人類的城市中尋求工作。\n\n女性通常以9：1的比例超過男性，但一隻鼠族的性別並不容易僅憑外表來識別。</Ratkin.description>
+  
+	<!-- EN: teeth -->
+	<Ratkin.tools.0.label>牙齒</Ratkin.tools.0.label>
+	
+	<!-- EN: left fist -->
+	<Ratkin.tools.1.label>左拳</Ratkin.tools.1.label>
+	
+	<!-- EN: right fist -->
+	<Ratkin.tools.2.label>右拳</Ratkin.tools.2.label>
+	
 </LanguageData>

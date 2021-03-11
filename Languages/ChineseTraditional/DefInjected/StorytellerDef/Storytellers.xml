@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <RottyMilden.label>羅蒂·密爾頓</RottyMilden.label>
-  <RottyMilden.description>羅蒂·密爾頓是一個有點小淘氣的鄉下女孩。\n\n她的小惡作劇不會讓人覺得無聊，但有時她會惹來大麻煩。\n\n基於原版裡隨機的小事件在這裡會經常發生，但大事件的頻率會相對較低。</RottyMilden.description>
-
+	<!-- EN: Rotty Milden -->
+	<RottyMilden.label>羅蒂·密爾頓</RottyMilden.label>
+	
+	<!-- EN: Rotty Milden is a country girl who loves playing pranks. Most of her mischief is harmless and will keep you on your toes, but occasionally she'll leave behind a big mess. Regardless, it's all fun and games to her.\n\nShe'll make sure small, random events occur frequently, while holding back on larger calamities. -->
+	<RottyMilden.description>羅蒂·密爾頓是一個有點小淘氣的鄉下女孩。\n\n她的小惡作劇不會讓人覺得無聊，但有時她會惹來大麻煩。\n\n基於原版裡隨機的小事件在這裡會經常發生，但大事件的頻率會相對較低。</RottyMilden.description>
 
 </LanguageData>

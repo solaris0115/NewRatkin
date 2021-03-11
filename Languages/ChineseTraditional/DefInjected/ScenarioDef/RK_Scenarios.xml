@@ -1,11 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <RK_Scenario.label>鼠族殖民地</RK_Scenario.label>
-  <RK_Scenario.description>這是個關於鼠族的故事，他們帶著自己的故事來到這裡開始新的生活。每個人都有不同的夢想，但現在他們該放下這些了。</RK_Scenario.description>
-  <RK_Scenario.scenario.name>小鼠殖民地</RK_Scenario.scenario.name>
-  <RK_Scenario.scenario.summary>這是一個鼠族的故事，每個人都有屬於自己的故事。</RK_Scenario.scenario.summary>
-  <RK_Scenario.scenario.description>這是個關於鼠族的故事，他們帶著自己的故事來到這裡開始新的生活。每個人都有不同的夢想，但現在他們該放下這些了。</RK_Scenario.scenario.description>
+	<!-- EN: Ratkin Colony -->
+	<RK_Scenario.label>鼠族殖民地</RK_Scenario.label>
+	
+	<!-- EN: The four of you had come from different walks of life.\n\nSome left their hometowns in the countryside in search of adventure. Others were exiled from the Kingdom for various misdemeanors. And others still were lost souls, wandering aimlessly in search of a purpose in life.\n\nWhatever your stories were and whatever dreams you once held, none of that matters anymore - for fate and happenstance have brought everyone together to build a new beginning. -->
+	<RK_Scenario.description>你們四個人來自各行各業。\n\n有些人是因為尋找冒險而離開家鄉。其他人因各種輕罪而被驅逐出王國。還有其他人仍然是迷失的靈魂，漫無目的地徘徊。\n\n無論你們帶著什麼故事，曾經做過什麼夢，這一切都不再重要了 - 因為大家有緣千里來相會，開啟一生的新篇章。</RK_Scenario.description>
+	
+	<!-- EN: Ratkin colony -->
+	<RK_Scenario.scenario.name>小鼠殖民地</RK_Scenario.scenario.name>
+	
+	<!-- EN: The four of you had come from different walks of life.\n\nSome left their hometowns in the countryside in search of adventure. Others were exiled from the Kingdom for various misdemeanors. And others still were lost souls, wandering aimlessly in search of a purpose in life.\n\nWhatever your stories were and whatever dreams you once held, none of that matters anymore - for fate and happenstance have brought everyone together to build a new beginning. -->
+	<RK_Scenario.scenario.description>你們四個人來自各行各業。\n\n有些人是因為尋找冒險而離開家鄉。其他人因各種輕罪而被驅逐出王國。還有其他人仍然是迷失的靈魂，漫無目的地徘徊。\n\n無論你們帶著什麼故事，曾經做過什麼夢，這一切都不再重要了 - 因為大家有緣千里來相會，開啟一生的新篇章。</RK_Scenario.scenario.description>
 
+	<!-- EN: Four Ratkins start a new chapter in their lives. -->
+	<RK_Scenario.scenario.summary>四名鼠族開啟他們一生中的新篇章。</RK_Scenario.scenario.summary>
 
 </LanguageData>

@@ -1,37 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <!-- Direct Balusta -->
+	<!-- EN: ballista -->
+	<RK_Ballista_Strait_Body.label>弩炮</RK_Ballista_Strait_Body.label>
+	
+	<!-- EN: A giant crossbow-like siege weapon that fires large bolts at distant targets. This particular ballista has been designed and built to be easily operated by Ratkins. -->
+	<RK_Ballista_Strait_Body.description>一種射出巨大弩箭的古代攻城機器。為了便於鼠族人操作使用而進行過特殊改造。</RK_Ballista_Strait_Body.description>
+	
+	<!-- EN: ballista (blueprint) -->
+	<Blueprint_RK_Ballista_Strait_Body.label>弩炮(藍圖)</Blueprint_RK_Ballista_Strait_Body.label>
+	
+	<!-- EN: ballista (blueprint) -->
+	<Blueprint_Install_RK_Ballista_Strait_Body.label>弩炮(藍圖)</Blueprint_Install_RK_Ballista_Strait_Body.label>
+	
+	<!-- EN: ballista (building) -->
+	<Frame_RK_Ballista_Strait_Body.label>弩炮(施工中)</Frame_RK_Ballista_Strait_Body.label>
+	
+	<!-- EN: A giant crossbow-like siege weapon that fires large bolts at distant targets. This particular ballista has been designed and built to be easily operated by Ratkins. -->
+	<Frame_RK_Ballista_Strait_Body.description>一種射出巨大弩箭的古代攻城機器。為了便於鼠族人操作使用而進行過特殊改造。</Frame_RK_Ballista_Strait_Body.description>
 
-  <RK_Ballista_Strait_Body.label>弩炮</RK_Ballista_Strait_Body.label>
-  <RK_Ballista_Strait_Body.description>一種射出巨大弩箭的古代攻城機器。為了便於鼠族人操作使用而進行過特殊改造。</RK_Ballista_Strait_Body.description>
-  <Blueprint_RK_Ballista_Strait_Body.label>弩炮(藍圖)</Blueprint_RK_Ballista_Strait_Body.label>
-  <Blueprint_Install_RK_Ballista_Strait_Body.label>弩炮(藍圖)</Blueprint_Install_RK_Ballista_Strait_Body.label>
-  <Frame_RK_Ballista_Strait_Body.label>弩炮(施工中)</Frame_RK_Ballista_Strait_Body.label>
-  <Frame_RK_Ballista_Strait_Body.description>一種射出巨大弩箭的古代攻城機器。為了便於鼠族人操作使用而進行過特殊改造。</Frame_RK_Ballista_Strait_Body.description>
-
-  <RK_Turret_Ballista_Strait.label>巨型弩箭</RK_Turret_Ballista_Strait.label>
-  <RK_Turret_Ballista_Strait.description>發射弩砲的弩箭。精準度極高且射程很遠。</RK_Turret_Ballista_Strait.description>
-  <RK_Turret_Ballista_Strait.verbs.Verb_Shoot.label>發射</RK_Turret_Ballista_Strait.verbs.Verb_Shoot.label>
-
-  <!-- Ballista Bolt (Normal) -->
-
-  <BallistaBolt_Normal.label>巨型弩箭(通常)</BallistaBolt_Normal.label>
-  <BallistaBolt_Normal.description>這是一個弩炮使用的弩箭。如果被這支巨箭擊中，將很難有生還者。</BallistaBolt_Normal.description>
-  <Bullet_BallistaBolt_Normal.label>巨型弩箭(通常)</Bullet_BallistaBolt_Normal.label>
+	<!-- EN: ballista -->
+	<RK_Turret_Ballista_Strait.label>巨型弩箭</RK_Turret_Ballista_Strait.label>
+	
+	<!-- EN: The giant crossbow-like bolt launcher from a ballista. Accurate and long-ranged. -->
+	<RK_Turret_Ballista_Strait.description>發射弩砲的弩箭。精準度極高且射程很遠。</RK_Turret_Ballista_Strait.description>
+	
+	<!-- EN: ballista -->
+	<RK_Turret_Ballista_Strait.verbs.Verb_Shoot.label>發射</RK_Turret_Ballista_Strait.verbs.Verb_Shoot.label>
 
 
-  <!-- Ballista Bolt (Heavy Weight) -->
+	<!-- EN: ballista bolt (standard) -->
+	<BallistaBolt_Normal.label>巨型弩箭(通常)</BallistaBolt_Normal.label>
+	
+	<!-- EN: A regular ballista bolt, resembling an oversized arrow. Most targets are unlikely to survive a direct hit by one of these projectiles. -->
+	<BallistaBolt_Normal.description>這是一個弩炮使用的弩箭。如果被這支巨箭擊中，將很難有生還者。</BallistaBolt_Normal.description>
+	
+	<!-- EN: ballista bolt (standard) -->
+	<Bullet_BallistaBolt_Normal.label>巨型弩箭(通常)</Bullet_BallistaBolt_Normal.label>
 
-  <BallistaBolt_Heavy.label>巨型弩箭(重型)</BallistaBolt_Heavy.label>
-  <BallistaBolt_Heavy.description>這是一個極其沈重的大型弩箭。在通常弩箭的基礎上增加重量以增強落地時的衝擊力。</BallistaBolt_Heavy.description>
-  <Bullet_BallistaBolt_HE.label>巨型弩箭(重型)</Bullet_BallistaBolt_HE.label>
+
+	<!-- EN: ballista bolt (heavy) -->
+	<BallistaBolt_Heavy.label>巨型弩箭(重型)</BallistaBolt_Heavy.label>
+	
+	<!-- EN: A reinforced version of the standard ballista bolt. The increased projectile mass combined with an enlarged bolt head allows it to inflict greater damage upon impact with its target. -->
+	<BallistaBolt_Heavy.description>這是一個極其沈重的大型弩箭。在通常弩箭的基礎上增加重量以增強落地時的衝擊力。</BallistaBolt_Heavy.description>
+	
+	<!-- EN: ballista bolt (heavy) -->
+	<Bullet_BallistaBolt_HE.label>巨型弩箭(重型)</Bullet_BallistaBolt_HE.label>
 
 
-  <!-- Ballista Bolt (High penetration) -->
-
-  <BallistaBolt_AP.label>巨型弩箭(穿透)</BallistaBolt_AP.label>
-  <BallistaBolt_AP.description>增強穿透力的大型弩箭。能在彈道飛行路線上對多個目標造成殺傷。</BallistaBolt_AP.description>
-  <Bullet_BallistaBolt_AP.label>巨型弩箭(穿透)</Bullet_BallistaBolt_AP.label>
+	<!-- EN: ballista bolt (AP) -->
+	<BallistaBolt_AP.label>巨型弩箭(穿甲)</BallistaBolt_AP.label>
+	
+	<!-- EN: A version of the standard ballista bolt that has been fitted with an narrow arrowhead quench-hardened in oil, allowing it to penetrate multiple targets in its trajectory. -->
+	<BallistaBolt_AP.description>增強穿透力的大型弩箭。能在彈道飛行路線上對多個目標造成殺傷。</BallistaBolt_AP.description>
+	
+	<!-- EN: ballista bolt (AP) -->
+	<Bullet_BallistaBolt_AP.label>巨型弩箭(穿甲)</Bullet_BallistaBolt_AP.label>
 
 </LanguageData>
