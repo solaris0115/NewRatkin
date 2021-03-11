@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- EN: Braided Bun A -->
+	<RK_Braided.label>辫子头A</RK_Braided.label>
+	
+	<!-- EN: Braided Bun B -->
+	<RK_BraidedB.label>辫子头B</RK_BraidedB.label>
+	
+	<!-- EN: Mid-length 1 -->
+	<RK_middl.label>中长发1</RK_middl.label>
+	
+	<!-- EN: Sidetail -->
+	<RK_side_tail.label>侧马尾</RK_side_tail.label>
+	
+	<!-- EN: Twintails 5 -->
+	<RK_twin5.label>双马尾5</RK_twin5.label>
+	
+	<!-- EN: Long Waves -->
+	<RK_WavelongA.label>长卷发</RK_WavelongA.label>
+	
+	<!-- EN: Long A -->
+	<RK_LongA.label>长发A</RK_LongA.label>
+	
+	<!-- EN: Long B -->
+	<RK_LongB.label>长发B</RK_LongB.label>
+	
+	<!-- EN: Long D -->
+	<RK_LongD.label>长发D</RK_LongD.label>
+	
+	<!-- EN: Long E -->
+	<RK_LongE.label>长发E</RK_LongE.label>
+	
+	<!-- EN: Ponytail -->
+	<RK_PonyA.label>马尾</RK_PonyA.label>
+	
+	<!-- EN: Side Ponytail -->
+	<RK_sidePonyA.label>侧马尾B</RK_sidePonyA.label>
+	
+	<!-- EN: Twintails 2 -->
+	<RK_twin2.label>双马尾2</RK_twin2.label>
+	
+	<!-- EN: Twintails 3 -->
+	<RK_twin3.label>双马尾3</RK_twin3.label>
+	
+	<!-- EN: Twintails 4 -->
+	<RK_twin4.label>双马尾4</RK_twin4.label>
+	
+	<!-- EN: Low Twintails -->
+	<RK_twinA.label>低双马尾</RK_twinA.label>
+	
+	<!-- EN: Mid-length 2 -->
+	<RK_Middle2.label>中长发2</RK_Middle2.label>
+	
+	<!-- EN: Low Ponytail -->
+	<RK_MPony.label>低马尾</RK_MPony.label>
+	
+</LanguageData>

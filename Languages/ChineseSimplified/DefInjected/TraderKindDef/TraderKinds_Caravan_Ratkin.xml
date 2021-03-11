@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- EN: bulk goods trader -->
+	<Caravan_Ratkin_BulkGoods.label>批发贸易商</Caravan_Ratkin_BulkGoods.label>
+
+	<!-- EN: dress merchant -->
+	<Caravan_Ratkin_DressMerchant.label>服装贸易商</Caravan_Ratkin_DressMerchant.label>
+
+	<!-- EN: combat supplier -->
+	<Caravan_Ratkin_CombatSupplier.label>军需品供应商</Caravan_Ratkin_CombatSupplier.label>
+
+	<!-- EN: Ratkin mercenary band -->
+	<Caravan_Ratkin_Free_company.label>鼠族雇佣兵团</Caravan_Ratkin_Free_company.label>
+
+</LanguageData>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- EN: fake Ratkin ear -->
+	<RK_FakeEar.label>假耳朵</RK_FakeEar.label>
+	
+	<!-- EN: A fake Ratkin ear sewn from cloth.\n\nA Ratkin's large, rounded ears are inextricably tied to their personal honor and dignity, as their presence (or absence) greatly affects their standing in Ratkin society. Those who have lost their natural ears through injury or disease wear fake Ratkin ears to hide their humiliating disfigurement. -->
+	<RK_FakeEar.description>布制的假耳朵。\n\n鼠族的大耳朵与其个人荣誉和尊严密不可分，因为它们的存在极大地影响个人在鼠族社会中的地位。因受伤或疾病而失去了天生耳朵的鼠族会戴上假耳朵，以掩盖残缺。</RK_FakeEar.description>
+	
+	
+	<!-- EN: fake Ratkin tail -->
+	<RK_FakeTail.label>假尾巴</RK_FakeTail.label>
+	
+	<!-- EN: A fake Ratkin tail made from cloth twisted into rope.\n\nLike ordinary non-humanoid mice, Ratkins use their tails for balance while moving. Those who have lost their natural tails through injury and disease wear fake Ratkin tails, and while the non-living rope tail does not fully restore their loss of balancing ability, it is still better than nothing. -->
+	<RK_FakeTail.description>通过拧绞织物制成的绳子的假尾巴。\n\n，鼠族的尾巴像普通的老鼠尾巴一样负责平衡。因受伤或疾病而失去了天生尾巴的鼠族会戴上假尾巴; 尽管无生命的绳索尾巴无法完全恢复平衡能力，至少总比没有的好。</RK_FakeTail.description>
+	
+	
+	<!-- EN: bionic Ratkin tail -->
+	<RK_BionicTail.label>仿生尾巴</RK_BionicTail.label>
+	
+	<!-- EN: An advanced prosthetic Ratkin tail containing an array of accelerometers, actuators and a small, primitive AI.\n\nLike ordinary non-humanoid mice, Ratkins use their tails for balance while moving. Those who have lost their natural tails through injury and disease can opt to wear this bionic tail, which fully restores their loss of balancing ability. -->
+	<RK_BionicTail.description>先进的人工尾巴，搭载了的人工智能系统。\n\n，鼠族的尾巴像普通的老鼠尾巴一样负责平衡。因受伤或疾病而失去了天生尾巴的鼠族可以选择戴上仿生尾巴，并完全恢复平衡能力。</RK_BionicTail.description>
+
+</LanguageData>

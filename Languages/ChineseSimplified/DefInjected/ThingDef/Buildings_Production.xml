@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- EN: Ratkin hand tailor bench -->
+	<RK_HandTailoringBench.label>鼠族裁缝桌</RK_HandTailoringBench.label>
+	
+	<!-- EN: A workbench for tailoring Ratkin apparel by hand. Works at 65% of the speed of an electric tailoring bench. -->
+	<RK_HandTailoringBench.description>一种鼠族手工裁剪衣服的工作桌。工作效率只有电力裁缝桌的65%。</RK_HandTailoringBench.description>
+	
+	
+	<!-- EN: Ratkin electric tailor bench -->
+	<RK_ElectricTailoringBench.label>鼠族电力裁缝桌</RK_ElectricTailoringBench.label>
+	
+	<!-- EN: A workbench with a sewing machine for rapid tailoring of Ratkin apparel. Can work without electricity at 65% of normal speed. -->
+	<RK_ElectricTailoringBench.description>一种鼠族用电力快速裁剪衣服的工作桌。没有电力一样可以运作，但效率只有65%。</RK_ElectricTailoringBench.description>
+	
+	
+	<!-- EN: Ratkin fueled smithy -->
+	<RK_FueledSmithy.label>鼠族燃料锻造桌</RK_FueledSmithy.label>
+	
+	<!-- EN: A wood-fueled station for smithing non-mechanical Ratkin weapons and tools. -->
+	<RK_FueledSmithy.description>一种鼠族燃烧木头制作非机械式武器、工具的工作桌。</RK_FueledSmithy.description>
+	
+	
+	<!-- EN: Ratkin electric smithy -->
+	<RK_ElectricSmithy.label>鼠族电力锻造桌</RK_ElectricSmithy.label>
+	
+	<!-- EN: An electric-powered station for smithing non-mechanical Ratkin weapons and tools. -->
+	<RK_ElectricSmithy.description>一种鼠族用电力制作非机械式武器、工具的工作桌。</RK_ElectricSmithy.description>
+
+</LanguageData>

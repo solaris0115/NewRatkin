@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	
+	<!-- EN: tunnel invasion -->
+	<RatkinTunnel_Guerrilla.label>鼠族隧道游击队</RatkinTunnel_Guerrilla.label>
+	
+	<!-- EN: Tunnel invasion -->
+	<RatkinTunnel_Guerrilla.letterLabel>小鼠突击队</RatkinTunnel_Guerrilla.letterLabel>
+	
+	<!-- EN: You've picked up seismic disturbances coming from deep underground.\n\nA highly-trained team of Ratkin guerrillas are tunneling right under your feet, and will soon emerge inside your settlement.\n\nStop them before they cripple all your facilities! -->
+	<RatkinTunnel_Guerrilla.letterText>地震波被探测到了。\n\n一群经过高度训练的鼠族特战部队即将从地面上来出现。必须在他们关闭设备之前阻止他们!</RatkinTunnel_Guerrilla.letterText>
+	
+	<!-- EN: ratkin hole -->
+	<RatkinTunnel_Thief.label>鼠族洞穴</RatkinTunnel_Thief.label>
+	
+	<!-- EN: Rat Hole -->
+	<RatkinTunnel_Thief.letterLabel>老鼠洞</RatkinTunnel_Thief.letterLabel>
+	
+	<!-- EN: You've discovered a rat hole.\n\nDestroy it before a Ratkin thief uses it to plunder your settlement! -->
+	<RatkinTunnel_Thief.letterText>发现了老鼠洞。\n\n必须在这群鼠族小偷偷东西之前阻止他们!</RatkinTunnel_Thief.letterText>
+	
+	<!-- EN: enemy reinforcements -->	
+	<RatkinFollowUpTroops.label>后续的敌袭</RatkinFollowUpTroops.label>
+	
+	<!-- EN: Enemy reinforcements -->
+	<RatkinFollowUpTroops.letterLabel>后续部队</RatkinFollowUpTroops.letterLabel>
+	
+	<!-- EN: Barely moments after the tremendous EMP explosion, a group of enemy Ratkin commandos lying in wait have emerged.\n\nPrepare to defend yourselves! -->
+	<RatkinFollowUpTroops.letterText>在剧烈的EMP爆炸后，出现了一群鼠族敌袭部队。\n\n赶紧准备捍卫自己!</RatkinFollowUpTroops.letterText>
+	
+</LanguageData>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- EN: piercing weapons -->
+	<PiercingWeapon.label>鼠族穿甲武器</PiercingWeapon.label>
+	
+	<!-- EN: Craft weapons with increased armor penetration like lances. -->
+	<PiercingWeapon.description>提高武器的穿透能力。</PiercingWeapon.description>
+	
+	
+	<!-- EN: mechanical weapons -->
+	<MechanicalWeapon.label>鼠族机械武器</MechanicalWeapon.label>
+	
+	<!-- EN: Craft mechanically-operated weapons such as gunlances. -->
+	<MechanicalWeapon.description>可以制造机械武器。</MechanicalWeapon.description>
+	
+	
+	<!-- EN: ballistae -->
+	<Ballista.label>鼠族巨型弩炮</Ballista.label>
+	
+	<!-- EN: Build giant crossbow-like siege weapons capable of being easily operated by Ratkins. -->
+	<Ballista.description>研发巨型的弹射武器。就算是身形娇小的鼠族人也能轻松操作。</Ballista.description>
+
+
+	<!-- EN: advanced ballista bolts -->
+	<Advanced_BallistaBolt.label>鼠族先进巨型弩箭</Advanced_BallistaBolt.label>
+	
+	<!-- EN: Craft more advanced variants of ballista bolt ammunition. -->
+	<Advanced_BallistaBolt.description>可以研发出更多种类的弩箭。</Advanced_BallistaBolt.description>
+	
+	
+	<!-- EN: microoptics -->
+	<MicroOptical.label>鼠族微光学</MicroOptical.label>
+	
+	<!-- EN: Reverse-engineer human optics into miniature optical components used in Ratkin sniper rifles, allowing Ratkins to compensate for their species' innately-poor eyesight.\n\nRequires a Ratkin scientist wearing Ratkin glasses to research. -->
+	<MicroOptical.description>模仿人类的光学设备。重新为鼠族们专门设计，因为他们的视力很差。</MicroOptical.description>
+	
+	
+	<!-- EN: flechette bullets -->
+	<FlechetteBullet.label>鼠族飞镖弹</FlechetteBullet.label>
+	
+	<!-- EN: Adapt Ratkin crossbow bolts for use in Ratkin firearms, allowing improved armor penetration at the cost of increased weight.\n\nRequires a Ratkin scientist wearing Ratkin glasses to research. -->
+	<FlechetteBullet.description>将鼠族使用的箭头运用在射击武器上。鼠族的射击用弩箭在设计上虽然有点重，但可以穿透厚厚的盔甲。\n\n需要用鼠族眼镜进行研究。</FlechetteBullet.description>
+	
+	
+	<!-- EN: pulse tech -->
+	<PulseTech.label>鼠族脉冲技术</PulseTech.label>
+	
+	<!-- EN: Integrate pulse technology into various weapons and equipment.\n\nRequires a Ratkin scientist wearing Ratkin glasses to research. -->
+	<PulseTech.description>研究如何把脉冲技术应用到武器设备上。\n\n需要用鼠族眼镜进行研究。</PulseTech.description>
+	
+	
+	<!-- EN: Ratkin apparel -->
+	<RatkinClothing.label>鼠族服饰</RatkinClothing.label>
+	
+	<!-- EN: Tailor various dresses, outfits and accessories for practical everyday wear by Ratkins. -->
+	<RatkinClothing.description>鼠族设计的衣服易于穿着。制作专业方便的服装。</RatkinClothing.description>
+	
+	
+	<!-- EN: High-class Ratkin apparel -->
+	<HighClassClothing.label>鼠族高贵服饰</HighClassClothing.label>
+	
+	<!-- EN: Tailor high-quality antique-styled dresses, outfits and accessories befitting the upper echelons of Ratkin society - diplomats, military, priests, nobility and royalty.\n\nRequires a Ratkin scientist wearing Ratkin glasses to research. -->
+	<HighClassClothing.description>高贵的传统服饰。用作于战争与外交上。\n\n需要用鼠族眼镜进行研究。</HighClassClothing.description>
+
+</LanguageData>

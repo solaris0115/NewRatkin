@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- EN: hamster wheel generator -->
+	<RK_HamsterWheelGenerator.label>仓鼠轮发电机</RK_HamsterWheelGenerator.label>
+	
+	<!-- EN: Produces electricity by coupling the rotation of a hamster wheel to an attached dynamo. The amount of power generated is proportional to the running speed.\n\nRequires a Ratkin or other another humanoid running inside to work. -->
+	<RK_HamsterWheelGenerator.description>通过转轮做功发电。所产生的功率与运行速度成正比。\n\n需要一个鼠族或其他人形生物在里面跑动才能运作。</RK_HamsterWheelGenerator.description>
+	
+</LanguageData>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- EN: metallic (weapons) -->
+	<WeaponMetallic.label>铁质 (武器用)</WeaponMetallic.label>
+	
+	<!-- EN: straw -->
+	<Straw.label>稻草</Straw.label>
+
+</LanguageData>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	
+	<!-- EN: Rottie -->
+	<Rottie.label>罗蒂鼠</Rottie.label>
+	
+	<!-- EN: Rotties -->
+	<Rottie.labelPlural>罗蒂鼠</Rottie.labelPlural>
+	
+	<!-- EN: male Rottie -->
+	<Rottie.labelMale>公罗蒂鼠</Rottie.labelMale>
+	
+	<!-- EN: male Rotties -->
+	<Rottie.labelMalePlural>公罗蒂鼠</Rottie.labelMalePlural>
+	
+	<!-- EN: female Rottie -->
+	<Rottie.labelFemale>母罗蒂鼠</Rottie.labelFemale>
+	
+	<!-- EN: female Rotties -->
+	<Rottie.labelFemalePlural>母罗蒂鼠</Rottie.labelFemalePlural>
+	
+	<!-- EN: Rottie -->
+	<Rottie.lifeStages.0.label>罗蒂鼠宝宝</Rottie.lifeStages.0.label>
+	
+	<!-- EN: Rottie -->
+	<Rottie.lifeStages.0.labelPlural>罗蒂鼠宝宝</Rottie.lifeStages.0.labelPlural>
+	
+	<!-- EN: male Rottie -->
+	<Rottie.lifeStages.0.labelMale>公罗蒂鼠宝宝</Rottie.lifeStages.0.labelMale>
+	
+	<!-- EN: male Rotties -->
+	<Rottie.lifeStages.0.labelMalePlural>公罗蒂鼠宝宝</Rottie.lifeStages.0.labelMalePlural>
+	
+	<!-- EN: female Rottie -->
+	<Rottie.lifeStages.0.labelFemale>母罗蒂鼠宝宝</Rottie.lifeStages.0.labelFemale>
+	
+	<!-- EN: female Rotties -->
+	<Rottie.lifeStages.0.labelFemalePlural>母罗蒂鼠宝宝</Rottie.lifeStages.0.labelFemalePlural>
+	
+	<!-- EN: Rottie -->
+	<Rottie.lifeStages.1.label>罗蒂鼠</Rottie.lifeStages.1.label>
+	
+	<!-- EN: Rottie -->
+	<Rottie.lifeStages.1.labelPlural>罗蒂鼠</Rottie.lifeStages.1.labelPlural>
+	
+	<!-- EN: male Rottie -->
+	<Rottie.lifeStages.1.labelMale>公罗蒂鼠</Rottie.lifeStages.1.labelMale>
+	
+	<!-- EN: male Rotties -->
+	<Rottie.lifeStages.1.labelMalePlural>公罗蒂鼠</Rottie.lifeStages.1.labelMalePlural>
+	
+	<!-- EN: female Rottie -->
+	<Rottie.lifeStages.1.labelFemale>母罗蒂鼠</Rottie.lifeStages.1.labelFemale>
+	
+	<!-- EN: female Rotties -->
+	<Rottie.lifeStages.1.labelFemalePlural>母罗蒂鼠</Rottie.lifeStages.1.labelFemalePlural>
+	
+	<!-- EN: Rottie -->
+	<Rottie.lifeStages.2.label>罗蒂鼠</Rottie.lifeStages.2.label>
+	
+	<!-- EN: Rottie -->
+	<Rottie.lifeStages.2.labelPlural>罗蒂鼠</Rottie.lifeStages.2.labelPlural>
+	
+	<!-- EN: male Rottie -->
+	<Rottie.lifeStages.2.labelMale>公罗蒂鼠</Rottie.lifeStages.2.labelMale>
+	
+	<!-- EN: male Rotties -->
+	<Rottie.lifeStages.2.labelMalePlural>公罗蒂鼠</Rottie.lifeStages.2.labelMalePlural>
+	
+	<!-- EN: female Rottie -->
+	<Rottie.lifeStages.2.labelFemale>母罗蒂鼠</Rottie.lifeStages.2.labelFemale>
+	
+	<!-- EN: female Rotties -->
+	<Rottie.lifeStages.2.labelFemalePlural>母罗蒂鼠</Rottie.lifeStages.2.labelFemalePlural>
+	
+</LanguageData>

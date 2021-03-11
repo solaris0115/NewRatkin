@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- inner coat -->
+	<InnerCoat.label>内衣</InnerCoat.label>
+  
+	<!-- backpack -->
+	<BackPack.label>背包</BackPack.label>
+  
+	<!-- outer clothing -->
+	<OuterClothing.label>外服</OuterClothing.label>
+  
+	<!-- face -->
+	<OnFace.label>脸部</OnFace.label>
+
+</LanguageData>
