@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- EN: fake Ratkin ear -->
+	<RK_FakeEar.label>假耳朵</RK_FakeEar.label>
+	
+	<!-- EN: An installed fake Ratkin ear. -->
+	<RK_FakeEar.description>这是一只鼠族用的假耳朵</RK_FakeEar.description>
+	
+	<!-- EN: a fake Ratkin ear -->
+	<RK_FakeEar.labelNoun>一只布制假耳朵</RK_FakeEar.labelNoun>
+	
+	<!-- EN: bionic Ratkin tail -->
+	<RK_BionicTail.label>仿生尾巴</RK_BionicTail.label>
+	
+	<!-- EN: An installed bionic Ratkin tail. -->
+	<RK_BionicTail.description>先进的人造尾巴。它还具有一个小型AI，可以自动调解平衡性。</RK_BionicTail.description>
+	
+	<!-- EN: a bionic Ratkin tail -->
+	<RK_BionicTail.labelNoun>一个仿生的老鼠尾巴。</RK_BionicTail.labelNoun>
+	
+	<!-- EN: fake Ratkin tail -->
+	<RK_FakeTail.label>假尾巴</RK_FakeTail.label>
+	
+	<!-- EN: An installed fake Ratkin tail. -->
+	<RK_FakeTail.description>这是一条鼠族用的假尾巴。</RK_FakeTail.description>
+	
+	<!-- EN: a fake Ratkin tail-->
+	<RK_FakeTail.labelNoun>一个布制的假尾巴。</RK_FakeTail.labelNoun>
+	
+</LanguageData>

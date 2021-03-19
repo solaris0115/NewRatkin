@@ -1,12 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <RK_HamsterWheel.label>人力發電</RK_HamsterWheel.label>
-  <RK_HamsterWheel.description>通過使用人力做功來發電。</RK_HamsterWheel.description>
-  <RK_HamsterWheel.labelShort>人力發電</RK_HamsterWheel.labelShort>
-  <RK_HamsterWheel.pawnLabel>勞工</RK_HamsterWheel.pawnLabel>
-  <RK_HamsterWheel.gerundLabel>發電</RK_HamsterWheel.gerundLabel>
-  <RK_HamsterWheel.verb>正在做功發電</RK_HamsterWheel.verb>
-
+	<!-- EN: Power generation -->
+	<RK_HamsterWheel.label>人力發電</RK_HamsterWheel.label>
+	
+	<!-- EN: Power -->
+	<RK_HamsterWheel.labelShort>人力發電</RK_HamsterWheel.labelShort>
+	
+	<!-- EN: Worker -->
+	<RK_HamsterWheel.pawnLabel>勞工</RK_HamsterWheel.pawnLabel>
+	
+	<!-- EN: generating power -->
+	<RK_HamsterWheel.gerundLabel>正在發電</RK_HamsterWheel.gerundLabel>
+	
+	<!-- EN: Generate power by running inside a hamster wheel. -->
+	<RK_HamsterWheel.description>通過奔跑在倉鼠輪上來人力發電。</RK_HamsterWheel.description>
+	
+	<!-- EN: Generate power at -->
+	<RK_HamsterWheel.verb>發電</RK_HamsterWheel.verb>
 
 </LanguageData>

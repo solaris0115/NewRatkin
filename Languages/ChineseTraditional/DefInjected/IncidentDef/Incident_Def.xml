@@ -1,17 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
-  <RatkinTunnel_Guerrilla.label>鼠族隧道游擊隊</RatkinTunnel_Guerrilla.label>
-  <RatkinTunnel_Guerrilla.letterText>地震波被探測到了。\n\n一群經過高度訓練的特戰部隊即將從地面上來出現。必須在他們關閉設備之前阻止他們。</RatkinTunnel_Guerrilla.letterText>
-  <RatkinTunnel_Guerrilla.letterLabel>小鼠突擊隊</RatkinTunnel_Guerrilla.letterLabel>
-
-  <RatkinTunnel_Thief.label>鼠族洞穴</RatkinTunnel_Thief.label>
-  <RatkinTunnel_Thief.letterText>發現有老鼠洞。\n\n應該在這群小偷偷東西之前阻止他們。</RatkinTunnel_Thief.letterText>
-  <RatkinTunnel_Thief.letterLabel>老鼠洞</RatkinTunnel_Thief.letterLabel>
-
-  <RatkinFollowUpTroops.label>後續的敵襲</RatkinFollowUpTroops.label>
-  <RatkinFollowUpTroops.letterText>在劇烈的EMP爆炸後,出現了一群敵襲部隊。\n\n敵方單位已出現</RatkinFollowUpTroops.letterText>
-  <RatkinFollowUpTroops.letterLabel>後續部隊</RatkinFollowUpTroops.letterLabel>
-
-
+	
+	<!-- EN: tunnel invasion -->
+	<RatkinTunnel_Guerrilla.label>鼠族隧道游擊隊</RatkinTunnel_Guerrilla.label>
+	
+	<!-- EN: Tunnel invasion -->
+	<RatkinTunnel_Guerrilla.letterLabel>小鼠突擊隊</RatkinTunnel_Guerrilla.letterLabel>
+	
+	<!-- EN: You've picked up seismic disturbances coming from deep underground.\n\nA highly-trained team of Ratkin guerrillas are tunneling right under your feet, and will soon emerge inside your settlement.\n\nStop them before they cripple all your facilities! -->
+	<RatkinTunnel_Guerrilla.letterText>地震波被探測到了。\n\n一群經過高度訓練的鼠族特戰部隊即將從地面上來出現。必須在他們關閉設備之前阻止他們!</RatkinTunnel_Guerrilla.letterText>
+	
+	<!-- EN: ratkin hole -->
+	<RatkinTunnel_Thief.label>鼠族洞穴</RatkinTunnel_Thief.label>
+	
+	<!-- EN: Rat Hole -->
+	<RatkinTunnel_Thief.letterLabel>老鼠洞</RatkinTunnel_Thief.letterLabel>
+	
+	<!-- EN: You've discovered a rat hole.\n\nDestroy it before a Ratkin thief uses it to plunder your settlement! -->
+	<RatkinTunnel_Thief.letterText>發現了老鼠洞。\n\n必須在這群鼠族小偷偷東西之前阻止他們!</RatkinTunnel_Thief.letterText>
+	
+	<!-- EN: enemy reinforcements -->	
+	<RatkinFollowUpTroops.label>後續的敵襲</RatkinFollowUpTroops.label>
+	
+	<!-- EN: Enemy reinforcements -->
+	<RatkinFollowUpTroops.letterLabel>後續部隊</RatkinFollowUpTroops.letterLabel>
+	
+	<!-- EN: Barely moments after the tremendous EMP explosion, a group of enemy Ratkin commandos lying in wait have emerged.\n\nPrepare to defend yourselves! -->
+	<RatkinFollowUpTroops.letterText>在劇烈的EMP爆炸後，出現了一群鼠族敵襲部隊。\n\n趕緊準備捍衛自己!</RatkinFollowUpTroops.letterText>
+	
 </LanguageData>

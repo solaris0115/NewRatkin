@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- EN: Ratkin Kingdom -->
+	<Rakinia.label>鼠族王国</Rakinia.label>
+	
+	<!-- EN: A monarchical society of Ratkins based on agriculture, with a late-medieval to early-industrial level of technology. Ratkin settlements are typically well-hidden from human eyes. -->
+	<Rakinia.description>鼠族的国度，以农业社会为基础组成君主制社会，并持有从中世纪后期到早期工业的科技。鼠族社区通常是人眼看不见的。</Rakinia.description>
+	
+	<!-- EN: Ratkins -->
+	<Rakinia.pawnsPlural>鼠族</Rakinia.pawnsPlural>
+	
+	<!-- EN: Prime Executor -->
+	<Rakinia.leaderTitle>摄政王</Rakinia.leaderTitle>
+	
+</LanguageData>

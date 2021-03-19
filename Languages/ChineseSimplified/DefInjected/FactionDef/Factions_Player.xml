@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- EN: New Beginning -->
+	<RK_PlayerFaction.label>新开端</RK_PlayerFaction.label>
+	
+	<!-- EN: Your settlement of Ratkins, whose inhabitants were brought together by fate and happenstance. -->
+	<RK_PlayerFaction.description>这是你们鼠族的殖民地。他们的故事与命运在这里交汇。</RK_PlayerFaction.description>
+	
+	<!-- EN: Ratkins -->
+	<RK_PlayerFaction.pawnsPlural>鼠族</RK_PlayerFaction.pawnsPlural>
+	
+</LanguageData>

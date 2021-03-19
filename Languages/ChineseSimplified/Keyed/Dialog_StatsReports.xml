@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- EN: EMP Explosion -->
+	<EMPExplode>EMP爆炸</EMPExplode>
+	
+	<!-- EN: An EMP explosion has overloaded and damaged your power generators. -->
+	<EMPExplodeDesc>EMP攻击使发电机重载而损坏。</EMPExplodeDesc>
+	
+	<!-- EN: Ratkin commandos are assaulting the colony.  -->
+	<MessageCommandoAssaulting>鼠族特种部队开始攻击殖民地。</MessageCommandoAssaulting>
+	
+	<!-- EN: The rat hole is gone. -->
+	<RatHoleGone>老鼠洞消失了。</RatHoleGone>
+	
+	<!-- EN: Generating power -->
+	<RK_MakeGeneratePower>发电中</RK_MakeGeneratePower>
+	
+	<!-- Blocked! -->
+	<ShieldBlock>打偏了！</ShieldBlock>
+	
+	<!-- Deflect Chance: -->
+	<ShieldBlockChance>打偏:</ShieldBlockChance>
+	
+	<!-- Blocking Chance (Heat) -->
+	<BlockChance_Heat>格档机率(热能)</BlockChance_Heat>
+	
+	<!-- Blocking Chance (Blunt) -->
+	<BlockChance_Blunt>格档机率(钝器)</BlockChance_Blunt>
+	
+	<!-- Blocking Chance (Sharp) -->
+	<BlockChance_Sharp>格档机率(利器)</BlockChance_Sharp>
+	
+	<!-- Wearer Blocking Chance (Heat) -->
+	<BlockChanceWear_Heat>装备者格档机率(热能)</BlockChanceWear_Heat>
+	
+	<!-- Wearer Blocking Chance (Blunt) -->
+	<BlockChanceWear_Blunt>装备者格档机率(钝器)</BlockChanceWear_Blunt>
+	
+	<!-- Wearer Blocking Chance (Sharp) -->
+	<BlockChanceWear_Sharp>装备者格档机率(利器)</BlockChanceWear_Sharp>
+	
+	<!-- Deflection\nThe chance to block damage from outside.\n\nDeflecting can only block attacks within 140 degrees of the front.\nThis chance is based on the equipment's armor rating and the wearer's melee skill. -->
+	<BlockChanceDefualtDesc>伤害偏转\n阻挡来自外部伤害的概率。\n\n 偏转只能阻挡正面140度范围以内的攻击。\n该概率取决于(盾牌)装备者的近战技能和该装备的装甲值。</BlockChanceDefualtDesc>
+	
+</LanguageData>

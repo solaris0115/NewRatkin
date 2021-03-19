@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- EN: Rotti -->
+	<Rotti.label>罗蒂鼠</Rotti.label>
+	
+	<!-- EN: A domesticated rat of unusually large size and intelligence, often kept as pets by Ratkins. -->
+	<Rotti.description>一种家养的老鼠，体型和智力都比一般的老鼠更优秀。它们经常被鼠族当作宠物饲养。</Rotti.description>
+	
+	<!-- EN: left claw -->
+	<Rotti.tools.0.label>左爪</Rotti.tools.0.label>
+	
+	<!-- EN: right claw -->
+	<Rotti.tools.1.label>右爪</Rotti.tools.1.label>
+	
+	<!-- EN: head -->
+	<Rotti.tools.3.label>脑袋</Rotti.tools.3.label>
+	
+</LanguageData>

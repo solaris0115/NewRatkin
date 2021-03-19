@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- EN: Ratkin magic wand -->
+	<RK_MagicWand.label>鼠族魔术棒</RK_MagicWand.label>
+	
+	<!-- EN: An highly-potent magic wand capable of opening locked doors and burning furniture to ashes. While no sane Ratkin would dare to use it, a few Ratkins of questionable mental stability have been observed wielding them... -->
+	<RK_MagicWand.description>这是一支高能魔法棒。用于打开上锁的门或焚烧家具。一只脑袋清晰的老鼠绝对不会想使用这个...</RK_MagicWand.description>
+	
+	<!-- EN: head -->
+	<RK_MagicWand.tools.0.label>顶端</RK_MagicWand.tools.0.label>
+	
+	<!-- EN: handle -->
+	<RK_MagicWand.tools.1.label>握柄</RK_MagicWand.tools.1.label>
+	
+</LanguageData>

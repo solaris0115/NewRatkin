@@ -1,12 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <!-- 산타 보따리 +50 내구도 +20 -->
-
-  <WeaponMetallic.label>鼠族武器</WeaponMetallic.label>
-  <Straw.label>鼠族服裝</Straw.label>
-
-
-  <!-- 랫킨 귀 헤어밴드 사회적영향력 +5% -->
+	<!-- EN: metallic (weapons) -->
+	<WeaponMetallic.label>鐵質 (武器用)</WeaponMetallic.label>
+	
+	<!-- EN: straw -->
+	<Straw.label>稻草</Straw.label>
 
 </LanguageData>

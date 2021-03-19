@@ -1,0 +1,662 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- EN: Ratkin wild child -->
+	<Ratkin_WildChild.title>鼠族野孩子</Ratkin_WildChild.title>
+	
+	<!-- EN: Wild child -->
+	<Ratkin_WildChild.titleShort>野孩子</Ratkin_WildChild.titleShort>
+	
+	<!-- EN: PAWN_nameDef] grew up in the wild without the benefit of civilization.\n\nThe wilderness made [PAWN_objective] strong, but [PAWN_pronoun] did not receive a proper education. -->
+	<Ratkin_WildChild.baseDescription>[PAWN_nameDef]在没有文明的环境中长大。荒野养育了[PAWN_pronoun]，但没有给[PAWN_pronoun]应有的教育。</Ratkin_WildChild.baseDescription>
+
+
+	<!-- EN: Ratkin cave child -->
+	<Ratkin_LandRat.title>鼠族地鼠</Ratkin_LandRat.title>
+	
+	<!-- EN: Cave child -->
+	<Ratkin_LandRat.titleShort>地鼠</Ratkin_LandRat.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] was born in the darkness.\n\nAfter years of living in caves, [PAWN_pronoun] became a competent miner, but eventually abandoned [PAWN_possessive] community after many of its members collapsed and died during an epidemic. -->
+	<Ratkin_LandRat.baseDescription>[PAWN_nameDef]诞生在黑暗中。在漫长的洞穴生活之后，[PAWN_pronoun]擅长采矿，但当[PAWN_pronoun]的许多同胞在一场疫情中崩溃并死亡后，不得不背井离乡。</Ratkin_LandRat.baseDescription>
+
+
+	<!-- EN: Ratkin country child -->
+	<Ratkin_CountryKid.title>鼠族农夫之子</Ratkin_CountryKid.title>
+	
+	<!-- EN: Country child -->
+	<Ratkin_CountryKid.titleShort>农夫之子</Ratkin_CountryKid.titleShort>
+	
+	<!-- EN: Like [PAWN_possessive] parents and grandparents before [PAWN_objective], [PAWN_nameDef] grew up on a farm, close to nature and innocent to the ways of the world - until one fateful day that changed [PAWN_possessive] life forever. -->
+	<Ratkin_CountryKid.baseDescription>[PAWN_nameDef]像他的父母和祖父母一样在农场长大，过着贴近大自然的单纯生活 - 直到有一天改变了他的一生。</Ratkin_CountryKid.baseDescription>
+
+
+	<!-- EN： Ratkin shepherd boy/girl (Translation is non-gendered) -->
+	<Ratkin_ShepherdBoy.title>鼠族牧童</Ratkin_ShepherdBoy.title>
+	
+	<!-- EN: Shepherd boy/girl (Translation is non-gendered) -->
+	<Ratkin_ShepherdBoy.titleShort>牧童</Ratkin_ShepherdBoy.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] grew up alongside animals, and came to regard them as friends. -->
+	<Ratkin_ShepherdBoy.baseDescription>[PAWN_nameDef]小时候就与各种牲畜相处，因此把它们当朋友一样对待。</Ratkin_ShepherdBoy.baseDescription>
+
+
+	<!-- EN: Ratkin orphan -->
+	<Ratkin_Orphan.title>鼠族孤儿</Ratkin_Orphan.title>
+	
+	<!-- EN: Orphan -->
+	<Ratkin_Orphan.titleShort>孤儿</Ratkin_Orphan.titleShort>
+	
+	<!-- EN: Abandoned by [PAWN_possessive] parents at a very young age, [PAWN_nameDef] learned to survive on [PAWN_possessive] own, and while [PAWN_pronoun] had little technical knowledge, [PAWN_pronoun] was comfortable with a variety of hands-on work. -->
+	<Ratkin_Orphan.baseDescription>[PAWN_nameDef]从小就被父母抛弃。[PAWN_pronoun]学会了独立生存，虽然没有任何技术知识，但可以做各种事情。</Ratkin_Orphan.baseDescription>
+	
+	<!-- EN: Ratkin student -->
+	<Ratkin_Student.title>鼠族学徒</Ratkin_Student.title>
+	
+	<!-- EN: Student -->
+	<Ratkin_Student.titleShort>学徒</Ratkin_Student.titleShort>
+	
+	<!-- EN: While [PAWN_nameDef]'s family weren't particularly wealthy, they could at least afford to pay for [PAWN_possessive] education. [PAWN_pronoun] excelled in academic studies, but lacked the physique for more strenuous activities. -->
+	<Ratkin_Student.baseDescription>[PAWN_nameDef]的家庭并不富裕，但还不至于穷得无法获得教育。[PAWN_pronoun]擅长科学研究，但在体育方面却不怎么出众。</Ratkin_Student.baseDescription>
+
+
+	<!-- EN: Ratkin bookworm -->
+	<Ratkin_LittleLibrarian.title>鼠族小书虫</Ratkin_LittleLibrarian.title>
+	
+	<!-- EN: Bookworm -->
+	<Ratkin_LittleLibrarian.titleShort>小书虫</Ratkin_LittleLibrarian.titleShort>
+	
+	<!-- EN: [PAWN_nameDef]'s parents were librarians, and [PAWN_pronoun] grew up surrounded by books. This broadened and deepened [PAWN_possessive] knowledge in many disciplines, but also resulted in extreme nearsightedness. -->
+	<Ratkin_LittleLibrarian.baseDescription>[PAWN_nameDef]的父母因为是图书管理员，因此平日里就与书为伴。丰富知识的已经深化和扩展了[PAWN_pronoun]的学识水平，但现在他的眼睛已经高度近视了。</Ratkin_LittleLibrarian.baseDescription>
+
+
+	<!-- EN: Ratkin silver spoon -->
+	<Ratkin_GoldenSpoon.title>鼠族富二代</Ratkin_GoldenSpoon.title>
+	
+	<!-- EN: Silver spoon -->
+	<Ratkin_GoldenSpoon.titleShort>富二代</Ratkin_GoldenSpoon.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] was the only child of a wealthy family.\n\n[PAWN_pronoun] was surrounded by a vast collection of artworks and artefacts, but otherwise spent [PAWN_possessive] days idling away in matters of no consequence. -->
+	<Ratkin_GoldenSpoon.baseDescription>[PAWN_nameDef]出生在一个富裕家庭里的独生子。[PAWN_pronoun]在充满着各种艺术熏陶的家庭氛围里长大，但并没有什么成就。</Ratkin_GoldenSpoon.baseDescription>
+
+
+	<!-- EN： Ratkin bastard -->
+	<Ratkin_Bastard.title>鼠族私生子</Ratkin_Bastard.title>
+	
+	<!-- EN: Bastard -->
+	<Ratkin_Bastard.titleShort>私生子</Ratkin_Bastard.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] was born to a concubine of a wealthy Ratkin.\n\nAs bastard children were not permitted in Ratkin High society, [PAWN_pronoun] fled and became a fugitive. -->
+	<Ratkin_Bastard.baseDescription>[PAWN_nameDef]是一个小妾所生的孩子。由于鼠族上流社会不允许这种私生子的存在，[PAWN_pronoun]不得不成为了一个逃亡者。</Ratkin_Bastard.baseDescription>
+
+
+	<!-- EN: Ratkin heir/heiress (Translation is non-gendered) -->
+	<Ratkin_Successor.title>鼠族继任者</Ratkin_Successor.title>
+	
+	<!-- EN: Heir/Heiress (Translation is non-gendered) -->
+	<Ratkin_Successor.titleShort>继任者</Ratkin_Successor.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] was the heir of a noble family.\n\nAfter the clan fell on hard times, [PAWN_pronoun] left home to try and restore [PAWN_possessive] family's fortunes. -->
+	<Ratkin_Successor.baseDescription>[PAWN_nameDef]原本生于豪门贵族的继任者。但是显赫的家族没落了，[PAWN_pronoun]不得不背井离乡另寻他路。</Ratkin_Successor.baseDescription>
+	
+	
+	<!-- EN: Ratkin apprentice Guardener -->
+	<Ratkin_GuardenerStudent.title>鼠族守卫学徒</Ratkin_GuardenerStudent.title>
+	
+	<!-- EN: Apprentice Guardener -->
+	<Ratkin_GuardenerStudent.titleShort>守卫学徒</Ratkin_GuardenerStudent.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] devoted [PAWN_objective]self to the grueling path of becoming a Guardener.\n\nOnly the best of Ratkins can shoulder the responsibility of tending to the Ratkin Kingdom's gardens and defending them from enemies. -->
+	<Ratkin_GuardenerStudent.baseDescription>[PAWN_nameDef]走上了成为庄园守卫者的道路。只有最厉害的鼠族才能从敌人的威胁下守护花园。</Ratkin_GuardenerStudent.baseDescription>
+
+
+	<!-- EN: Ratkin apprentice chef -->
+	<Ratkin_ChefStudent.title>鼠族厨师学徒</Ratkin_ChefStudent.title>
+	
+	<!-- EN: Apprentice chef -->
+	<Ratkin_ChefStudent.titleShort>厨师学徒</Ratkin_ChefStudent.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] is a gourmand who learned to cook from a young age to satiate [PAWN_possessive] appetite.\n\nFor [PAWN_objective], food is the ultimate expression of life and enjoyment, so [PAWN_pronoun] often set out on adventures in search of ever-more exquisite delicacies. -->
+	<Ratkin_ChefStudent.baseDescription>[PAWN_nameDef]是个吃货，也乐于自己下厨。对于[PAWN_pronoun]来说，食物是对生活的点缀也是一种乐趣，所以会为了寻找更多的美食而出门冒险。</Ratkin_ChefStudent.baseDescription>
+	
+	
+	<!-- EN: Ratkin apprentice seamstress -->
+	<Ratkin_SeamstressStudent.title>鼠族裁缝师学徒</Ratkin_SeamstressStudent.title>
+	
+	<!-- EN: Apprentice seamstress -->
+	<Ratkin_SeamstressStudent.titleShort>裁缝师学徒</Ratkin_SeamstressStudent.titleShort>
+	
+	<!-- EN: As the apprentice of a master dressmaker, [PAWN_nameDef] spun thread, tidied rolls of fabric and swept the shop floor clean.\n\nIn time, [PAWN_pronoun] was also entrusted with sewing buttons, handkerchiefs and other small, simple items. -->
+	<Ratkin_SeamstressStudent.baseDescription>作为一位高级裁缝师门下学徒的[PAWN_nameDef]，每天负责纺线、整理布料和打扫。[PAWN_pronoun]后来学会了缝钮扣，手帕和其他小而简单的物品。</Ratkin_SeamstressStudent.baseDescription>
+	
+	
+	<!-- EN: Ratkin squire -->
+	<Ratkin_KnightStudent.title>鼠族侍从</Ratkin_KnightStudent.title>
+	
+	<!-- EN: Squire -->
+	<Ratkin_KnightStudent.titleShort>侍从</Ratkin_KnightStudent.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] left [PAWN_possessive] home village after becoming apprenticed to a knight of the Ratkin Kingdom.\n\n[PAWN_pronoun] spent [PAWN_possessive] days cleaning [PAWN_possessive] master's armor and weapons, as well as looking after [PAWN_possessive] master's king hamster mount. In return, [PAWN_possessive] master trained [PAWN_objective] in basic swordsmanship. -->
+	<Ratkin_KnightStudent.baseDescription>[PAWN_nameDef]被一位鼠族王国的一位骑士收为侍从后离乡，每天负责维持[PAWN_pronoun]主人的装甲和武器，并照顾他主人的仓鼠大王。作为回报，他的主人将教他基本的剑术。</Ratkin_KnightStudent.baseDescription>
+	
+	
+	<!-- EN: Ratkin gypsy child -->
+	<Ratkin_RomanyKid.title>鼠族流浪儿</Ratkin_RomanyKid.title>
+	
+	<!-- EN: Gypsy child -->
+	<Ratkin_RomanyKid.titleShort>流浪儿</Ratkin_RomanyKid.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] wandered around aimlessly from place to place.\n\nWhile [PAWN_pronoun] was capable of all kinds of work, [PAWN_possessive] vagabond lifestyle prevented [PAWN_objective] from forming deep, meaningful relationships with others. -->
+	<Ratkin_RomanyKid.baseDescription>[PAWN_nameDef]是一个流浪者，到处游荡。[PAWN_pronoun]虽然多才多艺，但生活浑浑噩噩无法与他人们创建深厚的友谊。</Ratkin_RomanyKid.baseDescription>
+
+
+	<!-- EN: Ratkin officer's child -->
+	<Ratkin_OfficerChild.title>鼠族军官孩子</Ratkin_OfficerChild.title>
+	
+	<!-- EN: Officer's child -->
+	<Ratkin_OfficerChild.titleShort>军官孩子</Ratkin_OfficerChild.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] was the child of a commissioned officer in the Ratkin military.\n\nYears of marksmanship training molded [PAWN_objective] into an exemplary cadet, but it also made [PAWN_objective] arrogant and haughty. -->
+	<Ratkin_OfficerChild.baseDescription>[PAWN_nameDef]是一名军官的孩子。 父母从小就教授的射击技巧使得[PAWN_pronoun]得到了极大的成长，但恰恰性格上也变得傲慢自大。</Ratkin_OfficerChild.baseDescription>
+
+
+	<!-- EN: Ratkin merchant's child -->
+	<Ratkin_MerchantKid.title>鼠族商人之子</Ratkin_MerchantKid.title>
+	
+	<!-- EN: Merchant's child -->
+	<Ratkin_MerchantKid.titleShort>商人之子</Ratkin_MerchantKid.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] was born to a pair of merchants, and learned the family trade by watching [PAWN_possessive] parents conduct business from over their shoulders. -->
+	<Ratkin_MerchantKid.baseDescription>[PAWN_nameDef]是一名商人的孩子。[PAWN_pronoun]在父母的身边耳濡目染的学会了如何做生意和赚钱。</Ratkin_MerchantKid.baseDescription>
+
+
+	<!-- EN: Ratkin child -->
+	<Ratkin_Kid.title>鼠族儿童</Ratkin_Kid.title>
+	
+	<!-- EN: Child -->
+	<Ratkin_Kid.titleShort>儿童</Ratkin_Kid.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] was an ordinary child who learned how to keep house from [PAWN_possessive] parents, but lacked professional knowledge because [PAWN_pronoun] never had the chance to pursue higher education. -->
+	<Ratkin_Kid.baseDescription>[PAWN_nameDef]是一个出身平庸的鼠族儿童。帮助父母在家里做过很多事情。但没有机会接受高等教育，因此无法学会专业性的知识。</Ratkin_Kid.baseDescription>
+
+
+	<!-- EN: Ratkin servant's child -->
+	<Ratkin_ServentChild.title>鼠族仆人之子</Ratkin_ServentChild.title>
+	
+	<!-- EN: Servant's child -->
+	<Ratkin_ServentChild.titleShort>仆人之子</Ratkin_ServentChild.titleShort>
+	
+	<!-- EN: As the child of servants, [PAWN_nameDef] was destined by Ratkin law to a life of servitude [PAWN_objective]self.\n\nInstead, [PAWN_pronoun] ran away to change [PAWN_possessive] destiny. -->
+	<Ratkin_ServentChild.baseDescription>[PAWN_nameDef]是一名仆人的孩子。根据鼠族王国的法律，[PAWN_pronoun]也注定要成为一名仆人，但却选择叛逃来改变自己的命运。</Ratkin_ServentChild.baseDescription>
+	
+	
+	<!-- EN: Ratkin human assistant -->
+	<Ratkin_HumanAssistant.title>鼠族人类助理</Ratkin_HumanAssistant.title>
+	
+	<!-- EN: Human assistant -->
+	<Ratkin_HumanAssistant.titleShort>人类助理</Ratkin_HumanAssistant.titleShort>
+	
+	<!-- EN: From a young age, [PAWN_nameDef] served as an assistant to a human owner, who often sent [PAWN_possessive] on small errands.\n\nAfter [PAWN_possessive] owner died in a tragic accident, [PAWN_pronoun] set out to find [PAWN_possessive] own path in life. -->
+	<Ratkin_HumanAssistant.baseDescription>[PAWN_nameDef]从小就作为人类的助理来辅佐工作。但主人在一次事故中丧命后，[PAWN_pronoun]就远走高飞寻找自己的生活了。</Ratkin_HumanAssistant.baseDescription>
+
+
+	<!-- EN: Ratkin city kid -->
+	<Ratkin_CityKid.title>鼠族城市儿童</Ratkin_CityKid.title>
+	
+	<!-- EN: City kid -->
+	<Ratkin_CityKid.titleShort>城市儿童</Ratkin_CityKid.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] grew up in a city, and regards other Ratkins from rural areas as backwards, crude and uncivilized. -->
+	<Ratkin_CityKid.baseDescription>[PAWN_nameDef]从小就在城市里长大。[PAWN_pronoun]受到都市文化的熏陶，所以无法理解其他乡下来的鼠族的生活方式。</Ratkin_CityKid.baseDescription>
+
+
+	<!-- EN: Ratkin slave kid -->
+	<Ratkin_SlaveKid.title>鼠族奴隶孩童</Ratkin_SlaveKid.title>
+	
+	<!-- EN: Slave kid -->
+	<Ratkin_SlaveKid.titleShort>奴隶孩童</Ratkin_SlaveKid.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] could not remember how [PAWN_pronoun] came to be enslaved, but bore the indelible mark of a slave brand.\n\nUnable to bear the countless hardships of slavery, [PAWN_pronoun] eventually escaped. -->
+	<Ratkin_SlaveKid.baseDescription>[PAWN_nameDef]不知自己为何会成为奴隶，但是身体上留着奴隶的烙印。[PAWN_pronoun]无法忍受各种琐事，为获自由选择逃跑。</Ratkin_SlaveKid.baseDescription>
+
+
+	<!-- EN: Ratkin lab rat -->
+	<Ratkin_LaboratoryRats.title>鼠族实验体</Ratkin_LaboratoryRats.title>
+	
+	<!-- EN: Lab rat -->
+	<Ratkin_LaboratoryRats.titleShort>实验体</Ratkin_LaboratoryRats.titleShort>
+	
+	<!-- EN: Bred in a laboratory as a test subject, [PAWN_nameDef] was genetically modified as part of a military research project, gaining increased combat reflexes and agility - as well as a burning desire for freedom.\n\n[PAWN_pronoun] eventually escaped from the lab after murdering all the scientists that experimented on [PAWN_objective]. -->
+	<Ratkin_LaboratoryRats.baseDescription>[PAWN_nameDef]出生于实验室里。一次军事实验里被基因操纵了的[PAWN_pronoun]，感受到了对自由的强烈渴望。随后杀死了科学家并逃之夭夭。</Ratkin_LaboratoryRats.baseDescription>
+	
+	
+	<!-- EN: Ratkin petty thief -->
+	<Ratkin_PettyTheft.title>鼠族小偷</Ratkin_PettyTheft.title>
+	
+	<!-- EN: Petty thief -->
+	<Ratkin_PettyTheft.titleShort>小偷</Ratkin_PettyTheft.titleShort>
+	
+	<!-- EN: For [PAWN_nameDef], there was no such thing as "stealing", but merely "borrowing". However, the law finally caught up with [PAWN_possessive] frequent "borrowing", and sentenced [PAWN_objective] to slavery.\n\nAfter years of backbreaking labor, [PAWN_pronoun] finally found the opportunity to escape. -->
+	<Ratkin_PettyTheft.baseDescription>对于[PAWN_nameDef]来说偷窃不过是“借贷”。[PAWN_pronoun]因频繁盗窃最终被抓住把柄遭到了酷刑。在奴役期间成功的逃狱了。</Ratkin_PettyTheft.baseDescription>
+
+
+	<!-- EN: Ratkin caravan merchant -->
+	<Ratkin_CaravanMerchant.title>鼠族旅行商人</Ratkin_CaravanMerchant.title>
+	
+	<!-- EN: Caravan merchant -->
+	<Ratkin_CaravanMerchant.titleShort>旅行商人</Ratkin_CaravanMerchant.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] was a leader of a merchant caravan, and led a nomadic lifestyle.\n\nAfter losing everything in an ambush, [PAWN_pronoun] decided to start over elsewhere. -->
+	<Ratkin_CaravanMerchant.baseDescription>[PAWN_nameDef]是一位旅行商队的领导者。但在一次袭击中失去了一切的[PAWN_pronoun]决定过上新的生活。</Ratkin_CaravanMerchant.baseDescription>
+
+
+	<!-- EN: Ratkin wanderer -->
+	<Ratkin_Wanderer.title>鼠族漂泊者</Ratkin_Wanderer.title>
+	
+	<!-- EN: Wanderer -->
+	<Ratkin_Wanderer.titleShort>漂泊者</Ratkin_Wanderer.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] led an aimless, wandering life, and regarded the Ratkin ideal of owning one's own garden to be nothing more than a pipe dream. -->
+	<Ratkin_Wanderer.baseDescription>[PAWN_nameDef]是一个四处流浪的漂泊者。在[PAWN_pronoun]看来拥有一个属于自己的庄园只是一个美好的幻想。</Ratkin_Wanderer.baseDescription>
+
+
+	<!-- EN: Ratkin farmer -->
+	<Ratkin_Farmer.title>鼠族农民</Ratkin_Farmer.title>
+	
+	<!-- EN: Farmer -->
+	<Ratkin_Farmer.titleShort>农民</Ratkin_Farmer.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] is a farmer, having inherited the family farm from [PAWN_possessive] parents, and [PAWN_possessive] children are also destined to become farmers themselves. -->
+	<Ratkin_Farmer.baseDescription>[PAWN_nameDef]是一位农民，从父母那里继承了家庭农场。[PAWN_pronoun]自己的孩子长大之后也注定成为农民。</Ratkin_Farmer.baseDescription>
+	
+	
+	<!-- EN: Ratkin farmhand -->
+	<Ratkin_FarmLaborer.title>鼠族农民工</Ratkin_FarmLaborer.title>
+	
+	<!-- EN: Farmhand -->
+	<Ratkin_FarmLaborer.titleShort>农民工</Ratkin_FarmLaborer.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] worked as a laborer on various farms in the countryside, ploughing the fields, mending fences and caring for farm animals, as well as sowing and harvesting crops.\n\nWhenever work dried up, [PAWN_pronoun] would move on to a different village. -->
+	<Ratkin_FarmLaborer.baseDescription>[PAWN_nameDef]在农村的各个农场耕种田野、修补篱笆、照顾农场动物，以及播种和收割庄稼。工作枯竭时，[PAWN_pronoun]将移至其他村庄。</Ratkin_FarmLaborer.baseDescription>
+	
+	
+	<!-- EN: Ratkin miner -->
+	<Ratkin_Miner.title>鼠族矿工</Ratkin_Miner.title>
+	
+	<!-- EN: Miner -->
+	<Ratkin_Miner.titleShort>矿工</Ratkin_Miner.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] was very good at digging, and became a miner.\n\nWhile [PAWN_pronoun] could burrow [PAWN_possessive] way through the ground as easily as one breathes, [PAWN_pronoun] longed for an escape from [PAWN_possessive] dreary subterranean existance. -->
+	<Ratkin_Miner.baseDescription>[PAWN_nameDef]成为了一名挖掘土地的矿工。[PAWN_pronoun]虽然对挖掘工作很在行，但还是想摆脱这个狭窄而枯燥的洞穴。</Ratkin_Miner.baseDescription>
+
+
+	<!-- EN: Ratkin hunter -->
+	<Ratkin_Hunter.title>鼠族野兽猎人</Ratkin_Hunter.title>
+	
+	<!-- EN: Hunter -->
+	<Ratkin_Hunter.titleShort>野兽猎人</Ratkin_Hunter.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] is a hunter of beasts and other wildlife. Unlike other Ratkins, [PAWN_pronoun] has excellent eyesight, allowing [PAWN_objective] to easily pick out the most distant and elusive of prey. -->
+	<Ratkin_Hunter.baseDescription>[PAWN_nameDef]是一个猎杀野兽的猎人。[PAWN_pronoun]拥有优秀的动态视力，即便是远处的猎物一样看得清。在视力方面远超其他的鼠族同胞。</Ratkin_Hunter.baseDescription>
+
+
+	<!-- EN: Ratkin shepherd -->
+	<Ratkin_Shepherd.title>鼠族牧民</Ratkin_Shepherd.title>
+	
+	<!-- EN: Shepherd -->
+	<Ratkin_Shepherd.titleShort>牧民</Ratkin_Shepherd.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] once owned a farm filled with many livestock animals, but lost everything after the wreckage of a crashed starship poisoned [PAWN_possessive] pastures. -->
+	<Ratkin_Shepherd.baseDescription>[PAWN_nameDef]经营过一个牧场。[PAWN_pronoun]拥有过很多的牲畜，但是毒飞船的出现摧毁了这一切。</Ratkin_Shepherd.baseDescription>
+
+
+	<!-- EN: Ratkin citizen -->
+	<Ratkin_Civil.title>鼠族公民</Ratkin_Civil.title>
+	
+	<!-- EN: Citizen -->
+	<Ratkin_Civil.titleShort>公民</Ratkin_Civil.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] is a citizen of the Ratkin Kingdom, resigned to a life of manual labor and catering to the whims of [PAWN_possessive] king. -->
+	<Ratkin_Civil.baseDescription>[PAWN_nameDef]是鼠族王国的公民。[PAWN_pronoun]的身份会使其成为平日里国王消遣的一部分。</Ratkin_Civil.baseDescription>
+
+
+	<!-- EN: Ratkin noble -->
+	<Ratkin_Noble.title>鼠族贵族</Ratkin_Noble.title>
+	
+	<!-- EN: Noble -->
+	<Ratkin_Noble.titleShort>贵族</Ratkin_Noble.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] was once a member of nobility in the Ratkin Kingdom, until [PAWN_pronoun] was exiled due to political machinations and court intrigue.\n\n[PAWN_pronoun] now spends [PAWN_possessive] days preparing for the right opportunity to make [PAWN_possessive] triumphant return. -->
+	<Ratkin_Noble.baseDescription>[PAWN_nameDef]是鼠族王国的贵族。因政治斗争而遭到流放的[PAWN_pronoun]已经准备好卷土重来了。</Ratkin_Noble.baseDescription>
+	
+	
+	<!-- EN: Ratkin city merchant -->
+	<Ratkin_CityMerchant.title>鼠族城镇商人</Ratkin_CityMerchant.title>
+	
+	<!-- EN: City Merchant -->
+	<Ratkin_CityMerchant.titleShort>城镇商人</Ratkin_CityMerchant.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] is a merchant plying [PAWN_possessive] trade in the cities. [PAWN_possessive]  excellent dexterity allowed [PAWN_objective] to craft intricate items, which [PAWN_pronoun] then often sells for a tidy profit. -->
+	<Ratkin_CityMerchant.baseDescription>[PAWN_nameDef]是个在城市里交易的商人。[PAWN_pronoun]心灵手巧，将很多自己的手工制品卖到市场上。</Ratkin_CityMerchant.baseDescription>
+
+
+	<!-- EN: Ratkin librarian -->
+	<Ratkin_Librarian.title>鼠族图书管理员</Ratkin_Librarian.title>
+	
+	<!-- EN: Librarian -->
+	<Ratkin_Librarian.titleShort>图书管理员</Ratkin_Librarian.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] is a librarian knowledgable in many fields of academic study, but prolonged exposure to books have caused all [PAWN_possessive] other skills to regress. -->
+	<Ratkin_Librarian.baseDescription>[PAWN_nameDef]是一个图书管理员。[PAWN_pronoun]具备很多的学术知识，但似乎与书本相处的太久，其他的技能都荒废了。</Ratkin_Librarian.baseDescription>
+
+
+	<!-- EN: Ratkin Guardener -->
+	<Ratkin_Guardener.title>鼠族庄园守卫</Ratkin_Guardener.title>
+	
+	<!-- EN: Guardener -->
+	<Ratkin_Guardener.titleShort>庄园守卫</Ratkin_Guardener.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] was a Senior Guardener, responsible for tending to the Ratkin Kingdom's gardens and defending them from enemies. However, [PAWN_pronoun] was exiled after deserting [PAWN_possessive] post during the Kingdom's greatest hour of need.\n\n[PAWN_nameDef] now seeks a way to return to [PAWN_possessive] homeland. -->
+	<Ratkin_Guardener.baseDescription>[PAWN_nameDef]是一名高级庄园守卫者。但在[PAWN_pronoun]值班期间擅自离开了自己的岗位而遭到流放。现在[PAWN_pronoun]希望找到能够重归王国的办法。</Ratkin_Guardener.baseDescription>
+	
+	
+	<!-- EN: Ratkin Guardener -->
+	<Ratkin_GuardenerB.title>鼠族庄园守卫</Ratkin_GuardenerB.title>
+	
+	<!-- EN: Guardener -->
+	<Ratkin_GuardenerB.titleShort>庄园守卫</Ratkin_GuardenerB.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] was a Guardener, responsible for tending to the Ratkin Kingdom's gardens and defending them from enemies.\n\n[PAWN_pronoun] fought in the Battle of Whitefur's Keep, where [PAWN_pronoun] was part of the successful counterattack that decisively defeated invaders from the Grimalkin Dominion. -->
+	<Ratkin_GuardenerB.baseDescription>[PAWN_nameDef]是一名庄园守卫者，在白毛城战役中击败了入侵的猫族帝国军队，立下赫赫战功。</Ratkin_GuardenerB.baseDescription>
+
+
+	<!-- EN: Ratkin knight -->
+	<Ratkin_Knight.title>鼠族骑士</Ratkin_Knight.title>
+	
+	<!-- EN: Knight -->
+	<Ratkin_Knight.titleShort>骑士</Ratkin_Knight.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] is a knight of the Ratkin Kingdom, serving as bastions of defense against the Kingdom's many enemies. -->
+	<Ratkin_Knight.baseDescription>[PAWN_nameDef]是鼠族王国的一位骑士。这些强大战士是王国的中流砥柱。</Ratkin_Knight.baseDescription>
+	
+	
+	<!-- EN: Ratkin knight commander -->
+	<Ratkin_KnightCommander.title>鼠族骑士长</Ratkin_KnightCommander.title>
+	
+	<!-- EN: Commander -->
+	<Ratkin_KnightCommander.titleShort>骑士长</Ratkin_KnightCommander.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] was appointed as the Commander of the Order of Knights of the Ratkin Kingdom.\n\nAccording to tradition, [PAWN_possessive] successor will be chosen from among the knights belonging to the same hometown as [PAWN_objective]. -->
+	<Ratkin_KnightCommander.baseDescription>[PAWN_nameDef]是一位被选中的鼠族王国的骑士。根据骑士传统，骑士长位置的继承人会从来自乡村的骑士成员中选出。</Ratkin_KnightCommander.baseDescription>
+
+
+	<!-- EN: Ratkin teacher -->
+	<Ratkin_Teacher.title>鼠族乡村教师</Ratkin_Teacher.title>
+	
+	<!-- EN: Teacher -->
+	<Ratkin_Teacher.titleShort>乡村教师</Ratkin_Teacher.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] was a teacher in a rural village.\n\nAfter the last of the children departed for the cities, [PAWN_pronoun] too left to find a new purpose in life. -->
+	<Ratkin_Teacher.baseDescription>[PAWN_nameDef]是一位教授孩子知识的老师。但是[PAWN_pronoun]所在的村子里，孩子们都已经离开了。无事可做的[PAWN_pronoun]不得不离开去寻找新的生活。</Ratkin_Teacher.baseDescription>
+
+
+	<!-- EN: Ratkin blacksmith -->
+	<Ratkin_Blacksmith.title>鼠族铁匠</Ratkin_Blacksmith.title>
+	
+	<!-- EN: Blacksmith -->
+	<Ratkin_Blacksmith.titleShort>铁匠</Ratkin_Blacksmith.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] is a blacksmith, who toiled daily to forge new weapons and tools. [PAWN_pronoun] often set out on adventures in search of better materials. -->
+	<Ratkin_Blacksmith.baseDescription>[PAWN_nameDef]是一名制造武器和工具的铁匠。[PAWN_pronoun]为寻找更加强大的素材而出门冒险。</Ratkin_Blacksmith.baseDescription>
+
+
+	<!-- EN: Ratkin thief -->
+	<Ratkin_Thief.title>鼠族盗贼</Ratkin_Thief.title>
+	
+	<!-- EN: Thief -->
+	<Ratkin_Thief.titleShort>盗贼</Ratkin_Thief.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] stole to survive, and frequently moved between towns whenever [PAWN_possessive] identity was exposed. -->
+	<Ratkin_Thief.baseDescription>[PAWN_nameDef]是一个以盗窃为生的窃贼。[PAWN_pronoun]所在的城市里被暴露的真容而遭到通缉，从而逃窜到了另一个城市。</Ratkin_Thief.baseDescription>
+
+
+	<!-- EN: Ratkin ambassador -->
+	<Ratkin_Ambassador.title>鼠族大使</Ratkin_Ambassador.title>
+	
+	<!-- EN: Ambassador -->
+	<Ratkin_Ambassador.titleShort>大使</Ratkin_Ambassador.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] served as a diplomat for the Ratkin Kingdom.\n\nAfter being exiled due to a diplomatic incident, [PAWN_pronoun] now seeks asylum far from home. -->
+	<Ratkin_Ambassador.baseDescription>[PAWN_nameDef]是鼠族王国的外交官。由于外交问题，[PAWN_pronoun]暂时被流放为寻求庇护流民。</Ratkin_Ambassador.baseDescription>
+	
+	
+	<!-- EN: Ratkin soldier -->
+	<Ratkin_Soldier.title>鼠族士兵</Ratkin_Soldier.title>
+	
+	<!-- EN: Soldier -->
+	<Ratkin_Soldier.titleShort>士兵</Ratkin_Soldier.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] served as a soldier for a human city, and was trained by human instructors to fight other Ratkin factions using a variety of combat techniques.\n\nHowever, after [PAWN_pronoun] was abandoned during a mission, [PAWN_pronoun] set out to find [PAWN_possessive] own path in life. -->
+	<Ratkin_Soldier.baseDescription>[PAWN_nameDef]是一名人类城市的士兵。[PAWN_pronoun]曾经接受过人类训练的士兵，学会了与不同的鼠族作战技巧。但在一次任务期间被抛弃后毅然决定寻找属于自己的新生活。</Ratkin_Soldier.baseDescription>
+
+
+	<!-- EN: Ratkin explorer -->
+	<Ratkin_Explorer.title>鼠族探险家</Ratkin_Explorer.title>
+	
+	<!-- EN: Explorer -->
+	<Ratkin_Explorer.titleShort>探险家</Ratkin_Explorer.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] is filled with curiousity of the world around [PAWN_possessive], and is determined to explore every last nook and cranny of the planet. -->
+	<Ratkin_Explorer.baseDescription>[PAWN_nameDef]对世界充满好奇。[PAWN_pronoun]对这个星球一切神秘的地方都充满着探索欲。</Ratkin_Explorer.baseDescription>
+
+
+	<!-- EN: Ratkin chef -->
+	<Ratkin_Chef.title>鼠族厨师</Ratkin_Chef.title>
+	
+	<!-- EN: Chef -->
+	<Ratkin_Chef.titleShort>厨师</Ratkin_Chef.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] is a chef who desires to cook the most decadent delicacies of the world, and so often set out on adventures in search of the best nuts. -->
+	<Ratkin_Chef.baseDescription>[PAWN_nameDef]是一位想要烹饪出世界上所有美食的厨师。[PAWN_pronoun]为寻找最完美的坚果而出门冒险。</Ratkin_Chef.baseDescription>
+
+
+	<!-- EN: Ratkin handmaiden -->
+	<Ratkin_HandMaiden.title>鼠族侍女</Ratkin_HandMaiden.title>
+	
+	<!-- EN: Handmaiden -->
+	<Ratkin_HandMaiden.titleShort>侍女</Ratkin_HandMaiden.titleShort>
+	
+	<!-- EN: As a maid to a noble family, [PAWN_nameDef] often ran small errands, as well as serving as [PAWN_possessive] masters' eyes and ears. -->
+	<Ratkin_HandMaiden.baseDescription>[PAWN_nameDef]作为侍奉贵族的侍女，必须从每一个简单琐碎的小事开始。[PAWN_pronoun]经常也为主人打听消息。</Ratkin_HandMaiden.baseDescription>
+
+
+	<!-- EN： Ratkin sharpshooter -->
+	<Ratkin_Shooter.title>鼠族射手</Ratkin_Shooter.title>
+	
+	<!-- EN: Sharpshooter -->
+	<Ratkin_Shooter.titleShort>射手</Ratkin_Shooter.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] possessed excellent eyesight amongst [PAWN_possessive] fellow Ratkins, and after [PAWN_pronoun] volunteered for the military, [PAWN_pronoun] became one of their best sharpshooters. -->
+	<Ratkin_Shooter.baseDescription>[PAWN_nameDef]在鼠族里有着良好的视力。[PAWN_pronoun]因有优秀的视力在入伍后成为了最佳射手。</Ratkin_Shooter.baseDescription>
+	
+	
+	<!-- EN: Ratkin doctor -->
+	<Ratkin_Doctor.title>鼠族医生</Ratkin_Doctor.title>
+	
+	<!-- EN: Doctor -->
+	<Ratkin_Doctor.titleShort>御医</Ratkin_Doctor.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] was a doctor in the Ratkin Kingdom, but was exiled after [PAWN_pronoun] was unable to save the life of a noble.\n\nTo atone for [PAWN_possessive] failure, [PAWN_pronoun] now wanders this desolate RimWorld while continuing to sharpen [PAWN_possessive] medical skills by rendering aid wherever [PAWN_pronoun] may be needed. -->
+	<Ratkin_Doctor.baseDescription>[PAWN_nameDef]是王国的御医，但因没能治好贵族而被流放到这个边缘世界。[PAWN_pronoun]为了弥补自己犯下的错，而来到这个荒蛮的世界磨练自己的医术。</Ratkin_Doctor.baseDescription>
+
+
+	<!-- EN: Ratkin army surgeon -->
+	<Ratkin_ArmySurgeon.title>鼠族军医</Ratkin_ArmySurgeon.title>
+	
+	<!-- EN: Army surgeon -->
+	<Ratkin_ArmySurgeon.titleShort>军医</Ratkin_ArmySurgeon.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] was a battlefield surgeon who, out of a strong sense of duty, would fight to save the lives of [PAWN_possessive] patients - regardless of how slim the odds may be.\n\nMore often than not, however, [PAWN_possessive] efforts were in vain. -->
+	<Ratkin_ArmySurgeon.baseDescription>[PAWN_nameDef]是一名活跃在战斗一线的医生。因为有着强烈的责任感，哪怕是渺茫的机会，对于[PAWN_pronoun]来说都会义无反顾的去救治。但很多时候终究没能改变得了什么。</Ratkin_ArmySurgeon.baseDescription>
+
+
+	<!-- EN: Ratkin construction worker -->
+	<Ratkin_ConstructionWorker.title>鼠族建筑工</Ratkin_ConstructionWorker.title>
+	
+	<!-- EN: Construction worker -->
+	<Ratkin_ConstructionWorker.titleShort>建筑工人</Ratkin_ConstructionWorker.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] is a construction worker, specializing in underground tunnels. -->
+	<Ratkin_ConstructionWorker.baseDescription>[PAWN_nameDef]是一名建筑工人。[PAWN_pronoun]一直致力于建造地下隧道。</Ratkin_ConstructionWorker.baseDescription>
+
+
+	<!-- EN: Ratkin tycoon -->
+	<Ratkin_Rich.title>鼠族富豪</Ratkin_Rich.title>
+	
+	<!-- EN: Tycoon -->
+	<Ratkin_Rich.titleShort>富豪</Ratkin_Rich.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] likes to think of [PAWN_objective]self as a tycoon, but in reality [PAWN_pronoun] was little more than a con artist, whose real talents were in swindling others of their hard-earned fortunes.\n\n[PAWN_possessive] ambition proved to be [PAWN_possessive] downfall, however, after [PAWN_possessive] latest con was exposed, forcing [PAWN_objective] to go on the run. -->
+	<Ratkin_Rich.baseDescription>[PAWN_nameDef]擅长欺诈他人的钱财。但一次[PAWN_pronoun]的野心计划被他人传出去后，选择了逃之夭夭。</Ratkin_Rich.baseDescription>
+	
+	
+	<!-- EN: Ratkin sister -->
+	<Ratkin_Sister.title>鼠族修女</Ratkin_Sister.title>
+	
+	<!-- EN: Sister -->
+	<Ratkin_Sister.titleShort>修女</Ratkin_Sister.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] is a sister responsible for ancestral rites and religious affairs in Ratkin society.\n\nWhile travelling to participate in a religious rite far from home, [PAWN_pronoun] was ambushed and barely managed to escape with [PAWN_possessive] life. -->
+	<Ratkin_Sister.baseDescription>[PAWN_nameDef]是一位在鼠族社会里从事祭祀和宗教事务的修女。[PAWN_pronoun]再一次出席宗教活动中遭到了袭击而侥幸逃生。</Ratkin_Sister.baseDescription>
+
+
+	<!-- EN: Ratkin butcher -->
+	<Ratkin_Butcher.title>鼠族屠夫</Ratkin_Butcher.title>
+	
+	<!-- EN: Butcher -->
+	<Ratkin_Butcher.titleShort>屠夫</Ratkin_Butcher.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] specializes in butchering animals. -->
+	<Ratkin_Butcher.baseDescription>[PAWN_nameDef]是个擅长屠宰动物的家伙。</Ratkin_Butcher.baseDescription>
+
+
+	<!-- EN: Ratkin city maid -->
+	<Ratkin_CityMaid.title>鼠族女仆</Ratkin_CityMaid.title>
+	
+	<!-- EN: City maid -->
+	<Ratkin_CityMaid.titleShort>女仆</Ratkin_CityMaid.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] worked as a urban housekeeper.\n\nHuman owners typically only hire the most attractive Ratkins as domestic helpers, and [PAWN_pronoun] was no exception. -->
+	<Ratkin_CityMaid.baseDescription>[PAWN_nameDef]是个在城市里做家政服务的助理。人类只选择最漂亮的鼠族人做家务工作，而其中一只就是[PAWN_pronoun]。</Ratkin_CityMaid.baseDescription>
+
+
+	<!-- EN: Ratkin idol -->
+	<Ratkin_Idol.title>鼠族偶像</Ratkin_Idol.title>
+	
+	<!-- EN: Idol -->
+	<Ratkin_Idol.titleShort>偶像</Ratkin_Idol.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] was a professional idol who entertained the masses.\n\nHowever, after a serious car accident, [PAWN_pronoun] awoke as an amnesiac. -->
+	<Ratkin_Idol.baseDescription>[PAWN_nameDef]是一名职业偶像。不幸的是，[PAWN_pronoun]在一场车祸后失去了记忆。</Ratkin_Idol.baseDescription>
+
+
+	<!-- EN: Ratkin murderer -->
+	<Ratkin_Murderer.title>鼠族杀手</Ratkin_Murderer.title>
+	
+	<!-- EN: Murderer -->
+	<Ratkin_Murderer.titleShort>杀手</Ratkin_Murderer.titleShort>
+	
+	<!-- EN: Insane and crazed with bloodlust, [PAWN_nameDef] often took advantage of [PAWN_possessive] small but nimble body to pounce on unwitting victims, before quickly fleeing from the scene of [PAWN_possessive] latest crime. -->
+	<Ratkin_Murderer.baseDescription>[PAWN_nameDef]是一只疯狂的老鼠，沉迷于杀戮的快感。[PAWN_pronoun]能利用自己娇小的身躯，迅速从犯罪现场逃离。</Ratkin_Murderer.baseDescription>
+
+
+	<!-- EN: Ratkin research assistant -->
+	<Ratkin_Assistant.title>鼠族研究助理</Ratkin_Assistant.title>
+	
+	<!-- EN: Assistant -->
+	<Ratkin_Assistant.titleShort>助理</Ratkin_Assistant.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] assisted other scientists in research projects of varying scale and complexity, slowly cultivating the knowledge and skills needed to become a researcher in [PAWN_possessive] own right. -->
+	<Ratkin_Assistant.baseDescription>[PAWN_nameDef]是一名研究员，曾做过各种各样的研究工作，从小型研究到大型研究。[PAWN_pronoun]是通过从助理人员慢慢成长为正式的研究员的。</Ratkin_Assistant.baseDescription>
+	
+	
+	<!-- EN: Ratkin scientist -->
+	<Ratkin_Scientist.title>鼠族科学家</Ratkin_Scientist.title>
+	
+	<!-- EN: Scientist -->
+	<Ratkin_Scientist.titleShort>科学家</Ratkin_Scientist.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] is a scientist who worked closely alongside human researchers.\n\n[PAWN_possessive] intensive devotion to science came at the detriment of [PAWN_possessive] health, including deteriorating eyesight. -->
+	<Ratkin_Scientist.baseDescription>[PAWN_nameDef]是一位钻研人类科技的科学家。[PAWN_pronoun]一直专注于研究方面，以至于身体越来越虚弱，眼睛近视度越来越严重。</Ratkin_Scientist.baseDescription>
+
+
+	<!-- EN: Ratkin engineer -->
+	<Ratkin_Engineer.title>鼠族工程师</Ratkin_Engineer.title>
+	
+	<!-- EN: Engineer -->
+	<Ratkin_Engineer.titleShort>工程师</Ratkin_Engineer.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] is an engineer specializing precision components.\n\n[PAWN_pronoun] used [PAWN_possessive] talents to construct [PAWN_possessive] own Mechanoid, but was almost killed by [PAWN_possessive] own creation. -->
+	<Ratkin_Engineer.baseDescription>[PAWN_nameDef]是一名工程师，负责制造精密零件。[PAWN_pronoun]利用自己的才能创造出机器人，但却差点丧命于自己的所造之物。</Ratkin_Engineer.baseDescription>
+
+
+	<!-- EN: Ratkin agriculturist -->
+	<Ratkin_Agriculturist.title>鼠族农业学家</Ratkin_Agriculturist.title>
+	
+	<!-- EN: Agriculturist -->
+	<Ratkin_Agriculturist.titleShort>农业学家</Ratkin_Agriculturist.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] is a agronomist, who ventured into the cities to study and broaden [PAWN_possessive] knowledge in the field. [PAWN_pronoun] hopes to one day use [PAWN_possessive] expertise to revolutionize the farms in [PAWN_possessive] hometown. -->
+	<Ratkin_Agriculturist.baseDescription>[PAWN_nameDef]是一位农业学家，为了扩展自己的眼界学识而选择漂泊异乡。[PAWN_pronoun]的梦想有一天回到自己的家乡发展高水平的农业。</Ratkin_Agriculturist.baseDescription>
+
+
+	<!-- EN: Ratkin hitman -->
+	<Ratkin_RatkinHunter.title>鼠族反乱猎人</Ratkin_RatkinHunter.title>
+	
+	<!-- EN: Ratkin hitman -->
+	<Ratkin_RatkinHunter.titleShort>反乱猎人</Ratkin_RatkinHunter.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] is a contract killer, tasked with hunting down other Ratkins that have gone insane with bloodlust.\n\nHowever, after discovering that [PAWN_possessive] latest target was a young, helpless refugee, [PAWN_pronoun] began to have doubts about [PAWN_possessive] profession. -->
+	<Ratkin_RatkinHunter.baseDescription>[PAWN_nameDef]是一名负责猎杀失控鼠族的猎人。直到有一天，[PAWN_pronoun]遇到了一个年轻的逃亡者后，开始对自己的工作产生了怀疑。</Ratkin_RatkinHunter.baseDescription>
+
+
+	<!-- EN: Ratkin test subject -->
+	<Ratkin_Subject.title>鼠族实验体</Ratkin_Subject.title>
+	
+	<!-- EN: Test subject -->
+	<Ratkin_Subject.titleShort>实验体</Ratkin_Subject.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] was used as a biological test specimen for various experiments, which resulted in a number of physical enhancements.\n\nAfter a laboratory accident, [PAWN_pronoun] barely managed to escape. -->
+	<Ratkin_Subject.baseDescription>[PAWN_nameDef]是一个被当成生体实验的实验体。[PAWN_pronoun]在经受过各种实验后得到了加强，但再一次实验事故后，逃了出去。</Ratkin_Subject.baseDescription>
+	
+	
+	<!-- EN: Ratkin seamstress -->
+	<Ratkin_Seamstress.title>鼠族裁缝师</Ratkin_Seamstress.title>
+	
+	<!-- EN: Seamstress -->
+	<Ratkin_Seamstress.titleShort>裁缝师</Ratkin_Seamstress.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] became good at making a variety of clothes, ranging from simple workers' dresses to elaborate formal outfits. Many Ratkin nobles often travelled all the way to [PAWN_possessive] humble workshop to commission apparel for special occasions.\n\n[PAWN_possessive] own apprentice later went on to become a successful seamstress in her own right. -->
+	<Ratkin_Seamstress.baseDescription>[PAWN_nameDef]擅长于制作各种衣服，从简单的工作服到精致的正式服装。许多鼠族贵族经常特地来[PAWN_pronoun]简陋的小作坊，请[PAWN_pronoun]定制在特殊场合穿着的服装。[PAWN_pronoun]自己曾收留的学徒，也后来成为一名优秀的裁缝师。</Ratkin_Seamstress.baseDescription>
+
+
+	<!-- EN: Ratkin vagabond -->
+	<Ratkin_Vagabond.title>鼠族流浪者</Ratkin_Vagabond.title>
+	
+	<!-- EN: Vagabond -->
+	<Ratkin_Vagabond.titleShort>流浪者</Ratkin_Vagabond.titleShort>
+	
+	<!-- EN: [PAWN_nameDef] led a solitary life of aimless wandering.\n\nWhile [PAWN_possessive] past is shrouded in mystery, [PAWN_possessive] myriad experiences have made [PAWN_objective] wise to the ways of the world and proficient in a variety of practical skills. -->
+	<Ratkin_Vagabond.baseDescription>[PAWN_nameDef]过着孤独的生活。不知道[PAWN_pronoun]的确切过去，但通过游历获得的智能十分值得信赖。</Ratkin_Vagabond.baseDescription>
+
+
+	<!-- EN: Ratkin demoman -->
+	<Ratkin_Demoman.title>鼠族爆破兵</Ratkin_Demoman.title>
+	
+	<!-- EN: Demoman -->
+	<Ratkin_Demoman.titleShort>爆破兵</Ratkin_Demoman.titleShort>
+	
+	<!-- EN: Unlike other Ratkins, [PAWN_nameDef] has an unhealthy obsession with explosives and pyrotechnics.\n\nDangerous individuals like [PAWN_objective] are separated from the rest of Ratkin society, and conscripted into commando squads tasked with the most dangerous of missions. -->
+	<Ratkin_Demoman.baseDescription>[PAWN_nameDef]痴迷于炸药，与其他的鼠族同胞不同。鼠族社会通常会把像[PAWN_pronoun]这样的狂人从社会隔离后，并征召[PAWN_pronoun]们入伍运行最危险任务的突击队。</Ratkin_Demoman.baseDescription>
+
+</LanguageData>

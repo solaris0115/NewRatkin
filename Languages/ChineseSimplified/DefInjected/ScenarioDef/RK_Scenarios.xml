@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- EN: Ratkin Colony -->
+	<RK_Scenario.label>鼠族殖民地</RK_Scenario.label>
+	
+	<!-- EN: The four of you had come from different walks of life.\n\nSome left their hometowns in the countryside in search of adventure. Others were exiled from the Kingdom for various misdemeanors. And others still were lost souls, wandering aimlessly in search of a purpose in life.\n\nWhatever your stories were and whatever dreams you once held, none of that matters anymore - for fate and happenstance have brought everyone together to build a new beginning. -->
+	<RK_Scenario.description>你们四个人来自各行各业。\n\n有些人是因为寻找冒险而离开家乡。其他人因各种轻罪而被驱逐出王国。还有其他人仍然是迷失的灵魂，漫无目的地徘徊。\n\n无论你们带着什么故事，曾经做过什么梦，这一切都不再重要了 - 因为大家有缘千里来相会，打开一生的新篇章。</RK_Scenario.description>
+	
+	<!-- EN: Ratkin colony -->
+	<RK_Scenario.scenario.name>小鼠殖民地</RK_Scenario.scenario.name>
+	
+	<!-- EN: The four of you had come from different walks of life.\n\nSome left their hometowns in the countryside in search of adventure. Others were exiled from the Kingdom for various misdemeanors. And others still were lost souls, wandering aimlessly in search of a purpose in life.\n\nWhatever your stories were and whatever dreams you once held, none of that matters anymore - for fate and happenstance have brought everyone together to build a new beginning. -->
+	<RK_Scenario.scenario.description>你们四个人来自各行各业。\n\n有些人是因为寻找冒险而离开家乡。其他人因各种轻罪而被驱逐出王国。还有其他人仍然是迷失的灵魂，漫无目的地徘徊。\n\n无论你们带着什么故事，曾经做过什么梦，这一切都不再重要了 - 因为大家有缘千里来相会，打开一生的新篇章。</RK_Scenario.scenario.description>
+
+	<!-- EN: Four Ratkins start a new chapter in their lives. -->
+	<RK_Scenario.scenario.summary>四名鼠族打开他们一生中的新篇章。</RK_Scenario.scenario.summary>
+
+</LanguageData>

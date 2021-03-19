@@ -1,218 +1,402 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <!-- 시민 -->
-
-  <RatkinColonist.label>鼠族殖民者</RatkinColonist.label>
-  <RatkinColonist.labelPlural>鼠族殖民者</RatkinColonist.labelPlural>
-  <RatkinColonist.labelMale>男性 鼠族殖民者</RatkinColonist.labelMale>
-  <RatkinColonist.labelMalePlural>男性 鼠族殖民者</RatkinColonist.labelMalePlural>
-  <RatkinColonist.labelFemale>女性 鼠族殖民者</RatkinColonist.labelFemale>
-  <RatkinColonist.labelFemalePlural>女性 鼠族殖民者</RatkinColonist.labelFemalePlural>
-
-
-  <!-- 귀족 -->
-
-  <RatkinNoble.label>鼠族貴族</RatkinNoble.label>
-  <RatkinNoble.labelPlural>鼠族貴族</RatkinNoble.labelPlural>
-  <RatkinNoble.labelMale>男性 鼠族貴族</RatkinNoble.labelMale>
-  <RatkinNoble.labelMalePlural>男性 鼠族貴族</RatkinNoble.labelMalePlural>
-  <RatkinNoble.labelFemale>女性 鼠族貴族</RatkinNoble.labelFemale>
-  <RatkinNoble.labelFemalePlural>女性 鼠族貴族</RatkinNoble.labelFemalePlural>
-
-
-  <!-- 하인 -->
-
-  <RatkinServant.label>鼠族侍者</RatkinServant.label>
-  <RatkinServant.labelPlural>鼠族侍者</RatkinServant.labelPlural>
-  <RatkinServant.labelMale>男性 鼠族侍者</RatkinServant.labelMale>
-  <RatkinServant.labelMalePlural>男性 鼠族侍者</RatkinServant.labelMalePlural>
-  <RatkinServant.labelFemale>女性 鼠族侍者</RatkinServant.labelFemale>
-  <RatkinServant.labelFemalePlural>女性 鼠族侍者</RatkinServant.labelFemalePlural>
+	<!-- EN: ratkin colonist -->
+	<RatkinColonist.label>鼠族殖民者</RatkinColonist.label>
+	
+	<!-- EN: ratkin colonists -->
+	<RatkinColonist.labelPlural>鼠族殖民者</RatkinColonist.labelPlural>
+	
+	<!-- EN: male ratkin colonist -->
+	<RatkinColonist.labelMale>男性 鼠族殖民者</RatkinColonist.labelMale>
+	
+	<!-- EN: male ratkin colonists -->
+	<RatkinColonist.labelMalePlural>男性 鼠族殖民者</RatkinColonist.labelMalePlural>
+	
+	<!-- EN: female ratkin colonist -->
+	<RatkinColonist.labelFemale>女性 鼠族殖民者</RatkinColonist.labelFemale>
+	
+	<!-- EN: female ratkin colonists -->
+	<RatkinColonist.labelFemalePlural>女性 鼠族殖民者</RatkinColonist.labelFemalePlural>
 
 
-  <!-- 랫킨 사제 -->
-
-  <RatkinPriest.label>鼠族牧師</RatkinPriest.label>
-  <RatkinPriest.labelPlural>鼠族牧師</RatkinPriest.labelPlural>
-  <RatkinPriest.labelMale>男性 鼠族牧師</RatkinPriest.labelMale>
-  <RatkinPriest.labelMalePlural>男性 鼠族牧師</RatkinPriest.labelMalePlural>
-  <RatkinPriest.labelFemale>女性 鼠族牧師</RatkinPriest.labelFemale>
-  <RatkinPriest.labelFemalePlural>女性 鼠族牧師</RatkinPriest.labelFemalePlural>
-
-
-  <!-- 랫킨 상단 -->
-
-  <RatkinMerchant.label>鼠族商人</RatkinMerchant.label>
-  <RatkinMerchant.labelPlural>鼠族商人</RatkinMerchant.labelPlural>
-  <RatkinMerchant.labelMale>男性 鼠族商人</RatkinMerchant.labelMale>
-  <RatkinMerchant.labelMalePlural>男性 鼠族商人</RatkinMerchant.labelMalePlural>
-  <RatkinMerchant.labelFemale>女性 鼠族商人</RatkinMerchant.labelFemale>
-  <RatkinMerchant.labelFemalePlural>女性 鼠族商人</RatkinMerchant.labelFemalePlural>
-
-
-  <!-- 전투원 -->
-
-  <RatkinCombatant.label>鼠族戰士</RatkinCombatant.label>
-  <RatkinCombatant.labelPlural>鼠族戰士</RatkinCombatant.labelPlural>
-  <RatkinCombatant.labelMale>男性 鼠族戰士</RatkinCombatant.labelMale>
-  <RatkinCombatant.labelMalePlural>男性 鼠族戰士</RatkinCombatant.labelMalePlural>
-  <RatkinCombatant.labelFemale>女性 鼠族戰士</RatkinCombatant.labelFemale>
-  <RatkinCombatant.labelFemalePlural>女性 鼠族戰士</RatkinCombatant.labelFemalePlural>
+	<!-- EN: ratkin noble -->
+	<RatkinNoble.label>鼠族貴族</RatkinNoble.label>
+	
+	<!-- EN: ratkin nobles -->
+	<RatkinNoble.labelPlural>鼠族貴族</RatkinNoble.labelPlural>
+	
+	<!-- EN: ratkin nobleman -->
+	<RatkinNoble.labelMale>鼠族貴族</RatkinNoble.labelMale>
+	
+	<!-- EN: ratkin noblemen -->
+	<RatkinNoble.labelMalePlural>鼠族貴族</RatkinNoble.labelMalePlural>
+	
+	<!-- EN: ratkin noblewoman -->
+	<RatkinNoble.labelFemale>鼠族貴婦</RatkinNoble.labelFemale>
+	
+	<!-- EN: ratkin noblewomen -->
+	<RatkinNoble.labelFemalePlural>鼠族貴婦</RatkinNoble.labelFemalePlural>
 
 
-  <!-- 랫킨 선붕대, 경갑과 경무장 -->
-
-  <RatkinVanguard.label>鼠族前鋒守衛</RatkinVanguard.label>
-  <RatkinVanguard.labelPlural>鼠族前鋒守衛</RatkinVanguard.labelPlural>
-  <RatkinVanguard.labelMale>男性 鼠族前鋒守衛</RatkinVanguard.labelMale>
-  <RatkinVanguard.labelMalePlural>男性 鼠族前鋒守衛</RatkinVanguard.labelMalePlural>
-  <RatkinVanguard.labelFemale>女性 鼠族前鋒守衛</RatkinVanguard.labelFemale>
-  <RatkinVanguard.labelFemalePlural>女性 鼠族前鋒守衛</RatkinVanguard.labelFemalePlural>
-
-
-  <!-- 랫킨 방패병 -->
-
-  <RatkinDefender.label>鼠族防衛者</RatkinDefender.label>
-  <RatkinDefender.labelPlural>鼠族防衛者</RatkinDefender.labelPlural>
-  <RatkinDefender.labelMale>男性 鼠族防衛者</RatkinDefender.labelMale>
-  <RatkinDefender.labelMalePlural>男性 鼠族防衛者</RatkinDefender.labelMalePlural>
-  <RatkinDefender.labelFemale>女性 鼠族防衛者</RatkinDefender.labelFemale>
-  <RatkinDefender.labelFemalePlural>女性 鼠族防衛者</RatkinDefender.labelFemalePlural>
-
-
-  <!-- 군인 -->
-
-  <RatkinSoldier.label>鼠族士兵</RatkinSoldier.label>
-  <RatkinSoldier.labelPlural>鼠族士兵</RatkinSoldier.labelPlural>
-  <RatkinSoldier.labelMale>男性 鼠族士兵</RatkinSoldier.labelMale>
-  <RatkinSoldier.labelMalePlural>男性 鼠族士兵</RatkinSoldier.labelMalePlural>
-  <RatkinSoldier.labelFemale>女性 鼠族士兵</RatkinSoldier.labelFemale>
-  <RatkinSoldier.labelFemalePlural>女性 鼠族士兵</RatkinSoldier.labelFemalePlural>
+	<!-- EN: ratkin servant -->
+	<RatkinServant.label>鼠族僕人</RatkinServant.label>
+	
+	<!-- EN: ratkin servants -->
+	<RatkinServant.labelPlural>鼠族僕人</RatkinServant.labelPlural>
+	
+	<!-- EN: male ratkin servant -->
+	<RatkinServant.labelMale>鼠族僕人</RatkinServant.labelMale>
+	
+	<!-- EN: male ratkin servants -->
+	<RatkinServant.labelMalePlural>鼠族僕人</RatkinServant.labelMalePlural>
+	
+	<!-- EN: female ratkin servant -->
+	<RatkinServant.labelFemale>鼠族僕女</RatkinServant.labelFemale>
+	
+	<!-- EN: female ratkin servants -->
+	<RatkinServant.labelFemalePlural>鼠族僕女</RatkinServant.labelFemalePlural>
 
 
-  <!-- 랫킨 정예정원사(근접, 원거리) -->
-
-  <RatkinEliteGuardener.label>鼠族精英守護者</RatkinEliteGuardener.label>
-  <RatkinEliteGuardener.labelPlural>鼠族精英守護者</RatkinEliteGuardener.labelPlural>
-  <RatkinEliteGuardener.labelMale>男性 鼠族精英守護者</RatkinEliteGuardener.labelMale>
-  <RatkinEliteGuardener.labelMalePlural>男性 鼠族精英守護者</RatkinEliteGuardener.labelMalePlural>
-  <RatkinEliteGuardener.labelFemale>女性 鼠族精英守護者</RatkinEliteGuardener.labelFemale>
-  <RatkinEliteGuardener.labelFemalePlural>女性 鼠族精英守護者</RatkinEliteGuardener.labelFemalePlural>
-
-
-  <!-- 랫킨 기사(근접 중보병) -->
-
-  <RatkinKnight.label>鼠族騎士</RatkinKnight.label>
-  <RatkinKnight.labelPlural>鼠族騎士</RatkinKnight.labelPlural>
-  <RatkinKnight.labelMale>男性 鼠族騎士</RatkinKnight.labelMale>
-  <RatkinKnight.labelMalePlural>男性 鼠族騎士</RatkinKnight.labelMalePlural>
-  <RatkinKnight.labelFemale>女性 鼠族騎士</RatkinKnight.labelFemale>
-  <RatkinKnight.labelFemalePlural>女性 鼠族騎士</RatkinKnight.labelFemalePlural>
-
-
-  <!-- 랫킨 정예 방패병(근접 중보병) -->
-
-  <RatkinEliteDefender.label>鼠族菁英防衛者</RatkinEliteDefender.label>
-  <RatkinEliteDefender.labelPlural>鼠族菁英防衛者</RatkinEliteDefender.labelPlural>
-  <RatkinEliteDefender.labelMale>男性 鼠族菁英防衛者</RatkinEliteDefender.labelMale>
-  <RatkinEliteDefender.labelMalePlural>男性 鼠族菁英防衛者</RatkinEliteDefender.labelMalePlural>
-  <RatkinEliteDefender.labelFemale>女性 鼠族菁英防衛者</RatkinEliteDefender.labelFemale>
-  <RatkinEliteDefender.labelFemalePlural>女性 鼠族菁英防衛者</RatkinEliteDefender.labelFemalePlural>
+	<!-- EN: ratkin priest -->
+	<RatkinPriest.label>鼠族牧師</RatkinPriest.label>
+	
+	<!-- EN: ratkin priests -->
+	<RatkinPriest.labelPlural>鼠族牧師</RatkinPriest.labelPlural>
+	
+	<!-- EN: ratkin priest -->
+	<RatkinPriest.labelMale>鼠族牧師</RatkinPriest.labelMale>
+	
+	<!-- EN: ratkin priests -->
+	<RatkinPriest.labelMalePlural>鼠族牧師</RatkinPriest.labelMalePlural>
+	
+	<!-- EN: ratkin priestess -->
+	<RatkinPriest.labelFemale>鼠族女牧師</RatkinPriest.labelFemale>
+	
+	<!-- EN: ratkin priestesses -->
+	<RatkinPriest.labelFemalePlural>鼠族女牧師</RatkinPriest.labelFemalePlural>
 
 
-  <!-- 랫킨 기사 단장 -->
-
-  <RatkinKnightCommander.label>鼠族騎士長</RatkinKnightCommander.label>
-  <RatkinKnightCommander.labelPlural>鼠族騎士長</RatkinKnightCommander.labelPlural>
-  <RatkinKnightCommander.labelMale>男性 鼠族騎士長</RatkinKnightCommander.labelMale>
-  <RatkinKnightCommander.labelMalePlural>男性 鼠族騎士長</RatkinKnightCommander.labelMalePlural>
-  <RatkinKnightCommander.labelFemale>女性 鼠族騎士長</RatkinKnightCommander.labelFemale>
-  <RatkinKnightCommander.labelFemalePlural>女性 鼠族騎士長</RatkinKnightCommander.labelFemalePlural>
-
-
-  <!-- 특수 부대 찍찍이 -->
-
-  <RatkinEliteSoldier.label>鼠族精銳士兵</RatkinEliteSoldier.label>
-  <RatkinEliteSoldier.labelPlural>鼠族精銳士兵</RatkinEliteSoldier.labelPlural>
-  <RatkinEliteSoldier.labelMale>男性 鼠族精銳士兵</RatkinEliteSoldier.labelMale>
-  <RatkinEliteSoldier.labelMalePlural>男性 鼠族精銳士兵</RatkinEliteSoldier.labelMalePlural>
-  <RatkinEliteSoldier.labelFemale>女性 鼠族精銳士兵</RatkinEliteSoldier.labelFemale>
-  <RatkinEliteSoldier.labelFemalePlural>女性 鼠族精銳士兵</RatkinEliteSoldier.labelFemalePlural>
-
-
-  <!-- 찍찍이 데모맨 -->
-
-  <RatkinDemonMan.label>鼠族惡魔</RatkinDemonMan.label>
-  <RatkinDemonMan.labelPlural>鼠族惡魔</RatkinDemonMan.labelPlural>
-  <RatkinDemonMan.labelMale>男性 鼠族惡魔</RatkinDemonMan.labelMale>
-  <RatkinDemonMan.labelMalePlural>男性 鼠族惡魔</RatkinDemonMan.labelMalePlural>
-  <RatkinDemonMan.labelFemale>女性 鼠族惡魔</RatkinDemonMan.labelFemale>
-  <RatkinDemonMan.labelFemalePlural>女性 鼠族惡魔</RatkinDemonMan.labelFemalePlural>
+	<!-- EN: ratkin merchant -->
+	<RatkinMerchant.label>鼠族商人</RatkinMerchant.label>
+	
+	<!-- EN: ratkin merchants -->
+	<RatkinMerchant.labelPlural>鼠族商人</RatkinMerchant.labelPlural>
+	
+	<!-- EN: male ratkin merchant -->
+	<RatkinMerchant.labelMale>鼠族商人</RatkinMerchant.labelMale>
+	
+	<!-- EN: male ratkin merchants -->
+	<RatkinMerchant.labelMalePlural>鼠族商人</RatkinMerchant.labelMalePlural>
+	
+	<!-- EN: female ratkin merchant -->
+	<RatkinMerchant.labelFemale>鼠族女商人</RatkinMerchant.labelFemale>
+	
+	<!-- EN: female ratkin merchants -->
+	<RatkinMerchant.labelFemalePlural>鼠族女商人</RatkinMerchant.labelFemalePlural>
 
 
-  <!-- 곳간털이범 -->
-
-  <RatkinPettyThief.label>鼠族小偷</RatkinPettyThief.label>
-  <RatkinPettyThief.labelPlural>鼠族小偷</RatkinPettyThief.labelPlural>
-  <RatkinPettyThief.labelMale>男性 鼠族小偷</RatkinPettyThief.labelMale>
-  <RatkinPettyThief.labelMalePlural>男性 鼠族小偷</RatkinPettyThief.labelMalePlural>
-  <RatkinPettyThief.labelFemale>女性 鼠族小偷</RatkinPettyThief.labelFemale>
-  <RatkinPettyThief.labelFemalePlural>女性 鼠族小偷</RatkinPettyThief.labelFemalePlural>
-
-
-  <!-- 랫킨 살인마 -->
-
-  <RatkinMurderer.label>鼠族劊子手</RatkinMurderer.label>
-  <RatkinMurderer.labelPlural>鼠族劊子手</RatkinMurderer.labelPlural>
-  <RatkinMurderer.labelMale>男性 鼠族劊子手</RatkinMurderer.labelMale>
-  <RatkinMurderer.labelMalePlural>男性 鼠族劊子手</RatkinMurderer.labelMalePlural>
-  <RatkinMurderer.labelFemale>女性 鼠族劊子手</RatkinMurderer.labelFemale>
-  <RatkinMurderer.labelFemalePlural>女性 鼠族劊子手</RatkinMurderer.labelFemalePlural>
-
-
-  <!-- 방랑자 -->
-
-  <RatkinVagabond.label>鼠族流浪者</RatkinVagabond.label>
-  <RatkinVagabond.labelPlural>鼠族流浪者</RatkinVagabond.labelPlural>
-  <RatkinVagabond.labelMale>男性 鼠族流浪者</RatkinVagabond.labelMale>
-  <RatkinVagabond.labelMalePlural>男性 鼠族流浪者</RatkinVagabond.labelMalePlural>
-  <RatkinVagabond.labelFemale>女性 鼠族流浪者</RatkinVagabond.labelFemale>
-  <RatkinVagabond.labelFemalePlural>女性 鼠族流浪者</RatkinVagabond.labelFemalePlural>
+	<!-- EN: ratkin combatant -->
+	<RatkinCombatant.label>鼠族戰士</RatkinCombatant.label>
+	
+	<!-- EN: ratkin combatants -->
+	<RatkinCombatant.labelPlural>鼠族戰士</RatkinCombatant.labelPlural>
+	
+	<!-- EN: male ratkin combatant -->
+	<RatkinCombatant.labelMale>鼠族戰士</RatkinCombatant.labelMale>
+	
+	<!-- EN: male ratkin combatants -->
+	<RatkinCombatant.labelMalePlural>鼠族戰士</RatkinCombatant.labelMalePlural>
+	
+	<!-- EN: female ratkin combatant -->
+	<RatkinCombatant.labelFemale>鼠女族戰士</RatkinCombatant.labelFemale>
+	
+	<!-- EN: female ratkin combatants -->
+	<RatkinCombatant.labelFemalePlural>鼠女族戰士</RatkinCombatant.labelFemalePlural>
 
 
-  <!-- 랫킨 용병 판매용 -->
-
-  <RatkinMercenaryLight.label>鼠族徵召兵</RatkinMercenaryLight.label>
-  <RatkinMercenaryLight.labelPlural>鼠族徵召兵</RatkinMercenaryLight.labelPlural>
-  <RatkinMercenaryLight.labelMale>男性 鼠族徵召兵</RatkinMercenaryLight.labelMale>
-  <RatkinMercenaryLight.labelMalePlural>男性 鼠族徵召兵</RatkinMercenaryLight.labelMalePlural>
-  <RatkinMercenaryLight.labelFemale>女性 鼠族徵召兵</RatkinMercenaryLight.labelFemale>
-  <RatkinMercenaryLight.labelFemalePlural>女性 鼠族徵召兵</RatkinMercenaryLight.labelFemalePlural>
-
-
-  <!-- 실험체 -->
-
-  <RatkinSubject.label>鼠族臣民</RatkinSubject.label>
-  <RatkinSubject.labelPlural>鼠族臣民</RatkinSubject.labelPlural>
-  <RatkinSubject.labelMale>男性 鼠族臣民</RatkinSubject.labelMale>
-  <RatkinSubject.labelMalePlural>男性 鼠族臣民</RatkinSubject.labelMalePlural>
-  <RatkinSubject.labelFemale>女性 鼠族臣民</RatkinSubject.labelFemale>
-  <RatkinSubject.labelFemalePlural>女性 鼠族臣民</RatkinSubject.labelFemalePlural>
-
-
-  <!-- 랫킨 용병 -->
-
-  <RatkinMercenary.label>鼠族雇傭兵</RatkinMercenary.label>
-  <RatkinMercenary.labelPlural>鼠族雇傭兵</RatkinMercenary.labelPlural>
-  <RatkinMercenary.labelMale>男性 鼠族雇傭兵</RatkinMercenary.labelMale>
-  <RatkinMercenary.labelMalePlural>男性 鼠族雇傭兵</RatkinMercenary.labelMalePlural>
-  <RatkinMercenary.labelFemale>女性 鼠族雇傭兵</RatkinMercenary.labelFemale>
-  <RatkinMercenary.labelFemalePlural>女性 鼠族雇傭兵</RatkinMercenary.labelFemalePlural>
+	<!-- EN: ratkin vanguard -->
+	<RatkinVanguard.label>鼠族前鋒守衛</RatkinVanguard.label>
+	
+	<!-- EN: ratkin vanguards -->
+	<RatkinVanguard.labelPlural>鼠族前鋒守衛</RatkinVanguard.labelPlural>
+	
+	<!-- EN: male ratkin vanguard -->
+	<RatkinVanguard.labelMale>鼠族前鋒守衛</RatkinVanguard.labelMale>
+	
+	<!-- EN: male ratkin vanguards -->
+	<RatkinVanguard.labelMalePlural>鼠族前鋒守衛</RatkinVanguard.labelMalePlural>
+	
+	<!-- EN: female ratkin vanguard -->
+	<RatkinVanguard.labelFemale>鼠族女前鋒守衛</RatkinVanguard.labelFemale>
+	
+	<!-- EN: female ratkin vanguards -->
+	<RatkinVanguard.labelFemalePlural>鼠族女前鋒守衛</RatkinVanguard.labelFemalePlural>
 
 
-  <!-- 일반시민 -->
-  <!-- 랫킨 정예정원사 -->
-  <!-- 랫킨 기사 -->
+	<!-- EN: ratkin defender -->
+	<RatkinDefender.label>鼠族防衛者</RatkinDefender.label>
+	
+	<!-- EN: ratkin defenders -->
+	<RatkinDefender.labelPlural>鼠族防衛者</RatkinDefender.labelPlural>
+	
+	<!-- EN: male ratkin defender -->
+	<RatkinDefender.labelMale>鼠族防衛者</RatkinDefender.labelMale>
+	
+	<!-- EN: male ratkin defenders -->
+	<RatkinDefender.labelMalePlural>鼠族防衛者</RatkinDefender.labelMalePlural>
+	
+	<!-- EN: female ratkin defender -->
+	<RatkinDefender.labelFemale>鼠族女防衛者</RatkinDefender.labelFemale>
+	
+	<!-- EN: female ratkin defenders -->
+	<RatkinDefender.labelFemalePlural>鼠族女防衛者</RatkinDefender.labelFemalePlural>
+
+
+	<!-- EN: ratkin soldier -->
+	<RatkinSoldier.label>鼠族士兵</RatkinSoldier.label>
+	
+	<!-- EN: ratkin soldiers -->
+	<RatkinSoldier.labelPlural>鼠族士兵</RatkinSoldier.labelPlural>
+	
+	<!-- EN: male ratkin soldier -->
+	<RatkinSoldier.labelMale>鼠族士兵</RatkinSoldier.labelMale>
+	
+	<!-- EN: male ratkin soldiers -->
+	<RatkinSoldier.labelMalePlural>鼠族士兵</RatkinSoldier.labelMalePlural>
+	
+	<!-- EN: female ratkin soldier -->
+	<RatkinSoldier.labelFemale>鼠族女士兵</RatkinSoldier.labelFemale>
+	
+	<!-- EN: female ratkin soldiers -->
+	<RatkinSoldier.labelFemalePlural>鼠族女士兵</RatkinSoldier.labelFemalePlural>
+
+
+	<!-- EN: ratkin elite guardener -->
+	<RatkinEliteGuardener.label>鼠族精英守護者</RatkinEliteGuardener.label>
+	
+	<!-- EN: ratkin elite guardeners -->
+	<RatkinEliteGuardener.labelPlural>鼠族精英守護者</RatkinEliteGuardener.labelPlural>
+	
+	<!-- EN: male ratkin elite guardener -->
+	<RatkinEliteGuardener.labelMale>鼠族精英守護者</RatkinEliteGuardener.labelMale>
+	
+	<!-- EN: male ratkin elite guardeners -->
+	<RatkinEliteGuardener.labelMalePlural>鼠族精英守護者</RatkinEliteGuardener.labelMalePlural>
+	
+	<!-- EN: female ratkin elite guardener -->
+	<RatkinEliteGuardener.labelFemale>鼠族女精英守護者</RatkinEliteGuardener.labelFemale>
+	
+	<!-- EN: female ratkin elite guardeners -->
+	<RatkinEliteGuardener.labelFemalePlural>鼠族女精英守護者</RatkinEliteGuardener.labelFemalePlural>
+
+
+	<!-- EN: ratkin knight -->
+	<RatkinKnight.label>鼠族騎士</RatkinKnight.label>
+	
+	<!-- EN: ratkin knights -->
+	<RatkinKnight.labelPlural>鼠族騎士</RatkinKnight.labelPlural>
+	
+	<!-- EN: male ratkin knight -->
+	<RatkinKnight.labelMale>鼠族騎士</RatkinKnight.labelMale>
+	
+	<!-- EN: male ratkin knights -->
+	<RatkinKnight.labelMalePlural>鼠族騎士</RatkinKnight.labelMalePlural>
+	
+	<!-- EN: female ratkin knight -->
+	<RatkinKnight.labelFemale>鼠族女騎士</RatkinKnight.labelFemale>
+	
+	<!-- EN: female ratkin knights -->
+	<RatkinKnight.labelFemalePlural>鼠族女騎士</RatkinKnight.labelFemalePlural>
+
+
+	<!-- EN: ratkin elite defender -->
+	<RatkinEliteDefender.label>鼠族菁英防衛者</RatkinEliteDefender.label>
+	
+	<!-- EN: ratkin elite defenders -->
+	<RatkinEliteDefender.labelPlural>鼠族菁英防衛者</RatkinEliteDefender.labelPlural>
+	
+	<!-- EN: male ratkin elite defender -->
+	<RatkinEliteDefender.labelMale>鼠族菁英防衛者</RatkinEliteDefender.labelMale>
+	
+	<!-- EN: male ratkin elite defenders -->
+	<RatkinEliteDefender.labelMalePlural>鼠族菁英防衛者</RatkinEliteDefender.labelMalePlural>
+	
+	<!-- EN: female ratkin elite defender -->
+	<RatkinEliteDefender.labelFemale>鼠族女菁英防衛者</RatkinEliteDefender.labelFemale>
+	
+	<!-- EN: female ratkin elite defenders -->
+	<RatkinEliteDefender.labelFemalePlural>鼠族女菁英防衛者</RatkinEliteDefender.labelFemalePlural>
+
+
+	<!-- EN: ratkin knight commander -->
+	<RatkinKnightCommander.label>鼠族騎士長</RatkinKnightCommander.label>
+	
+	<!-- EN: ratkin knight commanders -->
+	<RatkinKnightCommander.labelPlural>鼠族騎士長</RatkinKnightCommander.labelPlural>
+	
+	<!-- EN: male ratkin knight commander -->
+	<RatkinKnightCommander.labelMale>鼠族騎士長</RatkinKnightCommander.labelMale>
+	
+	<!-- EN: male ratkin knight commanders -->
+	<RatkinKnightCommander.labelMalePlural>鼠族騎士長</RatkinKnightCommander.labelMalePlural>
+	
+	<!-- EN: female ratkin knight commander -->
+	<RatkinKnightCommander.labelFemale>鼠族女騎士長</RatkinKnightCommander.labelFemale>
+	
+	<!-- EN: female ratkin knight commanders -->
+	<RatkinKnightCommander.labelFemalePlural>鼠族女騎士長</RatkinKnightCommander.labelFemalePlural>
+
+
+	<!-- EN: ratkin elite soldier -->
+	<RatkinEliteSoldier.label>鼠族精銳士兵</RatkinEliteSoldier.label>
+	
+	<!-- EN: ratkin elite soldiers -->
+	<RatkinEliteSoldier.labelPlural>鼠族精銳士兵</RatkinEliteSoldier.labelPlural>
+	
+	<!-- EN: male ratkin elite soldier -->
+	<RatkinEliteSoldier.labelMale>鼠族精銳士兵</RatkinEliteSoldier.labelMale>
+	
+	<!-- EN: male ratkin elite soldiers -->
+	<RatkinEliteSoldier.labelMalePlural>鼠族精銳士兵</RatkinEliteSoldier.labelMalePlural>
+	
+	<!-- EN: female ratkin elite soldier -->
+	<RatkinEliteSoldier.labelFemale>鼠族女精銳士兵</RatkinEliteSoldier.labelFemale>
+	
+	<!-- EN: female ratkin elite soldiers -->
+	<RatkinEliteSoldier.labelFemalePlural>鼠族女精銳士兵</RatkinEliteSoldier.labelFemalePlural>
+
+
+	<!-- EN: ratkin demoman -->
+	<RatkinDemonMan.label>鼠族爆破兵</RatkinDemonMan.label>
+	
+	<!-- EN: ratkin demomen -->
+	<RatkinDemonMan.labelPlural>鼠族爆破兵</RatkinDemonMan.labelPlural>
+	
+	<!-- EN: ratkin demoman -->
+	<RatkinDemonMan.labelMale>鼠族爆破兵</RatkinDemonMan.labelMale>
+	
+	<!-- EN: ratkin demoman -->
+	<RatkinDemonMan.labelMalePlural>鼠族爆破兵</RatkinDemonMan.labelMalePlural>
+	
+	<!-- EN: ratkin demowoman -->
+	<RatkinDemonMan.labelFemale>鼠族女爆破兵</RatkinDemonMan.labelFemale>
+	
+	<!-- EN: ratkin demowomen -->
+	<RatkinDemonMan.labelFemalePlural>鼠族女爆破兵</RatkinDemonMan.labelFemalePlural>
+
+
+	<!-- EN: ratkin petty thief -->
+	<RatkinPettyThief.label>鼠族小偷</RatkinPettyThief.label>
+	
+	<!-- EN: ratkin petty thieves -->
+	<RatkinPettyThief.labelPlural>鼠族小偷</RatkinPettyThief.labelPlural>
+	
+	<!-- EN: male ratkin petty thief -->
+	<RatkinPettyThief.labelMale>鼠族小偷</RatkinPettyThief.labelMale>
+	
+	<!-- EN: male ratkin petty thieves -->
+	<RatkinPettyThief.labelMalePlural>鼠族小偷</RatkinPettyThief.labelMalePlural>
+	
+	<!-- EN: female ratkin petty thief -->
+	<RatkinPettyThief.labelFemale>鼠族女小偷</RatkinPettyThief.labelFemale>
+	
+	<!-- EN: female ratkin petty thieves -->
+	<RatkinPettyThief.labelFemalePlural>鼠族女小偷</RatkinPettyThief.labelFemalePlural>
+
+
+	<!-- EN: ratkin murderer -->
+	<RatkinMurderer.label>鼠族凶手</RatkinMurderer.label>
+	
+	<!-- EN: ratkin murderers -->
+	<RatkinMurderer.labelPlural>鼠族凶手</RatkinMurderer.labelPlural>
+	
+	<!-- EN: male ratkin murderer -->
+	<RatkinMurderer.labelMale>鼠族凶手</RatkinMurderer.labelMale>
+	
+	<!-- EN: male ratkin murderers -->
+	<RatkinMurderer.labelMalePlural>鼠族凶手</RatkinMurderer.labelMalePlural>
+	
+	<!-- EN: female ratkin murderer -->
+	<RatkinMurderer.labelFemale>鼠族女凶手</RatkinMurderer.labelFemale>
+	
+	<!-- EN: female ratkin murderers -->
+	<RatkinMurderer.labelFemalePlural>鼠族女凶手</RatkinMurderer.labelFemalePlural>
+
+
+	<!-- EN: vagabond -->
+	<RatkinVagabond.label>鼠族流浪者</RatkinVagabond.label>
+	
+	<!-- EN: vagabonds -->
+	<RatkinVagabond.labelPlural>鼠族流浪者</RatkinVagabond.labelPlural>
+	
+	<!-- EN: male vagabond -->
+	<RatkinVagabond.labelMale>鼠族流浪者</RatkinVagabond.labelMale>
+	
+	<!-- EN: male vagabonds -->
+	<RatkinVagabond.labelMalePlural>鼠族流浪者</RatkinVagabond.labelMalePlural>
+	
+	<!-- EN: female vagabond -->
+	<RatkinVagabond.labelFemale>鼠族女流浪者</RatkinVagabond.labelFemale>
+	
+	<!-- EN: female vagabonds -->
+	<RatkinVagabond.labelFemalePlural>鼠族女流浪者</RatkinVagabond.labelFemalePlural>
+
+
+	<!-- EN: ratkin mercenary (conscript) -->
+	<RatkinMercenaryLight.label>鼠族徵召兵</RatkinMercenaryLight.label>
+	
+	<!-- EN: ratkin mercenaries (conscripts) -->
+	<RatkinMercenaryLight.labelPlural>鼠族徵召兵</RatkinMercenaryLight.labelPlural>
+	
+	<!-- EN: male ratkin mercenary (conscript) -->
+	<RatkinMercenaryLight.labelMale>鼠族徵召兵</RatkinMercenaryLight.labelMale>
+	
+	<!-- EN: male ratkin mercenaries (conscripts) -->
+	<RatkinMercenaryLight.labelMalePlural>鼠族徵召兵</RatkinMercenaryLight.labelMalePlural>
+	
+	<!-- EN: female ratkin mercenary (conscript) -->
+	<RatkinMercenaryLight.labelFemale>鼠族女徵召兵</RatkinMercenaryLight.labelFemale>
+	
+	<!-- EN: female ratkin mercenaries (conscripts) -->
+	<RatkinMercenaryLight.labelFemalePlural>鼠族女徵召兵</RatkinMercenaryLight.labelFemalePlural>
+
+
+	<!-- EN： ratkin test subject -->
+	<RatkinSubject.label>鼠族實驗體</RatkinSubject.label>
+	
+	<!-- EN： ratkin test subjects -->
+	<RatkinSubject.labelPlural>鼠族實驗體</RatkinSubject.labelPlural>
+	
+	<!-- EN： male ratkin test subject -->
+	<RatkinSubject.labelMale>男性鼠族實驗體</RatkinSubject.labelMale>
+	
+	<!-- EN： male ratkin test subjects -->
+	<RatkinSubject.labelMalePlural>男性鼠族實驗體</RatkinSubject.labelMalePlural>
+	
+	<!-- EN： female ratkin test subject -->
+	<RatkinSubject.labelFemale>女性鼠族實驗體</RatkinSubject.labelFemale>
+	
+	<!-- EN： female ratkin test subjects -->
+	<RatkinSubject.labelFemalePlural>女性鼠族實驗體</RatkinSubject.labelFemalePlural>
+
+
+	<!-- EN: ratkin mercenary -->
+	<RatkinMercenary.label>鼠族雇傭兵</RatkinMercenary.label>
+	
+	<!-- EN: ratkin mercenaries -->
+	<RatkinMercenary.labelPlural>鼠族雇傭兵</RatkinMercenary.labelPlural>
+	
+	<!-- EN: male ratkin mercenary -->
+	<RatkinMercenary.labelMale>鼠族雇傭兵</RatkinMercenary.labelMale>
+	
+	<!-- EN: male ratkin mercenaries -->
+	<RatkinMercenary.labelMalePlural>鼠族雇傭兵</RatkinMercenary.labelMalePlural>
+	
+	<!-- EN: female ratkin mercenary -->
+	<RatkinMercenary.labelFemale>鼠族女雇傭兵</RatkinMercenary.labelFemale>
+	
+	<!-- EN: female ratkin mercenaries -->
+	<RatkinMercenary.labelFemalePlural>鼠族女雇傭兵</RatkinMercenary.labelFemalePlural>
 
 </LanguageData>

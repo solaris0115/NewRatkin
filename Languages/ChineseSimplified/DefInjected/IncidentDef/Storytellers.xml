@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- EN: vagabond join -->
+	<RatkinVagabondJoin.label>流浪者</RatkinVagabondJoin.label>
+	
+	<!-- EN: Vagabond joins: {PAWN_nameDef} -->
+	<RatkinVagabondJoin.letterLabel>流浪者</RatkinVagabondJoin.letterLabel>
+	
+	<!-- EN: A Ratkin vagabond named {PAWN_nameDef} suddenly felt a strange sensation wash over {PAWN_objective} as {PAWN_pronoun} passed by your colony, and after contemplating for some time, {PAWN_pronoun} has decided to join your community.\n\n{PAWN_pronoun} is willing to contribute, but will not leave voluntarily. If you don't want {PAWN_nameDef}, you can banish {PAWN_objective}, sell {PAWN_objective} into slavery, or simply kill {PAWN_objective}. However, your other colonists may find this disturbing. -->
+	<RatkinVagabondJoin.letterText>一名叫{PAWN_nameDef}的鼠族流浪者在经过你的殖民地时，突然感到一种奇怪的感觉。经过一段时间的考虑，{PAWN_pronoun}将决定加入你的殖民地。\n\n{PAWN_pronoun}自愿加入你，但不会离开。如果你不想要{PAWN_nameDef}，你可以选择放逐{PAWN_objective}、卖掉{PAWN_objective}、或是杀掉{PAWN_objective}。但是，你的其他殖民者可能会对此有些意见。</RatkinVagabondJoin.letterText>
+	
+</LanguageData>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- EN: rathole -->
+	<RK_ThiefTunnel.label>老鼠洞</RK_ThiefTunnel.label>
+	
+	<!-- EN: A hole in the wall, most likely made by a small-bodied creature to allow them to slip in or out easily. -->
+	<RK_ThiefTunnel.description>老鼠洞。好像是身材娇小的人为了进出而在墙上开了个洞。</RK_ThiefTunnel.description>
+	
+	<!-- EN: Ratkin mining pod -->
+	<RK_GuerrillaTunnel.label>鼠族钻探机</RK_GuerrillaTunnel.label>
+	
+	<!-- EN: A transport pod equipped with a powerful mining drill at the front of its passenger cabin, allowing its occupants to traverse deep underground. -->
+	<RK_GuerrillaTunnel.description>安装了钻头的运输舱。一个强大的钻孔机可以钻到地底深处。</RK_GuerrillaTunnel.description>
+
+	<!-- EN: Seismic epicenter -->
+	<RK_GuerrillaTunnelSpawner.label>震央</RK_GuerrillaTunnelSpawner.label>
+	
+	<!-- EN: Emerging rathole -->
+	<RK_ThiefTunnelSpawner.label>隧洞</RK_ThiefTunnelSpawner.label>
+
+	<!-- EN: EMP bomb -->
+	<RK_EmpBomb.label>EMP炸弹</RK_EmpBomb.label>
+	
+	<!-- EN: An EMP bomb, set to detonate on a timer. Must be destroyed or deconstructed to stop the countdown. -->
+	<RK_EmpBomb.description>EMP定时炸弹。避免爆炸的方法只有将其破坏或拆除。</RK_EmpBomb.description>
+	
+	<!-- EN: EMP bomb (minified) -->
+	<MinifiedEMP.label>EMP炸弹 (已解除)</MinifiedEMP.label>
+
+</LanguageData>

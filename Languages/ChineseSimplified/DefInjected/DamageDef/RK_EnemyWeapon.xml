@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- EN: bomb -->
+	<DemoBomb.label>爆炸</DemoBomb.label>
+	
+	<!-- EN: {0} has died in an explosion. -->
+	<DemoBomb.deathMessage>{0} 已在爆炸中死亡。</DemoBomb.deathMessage>
+	
+</LanguageData>

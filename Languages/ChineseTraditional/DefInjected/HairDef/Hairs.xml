@@ -1,24 +1,58 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <RK_Braided.label>辮子頭</RK_Braided.label>
-  <RK_BraidedB.label>辮子頭B</RK_BraidedB.label>
-  <RK_middl.label>中長髮</RK_middl.label>
-  <RK_side_tail.label>側馬尾</RK_side_tail.label>
-  <RK_twin5.label>雙馬尾</RK_twin5.label>
-  <RK_WavelongA.label>長捲髮</RK_WavelongA.label>
-  <RK_LongA.label>長髮A</RK_LongA.label>
-  <RK_LongB.label>長髮B</RK_LongB.label>
-  <RK_LongD.label>長髮D</RK_LongD.label>
-  <RK_LongE.label>長髮E</RK_LongE.label>
-  <RK_PonyA.label>馬尾B</RK_PonyA.label>
-  <RK_sidePonyA.label>側馬尾B</RK_sidePonyA.label>
-  <RK_twin2.label>雙馬尾2</RK_twin2.label>
-  <RK_twin3.label>雙馬尾3</RK_twin3.label>
-  <RK_twin4.label>雙馬尾4</RK_twin4.label>
-  <RK_twinA.label>雙馬尾A</RK_twinA.label>
-  <RK_Middle2.label>中長髮B</RK_Middle2.label>
-  <RK_MPony.label>馬尾</RK_MPony.label>
-
-
+	<!-- EN: Braided Bun A -->
+	<RK_Braided.label>辮子頭A</RK_Braided.label>
+	
+	<!-- EN: Braided Bun B -->
+	<RK_BraidedB.label>辮子頭B</RK_BraidedB.label>
+	
+	<!-- EN: Mid-length 1 -->
+	<RK_middl.label>中長髮1</RK_middl.label>
+	
+	<!-- EN: Sidetail -->
+	<RK_side_tail.label>側馬尾</RK_side_tail.label>
+	
+	<!-- EN: Twintails 5 -->
+	<RK_twin5.label>雙馬尾5</RK_twin5.label>
+	
+	<!-- EN: Long Waves -->
+	<RK_WavelongA.label>長捲髮</RK_WavelongA.label>
+	
+	<!-- EN: Long A -->
+	<RK_LongA.label>長髮A</RK_LongA.label>
+	
+	<!-- EN: Long B -->
+	<RK_LongB.label>長髮B</RK_LongB.label>
+	
+	<!-- EN: Long D -->
+	<RK_LongD.label>長髮D</RK_LongD.label>
+	
+	<!-- EN: Long E -->
+	<RK_LongE.label>長髮E</RK_LongE.label>
+	
+	<!-- EN: Ponytail -->
+	<RK_PonyA.label>馬尾</RK_PonyA.label>
+	
+	<!-- EN: Side Ponytail -->
+	<RK_sidePonyA.label>側馬尾B</RK_sidePonyA.label>
+	
+	<!-- EN: Twintails 2 -->
+	<RK_twin2.label>雙馬尾2</RK_twin2.label>
+	
+	<!-- EN: Twintails 3 -->
+	<RK_twin3.label>雙馬尾3</RK_twin3.label>
+	
+	<!-- EN: Twintails 4 -->
+	<RK_twin4.label>雙馬尾4</RK_twin4.label>
+	
+	<!-- EN: Low Twintails -->
+	<RK_twinA.label>低雙馬尾</RK_twinA.label>
+	
+	<!-- EN: Mid-length 2 -->
+	<RK_Middle2.label>中長髮2</RK_Middle2.label>
+	
+	<!-- EN: Low Ponytail -->
+	<RK_MPony.label>低馬尾</RK_MPony.label>
+	
 </LanguageData>

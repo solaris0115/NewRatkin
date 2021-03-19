@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- EN: king hamster -->
+	<RK_KingHamster.label>仓鼠大王</RK_KingHamster.label>
+	
+	<!-- EN: A giant, docile rodent that is several orders of magnitude larger than ordinary hamsters, and adapts relatively well to hot climates. Despite their limited intelligence, they can be tamed and used as pack animals. -->
+	<RK_KingHamster.description>一种巨型温顺的囓齿动物，比普通的仓鼠大几个数量级，并且相对适应高温环境。智力仍然与普通的仓鼠相同，但可以将它当作搬运工。</RK_KingHamster.description>
+	
+	<!-- EN: head -->
+	<RK_KingHamster.tools.0.label>脑袋</RK_KingHamster.tools.0.label>
+	
+	<!-- EN: left paw -->
+	<RK_KingHamster.tools.1.label>左手</RK_KingHamster.tools.1.label>
+	
+	<!-- EN: right paw -->
+	<RK_KingHamster.tools.2.label>右手</RK_KingHamster.tools.2.label>
+
+	
+	<!-- EN: king hamster fur -->
+	<RK_Leather_KingHamster.label>仓鼠大王皮</RK_Leather_KingHamster.label>
+	
+	<!-- EN: The furry pelt of a king hamster. The unique cuteness of a hamster is easily recognizable, despite being harvested from an oversized rodent. Good at temperature regulation in hot climates. -->
+	<RK_Leather_KingHamster.description>仓鼠大王的毛皮。即使是从超大型囓齿类动物身上取得的，还是可以识别出来仓鼠独特的可爱。擅长炎热气候下的温度调节。</RK_Leather_KingHamster.description>
+
+
+	<!-- EN: king hamster wool -->
+	<RK_Wool_KingHamster.label>仓鼠大王毛</RK_Wool_KingHamster.label>
+	
+	<!-- EN: Soft, light and provides very good insulation. King hamster wool clothes can keep the body warm and well-ventilated, even in extreme conditions. -->
+	<RK_Wool_KingHamster.description>柔软，轻盈，绝缘性好。仓鼠大王毛衣服通透性良好，温暖，适合在极地和沙漠中穿着。</RK_Wool_KingHamster.description>
+
+</LanguageData>

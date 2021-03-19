@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- EN: Ratkin dagger -->
+	<RK_Dagger.label>鼠族匕首</RK_Dagger.label>
+	
+	<!-- EN: A cute little dagger good for quick stabbing attacks. Its handle is too small for a human to wield properly. -->
+	<RK_Dagger.description>一把轻巧的短剑。能以轻的速度快速刺穿对手。手柄太小以致人类很难使用。</RK_Dagger.description>
+	
+	<!-- EN: point -->
+	<RK_Dagger.tools.0.label>刀尖</RK_Dagger.tools.0.label>
+	
+	<!-- EN: edge -->
+	<RK_Dagger.tools.1.label>刀刃</RK_Dagger.tools.1.label>
+
+
+	<!-- EN: Ratkin one-handed sword -->
+	<RK_OneHanded.label>鼠族片手剑</RK_OneHanded.label>
+	
+	<!-- EN: A sword perfectly balanced for single-handed use. Its handle is too small for a human to wield properly. -->
+	<RK_OneHanded.description>一把单手使用的剑。完美的重量平衡感。手柄太小以致人类很难使用。</RK_OneHanded.description>
+	
+	<!-- EN: point -->
+	<RK_OneHanded.tools.0.label>刀尖</RK_OneHanded.tools.0.label>
+	
+	<!-- EN: edge -->
+	<RK_OneHanded.tools.1.label>刀刃</RK_OneHanded.tools.1.label>
+	
+	<!-- EN: handle -->
+	<RK_OneHanded.tools.2.label>手柄</RK_OneHanded.tools.2.label>
+
+
+	<!-- EN: Ratkin wooden lance -->
+	<RK_LightLance.label>鼠族木制长枪</RK_LightLance.label>
+	
+	<!-- EN: A wooden lance reinforced with steel rings to increase its destructive power. Due to its weight, untrained users will struggle to strike targets accurately with it. Its handle is too small for a human to wield properly. -->
+	<RK_LightLance.description>用铁环来固定并提高破坏力的木制长枪。由于重量问题，如果不熟练就很难命中。握把太小以致人类很难使用。</RK_LightLance.description>
+	
+	<!-- EN: point -->
+	<RK_LightLance.tools.0.label>枪尖</RK_LightLance.tools.0.label>
+	
+	<!-- EN: point -->
+	<RK_LightLance.tools.1.label>长枪</RK_LightLance.tools.1.label>
+	
+	<!-- EN: shaft -->
+	<RK_LightLance.tools.2.label>握把</RK_LightLance.tools.2.label>
+
+
+	<!-- EN: Ratkin two-handed sword -->
+	<RK_TwoHanded.label>鼠族双手剑</RK_TwoHanded.label>
+	
+	<!-- EN: A long and heavy sword that requires both hands to wield, but if used properly, can literally split an enemy in two. -->
+	<RK_TwoHanded.description>必须要双手才能举起的剑。虽然很笨重，但是完全可以把敌人劈成两截。</RK_TwoHanded.description>
+	
+	<!-- EN: handle -->
+	<RK_TwoHanded.tools.0.label>握柄</RK_TwoHanded.tools.0.label>
+	
+	<!-- EN: point -->
+	<RK_TwoHanded.tools.1.label>刀尖</RK_TwoHanded.tools.1.label>
+	
+	<!-- EN: edge -->
+	<RK_TwoHanded.tools.2.label>剑刃</RK_TwoHanded.tools.2.label>
+	
+	
+	<!-- EN: Ratkin heavy lance -->
+	<RK_HeavyLance.label>鼠族重骑枪</RK_HeavyLance.label>
+	
+	<!-- EN: A large, heavy metal lance. Due to its increased weight, it can reliably pierce most grades of armor, but untrained users will struggle to strike targets accurately with it. Its handle is too small for a human to wield properly. -->
+	<RK_HeavyLance.description>大而笨重的金属骑枪。通过用巨大的冲击力击穿对手。用为长枪过于笨重，似乎很难操作。手柄太小以致人类很难使用。</RK_HeavyLance.description>
+	
+	<!-- EN: point -->
+	<RK_HeavyLance.tools.0.label>枪尖</RK_HeavyLance.tools.0.label>
+	
+	<!-- EN: point -->
+	<RK_HeavyLance.tools.1.label>长枪</RK_HeavyLance.tools.1.label>
+	
+	<!-- EN: shaft -->
+	<RK_HeavyLance.tools.2.label>握把</RK_HeavyLance.tools.2.label>
+
+</LanguageData>

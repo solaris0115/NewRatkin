@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- EN: Ratkin axe -->
+	<RK_Axe.label>鼠族斧头</RK_Axe.label>
+	
+	<!-- EN: A bladed implement with a handle typically used for logging. Despite being somewhat smaller than human axes, it is particularly useful for cutting down trees, hewing logs into timber and splitting firewood. -->
+	<RK_Axe.description>一把用来砍树的斧子。虽然有点小，但仍能助于切砍的工作。</RK_Axe.description>
+	
+	<!-- EN: handle -->
+	<RK_Axe.tools.0.label>手柄</RK_Axe.tools.0.label>
+	
+	<!-- EN: edge -->
+	<RK_Axe.tools.1.label>利刃</RK_Axe.tools.1.label>
+
+
+	<!-- EN: Ratkin cleaver -->
+	<RK_Cleaver.label>鼠族剁肉刀</RK_Cleaver.label>
+	
+	<!-- EN: A large knife with a rectangular blade typically used for splitting large, thick pieces of meet. While it helps increase the amount of meat harvested when butchering animals, it is not a particularly good weapon. -->
+	<RK_Cleaver.description>一把切肉用的刀。能屠宰出更多的肉，但却不是一件称手的武器。</RK_Cleaver.description>
+	
+	<!-- EN: handle -->
+	<RK_Cleaver.tools.0.label>手柄</RK_Cleaver.tools.0.label>
+	
+	<!-- EN: edge -->
+	<RK_Cleaver.tools.1.label>利刃</RK_Cleaver.tools.1.label>
+
+
+	<!-- EN: Ratkin hoe -->
+	<RK_Hockey.label>鼠族锄头</RK_Hockey.label>
+	
+	<!-- EN: A common agricultural hand tool used for breaking up soil, removing weeds and harvesting root vegetables. -->
+	<RK_Hockey.description>一把普通的农具，用来松土，去除杂草和收割根菜类。</RK_Hockey.description>
+	
+	<!-- EN: point -->
+	<RK_Hockey.tools.0.label>握杆</RK_Hockey.tools.0.label>
+	
+	<!-- EN: edge -->
+	<RK_Hockey.tools.1.label>锄头</RK_Hockey.tools.1.label>
+
+
+	<!-- EN: Ratkin pitchfork -->
+	<RK_Fork.label>鼠族草叉</RK_Fork.label>
+	
+	<!-- EN: An agricultural hand tool with a long handle and three tines, good for piling straw. -->
+	<RK_Fork.description>一段有开叉的锋利尖端，用来堆稻草很方便。</RK_Fork.description>
+	
+	<!-- EN: point -->
+	<RK_Fork.tools.0.label>握杆</RK_Fork.tools.0.label>
+	
+	<!-- EN: edge -->
+	<RK_Fork.tools.1.label>尖刺</RK_Fork.tools.1.label>
+
+
+	<!-- EN: Ratkin Guardener's Sword -->
+	<RK_LongSword.label>鼠族长剑</RK_LongSword.label>
+	
+	<!-- EN: A sword carried by Guardeners, an elite order of Ratkins devoted to tending the Ratkin Kingdom's gardens and defending them from enemies. -->
+	<RK_LongSword.description>保护花园的守护者的佩剑。这把武器有利于你在看家护院时和敌人作战的优势。</RK_LongSword.description>
+	
+	<!-- EN: point -->
+	<RK_LongSword.tools.0.label>剑刃</RK_LongSword.tools.0.label>
+	
+	<!-- EN: edge -->
+	<RK_LongSword.tools.1.label>剑柄</RK_LongSword.tools.1.label>
+
+
+	<!-- EN: Ratkin crossbow -->
+	<RK_Crossbow.label>鼠族十字弩</RK_Crossbow.label>
+	
+	<!-- EN: A simple ranged weapon that fires small arrow-like bolts, typically used for hunting. -->
+	<RK_Crossbow.description>一个简易的弩弓，常用于狩猎。</RK_Crossbow.description>
+	
+	<!-- EN: limb -->
+	<RK_Crossbow.tools.0.label>握把</RK_Crossbow.tools.0.label>
+	
+	<!-- EN: arrow -->
+	<RK_Crossbow.tools.1.label>枪管</RK_Crossbow.tools.1.label>
+
+	<!-- EN: crossbow bolt -->
+	<Bolt_RK_Crossbow.label>十字弩箭</Bolt_RK_Crossbow.label>
+	
+	
+	<!-- EN: Ratkin enhanced crossbow -->
+	<RK_EnhanceCrossBow.label>鼠族加强型十字弩</RK_EnhanceCrossBow.label>
+	
+	<!-- EN: An improved version of the regular Ratkin crossbow, with increased range and penetration. -->
+	<RK_EnhanceCrossBow.description>改进型的弩弓。能射得更远，有更好的穿透力。</RK_EnhanceCrossBow.description>
+	
+	<!-- EN: limb -->
+	<RK_EnhanceCrossBow.tools.0.label>握把</RK_EnhanceCrossBow.tools.0.label>
+	
+	<!-- EN: arrow -->
+	<RK_EnhanceCrossBow.tools.1.label>枪管</RK_EnhanceCrossBow.tools.1.label>
+	
+	<!-- EN: crossbow bolt -->
+	<Bolt_RK_EnhanceCrossBow.label>十字弩箭</Bolt_RK_EnhanceCrossBow.label>
+
+
+	<!-- EN: Ratkin automatic crossbow -->
+	<RK_AutoCrossBow.label>鼠族涡轮连发弩</RK_AutoCrossBow.label>
+	
+	<!-- EN: A semi-automatic crossbow that can mechanically and rapidly fire multiple bolts from a revolver-style magazine. -->
+	<RK_AutoCrossBow.description>机械式发射的半自动弩，从一个圆形弹匣里高速发射弩箭。</RK_AutoCrossBow.description>
+	
+	<!-- EN: limb -->
+	<RK_AutoCrossBow.tools.0.label>握把</RK_AutoCrossBow.tools.0.label>
+	
+	<!-- EN: arrow -->
+	<RK_AutoCrossBow.tools.1.label>枪管</RK_AutoCrossBow.tools.1.label>
+
+	<!-- EN: crossbow bolt -->
+	<Bolt_RK_AutoCrossBow.label>十字弩箭</Bolt_RK_AutoCrossBow.label>
+
+
+	<!-- EN: Ratkin rifle -->
+	<RK_Rifle.label>鼠族步枪</RK_Rifle.label>
+	
+	<!-- EN: A bolt-action rifle patterned after full-size human rifles. It has a longer effective range than a crossbow, and comes equipped with a bayonet for close-quarters combat. -->
+	<RK_Rifle.description>一支模仿人类步枪的步枪，比弩射得还要远。配有近战用的刺刀。</RK_Rifle.description>
+	
+	<!-- EN: stock -->
+	<RK_Rifle.tools.0.label>握把</RK_Rifle.tools.0.label>
+	
+	<!-- EN: bayonet -->
+	<RK_Rifle.tools.1.label>刺刀</RK_Rifle.tools.1.label>
+	
+	<!-- EN: rifle bullet -->
+	<Bullet_RK_Rifle.label>步枪子弹</Bullet_RK_Rifle.label>
+
+
+	<!-- EN: Ratkin sniper rifle -->
+	<RK_SniperRifle.label>鼠族狙击步枪</RK_SniperRifle.label>
+	
+	<!-- EN: A high-precision long range bolt-action rifle patterned after full-size human sniper rifles, complete with a miniature telescopic sight suitable for Ratkins. Less effective at close ranges. -->
+	<RK_SniperRifle.description>一支模仿人类狙击步枪的远程步枪，配有适用于远距离射击的高倍瞄准镜。近距离瞄准能力较差。</RK_SniperRifle.description>
+	
+	<!-- EN: stock -->
+	<RK_SniperRifle.tools.0.label>握把</RK_SniperRifle.tools.0.label>
+	
+	<!-- EN: bayonet -->
+	<RK_SniperRifle.tools.1.label>刺刀</RK_SniperRifle.tools.1.label>
+	
+	<!-- EN: rifle bullet -->
+	<Bullet_RK_SniperRifle.label>步枪子弹</Bullet_RK_SniperRifle.label>
+	
+	
+	<!-- EN: Ratkin flechette rifle -->
+	<RK_FlechetteRifle.label>鼠族飛鏢彈步槍</RK_FlechetteRifle.label>
+	
+	<!-- EN: A variant of the standard Ratkin rifle that fires flechette rounds instead of regular bullets, increasing penetration at the cost of reduced range. It also comes equipped with a bayonet for close-quarters combat. -->
+	<RK_FlechetteRifle.description>一支裝備了飛鏢彈的步槍，通過犧牲射程來增加穿透力。配有近戰用的刺刀。</RK_FlechetteRifle.description>
+	
+	<!-- EN: stock -->
+	<RK_FlechetteRifle.tools.0.label>握把</RK_FlechetteRifle.tools.0.label>
+	
+	<!-- EN: bayonet -->
+	<RK_FlechetteRifle.tools.1.label>刺刀</RK_FlechetteRifle.tools.1.label>
+	
+	<!-- EN: flechette -->
+	<RK_FlechetteRifle.tools.2.label>飛鏢彈頭</RK_FlechetteRifle.tools.2.label>
+	
+	<!-- EN: flechette -->
+	<Bullet_RK_FlechetteRifle.label>飛鏢彈</Bullet_RK_FlechetteRifle.label>
+
+
+	<!-- EN: Ratkin flechette sniper rifle -->
+	<RK_FlechetteSniperRifle.label>鼠族飛鏢彈狙擊步槍</RK_FlechetteSniperRifle.label>
+	
+	<!-- EN: A variant of the standard Ratkin sniper rifle that fires flechette rounds instead of regular bullets, increasing penetration. It also comes equipped with a bayonet for close-quarters combat. -->
+	<RK_FlechetteSniperRifle.description>一支配有高倍瞄準鏡與飛鏢彈的狙擊步槍，能在很遠的距離內穿透厚重的盔甲。配有近戰用的刺刀。</RK_FlechetteSniperRifle.description>
+	
+	<!-- EN: stock -->
+	<RK_FlechetteSniperRifle.tools.0.label>握把</RK_FlechetteSniperRifle.tools.0.label>
+	
+	<!-- EN: bayonet -->
+	<RK_FlechetteSniperRifle.tools.1.label>刺刀</RK_FlechetteSniperRifle.tools.1.label>
+	
+	<!-- EN: flechette -->
+	<RK_FlechetteSniperRifle.tools.2.label>飛鏢彈頭</RK_FlechetteSniperRifle.tools.2.label>
+	
+	<!-- EN: flechette -->
+	<Bullet_RK_FlechetteSniperRifle.label>飛鏢彈</Bullet_RK_FlechetteSniperRifle.label>
+	
+	
+	<!-- EN: Ratkin prototype pulse rifle -->
+	<RK_PrototypePulseRifle.label>鼠族原型脉冲步枪</RK_PrototypePulseRifle.label>
+	
+	<!-- EN: An experimental energy rifle designed to be used by laboratory-enhanced Ratkin test subjects, this firearm takes inspiration from Ratkin flechette rifles and fires wedge-shaped high-penetration energy projectiles. It comes equipped with a special telescopic lens optimized for near and far targets, as well as a mode selector to switch between rapid fire and precision shots. -->
+	<RK_PrototypePulseRifle.description>一支为鼠族实验体而研发的实验性能量步枪，配有特殊的视镜来改善远近视野。这种武器的灵感来自鼠族的飞镖子弹，发射楔形高穿透力的弹药。</RK_PrototypePulseRifle.description>
+	
+	<!-- EN: Rapid Fire -->
+	<RK_PrototypePulseRifle.verbs.0.label>快速射击</RK_PrototypePulseRifle.verbs.0.label>
+	
+	<!-- EN: Fire a 4-round burst at a mid-range target.\n\nBonuses:\n- Accuracy (short): +50%\n- Accuracy (medium): +25% -->
+	<RK_PrototypePulseRifle.verbs.0.desc>用4发点放模式射击中距离目标。\n\n增益:\n- 命中率(近距离): +50%\n- 命中率(中距离): +25%</RK_PrototypePulseRifle.verbs.0.desc>
+	
+	<!-- EN: Aimed Fire -->
+	<RK_PrototypePulseRifle.verbs.1.label>精确射击</RK_PrototypePulseRifle.verbs.1.label>
+	
+	<!-- EN: Fire a 2-round burst at a long-range target.\n\nBonuses:\n- Accuracy (medium): +25%\n- Accuracy (long): +50% -->
+	<RK_PrototypePulseRifle.verbs.1.desc>用2发点放模式射击远距离目标。\n\n增益:\n- 命中率(中距离): +25%\n- 命中率(远距离): +50%</RK_PrototypePulseRifle.verbs.1.desc>
+	
+	<!-- EN: stock -->
+	<RK_PrototypePulseRifle.tools.0.label>握把</RK_PrototypePulseRifle.tools.0.label>
+	
+	<!-- EN: barrel -->
+	<RK_PrototypePulseRifle.tools.1.label>枪管</RK_PrototypePulseRifle.tools.1.label>
+	
+	<!-- EN: wedge bullet -->
+	<Bullet_RK_PrototypePulseRifleLight.label>楔形弹头</Bullet_RK_PrototypePulseRifleLight.label>
+	
+	<!-- EN: wedge bullet -->
+	<Bullet_RK_PrototypePulseRifleHeavy.label>楔形弹头</Bullet_RK_PrototypePulseRifleHeavy.label>
+	
+	
+	<!-- EN: BFR 3000 -->
+	<RK_BFR.label>BFR 3000</RK_BFR.label>
+	
+	<!-- EN: The Big Force Rifle (BFR) 3000 is a heavy sniper rifle patterned after full-sized human anti-materiel rifles, and fires wedge-shaped high-penetration energy projectiles. It comes equipped with a special telescopic lens optimized for near and far targets, as well as a mode selector to switch between armor-piercing (AP) and scattershot (SC) rounds. -->
+	<RK_BFR.description>一支模仿人类反器材步枪的鼠族重型狙击步枪，配有特殊的视镜来改善远近视野。这种武器的灵感来自鼠族的飞镖子弹，发射楔形高穿透力的弹药。</RK_BFR.description>
+	
+	<!-- EN: AP fire -->
+	<RK_BFR.verbs.0.label>穿甲射击</RK_BFR.verbs.0.label>
+	
+	<!-- EN: Fire an armor-piercing (AP) round at high precision. -->
+	<RK_BFR.verbs.0.desc>用高精度的穿甲弹射击目标。</RK_BFR.verbs.0.desc>
+	
+	<!-- EN: SC fire -->
+	<RK_BFR.verbs.1.label>散弹射击</RK_BFR.verbs.1.label>
+	
+	<!-- EN: Fire an scattershot (SC) round that scatters shrapnel on impact. -->
+	<RK_BFR.verbs.1.desc>用散弹射击目标，撞击时会散落弹片。</RK_BFR.verbs.1.desc>
+	
+	<!-- EN: stock -->
+	<RK_BFR.tools.0.label>握把</RK_BFR.tools.0.label>
+	
+	<!-- EN: barrel -->
+	<RK_BFR.tools.1.label>枪管</RK_BFR.tools.1.label>
+	
+	<!-- EN: wedge bullet (AP) -->
+	<Bullet_BFR_AP.label>楔形弹头(穿甲)</Bullet_BFR_AP.label>
+	
+	<!-- EN: wedge bullet (SC) -->
+	<Bullet_BFR_SC.label>楔形弹头(散弹)</Bullet_BFR_SC.label>
+	
+
+	<!--<Bullet_RK_PrototypePulseRifle.label>楔形弹头</Bullet_RK_PrototypePulseRifle.label>-->
+
+</LanguageData>

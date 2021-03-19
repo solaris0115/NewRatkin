@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- EN: king hamster -->
+	<Ratkin_KingHamster.label>仓鼠大王</Ratkin_KingHamster.label>
+	
+	<!-- EN: king hamsters -->
+	<Ratkin_KingHamster.labelPlural>仓鼠大王</Ratkin_KingHamster.labelPlural>
+	
+	<!-- EN: male king hamster -->
+	<Ratkin_KingHamster.labelMale>公仓鼠大王</Ratkin_KingHamster.labelMale>
+	
+	<!-- EN: male king hamsters -->
+	<Ratkin_KingHamster.labelMalePlural>公仓鼠大王</Ratkin_KingHamster.labelMalePlural>
+	
+	<!-- EN: female king hamster -->
+	<Ratkin_KingHamster.labelFemale>母仓鼠大王</Ratkin_KingHamster.labelFemale>
+	
+	<!-- EN: female king hamsters -->
+	<Ratkin_KingHamster.labelFemalePlural>母仓鼠大王</Ratkin_KingHamster.labelFemalePlural>
+	
+	<!-- EN: baby king hamster -->
+	<Ratkin_KingHamster.lifeStages.0.label>仓鼠大王宝宝</Ratkin_KingHamster.lifeStages.0.label>
+	
+	<!-- EN: baby king hamsters -->
+	<Ratkin_KingHamster.lifeStages.0.labelPlural>仓鼠大王宝宝</Ratkin_KingHamster.lifeStages.0.labelPlural>
+	
+	<!-- EN: baby male king hamster -->
+	<Ratkin_KingHamster.lifeStages.0.labelMale>公仓鼠大王宝宝</Ratkin_KingHamster.lifeStages.0.labelMale>
+	
+	<!-- EN: baby male king hamsters -->
+	<Ratkin_KingHamster.lifeStages.0.labelMalePlural>公仓鼠大王宝宝</Ratkin_KingHamster.lifeStages.0.labelMalePlural>
+	
+	<!-- EN: baby female king hamster -->
+	<Ratkin_KingHamster.lifeStages.0.labelFemale>母仓鼠大王宝宝</Ratkin_KingHamster.lifeStages.0.labelFemale>
+	
+	<!-- EN: baby female king hamsters -->
+	<Ratkin_KingHamster.lifeStages.0.labelFemalePlural>母仓鼠大王宝宝</Ratkin_KingHamster.lifeStages.0.labelFemalePlural>
+	
+	<!-- EN: king hamster -->
+	<Ratkin_KingHamster.lifeStages.1.label>仓鼠大王</Ratkin_KingHamster.lifeStages.1.label>
+	
+	<!-- EN: king hamsters -->
+	<Ratkin_KingHamster.lifeStages.1.labelPlural>仓鼠大王</Ratkin_KingHamster.lifeStages.1.labelPlural>
+	
+	<!-- EN: male king hamster -->
+	<Ratkin_KingHamster.lifeStages.1.labelMale>公仓鼠大王</Ratkin_KingHamster.lifeStages.1.labelMale>
+	
+	<!-- EN: male king hamsters -->
+	<Ratkin_KingHamster.lifeStages.1.labelMalePlural>公仓鼠大王</Ratkin_KingHamster.lifeStages.1.labelMalePlural>
+	
+	<!-- EN: female king hamster -->
+	<Ratkin_KingHamster.lifeStages.1.labelFemale>母仓鼠大王</Ratkin_KingHamster.lifeStages.1.labelFemale>
+	
+	<!-- EN: female king hamsters -->
+	<Ratkin_KingHamster.lifeStages.1.labelFemalePlural>母仓鼠大王</Ratkin_KingHamster.lifeStages.1.labelFemalePlural>
+	
+	<!-- EN: king hamster -->
+	<Ratkin_KingHamster.lifeStages.2.label>仓鼠大王</Ratkin_KingHamster.lifeStages.2.label>
+	
+	<!-- EN: king hamsters -->
+	<Ratkin_KingHamster.lifeStages.2.labelPlural>仓鼠大王</Ratkin_KingHamster.lifeStages.2.labelPlural>
+	
+	<!-- EN: male king hamster -->
+	<Ratkin_KingHamster.lifeStages.2.labelMale>公仓鼠大王</Ratkin_KingHamster.lifeStages.2.labelMale>
+	
+	<!-- EN: male king hamsters -->
+	<Ratkin_KingHamster.lifeStages.2.labelMalePlural>公仓鼠大王</Ratkin_KingHamster.lifeStages.2.labelMalePlural>
+	
+	<!-- EN: female king hamster -->
+	<Ratkin_KingHamster.lifeStages.2.labelFemale>母仓鼠大王</Ratkin_KingHamster.lifeStages.2.labelFemale>
+	
+	<!-- EN: female king hamsters -->
+	<Ratkin_KingHamster.lifeStages.2.labelFemalePlural>母仓鼠大王</Ratkin_KingHamster.lifeStages.2.labelFemalePlural>
+	
+</LanguageData>
