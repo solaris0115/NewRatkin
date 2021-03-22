@@ -264,7 +264,7 @@
 
 	<Ratkin_GuardenerB.title>Guardian of the Kingdom</Ratkin_GuardenerB.title>
 	<Ratkin_GuardenerB.titleShort>Guardener</Ratkin_GuardenerB.titleShort>
-	<Ratkin_GuardenerB.baseDescription>[PAWN_nameDef] was a Guardener, responsible for tending to the Ratkin Kingdom's gardens and defending them from enemies.\n\n[PAWN_pronoun] fought in the Battle of Whitefur's Keep, where [PAWN_pronoun] was part of the successful counterattack that decisively defeated invaders from the Grimalkin Dominion. For their gallantry, [PAWN_pronoun] and her comrades were personally awarded with the title of Guardian of the Kingdom by the Ratkin King himself.</Ratkin_GuardenerB.baseDescription>
+	<Ratkin_GuardenerB.baseDescription>[PAWN_nameDef] was a Guardener, responsible for tending to the Ratkin Kingdom's gardens and defending them from enemies.\n\n[PAWN_pronoun] fought in the Battle of Whitefur's Keep, where [PAWN_pronoun] was part of the successful counterattack that decisively defeated invaders from the Grimalkin Dominion. For their gallantry, [PAWN_pronoun] and [PAWN_possessive] comrades were personally awarded with the title of Guardian of the Kingdom by the Ratkin King himself.</Ratkin_GuardenerB.baseDescription>
 
 
 	<!-- 기사 -->
