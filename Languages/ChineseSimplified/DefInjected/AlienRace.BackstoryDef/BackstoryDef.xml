@@ -350,24 +350,24 @@
 	<Ratkin_Librarian.baseDescription>[PAWN_nameDef]是一个图书管理员。[PAWN_pronoun]具备很多的学术知识，但似乎与书本相处的太久，其他的技能都荒废了。</Ratkin_Librarian.baseDescription>
 
 
-	<!-- EN: Ratkin Guardener -->
-	<Ratkin_Guardener.title>鼠族庄园守卫</Ratkin_Guardener.title>
+	<!-- EN: Lost Ratkin Guardener -->
+	<Ratkin_Guardener.title>迷路的鼠族庄园守卫</Ratkin_Guardener.title>
 	
 	<!-- EN: Guardener -->
 	<Ratkin_Guardener.titleShort>庄园守卫</Ratkin_Guardener.titleShort>
 	
-	<!-- EN: [PAWN_nameDef] was a Senior Guardener, responsible for tending to the Ratkin Kingdom's gardens and defending them from enemies. However, [PAWN_pronoun] was exiled after deserting [PAWN_possessive] post during the Kingdom's greatest hour of need.\n\n[PAWN_nameDef] now seeks a way to return to [PAWN_possessive] homeland. -->
-	<Ratkin_Guardener.baseDescription>[PAWN_nameDef]是一名高级庄园守卫者。但在[PAWN_pronoun]值班期间擅自离开了自己的岗位而遭到流放。现在[PAWN_pronoun]希望找到能够重归王国的办法。</Ratkin_Guardener.baseDescription>
+	<!-- EN: [PAWN_nameDef] was a Guardener, responsible for tending to the Ratkin Kingdom's gardens and defending them from enemies.\n\nWhile on a mission outside the city walls, [PAWN_pronoun] was accidentally left behind in the confusion of battle, and is now trying to find [PAWN_possessive] way home. -->
+	<Ratkin_Guardener.baseDescription>[PAWN_nameDef]是一名庄园守卫者。在城外执行任务的时候，[PAWN_pronoun]在战斗的混乱中落伍了。现在[PAWN_pronoun]希望找到回家的路。</Ratkin_Guardener.baseDescription>
 	
 	
-	<!-- EN: Ratkin Guardener -->
-	<Ratkin_GuardenerB.title>鼠族庄园守卫</Ratkin_GuardenerB.title>
+	<!-- EN: Guardian of the Kingdom -->
+	<Ratkin_GuardenerB.title>鼠族王国之英雄</Ratkin_GuardenerB.title>
 	
 	<!-- EN: Guardener -->
 	<Ratkin_GuardenerB.titleShort>庄园守卫</Ratkin_GuardenerB.titleShort>
 	
-	<!-- EN: [PAWN_nameDef] was a Guardener, responsible for tending to the Ratkin Kingdom's gardens and defending them from enemies.\n\n[PAWN_pronoun] fought in the Battle of Whitefur's Keep, where [PAWN_pronoun] was part of the successful counterattack that decisively defeated invaders from the Grimalkin Dominion. -->
-	<Ratkin_GuardenerB.baseDescription>[PAWN_nameDef]是一名庄园守卫者，在白毛城战役中击败了入侵的猫族帝国军队，立下赫赫战功。</Ratkin_GuardenerB.baseDescription>
+	<!-- EN: [PAWN_nameDef] was a Guardener, responsible for tending to the Ratkin Kingdom's gardens and defending them from enemies.\n\n[PAWN_pronoun] fought in the Battle of Whitefur's Keep, where [PAWN_pronoun] was part of the successful counterattack that decisively defeated invaders from the Grimalkin Dominion. For their gallantry, [PAWN_pronoun] and [PAWN_possessive] comrades were personally awarded with the title of Guardian of the Kingdom by the Ratkin King himself. -->
+	<Ratkin_GuardenerB.baseDescription>[PAWN_nameDef]是一名庄园守卫者，在白毛城战役中击败了入侵的猫族帝国军队，立下赫赫战功。[PAWN_pronoun]和[PAWN_possessive]的战友因其勇敢而被鼠族国王亲自颁发了《王国的守护者》的称号。</Ratkin_GuardenerB.baseDescription>
 
 
 	<!-- EN: Ratkin knight -->
