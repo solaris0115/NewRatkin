@@ -255,16 +255,16 @@
 
 	<!-- 정원사 -->
 
-	<Ratkin_Guardener.title>Ratkin Guardener</Ratkin_Guardener.title>
+	<Ratkin_Guardener.title>Lost Ratkin Guardener</Ratkin_Guardener.title>
 	<Ratkin_Guardener.titleShort>Guardener</Ratkin_Guardener.titleShort>
-	<Ratkin_Guardener.baseDescription>[PAWN_nameDef] was a Senior Guardener, responsible for tending to the Ratkin Kingdom's gardens and defending them from enemies. However, [PAWN_pronoun] was exiled after deserting [PAWN_possessive] post during the Kingdom's greatest hour of need.\n\n[PAWN_nameDef] now seeks a way to return to [PAWN_possessive] homeland.</Ratkin_Guardener.baseDescription>
+	<Ratkin_Guardener.baseDescription>[PAWN_nameDef] was a Guardener, responsible for tending to the Ratkin Kingdom's gardens and defending them from enemies.\n\nWhile on a mission outside the city walls, [PAWN_pronoun] was accidentally left behind in the confusion of battle, and is now trying to find [PAWN_possessive] way home.</Ratkin_Guardener.baseDescription>
 
 
 	<!-- 정원사 (B) -->
 
-	<Ratkin_GuardenerB.title>Ratkin Guardener</Ratkin_GuardenerB.title>
+	<Ratkin_GuardenerB.title>Guardian of the Kingdom</Ratkin_GuardenerB.title>
 	<Ratkin_GuardenerB.titleShort>Guardener</Ratkin_GuardenerB.titleShort>
-	<Ratkin_GuardenerB.baseDescription>[PAWN_nameDef] was a Guardener, responsible for tending to the Ratkin Kingdom's gardens and defending them from enemies.\n\n[PAWN_pronoun] fought in the Battle of Whitefur's Keep, where [PAWN_pronoun] was part of the successful counterattack that decisively defeated invaders from the Grimalkin Dominion.</Ratkin_GuardenerB.baseDescription>
+	<Ratkin_GuardenerB.baseDescription>[PAWN_nameDef] was a Guardener, responsible for tending to the Ratkin Kingdom's gardens and defending them from enemies.\n\n[PAWN_pronoun] fought in the Battle of Whitefur's Keep, where [PAWN_pronoun] was part of the successful counterattack that decisively defeated invaders from the Grimalkin Dominion. For their gallantry, [PAWN_pronoun] and her comrades were personally awarded with the title of Guardian of the Kingdom by the Ratkin King himself.</Ratkin_GuardenerB.baseDescription>
 
 
 	<!-- 기사 -->
