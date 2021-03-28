@@ -93,6 +93,12 @@
 				<amount>3</amount>
 			</li>
 		</skillGains>
+		<forcedTraits>
+			<li>
+				<defName>Undergrounder</defName>
+				<chance>50</chance>
+			</li>
+		</forcedTraits>
 		<spawnCategories>
 			<li>RatkinStory</li>
 			<li>RatkinSubject</li>
@@ -147,7 +153,9 @@
 	<AlienRace.BackstoryDef ParentName="BaseRatkinBackStory">
 		<defName>Ratkin_ShepherdBoy</defName>
 		<title>Ratkin shepherd boy</title>
+		<titleFemale>Ratkin shepherd girl</titleFemale>
 		<titleShort>shepherd boy</titleShort>
+		<titleShortFemale>shepherd girl</titleShortFemale>
 		<baseDescription>[PAWN_nameDef]은 어려서부터 다양한 가축들 사이에서 자랐습니다. [PAWN_pronoun]은 동물들을 친구처럼 생각하고 있습니다.</baseDescription>
 		<bodyTypeMale>Thin</bodyTypeMale>
 		<bodyTypeFemale>Thin</bodyTypeFemale>
@@ -412,8 +420,10 @@
 	<!-- 후계자 -->
 	<AlienRace.BackstoryDef ParentName="BaseRatkinBackStory">
 		<defName>Ratkin_Successor</defName>
-		<title>Ratkin successor</title>
-		<titleShort>successor</titleShort>
+		<title>Ratkin heir</title>
+		<titleFemale>Ratkin heiress</titleFemale>
+		<titleShort>Heir</titleShort>
+		<titleShortFemale>Heiress</titleShortFemale>
 		<baseDescription>[PAWN_nameDef]은 귀족의 후계자로 태어났습니다. 한때 찬란했던 가문이 기울자 [PAWN_pronoun]은 일으키기 위해 길을 떠나야만 했습니다.</baseDescription>
 		<bodyTypeMale>Thin</bodyTypeMale>
 		<bodyTypeFemale>Thin</bodyTypeFemale>
@@ -515,7 +525,62 @@
 			<li>RatkinServant</li>
 			<li>RatkinEducated</li>
 		</spawnCategories>
-	</AlienRace.BackstoryDef>	
+	</AlienRace.BackstoryDef>
+		<!-- 견습 재봉사 Apprentice seamstress -->
+	<AlienRace.BackstoryDef ParentName="BaseRatkinBackStory">
+		<defName>Ratkin_SeamstressStudent</defName>
+		<title>Ratkin Apprentice seamstress</title>
+		<titleShort>Apprentice seamstress</titleShort>
+		<baseDescription>(Needs Korean translation) As the apprentice of a master dressmaker, [PAWN_nameDef] spun thread, tidied rolls of fabric and swept the shop floor clean.\n\nIn time, [PAWN_pronoun] was also entrusted with sewing buttons, handkerchiefs and other small, simple items.</baseDescription>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<maleCommonality>0</maleCommonality>
+		<!-- Females only -->
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Crafting</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>Mining</li>
+		</workDisables>
+		<spawnCategories>
+			<li>RatkinStory</li>
+			<li>RatkinServant</li>
+			<li>RatkinCity</li> <!-- Unused -->
+		</spawnCategories>
+		<linkedBackstory>Ratkin_Seamstress</linkedBackstory>
+	</AlienRace.BackstoryDef>
+	<!-- 향사 Squire (apprentice knight) -->
+	<AlienRace.BackstoryDef ParentName="BaseRatkinBackStory">
+		<defName>Ratkin_KnightStudent</defName>
+		<title>Ratkin squire</title>
+		<titleShort>Squire</titleShort>
+		<baseDescription>(Needs Korean translation) [PAWN_nameDef] left [PAWN_possessive] home village after becoming apprenticed to a knight of the Ratkin Kingdom.\n\n[PAWN_pronoun] spent his days cleaning [PAWN_possessive] master's armor and weapons, as well as looking after [PAWN_possessive] master's king hamster mount. In return, [PAWN_possessive] master trained [PAWN_objective] in basic swordsmanship.</baseDescription>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Melee</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Animals</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Crafting</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>RatkinKnight</li>
+			<li>RatkinKnightCommander</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
 	<!-- 집시아이 -->
 	<AlienRace.BackstoryDef ParentName="BaseRatkinBackStory">
 		<defName>Ratkin_RomanyKid</defName>
@@ -1067,6 +1132,40 @@
 			<li>RatkinCity</li>
 			<li>RatkinDefender</li>
 		</spawnCategories>
+		<linkedBackstory>Ratkin_CountryKid</linkedBackstory>
+	</AlienRace.BackstoryDef>
+	<!-- Farmhand -->
+	<AlienRace.BackstoryDef ParentName="BaseRatkinBackStory">
+		<defName>Ratkin_FarmLaborer</defName>
+		<title>Ratkin farmhand</title>
+		<titleShort>Farmhand</titleShort>
+		<baseDescription>(Needs Korean translation) [PAWN_nameDef] worked as a laborer on various farms in the countryside, ploughing the fields, mending fences and caring for farm animals, as well as sowing and harvesting crops.\n\nWhenever work dried up, [PAWN_pronoun] would move on to a different village.</baseDescription>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Animals</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Construction</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Plants</defName>
+				<amount>8</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>Intellectual</li>
+		</workDisables>
+		<spawnCategories>
+			<li>RatkinStory</li>
+			<li>RatkinUneducated</li>
+			<li>RatkinCountry</li>
+			<li>RatkinWanderer</li>
+		</spawnCategories>
 	</AlienRace.BackstoryDef>
 	<!-- 광부 -->
 	<AlienRace.BackstoryDef ParentName="BaseRatkinBackStory">
@@ -1323,6 +1422,49 @@
 				<chance>50</chance>
 			</li>
 		</forcedTraits>
+	</AlienRace.BackstoryDef>
+	<!-- Guardener (B) -->
+	<AlienRace.BackstoryDef ParentName="BaseRatkinBackStory">
+		<defName>Ratkin_GuardenerB</defName>
+		<title>Ratkin Guardener</title>
+		<titleShort>Guardener</titleShort>
+		<baseDescription>(Needs Korean translation) [PAWN_nameDef] was a Guardener, responsible for tending to the Ratkin Kingdom's gardens and defending them from enemies.\n\n[PAWN_pronoun] fought in the Battle of Whitefur's Keep, where [PAWN_pronoun] was part of the successful counterattack that decisively defeated invaders from the Grimalkin Dominion.</baseDescription>
+		<!-- Battle of Whitefur's Keep = 흰털의 아성 전투 -->
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>8</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>12</amount>
+			</li>
+			<li>
+				<defName>Plants</defName>
+				<amount>5</amount>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>RatkinStory</li>
+			<li>RatkinEducated</li>
+			<li>RatkinCombatant</li>
+			<li>RatkinKnight</li>
+			<li>RatkinSoldier</li>
+			<li>RatkinEliteDefender</li>
+			<li>RatkinDefender</li>
+			<li>RatkinGuardener</li>
+			<li>RatkinKingdom</li>
+		</spawnCategories>
+		<forcedTraits>
+			<li>
+				<defName>Nimble</defName>
+				<chance>50</chance>
+			</li>
+		</forcedTraits>
+		<linkedBackstory>Ratkin_GuardenerStudent</linkedBackstory>
 	</AlienRace.BackstoryDef>
 
 	<!-- 기사 -->
@@ -2232,6 +2374,40 @@
 			<li>RatkinSubject</li>
 			<li>RatkinCity</li>
 		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<!-- Seamstress -->
+	<AlienRace.BackstoryDef ParentName="BaseRatkinBackStory">
+		<defName>Ratkin_Seamstress</defName>
+		<title>Ratkin seamstress</title>
+		<titleShort>Seamstress</titleShort>
+		<baseDescription>(Needs Korean translation) [PAWN_nameDef] became good at making a variety of clothes, ranging from simple workers' dresses to elaborate formal outfits. Many Ratkin nobles often travelled all the way to [PAWN_possessive] humble workshop to commission apparel for special occasions.\n\n[PAWN_possessive] own apprentice later went on to become a successful seamstress in her own right.</baseDescription>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<maleCommonality>0</maleCommonality>
+		<!-- Females only -->
+		<slot>Adulthood</slot>
+		<bioAgeRange>
+			<min>30</min>
+			<max>65</max>
+		</bioAgeRange>
+		<chronoAgeRange>
+			<min>30</min>
+			<max>65</max>
+		</chronoAgeRange>
+		<skillGains>
+			<li>
+				<defName>Crafting</defName>
+				<amount>6</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>Mining</li>
+		</workDisables>
+		<spawnCategories>
+			<li>RatkinStory</li>
+			<li>RatkinServant</li>
+		</spawnCategories>
+		<linkedBackstory>Ratkin_SeamstressStudent</linkedBackstory>
 	</AlienRace.BackstoryDef>
 
 	<!-- 방랑자 -->
