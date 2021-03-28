@@ -85,6 +85,12 @@
   <Ratkin_SeamstressStudent.titleShort>見習い針子</Ratkin_SeamstressStudent.titleShort>
   <Ratkin_SeamstressStudent.baseDescription>熟練したドレスメーカーの見習いの針子として、[PAWN_nameDef]は糸を紡ぎ、布束を整頓し、作業場をきれいに掃除していました。\n\nやがて、[PAWN_pronoun]は、ボタンの縫い付けやハンカチなど、小さくて簡単な品々も任されるようになりました。</Ratkin_SeamstressStudent.baseDescription>
 
+  <!-- Squire (apprentice knight) -->
+
+  <Ratkin_KnightStudent.title>ラットキン従士</Ratkin_KnightStudent.title>
+  <Ratkin_KnightStudent.titleShort>従士</Ratkin_KnightStudent.titleShort>
+  <Ratkin_KnightStudent.baseDescription>[PAWN_nameDef]は、ラットキン王国の騎士に弟子入りした後、[PAWN_possessive]故郷の村を出ました。\n\n[PAWN_pronoun]は、[PAWN_possessive]主人の鎧と武器の掃除と[PAWN_possessive]主人の騎乗キングハムスターの世話で日々を過ごしました。その見返りとして、[PAWN_possessive]主人は、剣術の基礎について[PAWN_objective]訓練しました。</Ratkin_KnightStudent.baseDescription>
+
   <!-- Romany Kid -->
 
   <Ratkin_RomanyKid.title>ラットキン流浪民の子供</Ratkin_RomanyKid.title>
@@ -223,7 +229,7 @@
 
   <Ratkin_GuardenerB.title>ラットキン近衛長</Ratkin_GuardenerB.title>
   <Ratkin_GuardenerB.titleShort>近衛長</Ratkin_GuardenerB.titleShort>
-  <Ratkin_GuardenerB.baseDescription>[PAWN_nameDef]は守護者であり、ラットキン王国の近衛兵を統率し、敵から国を守る責任がありました。\n\n[PAWN_pronoun]はホワイトファー砦の戦いに参加していました。[PAWN_pronoun]は、グリマル族自治領からの侵略者たちを完全に敗北させた反撃が成功させた英雄でした。</Ratkin_GuardenerB.baseDescription>
+  <Ratkin_GuardenerB.baseDescription>[PAWN_nameDef]は守護者であり、ラットキン王国の近衛兵を統率し、敵から国を守る責任がありました。\n\n[PAWN_pronoun]はホワイトファー砦の戦いに参加していました。[PAWN_pronoun]は、グリマル族自治領からの侵略者たちを完全に敗北させた反撃が成功させた英雄の一人でした。</Ratkin_GuardenerB.baseDescription>
 
   <!-- Knight -->
 
