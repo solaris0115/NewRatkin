@@ -165,12 +165,6 @@
   <Ratkin_Farmer.titleShort>農民</Ratkin_Farmer.titleShort>
   <Ratkin_Farmer.baseDescription>[PAWN_nameDef]は、農民です。 [PAWN_pronoun]は両親の家業を受け継いで農夫となり、[PAWN_pronoun]の子供たちも農家になるでしょう。</Ratkin_Farmer.baseDescription>
 
-  <!-- Farmhand -->
-
-  <Ratkin_FarmLaborer.title>ラットキン農夫</Ratkin_FarmLaborer.title>
-  <Ratkin_FarmLaborer.titleShort>農夫</Ratkin_FarmLaborer.titleShort>
-  <Ratkin_FarmLaborer.baseDescription>[PAWN_nameDef]は、田園地帯の色々な農場で農業労働者として働き、畑を耕し、柵を修繕して、家畜の世話を行い、作物の種を播き収穫をしていました。\n\n仕事がなくなると、[PAWN_pronoun]は別の村へと移動する生活をしていました。</Ratkin_FarmLaborer.baseDescription>
-
   <!-- Miner -->
 
   <Ratkin_Miner.title>ラットキン採掘者</Ratkin_Miner.title>
@@ -218,12 +212,6 @@
   <Ratkin_Guardener.title>ラットキン近衛兵</Ratkin_Guardener.title>
   <Ratkin_Guardener.titleShort>近衛兵</Ratkin_Guardener.titleShort>
   <Ratkin_Guardener.baseDescription>[PAWN_nameDef]は、ラットキン王国で最高の近衛兵でした。しかし、外地での任務中に一人で倒れました。 [PAWN_pronoun]は再び王国に戻る方法を探そうとしています。</Ratkin_Guardener.baseDescription>
-
-  <!-- Guardener (B) -->
-
-  <Ratkin_GuardenerB.title>ラットキン近衛長</Ratkin_GuardenerB.title>
-  <Ratkin_GuardenerB.titleShort>近衛長</Ratkin_GuardenerB.titleShort>
-  <Ratkin_GuardenerB.baseDescription>[PAWN_nameDef]は守護者であり、ラットキン王国の近衛兵を統率し、敵から国を守る責任がありました。\n\n[PAWN_pronoun]はホワイトファー砦の戦いに参加していました。[PAWN_pronoun]は、グリマル族自治領からの侵略者たちを完全に敗北させた反撃が成功させた英雄でした。</Ratkin_GuardenerB.baseDescription>
 
   <!-- Knight -->
 
@@ -380,12 +368,6 @@
   <Ratkin_Subject.title>ラットキン実験体</Ratkin_Subject.title>
   <Ratkin_Subject.titleShort>実験体</Ratkin_Subject.titleShort>
   <Ratkin_Subject.baseDescription>[PAWN_nameDef]は、ラットキンの実験体です。 [PAWN_pronoun]は様々な実験を耐えて強くなりましたが、実験中に事故が発生したため、逃げ出すことができました。</Ratkin_Subject.baseDescription>
-
-  <!-- Seamstress -->
-
-  <Ratkin_Seamstress.title>ラットキン女性裁縫師</Ratkin_Seamstress.title>
-  <Ratkin_Seamstress.titleShort>裁縫師</Ratkin_Seamstress.titleShort>
-  <Ratkin_Seamstress.baseDescription>[PAWN_nameDef] は、簡単なな作業服から手の込んだ儀礼衣装まで、さまざまな服を作るのが上手になりました。多くのラットキン貴族たちは、特別な儀式用の衣服を依頼するために、しばしば[PAWN_possessive]質素な作業場まで足を運びました。\n\n[PAWN_possessive]弟子たちは、その後の努力によって裁縫師として成功していきました。</Ratkin_Seamstress.baseDescription>
 
   <!-- Vagabond -->
 
