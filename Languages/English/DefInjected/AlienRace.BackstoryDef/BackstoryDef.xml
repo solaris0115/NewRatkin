@@ -371,9 +371,8 @@
   <Ratkin_Vagabond.baseDescription>[PAWN_nameDef] has spent [PAWN_possessive] life wandering. [PAWN_possessive] past is a mystery, but the wisdom gained from it seems reliable enough.</Ratkin_Vagabond.baseDescription>
 
   <!-- 데모맨 -->
-
-  <Ratkin_Demoman.title>Ratkin Demolitionist</Ratkin_Demoman.title>
-  <Ratkin_Demoman.titleShort>Demolitionist</Ratkin_Demoman.titleShort>
+  <Ratkin_Demoman.title>Ratkin Demoman</Ratkin_Demoman.title>
+  <Ratkin_Demoman.titleShort>Demoman</Ratkin_Demoman.titleShort>
   <Ratkin_Demoman.baseDescription>Unlike other Ratkin, [PAWN_nameDef] is obsessed with explosions. Ratkin commandos put [PAWN_possessive] talents to good use.</Ratkin_Demoman.baseDescription>
 
 </LanguageData>
