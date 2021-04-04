@@ -13,6 +13,20 @@
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
 		<apparelColor>(255,255,255)</apparelColor>
 	</PawnKindDef>	
+	
+	<PawnKindDef Name="RKBasePawnKind_B" Abstract="True">
+		<combatPower>20</combatPower>
+		<canBeSapper>true</canBeSapper>
+		<baseRecruitDifficulty>0.80</baseRecruitDifficulty>
+		<race>Ratkin_Su</race>
+		<minGenerationAge>16</minGenerationAge>
+		<maxGenerationAge>35</maxGenerationAge>
+		<!-- <defaultFactionType>Rakinia</defaultFactionType> -->
+		<invNutrition>2</invNutrition>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<apparelColor>(255,255,255)</apparelColor>
+	</PawnKindDef>	
 	<!-- 평화 -->
 	<!-- 시민 -->
 	<PawnKindDef ParentName="RKBasePawnKind">
@@ -138,6 +152,10 @@
 	<PawnKindDef Name="RKCombatantBase" ParentName="RKBasePawnKind" Abstract="true">
 		<isFighter>true</isFighter>	
 	</PawnKindDef>	
+	
+	<PawnKindDef Name="RKCombatantBase_B" ParentName="RKBasePawnKind_B" Abstract="true">
+		<isFighter>true</isFighter>	
+	</PawnKindDef>
 
 	<!-- 랫킨 상단 -->	
 	<PawnKindDef ParentName="RKCombatantBase">
@@ -575,7 +593,8 @@
 			<max>5000</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>RK_4TierWeapon</li>
+			<li>RK_2TierWeapon</li>
+			<li>RK_Shotgun</li>
 		</weaponTags>
 		<apparelTags>
 			<li>RK_EliteSoldier</li>
@@ -634,6 +653,8 @@
 		</apparelRequired>
 		<apparelTags>
 			<li>RK_Demoman</li>
+			<li>RK_Soldier</li>
+			<li>RK_EliteSoldier</li>
 		</apparelTags>
 		<weaponMoney>
 			<min>1500</min>
@@ -828,7 +849,7 @@
 		</weaponTags>
 	</PawnKindDef>
 	<!-- 실험체 -->
-	<PawnKindDef ParentName="RKCombatantBase">
+	<PawnKindDef ParentName="RKCombatantBase_B">
 		<defName>RatkinSubject</defName>
 		<label>ratkin subject</label>
 		<baseRecruitDifficulty>0.55</baseRecruitDifficulty>
@@ -850,11 +871,12 @@
 			<max>5000</max>
 		</techHediffsMoney>
 		<weaponMoney>
-			<min>4500</min>
-			<max>5000</max>
+			<min>1000</min>
+			<max>3000</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>RK_4TierWeapon</li>
+			<li>NeolithicMeleeBasic</li>
+			<li>SimpleGun</li>
 		</weaponTags>
 		<apparelTags>
 			<li>RK_Subject</li>

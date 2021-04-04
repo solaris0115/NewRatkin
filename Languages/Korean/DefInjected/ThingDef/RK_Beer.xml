@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: beer -->
+  <RK_StrawberryBeer.label>딸기맥주</RK_StrawberryBeer.label>
+  <!-- EN: It is a special liquor made in the traditional way of ratkin. The alcohol concentration is low, so ratkin can enjoy it lightly. -->
+  <RK_StrawberryBeer.description>랫킨의 전통적인 방식으로 제조된 특별한 술 입니다. 도수가 낮아 랫킨들도 가볍게 즐길수 있습니다.</RK_StrawberryBeer.description>
+  <!-- EN: Drink {0} -->
+  <RK_StrawberryBeer.ingestible.ingestCommandString>{0} 마시기</RK_StrawberryBeer.ingestible.ingestCommandString>
+  <!-- EN: Drinking {0}. -->
+  <RK_StrawberryBeer.ingestible.ingestReportString>{0} 마시는 중.</RK_StrawberryBeer.ingestible.ingestReportString>
+  <!-- EN: bottle -->
+  <RK_StrawberryBeer.tools.bottle.label>병</RK_StrawberryBeer.tools.bottle.label>
+  
+</LanguageData>

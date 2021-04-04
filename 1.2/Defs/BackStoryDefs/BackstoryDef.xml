@@ -879,9 +879,9 @@
 	<!-- 실험실쥐 -->	
 	<AlienRace.BackstoryDef ParentName="BaseRatkinBackStory">
 		<defName>Ratkin_LaboratoryRats</defName>
-		<title>Ratkin Laboratory Rats</title>
-		<titleShort>Laboratory Rats</titleShort>
-		<baseDescription>[PAWN_nameDef]은 실험실에서 태어났습니다. 군용 랫킨으로 유전적 조작이 이루어진 [PAWN_pronoun]은 어느날 자유를 향한 깊은 갈망을 느꼈고 과학자들을 죽이고 달아났습니다.</baseDescription>
+		<title>Ratkin Specimen</title>
+		<titleShort>Ratkin Specimen</titleShort>
+		<baseDescription>[PAWN_nameDef]은 군용 실험체로서 유전자 조작이 가해진체 인간들의 실험실에서 태어났습니다. 자유를 향한 깊은 갈망을 느끼던 [PAWN_pronoun]은 탈출을 결심했습니다.</baseDescription>
 		<bodyTypeMale>Thin</bodyTypeMale>
 		<bodyTypeFemale>Thin</bodyTypeFemale>
 		<slot>Childhood</slot>

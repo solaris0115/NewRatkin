@@ -179,4 +179,14 @@
 			<li>RK_Hair</li>
 		</hairTags>
 	</HairDef>
+	
+	<HairDef>
+		<defName>RK_twin6</defName>
+		<label>Twin tail</label>
+		<hairGender>Female</hairGender>
+		<texPath>Hair/twin5</texPath>
+		<hairTags>
+			<li>RK_Hair</li>
+		</hairTags>
+	</HairDef>
 </Defs>

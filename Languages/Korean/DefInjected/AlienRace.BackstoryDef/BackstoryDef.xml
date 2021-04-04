@@ -25,6 +25,7 @@
   <!-- 꼬마목동 -->
 
   <Ratkin_ShepherdBoy.title>랫킨 어린 양치기</Ratkin_ShepherdBoy.title>
+  <Ratkin_ShepherdBoy.titleFemale>랫킨 어린 양치기</Ratkin_ShepherdBoy.titleFemale>
   <Ratkin_ShepherdBoy.titleShort>어린 양치기</Ratkin_ShepherdBoy.titleShort>
   <Ratkin_ShepherdBoy.baseDescription>[PAWN_nameDef](은)는 어려서부터 다양한 가축들 사이에서 자랐습니다. [PAWN_pronoun](은)는 동물들을 친구처럼 생각하고 있습니다.</Ratkin_ShepherdBoy.baseDescription>
 
@@ -68,6 +69,7 @@
 
   <Ratkin_Successor.title>랫킨 후계자</Ratkin_Successor.title>
   <Ratkin_Successor.titleShort>후계자</Ratkin_Successor.titleShort>
+  <Ratkin_Successor.titleFemale>후계자</Ratkin_Successor.titleFemale>
   <Ratkin_Successor.baseDescription>[PAWN_nameDef](은)는 귀족의 후계자로 태어났습니다. 한때 찬란했던 가문이 기울자 [PAWN_pronoun](은)는 가문을 일으키기 위해 길을 떠나야만 했습니다.</Ratkin_Successor.baseDescription>
 
 
@@ -143,9 +145,9 @@
 
   <!-- 실험실쥐 -->
 
-  <Ratkin_LaboratoryRats.title>랫킨 실험실 쥐</Ratkin_LaboratoryRats.title>
-  <Ratkin_LaboratoryRats.titleShort>실험쥐</Ratkin_LaboratoryRats.titleShort>
-  <Ratkin_LaboratoryRats.baseDescription>[PAWN_nameDef](은)는 실험실에서 태어났습니다. 군용 랫킨으로 유전적 조작이 이루어진 [PAWN_pronoun](은)는 어느날 자유를 향한 깊은 갈망을 느꼈고 과학자들을 죽이고 달아났습니다.</Ratkin_LaboratoryRats.baseDescription>
+  <Ratkin_LaboratoryRats.title>랫킨 실험체</Ratkin_LaboratoryRats.title>
+  <Ratkin_LaboratoryRats.titleShort>실험체</Ratkin_LaboratoryRats.titleShort>
+  <Ratkin_LaboratoryRats.baseDescription>[PAWN_nameDef]은 군용 실험체로서 유전자 조작이 가해진체 인간들의 실험실에서 태어났습니다. 자유를 향한 깊은 갈망을 느끼던 [PAWN_pronoun]은 탈출을 결심했습니다.</Ratkin_LaboratoryRats.baseDescription>
 
 
   <!-- 좀도둑 -->

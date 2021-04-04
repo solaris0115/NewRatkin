@@ -9,6 +9,9 @@
 
   <Ballista.label>발리스타</Ballista.label>
   <Ballista.description>커다란 노포를 연구합니다. 체구가 작은 랫킨도 다루기 쉽습니다.</Ballista.description>
+  
+  <Bigmouse.label>대포</Bigmouse.label>
+  <Bigmouse.description>커다란 대포를 연구합니다. 육중한 대포알을 날려보내는 무시무시한 방어시설입니다.</Bigmouse.description>
 
   <Advanced_BallistaBolt.label>발라스타 탄환</Advanced_BallistaBolt.label>
   <Advanced_BallistaBolt.description>더 다양한 발리스타용 탄환을 연구합니다.</Advanced_BallistaBolt.description>

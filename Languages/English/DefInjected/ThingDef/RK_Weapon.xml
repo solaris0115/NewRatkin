@@ -140,5 +140,18 @@
 
 
   <!--<Bullet_RK_PrototypePulseRifle.label>wedge bullet</Bullet_RK_PrototypePulseRifle.label>-->
+  
+  <!-- 샷건 -->
+
+  <RK_Rifle_line.label>ratkin shotgun</RK_Rifle_line.label>
+  <RK_Rifle_line.description>It is a sword-off shotgun. In the Ratkin Kingdom, shotguns shoot ratkin.</RK_Rifle_line.description>
+  <RK_Rifle_line.verbs.0.label>Buck fire</RK_Rifle_line.verbs.0.label>
+  <RK_Rifle_line.verbs.1.label>Slug fire</RK_Rifle_line.verbs.1.label>
+  <RK_Rifle_line.tools.0.label>stock</RK_Rifle_line.tools.0.label>
+  <RK_Rifle_line.tools.1.label>barrel</RK_Rifle_line.tools.1.label>
+  <RK_Rifle_line.tools.2.label>bayonet</RK_Rifle_line.tools.2.label>
+
+  <Bullet_RK_Buck.label>Buck bullet</Bullet_RK_Buck.label>
+  <Bullet_RK_Slug.label>Slug bullet</Bullet_RK_Slug.label>
 
 </LanguageData>

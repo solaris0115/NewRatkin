@@ -159,5 +159,10 @@
   <Make_RK_RoyalCrown.description>Make Ratkin royal crown.</Make_RK_RoyalCrown.description>
   <Make_RK_RoyalCrown.jobString>Making Ratkin royal crown.</Make_RK_RoyalCrown.jobString>
 
-
+    <!-- EN: make wort -->
+  <Make_RK_StrawberryBeer.label>딸기맥주 만들기</Make_RK_StrawberryBeer.label>
+  <!-- EN: Make wort from hops. -->
+  <Make_RK_StrawberryBeer.description>맥주와 딸기를 섞어 딸기맥주를 만듭니다.</Make_RK_StrawberryBeer.description>
+  <!-- EN: Making wort. -->
+  <Make_RK_StrawberryBeer.jobString>딸기맥주 만드는 중.</Make_RK_StrawberryBeer.jobString>
 </LanguageData>

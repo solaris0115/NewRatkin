@@ -10,6 +10,9 @@
   <Ballista.label>ballista</Ballista.label>
   <Ballista.description>Researching a ballista. Ratkin are made for easy handling.</Ballista.description>
 
+  <Bigmouse.label>Cannon</Bigmouse.label>
+  <Bigmouse.description>Study a large cannon. It is a terrifying defense facility that blows out heavy cannonballs.</Bigmouse.description>
+
   <Advanced_BallistaBolt.label>advanced ballista bolt</Advanced_BallistaBolt.label>
   <Advanced_BallistaBolt.description>Researching a variety of ballista bolts.</Advanced_BallistaBolt.description>
 
