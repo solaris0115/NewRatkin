@@ -33,5 +33,18 @@
 
   <Bullet_BallistaBolt_AP.label>ballista bolt (AP)</Bullet_BallistaBolt_AP.label>
 
+  <!-- 찍찍포 -->
 
+  <RK_Cannon_Strait_Body.label>Ratkin Cannon</RK_Cannon_Strait_Body.label>
+  <RK_Cannon_Strait_Body.description>A cannon that can fire polished stones at a long distance. Developed to subdue enemies from a distance, but cannot shoot over hills. The nickname is Squeak Cannon.</RK_Cannon_Strait_Body.description>
+
+  <RK_Turret_Cannon_Strait.label>Cannon</RK_Turret_Cannon_Strait.label>
+  <RK_Turret_Cannon_Strait.description>A cannon that can fire polished stones at a long distance. Developed to subdue enemies from a distance, but cannot shoot over hills. The nickname is Squeak Cannon.</RK_Turret_Cannon_Strait.description>
+
+  <!-- 빅마우스 -->
+
+  <Big_mouse.label>Ratkin Cannon Shell</Big_mouse.label>
+  <Big_mouse.description>It is a cannon shell that surrounds the surface of a polished stone mass with steel.</Big_mouse.description>
+
+  <Bullet_Big_mouse.label>Ratkin Cannon Shell</Bullet_Big_mouse.label>
 </LanguageData>

@@ -137,6 +137,19 @@
 
   <Bullet_BFR_AP.label>wedge bullet (AP)</Bullet_BFR_AP.label>
   <Bullet_BFR_SC.label>wedge bullet (SC)</Bullet_BFR_SC.label>
+  
+  <!-- 샷건 -->
+
+  <RK_Rifle_line.label>랫킨 산탄총</RK_Rifle_line.label>
+  <RK_Rifle_line.description>소드오프 샷건입니다. 랫킨 왕국에서는 샷건이 랫킨을 쏩니다.</RK_Rifle_line.description>
+  <RK_Rifle_line.verbs.0.label>벅탄 발사</RK_Rifle_line.verbs.0.label>
+  <RK_Rifle_line.verbs.1.label>슬러그탄 발사</RK_Rifle_line.verbs.1.label>
+  <RK_Rifle_line.tools.0.label>개머리판</RK_Rifle_line.tools.0.label>
+  <RK_Rifle_line.tools.1.label>총열</RK_Rifle_line.tools.1.label>
+  <RK_Rifle_line.tools.2.label>총검</RK_Rifle_line.tools.2.label>
+
+  <Bullet_RK_Buck.label>벅탄</Bullet_RK_Buck.label>
+  <Bullet_RK_Slug.label>슬러그탄</Bullet_RK_Slug.label>
 
 
 </LanguageData>

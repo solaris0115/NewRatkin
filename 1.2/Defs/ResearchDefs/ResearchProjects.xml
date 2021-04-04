@@ -64,6 +64,20 @@
 		<researchViewX>1</researchViewX>
 		<researchViewY>2</researchViewY>
 	</ResearchProjectDef>	
+	
+	<ResearchProjectDef>
+		<defName>Bigmouse</defName>
+		<label>Cannon</label>
+		<description>커다란 대포를 연구합니다. 육중한 대포알을 날려보내는 무시무시한 방어시설입니다.</description>
+		<tab>RatkinTech</tab>
+		<baseCost>1200</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>Ballista</li>
+		</prerequisites>
+		<researchViewX>2</researchViewX>
+		<researchViewY>2</researchViewY>
+	</ResearchProjectDef>
 		
 	<ResearchProjectDef>
 		<defName>MicroOptical</defName>

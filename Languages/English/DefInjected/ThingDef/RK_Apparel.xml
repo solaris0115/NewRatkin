@@ -183,6 +183,10 @@
   <RK_Mask.label>Ratkin mask helmet</RK_Mask.label>
   <RK_Mask.description>A helmet with a mask. It is designed to be active for long periods of time even in toxic environments.</RK_Mask.description>
 
+  <!-- 가스마스크 -->
+
+  <RK_MaskB.label>Ratkin mask helmet</RK_MaskB.label>
+  <RK_MaskB.description>A helmet with a mask. It is designed to be active for long periods of time even in toxic environments.</RK_MaskB.description>
 
   <!-- 특공 머리띠 -->
 
@@ -258,5 +262,8 @@
   <RK_RoyalCrown.label>Ratkin royal crown</RK_RoyalCrown.label>
   <RK_RoyalCrown.description>A grand crown of metal with an elaborate design. Worn by upper-ranking nobles.</RK_RoyalCrown.description>
 
+  <!-- 로티인형 -->
 
+  <RK_RottiHat.label>Rotti Hat</RK_RottiHat.label>
+  <RK_RottiHat.description>It is a Rotti doll made of cloth. You can carry it around, but it's even more cute when you put it on your head!</RK_RottiHat.description>
 </LanguageData>

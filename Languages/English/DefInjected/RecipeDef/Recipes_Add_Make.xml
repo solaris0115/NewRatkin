@@ -159,5 +159,11 @@
   <Make_RK_RoyalCrown.description>Make Ratkin royal crown.</Make_RK_RoyalCrown.description>
   <Make_RK_RoyalCrown.jobString>Making Ratkin royal crown.</Make_RK_RoyalCrown.jobString>
 
+    <!-- EN: make wort -->
+  <Make_RK_StrawberryBeer.label>make Strawberry Beer</Make_RK_StrawberryBeer.label>
+  <!-- EN: Make wort from hops. -->
+  <Make_RK_StrawberryBeer.description>Mix beer and strawberries to make strawberry beer.</Make_RK_StrawberryBeer.description>
+  <!-- EN: Making wort. -->
+  <Make_RK_StrawberryBeer.jobString>making Strawberry Beer</Make_RK_StrawberryBeer.jobString>
 
 </LanguageData>

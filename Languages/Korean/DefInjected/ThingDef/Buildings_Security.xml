@@ -32,6 +32,19 @@
   <BallistaBolt_AP.description>관통력을 높인 발리스타 볼트입니다. 사선상의 적 여러명을 관통할 수 있습니다.</BallistaBolt_AP.description>
 
   <Bullet_BallistaBolt_AP.label>발리스타 볼트 (관통)</Bullet_BallistaBolt_AP.label>
+  
+  <!-- 찍찍포 -->
 
+  <RK_Cannon_Strait_Body.label>랫킨 대포</RK_Cannon_Strait_Body.label>
+  <RK_Cannon_Strait_Body.description>다듬어진 돌덩어리를 원거리로 발사할수 있는 대포입니다. 적을 원거리에서 제압하기 위하여 개발되었으나 언덕 너머를 사격할수는 없습니다. 별명은 찍찍포입니다.</RK_Cannon_Strait_Body.description>
 
+  <RK_Turret_Cannon_Strait.label>랫킨 대포</RK_Turret_Cannon_Strait.label>
+  <RK_Turret_Cannon_Strait.description>다듬어진 돌덩어리를 원거리로 발사할수 있는 대포입니다. 적을 원거리에서 제압하기 위하여 개발되었으나 언덕 너머를 사격할수는 없습니다. 별명은 찍찍포입니다.</RK_Turret_Cannon_Strait.description>
+
+  <!-- 빅마우스 -->
+
+  <Big_mouse.label>랫킨 대포알</Big_mouse.label>
+  <Big_mouse.description>다듬어진 돌덩어리의 표면을 강철로 둘러 싼 포탄입니다.</Big_mouse.description>
+
+  <Bullet_Big_mouse.label>랫킨 대포알</Bullet_Big_mouse.label>
 </LanguageData>

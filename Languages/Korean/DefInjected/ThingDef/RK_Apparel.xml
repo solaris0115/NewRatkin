@@ -183,6 +183,10 @@
   <RK_Mask.label>랫킨 마스크 핼멧</RK_Mask.label>
   <RK_Mask.description>마스크가 있는 헬멧입니다. 유독성 환경에서도 장시간 활동할 수 있도록 고안되었습니다.</RK_Mask.description>
 
+  <!-- 역병마스크 -->
+
+  <RK_MaskB.label>랫킨 마스크 핼멧</RK_MaskB.label>
+  <RK_MaskB.description>마스크가 있는 헬멧입니다. 유독성 환경에서도 장시간 활동할 수 있도록 고안되었습니다.</RK_MaskB.description>
 
   <!-- 특공 머리띠 -->
 
@@ -258,5 +262,8 @@
   <RK_RoyalCrown.label>랫킨 로열 왕관</RK_RoyalCrown.label>
   <RK_RoyalCrown.description>금속으로 만든 왕관입니다. 커라단 왕관은 착용자의 권위를 말해주고 있습니다.</RK_RoyalCrown.description>
 
+  <!-- 로티인형 -->
 
+  <RK_RottiHat.label>로티 모자</RK_RottiHat.label>
+  <RK_RottiHat.description>천으로 만든 로티 인형입니다. 안고 다닐 수도 있지만 머리에 얹으면 더 귀엽습니다!</RK_RottiHat.description>
 </LanguageData>
