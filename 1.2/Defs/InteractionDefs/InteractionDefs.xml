@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <InteractionDef>
+    <defName>RK_PriestPray</defName>
+    <label>pray</label>
+    <workerClass>NewRatkin.InteractionWorker_PriestPray</workerClass>
+    <symbol>Things/Mote/SpeechSymbols/Pray</symbol>
+    <recipientThought>RK_PriestPray</recipientThought>
+    <logRulesInitiator>
+      <rulesStrings>
+        <li>r_logentry->[INITIATOR_nameDef] [complimented] [RECIPIENT_nameDef]'s [PersonalCharacteristic].</li>
+        
+        <li>complimented(p=3)->complimented</li>
+        <li>complimented->praised</li>
+        <li>complimented->commended</li>
+        <li>complimented->lauded</li>
+        <li>complimented->applauded</li>
+        <li>complimented->celebrated</li>
+        <li>complimented->saluted</li>
+        <li>complimented->spoke kindly of</li>
+        <li>complimented->expressed good things about</li>
+        <li>complimented->offered kinds words about</li>
+        <li>complimented->verbally appreciated</li>
+        <li>complimented->expressed appreciation for</li>
+        <li>complimented->said good things about</li>
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+</Defs>

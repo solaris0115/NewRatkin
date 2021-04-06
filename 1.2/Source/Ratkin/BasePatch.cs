@@ -104,7 +104,38 @@ namespace NewRatkin
         public bool followStuffColor = true;
     }
      
+    [HarmonyPatch(typeof(PawnGenerator))]
+    [HarmonyPatch("TryGenerateNewPawnInternal")]
+    public static class PawnGeneratorPatch
+    {
+        [HarmonyPostfix]
+        static void Postfix(Pawn __result)
+        {
+            if (__result != null)
+            {
+                if (__result?.story?.adulthood == BackstoryCache.Ratkin_Sister)
+                {
+                    __result.abilities?.GainAbility(RatkinAbilityDefOf.RK_PrayerService);
+                }
+            }
+        }
+    }
 
-
-
+    // For backward compatiblity
+    [HarmonyPatch(typeof(Pawn_AbilityTracker))]
+    [HarmonyPatch("ExposeData")]
+    public static class Pawn_AbilityTrackerPatch
+    {
+        [HarmonyPostfix]
+        static void Postfix(Pawn_AbilityTracker __instance, Pawn ___pawn)
+        {
+            if (Scribe.mode == LoadSaveMode.ResolvingCrossRefs)
+            {
+                if (___pawn?.story?.adulthood == BackstoryCache.Ratkin_Sister && !__instance.abilities.Any(x => x.def == RatkinAbilityDefOf.RK_PrayerService))
+                {
+                    __instance.GainAbility(RatkinAbilityDefOf.RK_PrayerService);
+                }
+            }
+        }
+    }
 }

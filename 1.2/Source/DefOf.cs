@@ -42,6 +42,8 @@ namespace NewRatkin
         public static ThingDef RK_ThiefTunnelSpawner;
 
         public static ThingDef RK_EmpBomb;
+
+        public static ThingDef RK_Pulpit;
     }
 
     [DefOf]
@@ -100,5 +102,38 @@ namespace NewRatkin
     public static class RatkinRaceDefOf
     {
         public static ThingDef Ratkin;
+    }
+
+    [DefOf]
+    public static class RatkinAbilityDefOf
+    {
+        public static AbilityDef RK_PrayerService;
+    }
+
+    [DefOf]
+    public static class RatkinDutyDefOf
+    {
+        public static DutyDef RK_JoinPrayerService;
+        public static DutyDef RK_OrganizePrayerService;
+        public static DutyDef RK_SpectatePrayerService;
+    }
+
+    [DefOf]
+    public static class RatkinJobDefOf
+    {
+        public static JobDef RK_Job_PrayerService;
+        public static JobDef RK_Job_SpectatePray;
+    }
+
+    [DefOf]
+    public static class RatkinTraitDefOf
+    {
+        public static TraitDef Faith;
+    }
+
+    [DefOf]
+    public static class RatkinThoughtDefOf
+    {
+        public static ThoughtDef RK_AttendPrayerMeetingMood;
     }
 }
