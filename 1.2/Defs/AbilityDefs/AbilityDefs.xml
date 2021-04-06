@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <AbilityDef Name="Speech">
+    <defName>RK_PrayerService</defName>
+    <label>prayer service</label>
+    <description>test</description>
+    <iconPath>UI/Abilities/PrayerService</iconPath>
+    <hotKey>Misc12</hotKey>
+    <gizmoClass>NewRatkin.Command_AbilityPrayerService</gizmoClass>
+    <displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+    <cooldownTicksRange>180000~300000</cooldownTicksRange>
+    <targetRequired>False</targetRequired>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>-1</range>
+    </verbProperties>
+    <comps>
+    </comps>
+  </AbilityDef>
+
+</Defs>
