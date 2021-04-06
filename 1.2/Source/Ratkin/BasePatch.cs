@@ -138,4 +138,21 @@ namespace NewRatkin
             }
         }
     }
+
+    [HarmonyPatch(typeof(NegativeInteractionUtility))]
+    [HarmonyPatch("NegativeInteractionChanceFactor")]
+    public static class NegativeInteractionUtilityPatch
+    {
+        [HarmonyPrefix]
+        static bool Prefix(ref float __result, Pawn initiator, Pawn recipient)
+        {
+            if (initiator.story?.adulthood == BackstoryCache.Ratkin_Sister)
+            {
+                __result = 0f;
+                return false;
+            }
+
+            return true;
+        }
+    }
 }
