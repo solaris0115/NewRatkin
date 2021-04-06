@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <AbilityPrayerServiceCooldown>Next Prayer meeting ready in</AbilityPrayerServiceCooldown>
+  <AbilityPrayerServiceDisabledAlreadyGivingPrayerService>already giving a prayer meeting.</AbilityPrayerServiceDisabledAlreadyGivingPrayerService>
+  <AbilityPrayerServiceDisabledDrafted>can't use when drafted.</AbilityPrayerServiceDisabledDrafted>
+  <AbilityPrayerServiceDisabledNoPulpit>no pulpit for prayer meeting.</AbilityPrayerServiceDisabledNoPulpit>
+</LanguageData>

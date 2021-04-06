@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MessagePrayerServiceStart>{PAWN_labelShort}(이)가 기도회를 열었습니다.</MessagePrayerServiceStart>
+  <MessagePrayerServiceAborted>기도회가 어떤 이유로 취소되었습니다.</MessagePrayerServiceAborted>
+  <MessagePrayerServiceEnded>기도회가 끝났습니다.</MessagePrayerServiceEnded>
+</LanguageData>

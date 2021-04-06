@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <AbilityPrayerServiceCooldown>Next Prayer meeting ready in</AbilityPrayerServiceCooldown>
+  <MessagePrayerServiceStart>{PAWN_labelShort} hosts prayer meeting.</MessagePrayerServiceStart>
+  <MessagePrayerServiceAborted>prayer meeting is aborted by some reason.</MessagePrayerServiceAborted>
+  <MessagePrayerServiceEnded>prayer meeting is ended.</MessagePrayerServiceEnded>
+</LanguageData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RK_PriestPray.stages.blessed_by_priest.label>축복 받음</RK_PriestPray.stages.blessed_by_priest.label>
+  <RK_PriestPrayMood.stages.blessed_by_priest.label>축복 받음</RK_PriestPrayMood.stages.blessed_by_priest.label>
+  <RK_PriestPrayMood.stages.blessed_by_priest.description>TEST</RK_PriestPrayMood.stages.blessed_by_priest.description>
+  
+  <RK_AttendPrayerMeetingMood.stages.attends_prayer_meeting.label>기도회에 참석</RK_AttendPrayerMeetingMood.stages.attends_prayer_meeting.label>
+  <RK_AttendPrayerMeetingMood.stages.attends_prayer_meeting.description>TEST</RK_AttendPrayerMeetingMood.stages.attends_prayer_meeting.description>
+</LanguageData>

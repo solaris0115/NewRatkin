@@ -3,7 +3,7 @@
   <ThingDef ParentName="ArtableFurnitureBase">
     <defName>RK_Pulpit</defName>
     <label>pulpit</label>
-    <description>test</description>
+    <description>a small pulpit. ratkin priest can host prayer meeting in this place.</description>
     <graphicData>
       <texPath>Things/Building/Furniture/RK_Pulpit</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
