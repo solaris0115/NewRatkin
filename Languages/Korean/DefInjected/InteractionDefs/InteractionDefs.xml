@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RK_PriestPray.label>기도</RK_PriestPray.label>
+  <RK_PriestPray.logRulesInitiator.rulesStrings.0>r_logentry->[INITIATOR_nameDef](은)는 [RECIPIENT_nameDef]의 축복을 [prayed].</RK_PriestPray.logRulesInitiator.rulesStrings.0>
+  <RK_PriestPray.logRulesInitiator.rulesStrings.1>prayed(p=3)->기도함</RK_PriestPray.logRulesInitiator.rulesStrings.1>
+  <RK_PriestPray.logRulesInitiator.rulesStrings.2>prayed->기원함</RK_PriestPray.logRulesInitiator.rulesStrings.2>
+</LanguageData>

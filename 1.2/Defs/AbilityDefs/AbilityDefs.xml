@@ -3,7 +3,7 @@
   <AbilityDef Name="Speech">
     <defName>RK_PrayerService</defName>
     <label>prayer service</label>
-    <description>test</description>
+    <description>hosting prayer service that makes people calm and peaceful.</description>
     <iconPath>UI/Abilities/PrayerService</iconPath>
     <hotKey>Misc12</hotKey>
     <gizmoClass>NewRatkin.Command_AbilityPrayerService</gizmoClass>
