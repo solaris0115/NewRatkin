@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RK_PriestPray.stages.blessed_by_priest.label>blessed by priest</RK_PriestPray.stages.blessed_by_priest.label>
+  <RK_PriestPrayMood.stages.blessed_by_priest.label>blessed by priest</RK_PriestPrayMood.stages.blessed_by_priest.label>
+  <RK_PriestPrayMood.stages.blessed_by_priest.description>TEST</RK_PriestPrayMood.stages.blessed_by_priest.description>
+  
+  <RK_AttendPrayerMeetingMood.stages.attends_prayer_meeting.label>attends prayer meeting</RK_AttendPrayerMeetingMood.stages.attends_prayer_meeting.label>
+  <RK_AttendPrayerMeetingMood.stages.attends_prayer_meeting.description>TEST</RK_AttendPrayerMeetingMood.stages.attends_prayer_meeting.description>
+</LanguageData>
