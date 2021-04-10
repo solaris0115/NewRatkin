@@ -103,13 +103,13 @@
     <Compile Include="RatkinGuerrilla\RatkinRaidPatch.cs" />
     <Compile Include="RatkinGuerrilla\RatkinTunnelUtility.cs" />
     <Compile Include="RatkinGuerrilla\TunnelSpawner.cs" />
-    <Compile Include="Release\Ballista.cs" />
-    <Compile Include="Release\BasePatch.cs" />
-    <Compile Include="Release\MeeleExplosion.cs" />
+    <Compile Include="ShieldOfRatkinia\Ballista.cs" />
+    <Compile Include="ShieldOfRatkinia\BasePatch.cs" />
+    <Compile Include="ShieldOfRatkinia\MeeleExplosion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DefOf.cs" />
-    <Compile Include="Release\SPDestory.cs" />
-    <Compile Include="Release\StockGen_Mercenary.cs" />
+    <Compile Include="ShieldOfRatkinia\SPDestory.cs" />
+    <Compile Include="ShieldOfRatkinia\StockGen_Mercenary.cs" />
     <Compile Include="ShieldOfRatkinia\ShieldPatch.cs" />
     <Compile Include="ShieldOfRatkinia\WoodenShield.cs" />
   </ItemGroup>

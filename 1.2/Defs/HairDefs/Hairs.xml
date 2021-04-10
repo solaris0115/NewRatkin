@@ -162,7 +162,7 @@
 	
 	<HairDef>
 		<defName>RK_twin6</defName>
-		<label>twin tail6</label>
+		<label>twin tail</label>
 		<hairGender>Female</hairGender>
 		<texPath>Hair/twin5</texPath>
 		<hairTags>
@@ -185,16 +185,6 @@
 		<label>ponytail</label>
 		<hairGender>Any</hairGender>
 		<texPath>Hair/pony</texPath>
-		<hairTags>
-			<li>RK_Hair</li>
-		</hairTags>
-	</HairDef>
-	
-	<HairDef>
-		<defName>RK_twin6</defName>
-		<label>Twin tail</label>
-		<hairGender>Female</hairGender>
-		<texPath>Hair/twin5</texPath>
 		<hairTags>
 			<li>RK_Hair</li>
 		</hairTags>
