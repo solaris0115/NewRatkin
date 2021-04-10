@@ -161,6 +161,16 @@
 	</HairDef>
 	
 	<HairDef>
+		<defName>RK_twin6</defName>
+		<label>twin tail6</label>
+		<hairGender>Female</hairGender>
+		<texPath>Hair/twin5</texPath>
+		<hairTags>
+			<li>RK_Hair</li>
+		</hairTags>
+	</HairDef>
+	
+	<HairDef>
 		<defName>RK_Middle2</defName>
 		<label>middle2</label>
 		<hairGender>Any</hairGender>
