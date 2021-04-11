@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
   <PiercingWeapon.label>貫通武器</PiercingWeapon.label>
@@ -12,6 +12,9 @@
 
   <Advanced_BallistaBolt.label>改良されたバリスタの矢</Advanced_BallistaBolt.label>
   <Advanced_BallistaBolt.description>様々なバリスタの矢を研究します。</Advanced_BallistaBolt.description>
+
+  <Bigmouse.label>大砲</Bigmouse.label>
+  <Bigmouse.description>大きな大砲を研究します。とても重い砲弾を飛ばす恐ろしい防衛設備です。</Bigmouse.description>
 
   <MicroOptical.label>マイクロ光学</MicroOptical.label>
   <MicroOptical.description>人間の光学機器を模倣して研究します。視力が悪いラットキンの目を改善します。研究にはラットキンのメガネが必要です。</MicroOptical.description>
