@@ -79,12 +79,6 @@
   <Ratkin_ChefStudent.titleShort>シェフ見習い</Ratkin_ChefStudent.titleShort>
   <Ratkin_ChefStudent.baseDescription>[PAWN_nameDef]は、食べることが大好きで、料理を始めました。[PAWN_pronoun]にとって食べ物は人生そのものであり、生きがいなので、もっとおいしい料理を食べるために挑戦していました。</Ratkin_ChefStudent.baseDescription>
 
-  <!-- Apprentice Seamstress -->
-
-  <Ratkin_SeamstressStudent.title>ラットキン見習い針子</Ratkin_SeamstressStudent.title>
-  <Ratkin_SeamstressStudent.titleShort>見習い針子</Ratkin_SeamstressStudent.titleShort>
-  <Ratkin_SeamstressStudent.baseDescription>熟練したドレスメーカーの見習いの針子として、[PAWN_nameDef]は糸を紡ぎ、布束を整頓し、作業場をきれいに掃除していました。\n\nやがて、[PAWN_pronoun]は、ボタンの縫い付けやハンカチなど、小さくて簡単な品々も任されるようになりました。</Ratkin_SeamstressStudent.baseDescription>
-
   <!-- Romany Kid -->
 
   <Ratkin_RomanyKid.title>ラットキン流浪民の子供</Ratkin_RomanyKid.title>
@@ -135,9 +129,9 @@
 
   <!-- Laboratory Rats -->
 
-  <Ratkin_LaboratoryRats.title>ラットキン実験ねずみ</Ratkin_LaboratoryRats.title>
-  <Ratkin_LaboratoryRats.titleShort>実験ねずみ</Ratkin_LaboratoryRats.titleShort>
-  <Ratkin_LaboratoryRats.baseDescription>[PAWN_nameDef]は、実験室で産まれました。軍用ラットキンとして遺伝子操作が行われた[PAWN_pronoun]は、ある日、自由への深い憧れを抱いて科学者を殺して逃亡しました。</Ratkin_LaboratoryRats.baseDescription>
+  <Ratkin_LaboratoryRats.title>ラットキン実験体</Ratkin_LaboratoryRats.title>
+  <Ratkin_LaboratoryRats.titleShort>実験体</Ratkin_LaboratoryRats.titleShort>
+  <Ratkin_LaboratoryRats.baseDescription>[PAWN_nameDef]は軍用ラットキンとして遺伝子操作が行われた肉体を持って、人間の実験室で生まれました。自由への深い憧れを抱いていた[PAWN_pronoun]は、ある日、脱出をする事を決意しました。</Ratkin_LaboratoryRats.baseDescription>
 
   <!-- Petty Theft -->
 
