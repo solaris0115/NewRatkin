@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://github.com/solaris0115/NewRatkin/blob/master/About/Preview.jpg" />
+    <img src="https://github.com/solaris0115/NewRatkin/blob/release/Project/About/Preview.jpg" />
 </p>
 
 <p align="center">
