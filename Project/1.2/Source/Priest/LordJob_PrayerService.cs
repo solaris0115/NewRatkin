@@ -49,7 +49,7 @@ namespace NewRatkin
             {
                 // 주최자가 방에 들어온 다음 일정틱 대기 후 다음 단계로 진행하도록
                 Transition transition_JoinPrayerService_to_PrayerService = new Transition(lordToil_JoinPrayerService, lordToil_PrayerService);
-                transition_JoinPrayerService_to_PrayerService.AddTrigger(new Trigger_TicksPassedAfterConditionMet(1500, () =>
+                transition_JoinPrayerService_to_PrayerService.AddTrigger(new Trigger_TicksPassedAfterConditionMet(ConstPriest.PrayerServicePreStageTicks, () =>
                 {
                     if (organizer.GetRoom() == spot.GetRoom(organizer.Map))
                     {
@@ -75,7 +75,7 @@ namespace NewRatkin
             #region Transition_PrayerService => Others
             {
                 // 일정틱 진행되었거나, 취소될만한 상황이 될 경우 강제로 종료
-                triggerProgress = new Trigger_TicksPassed(Rand.Range(3000, 4000));
+                triggerProgress = new Trigger_TicksPassed(Rand.Range(ConstPriest.PrayerServiceOnStageTicksMin, ConstPriest.PrayerServiceOnStageTicksMax));
                 Transition transition_PrayerService_to_End = new Transition(lordToil_PrayerService, lordToil_End);
                 transition_PrayerService_to_End.AddTrigger(triggerProgress);
                 transition_PrayerService_to_End.AddTrigger(new Trigger_PawnHarmed());
