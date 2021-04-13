@@ -3,5 +3,5 @@
   <AbilityPrayerServiceCooldown>Next Prayer meeting ready in</AbilityPrayerServiceCooldown>
   <AbilityPrayerServiceDisabledAlreadyGivingPrayerService>already giving a prayer meeting.</AbilityPrayerServiceDisabledAlreadyGivingPrayerService>
   <AbilityPrayerServiceDisabledDrafted>can't use when drafted.</AbilityPrayerServiceDisabledDrafted>
-  <AbilityPrayerServiceDisabledNoPulpit>no pulpit for prayer meeting.</AbilityPrayerServiceDisabledNoPulpit>
+  <AbilityPrayerServiceDisabledNoPulpit>no pulpit or proper place for prayer meeting.</AbilityPrayerServiceDisabledNoPulpit>
 </LanguageData>
