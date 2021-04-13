@@ -1882,55 +1882,6 @@
 		</tradeTags>
 	</ThingDef>
 
-	<!-- 특공 머리띠(삭제예정) -->
-	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_HatMakeableBase">
-		<defName>RK_HeadBand</defName>
-		<label>Ratkin head band</label>
-		<description>빨간 머리띠입니다. 만약 이 머리띠를 두른 랫킨을 본다면 주의하세요.</description>
-		<techLevel>Industrial</techLevel>
-		<graphicData>
-			<texPath>Apparel/RK_HeadBand</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-		</graphicData>
-		<recipeMaker Inherit="false">
-		</recipeMaker>
-		<costList>
-			<DevilstrandCloth>35</DevilstrandCloth>
-		</costList>
-		<statBases>
-			<MaxHitPoints>120</MaxHitPoints>
-			<WorkToMake>10000</WorkToMake>
-			<Mass>1</Mass>
-			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
-			<ArmorRating_Heat>0.8</ArmorRating_Heat>
-			<EquipDelay>1</EquipDelay>
-		</statBases>
-		<equippedStatOffsets>
-			<PainShockThreshold>0.1</PainShockThreshold>
-		</equippedStatOffsets>
-		<apparel>
-			<bodyPartGroups>
-				<li>UpperHead</li>
-			</bodyPartGroups>
-			<wornGraphicPath>Apparel/RK_HeadBand</wornGraphicPath>
-			<layers>
-				<li>Overhead</li>
-			</layers>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
-			<tags>
-				<li>RK_NOTag</li>
-			</tags>
-		</apparel>
-		<tradeability>Sellable</tradeability>
-		<tradeTags Inherit="false">
-		</tradeTags>
-	</ThingDef>
-
-
 	<!-- 판금 갑옷 높은 날카로움, 둔탁함 방어력, 느려짐-->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
 		<defName>RK_Plate</defName>
