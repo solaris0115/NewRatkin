@@ -17,14 +17,36 @@ namespace NewRatkin
 		public override void ProcessInput(Event ev)
 		{
 			var organizer = ability.pawn;
-			organizer.drafter.Drafted = false;
+
+			if (organizer.Drafted)
+			{
+				return;
+			}
+
+			LordJob_PrayerService lordJob_PrayerService = ability.pawn.GetLord()?.LordJob as LordJob_PrayerService;
+			if (lordJob_PrayerService != null)
+			{
+				return;
+			}
+
+			if (ability.CooldownTicksRemaining > 0)
+            {
+				return;
+            }
 
 			if (!TryFindGatherSpot(organizer, out var pulpit, out var spot))
 			{
 				return;
 			}
 
-			ability.StartCooldown(ability.def.cooldownTicksRange.RandomInRange);
+			int cooldownTicks = ability.def.cooldownTicksRange.RandomInRange;
+			ability.StartCooldown(cooldownTicks);
+
+			// gives global cooldown
+			foreach (var pawn in PawnsFinder.AllMaps_FreeColonistsAndPrisoners)
+            {
+				pawn.abilities?.GetAbility(RatkinAbilityDefOf.RK_PrayerService)?.StartCooldown(cooldownTicks);
+			}
 
 			LordJob lordJob = new LordJob_PrayerService(pulpit, spot, organizer);
 			LordMaker.MakeNewLord(organizer.Faction, lordJob, organizer.Map, (!lordJob.OrganizerIsStartingPawn) ? null : new Pawn[]
@@ -56,12 +78,17 @@ namespace NewRatkin
 				disabled = true;
 			}
 
-			var pulpits = ability.pawn.Map.listerBuildings.allBuildingsColonist.Where(x => x.def == RatkinBuildingDefOf.RK_Pulpit);
+			var pulpits = ability.pawn.Map.listerBuildings.AllBuildingsColonistOfDef(RatkinBuildingDefOf.RK_Pulpit).Where(x => IsPrayerServiceAvailableSpot(ability.pawn, x));
 			if (pulpits.Count() == 0)
 			{
 				disabledReason = "AbilityPrayerServiceDisabledNoPulpit".Translate();
 				disabled = true;
 			}
+		}
+
+        public override bool InheritInteractionsFrom(Gizmo other)
+		{
+			return false;
 		}
 
 		protected bool TryFindGatherSpot(Pawn organizer, out Building pulpit, out IntVec3 spot)
@@ -116,12 +143,7 @@ namespace NewRatkin
 			}
 
 			Room room = interactionCell.GetRoom(map);
-			if (room == null)
-			{
-				return false;
-			}
-
-			if (room.CellCount <= 25)
+			if (room != null && room.CellCount <= 25)
 			{
 				return false;
 			}
