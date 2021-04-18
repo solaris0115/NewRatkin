@@ -1286,7 +1286,7 @@
 
 				<defaultProjectile>Bullet_RK_Slug</defaultProjectile>
 				<muzzleFlashScale>12</muzzleFlashScale>
-				<warmupTime>1.75</warmupTime>
+				<warmupTime>1.55</warmupTime>
 				<burstShotCount>1</burstShotCount>
 				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
 				<range>26.9</range>	
@@ -1336,7 +1336,7 @@
 		<label>Buck bullet</label>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>3</damageAmountBase>
+			<damageAmountBase>8</damageAmountBase>
 			<stoppingPower>1</stoppingPower>
 			<armorPenetrationBase>0.2</armorPenetrationBase>
 			<speed>75</speed>
@@ -1351,7 +1351,7 @@
 		<label>Slug bullet</label>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>18</damageAmountBase>
+			<damageAmountBase>30</damageAmountBase>
 			<stoppingPower>2.5</stoppingPower>
 			<armorPenetrationBase>0.35</armorPenetrationBase>
 			<speed>75</speed>
