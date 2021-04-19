@@ -1005,17 +1005,17 @@
 				<accuracyLong>0.50</accuracyLong>
 			</li>
 		</verbs>		
-		<recipeMaker>
-			<researchPrerequisite>PulseTech</researchPrerequisite>
-			<skillRequirements>
-				<Crafting>10</Crafting>
-			</skillRequirements>
+		<recipeMaker Inherit="false">
+			<!-- <researchPrerequisite>PulseTech</researchPrerequisite> -->
+			<!-- <skillRequirements> -->
+			<!-- <Crafting>10</Crafting> -->
+			<!-- </skillRequirements> -->
 		</recipeMaker>
 		<weaponTags Inherit="false">
-			<li>RK_4TierWeapon</li>
+			<!-- <li>RK_4TierWeapon</li> -->
 		</weaponTags>
-		<tradeTags>
-			<li>ExoticMisc</li>
+		<tradeTags Inherit="false">
+			<!-- <li>ExoticMisc</li> -->
 		</tradeTags>
 		<tools>
 			<li>
@@ -1241,12 +1241,12 @@
 			<AccuracyShort>0.85</AccuracyShort>
 			<AccuracyMedium>0.65</AccuracyMedium>
 			<AccuracyLong>0.55</AccuracyLong>
-			<RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
-			<WoodLog>20</WoodLog>
-			<Steel>35</Steel>
-			<ComponentIndustrial>2</ComponentIndustrial>
+			<WoodLog>30</WoodLog>
+			<Steel>55</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
 		</costList>
 		<recipeMaker>
 			<researchPrerequisite>FlechetteBullet</researchPrerequisite>
@@ -1269,7 +1269,7 @@
 
 				<defaultProjectile>Bullet_RK_Buck</defaultProjectile>
 				<muzzleFlashScale>4</muzzleFlashScale>
-				<warmupTime>1.25</warmupTime>
+				<warmupTime>0.9</warmupTime>
 				<burstShotCount>6</burstShotCount>
 				<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
 				<range>13.9</range>	
@@ -1286,10 +1286,10 @@
 
 				<defaultProjectile>Bullet_RK_Slug</defaultProjectile>
 				<muzzleFlashScale>12</muzzleFlashScale>
-				<warmupTime>1.75</warmupTime>
+				<warmupTime>1.55</warmupTime>
 				<burstShotCount>1</burstShotCount>
 				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-				<range>26.9</range>	
+				<range>27.9</range>
 				<desc>슬러그</desc>
 				<label>Slug fire</label>
 				<texPath>UI/Commands/Slug</texPath>
@@ -1336,9 +1336,9 @@
 		<label>Buck bullet</label>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>3</damageAmountBase>
-			<stoppingPower>1</stoppingPower>
-			<armorPenetrationBase>0.2</armorPenetrationBase>
+			<damageAmountBase>7</damageAmountBase>
+			<stoppingPower>2</stoppingPower>
+			<armorPenetrationBase>0.3</armorPenetrationBase>
 			<speed>75</speed>
 		</projectile>
 		<graphicData>
@@ -1351,9 +1351,9 @@
 		<label>Slug bullet</label>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>18</damageAmountBase>
-			<stoppingPower>2.5</stoppingPower>
-			<armorPenetrationBase>0.35</armorPenetrationBase>
+			<damageAmountBase>35</damageAmountBase>
+			<stoppingPower>4</stoppingPower>
+			<armorPenetrationBase>0.6</armorPenetrationBase>
 			<speed>75</speed>
 		</projectile>
 		<graphicData>
