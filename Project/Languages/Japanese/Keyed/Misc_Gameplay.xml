@@ -3,6 +3,6 @@
   <AbilityPrayerServiceCooldown>次回の祈祷会の準備:</AbilityPrayerServiceCooldown>
   <AbilityPrayerServiceDisabledAlreadyGivingPrayerService>すでに祈祷会を行っています。</AbilityPrayerServiceDisabledAlreadyGivingPrayerService>
   <AbilityPrayerServiceDisabledDrafted>徴兵時には行えません。</AbilityPrayerServiceDisabledDrafted>
-  <AbilityPrayerServiceDisabledNoPulpit>祈祷会を行うための説教壇がありません。</AbilityPrayerServiceDisabledNoPulpit>
+  <AbilityPrayerServiceDisabledNoPulpit>説教壇や祈祷会を行うための適切な場所がありません。</AbilityPrayerServiceDisabledNoPulpit>
 
 </LanguageData>
