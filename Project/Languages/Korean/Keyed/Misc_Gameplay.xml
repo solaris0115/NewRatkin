@@ -3,5 +3,5 @@
   <AbilityPrayerServiceCooldown>다음 기도회 준비</AbilityPrayerServiceCooldown>
   <AbilityPrayerServiceDisabledAlreadyGivingPrayerService>이미 기도회가 진행 중입니다.</AbilityPrayerServiceDisabledAlreadyGivingPrayerService>
   <AbilityPrayerServiceDisabledDrafted>소집된 상태에서는 사용할 수 없습니다.</AbilityPrayerServiceDisabledDrafted>
-  <AbilityPrayerServiceDisabledNoPulpit>기도회를 위한 예배용 연단이 없습니다.</AbilityPrayerServiceDisabledNoPulpit>
+  <AbilityPrayerServiceDisabledNoPulpit>기도회를 위한 예배용 연단이나 적절한 공간이 없습니다.</AbilityPrayerServiceDisabledNoPulpit>
 </LanguageData>

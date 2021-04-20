@@ -9,7 +9,7 @@ namespace NewRatkin
 		{
 			if (initiator.story.adulthood != null && initiator.story.adulthood == BackstoryCache.Ratkin_Sister)
 			{
-				return 0.5f;
+				return ConstPriest.InteractionPrayWeight;
 			}
 
 			return 0f;
