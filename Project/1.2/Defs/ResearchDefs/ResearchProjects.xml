@@ -110,7 +110,7 @@
 		<researchViewY>1</researchViewY>
 	</ResearchProjectDef>
 	
-	<ResearchProjectDef>
+<!-- 	<ResearchProjectDef>
 		<defName>PulseTech</defName>
 		<label>pulse tech</label>
 		<description>무기와 장비에 펄스 기술을 적용하는 방법을 연구합니다. 연구용 안경이 필요합니다.</description>
@@ -124,7 +124,7 @@
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>   
 		<researchViewX>2</researchViewX>
 		<researchViewY>1</researchViewY>
-	</ResearchProjectDef>
+	</ResearchProjectDef> -->
 	
 	<ResearchProjectDef>
 		<defName>RatkinClothing</defName>
