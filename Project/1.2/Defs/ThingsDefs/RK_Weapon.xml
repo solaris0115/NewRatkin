@@ -1336,9 +1336,9 @@
 		<label>Buck bullet</label>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>7</damageAmountBase>
+			<damageAmountBase>5</damageAmountBase>
 			<stoppingPower>2</stoppingPower>
-			<armorPenetrationBase>0.3</armorPenetrationBase>
+			<armorPenetrationBase>0.45</armorPenetrationBase>
 			<speed>75</speed>
 		</projectile>
 		<graphicData>
@@ -1351,8 +1351,8 @@
 		<label>Slug bullet</label>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>35</damageAmountBase>
-			<stoppingPower>4</stoppingPower>
+			<damageAmountBase>25</damageAmountBase>
+			<stoppingPower>3.5</stoppingPower>
 			<armorPenetrationBase>0.6</armorPenetrationBase>
 			<speed>75</speed>
 		</projectile>
