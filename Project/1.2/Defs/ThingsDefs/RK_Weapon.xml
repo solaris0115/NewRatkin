@@ -1005,17 +1005,17 @@
 				<accuracyLong>0.50</accuracyLong>
 			</li>
 		</verbs>		
-		<recipeMaker Inherit="false">
-			<!-- <researchPrerequisite>PulseTech</researchPrerequisite> -->
-			<!-- <skillRequirements> -->
-			<!-- <Crafting>10</Crafting> -->
-			<!-- </skillRequirements> -->
+		<recipeMaker>
+			<researchPrerequisite>PulseTech</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
 		</recipeMaker>
 		<weaponTags Inherit="false">
-			<!-- <li>RK_4TierWeapon</li> -->
+			<li>RK_4TierWeapon</li>
 		</weaponTags>
-		<tradeTags Inherit="false">
-			<!-- <li>ExoticMisc</li> -->
+		<tradeTags>
+			<li>ExoticMisc</li>
 		</tradeTags>
 		<tools>
 			<li>
