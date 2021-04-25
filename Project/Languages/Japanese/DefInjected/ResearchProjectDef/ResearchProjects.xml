@@ -22,8 +22,8 @@
   <FlechetteBullet.label>フレシェット弾</FlechetteBullet.label>
   <FlechetteBullet.description>ラットキン固有の矢印を箇条書きに適用されます。ラットキンフレシェット弾丸は少し重い厚手の手袋を貫通するように設計された。研究にはラットキンのメガネが必要です。</FlechetteBullet.description>
 
-  <PulseTech.label>パルス技術</PulseTech.label>
-  <PulseTech.description>パルス技術を武器や装備に応用する方法を研究します。研究にはラットキンのメガネが必要です。</PulseTech.description>
+  <!-- <PulseTech.label>パルス技術</PulseTech.label>
+  <PulseTech.description>パルス技術を武器や装備に応用する方法を研究します。研究にはラットキンのメガネが必要です。</PulseTech.description> -->
 
   <RatkinClothing.label>ラットキンの衣類</RatkinClothing.label>
   <RatkinClothing.description>ラットキンが着る便利な衣類を考案します。もう少し多様な衣類を生産することができます。</RatkinClothing.description>
