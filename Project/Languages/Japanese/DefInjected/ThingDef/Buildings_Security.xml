@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
   <!-- Direct Balusta -->
@@ -36,5 +36,27 @@
   <BallistaBolt_AP.description>これは高い貫通力を持つバリスタの矢です。射線上の複数の目標を貫通することが可能です。</BallistaBolt_AP.description>
 
   <Bullet_BallistaBolt_AP.label>バリスタの矢(貫通)</Bullet_BallistaBolt_AP.label>
+
+
+  <!-- Squeegee -->
+
+  <RK_Cannon_Strait_Body.label>RK 大砲</RK_Cannon_Strait_Body.label>
+  <RK_Cannon_Strait_Body.description>丸く削られた石の塊を長距離まで発射できる大砲です。敵を遠くから制圧するために開発されましたが、臼砲の様に曲射して丘の向こうを射撃することはできません。ニックネームは「チューチューポイ」です。</RK_Cannon_Strait_Body.description>
+  <Blueprint_RK_Cannon_Strait_Body.label>RK 大砲 (設計)</Blueprint_RK_Cannon_Strait_Body.label>
+  <Blueprint_Install_RK_Cannon_Strait_Body.label>RK 大砲 (移動先)</Blueprint_Install_RK_Cannon_Strait_Body.label>
+  <Frame_RK_Cannon_Strait_Body.label>RK 大砲 (施工)</Frame_RK_Cannon_Strait_Body.label>
+  <Frame_RK_Cannon_Strait_Body.description>丸く削られた石の塊を長距離まで発射できる大砲です。敵を遠くから制圧するために開発されましたが、臼砲の様に曲射して丘の向こうを射撃することはできません。ニックネームは「チューチューポイ」です。</Frame_RK_Cannon_Strait_Body.description>
+
+  <RK_Turret_Cannon_Strait.label>RK 大砲</RK_Turret_Cannon_Strait.label>
+  <RK_Turret_Cannon_Strait.description>丸く削られた石の塊を長距離まで発射できる大砲です。敵を遠くから制圧するために開発されましたが、臼砲の様に曲射して丘の向こうを射撃することはできません。ニックネームは「チューチューポイ」です。</RK_Turret_Cannon_Strait.description>
+  <RK_Turret_Cannon_Strait.verbs.Verb_Shoot.label>RK 大砲</RK_Turret_Cannon_Strait.verbs.Verb_Shoot.label>
+
+
+  <!-- Big Mouse -->
+
+  <Big_mouse.label>RK 大砲の砲弾</Big_mouse.label>
+  <Big_mouse.description>磨かれた石の表面をスチールで補強した砲弾です。</Big_mouse.description>
+
+  <Bullet_Big_mouse.label>RK 大砲の砲弾</Bullet_Big_mouse.label>
 
 </LanguageData>

@@ -181,7 +181,16 @@
   <!-- Gas Mask -->
 
   <RK_Mask.label>RK ガスマスク</RK_Mask.label>
-  <RK_Mask.description>ガスマスク付きのヘルメットです。有毒な環境でも長時間活動できるように考案されました。</RK_Mask.description>
+  <RK_Mask.description>ガスマスク付きのヘルメットです。有毒な環境でも長時間活動できるように工夫されています。</RK_Mask.description>
+
+
+  <!-- 역병마스크 -->
+
+  <RK_MaskB.label>RK ガスマスクB</RK_MaskB.label>
+  <RK_MaskB.description>ガスマスク付きのヘルメットです。有毒な環境でも長時間活動できるよう工夫されています。</RK_MaskB.description>
+
+
+  <!-- 특공 머리띠(삭제예정) -->
 
 
   <!-- Special Headband -->
@@ -257,5 +266,11 @@
 
   <RK_RoyalCrown.label>RK ロイヤルクラウン</RK_RoyalCrown.label>
   <RK_RoyalCrown.description>金属製の王冠です。</RK_RoyalCrown.description>
+
+
+  <!-- Rotti Hat -->
+
+  <RK_RottiHat.label>RK ロッティ帽子</RK_RottiHat.label>
+  <RK_RottiHat.description>布で作ったロティ人形です。抱っこすることもできますが、頭に被るともっと可愛いです！</RK_RottiHat.description>
 
 </LanguageData>

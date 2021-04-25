@@ -5,5 +5,6 @@
 
   <BallistaBolt.label>발리스타 탄환</BallistaBolt.label>
 
-
+  <!-- 대포알 기본 -->
+  <RK_CannonBullet.label>랫킨 대포알</RK_CannonBullet.label>
 </LanguageData>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
   <!-- Recipe Users: RK_FueledSmithy, RK_ElectricSmithy -->
@@ -14,6 +14,10 @@
   <Make_BallistaBolt_AP.label>バリスタの矢(貫通)を作る</Make_BallistaBolt_AP.label>
   <Make_BallistaBolt_AP.description>バリスタの矢(貫通)を作る。</Make_BallistaBolt_AP.description>
   <Make_BallistaBolt_AP.jobString>バリスタの矢(貫通)を作成中</Make_BallistaBolt_AP.jobString>
+
+  <Make_Big_mouse.label>RK 大砲の砲弾を作る</Make_Big_mouse.label>
+  <Make_Big_mouse.description>RK 大砲の砲弾を作る。</Make_Big_mouse.description>
+  <Make_Big_mouse.jobString>RK 大砲の砲弾を作成中</Make_Big_mouse.jobString>
 
 
   <!-- Recipe Users: RK_ElectricTailoringBench, RK_HandTailoringBench -->
@@ -190,6 +194,13 @@
   <Make_RK_RoyalCrown.jobString>RK ロイヤルクラウンを作成中</Make_RK_RoyalCrown.jobString>
 
 
+  <!-- Recipe Users: RK_ElectricTailoringBench, RK_HandTailoringBench -->
+
+  <Make_RK_RottiHat.label>RK ロッティ帽子を縫う</Make_RK_RottiHat.label>
+  <Make_RK_RottiHat.description>RK ロッティ帽子を縫う。</Make_RK_RottiHat.description>
+  <Make_RK_RottiHat.jobString>RK ロッティ帽子を裁縫中</Make_RK_RottiHat.jobString>
+
+
   <!-- Recipe Users: ElectricSmithy, FueledSmithy, RK_FueledSmithy, RK_ElectricSmithy -->
 
   <Make_RK_Gunlance_NormalType.label>RK ガンランス(通常型)を作る</Make_RK_Gunlance_NormalType.label>
@@ -291,5 +302,9 @@
   <Make_RK_PrototypePulseRifle.label>試作型パルスライフルを作る</Make_RK_PrototypePulseRifle.label>
   <Make_RK_PrototypePulseRifle.description>試作型パルスライフルを作る。</Make_RK_PrototypePulseRifle.description>
   <Make_RK_PrototypePulseRifle.jobString>試作型パルスライフルを作成中</Make_RK_PrototypePulseRifle.jobString>
+
+  <Make_RK_Rifle_line.label>ラットキンショットガンを作る</Make_RK_Rifle_line.label>
+  <Make_RK_Rifle_line.description>ラットキンショットガンを作る。</Make_RK_Rifle_line.description>
+  <Make_RK_Rifle_line.jobString>ラットキンショットガンを作成中</Make_RK_Rifle_line.jobString>
 
 </LanguageData>

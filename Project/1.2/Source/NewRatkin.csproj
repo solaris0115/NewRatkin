@@ -88,6 +88,8 @@
     <Compile Include="Priest\LordJob_PrayerService.cs" />
     <Compile Include="Priest\LordToil_JoinPrayerService.cs" />
     <Compile Include="Priest\LordToil_PrayerService.cs" />
+    <Compile Include="Priest\ConstPriest.cs" />
+    <Compile Include="Priest\PriestPatch.cs" />
     <Compile Include="Priest\ThinkNode_ConditionalAtDutyInteractionCell.cs" />
     <Compile Include="Priest\ThinkNode_ConditionalAtDutyRoom.cs" />
     <Compile Include="RatkinGuerrilla\IncidentWoker_RatkinThiefTunnel.cs" />

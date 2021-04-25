@@ -38,7 +38,7 @@ namespace NewRatkin
         {
             base.Init();
 
-			tickCounter = GenTicks.TicksGame + Rand.Range(400, 600);
+			tickCounter = GenTicks.TicksGame + Rand.Range(ConstPriest.PrayerServiceEffectDelayTickMin, ConstPriest.PrayerServiceEffectDelayTickMax);
 		}
 
         public override void LordToilTick()
@@ -50,7 +50,7 @@ namespace NewRatkin
 					pawn.needs.mood.thoughts.memories.TryGainMemory(RatkinThoughtDefOf.RK_AttendPrayerMeetingMood);
                 }
 
-				tickCounter = GenTicks.TicksGame + Rand.Range(400, 600);
+				tickCounter = GenTicks.TicksGame + Rand.Range(ConstPriest.PrayerServiceEffectDelayTickMin, ConstPriest.PrayerServiceEffectDelayTickMax);
             }
         }
 
