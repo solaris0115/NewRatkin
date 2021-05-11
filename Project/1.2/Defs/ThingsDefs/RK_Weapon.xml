@@ -1036,7 +1036,7 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
-		<tradeability>All</tradeability>
+		<tradeability>None</tradeability>
 	</ThingDef>
 	<ThingDef ParentName="RK_BaseBullet">
 		<defName>Bullet_RK_PrototypePulseRifleLight</defName>
