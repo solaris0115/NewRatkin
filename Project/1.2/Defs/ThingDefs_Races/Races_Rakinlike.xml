@@ -482,6 +482,8 @@
 			<baseHealthScale>1</baseHealthScale>
 			<foodType>OmnivoreHuman</foodType>
 			<gestationPeriodDays>21</gestationPeriodDays>
+			<nameGenerator>NamerPerson_RatkinKingdom</nameGenerator>
+			<nameGeneratorFemale>NamerPerson_RatkinKingdom</nameGeneratorFemale>
 			<litterSizeCurve>
 				<points>
 					<li>(0.5, 0)</li>

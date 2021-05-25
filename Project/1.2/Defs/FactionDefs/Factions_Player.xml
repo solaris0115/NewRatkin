@@ -16,17 +16,12 @@
 		<pawnSingular>Ratkin</pawnSingular>
 		<pawnsPlural>colonists</pawnsPlural>
 		<techLevel>Medieval</techLevel>
-		<backstoryFilters>
-			<li>
-				<categories>
-					<li>RatkinStory</li>
-				</categories>
-			</li>
-		</backstoryFilters>
+		<backstoryCategories>
+			<li>Offworld</li>
+		</backstoryCategories>
 		<settlementTexturePath>Icon/RK_DefaultColony</settlementTexturePath>
 		<factionIconPath>Icon/RK_icon</factionIconPath>
 		
-		<pawnNameMaker>NamerPerson_RatkinKingdom</pawnNameMaker>
 		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
 		<factionNameMaker>NamerFaction_RatkinKingdom</factionNameMaker>
 		<settlementNameMaker>NamerSettlement_RatkinKingdom</settlementNameMaker>
@@ -39,7 +34,7 @@
 			<li>RatkinStart</li>
 		</startingTechprintsResearchTags>
 		<hairTags>
-			<li>RK_Hair</li>
+			<li>Rural</li>
 		</hairTags>
 		<apparelStuffFilter>
 			<thingDefs>
