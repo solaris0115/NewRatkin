@@ -13,23 +13,17 @@
 
 		<factionNameMaker>NamerFaction_RatkinKingdom</factionNameMaker>
 		<settlementNameMaker>NamerSettlement_RatkinKingdom</settlementNameMaker>
-		<pawnNameMaker>NamerPerson_RatkinKingdom</pawnNameMaker>
 
 		<canSiege>true</canSiege>
 		<canStageAttacks>true</canStageAttacks>
 		<factionIconPath>Icon/RK_icon</factionIconPath>
 		<techLevel>Industrial</techLevel>		
-		<backstoryFilters>
-			<li>
-				<categories>
-					<li>RatkinStory</li>
-				</categories>
-				<commonality>1</commonality>
-			</li>
-		</backstoryFilters>
+		<backstoryCategories>
+			<li>Offworld</li>
+		</backstoryCategories>
 		<geneticVariance>0.7</geneticVariance>
 		<hairTags>
-			<li>RK_Hair</li>
+			<li>Rural</li>
 		</hairTags>
 		<caravanTraderKinds>
 			<li>Caravan_Ratkin_BulkGoods</li>
