@@ -299,9 +299,9 @@
   <Make_RK_FlechetteSniperRifle.description>フレシェットスナイパーライフルを作る。</Make_RK_FlechetteSniperRifle.description>
   <Make_RK_FlechetteSniperRifle.jobString>フレシェットスナイパーライフルを作成中</Make_RK_FlechetteSniperRifle.jobString>
 
-  <Make_RK_PrototypePulseRifle.label>試作型パルスライフルを作る</Make_RK_PrototypePulseRifle.label>
+  <!-- <Make_RK_PrototypePulseRifle.label>試作型パルスライフルを作る</Make_RK_PrototypePulseRifle.label>
   <Make_RK_PrototypePulseRifle.description>試作型パルスライフルを作る。</Make_RK_PrototypePulseRifle.description>
-  <Make_RK_PrototypePulseRifle.jobString>試作型パルスライフルを作成中</Make_RK_PrototypePulseRifle.jobString>
+  <Make_RK_PrototypePulseRifle.jobString>試作型パルスライフルを作成中</Make_RK_PrototypePulseRifle.jobString> -->
 
   <Make_RK_Rifle_line.label>ラットキンショットガンを作る</Make_RK_Rifle_line.label>
   <Make_RK_Rifle_line.description>ラットキンショットガンを作る。</Make_RK_Rifle_line.description>
