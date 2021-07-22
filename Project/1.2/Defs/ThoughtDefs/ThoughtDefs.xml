@@ -25,7 +25,7 @@
     <stages>
       <li>
         <label>blessed by priest</label>
-        <description>TEST</description>
+        <description>I got a blessing, I feel more at ease.</description>
         <baseMoodEffect>5</baseMoodEffect>
       </li>
     </stages>
@@ -41,7 +41,7 @@
     <stages>
       <li>
         <label>attends prayer meeting</label>
-        <description>TEST</description>
+        <description>I got a blessing, I feel more at ease.</description>
         <baseMoodEffect>2</baseMoodEffect>
       </li>
     </stages>
