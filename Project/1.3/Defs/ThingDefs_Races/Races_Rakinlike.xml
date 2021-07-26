@@ -163,7 +163,6 @@
 							</first>
 						</li>
 					</colorChannels>
-
 					<!-- 신체 드로잉 크기 -->
 					<customDrawSize>(0.9, 0.9)</customDrawSize>
 					<customPortraitDrawSize>(1, 1)</customPortraitDrawSize>
@@ -200,29 +199,31 @@
 							<bodyPart>left ear</bodyPart>
 							<inFrontOfBody>true</inFrontOfBody>
 							<colorChannel>skin</colorChannel>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<layerInvert>false</layerInvert>							
 							<offsets>
 								<south>
 									<bodyTypes>
-										<Thin>(-0.06,0.4)</Thin>
+										<Thin>(-0.015,0.4)</Thin>
 									</bodyTypes>
 									<portraitBodyTypes>
-										<Thin>(-0.06,0.4)</Thin>
+										<Thin>(-0.015,0.4)</Thin>
 									</portraitBodyTypes>
 								</south>
-								<north>
+								<north>	
 									<bodyTypes>
-										<Thin>(0.07,0.39)</Thin>
+										<Thin>(0.03,0.39)</Thin>
 									</bodyTypes>
 									<portraitBodyTypes>
-										<Thin>(0.07,0.39)</Thin>
+										<Thin>(0.03,0.39)</Thin>
 									</portraitBodyTypes>
 								</north>
 								<east>
 									<bodyTypes>
-										<Thin>(-0.1,0.5)</Thin>
+										<Thin>(0.012,0.5)</Thin>
 									</bodyTypes>
 									<portraitBodyTypes>
-										<Thin>(-0.1,0.5)</Thin>
+										<Thin>(0.012,0.5)</Thin>
 									</portraitBodyTypes>
 								</east>
 							</offsets>
@@ -234,29 +235,31 @@
 							<bodyPart>right ear</bodyPart>
 							<inFrontOfBody>true</inFrontOfBody>
 							<colorChannel>skin</colorChannel>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<layerInvert>false</layerInvert>
 							<offsets>
 								<south>
 									<bodyTypes>
-										<Thin>(0.06,0.4)</Thin>
+										<Thin>(0.015,0.4)</Thin>
 									</bodyTypes>
 									<portraitBodyTypes>
-										<Thin>(0.06,0.4)</Thin>
+										<Thin>(0.015,0.4)</Thin>
 									</portraitBodyTypes>
 								</south>
 								<north>
 									<bodyTypes>
-										<Thin>(-0.05,0.39)</Thin>
+										<Thin>(-0.01,0.39)</Thin>
 									</bodyTypes>
 									<portraitBodyTypes>
-										<Thin>(-0.05,0.39)</Thin>
+										<Thin>(-0.01,0.39)</Thin>
 									</portraitBodyTypes>
 								</north>
 								<east>
 									<bodyTypes>
-										<Thin>(-0.1,0.5)</Thin>
+										<Thin>(0.012,0.5)</Thin>
 									</bodyTypes>
 									<portraitBodyTypes>
-										<Thin>(-0.1,0.5)</Thin>
+										<Thin>(0.012,0.5)</Thin>
 									</portraitBodyTypes>
 								</east>
 							</offsets>
@@ -264,7 +267,6 @@
 						</li>
 					</bodyAddons>
 				</alienPartGenerator>
-
 				<disallowedTraits>
 					<li>
 						<defName>AnnoyingVoice</defName>
@@ -273,9 +275,7 @@
 						<defName>CreepyBreathing</defName>
 					</li>
 				</disallowedTraits>
-
 			</generalSettings>
-
 			<graphicPaths>
 				<li>
 					<body>Things/Ratkin/Bodies/</body>
@@ -283,11 +283,52 @@
 					<skeleton>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</skeleton>
 				</li>
 			</graphicPaths>
-
+			<styleSettings>
+				<li>
+					<key>HairDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
+						<!--<styleTags>
+                            <li>Rural</li>
+							<li>Urban</li>
+							<li>Punk</li>
+                            <li>Tribal</li>
+							<li>Minimal</li>
+							<li>Soldier</li>
+                        </styleTags>-->
+					</value>
+				</li>
+				<li>
+					<key>TattooDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
+						<!--<styleTags>
+                            <li>Rural</li>
+							<li>Urban</li>
+							<li>Punk</li>
+                            <li>Tribal</li>
+							<li>Minimal</li>
+							<li>Soldier</li>
+                        </styleTags>-->
+					</value>
+				</li>
+				<li>
+					<key>BeardDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
+						<!--<styleTags>
+                            <li>Rural</li>
+							<li>Urban</li>
+							<li>Punk</li>
+                            <li>Tribal</li>
+							<li>Minimal</li>
+                        </styleTags>-->
+					</value>
+				</li>
+			</styleSettings>
 			<relationSettings>
 
 			</relationSettings>
-
 			<raceRestriction>
 				<onlyUseRaceRestrictedApparel>false</onlyUseRaceRestrictedApparel>
 				<apparelList>
@@ -307,7 +348,6 @@
 					<li>RK_ExplorerHat</li>
 					<li>RK_ChefSuit</li>
 					<li>RK_ChefHat</li>
-
 					<li>RK_GaurdenUniform</li>
 					<li>RK_WinterRobe</li>
 					<li>RK_OutdoorBackpack</li>
@@ -319,29 +359,23 @@
 					<li>RK_RibbonHairBand</li>
 					<li>RK_SistersDerss</li>
 					<li>RK_SistersVeil</li>
-
 					<li>RK_Sack</li>
 					<li>RK_BattleSuit</li>
 					<li>RK_Mask</li>
 					<li>RK_MaskB</li>
 					<li>RK_HeadBand</li>
-
 					<li>RK_Plate</li>
 					<li>RK_PlateHelmA</li>
 					<li>RK_PlateHelmB</li>
 					<li>RK_PlateHelmC</li>
 					<li>RK_WoodenShield</li>
 					<li>RK_HeavyShield</li>
-
-
 					<li>RK_SantaRobe</li>
 					<li>RK_SantaHat</li>
 					<li>RK_SantaSack</li>
-
 					<li>RK_WhiteCoat</li>
 					<li>RK_RoyalRobe</li>
 					<li>RK_RoyalCrown</li>
-					
 					<li>RK_RottiHat</li>
 				</apparelList>
 				<whiteApparelList>
@@ -542,7 +576,6 @@
 			<li>Anesthetize</li>
 		</recipes>
 	</AlienRace.ThingDef_AlienRace>
-	
 	<!-- 랫킨 실험체 -->
 	<AlienRace.ThingDef_AlienRace ParentName="RK_PawnNormal">
 		<defName>Ratkin_Su</defName>

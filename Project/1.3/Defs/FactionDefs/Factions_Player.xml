@@ -17,6 +17,11 @@
 		<allowedCultures>
 			<li>RatkiniaTraditionCulture</li>
 		</allowedCultures>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+		</disallowedMemes>
 	</FactionDef>
 
 	<FactionDef ParentName="RK_PlayerFactionBase">

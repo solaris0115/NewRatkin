@@ -17,15 +17,15 @@ namespace NewRatkin
         private static Graphic heavyShieldGraphic = GraphicDatabase.Get<Graphic_Multi>("Apparel/RK_HeavyShield", ShaderDatabase.CutoutComplex, new Vector2(1, 1), new Color(1, 1, 1, 1));
         private static Graphic woodenShieldGraphic = GraphicDatabase.Get<Graphic_Multi>("Apparel/RK_WoodenShield", ShaderDatabase.Cutout, new Vector2(1, 1), new Color(1,1,1,1));
 
-        static readonly Vector3 drawDraftedLocNorth = new Vector3(-0.2f, 0f, -0.09f);
-        static readonly Vector3 drawDraftedLocSouth = new Vector3(0.2f, 0.03905f, -0.15f);
-        static readonly Vector3 drawDraftedLocEast = new Vector3(0.2f, 0f, -0.2f);
-        static readonly Vector3 drawDraftedLocWest = new Vector3(-0.2f, 0.05f, -0.15f);
+        static readonly Vector3 drawDraftedLocNorth = new Vector3(-0.2f, -0.2f, -0.09f);
+        static readonly Vector3 drawDraftedLocSouth = new Vector3(0.2f, 0.2f, -0.15f);
+        static readonly Vector3 drawDraftedLocEast = new Vector3(0.2f, -0.2f, -0.2f);
+        static readonly Vector3 drawDraftedLocWest = new Vector3(-0.2f, 0.2f, -0.15f);
 
-        static readonly Vector3 drawBackLocNorth = new Vector3(0f, 0.5f, -0.2f);
-        static readonly Vector3 drawBackLocSouth = new Vector3(0f, 0, -0.09f);
+        static readonly Vector3 drawBackLocNorth = new Vector3(0f, 0.2f, -0.2f);
+        static readonly Vector3 drawBackLocSouth = new Vector3(0f, -0.2f, -0.09f);
         static readonly Vector3 drawBackLocEast = new Vector3(-0.15f, 0.05f, -0.07f);
-        static readonly Vector3 draWBackLocWest = new Vector3(0.15f, 0f, -0.07f);
+        static readonly Vector3 draWBackLocWest = new Vector3(0.15f, -2f, -0.07f);
 
         private bool ShouldShieldUp
         {

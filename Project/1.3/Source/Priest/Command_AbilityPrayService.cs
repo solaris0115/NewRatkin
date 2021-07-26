@@ -7,12 +7,9 @@ using Verse.AI.Group;
 
 namespace NewRatkin
 {
-    public class Command_AbilityPrayerService : Command_Ability
+    public class Command_AbilityPrayService : Command_Ability
 	{
-		public Command_AbilityPrayerService(Ability ability)
-			: base(ability)
-		{
-		}
+		public Command_AbilityPrayService(Ability ability) : base(ability) { }
 
 		public override void ProcessInput(Event ev)
 		{
@@ -148,6 +145,30 @@ namespace NewRatkin
 				return false;
 			}
 
+			return true;
+		}
+	}
+
+	public class CompProperties_AbilityPrayService: AbilityCompProperties
+	{
+		public CompProperties_AbilityPrayService()
+		{
+			this.compClass = typeof(CompAbilityEffect_PrayService);
+		}
+	}
+	public class CompAbilityEffect_PrayService : CompAbilityEffect
+	{
+		public new CompProperties_AbilityPrayService Props
+		{
+			get
+			{
+				return (CompProperties_AbilityPrayService)this.props;
+			}
+		}
+
+		public override bool GizmoDisabled(out string reason)
+		{
+			reason = null;
 			return true;
 		}
 	}

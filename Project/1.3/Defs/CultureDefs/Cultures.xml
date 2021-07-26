@@ -12,15 +12,29 @@
 		<allowedPlaceTags>
 			<li>OriginTribal</li>
 		</allowedPlaceTags>
+		<thingStyleCategories>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<category>Floristian</category>
+				<priority>5</priority>
+			</li>
+		</thingStyleCategories>
 		<iconPath>UI/Cultures/RK_DefaultColony</iconPath>
 		<iconColor>(1.0, 1.0, 1.0)</iconColor>
-		<thingStyleCategories>
-		</thingStyleCategories>
 		<styleItemTags>
 			<li>
 				<tag>RK_Style</tag>
-				<baseWeight>10</baseWeight>
-				<weightFactor>10</weightFactor>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoBeard</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoTattoo</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
 			</li>
 		</styleItemTags>
 	</CultureDef>

@@ -131,6 +131,7 @@
 		<isFighter>false</isFighter>
 		<combatPower>25</combatPower>
 		<factionLeader>true</factionLeader>
+		<minGenerationAge>21</minGenerationAge>
 		<backstoryFiltersOverride>
 			<li>
 				<categories>

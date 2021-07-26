@@ -9,14 +9,12 @@
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
 		<canMakeRandomly>true</canMakeRandomly>
 		<leaderTitle>prime executor</leaderTitle>
-
 		<factionNameMaker>NamerFaction_RatkinKingdom</factionNameMaker>
 		<settlementNameMaker>NamerSettlement_RatkinKingdom</settlementNameMaker>
-
 		<canSiege>true</canSiege>
 		<canStageAttacks>true</canStageAttacks>
 		<factionIconPath>Icon/RK_icon</factionIconPath>
-		<techLevel>Industrial</techLevel>		
+		<techLevel>Industrial</techLevel>
 		<backstoryCategories>
 			<li>Offworld</li>
 		</backstoryCategories>
@@ -34,6 +32,21 @@
 			<li>Base_Outlander_Standard</li>
 		</baseTraderKinds>
 		<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+		</disallowedMemes>
+		<structureMemeWeights>
+			<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
+			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">2</Structure_TheistAbstract>
+			<Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
+			<Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
+			<Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginChristian>
+			<Structure_OriginIslamic MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginIslamic>
+			<Structure_OriginHindu MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginHindu>
+			<Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginBuddhist>
+		</structureMemeWeights>
 		<maxPawnCostPerTotalPointsCurve>
 			<points>
 				<li>(0,35)</li>
@@ -52,8 +65,8 @@
 					<RatkinCombatant>20</RatkinCombatant>
 					<RatkinSoldier>5</RatkinSoldier>
 				</options>
-			</li>	
-			<!-- 초반 혼합-->			
+			</li>
+			<!-- 초반 혼합-->
 			<li>
 				<kindDef>Combat</kindDef>
 				<commonality>100</commonality>
@@ -63,7 +76,7 @@
 					<RatkinVanguard>10</RatkinVanguard>
 					<RatkinCombatant>15</RatkinCombatant>
 				</options>
-			</li>	
+			</li>
 			<!-- 중후반 군인-->
 			<li>
 				<kindDef>Combat</kindDef>
@@ -119,7 +132,7 @@
 					<RatkinMerchant>15</RatkinMerchant>
 					<RatkinNoble>8</RatkinNoble>
 				</traders>
-				<carriers> 
+				<carriers>
 					<Ratkin_KingHamster>6</Ratkin_KingHamster>
 				</carriers>
 				<guards>
@@ -151,8 +164,10 @@
 				<li>Woody</li>
 			</stuffCategoriesToAllow>
 		</apparelStuffFilter>
+		<allowedCultures>
+			<li>RatkiniaTraditionCulture</li>
+		</allowedCultures>
 	</FactionDef>
-
 	<FactionDef ParentName="RatkinFactionBase">
 		<defName>Rakinia</defName>
 		<label>ratkin kingdom</label>
@@ -162,8 +177,6 @@
 			<li>(0.65, 0.60, 0.20)</li>
 		</colorSpectrum>
 	</FactionDef>
-
-
 	<!-- <FactionDef ParentName="RatkinLandFactionBase"> -->
 	<!-- <defName>RatkinCaravan</defName> -->
 	<!-- <label>ratkin caravan union</label> -->
@@ -205,6 +218,4 @@
 	<!-- </li> -->
 	<!-- </pawnGroupMakers> -->
 	<!-- </FactionDef> -->
-
-
 </Defs>

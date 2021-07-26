@@ -80,7 +80,7 @@
     <Compile Include="HamsterWheel\Work.cs" />
     <Compile Include="JobGiver_GotoTravelInteractionCell.cs" />
     <Compile Include="Priest\BackstoryCache.cs" />
-    <Compile Include="Priest\Command_AbilityPrayerService.cs" />
+    <Compile Include="Priest\Command_AbilityPrayService.cs" />
     <Compile Include="Priest\InteractionWorker_PriestPray.cs" />
     <Compile Include="Priest\JobDriver_PrayerService.cs" />
     <Compile Include="Priest\JobGiver_PrayDutySpectateRect.cs" />
