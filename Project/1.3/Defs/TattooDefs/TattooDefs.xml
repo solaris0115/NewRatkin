@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<TattooDef>
+		<defName>RK_NoTattoo_Face</defName>
+		<label>none</label>
+		<texPath>Things/Mote/Transparent</texPath>
+		<!-- Invisible -->
+		<iconPath>Things/Mote/Transparent</iconPath>
+		<!-- Invisible -->
+		<tattooType>Face</tattooType>
+		<category>RK_Style</category>
+		<styleTags>
+			<li>alienNoStyle</li>
+			<li>RK_Style</li>
+			<li>NoTatto</li>
+		</styleTags>
+	</TattooDef>
+	
+	<TattooDef>
+		<defName>RK_NoTattoo_Body</defName>
+		<label>none</label>
+		<texPath>Things/Mote/Transparent</texPath>
+		<!-- Invisible -->
+		<iconPath>Things/Mote/Transparent</iconPath>
+		<!-- Invisible -->
+		<tattooType>Body</tattooType>
+		<category>RK_Style</category>
+		<styleTags>
+			<li>alienNoStyle</li>
+			<li>RK_Style</li>
+			<li>NoTatto</li>
+		</styleTags>
+	</TattooDef>
+</Defs>

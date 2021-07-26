@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<BeardDef>
+		<defName>RK_NoBeard</defName>
+		<label>no beard</label>
+		<texPath>Things/Mote/Transparent</texPath>
+		<!-- Invisible -->
+		<iconPath>Things/Mote/Transparent</iconPath>
+		<!-- Invisible -->
+		<category>RK_Style</category>
+		<styleTags>
+			<li>RK_Style</li>
+			<li>NoBeard</li>
+		</styleTags>
+	</BeardDef>
+</Defs>
