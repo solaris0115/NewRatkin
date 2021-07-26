@@ -7,7 +7,7 @@
 		<texPath>Hair/RK_Braided</texPath>
 		<category>RK_Style</category>
 		<styleTags>
-			<li>RK_Hair</li>
+			<li>RK_Style</li>
 		</styleTags>
 	</HairDef>
 	<HairDef>
@@ -17,7 +17,7 @@
 		<texPath>Hair/RK_BraidedB</texPath>
 		<category>RK_Style</category>
 		<styleTags>
-			<li>RK_Hair</li>
+			<li>RK_Style</li>
 		</styleTags>
 	</HairDef>
 	<HairDef>
@@ -27,7 +27,7 @@
 		<texPath>Hair/RK_middl</texPath>
 		<category>RK_Style</category>
 		<styleTags>
-			<li>RK_Hair</li>
+			<li>RK_Style</li>
 		</styleTags>
 	</HairDef>
 	<HairDef>
@@ -37,7 +37,7 @@
 		<texPath>Hair/RK_side_tail</texPath>
 		<category>RK_Style</category>
 		<styleTags>
-			<li>RK_Hair</li>
+			<li>RK_Style</li>
 		</styleTags>
 	</HairDef>
 	<HairDef>
@@ -47,7 +47,7 @@
 		<texPath>Hair/RK_twin5</texPath>
 		<category>RK_Style</category>
 		<styleTags>
-			<li>RK_Hair</li>
+			<li>RK_Style</li>
 		</styleTags>
 	</HairDef>
 	<HairDef>
@@ -57,7 +57,7 @@
 		<texPath>Hair/RK_WavelongA</texPath>
 		<category>RK_Style</category>
 		<styleTags>
-			<li>RK_Hair</li>
+			<li>RK_Style</li>
 		</styleTags>
 	</HairDef>
 	<HairDef>
@@ -67,7 +67,7 @@
 		<texPath>Hair/LongA</texPath>
 		<category>RK_Style</category>
 		<styleTags>
-			<li>RK_Hair</li>
+			<li>RK_Style</li>
 		</styleTags>
 	</HairDef>
 	<HairDef>
@@ -77,7 +77,7 @@
 		<texPath>Hair/LongB</texPath>
 		<category>RK_Style</category>
 		<styleTags>
-			<li>RK_Hair</li>
+			<li>RK_Style</li>
 		</styleTags>
 	</HairDef>
 	<HairDef>
@@ -87,7 +87,7 @@
 		<texPath>Hair/LongD</texPath>
 		<category>RK_Style</category>
 		<styleTags>
-			<li>RK_Hair</li>
+			<li>RK_Style</li>
 		</styleTags>
 	</HairDef>
 	<HairDef>
@@ -97,7 +97,7 @@
 		<texPath>Hair/LongE</texPath>
 		<category>RK_Style</category>
 		<styleTags>
-			<li>RK_Hair</li>
+			<li>RK_Style</li>
 		</styleTags>
 	</HairDef>
 	<HairDef>
@@ -107,7 +107,7 @@
 		<texPath>Hair/ponyA</texPath>
 		<category>RK_Style</category>
 		<styleTags>
-			<li>RK_Hair</li>
+			<li>RK_Style</li>
 		</styleTags>
 	</HairDef>
 	<HairDef>
@@ -117,7 +117,7 @@
 		<texPath>Hair/side_ponyA</texPath>
 		<category>RK_Style</category>
 		<styleTags>
-			<li>RK_Hair</li>
+			<li>RK_Style</li>
 		</styleTags>
 	</HairDef>
 	<HairDef>
@@ -127,7 +127,7 @@
 		<texPath>Hair/twin2</texPath>
 		<category>RK_Style</category>
 		<styleTags>
-			<li>RK_Hair</li>
+			<li>RK_Style</li>
 		</styleTags>
 	</HairDef>
 	<HairDef>
@@ -137,7 +137,7 @@
 		<texPath>Hair/twin3</texPath>
 		<category>RK_Style</category>
 		<styleTags>
-			<li>RK_Hair</li>
+			<li>RK_Style</li>
 		</styleTags>
 	</HairDef>
 	<HairDef>
@@ -147,7 +147,7 @@
 		<texPath>Hair/twin4</texPath>
 		<category>RK_Style</category>
 		<styleTags>
-			<li>RK_Hair</li>
+			<li>RK_Style</li>
 		</styleTags>
 	</HairDef>
 	<HairDef>
@@ -157,7 +157,7 @@
 		<texPath>Hair/twinA</texPath>
 		<category>RK_Style</category>
 		<styleTags>
-			<li>RK_Hair</li>
+			<li>RK_Style</li>
 		</styleTags>
 	</HairDef>
 	<HairDef>
@@ -167,7 +167,7 @@
 		<texPath>Hair/twin5</texPath>
 		<category>RK_Style</category>
 		<styleTags>
-			<li>RK_Hair</li>
+			<li>RK_Style</li>
 		</styleTags>
 	</HairDef>
 	<HairDef>
@@ -177,7 +177,7 @@
 		<texPath>Hair/RK_middl2</texPath>
 		<category>RK_Style</category>
 		<styleTags>
-			<li>RK_Hair</li>
+			<li>RK_Style</li>
 		</styleTags>
 	</HairDef>
 	<HairDef>
@@ -187,7 +187,7 @@
 		<texPath>Hair/pony</texPath>
 		<category>RK_Style</category>
 		<styleTags>
-			<li>RK_Hair</li>
+			<li>RK_Style</li>
 		</styleTags>
 	</HairDef>
 </Defs>
