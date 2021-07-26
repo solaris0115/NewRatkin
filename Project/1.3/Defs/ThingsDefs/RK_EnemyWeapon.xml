@@ -91,7 +91,7 @@
 		<plantDamageFactor>4</plantDamageFactor>
 		<explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
 		<explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
-		<explosionCellMote>Mote_BlastDry</explosionCellMote>
+		<explosionCellFleck>BlastDry</explosionCellFleck>
 		<explosionColorCenter>(1, 0.5, 0.3)</explosionColorCenter>
 		<explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
 		<soundExplosion>Explosion_Bomb</soundExplosion>

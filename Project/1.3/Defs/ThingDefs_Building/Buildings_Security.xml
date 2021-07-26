@@ -88,7 +88,6 @@
 		<tickerType>Never</tickerType>
 		<techLevel>Industrial</techLevel>
 		<destroyOnDrop>True</destroyOnDrop>
-		<menuHidden>True</menuHidden>
 		<tradeability>None</tradeability>
 		<statBases>
 			<Mass>40</Mass>
@@ -467,7 +466,6 @@
 		<tickerType>Never</tickerType>
 		<techLevel>Industrial</techLevel>
 		<destroyOnDrop>True</destroyOnDrop>
-		<menuHidden>True</menuHidden>
 		<tradeability>None</tradeability>
 		<statBases>
 			<Mass>50</Mass>

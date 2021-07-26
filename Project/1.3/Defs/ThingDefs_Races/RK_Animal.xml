@@ -68,7 +68,7 @@
 			<leatherDef>RK_Leather_KingHamster</leatherDef>
 			<gestationPeriodDays>16</gestationPeriodDays>
 			<wildness>0.0</wildness>
-			<trainability>Simple</trainability>
+			<trainability>Intermediate</trainability>
 			<packAnimal>true</packAnimal>
 			<lifeExpectancy>13</lifeExpectancy>
 			<lifeStageAges>

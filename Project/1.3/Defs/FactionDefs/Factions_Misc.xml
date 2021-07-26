@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Defs>	
-
-	<FactionDef ParentName="HumanFactionBase" Name="RatkinFactionBase" Abstract="True">
+<Defs>
+	<FactionDef ParentName="FactionBase" Name="RatkinFactionBase" Abstract="True">
 		<pawnSingular>ratkin</pawnSingular>
 		<pawnsPlural>Ratkins</pawnsPlural>
 		<categoryTag>RatkinStory</categoryTag>
@@ -22,9 +21,6 @@
 			<li>Offworld</li>
 		</backstoryCategories>
 		<geneticVariance>0.7</geneticVariance>
-		<hairTags>
-			<li>Rural</li>
-		</hairTags>
 		<caravanTraderKinds>
 			<li>Caravan_Ratkin_BulkGoods</li>
 			<li>Caravan_Ratkin_DressMerchant</li>
@@ -165,8 +161,6 @@
 			<li>(0.45, 0.50, 0.30)</li>
 			<li>(0.65, 0.60, 0.20)</li>
 		</colorSpectrum>
-		<startingGoodwill>40~80</startingGoodwill>
-		<naturalColonyGoodwill>0~10</naturalColonyGoodwill>
 	</FactionDef>
 
 
