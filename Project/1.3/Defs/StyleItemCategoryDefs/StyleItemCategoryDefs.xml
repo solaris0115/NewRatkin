@@ -14,8 +14,8 @@
 		<defName>Floristian</defName>
 		<label>Floristian</label>
 		<iconPath>UI/StyleCategories/PraiseDeSunFlower</iconPath>
-		<soundOngoingRitual>RitualSustainer_Theist</soundOngoingRitual>
-		<ritualVisualEffectDef>Christian</ritualVisualEffectDef>
+		<soundOngoingRitual MayRequire="Ludeon.RimWorld.Ideology">RitualSustainer_Theist</soundOngoingRitual>
+		<ritualVisualEffectDef MayRequire="Ludeon.RimWorld.Ideology">Christian</ritualVisualEffectDef>
 		<thingDefStyles>
 			<!-- <li> -->
 				<!-- <thingDef>SculptureSmall</thingDef> -->
