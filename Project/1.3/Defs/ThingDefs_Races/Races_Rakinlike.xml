@@ -178,17 +178,17 @@
 							<offsets>
 								<south>
 									<bodyTypes>
-										<Thin>(-0.1,-0.2)</Thin>
+										<Thin>(-0.01,-0.5)</Thin>
 									</bodyTypes>
 								</south>
 								<north>
 									<bodyTypes>
-										<Thin>(0,-0.05)</Thin>
+										<Thin>(-0.01,-0.5)</Thin>
 									</bodyTypes>
 								</north>
 								<east>
 									<bodyTypes>
-										<Thin>(0.02,-0.2)</Thin>
+										<Thin>(0.39,-0.37)</Thin>
 									</bodyTypes>
 								</east>
 							</offsets>
@@ -203,26 +203,26 @@
 							<offsets>
 								<south>
 									<bodyTypes>
-										<Thin>(-0.475,0.67)</Thin>
+										<Thin>(-0.06,0.4)</Thin>
 									</bodyTypes>
 									<portraitBodyTypes>
-										<Thin>(-0.45,0.67)</Thin>
+										<Thin>(-0.06,0.4)</Thin>
 									</portraitBodyTypes>
 								</south>
 								<north>
 									<bodyTypes>
-										<Thin>(0.05,0.98)</Thin>
+										<Thin>(0.07,0.39)</Thin>
 									</bodyTypes>
 									<portraitBodyTypes>
-										<Thin>(-0.04,0.89)</Thin>
+										<Thin>(0.07,0.39)</Thin>
 									</portraitBodyTypes>
 								</north>
 								<east>
 									<bodyTypes>
-										<Thin>(-0.44,0.75)</Thin>
+										<Thin>(-0.1,0.5)</Thin>
 									</bodyTypes>
 									<portraitBodyTypes>
-										<Thin>(-0.44,0.58)</Thin>
+										<Thin>(-0.1,0.5)</Thin>
 									</portraitBodyTypes>
 								</east>
 							</offsets>
@@ -237,26 +237,26 @@
 							<offsets>
 								<south>
 									<bodyTypes>
-										<Thin>(-0.375,0.67)</Thin>
+										<Thin>(0.06,0.4)</Thin>
 									</bodyTypes>
 									<portraitBodyTypes>
-										<Thin>(-0.4,0.67)</Thin>
+										<Thin>(0.06,0.4)</Thin>
 									</portraitBodyTypes>
 								</south>
 								<north>
 									<bodyTypes>
-										<Thin>(-0.038,0.98)</Thin>
+										<Thin>(-0.05,0.39)</Thin>
 									</bodyTypes>
 									<portraitBodyTypes>
-										<Thin>(-0.01,1)</Thin>
+										<Thin>(-0.05,0.39)</Thin>
 									</portraitBodyTypes>
 								</north>
 								<east>
 									<bodyTypes>
-										<Thin>(-0.44,0.75)</Thin>
+										<Thin>(-0.1,0.5)</Thin>
 									</bodyTypes>
 									<portraitBodyTypes>
-										<Thin>(-0.44,0.58)</Thin>
+										<Thin>(-0.1,0.5)</Thin>
 									</portraitBodyTypes>
 								</east>
 							</offsets>

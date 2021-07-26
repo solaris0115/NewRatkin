@@ -10,9 +10,7 @@
 		<tattooType>Face</tattooType>
 		<category>RK_Style</category>
 		<styleTags>
-			<li>alienNoStyle</li>
 			<li>RK_Style</li>
-			<li>NoTatto</li>
 		</styleTags>
 	</TattooDef>
 	
@@ -26,9 +24,7 @@
 		<tattooType>Body</tattooType>
 		<category>RK_Style</category>
 		<styleTags>
-			<li>alienNoStyle</li>
 			<li>RK_Style</li>
-			<li>NoTatto</li>
 		</styleTags>
 	</TattooDef>
 </Defs>

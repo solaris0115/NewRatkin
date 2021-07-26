@@ -19,18 +19,8 @@
 		<styleItemTags>
 			<li>
 				<tag>RK_Style</tag>
-				<baseWeight>1</baseWeight>
-				<weightFactor>1</weightFactor>
-			</li>
-			<li>
-				<tag>NoBeard</tag>
-				<baseWeight>1</baseWeight>
-				<weightFactor>1</weightFactor>
-			</li>
-			<li>
-				<tag>NoTattoo</tag>
-				<baseWeight>1</baseWeight>
-				<weightFactor>1</weightFactor>
+				<baseWeight>10</baseWeight>
+				<weightFactor>10</weightFactor>
 			</li>
 		</styleItemTags>
 	</CultureDef>
