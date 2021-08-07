@@ -288,41 +288,27 @@
 					<key>HairDef</key>
 					<value>
 						<hasStyle>true</hasStyle>
-						<!--<styleTags>
-                            <li>Rural</li>
-							<li>Urban</li>
-							<li>Punk</li>
-                            <li>Tribal</li>
-							<li>Minimal</li>
-							<li>Soldier</li>
-                        </styleTags>-->
+						<styleTagsOverride>
+                            <li>RK_Style</li>
+                        </styleTagsOverride>
 					</value>
 				</li>
 				<li>
 					<key>TattooDef</key>
 					<value>
 						<hasStyle>true</hasStyle>
-						<!--<styleTags>
-                            <li>Rural</li>
-							<li>Urban</li>
-							<li>Punk</li>
-                            <li>Tribal</li>
-							<li>Minimal</li>
-							<li>Soldier</li>
-                        </styleTags>-->
+						<styleTagsOverride>
+                            <li>RK_Style</li>
+                        </styleTagsOverride>
 					</value>
 				</li>
 				<li>
 					<key>BeardDef</key>
 					<value>
 						<hasStyle>true</hasStyle>
-						<!--<styleTags>
-                            <li>Rural</li>
-							<li>Urban</li>
-							<li>Punk</li>
-                            <li>Tribal</li>
-							<li>Minimal</li>
-                        </styleTags>-->
+						<styleTagsOverride>
+                            <li>RK_Style</li>
+                        </styleTagsOverride>
 					</value>
 				</li>
 			</styleSettings>
