@@ -239,63 +239,7 @@
 			</skillRequirements>
 		</recipeMaker>
 	</ThingDef>
-	<!-- 롱소드 -->
-	<!-- 기본 근접값은  초당 8.84-->
-	<ThingDef ParentName="RK_MeleeWeapon">
-		<defName>RK_LongSword</defName>
-		<label>ratkin longSword</label>
-		<description>밭을 지키는 정원사들의 검입니다. 정원손질에 쓰거나 적들을 손질할때 씁니다.</description>
-		<graphicData>
-			<texPath>Weapon/RK_Sword</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<techLevel>Medieval</techLevel>
-		<weaponTags Inherit="false">
-			<li>RK_MeleeWeapon</li>
-		</weaponTags>
-		<costList>
-			<WoodLog>40</WoodLog>
-		</costList>
-		<costStuffCount>80</costStuffCount>		
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-		<statBases>
-			<WorkToMake>6000</WorkToMake>
-			<Mass>1</Mass>
-		</statBases>
-		<equippedStatOffsets>
-			<PlantWorkSpeed>0.10</PlantWorkSpeed>
-			<PlantHarvestYield>0.05</PlantHarvestYield>
-		</equippedStatOffsets>
-		<equippedAngleOffset>200</equippedAngleOffset>
-		<tools>
-			<li>
-				<label>point</label>
-				<capacities>
-					<li>Stab</li>
-				</capacities>
-				<power>14</power>
-				<armorPenetration>0.35</armorPenetration>
-				<cooldownTime>1.5</cooldownTime>
-			</li>
-			<li>
-				<label>edge</label>
-				<capacities>
-					<li>Cut</li>
-				</capacities>
-				<power>15</power>
-				<armorPenetration>0.35</armorPenetration>
-				<cooldownTime>1.5</cooldownTime>
-			</li>
-		</tools>
-		<recipeMaker>
-			<researchPrerequisite>Smithing</researchPrerequisite>
-			<skillRequirements>
-				<Crafting>4</Crafting>
-			</skillRequirements>
-		</recipeMaker>
-	</ThingDef>
+
 
 
 	<ThingDef Abstract="True" Name="RK_NeolithicRangeWeapon" ParentName="BaseWeaponNeolithic">
