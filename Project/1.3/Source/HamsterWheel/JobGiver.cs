@@ -45,7 +45,7 @@ namespace NewRatkin
                     {
                         if(wheel.Position.IsInPrisonCell(map))
                         {
-                            if (pawn.CanReserveAndReach(wheel) && wheel.GetComp<CompPowerPlantHamsterWheel>().user == null)
+                            if (pawn.CanReserveAndReach(wheel,PathEndMode.InteractionCell,Danger.None) && wheel.GetComp<CompPowerPlantHamsterWheel>().user == null)
                             {
                                 return new Job(RK_JobDefOf.RK_Job_HamsterWheel, wheel);
                             }
