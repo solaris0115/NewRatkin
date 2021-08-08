@@ -130,7 +130,7 @@
 			<li>RK_EliteDefender</li>
 		</weaponTags>
 		<statBases>
-			<WorkToMake>16000</WorkToMake>
+			<WorkToMake>12000</WorkToMake>
 			<Mass>1.2</Mass>
 		</statBases>
 		<equippedAngleOffset>-65</equippedAngleOffset>
@@ -520,7 +520,7 @@
 			<li>RK_Guardener</li>
 		</weaponTags>
 		<statBases>
-			<WorkToMake>20000</WorkToMake>
+			<WorkToMake>18000</WorkToMake>
 			<Mass>1.3</Mass>
 		</statBases>
 		<equippedAngleOffset>-65</equippedAngleOffset>
@@ -557,6 +557,10 @@
 				<cooldownTime>1.8</cooldownTime>
 			</li>
 		</tools>
+		<equippedStatOffsets>
+			<PlantWorkSpeed>0.15</PlantWorkSpeed>
+			<PlantHarvestYield>0.1</PlantHarvestYield>
+		</equippedStatOffsets>
 		<recipeMaker>
 			<researchPrerequisite>Smithing</researchPrerequisite>
 			<skillRequirements>
