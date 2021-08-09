@@ -296,19 +296,13 @@
 				<li>
 					<key>TattooDef</key>
 					<value>
-						<hasStyle>true</hasStyle>
-						<styleTagsOverride>
-                            <li>RK_Style</li>
-                        </styleTagsOverride>
+						<hasStyle>false</hasStyle>
 					</value>
 				</li>
 				<li>
 					<key>BeardDef</key>
 					<value>
-						<hasStyle>true</hasStyle>
-						<styleTagsOverride>
-                            <li>RK_Style</li>
-                        </styleTagsOverride>
+						<hasStyle>false</hasStyle>
 					</value>
 				</li>
 			</styleSettings>
