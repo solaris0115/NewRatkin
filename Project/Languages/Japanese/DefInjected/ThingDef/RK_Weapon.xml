@@ -33,6 +33,7 @@
 
   <RK_LongSword.label>RK ラットキンロングソード</RK_LongSword.label>
   <RK_LongSword.description>畑を守る庭師の剣です。庭のお手入れに書いたり敵を手入れするとき使います。</RK_LongSword.description>
+  <RK_LongSword.tools.handle.label>柄</RK_LongSword.tools.handle.label>
   <RK_LongSword.tools.point.label>切っ先</RK_LongSword.tools.point.label>
   <RK_LongSword.tools.edge.label>刃</RK_LongSword.tools.edge.label>
 
