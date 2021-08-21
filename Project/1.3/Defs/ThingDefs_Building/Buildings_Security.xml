@@ -3,6 +3,7 @@
 	<!-- 발리스타 받침 -->
 	<ThingDef Name="RK_BaseArtilleryBuilding" ParentName="BuildingBase" Abstract="True">
 		<thingClass>Building_TurretGun</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
 			<texPath>Things/Building/Security/Ballista_Base</texPath>
 			<shaderType>CutoutComplex</shaderType>
@@ -380,6 +381,7 @@
 <!-- 대포 받침 -->
 	<ThingDef Name="RK_BaseArtilleryBuilding_Cannon" ParentName="BuildingBase" Abstract="True">
 		<thingClass>Building_TurretGun</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
 			<texPath>Things/Building/Security/Ballista_Base</texPath>
 			<shaderType>CutoutComplex</shaderType>
