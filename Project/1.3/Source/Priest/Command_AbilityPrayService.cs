@@ -169,7 +169,7 @@ namespace NewRatkin
 		public override bool GizmoDisabled(out string reason)
 		{
 			reason = null;
-			return true;
+			return false;
 		}
 	}
 }
