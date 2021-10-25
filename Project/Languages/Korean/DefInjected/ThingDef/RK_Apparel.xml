@@ -226,6 +226,10 @@
   <RK_HeavyShield.label>랫킨 금속 방패</RK_HeavyShield.label>
   <RK_HeavyShield.description>금속 재질의 방패입니다. 정면에서 오는 공격을 방어해낼 수 있습니다. 착용자의 근접 전투 능력과 재질에 따라 더 잘 방어해낼 수 있습니다.</RK_HeavyShield.description>
 
+  <!-- 대형 철제 방패 -->
+
+  <RK_HeavyShield_Big.label>랫킨 대형 금속 방패</RK_HeavyShield_Big.label>
+  <RK_HeavyShield_Big.description>금속 재질의 방패입니다. 정면에서 오는 공격을 방어해낼 수 있습니다. 착용자의 근접 전투 능력과 재질에 따라 더 잘 방어해낼 수 있습니다.</RK_HeavyShield_Big.description>
 
   <!-- 산타외투 -->
 
