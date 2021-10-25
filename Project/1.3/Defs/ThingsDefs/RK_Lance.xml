@@ -222,6 +222,106 @@
 		</comps>
 	</ThingDef>
 
+	<!-- 철퇴 -->
+	<ThingDef ParentName="RK_MeleeWeapon">
+		<defName>RK_Mace</defName>
+		<label>ratkin Mace</label>
+		<description>한손에 들 수 있는 철퇴입니다. 완벽한 무게 밸런스를 이루고 있습니다. 손잡이가 너무 작아 인간이 사용하기 힘들어 보입니다.</description>
+		<graphicData>
+			<texPath>Weapon/RK_Mace</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<weaponTags Inherit="false">
+			<li>RK_Knight</li>
+			<li>RK_Defender</li>
+			<li>RK_EliteDefender</li>
+		</weaponTags>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>1.2</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<costList>
+			<WoodLog>25</WoodLog>
+		</costList>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>90</costStuffCount>
+		<tools>
+			<li>
+				<label>Head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>19</power>
+				<cooldownTime>2.2</cooldownTime>
+			</li>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.8</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>Smithing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="SYS.CompProperties_Sheath">
+				<sheathOnlyGraphicData>
+					<texPath>Weapon/RK_Mace</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</sheathOnlyGraphicData>
+				<!-- <fullGraphicData>
+					<texPath>Weapon/OneHanded_Full</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</fullGraphicData> -->
+				<drawPosition>Side</drawPosition>
+				<northOffset>
+					<position>(0.2,0,-0.2)</position>
+					<angle>0</angle>
+				</northOffset>
+				<southOffset>
+					<position>(-0.2,0,-0.2)</position>
+					<angle>0</angle>
+				</southOffset>
+				<eastOffset>
+					<position>(0,-0.3,-0.2)</position>
+					<angle>150</angle>
+				</eastOffset>
+				<westOffset>
+					<position>(0,0,-0.2)</position>
+					<angle>-150</angle>
+				</westOffset>
+			</li>
+			<li Class="SYS.CompProperties_WeaponExtention">
+				<northOffset>
+					<position>(0.3,0,0.1)</position>
+					<angle>-75</angle>
+				</northOffset>
+				<eastOffset>
+					<position>(0.3,0,-0.15)</position>
+					<angle>-20</angle>
+				</eastOffset>
+				<southOffset>
+					<position>(-0.3,0.3,0)</position>
+					<angle>75</angle>
+				</southOffset>
+				<westOffset>
+					<position>(-0.3,-0.3,-0.15)</position>
+					<angle>20</angle>
+				</westOffset>
+			</li>
+		</comps>
+	</ThingDef>
+
 	<!-- 라이트 랜스 -->
 	<ThingDef ParentName="RK_MeleeWeapon">
 		<defName>RK_LightLance</defName>
