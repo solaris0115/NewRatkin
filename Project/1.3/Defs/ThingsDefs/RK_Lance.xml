@@ -276,35 +276,35 @@
 		<comps>
 			<li Class="SYS.CompProperties_Sheath">
 				<sheathOnlyGraphicData>
+					<texPath>Things/NullDraw</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+				</sheathOnlyGraphicData>
+				<fullGraphicData>
 					<texPath>Weapon/RK_Mace</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
-				</sheathOnlyGraphicData>
-				<!-- <fullGraphicData>
-					<texPath>Weapon/OneHanded_Full</texPath>
-					<graphicClass>Graphic_Multi</graphicClass>
-				</fullGraphicData> -->
-				<drawPosition>Side</drawPosition>
+				</fullGraphicData>
+				<drawPosition>Back</drawPosition>
 				<northOffset>
-					<position>(0.2,0,-0.2)</position>
-					<angle>0</angle>
+					<position>(0,0,-0.2)</position>
+					<angle>90</angle>
 				</northOffset>
 				<southOffset>
-					<position>(-0.2,0,-0.2)</position>
-					<angle>0</angle>
+					<position>(0,0,-0.2)</position>
+					<angle>90</angle>
 				</southOffset>
 				<eastOffset>
-					<position>(0,-0.3,-0.2)</position>
+					<position>(-0.22,-0.3,0.1)</position>
 					<angle>150</angle>
 				</eastOffset>
 				<westOffset>
-					<position>(0,0,-0.2)</position>
+					<position>(0.22,0,0.1)</position>
 					<angle>-150</angle>
 				</westOffset>
 			</li>
 			<li Class="SYS.CompProperties_WeaponExtention">
 				<northOffset>
 					<position>(0.3,0,0.1)</position>
-					<angle>-75</angle>
+					<angle>-45</angle>
 				</northOffset>
 				<eastOffset>
 					<position>(0.3,0,-0.15)</position>
@@ -312,7 +312,7 @@
 				</eastOffset>
 				<southOffset>
 					<position>(-0.3,0.3,0)</position>
-					<angle>75</angle>
+					<angle>45</angle>
 				</southOffset>
 				<westOffset>
 					<position>(-0.3,-0.3,-0.15)</position>
