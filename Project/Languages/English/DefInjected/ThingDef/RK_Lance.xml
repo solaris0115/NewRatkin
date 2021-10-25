@@ -17,6 +17,13 @@
   <RK_OneHanded.tools.1.label>edge</RK_OneHanded.tools.1.label>
   <RK_OneHanded.tools.2.label>handle</RK_OneHanded.tools.2.label>
 
+  <!-- 철퇴 -->
+
+  <RK_Mace.label>ratkin Mace</RK_Mace.label>
+  <RK_Mace.description>Mace with a perfect balance. Handle is too small for human use.</RK_Mace.description>
+  <RK_Mace.tools.0.label>Head</RK_Mace.tools.0.label>
+  <RK_Mace.tools.1.label>handle</RK_Mace.tools.1.label>
+
 
   <!-- 라이트 랜스 -->
 
