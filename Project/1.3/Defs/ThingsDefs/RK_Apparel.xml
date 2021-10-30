@@ -2337,6 +2337,80 @@
 		<followStuffColor>True</followStuffColor>
 	</ThingDef>
 
+		<!-- 대형 철제 방패 -->
+	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
+		<defName>RK_HeavyShield_Big</defName>
+		<label>ratkin Big heavy Shield</label>
+		<description>금속 방패.</description>
+		<thingClass>NewRatkin.Shield</thingClass>
+		<graphicData>
+			<texPath>Apparel/RK_HeavyShield_Big</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+		</graphicData>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+			<researchPrerequisite>HighClassClothing</researchPrerequisite>
+			<recipeUsers Inherit="false">
+				<li>RK_FueledSmithy</li>
+				<li>RK_ElectricSmithy</li>
+			</recipeUsers>
+			<defaultIngredientFilter>
+				<disallowedThingDefs>
+					<li>Gold</li>
+					<li>Silver</li>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>		
+		</recipeMaker>
+		<costList>
+			<Steel>70</Steel>
+		</costList>
+		<costStuffCount>165</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<techLevel>Medieval</techLevel>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>10</Mass>
+			<StuffEffectMultiplierArmor>0.9</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.0</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.0</StuffEffectMultiplierInsulation_Heat>
+			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+			<Flammability>0.2</Flammability>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MeleeDodgeChance>-0.2</MeleeDodgeChance>
+			<MeleeHitChance>-0.2</MeleeHitChance>
+			<MoveSpeed>-0.8</MoveSpeed>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<wornGraphicPath>Apparel/RK_HeavyShield_Big</wornGraphicPath>
+			<layers>
+				<li>OuterClothing</li>
+			</layers>
+			<tags>
+				<li>RK_HeavyArmor</li>
+			</tags>
+		</apparel>
+		<followStuffColor>True</followStuffColor>
+	</ThingDef>
+
 	<!-- 산타외투 -->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
 		<defName>RK_SantaRobe</defName>

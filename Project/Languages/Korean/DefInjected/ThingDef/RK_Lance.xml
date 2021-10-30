@@ -17,6 +17,13 @@
   <RK_OneHanded.tools.1.label>칼날</RK_OneHanded.tools.1.label>
   <RK_OneHanded.tools.2.label>자루</RK_OneHanded.tools.2.label>
 
+  <!-- 철퇴 -->
+
+  <RK_Mace.label>랫킨 철퇴</RK_Mace.label>
+  <RK_Mace.description>한손에 들 수 있는 철퇴입니다. 완벽한 무게 밸런스를 이루고 있습니다. 손잡이가 너무 작아 인간이 사용하기 힘들어 보입니다.</RK_Mace.description>
+  <RK_Mace.tools.0.label>머리</RK_Mace.tools.0.label>
+  <RK_Mace.tools.1.label>자루</RK_Mace.tools.1.label>
+
 
   <!-- 라이트 랜스 -->
 

@@ -356,6 +356,7 @@
 					<li>RK_PlateHelmC</li>
 					<li>RK_WoodenShield</li>
 					<li>RK_HeavyShield</li>
+					<li>RK_HeavyShield_Big</li>
 					<li>RK_SantaRobe</li>
 					<li>RK_SantaHat</li>
 					<li>RK_SantaSack</li>
@@ -390,6 +391,7 @@
 					<li>RK_HeavyLance</li>
 					<li>RK_Gunlance_NormalType</li>
 					<li>RK_Gunlance_SpreadType</li>
+					<li>RK_Mace</li>
 				</weaponList>
 			</raceRestriction>
 			<thoughtSettings>
