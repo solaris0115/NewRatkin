@@ -227,6 +227,12 @@
   <RK_HeavyShield.description>金属製の盾です。</RK_HeavyShield.description>
 
 
+  <!-- Ratkin Big Heavy Shield -->
+
+  <RK_HeavyShield_Big.label>RK 大型ヘビーシールド</RK_HeavyShield_Big.label>
+  <RK_HeavyShield_Big.description>大きな金属製の盾です。</RK_HeavyShield_Big.description>
+
+
   <!-- Santa Coat -->
 
   <RK_SantaRobe.label>RK サンタ衣装</RK_SantaRobe.label>

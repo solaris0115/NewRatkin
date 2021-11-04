@@ -18,6 +18,14 @@
   <RK_OneHanded.tools.handle.label>柄</RK_OneHanded.tools.handle.label>
 
 
+  <!-- 철퇴 -->
+
+  <RK_Mace.label>RK メイス</RK_Mace.label>
+  <RK_Mace.description>片手で持てるメイスです。重量バランスが完璧です。柄が小さすぎて人間には扱えません。</RK_Mace.description>
+  <RK_Mace.tools.Head.label>頭</RK_Mace.tools.Head.label>
+  <RK_Mace.tools.handle.label>柄</RK_Mace.tools.handle.label>
+
+
   <!-- 라이트 랜스 -->
 
   <RK_LightLance.label>RK 木製ランス</RK_LightLance.label>
@@ -43,5 +51,14 @@
   <RK_HeavyLance.tools.point-0.label>先端</RK_HeavyLance.tools.point-0.label>
   <RK_HeavyLance.tools.point-1.label>鍔</RK_HeavyLance.tools.point-1.label>
   <RK_HeavyLance.tools.shaft.label>柄</RK_HeavyLance.tools.shaft.label>
+
+
+  <!-- 기본 근접값은  초당 8.84 -->
+
+  <RK_LongSword.label>RK 園芸ソード</RK_LongSword.label>
+  <RK_LongSword.description>花壇を守る庭師の剣です。庭園の世話に使ったり、敵の首を剪定したりします。</RK_LongSword.description>
+  <RK_LongSword.tools.point.label>切先</RK_LongSword.tools.point.label>
+  <RK_LongSword.tools.edge.label>刃</RK_LongSword.tools.edge.label>
+  <RK_LongSword.tools.handle.label>柄</RK_LongSword.tools.handle.label>
 
 </LanguageData>
