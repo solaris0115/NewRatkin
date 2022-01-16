@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+		<li Class="PatchOperationAdd">
+			<xpath>*/ThingDef[defName = "RK_KingHamster"]/comps</xpath>
+			<value>
+				<li Class="GiddyUpCore.CompProperties_Overlay">
+					<overlayFront>
+						<graphicDataDefault>
+							<texPath>Animal/RK_KingHamster/RK_KingHamster_overlay_south</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+							<drawSize>2.9</drawSize>
+							<drawRotated>false</drawRotated>
+						</graphicDataDefault>
+						<offsetDefault>(0,0,-0.01,0)</offsetDefault>
+					</overlayFront>
+					
+				</li>
+			</value>
+		</li>
+		</operations>
+	</Operation>
+
+</Patch>
