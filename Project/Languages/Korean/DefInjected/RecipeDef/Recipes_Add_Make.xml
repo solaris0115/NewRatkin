@@ -165,4 +165,8 @@
   <Make_RK_StrawberryBeer.description>맥주와 딸기를 섞어 딸기맥주를 만듭니다.</Make_RK_StrawberryBeer.description>
   <!-- EN: Making wort. -->
   <Make_RK_StrawberryBeer.jobString>딸기맥주 만드는 중.</Make_RK_StrawberryBeer.jobString>
+
+  <Make_RK_StrawberryBeer_Bulk.label>딸기맥주 만들기 x4</Make_RK_StrawberryBeer_Bulk.label>
+  <Make_RK_StrawberryBeer_Bulk.description>맥주와 딸기를 섞어 딸기맥주를 만듭니다.</Make_RK_StrawberryBeer_Bulk.description>
+  <Make_RK_StrawberryBeer_Bulk.jobString>딸기맥주 x4 만드는 중.</Make_RK_StrawberryBeer_Bulk.jobString>
 </LanguageData>
