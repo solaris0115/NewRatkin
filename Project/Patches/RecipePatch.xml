@@ -67,6 +67,7 @@
         <xpath>*/ThingDef[defName = "Brewery"]/recipes</xpath>
         <value>
             <li>Make_RK_StrawberryBeer</li>
+			<li>Make_RK_StrawberryBeer_Bulk</li>
         </value>
     </Operation>
 </Patch>

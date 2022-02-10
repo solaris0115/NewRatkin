@@ -166,4 +166,45 @@
 		</products>
 	</RecipeDef>
 
+	<RecipeDef>
+		<defName>Make_RK_StrawberryBeer_Bulk</defName>
+		<label>make StrawberryBeer x4</label>
+		<description>Make StrawberryBeer.</description>
+		<jobString>Making StrawberryBeer x4</jobString>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<workAmount>3000</workAmount>
+		<targetCountAdjustment>1</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawBerries</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Beer</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawBerries</li>
+				<li>Beer</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RK_StrawberryBeer>4</RK_StrawberryBeer>
+		</products>
+	</RecipeDef>
+
 </Defs>
