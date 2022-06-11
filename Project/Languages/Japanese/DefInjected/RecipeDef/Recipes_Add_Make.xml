@@ -179,6 +179,10 @@
   <Make_RK_HeavyShield.description>RK ヘビーシールドを作る。</Make_RK_HeavyShield.description>
   <Make_RK_HeavyShield.jobString>RK ヘビーシールドを作成中</Make_RK_HeavyShield.jobString>
 
+  <Make_RK_HeavyShield_Big.label>RK 大型ヘビーシールドを作る</Make_RK_HeavyShield_Big.label>
+  <Make_RK_HeavyShield_Big.description>RK 大型ヘビーシールドを作る。</Make_RK_HeavyShield_Big.description>
+  <Make_RK_HeavyShield_Big.jobString>RK 大型ヘビーシールドを作成中</Make_RK_HeavyShield_Big.jobString>
+
 
   <!-- Recipe Users: RK_ElectricTailoringBench, RK_HandTailoringBench -->
 
@@ -236,6 +240,10 @@
   <Make_RK_OneHanded.description>RK ワンハンドソードを作る。</Make_RK_OneHanded.description>
   <Make_RK_OneHanded.jobString>RK ワンハンドソードを作成中</Make_RK_OneHanded.jobString>
 
+  <Make_RK_Mace.label>RK メイスを作る</Make_RK_Mace.label>
+  <Make_RK_Mace.description>RK メイスを作る。</Make_RK_Mace.description>
+  <Make_RK_Mace.jobString>RK メイスを作成中</Make_RK_Mace.jobString>
+
   <Make_RK_LightLance.label>RK 木製ランスを作る</Make_RK_LightLance.label>
   <Make_RK_LightLance.description>RK 木製ランスを作る。</Make_RK_LightLance.description>
   <Make_RK_LightLance.jobString>RK 木製ランスを作成中</Make_RK_LightLance.jobString>
@@ -247,6 +255,10 @@
   <Make_RK_HeavyLance.label>RK ヘビーランスを作る</Make_RK_HeavyLance.label>
   <Make_RK_HeavyLance.description>RK ヘビーランスを作る。</Make_RK_HeavyLance.description>
   <Make_RK_HeavyLance.jobString>RK ヘビーランスを作成中</Make_RK_HeavyLance.jobString>
+
+  <Make_RK_LongSword.label>RK ロングソードを作る</Make_RK_LongSword.label>
+  <Make_RK_LongSword.description>RK ロングソードを作る。</Make_RK_LongSword.description>
+  <Make_RK_LongSword.jobString>RK ロングソードを作成中</Make_RK_LongSword.jobString>
 
   <Make_RK_Axe.label>RK 斧を作る</Make_RK_Axe.label>
   <Make_RK_Axe.description>RK 斧を作る。</Make_RK_Axe.description>
@@ -263,10 +275,6 @@
   <Make_RK_Fork.label>RK フォークを作る</Make_RK_Fork.label>
   <Make_RK_Fork.description>RK フォークを作る。</Make_RK_Fork.description>
   <Make_RK_Fork.jobString>RK フォークを作成中</Make_RK_Fork.jobString>
-
-  <Make_RK_LongSword.label>RK ラットキンロングソードを作る</Make_RK_LongSword.label>
-  <Make_RK_LongSword.description>RK ラットキンロングソードを作る。</Make_RK_LongSword.description>
-  <Make_RK_LongSword.jobString>RK ラットキンロングソードを作成中</Make_RK_LongSword.jobString>
 
   <Make_RK_Crossbow.label>RK クロスボウを作る</Make_RK_Crossbow.label>
   <Make_RK_Crossbow.description>RK クロスボウを作る。</Make_RK_Crossbow.description>
@@ -298,10 +306,6 @@
   <Make_RK_FlechetteSniperRifle.label>フレシェットスナイパーライフルを作る</Make_RK_FlechetteSniperRifle.label>
   <Make_RK_FlechetteSniperRifle.description>フレシェットスナイパーライフルを作る。</Make_RK_FlechetteSniperRifle.description>
   <Make_RK_FlechetteSniperRifle.jobString>フレシェットスナイパーライフルを作成中</Make_RK_FlechetteSniperRifle.jobString>
-
-  <!-- <Make_RK_PrototypePulseRifle.label>試作型パルスライフルを作る</Make_RK_PrototypePulseRifle.label>
-  <Make_RK_PrototypePulseRifle.description>試作型パルスライフルを作る。</Make_RK_PrototypePulseRifle.description>
-  <Make_RK_PrototypePulseRifle.jobString>試作型パルスライフルを作成中</Make_RK_PrototypePulseRifle.jobString> -->
 
   <Make_RK_Rifle_line.label>ラットキンショットガンを作る</Make_RK_Rifle_line.label>
   <Make_RK_Rifle_line.description>ラットキンショットガンを作る。</Make_RK_Rifle_line.description>
