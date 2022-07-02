@@ -2341,7 +2341,7 @@
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
 		<defName>RK_HeavyShield_Big</defName>
 		<label>ratkin Big heavy Shield</label>
-		<description>금속 방패.</description>
+		<description>금속 대방패.</description>
 		<thingClass>NewRatkin.Shield</thingClass>
 		<graphicData>
 			<texPath>Apparel/RK_HeavyShield_Big</texPath>
@@ -2374,7 +2374,7 @@
 			<MaxHitPoints>300</MaxHitPoints>
 			<WorkToMake>40000</WorkToMake>
 			<Mass>10</Mass>
-			<StuffEffectMultiplierArmor>0.9</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>0.85</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.0</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.0</StuffEffectMultiplierInsulation_Heat>
 			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
