@@ -135,7 +135,6 @@
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<building>
 			<turretGunDef>RK_Turret_Ballista_Strait</turretGunDef>
-			<!--<turretTopGraphicPath>Things/Building/Security/Ballista_Turret</turretTopGraphicPath>-->
 			<buildingTags>
 				<li>Ratkin_Artillery</li>
 			</buildingTags>
@@ -513,7 +512,6 @@
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<building>
 			<turretGunDef>RK_Turret_Cannon_Strait</turretGunDef>
-			<!--<turretTopGraphicPath>Things/Building/Security/Ballista_Turret</turretTopGraphicPath>-->
 			<buildingTags>
 				<li>Ratkin_Artillery</li>
 			</buildingTags>
