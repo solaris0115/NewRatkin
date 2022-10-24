@@ -17,7 +17,7 @@
 
   <NamerPerson_RatkinKingdom.rulePack.rulesStrings>
     <!-- Name + family name -->
-    <li>r_name(p=4)->[RK_FirstName] [RK_LastName]領</li>
+    <li>r_name(p=4)->[RK_FirstName] [RK_LastName]</li>
     <li>r_name(p=2)->[RK_First_ElfStyle] [RK_Noun_Prefix_Flower]</li>
     <li>r_name(p=1)->[RK_First_ElfStyle] [RK_Noun_Prefix_Flower]ティー</li>
   </NamerPerson_RatkinKingdom.rulePack.rulesStrings>
