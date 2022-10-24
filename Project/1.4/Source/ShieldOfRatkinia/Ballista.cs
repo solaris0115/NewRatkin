@@ -12,7 +12,7 @@ namespace NewRatkin
     }
     public class Projectile_BallistaArrow : Projectile
     {
-        protected override void Impact(Thing hitThing)
+        protected override void Impact(Thing hitThing, bool blockedByShield = false)
         {
             Map map = Map;
             BattleLogEntry_RangedImpact battleLogEntry_RangedImpact = new BattleLogEntry_RangedImpact(this.launcher, hitThing, this.intendedTarget.Thing, this.equipmentDef, this.def, this.targetCoverDef);
@@ -31,7 +31,7 @@ namespace NewRatkin
                 Pawn pawn = hitThing as Pawn;
                 if (pawn != null && pawn.stances != null && pawn.BodySize <= def.projectile.StoppingPower + 0.001f)
                 {
-                    pawn.stances.StaggerFor(95);
+                    pawn.stances.stagger.StaggerFor(95);
                 }
                 RKSoundDefOf.Ballista_Impact.PlayOneShot(new TargetInfo(hitThing.Position, map, false));
                 FilthMaker.TryMakeFilth(Position, map, ThingDefOf.Filth_Blood, 4);
@@ -446,7 +446,8 @@ namespace NewRatkin
             Scribe_Values.Look(ref ticksToDetonation, "ticksToDetonation", 0, false);
             Scribe_Values.Look(ref currentPenetrationCount, "currentPenetrationCount", 0);
         }
-        protected override void Impact(Thing hitThing)
+
+        protected override void Impact(Thing hitThing, bool blockedByShield = false)
         {
             Map map = Map;
             BattleLogEntry_RangedImpact battleLogEntry_RangedImpact = new BattleLogEntry_RangedImpact(this.launcher, hitThing, intendedTarget.Thing, this.equipmentDef, this.def, this.targetCoverDef);
@@ -468,7 +469,7 @@ namespace NewRatkin
                     RKSoundDefOf.Ballista_Impact.PlayOneShot(new TargetInfo(Position, map, false));
                     if (pawn.stances != null && pawn.BodySize <= def.projectile.StoppingPower + 0.001f)
                     {
-                        pawn.stances.StaggerFor(95);
+                        pawn.stances.stagger.StaggerFor(95);
                     }
                 }
                 currentPenetrationCount++;

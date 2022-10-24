@@ -42,7 +42,7 @@ namespace NewRatkin
         {
             if (parms.points <= 0f)
             {
-                Log.Error("RaidEnemy is resolving raid points. They should always be set before initiating the incident.", false);
+                Log.Error("RaidEnemy is resolving raid points. They should always be set before initiating the incident.");
                 parms.points = StorytellerUtility.DefaultThreatPointsNow(parms.target);
             }
         }
@@ -68,7 +68,7 @@ namespace NewRatkin
                     groupKind,
                     "\nparms=",
                     parms
-                }), false);
+                }));
                 if (!Prefs.DevMode)
                 {
                     parms.raidStrategy = RaidStrategyDefOf.ImmediateAttack;

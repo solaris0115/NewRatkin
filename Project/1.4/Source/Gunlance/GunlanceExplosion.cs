@@ -63,7 +63,7 @@ namespace NewRatkin
 			bool flag = !base.Spawned;
 			if (flag)
 			{
-				Log.Error("Called StartExplosion() on unspawned thing.", false);
+				Log.Error("Called StartExplosion() on unspawned thing.");
 			}
 			else
 			{
@@ -114,7 +114,7 @@ namespace NewRatkin
 						this.cellsToAffect[num],
 						": ",
 						ex
-					}), false);
+					}));
 				}
 				this.cellsToAffect.RemoveAt(num);
 				num--;

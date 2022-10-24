@@ -108,7 +108,7 @@ namespace NewRatkin
 			}
 			if (casterPawn != null && !casterPawn.Dead && casterPawn.Spawned)
 			{
-				casterPawn.stances.StaggerFor(95);
+				casterPawn.stances.stagger.StaggerFor(95);
 			}
 		}
 

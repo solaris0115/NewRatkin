@@ -28,7 +28,7 @@ namespace NewRatkin
                 }
                 var mercenaryPawnKindDef = RatkinPawnKindDefOf.RatkinMercenary;
 
-                PawnGenerationRequest request = PawnGenerationRequest.MakeDefault();
+                PawnGenerationRequest request = new PawnGenerationRequest();
                 request.KindDef = mercenaryPawnKindDef;
                 request.Faction = mercenaryFaction;
                 request.Tile = forTile;
