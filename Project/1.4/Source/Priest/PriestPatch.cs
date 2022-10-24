@@ -13,12 +13,16 @@ namespace NewRatkin
         [HarmonyPostfix]
         static void Postfix(Pawn __result)
         {
-            if (__result != null)
+            if (__result == null) return;
+
+            if (BackstoryCache.Ratkin_Sister == null)
             {
-                if (__result?.story?.adulthood == BackstoryCache.Ratkin_Sister)
-                {
-                    __result.abilities?.GainAbility(RatkinAbilityDefOf.RK_PrayerService);
-                }
+                BackstoryCache.CacheBackstorys(__result);
+            }
+
+            if (__result?.story?.Adulthood == BackstoryCache.Ratkin_Sister)
+            {
+                __result.abilities?.GainAbility(RatkinAbilityDefOf.RK_PrayerService);
             }
         }
     }
@@ -33,7 +37,7 @@ namespace NewRatkin
         {
             if (Scribe.mode == LoadSaveMode.ResolvingCrossRefs)
             {
-                if (___pawn?.story?.adulthood == BackstoryCache.Ratkin_Sister && !__instance.abilities.Any(x => x.def == RatkinAbilityDefOf.RK_PrayerService))
+                if (___pawn?.story?.Adulthood == BackstoryCache.Ratkin_Sister && !__instance.abilities.Any(x => x.def == RatkinAbilityDefOf.RK_PrayerService))
                 {
                     __instance.GainAbility(RatkinAbilityDefOf.RK_PrayerService);
                 }
@@ -48,7 +52,7 @@ namespace NewRatkin
         [HarmonyPrefix]
         static bool Prefix(ref float __result, Pawn initiator, Pawn recipient)
         {
-            if (initiator.story?.adulthood == BackstoryCache.Ratkin_Sister)
+            if (initiator.story?.Adulthood == BackstoryCache.Ratkin_Sister)
             {
                 __result = 0f;
                 return false;

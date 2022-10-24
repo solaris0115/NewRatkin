@@ -5,25 +5,20 @@ namespace NewRatkin
 {
     public static class BackstoryCache
     {
-        public static Backstory Ratkin_Sister
+        static BackstoryDef backstorySisterCached = null;
+        public static BackstoryDef Ratkin_Sister
         {
             get
             {
-                if (backstorySisterCached == null)
-                {
-                    CacheBackstorys();
-                }
-
                 return backstorySisterCached;
             }
         }
 
-        static void CacheBackstorys()
+        public static void CacheBackstorys(Pawn pawn)
         {
-            
-            backstorySisterCached = BackstoryDatabase.allBackstories.TryGetValue("Ratkin_Sister", null);
+            if (backstorySisterCached != null) return;
+            backstorySisterCached = pawn.story?.AllBackstories.Find(x => x.defName == "Ratkin_Sister");
         }
 
-        static Backstory backstorySisterCached = null;
     }
 }
