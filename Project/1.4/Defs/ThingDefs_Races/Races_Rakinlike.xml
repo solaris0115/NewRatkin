@@ -167,7 +167,7 @@
 					</colorChannels>
 					<!-- 신체 드로잉 크기 -->
 					<customDrawSize>(0.9, 0.9)</customDrawSize>
-					<customPortraitDrawSize>(1, 1)</customPortraitDrawSize>
+					<customPortraitDrawSize>(.9, .9)</customPortraitDrawSize>
 					<!-- 신체 부착물 -->
 					<bodyAddons>
 						<li>
