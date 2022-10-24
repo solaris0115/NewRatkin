@@ -76,7 +76,6 @@
     <Compile Include="Gunlance\VerbProperties_Gunlance.cs" />
     <Compile Include="Gunlance\Verb_GunlanceFiring.cs" />
     <Compile Include="Gunlance\Verb_WyvernFire.cs" />
-    <Compile Include="Gunlance\WorkGiver_GunlanceRefuel.cs" />
     <Compile Include="HamsterWheel\DefOf.cs" />
     <Compile Include="HamsterWheel\Job.cs" />
     <Compile Include="HamsterWheel\JobGiver.cs" />
@@ -106,7 +105,6 @@
     <Compile Include="RatkinGuerrilla\LordJob_DefendBomb.cs" />
     <Compile Include="RatkinGuerrilla\LordToil_DefendBomb.cs" />
     <Compile Include="RatkinGuerrilla\Mote_CountDown.cs" />
-    <Compile Include="RatkinGuerrilla\RatkinRaidPatch.cs" />
     <Compile Include="RatkinGuerrilla\RatkinTunnelUtility.cs" />
     <Compile Include="RatkinGuerrilla\TunnelSpawner.cs" />
     <Compile Include="ShieldOfRatkinia\Ballista.cs" />

@@ -1,15 +1,9 @@
-﻿using System;
+﻿using HarmonyLib;
+using RimWorld;
 using System.Collections.Generic;
 using System.Reflection;
-using System.Linq;
-using System.Text;
-using RimWorld;
-using Verse;
-using Verse.AI;
-using Verse.Sound;
 using UnityEngine;
-using HarmonyLib;
-using RimWorld.Planet;
+using Verse;
 
 namespace NewRatkin
 {
