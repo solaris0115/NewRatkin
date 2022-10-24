@@ -1,12 +1,6 @@
-﻿using System;
-using System.Text;
-using System.Collections.Generic;
+﻿using RimWorld;
 using System.Linq;
-using System.Reflection;
-using RimWorld;
-using HarmonyLib;
 using UnityEngine;
-using Verse.AI;
 using Verse;
 using Verse.Sound;
 
@@ -39,7 +33,7 @@ namespace NewRatkin
                     " meleed ",
                     thing,
                     " from out of melee position."
-                }), false);
+                }));
             }
             casterPawn.rotationTracker.Face(thing.DrawPos);
             if (!IsTargetImmobile(currentTarget) && casterPawn.skills != null)
@@ -98,7 +92,7 @@ namespace NewRatkin
             }
             if (pawn != null && !pawn.Dead && pawn.Spawned)
             {
-                pawn.stances.StaggerFor(95);
+                pawn.stances.stagger.StaggerFor(95);
             }
             if (casterPawn.Spawned)
             {

@@ -1,15 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using Verse;
-using Verse.AI.Group;
-using Verse.Sound;
-using System.Text;
-using System.Reflection;
+﻿using Verse;
 using RimWorld;
-using HarmonyLib;
-using UnityEngine;
-using Verse.AI;
 namespace NewRatkin
 {
     public class IncidentWorker_RatkinThiefTunner : IncidentWorker

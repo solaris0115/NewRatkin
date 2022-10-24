@@ -4,12 +4,7 @@ using System.Linq;
 using Verse;
 using Verse.AI.Group;
 using Verse.Sound;
-using System.Text;
-using System.Reflection;
 using RimWorld;
-using HarmonyLib;
-using UnityEngine;
-using Verse.AI;
 
 namespace NewRatkin
 {
@@ -121,7 +116,7 @@ namespace NewRatkin
                 num++;
                 if (num > 1000)
                 {
-                    Log.Error("Too many iterations.", false);
+                    Log.Error("Too many iterations.");
                     break;
                 }
                 Pawn pawn;

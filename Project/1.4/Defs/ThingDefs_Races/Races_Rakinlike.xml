@@ -16,24 +16,20 @@
 				<humanRecipeImport>true</humanRecipeImport>
 				<alienPartGenerator>
 					<!-- 전체화질 및 텍스처 드로우 범위 -->
-					<atlasScale>2</atlasScale>
-					<borderScale>1</borderScale>
+					<atlasScale>4</atlasScale>
 					<!-- 얼굴 및 신체 바리에이션 -->
-					<aliencrowntypes>
-						<li>Average_Normal</li>
-						<li>Average_Wide</li>
-						<li>Average_Pointy</li>
-						<li>Narrow_Normal</li>
-						<li>Narrow_Wide</li>
-						<li>Narrow_Pointy</li>
-					</aliencrowntypes>
-					<alienbodytypes>
+					<headTypes>
+						<li>Female_AverageNormal</li>
+						<li>Female_AverageWide</li>
+						<li>Female_AveragePointy</li>
+						<li>Male_AverageNormal</li>
+						<li>Male_AverageWide</li>
+						<li>Male_AveragePointy</li>
+					</headTypes>
+					<bodyTypes>
 						<li>Thin</li>
-					</alienbodytypes>
+					</bodyTypes>
 					<headOffset>(0.0, -0.09)</headOffset>
-					<!-- 성별 별개사용 유무 -->
-					<useGenderedHeads>false</useGenderedHeads>
-					<useGenderedBodies>false</useGenderedBodies>
 					<!-- 색상관련 -->
 					<colorChannels>
 						<li>
@@ -171,13 +167,13 @@
 					</colorChannels>
 					<!-- 신체 드로잉 크기 -->
 					<customDrawSize>(0.9, 0.9)</customDrawSize>
-					<customPortraitDrawSize>(1, 1)</customPortraitDrawSize>
+					<customPortraitDrawSize>(.9, .9)</customPortraitDrawSize>
 					<!-- 신체 부착물 -->
 					<bodyAddons>
 						<li>
 							<drawSize>1</drawSize>
 							<path>Body/RK_Tail</path>
-							<bodyPart>tail</bodyPart>
+							<bodyPartLabel>tail</bodyPartLabel>
 							<inFrontOfBody>false</inFrontOfBody>
 							<colorChannel>skin</colorChannel>
 							<offsets>
@@ -202,7 +198,7 @@
 						<li>
 							<drawSize>1</drawSize>
 							<path>Body/RK_EarLeft</path>
-							<bodyPart>left ear</bodyPart>
+							<bodyPartLabel>left ear</bodyPartLabel>
 							<inFrontOfBody>true</inFrontOfBody>
 							<colorChannel>skin</colorChannel>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
@@ -238,7 +234,7 @@
 						<li>
 							<drawSize>1</drawSize>
 							<path>Body/RK_EarRight</path>
-							<bodyPart>right ear</bodyPart>
+							<bodyPartLabel>right ear</bodyPartLabel>
 							<inFrontOfBody>true</inFrontOfBody>
 							<colorChannel>skin</colorChannel>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
@@ -283,11 +279,8 @@
 				</disallowedTraits>
 			</generalSettings>
 			<graphicPaths>
-				<li>
-					<body>Things/Ratkin/Bodies/</body>
-					<head>Things/Ratkin/Heads/</head>
-					<skeleton>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</skeleton>
-				</li>
+				<body>Things/Ratkin/Bodies/</body>
+				<head>Things/Ratkin/Heads/</head>
 			</graphicPaths>
 			<styleSettings>
 				<li>
@@ -383,14 +376,13 @@
 					<li>RK_SniperRifle</li>
 					<li>RK_FlechetteRifle</li>
 					<li>RK_FlechetteSniperRifle</li>
-					<li>RK_Rifle_line</li>
-					<li>RK_PrototypePulseRifle</li>
+					<!-- <li>RK_Rifle_line</li> -->
 					<li>RK_Dagger</li>
 					<li>RK_OneHanded</li>
 					<li>RK_LightLance</li>
 					<li>RK_HeavyLance</li>
-					<li>RK_Gunlance_NormalType</li>
-					<li>RK_Gunlance_SpreadType</li>
+					<!-- <li>RK_Gunlance_NormalType</li> -->
+					<!-- <li>RK_Gunlance_SpreadType</li> -->
 					<li>RK_Mace</li>
 				</weaponList>
 			</raceRestriction>
@@ -412,7 +404,7 @@
 			<ImmunityGainSpeed>1.10</ImmunityGainSpeed>
 			<CarryingCapacity>45</CarryingCapacity>
 			<PainShockThreshold>0.7</PainShockThreshold>
-			<ToxicSensitivity>0.9</ToxicSensitivity>
+			<ToxicEnvironmentResistance>0.9</ToxicEnvironmentResistance>
 			<EatingSpeed>1.1</EatingSpeed>
 			<MeatAmount>35</MeatAmount>
 			<LeatherAmount>30</LeatherAmount>
@@ -516,16 +508,12 @@
 					<minAge>0</minAge>
 				</li>
 				<li>
-					<def>HumanlikeToddler</def>
-					<minAge>1.2</minAge>
-				</li>
-				<li>
 					<def>HumanlikeChild</def>
 					<minAge>4</minAge>
 				</li>
 				<li>
 					<def>HumanlikeTeenager</def>
-					<minAge>11</minAge>
+					<minAge>9</minAge>
 				</li>
 				<li>
 					<def>HumanlikeAdult</def>
@@ -602,7 +590,7 @@
 		</alienRace>
 		<statBases>
 			<!-- 기본 -->
-			<ToxicSensitivity>0.8</ToxicSensitivity>
+			<ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
 			<EatingSpeed>1.1</EatingSpeed>
 			<PsychicSensitivity>0.85</PsychicSensitivity>
 			<!-- 사회 -->

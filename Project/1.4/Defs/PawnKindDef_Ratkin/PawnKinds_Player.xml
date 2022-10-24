@@ -3,7 +3,6 @@
 	<PawnKindDef Name="RKBasePawnKind" Abstract="True">
 		<combatPower>20</combatPower>
 		<canBeSapper>true</canBeSapper>
-		<baseRecruitDifficulty>0.80</baseRecruitDifficulty>
 		<race>Ratkin</race>
 		<minGenerationAge>16</minGenerationAge>
 		<maxGenerationAge>35</maxGenerationAge>
@@ -19,7 +18,6 @@
 	<PawnKindDef Name="RKBasePawnKind_B" Abstract="True">
 		<combatPower>20</combatPower>
 		<canBeSapper>true</canBeSapper>
-		<baseRecruitDifficulty>0.80</baseRecruitDifficulty>
 		<race>Ratkin_Su</race>
 		<minGenerationAge>16</minGenerationAge>
 		<maxGenerationAge>35</maxGenerationAge>
@@ -64,7 +62,6 @@
 		<combatPower>35</combatPower>
 		<isFighter>false</isFighter>
 		<factionLeader>true</factionLeader>
-		<baseRecruitDifficulty>0.95</baseRecruitDifficulty>
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
@@ -229,7 +226,6 @@
 	<PawnKindDef ParentName="RKCombatantBase">
 		<defName>RatkinVanguard</defName>
 		<label>ratkin vanguard</label>
-		<baseRecruitDifficulty>0.95</baseRecruitDifficulty>
 		<combatPower>70</combatPower>
 		<isFighter>true</isFighter>
 		<minGenerationAge>21</minGenerationAge>
@@ -267,7 +263,6 @@
 	<PawnKindDef ParentName="RKCombatantBase">
 		<defName>RatkinDefender</defName>
 		<label>ratkin defender</label>
-		<baseRecruitDifficulty>0.65</baseRecruitDifficulty>
 		<combatPower>85</combatPower>
 		<isFighter>true</isFighter>
 		<minGenerationAge>21</minGenerationAge>
@@ -359,7 +354,6 @@
 	<PawnKindDef ParentName="RKCombatantBase">
 		<defName>RatkinEliteGuardener</defName>
 		<label>ratkin elite guardener</label>
-		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
 		<combatPower>90</combatPower>
 		<isFighter>true</isFighter>
 		<itemQuality>Good</itemQuality>
@@ -423,7 +417,6 @@
 	<PawnKindDef ParentName="RKCombatantBase">
 		<defName>RatkinKnight</defName>
 		<label>ratkin knight</label>
-		<baseRecruitDifficulty>0.75</baseRecruitDifficulty>
 		<combatPower>100</combatPower>
 		<isFighter>true</isFighter>
 		<itemQuality>Good</itemQuality>
@@ -469,7 +462,6 @@
 	<PawnKindDef ParentName="RKCombatantBase">
 		<defName>RatkinEliteDefender</defName>
 		<label>ratkin elite defender</label>
-		<baseRecruitDifficulty>0.85</baseRecruitDifficulty>
 		<combatPower>180</combatPower>
 		<isFighter>true</isFighter>
 		<itemQuality>Good</itemQuality>
@@ -516,7 +508,6 @@
 	<PawnKindDef ParentName="RKCombatantBase">
 		<defName>RatkinKnightCommander</defName>
 		<label>ratkin knight commander</label>
-		<baseRecruitDifficulty>0.99</baseRecruitDifficulty>
 		<combatPower>200</combatPower>
 		<isFighter>true</isFighter>
 		<factionLeader>true</factionLeader>
@@ -570,7 +561,6 @@
 	<PawnKindDef ParentName="RKCombatantBase">
 		<defName>RatkinEliteSoldier</defName>
 		<label>ratkin elite soldier</label>
-		<baseRecruitDifficulty>0.99</baseRecruitDifficulty>
 		<combatPower>100</combatPower>
 		<isFighter>true</isFighter>
 		<itemQuality>Excellent</itemQuality>
@@ -627,7 +617,6 @@
 		<defName>RatkinDemonMan</defName>
 		<label>ratkin demoman</label>
 		<combatPower>120</combatPower>
-		<baseRecruitDifficulty>0.99</baseRecruitDifficulty>
 		<isFighter>true</isFighter>
 		<gearHealthRange>
 			<min>0.8</min>
@@ -758,7 +747,6 @@
 	<PawnKindDef ParentName="RKCombatantBase">
 		<defName>RatkinVagabond</defName>
 		<label>Vagabond</label>
-		<baseRecruitDifficulty>0.98</baseRecruitDifficulty>
 		<combatPower>50</combatPower>
 		<isFighter>true</isFighter>
 		<backstoryFiltersOverride>
@@ -849,7 +837,6 @@
 	<PawnKindDef ParentName="RKCombatantBase_B">
 		<defName>RatkinSubject</defName>
 		<label>ratkin subject</label>
-		<baseRecruitDifficulty>0.55</baseRecruitDifficulty>
 		<backstoryFiltersOverride>
 			<li>
 				<categories>

@@ -1,13 +1,7 @@
-﻿using System;
-using System.Text;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
 using RimWorld;
-using HarmonyLib;
 using UnityEngine;
-using Verse.AI;
-using Verse.Sound;
 using Verse;
 
 namespace NewRatkin
@@ -38,7 +32,7 @@ namespace NewRatkin
 					" meleed ",
 					targetThing,
 					" from out of melee position."
-				}), false);
+				}));
 			}
 			Pawn targetPawn = targetThing as Pawn;
 			if (targetPawn != null && !targetPawn.Dead && (casterPawn.MentalStateDef != MentalStateDefOf.SocialFighting || targetPawn.MentalStateDef != MentalStateDefOf.SocialFighting))
@@ -83,7 +77,7 @@ namespace NewRatkin
 			}
 			if (targetPawn != null && !targetPawn.Dead && targetPawn.Spawned)
 			{
-				targetPawn.stances.StaggerFor(95);
+				targetPawn.stances.stagger.StaggerFor(95);
 			}
 			if (casterPawn.Spawned)
 			{

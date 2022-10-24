@@ -1,15 +1,7 @@
-﻿using System;
+﻿using RimWorld;
 using System.Collections.Generic;
-using System.Reflection;
 using System.Linq;
-using System.Text;
-using RimWorld;
 using Verse;
-using Verse.AI;
-using Verse.Sound;
-using UnityEngine;
-using HarmonyLib;
-using RimWorld.Planet;
 
 
 namespace NewRatkin
@@ -36,7 +28,7 @@ namespace NewRatkin
                 }
                 var mercenaryPawnKindDef = RatkinPawnKindDefOf.RatkinMercenary;
 
-                PawnGenerationRequest request = PawnGenerationRequest.MakeDefault();
+                PawnGenerationRequest request = new PawnGenerationRequest();
                 request.KindDef = mercenaryPawnKindDef;
                 request.Faction = mercenaryFaction;
                 request.Tile = forTile;

@@ -42,8 +42,6 @@
 		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
 		<factionNameMaker>NamerFaction_RatkinKingdom</factionNameMaker>
 		<settlementNameMaker>NamerSettlement_RatkinKingdom</settlementNameMaker>
-		
-		<geneticVariance>1</geneticVariance>
 		<startingResearchTags>
 			<li>RatkinStart</li>
 		</startingResearchTags>

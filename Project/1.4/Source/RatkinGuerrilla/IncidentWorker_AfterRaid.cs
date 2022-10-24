@@ -1,15 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using Verse;
-using Verse.AI.Group;
-using Verse.Sound;
-using System.Text;
-using System.Reflection;
 using RimWorld;
-using HarmonyLib;
-using UnityEngine;
-using Verse.AI;
 
 namespace NewRatkin
 {
@@ -50,7 +42,7 @@ namespace NewRatkin
         {
             if (parms.points <= 0f)
             {
-                Log.Error("RaidEnemy is resolving raid points. They should always be set before initiating the incident.", false);
+                Log.Error("RaidEnemy is resolving raid points. They should always be set before initiating the incident.");
                 parms.points = StorytellerUtility.DefaultThreatPointsNow(parms.target);
             }
         }
@@ -76,7 +68,7 @@ namespace NewRatkin
                     groupKind,
                     "\nparms=",
                     parms
-                }), false);
+                }));
                 if (!Prefs.DevMode)
                 {
                     parms.raidStrategy = RaidStrategyDefOf.ImmediateAttack;

@@ -99,23 +99,23 @@
 				<fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
 			</li>
 		</comps>
-		<verbs>
-			<li Class="NewRatkin.VerbProperties_Gunlance">
-				<verbClass>NewRatkin.Verb_WyvernFire</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<warmupTime>0.5</warmupTime>
-				<range>5</range>
-				<onlyManualCast>True</onlyManualCast>
-				<muzzleFlashScale>15</muzzleFlashScale>
-				<consumeFuelPerShot>1</consumeFuelPerShot>
-				<burstShotCount>2</burstShotCount>
-				<ticksBetweenBurstShots>130</ticksBetweenBurstShots>
-				<damageDef>Bomb</damageDef>
-				<damageAmount>25</damageAmount>
-				<stopBurstWithoutLos>false</stopBurstWithoutLos>
-				<angle>50</angle>
-			</li>
-		</verbs>
+		<!-- <verbs> -->
+			<!-- <li Class="NewRatkin.VerbProperties_Gunlance"> -->
+				<!-- <verbClass>NewRatkin.Verb_WyvernFire</verbClass> -->
+				<!-- <hasStandardCommand>true</hasStandardCommand> -->
+				<!-- <warmupTime>0.5</warmupTime> -->
+				<!-- <range>5</range> -->
+				<!-- <onlyManualCast>True</onlyManualCast> -->
+				<!-- <muzzleFlashScale>15</muzzleFlashScale> -->
+				<!-- <consumeFuelPerShot>1</consumeFuelPerShot> -->
+				<!-- <burstShotCount>2</burstShotCount> -->
+				<!-- <ticksBetweenBurstShots>130</ticksBetweenBurstShots> -->
+				<!-- <damageDef>Bomb</damageDef> -->
+				<!-- <damageAmount>25</damageAmount> -->
+				<!-- <stopBurstWithoutLos>false</stopBurstWithoutLos> -->
+				<!-- <angle>50</angle> -->
+			<!-- </li> -->
+		<!-- </verbs> -->
 	</ThingDef>
 
 	<ToolCapacityDef>
@@ -241,23 +241,23 @@
 				<fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
 			</li>
 		</comps>
-		<verbs>
-			<li Class="NewRatkin.VerbProperties_Gunlance">
-				<verbClass>NewRatkin.Verb_WyvernFire</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<warmupTime>0.5</warmupTime>
-				<range>5</range>
-				<onlyManualCast>True</onlyManualCast>
-				<muzzleFlashScale>15</muzzleFlashScale>
-				<consumeFuelPerShot>1</consumeFuelPerShot>
-				<burstShotCount>2</burstShotCount>
-				<ticksBetweenBurstShots>130</ticksBetweenBurstShots>
-				<damageDef>Flame</damageDef>
-				<damageAmount>20</damageAmount>
-				<stopBurstWithoutLos>false</stopBurstWithoutLos>
-				<angle>70</angle>
-			</li>
-		</verbs>
+		<!-- <verbs> -->
+			<!-- <li Class="NewRatkin.VerbProperties_Gunlance"> -->
+				<!-- <verbClass>NewRatkin.Verb_WyvernFire</verbClass> -->
+				<!-- <hasStandardCommand>true</hasStandardCommand> -->
+				<!-- <warmupTime>0.5</warmupTime> -->
+				<!-- <range>5</range> -->
+				<!-- <onlyManualCast>True</onlyManualCast> -->
+				<!-- <muzzleFlashScale>15</muzzleFlashScale> -->
+				<!-- <consumeFuelPerShot>1</consumeFuelPerShot> -->
+				<!-- <burstShotCount>2</burstShotCount> -->
+				<!-- <ticksBetweenBurstShots>130</ticksBetweenBurstShots> -->
+				<!-- <damageDef>Flame</damageDef> -->
+				<!-- <damageAmount>20</damageAmount> -->
+				<!-- <stopBurstWithoutLos>false</stopBurstWithoutLos> -->
+				<!-- <angle>70</angle> -->
+			<!-- </li> -->
+		<!-- </verbs> -->
 	</ThingDef>
 
 	<ToolCapacityDef>
