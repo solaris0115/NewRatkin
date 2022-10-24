@@ -4,59 +4,50 @@ using Verse;
 
 namespace NewRatkin
 {
+    public class CompProperties_RK_Shield : CompProperties
+    {
+        public CompProperties_RK_Shield()
+        {
+            this.compClass = typeof(CompRKShield);
+        }
 
+        public int startingTicksToReset = 3200;
+
+        public float minDrawSize = 1.2f;
+
+        public float maxDrawSize = 1.55f;
+
+        public float energyLossPerDamage = 0.033f;
+
+        public float energyOnReset = 0.2f;
+
+        public bool blocksRangedWeapons = true;
+    }
     [StaticConstructorOnStartup]
+    public class CompRKShield : ThingComp
+    {
+
+    }
+
+[StaticConstructorOnStartup]
     public static class ShieldPatch
     {
         private static readonly Type patchType = typeof(ShieldPatch);
         static ShieldPatch()
         {
             Harmony harmonyInstance = new Harmony("com.NewRatkin.rimworld.mod");
-            harmonyInstance.Patch(AccessTools.Method(typeof(WorkGiver_HunterHunt), "HasShieldAndRangedWeapon"), new HarmonyMethod(patchType, "HasShieldAndRangedWeaponPrefix"));
-            harmonyInstance.Patch(AccessTools.Method(typeof(Alert_ShieldUserHasRangedWeapon), "GetReport"), new HarmonyMethod(patchType, "GetReportPrefix"));
+            harmonyInstance.Patch(AccessTools.PropertyGetter(typeof(ThingDef), "IsShieldThatBlocksRanged"), null, new HarmonyMethod(patchType, "IsShieldBlocksRangedPostifx"));
         }
-        public static bool GetReportPrefix(ref AlertReport __result)
-        {
-            __result = AlertReport.CulpritsAre(ShieldUsersWithRangedWeapon());
-            return false;
-        }
-        public static List<Pawn> ShieldUsersWithRangedWeapon()
-        {
-            List<Pawn> pawns = new List<Pawn>();
 
-            foreach (Pawn p in PawnsFinder.AllMaps_FreeColonistsSpawned)
-            {
-                if (p.equipment.Primary != null && p.equipment.Primary.def.IsWeaponUsingProjectiles)
-                {
-                    List<Apparel> ap = p.apparel.WornApparel;
-                    for (int i = 0; i < ap.Count; i++)
-                    {
-                        if (ap[i] is Shield || ap[i] is ShieldBelt)
-                        {
-                            pawns.Add(p);
-                            break;
-                        }
-                    }
-                }
-            }
-            return pawns;
-        }
-        public static bool HasShieldAndRangedWeaponPrefix(ref bool __result, Pawn p)
+        public static void IsShieldBlocksRangedPostifx(ref bool __result, ThingDef __instance)
         {
-            if (p.equipment.Primary != null && p.equipment.Primary.def.IsWeaponUsingProjectiles)
+            if (__result == true) return;
+            if (__instance == null) return;
+
+            if (__instance.HasComp(typeof(CompRKShield)) == true && __instance.GetCompProperties<CompProperties_RK_Shield>() != null )
             {
-                List<Apparel> wornApparel = p.apparel.WornApparel;
-                for (int i = 0; i < wornApparel.Count; i++)
-                {
-                    if (wornApparel[i] is ShieldBelt || wornApparel[i] is Shield)
-                    {
-                        __result = true;
-                        return false;
-                    }
-                }
+                __result = true;
             }
-            __result = false;
-            return false;
         }
     }
 }
