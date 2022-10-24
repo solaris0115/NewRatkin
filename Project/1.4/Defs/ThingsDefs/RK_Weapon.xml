@@ -878,5 +878,138 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingDef>
+	
+	<!-- 2티어 -->
+	<!-- 샷건 	-->
+	<ThingDef ParentName="RK_IndustrialRangeWeapon">
+		<defName>RK_Rifle_line</defName>
+		<label>ratkin shotgun</label>
+		<description>소드오프 샷건입니다. 랫킨 왕국에서는 샷건이 랫킨을 쏩니다.</description>
+		<graphicData>
+			<texPath>Weapon/RK_shotgun_line</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<WorkToMake>11000</WorkToMake>
+			<Mass>2</Mass>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.55</AccuracyLong>
+			<RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<WoodLog>30</WoodLog>
+			<Steel>55</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>FlechetteBullet</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<!-- <comps> -->
+			<!-- <li> -->
+				<!-- <compClass>AdditionalVerb.Comp_VerbSaveable</compClass> -->
+			<!-- </li> -->
+		<!-- </comps> -->
+		<verbs>			
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<soundCast>FlechetteRifle</soundCast>
+				<defaultProjectile>Bullet_RK_Buck</defaultProjectile>
+				
+				<warmupTime>0.9</warmupTime>
+				<range>13.9</range>					
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>4</muzzleFlashScale>
+				<burstShotCount>6</burstShotCount>
+				<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+			</li>
+			<!-- <li Class="AdditionalVerb.VerbProperties_Custom"> -->
+				<!-- <verbClass>Verb_Shoot</verbClass> -->
+				<!-- <hasStandardCommand>true</hasStandardCommand> -->
+				<!-- <soundCast>FlechetteRifle</soundCast> -->
+				<!-- <soundCastTail>GunTail_Heavy</soundCastTail> -->
 
+				<!-- <defaultProjectile>Bullet_RK_Slug</defaultProjectile> -->
+				<!-- <muzzleFlashScale>12</muzzleFlashScale> -->
+				<!-- <warmupTime>1.55</warmupTime> -->
+				<!-- <burstShotCount>1</burstShotCount> -->
+				<!-- <ticksBetweenBurstShots>6</ticksBetweenBurstShots> -->
+				<!-- <range>27.9</range> -->
+				<!-- <desc>슬러그</desc> -->
+				<!-- <label>Slug fire</label> -->
+				<!-- <texPath>UI/Commands/Slug</texPath> -->
+			<!-- </li> -->
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+				<power>7</power>
+				<cooldownTime>1.8</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+					<capacities>
+						<li>Blunt</li>
+						<li>Poke</li>
+					</capacities>
+				<power>7</power>
+				<cooldownTime>1.8</cooldownTime>
+			</li>
+			<li>
+				<label>bayonet</label>
+				<capacities>
+					<li>Cut</li>
+					<li>Stab</li>
+				</capacities>
+				<power>17</power>
+				<cooldownTime>2.3</cooldownTime>
+			</li>
+		</tools>
+		<weaponTags Inherit="false">
+			<li>RK_2TierWeapon</li>
+			<li>RK_Shotgun</li>
+		</weaponTags>
+		<equippedAngleOffset>45</equippedAngleOffset>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_RK_Buck</defName>
+		<label>Buck bullet</label>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>5</damageAmountBase>
+			<stoppingPower>2</stoppingPower>
+			<armorPenetrationBase>0.45</armorPenetrationBase>
+			<speed>75</speed>
+		</projectile>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>	
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_RK_Slug</defName>
+		<label>Slug bullet</label>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<stoppingPower>3.5</stoppingPower>
+			<armorPenetrationBase>0.6</armorPenetrationBase>
+			<speed>75</speed>
+		</projectile>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Big</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
 </Defs>
