@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- <RK_StrawberryBeer_Bullet.label>いちごビール</RK_StrawberryBeer_Bullet.label> -->
+
+  <Make_RK_StrawberryBeer.label>いちごビールを作る</Make_RK_StrawberryBeer.label>
+  <Make_RK_StrawberryBeer.description>ベリー(生)からいちごビールを作る。</Make_RK_StrawberryBeer.description>
+  <Make_RK_StrawberryBeer.jobString>いちごビールを作成中</Make_RK_StrawberryBeer.jobString>
+
+  <Make_RK_StrawberryBeer_Bulk.label>いちごビール x4</Make_RK_StrawberryBeer_Bulk.label>
+  <Make_RK_StrawberryBeer_Bulk.description>ベリー(生)から一度にいちごビールを4つ作る。</Make_RK_StrawberryBeer_Bulk.description>
+  <Make_RK_StrawberryBeer_Bulk.jobString>いちごビールを4つ作成中</Make_RK_StrawberryBeer_Bulk.jobString>
+
+</LanguageData>
