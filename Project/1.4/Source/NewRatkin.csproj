@@ -82,7 +82,6 @@
     <Compile Include="HamsterWheel\PowerComp.cs" />
     <Compile Include="HamsterWheel\Work.cs" />
     <Compile Include="JobGiver_GotoTravelInteractionCell.cs" />
-    <Compile Include="Priest\BackstoryCache.cs" />
     <Compile Include="Priest\Command_AbilityPrayService.cs" />
     <Compile Include="Priest\InteractionWorker_PriestPray.cs" />
     <Compile Include="Priest\JobDriver_PrayerService.cs" />
