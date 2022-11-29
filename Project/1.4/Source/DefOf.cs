@@ -127,4 +127,10 @@ namespace NewRatkin
     {
         public static ThoughtDef RK_AttendPrayerMeetingMood;
     }
+
+    [DefOf]
+    public static class RatkinBackstoryDefOf
+    {
+        public static BackstoryDef Ratkin_Sister;
+    }
 }
