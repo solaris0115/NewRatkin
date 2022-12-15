@@ -7,7 +7,7 @@ namespace NewRatkin
 	{
 		public override float RandomSelectionWeight(Pawn initiator, Pawn recipient)
 		{
-			if (initiator.story.Adulthood != null && initiator.story.Adulthood == BackstoryCache.Ratkin_Sister)
+			if (initiator.story.Adulthood != null && initiator.story.Adulthood == RatkinBackstoryDefOf.Ratkin_Sister)
 			{
 				return ConstPriest.InteractionPrayWeight;
 			}

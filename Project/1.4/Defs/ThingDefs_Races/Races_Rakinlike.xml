@@ -8,7 +8,6 @@
 			<generalSettings>
 				<!-- 기본 설정 -->
 				<maleGenderProbability>0.1</maleGenderProbability>
-				<!-- <useOnlyPawnkindBackstories>true</useOnlyPawnkindBackstories> -->
 				<immuneToAge>true</immuneToAge>
 				<canLayDown>true</canLayDown>
 				<maxDamageForSocialfight>6</maxDamageForSocialfight>
@@ -28,6 +27,8 @@
 					</headTypes>
 					<bodyTypes>
 						<li>Thin</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
 					</bodyTypes>
 					<headOffset>(0.0, -0.09)</headOffset>
 					<!-- 색상관련 -->
@@ -511,15 +512,42 @@
 					<def>HumanlikeChild</def>
 					<minAge>4</minAge>
 				</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">
+					<def>HumanlikePreTeenager</def>
+					<minAge>8</minAge>
+				</li>
 				<li>
 					<def>HumanlikeTeenager</def>
-					<minAge>9</minAge>
+					<minAge>12</minAge>
 				</li>
 				<li>
 					<def>HumanlikeAdult</def>
 					<minAge>16</minAge>
 				</li>
 			</lifeStageAges>
+			<lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">
+				<Firefighter>7</Firefighter>
+				<Patient>0</Patient>
+				<Doctor>10</Doctor>
+				<PatientBedRest>0</PatientBedRest>
+				<Childcare MayRequire="Ludeon.RimWorld.Biotech">0</Childcare>
+				<BasicWorker>7</BasicWorker>
+				<Warden>10</Warden>
+				<Handling>7</Handling>
+				<Cooking>7</Cooking>
+				<Hunting>7</Hunting>
+				<Construction>10</Construction>
+				<Growing>7</Growing>
+				<Mining>7</Mining>
+				<PlantCutting>7</PlantCutting>
+				<Smithing>13</Smithing>
+				<Tailoring>7</Tailoring>
+				<Art>10</Art>
+				<Crafting>7</Crafting>
+				<Hauling>3</Hauling>
+				<Cleaning>3</Cleaning>
+				<Research>13</Research>
+			</lifeStageWorkSettings>
 			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
@@ -528,8 +556,19 @@
 				<offset>(0,0,-0.3)</offset>
 			</specialShadowData>
 			<ageGenerationCurve>
-				<points>
+				<points>				
+					<li MayRequire="Ludeon.RimWorld.Biotech">(0,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(0.001,43)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(8,86)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(12.5,118)</li>
+					<!-- Exclude 12.5-13 years to avoid spawning pawns who are very close to becoming adults -->
+					<li MayRequire="Ludeon.RimWorld.Biotech">(12.51,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(13,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(13.001,122)</li>
+					<!-- End exclude -->
+					<li MayRequire="Ludeon.RimWorld.Biotech">(13.999,130)</li>
 					<li>(14,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(14.001,130)</li>
 					<li>(18,50)</li>
 					<li>(23,100)</li>
 					<li>(30,20)</li>

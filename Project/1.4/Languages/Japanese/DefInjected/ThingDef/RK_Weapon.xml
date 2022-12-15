@@ -136,17 +136,18 @@
 
   <!-- Shotgun -->
 
-  <!-- <RK_Rifle_line.label>RK ショットガン</RK_Rifle_line.label>
+  <RK_Rifle_line.label>RK ショットガン</RK_Rifle_line.label>
   <RK_Rifle_line.description>ソードオフショットガンです。ラットキン王国ではショットガンでラットキンを撃ちます。</RK_Rifle_line.description>
   <RK_Rifle_line.tools.stock.label>ストック</RK_Rifle_line.tools.stock.label>
   <RK_Rifle_line.tools.barrel.label>バレル</RK_Rifle_line.tools.barrel.label>
   <RK_Rifle_line.tools.bayonet.label>バヨネット</RK_Rifle_line.tools.bayonet.label>
-  <RK_Rifle_line.verbs.Buck_fire.label>散弾射撃</RK_Rifle_line.verbs.Buck_fire.label>
+  <RK_Rifle_line.verbs.Verb_Shoot.label>RK ショットガン</RK_Rifle_line.verbs.Verb_Shoot.label>
+  <!--<RK_Rifle_line.verbs.Buck_fire.label>散弾射撃</RK_Rifle_line.verbs.Buck_fire.label>
   <RK_Rifle_line.verbs.Buck_fire.desc>散弾</RK_Rifle_line.verbs.Buck_fire.desc>
   <RK_Rifle_line.verbs.Slug_fire.label>スラッグ弾 射撃</RK_Rifle_line.verbs.Slug_fire.label>
-  <RK_Rifle_line.verbs.Slug_fire.desc>スラッグ弾</RK_Rifle_line.verbs.Slug_fire.desc>
+  <RK_Rifle_line.verbs.Slug_fire.desc>スラッグ弾</RK_Rifle_line.verbs.Slug_fire.desc>-->
 
   <Bullet_RK_Buck.label>散弾</Bullet_RK_Buck.label>
-  <Bullet_RK_Slug.label>スラッグ弾</Bullet_RK_Slug.label> -->
+  <Bullet_RK_Slug.label>スラッグ弾</Bullet_RK_Slug.label>
 
 </LanguageData>
