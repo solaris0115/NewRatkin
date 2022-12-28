@@ -1012,4 +1012,293 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingDef>
+	
+	
+		<!-- 3티어 -->
+	<!-- 랫킨용 실험용총 2연발 -->
+	<ThingDef ParentName="RK_IndustrialRangeWeapon">
+		<defName>RK_PrototypePulseRifle</defName>
+		<label>prototype pulse rifle</label>
+		<description>실험용 파동 소총입니다. 실험용 랫킨들을 위해 제작되어 특수망원렌즈가 근거리 원거리 모두 정밀하게 조준해줍니다. 랫킨식 플레셰트탄환에서 아이디어를 얻어 제작한 이 무기는 쇄기모양의 고관통 에너지탄을 빠르게 발사합니다.</description>
+		<graphicData>
+			<texPath>Weapon/RK_PrototypePulseRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>3.5</Mass>
+			<AccuracyTouch>0.40</AccuracyTouch>
+			<AccuracyShort>0.35</AccuracyShort>
+			<AccuracyMedium>0.40</AccuracyMedium>
+			<AccuracyLong>0.35</AccuracyLong>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Plasteel>80</Plasteel>
+			<ComponentIndustrial>7</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>		
+		<comps>
+			<li>
+				<compClass>AdditionalVerb.Comp_VerbSaveable</compClass>
+			</li>
+		</comps>
+		<verbs>
+			<li Class="AdditionalVerb.VerbProperties_Custom">
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_RK_PrototypePulseRifleLight</defaultProjectile>
+				<warmupTime>1.5</warmupTime>
+				<range>31</range>
+				<burstShotCount>4</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<soundCast>PrototypePulse</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+				<desc>Take 4 burst shot at mid-range target.\nAcc Bonus\nShort Acc: +50%\nMid Acc: +25%</desc>
+				<label>Rapid Fire</label>
+				<texPath>UI/Commands/Pew</texPath>
+				<accuracyTouch>0.35</accuracyTouch>
+				<accuracyShort>0.50</accuracyShort>
+				<accuracyMedium>0.25</accuracyMedium>
+				<accuracyLong>0</accuracyLong>
+			</li>	
+			<li Class="AdditionalVerb.VerbProperties_Custom">
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_RK_PrototypePulseRifleHeavy</defaultProjectile>
+				<warmupTime>2</warmupTime>
+				<range>42</range>
+				<burstShotCount>2</burstShotCount>
+				<ticksBetweenBurstShots>13</ticksBetweenBurstShots>
+				<soundCast>PrototypePulse</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+				<desc>Take 2 burst shot at long-range target.\nAcc Bonus\nMid Acc: +25%\nLong Acc: +50%</desc>
+				<label>Precisely Fire</label>
+				<texPath>UI/Commands/Snipe</texPath>
+				<accuracyTouch>0.0</accuracyTouch>
+				<accuracyShort>0</accuracyShort>
+				<accuracyMedium>0.25</accuracyMedium>
+				<accuracyLong>0.50</accuracyLong>
+			</li>
+		</verbs>		
+		<recipeMaker Inherit="false">
+			<!-- <researchPrerequisite>PulseTech</researchPrerequisite> -->
+			<!-- <skillRequirements> -->
+			<!-- <Crafting>10</Crafting> -->
+			<!-- </skillRequirements> -->
+		</recipeMaker>
+		<weaponTags Inherit="false">
+			<!-- <li>RK_4TierWeapon</li> -->
+		</weaponTags>
+		<tradeTags Inherit="false">
+			<!-- <li>ExoticMisc</li> -->
+		</tradeTags>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<tradeability>None</tradeability>
+	</ThingDef>
+	<ThingDef ParentName="RK_BaseBullet">
+		<defName>Bullet_RK_PrototypePulseRifleLight</defName>
+		<label>wedge bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/ChargeLanceShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>9</damageAmountBase>
+			<speed>85</speed>
+			<armorPenetrationBase>0.45</armorPenetrationBase>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="RK_BaseBullet">
+		<defName>Bullet_RK_PrototypePulseRifleHeavy</defName>
+		<label>wedge bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/ChargeLanceShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<speed>120</speed>
+			<armorPenetrationBase>0.60</armorPenetrationBase>
+		</projectile>
+	</ThingDef>
+
+	<!-- BFR 3000 -->
+	<ThingDef ParentName="RK_IndustrialRangeWeapon">
+		<defName>RK_BFR</defName>
+		<label>BFR 3000</label>
+		<description>Big Force Rifle 3000.</description>
+		<graphicData>
+			<texPath>Weapon/BFR</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>5.5</Mass>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.35</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.85</AccuracyLong>
+			<RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Plasteel>120</Plasteel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>		
+		<equippedAngleOffset>45</equippedAngleOffset>
+		<comps>
+			<li>
+				<compClass>AdditionalVerb.Comp_VerbSaveable</compClass>
+			</li>
+		</comps>
+		<verbs>
+			<!-- 관통탄 -->
+			<li Class="AdditionalVerb.VerbProperties_Custom">
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<soundCast>PrototypePulse</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+
+				<defaultProjectile>Bullet_BFR_AP</defaultProjectile>
+				<muzzleFlashScale>12</muzzleFlashScale>
+				<warmupTime>2.5</warmupTime>
+				<burstShotCount>1</burstShotCount>
+				<minRange>3</minRange>
+				<range>44.9</range>	
+				<desc>관통성이 높은 정밀 탄환을 발사합니다.</desc>
+				<label>AP fire</label>
+				<texPath>UI/Commands/AP</texPath>
+			</li>
+			<!-- 후폭풍탄 -->
+			<li Class="AdditionalVerb.VerbProperties_Custom">
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<soundCast>PrototypePulse</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+
+				<defaultProjectile>Bullet_BFR_SC</defaultProjectile>
+				<muzzleFlashScale>12</muzzleFlashScale>
+				<warmupTime>2.5</warmupTime>
+				<burstShotCount>1</burstShotCount>
+				<minRange>3</minRange>
+				<range>44.9</range>	
+				<desc>적중시 뒤로 파편을 비산시키는 특수탄을 발사합니다.</desc>
+				<label>SC fire</label>
+				<texPath>UI/Commands/SC</texPath>
+			</li>
+		</verbs>		
+		<recipeMaker Inherit="false">
+			<!-- <researchPrerequisite>PulseTech</researchPrerequisite> -->
+			<!-- <skillRequirements> -->
+			<!-- <Crafting>10</Crafting> -->
+			<!-- </skillRequirements> -->
+		</recipeMaker>
+		<weaponTags Inherit="false">
+			<!-- <li>RK_4TierWeapon</li> -->
+			<!-- <li>RK_HeavyRifle</li> -->
+		</weaponTags>
+		<tradeTags Inherit="false">
+			<!-- <li>ExoticMisc</li> -->
+		</tradeTags>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>3</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>3</cooldownTime>
+			</li>
+		</tools>
+		<tradeability>None</tradeability>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBolt">
+		<defName>Bullet_BFR_AP</defName>
+		<label>wedge bullet (AP)</label>
+		<graphicData>
+			<texPath>Things/Projectile/Ballista_Bolt_HE</texPath>
+			<drawSize>(2,2)</drawSize>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<thingClass>NewRatkin.Projectile_BallistaBoltAP</thingClass>
+		<projectile Class="NewRatkin.ProjectileProperties_BallistaBoltAP">
+			<shockWaveDef>ShockWaveLight</shockWaveDef>
+			<maxPenetrationCount>3</maxPenetrationCount>
+			<damageReduceRate>0.4</damageReduceRate>
+			<damageDef>RangedStab</damageDef>
+			<damageAmountBase>28</damageAmountBase>
+			<armorPenetrationBase>0.60</armorPenetrationBase>
+			<stoppingPower>3</stoppingPower>
+			<speed>95</speed>
+			<alwaysFreeIntercept>true</alwaysFreeIntercept>
+			<flyOverhead>false</flyOverhead>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<!-- <soundExplode>Shockwave</soundExplode> -->
+			<soundImpactAnticipate>Flying</soundImpactAnticipate>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_BFR_SC</defName>
+		<label>wedge bullet (SC)</label>
+		<graphicData>
+			<texPath>Things/Projectile/Ballista_Bolt_HE</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<thingClass>NewRatkin.Projectile_BallistaBoltAP</thingClass>
+		<projectile Class="NewRatkin.ProjectileProperties_BallistaBoltAP">
+			<shockWaveDef>ShockWaveLight</shockWaveDef>
+			<maxPenetrationCount>1</maxPenetrationCount>
+			<damageReduceRate>0.4</damageReduceRate>
+			<damageDef>RangedStab</damageDef>
+			<damageAmountBase>40</damageAmountBase>
+			<armorPenetrationBase>0.60</armorPenetrationBase>
+			<stoppingPower>8</stoppingPower>
+			<speed>85</speed>
+			<explosionRadius>1.7</explosionRadius>
+			<alwaysFreeIntercept>true</alwaysFreeIntercept>
+			<flyOverhead>false</flyOverhead>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<!-- <soundExplode>Shockwave</soundExplode> -->
+			<soundImpactAnticipate>Flying</soundImpactAnticipate>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+		</projectile>
+	</ThingDef>
+
 </Defs>
