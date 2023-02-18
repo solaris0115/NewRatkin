@@ -1028,10 +1028,10 @@
 		<statBases>
 			<WorkToMake>40000</WorkToMake>
 			<Mass>3.5</Mass>
-			<AccuracyTouch>0.40</AccuracyTouch>
-			<AccuracyShort>0.35</AccuracyShort>
-			<AccuracyMedium>0.40</AccuracyMedium>
-			<AccuracyLong>0.35</AccuracyLong>
+			<AccuracyTouch>0.75</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.45</AccuracyLong>
 			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
@@ -1039,13 +1039,13 @@
 			<ComponentIndustrial>7</ComponentIndustrial>
 			<ComponentSpacer>1</ComponentSpacer>
 		</costList>		
-		<comps>
-			<li>
-				<compClass>AdditionalVerb.Comp_VerbSaveable</compClass>
-			</li>
-		</comps>
+		<!-- <comps> -->
+			<!-- <li> -->
+				<!-- <compClass>AdditionalVerb.Comp_VerbSaveable</compClass> -->
+			<!-- </li> -->
+		<!-- </comps> -->
 		<verbs>
-			<li Class="AdditionalVerb.VerbProperties_Custom">
+			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_RK_PrototypePulseRifleLight</defaultProjectile>
@@ -1056,15 +1056,15 @@
 				<soundCast>PrototypePulse</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
-				<desc>Take 4 burst shot at mid-range target.\nAcc Bonus\nShort Acc: +50%\nMid Acc: +25%</desc>
+				<!-- <desc>Take 4 burst shot at mid-range target.\nAcc Bonus\nShort Acc: +50%\nMid Acc: +25%</desc> -->
 				<label>Rapid Fire</label>
-				<texPath>UI/Commands/Pew</texPath>
-				<accuracyTouch>0.35</accuracyTouch>
-				<accuracyShort>0.50</accuracyShort>
-				<accuracyMedium>0.25</accuracyMedium>
-				<accuracyLong>0</accuracyLong>
+				<!-- <texPath>UI/Commands/Pew</texPath> -->
+				<!-- <accuracyTouch>0.35</accuracyTouch> -->
+				<!-- <accuracyShort>0.50</accuracyShort> -->
+				<!-- <accuracyMedium>0.25</accuracyMedium> -->
+				<!-- <accuracyLong>0</accuracyLong> -->
 			</li>	
-			<li Class="AdditionalVerb.VerbProperties_Custom">
+			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_RK_PrototypePulseRifleHeavy</defaultProjectile>
@@ -1075,13 +1075,9 @@
 				<soundCast>PrototypePulse</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
-				<desc>Take 2 burst shot at long-range target.\nAcc Bonus\nMid Acc: +25%\nLong Acc: +50%</desc>
+				<!-- <desc>Take 2 burst shot at long-range target.\nAcc Bonus\nMid Acc: +25%\nLong Acc: +50%</desc> -->
 				<label>Precisely Fire</label>
-				<texPath>UI/Commands/Snipe</texPath>
-				<accuracyTouch>0.0</accuracyTouch>
-				<accuracyShort>0</accuracyShort>
-				<accuracyMedium>0.25</accuracyMedium>
-				<accuracyLong>0.50</accuracyLong>
+				<!-- <texPath>UI/Commands/Snipe</texPath> -->
 			</li>
 		</verbs>		
 		<recipeMaker Inherit="false">
@@ -1171,14 +1167,14 @@
 			<ComponentSpacer>2</ComponentSpacer>
 		</costList>		
 		<equippedAngleOffset>45</equippedAngleOffset>
-		<comps>
-			<li>
-				<compClass>AdditionalVerb.Comp_VerbSaveable</compClass>
-			</li>
-		</comps>
+		<!-- <comps> -->
+			<!-- <li> -->
+				<!-- <compClass>AdditionalVerb.Comp_VerbSaveable</compClass> -->
+			<!-- </li> -->
+		<!-- </comps> -->
 		<verbs>
 			<!-- 관통탄 -->
-			<li Class="AdditionalVerb.VerbProperties_Custom">
+			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<soundCast>PrototypePulse</soundCast>
@@ -1190,27 +1186,27 @@
 				<burstShotCount>1</burstShotCount>
 				<minRange>3</minRange>
 				<range>44.9</range>	
-				<desc>관통성이 높은 정밀 탄환을 발사합니다.</desc>
+				<!-- <desc>관통성이 높은 정밀 탄환을 발사합니다.</desc> -->
 				<label>AP fire</label>
-				<texPath>UI/Commands/AP</texPath>
+				<!-- <texPath>UI/Commands/AP</texPath> -->
 			</li>
 			<!-- 후폭풍탄 -->
-			<li Class="AdditionalVerb.VerbProperties_Custom">
-				<verbClass>Verb_Shoot</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<soundCast>PrototypePulse</soundCast>
-				<soundCastTail>GunTail_Heavy</soundCastTail>
+			<!-- <li Class="AdditionalVerb.VerbProperties_Custom"> -->
+				<!-- <verbClass>Verb_Shoot</verbClass> -->
+				<!-- <hasStandardCommand>true</hasStandardCommand> -->
+				<!-- <soundCast>PrototypePulse</soundCast> -->
+				<!-- <soundCastTail>GunTail_Heavy</soundCastTail> -->
 
-				<defaultProjectile>Bullet_BFR_SC</defaultProjectile>
-				<muzzleFlashScale>12</muzzleFlashScale>
-				<warmupTime>2.5</warmupTime>
-				<burstShotCount>1</burstShotCount>
-				<minRange>3</minRange>
-				<range>44.9</range>	
-				<desc>적중시 뒤로 파편을 비산시키는 특수탄을 발사합니다.</desc>
-				<label>SC fire</label>
-				<texPath>UI/Commands/SC</texPath>
-			</li>
+				<!-- <defaultProjectile>Bullet_BFR_SC</defaultProjectile> -->
+				<!-- <muzzleFlashScale>12</muzzleFlashScale> -->
+				<!-- <warmupTime>2.5</warmupTime> -->
+				<!-- <burstShotCount>1</burstShotCount> -->
+				<!-- <minRange>3</minRange> -->
+				<!-- <range>44.9</range>	 -->
+				<!-- <desc>적중시 뒤로 파편을 비산시키는 특수탄을 발사합니다.</desc> -->
+				<!-- <label>SC fire</label> -->
+				<!-- <texPath>UI/Commands/SC</texPath> -->
+			<!-- </li> -->
 		</verbs>		
 		<recipeMaker Inherit="false">
 			<!-- <researchPrerequisite>PulseTech</researchPrerequisite> -->
