@@ -16,6 +16,7 @@
 		<canStageAttacks>true</canStageAttacks>
 		<factionIconPath>Icon/RK_icon</factionIconPath>
 		<techLevel>Industrial</techLevel>
+		<melaninRange>0~0.1</melaninRange>
 		<backstoryCategories>
 			<li>Offworld</li>
 		</backstoryCategories>
