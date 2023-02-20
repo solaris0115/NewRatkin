@@ -22,6 +22,7 @@
 			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
 		</disallowedMemes>
+		<melaninRange>0~0.3</melaninRange>
 	</FactionDef>
 
 	<FactionDef ParentName="RK_PlayerFactionBase">
