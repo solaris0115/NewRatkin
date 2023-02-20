@@ -38,15 +38,6 @@
 			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
 		</disallowedMemes>
-		<disallowedPrecepts>
-			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li> <!-- Never generate with any apparel precepts -->
-			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_Mandatory</li> <!-- Never generate nudity precepts -->
-			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_Mandatory</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_CoveringAnythingButGroinDisapproved</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_CoveringAnythingButGroinDisapproved</li>
-			<li MayRequire="Ludeon.Rimworld.Biotech">PreferredXenotype</li> <!-- No preferred xenotypes since ratkins are not xenotype -->
-		</disallowedPrecepts>
 		<structureMemeWeights>
 			<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
 			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">2</Structure_TheistAbstract>

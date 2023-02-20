@@ -28,13 +28,11 @@ namespace NewRatkin
                 }
                 var mercenaryPawnKindDef = RatkinPawnKindDefOf.RatkinMercenary;
 
-                PawnGenerationRequest request = new PawnGenerationRequest(
-                    kind: mercenaryPawnKindDef,
-                    context: PawnGenerationContext.NonPlayer,
-                    faction: mercenaryFaction,
-                    tile: forTile,
-                    forceAddFreeWarmLayerIfNeeded: !this.trader.orbital
-                );
+                PawnGenerationRequest request = new PawnGenerationRequest();
+                request.KindDef = mercenaryPawnKindDef;
+                request.Faction = mercenaryFaction;
+                request.Tile = forTile;
+                request.ForceAddFreeWarmLayerIfNeeded = !this.trader.orbital;
 
                 yield return PawnGenerator.GeneratePawn(request);
             }
