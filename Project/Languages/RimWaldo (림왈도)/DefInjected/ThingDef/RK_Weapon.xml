@@ -139,4 +139,18 @@
   <Bullet_BFR_SC.label>wedge bullet (SC)</Bullet_BFR_SC.label>
 
 
+  <!-- 창 밀리 히트찬스 +3 -->
+
+  <RK_Spear.label>랫킨 창</RK_Spear.label>
+  <RK_Spear.description>간단하게 만든 창입니다. 길이가 짧아서 인간이 보기에는 단창처럼 보입니다.</RK_Spear.description>
+  <RK_Spear.tools.0.label>창 날끝</RK_Spear.tools.0.label>
+  <RK_Spear.tools.1.label>창 날</RK_Spear.tools.1.label>
+
+ <!-- 할버드 밀리 히트찬스 +3 -->
+
+  <RK_Halberd.label>랫킨 할버드</RK_Halberd.label>
+  <RK_Halberd.description>장대에 단검과 도끼와 끌개가 함께 부착된 무기입니다. 험난한 전장에서 유용한 무기입니다.</RK_Halberd.description>
+  <RK_Halberd.tools.0.label>할버드 날끝</RK_Halberd.tools.0.label>
+  <RK_Halberd.tools.1.label>할버드 날</RK_Halberd.tools.1.label>
+
 </LanguageData>

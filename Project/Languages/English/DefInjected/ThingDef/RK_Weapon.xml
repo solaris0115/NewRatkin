@@ -154,4 +154,20 @@
   <Bullet_RK_Buck.label>Buck bullet</Bullet_RK_Buck.label>
   <Bullet_RK_Slug.label>Slug bullet</Bullet_RK_Slug.label>
 
+  
+  <!-- 창 밀리 히트찬스 +3 -->
+
+  <RK_Spear.label>Ratkin Spear</RK_Spear.label>
+  <RK_Spear.description>It is a simple spear. it is a little short to human eyes.</RK_Spear.description>
+  <RK_Spear.tools.0.label>point</RK_Spear.tools.0.label>
+  <RK_Spear.tools.1.label>edge</RK_Spear.tools.1.label>
+
+ <!-- 할버드 밀리 히트찬스 +3 -->
+
+  <RK_Halberd.label>Ratkin Halberd</RK_Halberd.label>
+  <RK_Halberd.description>It is a weapon axe blade with a spike attached together. It's a useful weapon on rugged battlefields.</RK_Halberd.description>
+  <RK_Halberd.tools.0.label>Halberd point</RK_Halberd.tools.0.label>
+  <RK_Halberd.tools.1.label>Halberd edge</RK_Halberd.tools.1.label>
+
+
 </LanguageData>
