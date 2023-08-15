@@ -149,4 +149,19 @@
   <Bullet_RK_Buck.label>散弾</Bullet_RK_Buck.label>
   <Bullet_RK_Slug.label>スラッグ弾</Bullet_RK_Slug.label>
 
+
+  <!-- Spear Millie Hit Chance +3 -->
+
+  <RK_Spear.label>RK スピア</RK_Spear.label>
+  <RK_Spear.description>シンプルな槍です。人間から見ると少し短いです。</RK_Spear.description>
+  <RK_Spear.tools.point.label>穂先</RK_Spear.tools.point.label>
+  <RK_Spear.tools.edge.label>刃</RK_Spear.tools.edge.label>
+
+ <!-- Halberd Millie Hit Chance +3 -->
+
+  <RK_Halberd.label>RK ハルバード</RK_Halberd.label>
+  <RK_Halberd.description>武器として斧の様な刃先と返しを取り付けたものです。過酷な戦場で役立つ武器です。</RK_Halberd.description>
+  <RK_Halberd.tools.0.label>ハルバードの穂先</RK_Halberd.tools.0.label>
+  <RK_Halberd.tools.1.label>ハルバードの刃</RK_Halberd.tools.1.label>
+
 </LanguageData>
