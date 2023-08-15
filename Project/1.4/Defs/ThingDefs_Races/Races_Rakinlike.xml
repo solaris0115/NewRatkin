@@ -314,6 +314,12 @@
 						<defName>CreepyBreathing</defName>
 					</li>
 				</disallowedTraits>
+				<growthAges MayRequire="Ludeon.RimWorld.Biotech">
+					<li>3</li>
+					<li>6</li>
+					<li>9</li>
+					<li>12</li>
+				</growthAges>
 			</generalSettings>
 			<graphicPaths>
 				<body>Things/Ratkin/Bodies/</body>
