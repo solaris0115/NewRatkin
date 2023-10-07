@@ -104,7 +104,7 @@
 
   <!-- for the Ratkin Experimental gun 2rounds -->
 
-  <!-- <Bullet_RK_PrototypePulseRifleLight.label>パルス弾</Bullet_RK_PrototypePulseRifleLight.label>
+  <Bullet_RK_PrototypePulseRifleLight.label>パルス弾</Bullet_RK_PrototypePulseRifleLight.label>
   <Bullet_RK_PrototypePulseRifleHeavy.label>パルス弾</Bullet_RK_PrototypePulseRifleHeavy.label>
 
   <RK_PrototypePulseRifle.label>RK 試作型パルスライフル</RK_PrototypePulseRifle.label>
@@ -113,25 +113,25 @@
   <RK_PrototypePulseRifle.tools.barrel.label>バレル</RK_PrototypePulseRifle.tools.barrel.label> -->
   <!-- <RK_PrototypePulseRifle.verbs.Verb_Shoot.label>くさび銃弾</RK_PrototypePulseRifle.verbs.Verb_Shoot.label> -->
 
-  <!-- <RK_PrototypePulseRifle.verbs.Rapid_Fire.label>連続射撃</RK_PrototypePulseRifle.verbs.Rapid_Fire.label>
-  <RK_PrototypePulseRifle.verbs.Rapid_Fire.desc>4発連続で発射、中距離の射程を持つ。\n命中ボーナス\n短距離射程で命中：+45%</RK_PrototypePulseRifle.verbs.Rapid_Fire.desc>
+  <RK_PrototypePulseRifle.verbs.Rapid_Fire.label>連続射撃</RK_PrototypePulseRifle.verbs.Rapid_Fire.label>
+  <!-- <RK_PrototypePulseRifle.verbs.Rapid_Fire.desc>4発連続で発射、中距離の射程を持つ。\n命中ボーナス\n短距離射程で命中：+45%</RK_PrototypePulseRifle.verbs.Rapid_Fire.desc> -->
   <RK_PrototypePulseRifle.verbs.Precisely_Fire.label>精密射撃</RK_PrototypePulseRifle.verbs.Precisely_Fire.label>
-  <RK_PrototypePulseRifle.verbs.Precisely_Fire.desc>2発連続で発射、長距離の射程を持つ。\n命中ボーナス\n長距離射程で命中：+45% </RK_PrototypePulseRifle.verbs.Precisely_Fire.desc> -->
+  <!-- <RK_PrototypePulseRifle.verbs.Precisely_Fire.desc>2発連続で発射、長距離の射程を持つ。\n命中ボーナス\n長距離射程で命中：+45% </RK_PrototypePulseRifle.verbs.Precisely_Fire.desc> -->
 
 
   <!-- BFR 3000 -->
 
-  <!-- <RK_BFR.label>RK 大型制圧ライフル3000</RK_BFR.label>
+  <RK_BFR.label>RK 大型制圧ライフル3000</RK_BFR.label>
   <RK_BFR.description>大型制圧ライフル3000型です。</RK_BFR.description>
   <RK_BFR.tools.stock.label>ストック</RK_BFR.tools.stock.label>
   <RK_BFR.tools.barrel.label>バレル</RK_BFR.tools.barrel.label>
   <RK_BFR.verbs.AP_fire.label>徹甲弾射撃</RK_BFR.verbs.AP_fire.label>
-  <RK_BFR.verbs.AP_fire.desc>貫通性の高い高精度の弾丸を発射します。</RK_BFR.verbs.AP_fire.desc>
+  <!--<RK_BFR.verbs.AP_fire.desc>貫通性の高い高精度の弾丸を発射します。</RK_BFR.verbs.AP_fire.desc>
   <RK_BFR.verbs.SC_fire.label>破片射撃</RK_BFR.verbs.SC_fire.label>
-  <RK_BFR.verbs.SC_fire.desc>命中した時に後方へ破片をまき散らす特殊な弾を発射します。</RK_BFR.verbs.SC_fire.desc>
+  <RK_BFR.verbs.SC_fire.desc>命中した時に後方へ破片をまき散らす特殊な弾を発射します。</RK_BFR.verbs.SC_fire.desc>-->
 
   <Bullet_BFR_AP.label>パルス弾(徹甲)</Bullet_BFR_AP.label>
-  <Bullet_BFR_SC.label>パルス弾(破片)</Bullet_BFR_SC.label> -->
+  <Bullet_BFR_SC.label>パルス弾(破片)</Bullet_BFR_SC.label>
 
 
   <!-- Shotgun -->
@@ -149,5 +149,20 @@
 
   <Bullet_RK_Buck.label>散弾</Bullet_RK_Buck.label>
   <Bullet_RK_Slug.label>スラッグ弾</Bullet_RK_Slug.label>
+
+  <!-- Spear Millie Hit Chance +3 -->
+
+  <RK_Spear.label>RK スピア</RK_Spear.label>
+  <RK_Spear.description>シンプルな槍です。人間から見ると少し短いです。</RK_Spear.description>
+  <RK_Spear.tools.point-0.label>穂先</RK_Spear.tools.point-0.label>
+  <RK_Spear.tools.point-1.label>刃</RK_Spear.tools.point-1.label>
+  <!--<RK_Spear.tools.edge.label>刃</RK_Spear.tools.edge.label>-->
+
+ <!-- Halberd Millie Hit Chance +3 -->
+
+  <RK_Halberd.label>RK ハルバード</RK_Halberd.label>
+  <RK_Halberd.description>武器として斧の様な刃先と返しを取り付けたものです。過酷な戦場で役立つ武器です。</RK_Halberd.description>
+  <RK_Halberd.tools.0.label>ハルバードの穂先</RK_Halberd.tools.0.label>
+  <RK_Halberd.tools.1.label>ハルバードの刃</RK_Halberd.tools.1.label>
 
 </LanguageData>
