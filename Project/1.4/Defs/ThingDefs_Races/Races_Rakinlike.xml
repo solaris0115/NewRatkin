@@ -431,17 +431,39 @@
 					<li>RK_Halberd</li>
 				</weaponList>
 				<blackEndoCategories MayRequire="Ludeon.RimWorld.Biotech">
+					<li MayRequire="Ludeon.RimWorld.Biotech">Melanin</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">HairColor</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">BodyType</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Ears</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Nose</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Voice</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Headbone</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Head</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Jaw</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Ears</li>
 				</blackEndoCategories>
-				
-				<blackGeneList MayRequire="Ludeon.RimWorld.Biotech">
+				<blackGeneTags MayRequire="Ludeon.RimWorld.Biotech">
+					<li MayRequire="Ludeon.RimWorld.Biotech">EyeColor</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Tail</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">BeardStyle</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Fur</li>
+				</blackGeneTags>
+				<blackGeneList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Body_Fat</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Body_Hulk</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Ears_Pig</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Ears_Human</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Ears_Floppy</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Ears_Cat</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Ears_Pointed</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Jaw_Baseline</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Jaw_Heavy</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Head_Gaunt</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Hands_Pig</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Hair_BaldOnly</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Beard_Always</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">ElongatedFingers</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Headbone_MiniHorns</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Headbone_CenterHorn</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">VoicePig</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">VoiceRoar</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Furskin</li>
@@ -451,26 +473,19 @@
 					<li MayRequire="Ludeon.RimWorld.Biotech">FacialRidges</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Beauty_VeryUgly</li>
 				</blackGeneList>
-				<xenotypeList MayRequire="Ludeon.RimWorld.Biotech">
-                    <li MayRequire="Ludeon.RimWorld.Biotech">Baseliner</li>
-                </xenotypeList>
-                
-                <whiteXenotypeList>
-                    <li MayRequire="Ludeon.RimWorld.Biotech">Baseliner</li>
-                </whiteXenotypeList>
-                
-                <blackXenotypeList>
-                    <li MayRequire="Ludeon.RimWorld.Biotech">Dirtmole</li>
-                    <li MayRequire="Ludeon.RimWorld.Biotech">Genie</li>
-                    <li MayRequire="Ludeon.RimWorld.Biotech">Hussar</li>
-                    <li MayRequire="Ludeon.RimWorld.Biotech">Sanguophage</li>
-                    <li MayRequire="Ludeon.RimWorld.Biotech">Neanderthal</li>
-                    <li MayRequire="Ludeon.RimWorld.Biotech">Pigskin</li>
-                    <li MayRequire="Ludeon.RimWorld.Biotech">Impid</li>
-                    <li MayRequire="Ludeon.RimWorld.Biotech">Waster</li>
-                    <li MayRequire="Ludeon.RimWorld.Biotech">Yttakin</li>
-                    <li MayRequire="Ludeon.RimWorld.Biotech">Highmate</li>
-                </blackXenotypeList>
+				<blackXenotypeList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Baseliner</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Dirtmole</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Genie</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Hussar</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Sanguophage</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Neanderthal</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pigskin</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Impid</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Waster</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Yttakin</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Highmate</li>
+				</blackXenotypeList>
 			</raceRestriction>
 			<thoughtSettings>
 				<cannotReceiveThoughts>
@@ -643,9 +658,9 @@
 			<ageGenerationCurve>
 				<points>
 					<li MayRequire="Ludeon.RimWorld.Biotech">(0,0)</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">(0.001,43)</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">(8,86)</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">(12.5,118)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(0.001,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(8,5)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(10,10)</li>
 					<!-- Exclude 12.5-13 years to avoid spawning pawns who are very close to becoming adults -->
 					<li MayRequire="Ludeon.RimWorld.Biotech">(12.51,0)</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">(13,0)</li>
@@ -657,8 +672,7 @@
 					<li>(18,50)</li>
 					<li>(23,100)</li>
 					<li>(30,20)</li>
-					<li>(60,3)</li>
-					<li>(80,0)</li>
+					<li>(40,0)</li>
 				</points>
 			</ageGenerationCurve>
 			<hediffGiverSets>
