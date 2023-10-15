@@ -1713,7 +1713,7 @@
 			<WorkToMake>35000</WorkToMake>
 			<Mass>7</Mass>
 			<StuffEffectMultiplierArmor>0.35</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.45</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Cold>0.55</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat>
 			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
@@ -1786,7 +1786,7 @@
 			<WorkToMake>18000</WorkToMake>
 			<Mass>2</Mass>			
 			<StuffEffectMultiplierArmor>0.60</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.45</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Cold>0.55</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat>			
 			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
@@ -1794,7 +1794,7 @@
 			<EquipDelay>1.5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<ToxicEnvironmentResistance>-0.8</ToxicEnvironmentResistance>
+			<ToxicEnvironmentResistance>0.1</ToxicEnvironmentResistance>
 			<PainShockThreshold>0.05</PainShockThreshold>
 			<Flammability>-0.1</Flammability>
 		</equippedStatOffsets>
@@ -1849,7 +1849,7 @@
 			<WorkToMake>18000</WorkToMake>
 			<Mass>2</Mass>			
 			<StuffEffectMultiplierArmor>0.60</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.45</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Cold>0.55</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat>			
 			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
@@ -1857,7 +1857,7 @@
 			<EquipDelay>1.5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<ToxicEnvironmentResistance>-0.8</ToxicEnvironmentResistance>
+			<ToxicEnvironmentResistance>0.1</ToxicEnvironmentResistance>
 			<PainShockThreshold>0.05</PainShockThreshold>
 			<Flammability>-0.1</Flammability>
 		</equippedStatOffsets>

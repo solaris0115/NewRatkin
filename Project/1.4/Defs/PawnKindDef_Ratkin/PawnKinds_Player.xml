@@ -4,7 +4,7 @@
 		<combatPower>20</combatPower>
 		<canBeSapper>true</canBeSapper>
 		<race>Ratkin</race>
-		<minGenerationAge>16</minGenerationAge>
+		<minGenerationAge>13</minGenerationAge>
 		<maxGenerationAge>35</maxGenerationAge>
 		<defaultFactionType>Rakinia</defaultFactionType>
 		<invNutrition>2</invNutrition>
@@ -19,8 +19,7 @@
 		<combatPower>20</combatPower>
 		<canBeSapper>true</canBeSapper>
 		<race>Ratkin_Su</race>
-		<minGenerationAge>16</minGenerationAge>
-		<maxGenerationAge>35</maxGenerationAge>
+		<maxGenerationAge>45</maxGenerationAge>
 		<!-- <defaultFactionType>Rakinia</defaultFactionType> -->
 		<invNutrition>2</invNutrition>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
