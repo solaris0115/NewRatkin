@@ -441,6 +441,7 @@
 					<li MayRequire="Ludeon.RimWorld.Biotech">Jaw</li>
 				</blackEndoCategories>
 				<blackGeneTags MayRequire="Ludeon.RimWorld.Biotech">
+					<li MayRequire="Ludeon.RimWorld.Biotech">EyeColor</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Tail</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">BeardStyle</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Fur</li>
