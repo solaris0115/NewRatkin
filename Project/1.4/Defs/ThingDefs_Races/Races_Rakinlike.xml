@@ -462,9 +462,10 @@
 					<li MayRequire="Ludeon.RimWorld.Biotech">Yttakin</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Highmate</li>
 				</blackXenotypeList>
-                <xenotypeList MayRequire="Ludeon.RimWorld.Biotech">
-                    <li MayRequire="Ludeon.RimWorld.Biotech">Baseliner</li>
-                </xenotypeList>
+				<whiteXenotypeList MayRequire="Ludeon.RimWorld.Biotech">
+					<li MayRequire="Ludeon.RimWorld.Biotech">Baseliner</li>
+				</whiteXenotypeList>
+				<onlyUseRaceRestrictedXenotypes>true</onlyUseRaceRestrictedXenotypes>
 			</raceRestriction>
 			<thoughtSettings>
 				<cannotReceiveThoughts>
