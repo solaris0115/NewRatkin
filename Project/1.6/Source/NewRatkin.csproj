@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0B01D357-6CFE-43F4-B378-FC19134D4C76}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NewRatkin</RootNamespace>
+    <AssemblyName>NewRatkin</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Assemblies\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\workshop\content\294100\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreModule">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.TextCoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoTests\AutoTests.cs" />
+    <Compile Include="Gunlance\CompGunlanceFuel.cs" />
+    <Compile Include="Gunlance\CompProperties_GunlanceFuel.cs" />
+    <Compile Include="Gunlance\CompUseEffect.cs" />
+    <Compile Include="Gunlance\Gizmo_GunlanceStatus.cs" />
+    <Compile Include="Gunlance\GunlanceDefOf.cs" />
+    <Compile Include="Gunlance\GunlanceExplosion.cs" />
+    <Compile Include="Gunlance\AttachableThing_GunlanceIgnition.cs" />
+    <Compile Include="Gunlance\VerbProperties_Gunlance.cs" />
+    <Compile Include="Gunlance\Verb_GunlanceFiring.cs" />
+    <Compile Include="Gunlance\Verb_WyvernFire.cs" />
+    <Compile Include="HamsterWheel\DefOf.cs" />
+    <Compile Include="HamsterWheel\Job.cs" />
+    <Compile Include="HamsterWheel\JobGiver.cs" />
+    <Compile Include="HamsterWheel\PowerComp.cs" />
+    <Compile Include="HamsterWheel\Work.cs" />
+    <Compile Include="JobGiver_GotoTravelInteractionCell.cs" />
+    <Compile Include="Priest\Command_AbilityPrayService.cs" />
+    <Compile Include="Priest\InteractionWorker_PriestPray.cs" />
+    <Compile Include="Priest\JobDriver_PrayerService.cs" />
+    <Compile Include="Priest\JobGiver_PrayDutySpectateRect.cs" />
+    <Compile Include="Priest\JobGiver_PrayerService.cs" />
+    <Compile Include="Priest\LordJob_PrayerService.cs" />
+    <Compile Include="Priest\LordToil_JoinPrayerService.cs" />
+    <Compile Include="Priest\LordToil_PrayerService.cs" />
+    <Compile Include="Priest\ConstPriest.cs" />
+    <Compile Include="Priest\PriestPatch.cs" />
+    <Compile Include="Priest\ThinkNode_ConditionalAtDutyInteractionCell.cs" />
+    <Compile Include="Priest\ThinkNode_ConditionalAtDutyRoom.cs" />
+    <Compile Include="RatkinGuerrilla\IncidentWoker_RatkinThiefTunnel.cs" />
+    <Compile Include="RatkinGuerrilla\Building_EmpBomb.cs" />
+    <Compile Include="RatkinGuerrilla\Building_Tunnel.cs" />
+    <Compile Include="RatkinGuerrilla\CellFinder.cs" />
+    <Compile Include="RatkinGuerrilla\Graphic_CountDown.cs" />
+    <Compile Include="RatkinGuerrilla\IncidentWorker_AfterRaid.cs" />
+    <Compile Include="RatkinGuerrilla\IncidentWorker_RatkinGuerrillaTunner.cs" />
+    <Compile Include="RatkinGuerrilla\LordJob_DefendBomb.cs" />
+    <Compile Include="RatkinGuerrilla\LordToil_DefendBomb.cs" />
+    <Compile Include="RatkinGuerrilla\Mote_CountDown.cs" />
+    <Compile Include="RatkinGuerrilla\RatkinTunnelUtility.cs" />
+    <Compile Include="RatkinGuerrilla\TunnelSpawner.cs" />
+    <Compile Include="ShieldOfRatkinia\Ballista.cs" />
+    <Compile Include="ShieldOfRatkinia\BasePatch.cs" />
+    <Compile Include="ShieldOfRatkinia\MeeleExplosion.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DefOf.cs" />
+    <Compile Include="ShieldOfRatkinia\SPDestory.cs" />
+    <Compile Include="ShieldOfRatkinia\StockGen_Mercenary.cs" />
+    <Compile Include="ShieldOfRatkinia\ShieldPatch.cs" />
+    <Compile Include="ShieldOfRatkinia\WoodenShield.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

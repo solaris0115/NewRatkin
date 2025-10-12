@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RK_PlayerFaction.label>新たな始まり</RK_PlayerFaction.label>
+  <RK_PlayerFaction.description>あなたのラットキン集落です。それぞれの事情と運命がここに集まりました。</RK_PlayerFaction.description>
+  <RK_PlayerFaction.pawnsPlural>ラットキンの群れ</RK_PlayerFaction.pawnsPlural>
+  <RK_PlayerFaction.pawnSingular>ラットキン</RK_PlayerFaction.pawnSingular>
+  <RK_PlayerFaction.leaderTitle>指導者</RK_PlayerFaction.leaderTitle >
+
+</LanguageData>

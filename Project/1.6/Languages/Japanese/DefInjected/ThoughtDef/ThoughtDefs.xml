@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RK_PriestPray.stages.blessed_by_priest.label>RK僧侶の祝福</RK_PriestPray.stages.blessed_by_priest.label>
+
+  <RK_PriestPrayMood.stages.blessed_by_priest.label>RK僧侶の祝福</RK_PriestPrayMood.stages.blessed_by_priest.label>
+  <RK_PriestPrayMood.stages.blessed_by_priest.description>私は祝福を受けた,さらに安心できる.</RK_PriestPrayMood.stages.blessed_by_priest.description>
+
+  <RK_AttendPrayerMeetingMood.stages.attends_prayer_meeting.label>祈祷会に出席した</RK_AttendPrayerMeetingMood.stages.attends_prayer_meeting.label>
+  <RK_AttendPrayerMeetingMood.stages.attends_prayer_meeting.description>私は祈祷会に出席して祝福を受けた,さらに安心できる.</RK_AttendPrayerMeetingMood.stages.attends_prayer_meeting.description>
+
+</LanguageData>

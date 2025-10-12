@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RK_Braided.label>編み込み</RK_Braided.label>
+  <RK_BraidedB.label>編み込みB</RK_BraidedB.label>
+  <RK_middl.label>ミドル</RK_middl.label>
+  <RK_side_tail.label>サイドテイル</RK_side_tail.label>
+  <RK_twin5.label>ツインテイル</RK_twin5.label>
+  <RK_WavelongA.label>ウェーブロングA</RK_WavelongA.label>
+  <RK_LongA.label>ロングヘアA</RK_LongA.label>
+  <RK_LongB.label>ロングヘアB</RK_LongB.label>
+  <RK_LongD.label>ロングヘアD</RK_LongD.label>
+  <RK_LongE.label>ロングヘアE</RK_LongE.label>
+  <RK_PonyA.label>ポニーテイルA</RK_PonyA.label>
+  <RK_sidePonyA.label>サイドポニーA</RK_sidePonyA.label>
+  <RK_twin2.label>ツインテイル2</RK_twin2.label>
+  <RK_twin3.label>ツインテイル3</RK_twin3.label>
+  <RK_twin4.label>ツインテイル4</RK_twin4.label>
+  <RK_twinA.label>ツインテイルA</RK_twinA.label>
+  <RK_twin6.label>ツインテイル</RK_twin6.label>
+  <RK_Middle2.label>ミドル2</RK_Middle2.label>
+  <RK_MPony.label>ポニーテイル</RK_MPony.label>
+
+</LanguageData>

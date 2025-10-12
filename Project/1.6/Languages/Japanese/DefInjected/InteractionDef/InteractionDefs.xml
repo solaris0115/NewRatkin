@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RK_PriestPray.label>祈祷</RK_PriestPray.label>
+  <RK_PriestPray.logRulesInitiator.rulesStrings>
+    <li>r_logentry->[INITIATOR_nameDef]は[RECIPIENT_nameDef]が祝福されるように[prayed]。</li>
+
+    <li>prayed(p=3)->祈りました</li>
+    <li>prayed->強く祈りました</li>
+  </RK_PriestPray.logRulesInitiator.rulesStrings>
+
+</LanguageData>

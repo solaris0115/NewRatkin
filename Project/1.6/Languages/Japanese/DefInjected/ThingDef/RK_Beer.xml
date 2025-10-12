@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RK_StrawberryBeer.label>いちごビール</RK_StrawberryBeer.label>
+  <RK_StrawberryBeer.description>ラットキンの伝統的な方法で製造された特別なお酒です。アルコール度数が低いため、身体の小さなラットキンたちでも気軽に楽しめます。</RK_StrawberryBeer.description>
+  <RK_StrawberryBeer.tools.bottle.label>ビール瓶</RK_StrawberryBeer.tools.bottle.label>
+  <RK_StrawberryBeer.ingestible.ingestCommandString>{0}を 飲む</RK_StrawberryBeer.ingestible.ingestCommandString>
+  <RK_StrawberryBeer.ingestible.ingestReportString>{0}を 飲んでいる</RK_StrawberryBeer.ingestible.ingestReportString>
+
+</LanguageData>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RK_Pulpit.label>説教壇</RK_Pulpit.label>
+  <RK_Pulpit.description>小さな説教壇です。ラットキンの僧侶はこの場所で祈祷会を主催することができます。</RK_Pulpit.description>
+  <Blueprint_RK_Pulpit.label>説教壇 (設計)</Blueprint_RK_Pulpit.label>
+  <Blueprint_Install_RK_Pulpit.label>説教壇 (移動先)</Blueprint_Install_RK_Pulpit.label>
+  <Frame_RK_Pulpit.label>説教壇 (施工)</Frame_RK_Pulpit.label>
+  <Frame_RK_Pulpit.description>小さな説教壇です。ラットキンの僧侶はこの場所で祈祷会を主催することができます。</Frame_RK_Pulpit.description>
+
+</LanguageData>

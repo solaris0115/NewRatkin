@@ -1,0 +1,1298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef Name="RK_BaseBullet" Abstract="True">
+		<category>Projectile</category>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<thingClass>Bullet</thingClass>
+		<useHitPoints>False</useHitPoints>
+		<neverMultiSelect>True</neverMultiSelect>
+		<graphicData>
+			<shaderType>Transparent</shaderType>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef Abstract="True" Name="RK_MeleeWeapon" ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<recipeMaker>
+			<recipeUsers Inherit="false">
+				<li>RK_FueledSmithy</li>
+				<li>RK_ElectricSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	<!-- 근접무기 -->
+	<!-- 도끼 수확속도 +5% 수확량 +5%-->
+	<ThingDef ParentName="RK_MeleeWeapon">
+		<defName>RK_Axe</defName>
+		<label>axe</label>
+		<description>나무를 벨 때 쓰는 도끼입니다. 조금 작지만 벌목하는데 도움이 될것같습니다.</description>
+		<graphicData>
+			<texPath>Weapon/RK_Axe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<weaponTags Inherit="false">
+			<li>RK_Murderer</li>
+			<li>RK_WorkerTool</li>
+		</weaponTags>
+		<costList>
+			<WoodLog>40</WoodLog>
+		</costList>
+		<costStuffCount>50</costStuffCount>		
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>1.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<PlantWorkSpeed>0.05</PlantWorkSpeed>
+			<PlantHarvestYield>0.05</PlantHarvestYield>
+		</equippedStatOffsets>
+		<equippedAngleOffset>-20</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>2.5</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>Smithing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+	<!-- 식칼 조리 속도 +5% 해체량 +10%-->
+	<ThingDef ParentName="RK_MeleeWeapon">
+		<defName>RK_Cleaver</defName>
+		<label>cleaver</label>
+		<description>고기를 자를 때 쓰는 식칼입니다. 고기를 더 많이 얻을 수 있습니다. 무기로 쓰기엔 적합해 보이지 않습니다.</description>
+		<graphicData>
+			<texPath>Weapon/RK_Cleaver</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<weaponTags Inherit="false">
+			<li>RK_Murderer</li>
+			<li>RK_ChefTool</li>
+		</weaponTags>
+		<costList>
+			<WoodLog>25</WoodLog>
+		</costList>
+		<costStuffCount>50</costStuffCount>		
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>0.8</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<CookSpeed>0.10</CookSpeed>
+			<ButcheryFleshSpeed>0.15</ButcheryFleshSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>-55</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>1.8</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>Smithing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+	<!-- 쟁기 수확속도 +5% 수확량 +15%-->
+	<ThingDef ParentName="RK_MeleeWeapon">
+		<defName>RK_Hockey</defName>
+		<label>hoe</label>
+		<description>밭을 갈때 쓰는 쟁기입니다. 땅을 파기 편합니다.</description>
+		<graphicData>
+			<texPath>Weapon/RK_Hockey</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<weaponTags Inherit="false">
+			<li>RK_WorkerTool</li>
+		</weaponTags>
+		<costList>
+			<WoodLog>40</WoodLog>
+		</costList>
+		<costStuffCount>50</costStuffCount>		
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>1.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<PlantWorkSpeed>0.05</PlantWorkSpeed>
+			<PlantHarvestYield>0.15</PlantHarvestYield>
+		</equippedStatOffsets>
+		<equippedAngleOffset>20</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>Smithing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+	<!-- 포크삽 수확속도 +10% 수확량 +10%-->
+	<ThingDef ParentName="RK_MeleeWeapon">
+		<defName>RK_Fork</defName>
+		<label>fork</label>
+		<description>끝치 갈라진 포크형태의 삽입니다. 짚더미를 퍼 나를때 편리합니다.</description>
+		<graphicData>
+			<texPath>Weapon/RK_Fork</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<weaponTags Inherit="false">
+			<li>RK_WorkerTool</li>
+		</weaponTags>
+		<costList>
+			<WoodLog>40</WoodLog>
+		</costList>
+		<costStuffCount>50</costStuffCount>		
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>1.6</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<PlantWorkSpeed>0.10</PlantWorkSpeed>
+			<PlantHarvestYield>0.10</PlantHarvestYield>
+		</equippedStatOffsets>
+		<equippedAngleOffset>20</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>Smithing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef Abstract="True" Name="RK_NeolithicRangeWeapon" ParentName="BaseWeaponNeolithic">
+		<recipeMaker>			
+			<recipeUsers Inherit="false" >
+				<li>RK_FueledSmithy</li>
+				<li>RK_ElectricSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	<!-- 원거리 무기 -->
+	<!-- 석궁 스탤스 +10%-->
+	<ThingDef ParentName="RK_NeolithicRangeWeapon">
+		<defName>RK_Crossbow</defName>
+		<label>cross bow</label>
+		<description>간단한 석궁입니다. 사냥을 할때 쓰입니다.</description>
+		<graphicData>
+			<texPath>Weapon/RK_Crossbow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Bow_Small</soundInteract>
+		<costList>
+			<WoodLog>40</WoodLog>
+			<Steel>20</Steel>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Smithing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>2400</WorkToMake>
+			<Mass>0.8</Mass>
+			<AccuracyTouch>0.70</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyMedium>0.45</AccuracyMedium>
+			<AccuracyLong>0.25</AccuracyLong>
+			<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<HuntingStealth>0.07</HuntingStealth>
+		</equippedStatOffsets>
+		<weaponTags Inherit="false">
+			<li>RK_1TierRange</li>
+			<li>RK_Crossbow</li>
+			<li>RK_Weapon</li>
+			<li>RK_RangeWeapon</li>
+			<li>RK_LightWeapon</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bolt_RK_Crossbow</defaultProjectile>
+				<warmupTime>1.4</warmupTime>
+				<range>22.9</range>
+				<soundCast>Bow_Small</soundCast>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>limb</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>arrow</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	<ThingDef ParentName="RK_BaseBullet">
+		<defName>Bolt_RK_Crossbow</defName>
+		<label>crossbow bolt</label>
+		<graphicData>
+			<texPath>Weapon/RK_Bolt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Arrow</damageDef>
+			<damageAmountBase>11</damageAmountBase>
+			<stoppingPower>1</stoppingPower>
+			<armorPenetrationBase>0.21</armorPenetrationBase>
+			<speed>45</speed>
+		</projectile>
+	</ThingDef>
+	<!-- 개량석궁 -->
+	<ThingDef ParentName="RK_NeolithicRangeWeapon">
+		<defName>RK_EnhanceCrossBow</defName>
+		<label>enhanced cross bow</label>
+		<description>개량된 석궁입니다. 보다 멀리나가며 관통력도 우수합니다.</description>
+		<graphicData>
+			<texPath>Weapon/RK_EnhanceCrossBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Bow_Small</soundInteract>
+		<costList>
+			<WoodLog>50</WoodLog>
+			<Steel>30</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Smithing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>2400</WorkToMake>
+			<Mass>0.8</Mass>
+			<AccuracyTouch>0.75</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.50</AccuracyLong>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<HuntingStealth>0.15</HuntingStealth>
+		</equippedStatOffsets>
+		<weaponTags Inherit="false">
+			<li>RK_1TierRange</li>
+			<li>RK_Crossbow</li>
+			<li>RK_Weapon</li>
+			<li>RK_RangeWeapon</li>
+			<li>RK_Combatant</li>
+			<li>RK_LightWeapon</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bolt_RK_EnhanceCrossBow</defaultProjectile>
+				<warmupTime>1.2</warmupTime>
+				<range>29.9</range>
+				<soundCast>Bow_Large</soundCast>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>limb</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>arrow</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	<ThingDef ParentName="RK_BaseBullet">
+		<defName>Bolt_RK_EnhanceCrossBow</defName>
+		<label>crossbow bolt</label>
+		<graphicData>
+			<texPath>Weapon/RK_Bolt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Arrow</damageDef>
+			<damageAmountBase>13</damageAmountBase>
+			<stoppingPower>1</stoppingPower>
+			<armorPenetrationBase>0.25</armorPenetrationBase>
+			<speed>60</speed>
+		</projectile>
+	</ThingDef>
+	<!-- 연발석궁 -->
+	<ThingDef ParentName="RK_NeolithicRangeWeapon">
+		<defName>RK_AutoCrossBow</defName>
+		<label>autocross bow</label>
+		<description>기계식으로 발사되는 반자동 석궁입니다. 원형 탄창에서 빠른속도로 볼트를 발사할 수 있습니다.</description>
+		<graphicData>
+			<texPath>Weapon/RK_AutoCrossBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Bow_Small</soundInteract>
+		<costList>
+			<WoodLog>50</WoodLog>
+			<Steel>45</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Machining</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>7500</WorkToMake>
+			<Mass>0.8</Mass>
+			<AccuracyTouch>0.75</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.50</AccuracyLong>
+			<RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags Inherit="false">
+			<li>RK_1TierRange</li>
+			<li>RK_Crossbow</li>
+			<li>RK_CrossbowAdvanced</li>
+			<li>RK_Weapon</li>
+			<li>RK_RangeWeapon</li>
+			<li>RK_Combatant</li>
+			<li>RK_LightWeapon</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bolt_RK_AutoCrossBow</defaultProjectile>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>13</ticksBetweenBurstShots>
+				<warmupTime>1.2</warmupTime>
+				<range>27</range>
+				<soundCast>Bow_Large</soundCast>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>limb</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>arrow</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	<ThingDef ParentName="RK_BaseBullet">
+		<defName>Bolt_RK_AutoCrossBow</defName>
+		<label>crossbow bolt</label>
+		<graphicData>
+			<texPath>Weapon/RK_Bolt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Arrow</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<stoppingPower>1</stoppingPower>
+			<armorPenetrationBase>0.20</armorPenetrationBase>
+			<speed>50</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef Abstract="True" Name="RK_IndustrialRangeWeapon" ParentName="BaseHumanMakeableGun">
+		<!-- <recipeMaker>			 -->
+		<!-- <recipeUsers> -->
+		<!-- <li>RK_FueledSmithy</li> -->
+		<!-- <li>RK_ElectricSmithy</li> -->
+		<!-- </recipeUsers> -->
+		<!-- </recipeMaker> -->
+	</ThingDef>
+
+
+
+	<!-- 라이플 -->
+	<ThingDef ParentName="RK_IndustrialRangeWeapon">
+		<defName>RK_Rifle</defName>
+		<label>ratkin rifle</label>
+		<description>인간의 라이플을 흉내내 만든 라이플입니다. 석궁보다 사거리가 길고 작은 검을 달아두어 유사시 창처럼 사용할 수 있습니다.</description>
+		<graphicData>
+			<texPath>Weapon/RK_Rifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>2</Mass>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.65</AccuracyLong>
+			<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<WoodLog>30</WoodLog>
+			<Steel>55</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_RK_Rifle</defaultProjectile>
+				<warmupTime>1.6</warmupTime>
+				<range>33.9</range>
+				<soundCast>Rifle</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>bayonet</label>
+				<capacities>
+					<li>Cut</li>
+					<li>Stab</li>
+				</capacities>
+				<power>17</power>
+				<cooldownTime>2.3</cooldownTime>
+			</li>
+		</tools>
+		<weaponTags Inherit="false">
+			<li>RK_2TierWeapon</li>
+			<li>RK_Rifle</li>
+			<li>RK_Weapon</li>
+			<li>RK_RangeWeapon</li>
+			<li>RK_LightWeapon</li>
+			<li>RK_Combatant</li>
+		</weaponTags>
+		<equippedAngleOffset>45</equippedAngleOffset>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_RK_Rifle</defName>
+		<label>rifle bullet</label>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>16</damageAmountBase>
+			<stoppingPower>1</stoppingPower>
+			<armorPenetrationBase>0.28</armorPenetrationBase>
+			<speed>75</speed>
+		</projectile>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+
+	<!-- 저격 라이플 -->
+	<ThingDef ParentName="RK_IndustrialRangeWeapon">
+		<defName>RK_SniperRifle</defName>
+		<label>ratkin sniper rifle</label>
+		<description>랫킨식 망원렌즈가 달린 소총입니다. 망원장비덕분에 더 먼곳까지 조준할 수 있지만 가까운 곳을 조준하기 힘듭니다.</description>
+		<graphicData>
+			<texPath>Weapon/RK_SniperRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>2</Mass>
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.85</AccuracyMedium>
+			<AccuracyLong>0.85</AccuracyLong>
+			<RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<WoodLog>30</WoodLog>
+			<Steel>60</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>MicroOptical</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_RK_SniperRifle</defaultProjectile>
+				<warmupTime>1.8</warmupTime>
+				<range>42</range>
+				<soundCast>Rifle</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>bayonet</label>
+				<capacities>
+					<li>Cut</li>
+					<li>Stab</li>
+				</capacities>
+				<power>17</power>
+				<cooldownTime>2.3</cooldownTime>
+			</li>
+		</tools>
+		<weaponTags Inherit="false">
+			<li>RK_2TierWeapon</li>
+			<li>RK_Rifle</li>
+			<li>RK_Weapon</li>
+			<li>RK_RangeWeapon</li>
+		</weaponTags>
+		<equippedAngleOffset>45</equippedAngleOffset>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_RK_SniperRifle</defName>
+		<label>rifle bullet</label>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>18</damageAmountBase>
+			<stoppingPower>1</stoppingPower>
+			<armorPenetrationBase>0.32</armorPenetrationBase>
+			<speed>85</speed>
+		</projectile>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+
+	<!-- 플레셰트 라이플 -->
+	<ThingDef ParentName="RK_IndustrialRangeWeapon">
+		<defName>RK_FlechetteRifle</defName>
+		<label>flechette rifle</label>
+		<description>플레셰트탄을 사용하는 소총입니다. 랫킨식 플레셰트 탄환을 사용하여 사거리를 조금 희생해 관통력을 높였습니다. 유사시 근접전을 할 수 있도록 작은 검 달아두었습니다.</description>
+		<graphicData>
+			<texPath>Weapon/RK_Rifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>2</Mass>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.65</AccuracyLong>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<WoodLog>40</WoodLog>
+			<Steel>75</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>FlechetteBullet</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_RK_FlechetteRifle</defaultProjectile>
+				<warmupTime>1.6</warmupTime>
+				<range>31</range>
+				<soundCast>FlechetteRifle</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>bayonet</label>
+				<capacities>
+					<li>Cut</li>
+					<li>Stab</li>
+				</capacities>
+				<power>17</power>
+				<cooldownTime>2.3</cooldownTime>
+			</li>
+			<li>
+				<label>flechette</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<weaponTags Inherit="false">
+			<li>RK_3TierWeapon</li>
+			<li>RK_Rifle</li>
+			<li>RK_Weapon</li>
+			<li>RK_RangeWeapon</li>
+		</weaponTags>
+		<equippedAngleOffset>45</equippedAngleOffset>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_RK_FlechetteRifle</defName>
+		<label>flechette</label>
+		<projectile>
+			<damageDef>ArrowHighVelocity</damageDef>
+			<damageAmountBase>18</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>
+			<armorPenetrationBase>0.38</armorPenetrationBase>
+			<speed>65</speed>
+		</projectile>
+		<graphicData>
+			<texPath>Weapon/RK_Bolt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+
+	<!-- 플레셰트 저격 라이플 -->
+	<ThingDef ParentName="RK_IndustrialRangeWeapon">
+		<defName>RK_FlechetteSniperRifle</defName>
+		<label>flechette sniper rifle</label>
+		<description>플레셰트탄을 사용하는 망원렌즈가 달린 소총입니다. 두꺼운 장갑을 갖춘 적도 확실하게 제압할 수 있습니다. 유사시 근접전을 위해 작은 검을 달아두었습니다.</description>
+		<graphicData>
+			<texPath>Weapon/RK_SniperRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>2</Mass>
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyMedium>0.80</AccuracyMedium>
+			<AccuracyLong>0.80</AccuracyLong>
+			<RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<WoodLog>40</WoodLog>
+			<Steel>80</Steel>
+			<ComponentIndustrial>7</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>FlechetteBullet</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_RK_FlechetteSniperRifle</defaultProjectile>
+				<warmupTime>1.8</warmupTime>
+				<range>39</range>
+				<soundCast>FlechetteRifle</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>bayonet</label>
+				<capacities>
+					<li>Cut</li>
+					<li>Stab</li>
+				</capacities>
+				<power>17</power>
+				<cooldownTime>2.3</cooldownTime>
+			</li>
+			<li>
+				<label>flechette</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<weaponTags Inherit="false">
+			<li>RK_3TierWeapon</li>
+			<li>RK_Rifle</li>
+			<li>RK_Weapon</li>
+			<li>RK_RangeWeapon</li>
+		</weaponTags>
+		<equippedAngleOffset>45</equippedAngleOffset>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_RK_FlechetteSniperRifle</defName>
+		<label>flechette</label>
+		<projectile>
+			<damageDef>ArrowHighVelocity</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>
+			<armorPenetrationBase>0.42</armorPenetrationBase>
+			<speed>75</speed>
+		</projectile>
+		<graphicData>
+			<texPath>Weapon/RK_Bolt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+	
+	<!-- 2티어 -->
+	<!-- 샷건 	-->
+	<ThingDef ParentName="RK_IndustrialRangeWeapon">
+		<defName>RK_Rifle_line</defName>
+		<label>ratkin shotgun</label>
+		<description>소드오프 샷건입니다. 랫킨 왕국에서는 샷건이 랫킨을 쏩니다.</description>
+		<graphicData>
+			<texPath>Weapon/RK_shotgun_line</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<WorkToMake>11000</WorkToMake>
+			<Mass>2</Mass>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.55</AccuracyLong>
+			<RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<WoodLog>30</WoodLog>
+			<Steel>55</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>FlechetteBullet</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<!-- <comps> -->
+			<!-- <li> -->
+				<!-- <compClass>AdditionalVerb.Comp_VerbSaveable</compClass> -->
+			<!-- </li> -->
+		<!-- </comps> -->
+		<verbs>			
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<soundCast>FlechetteRifle</soundCast>
+				<defaultProjectile>Bullet_RK_Buck</defaultProjectile>
+				
+				<warmupTime>0.9</warmupTime>
+				<range>13.9</range>					
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>4</muzzleFlashScale>
+				<burstShotCount>6</burstShotCount>
+				<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+			</li>
+			<!-- <li Class="AdditionalVerb.VerbProperties_Custom"> -->
+				<!-- <verbClass>Verb_Shoot</verbClass> -->
+				<!-- <hasStandardCommand>true</hasStandardCommand> -->
+				<!-- <soundCast>FlechetteRifle</soundCast> -->
+				<!-- <soundCastTail>GunTail_Heavy</soundCastTail> -->
+
+				<!-- <defaultProjectile>Bullet_RK_Slug</defaultProjectile> -->
+				<!-- <muzzleFlashScale>12</muzzleFlashScale> -->
+				<!-- <warmupTime>1.55</warmupTime> -->
+				<!-- <burstShotCount>1</burstShotCount> -->
+				<!-- <ticksBetweenBurstShots>6</ticksBetweenBurstShots> -->
+				<!-- <range>27.9</range> -->
+				<!-- <desc>슬러그</desc> -->
+				<!-- <label>Slug fire</label> -->
+				<!-- <texPath>UI/Commands/Slug</texPath> -->
+			<!-- </li> -->
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+				<power>7</power>
+				<cooldownTime>1.8</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+					<capacities>
+						<li>Blunt</li>
+						<li>Poke</li>
+					</capacities>
+				<power>7</power>
+				<cooldownTime>1.8</cooldownTime>
+			</li>
+			<li>
+				<label>bayonet</label>
+				<capacities>
+					<li>Cut</li>
+					<li>Stab</li>
+				</capacities>
+				<power>17</power>
+				<cooldownTime>2.3</cooldownTime>
+			</li>
+		</tools>
+		<weaponTags Inherit="false">
+			<li>RK_2TierWeapon</li>
+			<li>RK_Shotgun</li>
+		</weaponTags>
+		<equippedAngleOffset>45</equippedAngleOffset>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_RK_Buck</defName>
+		<label>Buck bullet</label>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>5</damageAmountBase>
+			<stoppingPower>2</stoppingPower>
+			<armorPenetrationBase>0.45</armorPenetrationBase>
+			<speed>75</speed>
+		</projectile>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>	
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_RK_Slug</defName>
+		<label>Slug bullet</label>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<stoppingPower>3.5</stoppingPower>
+			<armorPenetrationBase>0.6</armorPenetrationBase>
+			<speed>75</speed>
+		</projectile>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Big</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+	
+	
+		<!-- 3티어 -->
+	<!-- 랫킨용 실험용총 2연발 -->
+	<ThingDef ParentName="RK_IndustrialRangeWeapon">
+		<defName>RK_PrototypePulseRifle</defName>
+		<label>prototype pulse rifle</label>
+		<description>실험용 파동 소총입니다. 실험용 랫킨들을 위해 제작되어 특수망원렌즈가 근거리 원거리 모두 정밀하게 조준해줍니다. 랫킨식 플레셰트탄환에서 아이디어를 얻어 제작한 이 무기는 쇄기모양의 고관통 에너지탄을 빠르게 발사합니다.</description>
+		<graphicData>
+			<texPath>Weapon/RK_PrototypePulseRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>3.5</Mass>
+			<AccuracyTouch>0.75</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.45</AccuracyLong>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Plasteel>80</Plasteel>
+			<ComponentIndustrial>7</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>		
+		<!-- <comps> -->
+			<!-- <li> -->
+				<!-- <compClass>AdditionalVerb.Comp_VerbSaveable</compClass> -->
+			<!-- </li> -->
+		<!-- </comps> -->
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_RK_PrototypePulseRifleLight</defaultProjectile>
+				<warmupTime>1.5</warmupTime>
+				<range>31</range>
+				<burstShotCount>4</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<soundCast>PrototypePulse</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+				<!-- <desc>Take 4 burst shot at mid-range target.\nAcc Bonus\nShort Acc: +50%\nMid Acc: +25%</desc> -->
+				<label>Rapid Fire</label>
+				<!-- <texPath>UI/Commands/Pew</texPath> -->
+				<!-- <accuracyTouch>0.35</accuracyTouch> -->
+				<!-- <accuracyShort>0.50</accuracyShort> -->
+				<!-- <accuracyMedium>0.25</accuracyMedium> -->
+				<!-- <accuracyLong>0</accuracyLong> -->
+			</li>	
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_RK_PrototypePulseRifleHeavy</defaultProjectile>
+				<warmupTime>2</warmupTime>
+				<range>42</range>
+				<burstShotCount>2</burstShotCount>
+				<ticksBetweenBurstShots>13</ticksBetweenBurstShots>
+				<soundCast>PrototypePulse</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+				<!-- <desc>Take 2 burst shot at long-range target.\nAcc Bonus\nMid Acc: +25%\nLong Acc: +50%</desc> -->
+				<label>Precisely Fire</label>
+				<!-- <texPath>UI/Commands/Snipe</texPath> -->
+			</li>
+		</verbs>		
+		<recipeMaker Inherit="false">
+			<!-- <researchPrerequisite>PulseTech</researchPrerequisite> -->
+			<!-- <skillRequirements> -->
+			<!-- <Crafting>10</Crafting> -->
+			<!-- </skillRequirements> -->
+		</recipeMaker>
+		<weaponTags Inherit="false">
+			<!-- <li>RK_4TierWeapon</li> -->
+		</weaponTags>
+		<tradeTags Inherit="false">
+			<!-- <li>ExoticMisc</li> -->
+		</tradeTags>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<tradeability>None</tradeability>
+	</ThingDef>
+	<ThingDef ParentName="RK_BaseBullet">
+		<defName>Bullet_RK_PrototypePulseRifleLight</defName>
+		<label>wedge bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/ChargeLanceShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>9</damageAmountBase>
+			<speed>85</speed>
+			<armorPenetrationBase>0.45</armorPenetrationBase>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="RK_BaseBullet">
+		<defName>Bullet_RK_PrototypePulseRifleHeavy</defName>
+		<label>wedge bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/ChargeLanceShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<speed>120</speed>
+			<armorPenetrationBase>0.60</armorPenetrationBase>
+		</projectile>
+	</ThingDef>
+
+	<!-- BFR 3000 -->
+	<ThingDef ParentName="RK_IndustrialRangeWeapon">
+		<defName>RK_BFR</defName>
+		<label>BFR 3000</label>
+		<description>Big Force Rifle 3000.</description>
+		<graphicData>
+			<texPath>Weapon/BFR</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>5.5</Mass>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.35</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.85</AccuracyLong>
+			<RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Plasteel>120</Plasteel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>		
+		<equippedAngleOffset>45</equippedAngleOffset>
+		<!-- <comps> -->
+			<!-- <li> -->
+				<!-- <compClass>AdditionalVerb.Comp_VerbSaveable</compClass> -->
+			<!-- </li> -->
+		<!-- </comps> -->
+		<verbs>
+			<!-- 관통탄 -->
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<soundCast>PrototypePulse</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+
+				<defaultProjectile>Bullet_BFR_AP</defaultProjectile>
+				<muzzleFlashScale>12</muzzleFlashScale>
+				<warmupTime>2.5</warmupTime>
+				<burstShotCount>1</burstShotCount>
+				<minRange>3</minRange>
+				<range>44.9</range>	
+				<!-- <desc>관통성이 높은 정밀 탄환을 발사합니다.</desc> -->
+				<label>AP fire</label>
+				<!-- <texPath>UI/Commands/AP</texPath> -->
+			</li>
+			<!-- 후폭풍탄 -->
+			<!-- <li Class="AdditionalVerb.VerbProperties_Custom"> -->
+				<!-- <verbClass>Verb_Shoot</verbClass> -->
+				<!-- <hasStandardCommand>true</hasStandardCommand> -->
+				<!-- <soundCast>PrototypePulse</soundCast> -->
+				<!-- <soundCastTail>GunTail_Heavy</soundCastTail> -->
+
+				<!-- <defaultProjectile>Bullet_BFR_SC</defaultProjectile> -->
+				<!-- <muzzleFlashScale>12</muzzleFlashScale> -->
+				<!-- <warmupTime>2.5</warmupTime> -->
+				<!-- <burstShotCount>1</burstShotCount> -->
+				<!-- <minRange>3</minRange> -->
+				<!-- <range>44.9</range>	 -->
+				<!-- <desc>적중시 뒤로 파편을 비산시키는 특수탄을 발사합니다.</desc> -->
+				<!-- <label>SC fire</label> -->
+				<!-- <texPath>UI/Commands/SC</texPath> -->
+			<!-- </li> -->
+		</verbs>		
+		<recipeMaker Inherit="false">
+			<!-- <researchPrerequisite>PulseTech</researchPrerequisite> -->
+			<!-- <skillRequirements> -->
+			<!-- <Crafting>10</Crafting> -->
+			<!-- </skillRequirements> -->
+		</recipeMaker>
+		<weaponTags Inherit="false">
+			<!-- <li>RK_4TierWeapon</li> -->
+			<!-- <li>RK_HeavyRifle</li> -->
+		</weaponTags>
+		<tradeTags Inherit="false">
+			<!-- <li>ExoticMisc</li> -->
+		</tradeTags>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>3</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>3</cooldownTime>
+			</li>
+		</tools>
+		<tradeability>None</tradeability>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBolt">
+		<defName>Bullet_BFR_AP</defName>
+		<label>wedge bullet (AP)</label>
+		<graphicData>
+			<texPath>Things/Projectile/Ballista_Bolt_HE</texPath>
+			<drawSize>(2,2)</drawSize>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<thingClass>NewRatkin.Projectile_BallistaBoltAP</thingClass>
+		<projectile Class="NewRatkin.ProjectileProperties_BallistaBoltAP">
+			<shockWaveDef>ShockWaveLight</shockWaveDef>
+			<maxPenetrationCount>3</maxPenetrationCount>
+			<damageReduceRate>0.4</damageReduceRate>
+			<damageDef>RangedStab</damageDef>
+			<damageAmountBase>28</damageAmountBase>
+			<armorPenetrationBase>0.60</armorPenetrationBase>
+			<stoppingPower>3</stoppingPower>
+			<speed>95</speed>
+			<alwaysFreeIntercept>true</alwaysFreeIntercept>
+			<flyOverhead>false</flyOverhead>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<!-- <soundExplode>Shockwave</soundExplode> -->
+			<soundImpactAnticipate>Flying</soundImpactAnticipate>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_BFR_SC</defName>
+		<label>wedge bullet (SC)</label>
+		<graphicData>
+			<texPath>Things/Projectile/Ballista_Bolt_HE</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<thingClass>NewRatkin.Projectile_BallistaBoltAP</thingClass>
+		<projectile Class="NewRatkin.ProjectileProperties_BallistaBoltAP">
+			<shockWaveDef>ShockWaveLight</shockWaveDef>
+			<maxPenetrationCount>1</maxPenetrationCount>
+			<damageReduceRate>0.4</damageReduceRate>
+			<damageDef>RangedStab</damageDef>
+			<damageAmountBase>40</damageAmountBase>
+			<armorPenetrationBase>0.60</armorPenetrationBase>
+			<stoppingPower>8</stoppingPower>
+			<speed>85</speed>
+			<explosionRadius>1.7</explosionRadius>
+			<alwaysFreeIntercept>true</alwaysFreeIntercept>
+			<flyOverhead>false</flyOverhead>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<!-- <soundExplode>Shockwave</soundExplode> -->
+			<soundImpactAnticipate>Flying</soundImpactAnticipate>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+		</projectile>
+	</ThingDef>
+
+</Defs>
