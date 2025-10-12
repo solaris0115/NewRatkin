@@ -11,6 +11,7 @@
 			<ComfyTemperatureMin>-45</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
 			<MeatAmount>50</MeatAmount>
+			<Wildness>0.0</Wildness>
 		</statBases>
 		<tools>
 			<li>
@@ -67,7 +68,6 @@
 			<foodType>VegetarianRoughAnimal</foodType>
 			<leatherDef>RK_Leather_KingHamster</leatherDef>
 			<gestationPeriodDays>16</gestationPeriodDays>
-			<wildness>0.0</wildness>
 			<trainability>Intermediate</trainability>
 			<packAnimal>true</packAnimal>
 			<lifeExpectancy>13</lifeExpectancy>
