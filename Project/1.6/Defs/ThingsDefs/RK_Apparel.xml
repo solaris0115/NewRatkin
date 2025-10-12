@@ -703,14 +703,14 @@
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
-				<li>Eyes</li>
+				<li>UpperHead</li>
 			</bodyPartGroups>
 			<defaultOutfitTags>
 				<li>Worker</li>
 			</defaultOutfitTags>
 			<wornGraphicPath>Apparel/RK_ResearchGlasses</wornGraphicPath>
 			<layers>
-				<li>EyeCover</li>
+				<li>Overhead</li>
 			</layers>
 			<tags>
 				<li>RK_Doctor</li>
@@ -2394,7 +2394,7 @@
 				<li>Shoulders</li>
 				<li>Arms</li>
 				<li>Legs</li>
-				<li>Eyes</li>
+				<li>FullHead</li>
 			</bodyPartGroups>
 			<defaultOutfitTags>
 				<li>Worker</li>
