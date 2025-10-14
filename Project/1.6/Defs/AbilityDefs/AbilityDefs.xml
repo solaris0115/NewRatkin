@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- 랫킨 기도회, 수녀만 가능, 무드를 올려줌  -->
 	<AbilityDef Name="Speech">
 		<defName>RK_PrayerService</defName>
 		<label>prayer service</label>
@@ -17,7 +18,27 @@
 			<range>-1</range>
 		</verbProperties>
 		<comps>
-			<li Class="NewRatkin.CompProperties_AbilityPrayService">
+			<li Class="NewRatkin.CompProperties_AbilityPrayService"/>
+		</comps>
+	</AbilityDef>
+
+	<!-- 랫킨 기수용 스킬 -->
+	<AbilityDef ParentName="RoleAuraBuffBase">
+		<defName>RK_Ability_WarBanner</defName>
+		<label>war banner</label>
+		<description>전쟁 배너를 높게 들어 아군들의 사기를 올립니다. 사기가 오른 아군들은 전투에 보다 효과적으로 집중할 수 있습니다.</description>
+		<!-- TODO: 전쟁 배너용 아이콘으로 변경 -->
+		<iconPath>UI/Abilities/MarksmanCommand</iconPath>
+		<warmupMoteSocialSymbol>UI/Abilities/MarksmanCommand</warmupMoteSocialSymbol>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<!-- TODO: 전쟁 배너용 고통한계 및 근접 적중, 회피율 올려줌 -->
+				<hediffDef>MarksmanCommand</hediffDef>
+				<onlyBrain>True</onlyBrain>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
 			</li>
 		</comps>
 	</AbilityDef>
