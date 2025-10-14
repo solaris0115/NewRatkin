@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<AlienRace.ThingDef_AlienRace ParentName="BasePawn" Name="RK_PawnNormal">
+	<AlienRace.ThingDef_AlienRace Name="RK_PawnNormal" ParentName="Human">
 		<defName>Ratkin</defName>
 		<label>Ratkin</label>
 		<description>설치류 유전자와 흡사한 인간입니다. 출처는 알 수 없으나 주로 농경사회를 기반으로 한 왕정을 이루고 살고 있습니다. 여성 개체가 남성보다 많으며 외부에서 보았을때 개체의 성별 구분이 힘듭니다.</description>
 		<alienRace>
 			<generalSettings>
-				<!-- 기본 설정 -->
-				<maleGenderProbability>0.1</maleGenderProbability>
-				<immuneToAge>true</immuneToAge>
+				<maleGenderProbability>0.3</maleGenderProbability>
+				<immuneToAge>false</immuneToAge>
 				<canLayDown>true</canLayDown>
 				<maxDamageForSocialfight>6</maxDamageForSocialfight>
-				<immuneToXenophobia>false</immuneToXenophobia>
 				<humanRecipeImport>true</humanRecipeImport>
+				<immuneToXenophobia>false</immuneToXenophobia>
 				<alienPartGenerator>
-					<!-- 전체화질 및 텍스처 드로우 범위 -->
 					<atlasScale>4</atlasScale>
 					<headTypes Inherit="False">
 						<li>RK_HeadType_Head1</li>
@@ -336,19 +334,9 @@
 					</bodyAddons>
 				</alienPartGenerator>
 				<disallowedTraits>
-					<li>
-						<defName>AnnoyingVoice</defName>
-					</li>
-					<li>
-						<defName>CreepyBreathing</defName>
-					</li>
+					<li>AnnoyingVoice</li>
+					<li>CreepyBreathing</li>
 				</disallowedTraits>
-				<growthAges MayRequire="Ludeon.RimWorld.Biotech">
-					<li>3</li>
-					<li>6</li>
-					<li>9</li>
-					<li>12</li>
-				</growthAges>
 			</generalSettings>
 			<graphicPaths>
 				<body>Thing/Ratkin/Body/Naked_Thin</body>
@@ -440,7 +428,6 @@
 					<li>RK_Hockey</li>
 					<li>RK_Fork</li>
 					<li>RK_LongSword</li>
-					<li>RK_LongSword</li>
 					<li>RK_Crossbow</li>
 					<li>RK_EnhanceCrossBow</li>
 					<li>RK_AutoCrossBow</li>
@@ -460,39 +447,15 @@
 					<li>RK_Halberd</li>
 				</weaponList>
 				<blackEndoCategories MayRequire="Ludeon.RimWorld.Biotech">
-					<li MayRequire="Ludeon.RimWorld.Biotech">Melanin</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">BodyType</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Ears</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Nose</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Voice</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Headbone</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Head</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Jaw</li>
 				</blackEndoCategories>
 				<blackGeneTags MayRequire="Ludeon.RimWorld.Biotech">
-					<li MayRequire="Ludeon.RimWorld.Biotech">EyeColor</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Tail</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">BeardStyle</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Fur</li>
 				</blackGeneTags>
 				<blackGeneList>
-                    <li MayRequire="Ludeon.RimWorld.Biotech">Furskin</li>
-                    <li MayRequire="Ludeon.RimWorld.Biotech">Brow_Heavy</li>
 				</blackGeneList>
 				<blackXenotypeList>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Dirtmole</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Genie</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Hussar</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Sanguophage</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Neanderthal</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Pigskin</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Impid</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Waster</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Yttakin</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Highmate</li>
 				</blackXenotypeList>
 				<whiteXenotypeList MayRequire="Ludeon.RimWorld.Biotech">
-					<li MayRequire="Ludeon.RimWorld.Biotech">Baseliner</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">RK_XenoType_Ratkin</li>
 				</whiteXenotypeList>
 				<onlyUseRaceRestrictedXenotypes>true</onlyUseRaceRestrictedXenotypes>
 			</raceRestriction>
@@ -505,13 +468,13 @@
 		</alienRace>
 		<statBases>
 			<!-- 기본 -->
-			<MarketValue>2000</MarketValue>
+			<MarketValue>1750</MarketValue>
 			<Mass>50</Mass>
-			<MoveSpeed>4.85</MoveSpeed>
+			<MoveSpeed>4.8</MoveSpeed>
 			<Flammability>1.0</Flammability>
-			<ComfyTemperatureMax>31</ComfyTemperatureMax>
-			<ComfyTemperatureMin>6</ComfyTemperatureMin>
-			<ImmunityGainSpeed>1.10</ImmunityGainSpeed>
+			<ComfyTemperatureMax>26</ComfyTemperatureMax>
+			<ComfyTemperatureMin>11</ComfyTemperatureMin>
+			<ImmunityGainSpeed>1.1</ImmunityGainSpeed>
 			<CarryingCapacity>45</CarryingCapacity>
 			<PainShockThreshold>0.7</PainShockThreshold>
 			<ToxicEnvironmentResistance>0.9</ToxicEnvironmentResistance>
@@ -520,14 +483,12 @@
 			<LeatherAmount>30</LeatherAmount>
 			<!-- 전투 -->
 			<MeleeDodgeChance>1.15</MeleeDodgeChance>
-			<AimingDelayFactor>1.18</AimingDelayFactor>
+			<AimingDelayFactor>1.15</AimingDelayFactor>
 			<!-- 사회 -->
 			<NegotiationAbility>0.85</NegotiationAbility>
-			<SocialImpact>1.07</SocialImpact>
 			<!-- 작업 -->
 			<MiningSpeed>1.1</MiningSpeed>
-			<MiningYield>1.05</MiningYield>
-			<PlantWorkSpeed>1.10</PlantWorkSpeed>
+			<PlantWorkSpeed>1.1</PlantWorkSpeed>
 			<HuntingStealth>1.15</HuntingStealth>
 			<!-- 테크 -->
 			<ConstructionSpeed>0.9</ConstructionSpeed>
@@ -587,89 +548,13 @@
 			</li>
 		</tools>
 		<race>
-			<thinkTreeMain>Humanlike</thinkTreeMain>
-			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
-			<intelligence>Humanlike</intelligence>
-			<bloodDef>Filth_Blood</bloodDef>
-			<!--  -->
-			<renderTree>Humanlike</renderTree>
-			<!--  -->
-			<canBecomeShambler>true</canBecomeShambler>
-			<!--  -->
-			<makesFootprints>true</makesFootprints>
 			<lifeExpectancy>70</lifeExpectancy>
 			<leatherDef>Leather_Light</leatherDef>
-			<nameCategory>HumanStandard</nameCategory>
-			<hasGenders>true</hasGenders>
-			<body>Ratkin</body>
+			<body>RK_Body_Ratkin</body>
 			<baseBodySize>0.8</baseBodySize>
-			<baseHealthScale>1</baseHealthScale>
-			<foodType>OmnivoreHuman</foodType>
-			<gestationPeriodDays>21</gestationPeriodDays>
-			<nameGenerator>NamerPerson_RatkinKingdom</nameGenerator>
-			<nameGeneratorFemale>NamerPerson_RatkinKingdom</nameGeneratorFemale>
-			<litterSizeCurve>
-				<points>
-					<li>(0.5, 0)</li>
-					<li>(1, 0.30)</li>
-					<li>(2, 0.40)</li>
-					<li>(3, 0.10)</li>
-					<li>(4, 0.20)</li>
-					<li>(5, 0)</li>
-				</points>
-			</litterSizeCurve>
-			<lifeStageAges>
-				<li>
-					<def>HumanlikeBaby</def>
-					<minAge>0</minAge>
-				</li>
-				<li>
-					<def>HumanlikeChild</def>
-					<minAge>4</minAge>
-				</li>
-				<li MayRequire="Ludeon.RimWorld.Biotech">
-					<def>HumanlikePreTeenager</def>
-					<minAge>8</minAge>
-				</li>
-				<li>
-					<def>HumanlikeTeenager</def>
-					<minAge>12</minAge>
-				</li>
-				<li>
-					<def>HumanlikeAdult</def>
-					<minAge>16</minAge>
-				</li>
-			</lifeStageAges>
-			<lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">
-				<Firefighter>7</Firefighter>
-				<Patient>0</Patient>
-				<Doctor>10</Doctor>
-				<PatientBedRest>0</PatientBedRest>
-				<Childcare MayRequire="Ludeon.RimWorld.Biotech">0</Childcare>
-				<BasicWorker>7</BasicWorker>
-				<Warden>10</Warden>
-				<Handling>7</Handling>
-				<Cooking>7</Cooking>
-				<Hunting>7</Hunting>
-				<Construction>10</Construction>
-				<Growing>7</Growing>
-				<Mining>7</Mining>
-				<PlantCutting>7</PlantCutting>
-				<Smithing>13</Smithing>
-				<Tailoring>7</Tailoring>
-				<Art>10</Art>
-				<Crafting>7</Crafting>
-				<Hauling>3</Hauling>
-				<Cleaning>3</Cleaning>
-				<Research>13</Research>
-			</lifeStageWorkSettings>
-			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
-			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
-			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
-			<specialShadowData>
-				<volume>(0.3, 0.8, 0.4)</volume>
-				<offset>(0,0,-0.3)</offset>
-			</specialShadowData>
+			<gestationPeriodDays>14</gestationPeriodDays>
+			<nameGenerator>RK_RulePack_NamerPerson</nameGenerator>
+			<nameGeneratorFemale>RK_RulePack_NamerPerson</nameGeneratorFemale>
 			<ageGenerationCurve>
 				<points>
 					<li MayRequire="Ludeon.RimWorld.Biotech">(0,0)</li>
@@ -690,19 +575,11 @@
 					<li>(40,0)</li>
 				</points>
 			</ageGenerationCurve>
-			<hediffGiverSets>
-				<li>OrganicStandard</li>
-			</hediffGiverSets>
 		</race>
 		<recipes>
-			<li>RK_InstallBionicTail</li>
-			<li>RK_InstallFakeEar</li>
-			<li>RK_InstallFakeTail</li>
-			<li>ExciseCarcinoma</li>
-			<li>AdministerMechSerumHealer</li>
-			<li>RemoveBodyPart</li>
-			<li>Euthanize</li>
-			<li>Anesthetize</li>
+			<li>RK_Recipe_InstallBionicTail</li>
+			<li>RK_Recipe_InstallFakeEar</li>
+			<li>RK_Recipe_InstallFakeTail</li>
 		</recipes>
 	</AlienRace.ThingDef_AlienRace>
 </Defs>

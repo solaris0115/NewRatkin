@@ -1,13 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
-	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>RK_InstallFakeEar</defName>
-		<label>install fake ear</label>
-		<description>Install a fake ear.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
-		<jobString>Installing fake ear.</jobString>
-		<workAmount>2000</workAmount>
+	<RecipeDef Name="SurgeryInstallClothPartBase" ParentName="SurgeryInstallBodyPartArtificialBase"
+		Abstract="True">
+		<workAmount>1500</workAmount>
 		<skillRequirements>
 			<Medicine>3</Medicine>
 		</skillRequirements>
@@ -15,95 +10,110 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>RK_FakeEar</li>
+						<li>Cloth</li>
 					</thingDefs>
 				</filter>
-				<count>1</count>
+				<count>5</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>RK_FakeEar</li>
+				<li>Cloth</li>
 			</thingDefs>
 		</fixedIngredientFilter>
+	</RecipeDef>
+
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>RK_Hediff_FakeEar</defName>
+		<label>fake ear</label>
+		<labelNoun>a fake ear</labelNoun>
+		<description>An installed fake ear.</description>
+		<priceImpact>false</priceImpact>
+		<addedPartProps>
+			<partEfficiency>0.50</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<RecipeDef ParentName="SurgeryInstallClothPartBase">
+		<defName>RK_Recipe_InstallFakeEar</defName>
+		<label>install fake ear</label>
+		<description>Install a fake ear.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Cloth</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing fake ear.</jobString>
 		<appliedOnFixedBodyParts>
 			<li>Ear</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>RK_FakeEar</addsHediff>
+		<addsHediff>RK_Hediff_FakeEar</addsHediff>
+		<uiIconThing>Cloth</uiIconThing>
 	</RecipeDef>
 
-	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>RK_InstallFakeTail</defName>
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>RK_Hediff_FakeTail</defName>
+		<label>fake tail</label>
+		<labelNoun>a fake tail</labelNoun>
+		<description>An installed fake tail.</description>
+		<priceImpact>false</priceImpact>
+		<addedPartProps>
+			<partEfficiency>0.60</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<RecipeDef ParentName="SurgeryInstallClothPartBase">
+		<defName>RK_Recipe_InstallFakeTail</defName>
 		<label>install fake tail</label>
 		<description>Install a fake tail.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<descriptionHyperlinks>
+			<ThingDef>Cloth</ThingDef>
+		</descriptionHyperlinks>
 		<jobString>Installing fake tail.</jobString>
-		<workAmount>2000</workAmount>
-		<skillRequirements>
-			<Medicine>3</Medicine>
-		</skillRequirements>
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>RK_FakeTail</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>RK_FakeTail</li>
-			</thingDefs>
-		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
-			<li>RK_RatTail</li>
+			<li>RK_BodyPart_Tail</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>RK_FakeTail</addsHediff>
+		<addsHediff>RK_Hediff_FakeTail</addsHediff>
+		<uiIconThing>Cloth</uiIconThing>
 	</RecipeDef>
 
-	
-	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>RK_InstallBionicTail</defName>
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>RK_Recipe_InstallBionicTail</defName>
 		<label>install bionic tail</label>
 		<description>Install a bionic tail.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<descriptionHyperlinks>
+			<ThingDef>RK_Thing_BionicTail</ThingDef>
+			<HediffDef>RK_Hediff_BionicTail</HediffDef>
+		</descriptionHyperlinks>
 		<jobString>Installing bionic tail.</jobString>
-		<workAmount>2000</workAmount>
-		<skillRequirements>
-			<Medicine>5</Medicine>
-		</skillRequirements>
 		<ingredients>
 			<li>
 				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>2</count>
-			</li>
-			<li>
-				<filter>
 					<thingDefs>
-						<li>RK_BionicTail</li>
+						<li>RK_Thing_BionicTail</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
 			<thingDefs>
-				<li>RK_BionicTail</li>
+				<li>RK_Thing_BionicTail</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
-			<li>RK_RatTail</li>
+			<li>RK_BodyPart_Tail</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>RK_BionicTail</addsHediff>
+		<addsHediff>RK_Hediff_BionicTail</addsHediff>
 	</RecipeDef>
-	
+
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>RK_Hediff_BionicTail</defName>
+		<label>bionic tail</label>
+		<description>An advanced artificial tail. It also has a small AI that automatically balances the user's missing.</description>
+		<labelNoun>a bionic tail</labelNoun>
+		<spawnThingOnRemoved>RK_Thing_BionicTail</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
 </Defs>
