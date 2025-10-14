@@ -16,14 +16,10 @@
 				<alienPartGenerator>
 					<!-- 전체화질 및 텍스처 드로우 범위 -->
 					<atlasScale>4</atlasScale>
-					<!-- 얼굴 및 신체 바리에이션 -->
-					<headTypes>
-						<li>Female_AverageNormal</li>
-						<li>Female_AverageWide</li>
-						<li>Female_AveragePointy</li>
-						<li>Male_AverageNormal</li>
-						<li>Male_AverageWide</li>
-						<li>Male_AveragePointy</li>
+					<headTypes Inherit="False">
+						<li>RK_HeadType_Head1</li>
+						<li>RK_HeadType_Head2</li>
+						<li>RK_HeadType_Head3</li>
 					</headTypes>
 					<bodyTypes>
 						<li>Thin</li>
@@ -173,7 +169,7 @@
 					<bodyAddons>
 						<li>
 							<drawSize>1</drawSize>
-							<path>Body/RK_Tail</path>
+							<path>Thing/Ratkin/Body/RK_Texture_Tail</path>
 							<inFrontOfBody>false</inFrontOfBody>
 							<colorChannel>skin</colorChannel>
 							<defaultOffset>Tail</defaultOffset>
@@ -217,7 +213,7 @@
 						</li>
 						<li>
 							<drawSize>1</drawSize>
-							<path>Body/RK_EarLeft</path>
+							<path>Thing/Ratkin/Body/RK_Texture_EarLeft</path>
 							<inFrontOfBody>true</inFrontOfBody>
 							<colorChannel>skin</colorChannel>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
@@ -278,7 +274,7 @@
 						</li>
 						<li>
 							<drawSize>1</drawSize>
-							<path>Body/RK_EarRight</path>
+							<path>Thing/Ratkin/Body/RK_Texture_EarRight</path>
 							<inFrontOfBody>true</inFrontOfBody>
 							<colorChannel>skin</colorChannel>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
@@ -355,8 +351,8 @@
 				</growthAges>
 			</generalSettings>
 			<graphicPaths>
-				<body>Things/Ratkin/Bodies/</body>
-				<head>Things/Ratkin/Heads/</head>
+				<body>Thing/Ratkin/Body/Naked_Thin</body>
+				<head>Thing/Ratkin/Head/</head>
 			</graphicPaths>
 			<styleSettings>
 				<li>
