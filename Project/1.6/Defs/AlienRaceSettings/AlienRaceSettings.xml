@@ -18,62 +18,17 @@
 					</factionDefs>
 				</li>
 			</startingColonists>
-			<alienslavekinds>
-				<li>
-					<kindDefs>
-						<li>RatkinMercenary</li>
-						<li>RatkinMercenaryLight</li>
-					</kindDefs>
-					<chance>40.0</chance>
-				</li>
-			</alienslavekinds>
-			<alienrefugeekinds>
-				<li>
-					<kindDefs>
-						<li>RatkinSubject</li>
-					</kindDefs>
-					<chance>50.0</chance>
-				</li>
-			</alienrefugeekinds>
 			<alienwandererkinds>
+				<!-- 방랑자 합류 이벤트용. 합류를 희망하는것들 -->
+				<!-- 실향민, 농부, 살인자, 전쟁 고아, 범죄자, 개척자, 떠돌이, 사냥꾼, 종교맨, 몰락귀족, 탈영병 -->
 				<li>
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
+								<!-- TODO: 방랑자 합류를 위한 pawnKind 설정이 필요 -->
 								<li>RatkinServant</li>
 							</kindDefs>
-							<chance>40.0</chance>
-						</li>
-						<li>
-							<kindDefs>
-								<li>RatkinNoble</li>
-							</kindDefs>
-							<chance>30.0</chance>
-						</li>
-						<li>
-							<kindDefs>
-								<li>RatkinPriest</li>
-							</kindDefs>
-							<chance>5.0</chance>
-						</li>
-					</pawnKindEntries>
-					<factionDefs>
-						<li>Rakinia</li> 
-					</factionDefs>
-				</li>
-				<li>
-					<pawnKindEntries>
-						<li>
-							<kindDefs>
-								<li>RatkinServant</li>
-							</kindDefs>
-							<chance>40.0</chance>
-						</li>
-						<li>
-							<kindDefs>
-								<li>RatkinMerchant</li>
-							</kindDefs>
-							<chance>10.0</chance>
+							<chance>100</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
