@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ScenarioDef>
+	<ScenarioDef ParentName="ScenarioBase">
 		<defName>RK_Scenario</defName>
 		<label>ratkin colony</label>
 		<description>각자의 사연을 갖고 새로운 삶을 위해 나온 네 랫킨의 이야기입니다. 서로 다른 꿈을 꾸고 있지만 지금은 잠시 접어두기로 하였습니다.</description>
