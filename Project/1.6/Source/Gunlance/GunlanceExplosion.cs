@@ -96,7 +96,7 @@ namespace NewRatkin
 			}
 		}
 
-		public override void Tick()
+		protected override void Tick()
 		{
 			int ticksGame = Find.TickManager.TicksGame;
 			int num = this.cellsToAffect.Count - 1;
@@ -200,7 +200,7 @@ namespace NewRatkin
 				bool flag5 = Rand.Chance(num);
 				if (flag5)
 				{
-					FireUtility.TryStartFireIn(c, base.Map, Rand.Range(0.1f, 0.925f), instigator);
+					FireUtility.TryStartFireIn(c, base.Map, Rand.Range(0.1f, 0.925f), null, null);
 				}
 			}
 		}

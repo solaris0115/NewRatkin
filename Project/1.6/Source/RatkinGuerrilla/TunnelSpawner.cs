@@ -47,7 +47,7 @@ namespace NewRatkin
             CreateSustainer();
         }
 
-        public override void Tick()
+        protected override void Tick()
         {
             if (Spawned)
             {
@@ -156,7 +156,7 @@ namespace NewRatkin
             CreateSustainer();
         }
 
-        public override void Tick()
+        protected override void Tick()
         {
             if (Spawned)
             {

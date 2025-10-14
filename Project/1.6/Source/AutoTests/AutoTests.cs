@@ -23,14 +23,14 @@ namespace NewRatkin
 		private static void MakeColonyFull()
 		{
 			//간격
-			int count = (from def in DefDatabase<PawnKindDef>.AllDefs where def.defaultFactionType == RatkinFactionDefOf.Rakinia select def).Count();
+			int count = (from pawnKindDef in DefDatabase<PawnKindDef>.AllDefs where pawnKindDef.defaultFactionDef == RatkinFactionDefOf.Rakinia select pawnKindDef).Count();
 			int interval = Map.Size.x / ((int)Math.Sqrt(count) + 2);
 			int x = 10;
 			int y = 10;
 			overRect = new CellRect(Map.Size.x / 4, Map.Size.z / 4, Map.Size.x/2,Map.Size.z/2);
 			ClearArea(Map);
 			Pawn p = AutoTests_ColonyMaker.MakeRatkinColonists(new IntVec3(x, 0, y), RatkinPawnKindDefOf.RatkinColonist, Faction.OfPlayer);
-			foreach (PawnKindDef pawnKindDef in (from def in DefDatabase<PawnKindDef>.AllDefs where def.defaultFactionType == RatkinFactionDefOf.Rakinia select def) )
+			foreach (PawnKindDef pawnKindDef in (from def in DefDatabase<PawnKindDef>.AllDefs where def.defaultFactionDef == RatkinFactionDefOf.Rakinia select def) )
 			{
 				if (x >= Map.Size.x)
 				{;
@@ -53,7 +53,7 @@ namespace NewRatkin
 		private static void MakeColonyForEach()
 		{
 			//간격
-			int count = (from def in DefDatabase<PawnKindDef>.AllDefs where def.defaultFactionType == RatkinFactionDefOf.Rakinia select def).Count();
+			int count = (from def in DefDatabase<PawnKindDef>.AllDefs where def.defaultFactionDef == RatkinFactionDefOf.Rakinia select def).Count();
 			int interval = 2;//Map.Size.x / ((int)Math.Sqrt(count) + 2);
 			int x = 10;
 			int y = 10;
@@ -61,7 +61,7 @@ namespace NewRatkin
 			ClearArea(Map);
 			Pawn p = AutoTests_ColonyMaker.MakeRatkinColonists(new IntVec3(x, 0, y), RatkinPawnKindDefOf.RatkinColonist, Faction.OfPlayer);
 			x += interval;
-			foreach (PawnKindDef pawnKindDef in (from def in DefDatabase<PawnKindDef>.AllDefs where def.defaultFactionType == RatkinFactionDefOf.Rakinia select def))
+			foreach (PawnKindDef pawnKindDef in (from def in DefDatabase<PawnKindDef>.AllDefs where def.defaultFactionDef == RatkinFactionDefOf.Rakinia select def))
 			{
 				if (x >= 22)
 				{

@@ -29,7 +29,7 @@ namespace NewRatkin
                 DamageInfo dinfo = new DamageInfo(damageDef, amount, armorPenetration, y, launcher, null, equipmentDef, DamageInfo.SourceCategory.ThingOrUnknown, this.intendedTarget.Thing);
                 hitThing.TakeDamage(dinfo).AssociateWithLog(battleLogEntry_RangedImpact);
                 Pawn pawn = hitThing as Pawn;
-                if (pawn != null && pawn.stances != null && pawn.BodySize <= def.projectile.StoppingPower + 0.001f)
+                if (pawn != null && pawn.stances != null && pawn.BodySize <= def.projectile.stoppingPower + 0.001f)
                 {
                     pawn.stances.stagger.StaggerFor(95);
                 }
@@ -87,6 +87,8 @@ namespace NewRatkin
                 postExplosionSpawnChance,
                 postExplosionSpawnThingCount, 
                 null,
+                null,
+                255,
                 this.def.projectile.applyDamageToExplosionCellsNeighbors, 
                 preExplosionSpawnThingDef,
                 this.def.projectile.preExplosionSpawnChance,
@@ -123,7 +125,7 @@ namespace NewRatkin
         private static List<IntVec3> checkedCells = new List<IntVec3>();
         private static readonly List<Thing> cellThingsFiltered = new List<Thing>();
 
-        public override void Tick()
+        protected override void Tick()
         {
             if (AllComps != null)
             {
@@ -467,7 +469,7 @@ namespace NewRatkin
                 {
                     FilthMaker.TryMakeFilth(Position, map, ThingDefOf.Filth_Blood, 4);
                     RKSoundDefOf.Ballista_Impact.PlayOneShot(new TargetInfo(Position, map, false));
-                    if (pawn.stances != null && pawn.BodySize <= def.projectile.StoppingPower + 0.001f)
+                    if (pawn.stances != null && pawn.BodySize <= def.projectile.stoppingPower + 0.001f)
                     {
                         pawn.stances.stagger.StaggerFor(95);
                     }
@@ -534,6 +536,8 @@ namespace NewRatkin
                 postExplosionSpawnChance, 
                 postExplosionSpawnThingCount,
                 null,
+                null,
+                255,
                 this.def.projectile.applyDamageToExplosionCellsNeighbors,
                 preExplosionSpawnThingDef,
                 this.def.projectile.preExplosionSpawnChance, 

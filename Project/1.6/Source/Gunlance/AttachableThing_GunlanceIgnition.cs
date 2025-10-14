@@ -41,7 +41,7 @@ namespace NewRatkin
 				parentPawn = parent as Pawn;
 			}
 		}
-		public override void Tick()
+		protected override void Tick()
 		{
 			if(currentPower<1)
 			{
@@ -121,7 +121,7 @@ namespace NewRatkin
 				parentPawn = parent as Pawn;
 			}
 		}
-		public override void Tick()
+		protected override void Tick()
 		{
 			if (currentPower > 0)
 			{

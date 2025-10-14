@@ -127,7 +127,7 @@ namespace NewRatkin
             }
         }
 
-        public override void Tick()
+        protected override void Tick()
         {
             base.Tick();
             if (Spawned)
@@ -286,7 +286,7 @@ namespace NewRatkin
     {
         public static List<PawnKindDef> spawnablePawnKinds = new List<PawnKindDef>();
 
-        public override void Tick()
+        protected override void Tick()
         {
             if (Spawned && !Destroyed)
             {

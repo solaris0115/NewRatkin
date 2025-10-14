@@ -62,7 +62,7 @@ namespace NewRatkin
             spinPosition = Rand.Range(0f, 15f);
         }
 
-        public override void PostDeSpawn(Map map)
+        public override void PostDeSpawn(Map map, DestroyMode mode = DestroyMode.Vanish)
         {
             base.PostDeSpawn(map);
         }

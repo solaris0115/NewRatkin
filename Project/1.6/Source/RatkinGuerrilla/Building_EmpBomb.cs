@@ -10,7 +10,7 @@ namespace NewRatkin
 {
     public class MinifiedThing_Custom: MinifiedThing
     {
-        public override void Tick()
+        protected override void Tick()
         {
             if (InnerThing == null)
             {
@@ -20,7 +20,7 @@ namespace NewRatkin
             base.Tick();
             if (InnerThing is Building_EmpBomb)
             {
-                InnerThing.Tick();
+                InnerThing.DoTick();
             }
         }
     }
@@ -74,7 +74,7 @@ namespace NewRatkin
             }
             ThrowText(parent.DrawPos + new Vector3(0, 0, 0.5f), parent.Map, remainingSecond.ToString(), Color.red);
         }
-        public override void PostDeSpawn(Map map)
+        public override void PostDeSpawn(Map map, DestroyMode mode = DestroyMode.Vanish)
         {
             base.PostDeSpawn(map);
             if (tempMote != null && !tempMote.Destroyed)

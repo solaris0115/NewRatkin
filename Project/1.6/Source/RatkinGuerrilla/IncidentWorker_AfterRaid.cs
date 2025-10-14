@@ -7,9 +7,9 @@ namespace NewRatkin
 {
     public class IncidentWorker_AfterRaid: IncidentWorker_Raid
     {
-        protected override bool FactionCanBeGroupSource(Faction f, Map map, bool desperate = false)
+        public override bool FactionCanBeGroupSource(Faction f, IncidentParms parms, bool desperate = false)
         {
-            return base.FactionCanBeGroupSource(f, map, desperate) && f.HostileTo(Faction.OfPlayer) && (desperate || (float)GenDate.DaysPassed >= f.def.earliestRaidDays);
+            return base.FactionCanBeGroupSource(f, parms, desperate) && f.HostileTo(Faction.OfPlayer) && (desperate || (float)GenDate.DaysPassed >= f.def.earliestRaidDays);
         }
 
         protected override bool TryExecuteWorker(IncidentParms parms)
@@ -35,7 +35,7 @@ namespace NewRatkin
             {
                 num = 999999f;
             }
-            return PawnGroupMakerUtility.TryGetRandomFactionForCombatPawnGroup(num, out parms.faction, (Faction f) => this.FactionCanBeGroupSource(f, map, false), true, true, true, true) || PawnGroupMakerUtility.TryGetRandomFactionForCombatPawnGroup(num, out parms.faction, (Faction f) => this.FactionCanBeGroupSource(f, map, true), true, true, true, true);
+            return PawnGroupMakerUtility.TryGetRandomFactionForCombatPawnGroup(num, out parms.faction, (Faction f) => this.FactionCanBeGroupSource(f, parms, false), true, true, true, true) || PawnGroupMakerUtility.TryGetRandomFactionForCombatPawnGroup(num, out parms.faction, (Faction f) => this.FactionCanBeGroupSource(f, parms, true), true, true, true, true);
         }
 
         protected override void ResolveRaidPoints(IncidentParms parms)

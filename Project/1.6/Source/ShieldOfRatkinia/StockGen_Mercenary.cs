@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Verse;
+using RimWorld.Planet;
 
 
 namespace NewRatkin
@@ -10,7 +11,7 @@ namespace NewRatkin
     {
         private bool respectPopulationIntent = false;
 
-        public override IEnumerable<Thing> GenerateThings(int forTile, Faction faction = null)
+        public override IEnumerable<Thing> GenerateThings(PlanetTile forTile, Faction faction = null)
         {
             if (this.respectPopulationIntent && Rand.Value > StorytellerUtilityPopulation.PopulationIntent)
             {
