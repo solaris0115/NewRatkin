@@ -1,0 +1,31 @@
+# Cursor 인덱싱에서 제외할 파일들
+
+# 워크플로우 추적 파일들
+# workflow/
+# WorkFlow/
+
+# 워크플로우 아카이브 폴더는 Cursor 인덱싱에서 제외
+WorkflowArchive/
+
+# Git 관련 파일들
+.git/
+
+# 빌드 결과물들
+Project/*/Source/bin/
+Project/*/Source/obj/
+Project/*/Source/.vs/
+
+# 1.5 폴더 전체 제외 (1.6으로 이전 예정)
+Project/1.5/
+
+# 임시 파일들
+*.tmp
+*.temp
+*~
+
+# 로그 파일들
+*.log
+
+# IDE 설정 파일들 (필요시 추가)
+.vscode/
+.idea/

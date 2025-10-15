@@ -214,4 +214,16 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+
+#############
+## Project Specific
+#############
+
+# Workflow documentation (작업 진행 문서)
+WorkFlow/
+
+# VSCode settings
+.vscode/
+
+# Cursor rules (except .cursor/rules/)
 *.mdc
