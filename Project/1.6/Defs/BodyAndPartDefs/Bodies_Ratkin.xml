@@ -1,8 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
 	<BodyDef>
-		<defName>Ratkin</defName>
+		<defName>RK_Body_Ratkin</defName>
 		<label>ratkin</label>
 		<corePart>
 			<def>Torso</def>
@@ -33,15 +32,6 @@
 					<coverage>0.025</coverage>
 					<height>Bottom</height>
 					<depth>Inside</depth>
-					<groups>
-						<li>Torso</li>
-					</groups>
-				</li>
-				<li>
-					<def>RK_RatTail</def>
-					<customLabel>tail</customLabel>
-					<coverage>0.05</coverage>
-					<height>Bottom</height>
 					<groups>
 						<li>Torso</li>
 					</groups>
@@ -137,6 +127,7 @@
 									<depth>Inside</depth>
 									<groups>
 										<li>UpperHead</li>
+										<li>Eyes</li>
 										<li>FullHead</li>
 									</groups>
 									<parts>
@@ -145,6 +136,7 @@
 											<coverage>0.8</coverage>
 											<groups>
 												<li>UpperHead</li>
+												<li>Eyes</li>
 												<li>FullHead</li>
 											</groups>
 										</li>
@@ -158,6 +150,12 @@
 										<li>FullHead</li>
 										<li>Eyes</li>
 									</groups>
+									<woundAnchorTag>LeftEye</woundAnchorTag>
+									<flipGraphic>true</flipGraphic>
+									<visibleHediffRots>
+										<li>South</li>
+										<li>West</li>
+									</visibleHediffRots>
 								</li>
 								<li>
 									<def>Eye</def>
@@ -167,11 +165,17 @@
 										<li>FullHead</li>
 										<li>Eyes</li>
 									</groups>
+									<woundAnchorTag>RightEye</woundAnchorTag>
+									<visibleHediffRots>
+										<li>South</li>
+										<li>East</li>
+									</visibleHediffRots>
 								</li>
 								<li>
 									<def>Ear</def>
 									<customLabel>left ear</customLabel>
 									<coverage>0.07</coverage>
+									<flipGraphic>true</flipGraphic>
 									<groups>
 										<li>UpperHead</li>
 										<li>FullHead</li>
@@ -191,7 +195,6 @@
 									<coverage>0.10</coverage>
 									<groups>
 										<li>FullHead</li>
-										<li>Teeth</li>
 									</groups>
 								</li>
 								<li>
@@ -200,7 +203,18 @@
 									<groups>
 										<li>Teeth</li>
 										<li>FullHead</li>
+										<li>Mouth</li>
 									</groups>
+									<parts>
+										<li>
+											<def>Tongue</def>
+											<coverage>0.001</coverage>
+											<depth>Inside</depth>
+											<groups>
+												<li>FullHead</li>
+											</groups>
+										</li>
+									</parts>
 								</li>
 							</parts>
 						</li>
@@ -210,6 +224,8 @@
 					<def>Shoulder</def>
 					<customLabel>left shoulder</customLabel>
 					<coverage>0.12</coverage>
+					<woundAnchorTag>LeftShoulder</woundAnchorTag>
+					<flipGraphic>true</flipGraphic>
 					<groups>
 						<li>Shoulders</li>
 					</groups>
@@ -220,6 +236,7 @@
 							<coverage>0.09</coverage>
 							<height>Top</height>
 							<depth>Inside</depth>
+							<flipGraphic>true</flipGraphic>
 							<groups>
 								<li>Torso</li>
 							</groups>
@@ -228,6 +245,7 @@
 							<def>Arm</def>
 							<customLabel>left arm</customLabel>
 							<coverage>0.77</coverage>
+							<flipGraphic>true</flipGraphic>
 							<groups>
 								<li>Arms</li>
 							</groups>
@@ -255,6 +273,7 @@
 									<customLabel>left hand</customLabel>
 									<coverage>0.14</coverage>
 									<height>Bottom</height>
+									<flipGraphic>true</flipGraphic>
 									<groups>
 										<li>Hands</li>
 									</groups>
@@ -284,6 +303,7 @@
 											<groups>
 												<li>Hands</li>
 												<li>LeftHand</li>
+												<li>MiddleFingers</li>
 											</groups>
 										</li>
 										<li>
@@ -314,6 +334,7 @@
 					<def>Shoulder</def>
 					<customLabel>right shoulder</customLabel>
 					<coverage>0.12</coverage>
+					<woundAnchorTag>RightShoulder</woundAnchorTag>
 					<groups>
 						<li>Shoulders</li>
 					</groups>
@@ -388,6 +409,7 @@
 											<groups>
 												<li>Hands</li>
 												<li>RightHand</li>
+												<li>MiddleFingers</li>
 											</groups>
 										</li>
 										<li>
@@ -423,6 +445,15 @@
 					</groups>
 				</li>
 				<li>
+					<def>RK_BodyPart_Tail</def>
+					<customLabel>tail</customLabel>
+					<coverage>0.05</coverage>
+					<height>Bottom</height>
+					<groups>
+						<li>Torso</li>
+					</groups>
+				</li>
+				<li>
 					<def>Leg</def>
 					<customLabel>left leg</customLabel>
 					<coverage>0.14</coverage>
@@ -430,6 +461,8 @@
 					<groups>
 						<li>Legs</li>
 					</groups>
+					<woundAnchorTag>LeftLeg</woundAnchorTag>
+					<flipGraphic>true</flipGraphic>
 					<parts>
 						<li>
 							<def>Femur</def>
@@ -453,6 +486,7 @@
 							<def>Foot</def>
 							<customLabel>left foot</customLabel>
 							<coverage>0.1</coverage>
+							<flipGraphic>true</flipGraphic>
 							<groups>
 								<li>Feet</li>
 							</groups>
@@ -509,6 +543,7 @@
 					<groups>
 						<li>Legs</li>
 					</groups>
+					<woundAnchorTag>RightLeg</woundAnchorTag>
 					<parts>
 						<li>
 							<def>Femur</def>
@@ -584,5 +619,14 @@
 		</corePart>
 	</BodyDef>
 
-
+	<BodyPartDef>
+		<defName>RK_BodyPart_Tail</defName>
+		<label>tail</label>
+		<hitPoints>15</hitPoints>
+		<frostbiteVulnerability>1</frostbiteVulnerability>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
 </Defs>

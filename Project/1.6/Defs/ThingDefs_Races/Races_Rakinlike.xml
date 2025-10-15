@@ -174,7 +174,7 @@
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<conditions>
 								<BodyPart>
-									<bodyPart>RK_RatTail</bodyPart>
+									<bodyPart>RK_BodyPart_Tail</bodyPart>
 									<bodyPartLabel>tail</bodyPartLabel>
 									<drawWithoutPart>false</drawWithoutPart>
 								</BodyPart>
