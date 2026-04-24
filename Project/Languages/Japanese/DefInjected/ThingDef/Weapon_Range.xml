@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Crossbow Stealth +10% -->
+
+  <RK_Crossbow.label>RK クロスボウ</RK_Crossbow.label>
+  <RK_Crossbow.description>簡単な石弓です.狩りをするとき使われます.</RK_Crossbow.description>
+  <RK_Crossbow.tools.limb.label>持手</RK_Crossbow.tools.limb.label>
+  <RK_Crossbow.tools.arrow.label>矢</RK_Crossbow.tools.arrow.label>
+  <RK_Crossbow.verbs.Verb_Shoot.label>クロスボウボルト</RK_Crossbow.verbs.Verb_Shoot.label>
+
+  <Bolt_RK_Crossbow.label>クロスボウボルト</Bolt_RK_Crossbow.label>
+
+
+  <!-- Auto CrossBow -->
+
+  <RK_AutoCrossBow.label>RK 機械クロスボウ</RK_AutoCrossBow.label>
+  <RK_AutoCrossBow.description>機械式で発射される半自動石弓です.円形弾倉から急速にボルトを発射することができます.</RK_AutoCrossBow.description>
+  <RK_AutoCrossBow.tools.limb.label>持手</RK_AutoCrossBow.tools.limb.label>
+  <RK_AutoCrossBow.tools.arrow.label>矢</RK_AutoCrossBow.tools.arrow.label>
+  <RK_AutoCrossBow.verbs.Verb_Shoot.label>機械式クロスボウボルト</RK_AutoCrossBow.verbs.Verb_Shoot.label>
+
+  <Bolt_RK_AutoCrossBow.label>クロスボウボルト</Bolt_RK_AutoCrossBow.label>
+
+
+  <!-- Ratkin Arbalest -->
+
+  <RK_Weapon_Arbalest.label>RK アーバレスト</RK_Weapon_Arbalest.label>
+  <RK_Weapon_Arbalest.description>大型の石弓です.引くのに大きな力が必要ですが強力な破壊力があります.</RK_Weapon_Arbalest.description>
+  <RK_Weapon_Arbalest.tools.limb.label>持手</RK_Weapon_Arbalest.tools.limb.label>
+  <RK_Weapon_Arbalest.tools.arrow.label>矢</RK_Weapon_Arbalest.tools.arrow.label>
+  <RK_Weapon_Arbalest.verbs.Verb_Shoot.label>大型クロスボウ</RK_Weapon_Arbalest.verbs.Verb_Shoot.label>
+
+  <RK_AutoCrossBow.verbs.Verb_Shoot.label>アーバレストボルト</RK_AutoCrossBow.verbs.Verb_Shoot.label>
+
+  <RK_Projectile_Arbalest.label>アーバレストボルト</RK_Projectile_Arbalest.label>
+
+
+  <!-- Rifle -->
+
+  <RK_Rifle.label>RK ラットキンライフル</RK_Rifle.label>
+  <RK_Rifle.description>人間のライフルを真似て作ったライフルです.石弓より射程距離が長く,小さな剣つけておいて,有事の際のウィンドウのように使用することができます.</RK_Rifle.description>
+  <RK_Rifle.tools.stock.label>ストック</RK_Rifle.tools.stock.label>
+  <RK_Rifle.tools.bayonet.label>バヨネット</RK_Rifle.tools.bayonet.label>
+  <RK_Rifle.tools.flechette.label>フレシェット</RK_Rifle.tools.flechette.label>
+  <RK_Rifle.verbs.Verb_Shoot.label>ライフル弾</RK_Rifle.verbs.Verb_Shoot.label>
+
+  <Bullet_RK_Rifle.label>ライフル弾</Bullet_RK_Rifle.label>
+
+
+  <!-- Sniper Rifle -->
+
+  <RK_SniperRifle.label>RK ラットキンスナイパーライフル</RK_SniperRifle.label>
+  <RK_SniperRifle.description>ラットキンシク望遠レンズが付いたライフルです.望遠装置のおかげで,より遠くまで向けることができるが近くを向けるいたしかねます.</RK_SniperRifle.description>
+  <RK_SniperRifle.tools.stock.label>ストック</RK_SniperRifle.tools.stock.label>
+  <RK_SniperRifle.tools.bayonet.label>バヨネット</RK_SniperRifle.tools.bayonet.label>
+  <RK_SniperRifle.tools.flechette.label>フレシェット</RK_SniperRifle.tools.flechette.label>
+  <RK_SniperRifle.verbs.Verb_Shoot.label>ライフル弾</RK_SniperRifle.verbs.Verb_Shoot.label>
+
+  <Bullet_RK_SniperRifle.label>ライフル弾</Bullet_RK_SniperRifle.label>
+
+
+  <!-- Sword off: HE Tan Replication Bullet_RK_Weapon_SawedOff_HE (for value customization) -->
+
+  <RK_Weapon_SawedOff.label>RK ソードオフショットガン</RK_Weapon_SawedOff.label>
+  <RK_Weapon_SawedOff.description>ソードオフショットガンです.ラットキン王国ではショットガンでラットキンを撃ちます.</RK_Weapon_SawedOff.description>
+  <RK_Weapon_SawedOff.tools.stock.label>ストック</RK_Weapon_SawedOff.tools.stock.label>
+  <RK_Weapon_SawedOff.tools.barrel.label>バレル</RK_Weapon_SawedOff.tools.barrel.label>
+  <RK_Weapon_SawedOff.verbs.Verb_Shoot.label>散弾</RK_Weapon_SawedOff.verbs.Verb_Shoot.label>
+
+  <RK_Bullet_SawedOff.label>散弾</RK_Bullet_SawedOff.label>
+
+
+  <!-- 3티어 -->
+
+  <RK_Weapon_Bolter.label>RK ボルター</RK_Weapon_Bolter.label>
+  <RK_Weapon_Bolter.description>実験用の波動ライフルです.実験用ラットキンのために製作され,特殊望遠レンズが近距離・遠距離ともに精密に照準を合わせます.ラットキン用フレシェット弾からアイデアを得て製作されたこの武器は,叩きダメージタイプの高貫通エネルギー弾を高速で発射します.</RK_Weapon_Bolter.description>
+  <RK_Weapon_Bolter.verbs.Verb_Shoot.label>ボルター弾</RK_Weapon_Bolter.verbs.Verb_Shoot.label>
+  <RK_Weapon_Bolter.tools.grip.label>グリップ</RK_Weapon_Bolter.tools.grip.label>
+  <RK_Weapon_Bolter.tools.barrel.label>バレル</RK_Weapon_Bolter.tools.barrel.label>
+
+  <RK_Bullet_Bolter.label>ボルター弾</RK_Bullet_Bolter.label>
+
+
+  <!-- for the Ratkin Experimental gun 2rounds -->
+
+  <RK_PrototypePulseRifle.label>RK 試作型パルスライフル</RK_PrototypePulseRifle.label>
+  <RK_PrototypePulseRifle.description>試作型のパルスライフルです.ラットキンのために実験的に製作され,特殊望遠レンズが近距離遠距離すべて精密に照準ます.ラットキンシクプレイポシェット弾丸でアイデアを得製作したこの武器はウェッジ形の高貫通エネルギー弾を高速発射します.</RK_PrototypePulseRifle.description>
+  <RK_PrototypePulseRifle.verbs.Rapid_Fire.label>連射</RK_PrototypePulseRifle.verbs.Rapid_Fire.label>
+  <RK_PrototypePulseRifle.tools.stock.label>ストック</RK_PrototypePulseRifle.tools.stock.label>
+  <RK_PrototypePulseRifle.tools.barrel.label>バレル</RK_PrototypePulseRifle.tools.barrel.label>
+
+  <Bullet_RK_PrototypePulseRifleLight.label>パルス弾</Bullet_RK_PrototypePulseRifleLight.label>
+  <Bullet_RK_PrototypePulseRifleHeavy.label>パルス弾</Bullet_RK_PrototypePulseRifleHeavy.label>
+
+
+  <!-- BFR 3000 -->
+
+  <RK_Weapon_BFR.label>RK 大型制圧ライフル3000</RK_Weapon_BFR.label>
+  <RK_Weapon_BFR.description>大型制圧ライフル3000型です.</RK_Weapon_BFR.description>
+  <RK_Weapon_BFR.verbs.AP_fire.label>パルス弾(徹甲)</RK_Weapon_BFR.verbs.AP_fire.label>
+  <RK_Weapon_BFR.tools.stock.label>ストック</RK_Weapon_BFR.tools.stock.label>
+  <RK_Weapon_BFR.tools.barrel.label>バレル</RK_Weapon_BFR.tools.barrel.label>
+
+  <Bullet_BFR_HE.label>パルス弾(通常)</Bullet_BFR_HE.label>
+  <Bullet_BFR_AP.label>パルス弾(徹甲)</Bullet_BFR_AP.label>
+
+
+  <!-- What is a jerk?(RatHolic Gun) -->
+
+  <RK_Weapon_RatHolicGun.label>ラットホリックガン</RK_Weapon_RatHolicGun.label>
+  <RK_Weapon_RatHolicGun.description>トリガーハッピーのラットキン向けガトリングガン(多銃身機関銃)です.扱いにくいですが,一度発射すれば非常に速い連射速度です.ほとんどの自動装填式機関銃は火薬や発射ガスの力で駆動しますが,このカドリングガンは電動モーターで専用弾を高速で装填します.</RK_Weapon_RatHolicGun.description>
+  <RK_Weapon_RatHolicGun.tools.barrels.label>バレル</RK_Weapon_RatHolicGun.tools.barrels.label>
+  <RK_Weapon_RatHolicGun.verbs.Verb_RatHolicGun.label>ラットホリックガン</RK_Weapon_RatHolicGun.verbs.Verb_RatHolicGun.label>
+
+  <RK_Bullet_RatHolicGun.label>ラットホリックガン弾</RK_Bullet_RatHolicGun.label>
+
+
+</LanguageData>

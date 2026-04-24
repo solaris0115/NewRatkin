@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- santa coat -->
+
+  <RK_SantaRobe.label>RK サンタ衣装</RK_SantaRobe.label>
+  <RK_SantaRobe.description>サンタが着ているコートです.</RK_SantaRobe.description>
+
+
+  <!-- santa hat cold resistance +5 -->
+
+  <RK_SantaHat.label>RK サンタ帽</RK_SantaHat.label>
+  <RK_SantaHat.description>毛の装飾が先端に付いているサンタの帽子です.</RK_SantaHat.description>
+
+
+  <!-- santa bag +50 durability +20 -->
+
+  <RK_SantaSack.label>RK サンタ袋</RK_SantaSack.label>
+  <RK_SantaSack.description>プレゼントを沢山入れることができる大きな袋です.</RK_SantaSack.description>
+
+
+  <!-- white coat -->
+
+  <RK_WhiteCoat.label>RK ホワイトコート</RK_WhiteCoat.label>
+  <RK_WhiteCoat.description>厚手の純白なコートです.上質な素材で丁寧に仕上げました.まるで高級官僚のようです.</RK_WhiteCoat.description>
+
+
+  <!-- thieves bag +50 durability +20 -->
+
+  <RK_Sack.label>RK 風呂敷</RK_Sack.label>
+  <RK_Sack.description>大きな荷物などを風呂敷で包んで楽に運ぶことができる背負いバッグです.沢山のものを運ぶことができるので,泥棒が愛用しています.</RK_Sack.description>
+
+
+</LanguageData>

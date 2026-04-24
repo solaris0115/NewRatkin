@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- sheet metal armor high sharpness, dull defense, slowdown -->
+
+  <RK_Plate.label>RK プレートアーマー</RK_Plate.label>
+  <RK_Plate.description>金属で作られた防具です.重ね着することが可能で,防御力をさらに向上できます.</RK_Plate.description>
+
+
+  <!-- Sheet Metal Pitcher Common Base (Override in Texture Only Inheritance) -->
+
+  <RK_PlateHelmA.label>RK プレートヘルム</RK_PlateHelmA.label>
+  <RK_PlateHelmA.description>金属で作られたヘルメットです.</RK_PlateHelmA.description>
+
+  <RK_PlateHelmB.label>RK プレートヘルム(開)</RK_PlateHelmB.label>
+  <RK_PlateHelmB.description>バイザーが開いた金属で作られたヘルメットです.</RK_PlateHelmB.description>
+
+  <RK_PlateHelmC.label>RK グレートヘルム</RK_PlateHelmC.label>
+  <RK_PlateHelmC.description>バイザーの無い金属で作られたヘルメットです.</RK_PlateHelmC.description>
+
+
+</LanguageData>

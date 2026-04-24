@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Royal Robe -->
+
+  <RK_RoyalRobe.label>RK ロイヤルローブ</RK_RoyalRobe.label>
+  <RK_RoyalRobe.description>古風な貴族のためのコートです.生地を何度も重ねることで丈夫で防風性が良くなっています.</RK_RoyalRobe.description>
+
+
+  <!-- Royal Crown -->
+
+  <RK_RoyalCrown.label>RK ロイヤルクラウン</RK_RoyalCrown.label>
+  <RK_RoyalCrown.description>金属製の王冠です.</RK_RoyalCrown.description>
+
+
+</LanguageData>

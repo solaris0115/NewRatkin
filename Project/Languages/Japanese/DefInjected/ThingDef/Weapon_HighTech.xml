@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Gunlance Normal Type -->
+
+  <RK_Weapon_Gunlance.label>RK ガンランス(通常型)</RK_Weapon_Gunlance.label>
+  <RK_Weapon_Gunlance.description>砲撃が可能な重量のある機械式ランスです.砲撃時,前方へ火炎放射します.\n専用の弾丸を利用して竜撃砲を撃つことができます.一度竜撃砲を使用すると砲撃を停止できないので,使用者は姿勢を固定するしかありません.\n\n通常型:短い射程距離で砲撃を行います.</RK_Weapon_Gunlance.description>
+  <RK_Weapon_Gunlance.tools.point.label>先</RK_Weapon_Gunlance.tools.point.label>
+  <RK_Weapon_Gunlance.tools.edge.label>刃</RK_Weapon_Gunlance.tools.edge.label>
+
+  <RK_Ammo_WyvernFire.label>竜撃弾</RK_Ammo_WyvernFire.label>
+  <RK_Ammo_WyvernFire.description>高性能火薬が詰められた砲弾です.迫撃砲から発砲したり,トラップとして設置するのも可能です.ダメージを受けると爆発します.</RK_Ammo_WyvernFire.description>
+
+  <RK_Weapon_Gunlance.comps.CompEquippableAbilityReloadable.chargeNoun>竜撃弾を再装填</RK_Weapon_Gunlance.comps.CompEquippableAbilityReloadable.chargeNoun>
+  <RK_Weapon_Gunlance.comps.CompEquippableAbilityReloadable.cooldownGerund>冷却中</RK_Weapon_Gunlance.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+  <GunlancePreIgnition.label>竜撃砲</GunlancePreIgnition.label>
+  <GunlanceAfterIgnition.label>竜撃砲</GunlanceAfterIgnition.label>
+
+
+  <!-- Chainsword -->
+
+  <RK_Weapon_ProtoChainSword.label>チェーンソード</RK_Weapon_ProtoChainSword.label>
+  <RK_Weapon_ProtoChainSword.description>チェーンソードはチェーンを使って攻撃する武器です.敵を半分に割ります.</RK_Weapon_ProtoChainSword.description>
+  <RK_Weapon_ProtoChainSword.tools.edge.label>刃</RK_Weapon_ProtoChainSword.tools.edge.label>
+
+  <RK_Weapon_ProtoFlameChainSword.label>フレイムチェーンソード</RK_Weapon_ProtoFlameChainSword.label>
+  <RK_Weapon_ProtoFlameChainSword.description>チェーンソードはチェーンを使って攻撃する武器です.敵を半分に割ります.</RK_Weapon_ProtoFlameChainSword.description>
+  <RK_Weapon_ProtoFlameChainSword.tools.edge.label>刃</RK_Weapon_ProtoFlameChainSword.tools.edge.label>
+
+
+</LanguageData>
