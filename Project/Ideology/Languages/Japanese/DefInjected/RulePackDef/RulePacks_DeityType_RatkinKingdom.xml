@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- New Type Generator: Ratkin Kingdom Culture -->
+  <!-- New type of chivalry/feudalism -->
+
+  <DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings>
+    <!-- Add new types related to chivalry -->
+    <li>god(p=3)->名誉の神</li>
+    <li>god(p=3, gender==Female)->名誉の女神</li>
+    <li>god(p=2)->騎士道の神</li>
+    <li>god(p=2, gender==Female)->騎士道の女神</li>
+    <li>god(p=2)->勇気の神</li>
+    <li>god(p=2, gender==Female)->勇気の女神</li>
+    <li>god(p=1)->高潔さの神</li>
+    <li>god(p=1, gender==Female)->高潔さの女神</li>
+  </DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings>
+
+
+</LanguageData>

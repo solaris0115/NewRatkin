@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Festival Name Generator: Ratkin Kingdom Culture -->
+  <!-- Feudalism/Chivalry-themed festival names -->
+
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings>
+    <!-- Feudalism / Chivalry Related Festival Names -->
+    <li>festivalName(p=3)->[chivalryFestival]</li>
+    <li>festivalName(p=2)->[royalFestival]</li>
+    <li>festivalName(p=1)->[knightFestival]</li>
+
+    <!-- Chivalry Festival -->
+    <li>chivalryFestival->騎士道祭</li>
+    <li>chivalryFestival->騎士道の祭典</li>
+    <li>chivalryFestival->栄誉祭</li>
+    <li>chivalryFestival->勇気の記念祭</li>
+
+    <!-- Royal Festival -->
+    <li>royalFestival->王家の祭</li>
+    <li>royalFestival->王座の祭典</li>
+    <li>royalFestival->貴族の祭典</li>
+    <li>royalFestival->宮廷の集い</li>
+
+    <!-- Knight's Festival -->
+    <li>knightFestival->騎士の競技会</li>
+    <li>knightFestival->騎士祭</li>
+    <li>knightFestival->騎士競技大会</li>
+    <li>knightFestival->馬上槍試合</li>
+  </NamerFestival_RatkinKingdom.rulePack.rulesStrings>
+
+
+</LanguageData>

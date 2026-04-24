@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- God Name Generator: Ratkin Kingdom Culture -->
+  <!-- a chivalry/feudalism-themed god's name -->
+  <NamerDeity_RatkinKingdom.rulePack.rulesStrings>
+    <li>name->[syl][end]</li>
+    <li>name->[syl][syl][end]</li>
+    <li>name->[syl]-[syl][end]</li>
+
+    <!-- beginning syllable -->
+    <li>syl->[SylG]</li>
+    <li>syl->ホン</li>
+    <li>syl->ヴァルl</li>
+    <li>syl->ロイ</li>
+    <li>syl->ナイト</li>
+    <li>syl->ロード</li>
+    <li>syl->ノーブ</li>
+    <li>syl->コー</li>
+    <li>syl->シヴ</li>
+
+    <!-- last syllable -->
+    <li>end->ァル</li>
+    <li>end->ァー</li>
+    <li>end->ァス</li>
+    <li>end->ィウス</li>
+    <li>end->ォン</li>
+    <li>end->ォア</li>
+    <li>end->ァン</li>
+    <li>end->ェン</li>
+    <li>end->ィン</li>
+  </NamerDeity_RatkinKingdom.rulePack.rulesStrings>
+
+
+</LanguageData>
