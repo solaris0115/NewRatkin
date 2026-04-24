@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RK_PawnKind_Pilgrim.label>순례자</RK_PawnKind_Pilgrim.label>
+  <RK_PawnKind_Priest.label>교단 순례자</RK_PawnKind_Priest.label>
+  <RK_PawnKind_NoblePilgrim.label>귀족 순례자</RK_PawnKind_NoblePilgrim.label>
+  <RatkinColonist.label>정착민</RatkinColonist.label>
+  <RatkinColonist.modExtensions.0.conditions.0.desc.0>이 정도 재산이 있으면 새 출발을 할 수 있을 것 같아.</RatkinColonist.modExtensions.0.conditions.0.desc.0>
+  <RatkinColonist.modExtensions.0.conditions.0.desc.1>가난한 삶은 이제 싫어.</RatkinColonist.modExtensions.0.conditions.0.desc.1>
+  <RatkinColonist.modExtensions.0.conditions.1.desc.0>반가워요!</RatkinColonist.modExtensions.0.conditions.1.desc.0>
+  <RatkinColonist.modExtensions.0.conditions.1.desc.1>잘 부탁해요!</RatkinColonist.modExtensions.0.conditions.1.desc.1>
+  <RatkinNoble.label>귀족</RatkinNoble.label>
+  <RatkinServant.label>하인</RatkinServant.label>
+  <RatkinServant.modExtensions.0.conditions.0.desc.0>조금 큰 마을에서 살고 싶어. 떠돌이 생활은 너무 힘들어.</RatkinServant.modExtensions.0.conditions.0.desc.0>
+  <RatkinServant.modExtensions.0.conditions.0.desc.1>안정적인 마을에서 살고 싶어. 작은 마을은 너무 힘들어.</RatkinServant.modExtensions.0.conditions.0.desc.1>
+  <RatkinServant.modExtensions.0.conditions.1.desc.0>반가워요!</RatkinServant.modExtensions.0.conditions.1.desc.0>
+  <RatkinServant.modExtensions.0.conditions.1.desc.1>잘 부탁해요!</RatkinServant.modExtensions.0.conditions.1.desc.1>
+  <RatkinServant.modExtensions.0.conditions.2.desc.0>높으신 분들 비위 맞추는 삶은 이제 질렸어.</RatkinServant.modExtensions.0.conditions.2.desc.0>
+  <RatkinServant.modExtensions.0.conditions.2.desc.1>귀족들은 더 이상 상대하고 싶지 않아요.</RatkinServant.modExtensions.0.conditions.2.desc.1>
+  <RatkinServant.modExtensions.0.conditions.3.desc.0>높으신 분들 비위 맞추는 삶은 이제 질렸어.</RatkinServant.modExtensions.0.conditions.3.desc.0>
+  <RatkinServant.modExtensions.0.conditions.3.desc.1>섬길 사람은 내가 정해요.</RatkinServant.modExtensions.0.conditions.3.desc.1>
+  <RatkinPriest.label>사제</RatkinPriest.label>
+  <RatkinPriest.modExtensions.0.conditions.0.desc.0>도움의 손길이 필요한가요?</RatkinPriest.modExtensions.0.conditions.0.desc.0>
+  <RatkinPriest.modExtensions.0.conditions.0.desc.1>믿음이 있다면 역경을 이겨낼 수 있어요!</RatkinPriest.modExtensions.0.conditions.0.desc.1>
+  <RatkinPriest.modExtensions.0.conditions.1.desc.0>구호 물자가 충분히 있으면 좋겠어요.</RatkinPriest.modExtensions.0.conditions.1.desc.0>
+  <RatkinPriest.modExtensions.0.conditions.1.desc.1>약품이라도 많다면 훨씬 많은 분들을 도울 수 있을 텐데…</RatkinPriest.modExtensions.0.conditions.1.desc.1>
+  <RatkinPriest.modExtensions.0.conditions.2.desc.0>반가워요!</RatkinPriest.modExtensions.0.conditions.2.desc.0>
+  <RatkinPriest.modExtensions.0.conditions.2.desc.1>잘 부탁해요!</RatkinPriest.modExtensions.0.conditions.2.desc.1>
+  <RatkinMerchant.label>상인</RatkinMerchant.label>
+  <RatkinCombatant.label>전투원</RatkinCombatant.label>
+  <RatkinVanguard.label>선봉대</RatkinVanguard.label>
+  <RatkinDefender.label>방패병</RatkinDefender.label>
+  <RatkinSoldier.label>군인</RatkinSoldier.label>
+  <RatkinEliteGuardener.label>정예 정원사</RatkinEliteGuardener.label>
+  <RatkinEliteGuardener.modExtensions.0.conditions.0.desc.0>조금 큰 마을에서 살고 싶어. 떠돌이 생활은 너무 힘들어.</RatkinEliteGuardener.modExtensions.0.conditions.0.desc.0>
+  <RatkinEliteGuardener.modExtensions.0.conditions.0.desc.1>안정적인 마을에서 살고 싶어. 작은 마을은 너무 힘들어.</RatkinEliteGuardener.modExtensions.0.conditions.0.desc.1>
+  <RatkinEliteGuardener.modExtensions.0.conditions.1.desc.0>반가워요!</RatkinEliteGuardener.modExtensions.0.conditions.1.desc.0>
+  <RatkinEliteGuardener.modExtensions.0.conditions.1.desc.1>잘 부탁해요!</RatkinEliteGuardener.modExtensions.0.conditions.1.desc.1>
+  <RatkinKnight.label>기사</RatkinKnight.label>
+  <RatkinEliteDefender.label>정예 방패병</RatkinEliteDefender.label>
+  <RatkinKnightCommander.label>기사단장</RatkinKnightCommander.label>
+  <RK_PawnKind_StandardBearer.label>기수</RK_PawnKind_StandardBearer.label>
+  <RatkinEliteSoldier.label>특수 부대원</RatkinEliteSoldier.label>
+  <RatkinDemonMan.label>폭탄마</RatkinDemonMan.label>
+  <RatkinPettyThief.label>좀도둑</RatkinPettyThief.label>
+  <RatkinMurderer.label>살인마</RatkinMurderer.label>
+  <RatkinVagabond.label>방랑자</RatkinVagabond.label>
+  <RatkinMercenaryLight.label>랫킨 용병</RatkinMercenaryLight.label>
+  <RatkinMercenary.label>용병</RatkinMercenary.label>
+  <Ratkin_KingHamster.label>햄스트록스</Ratkin_KingHamster.label>
+  <Ratkin_KingHamster.lifeStages.0.label>새끼 햄스트록스</Ratkin_KingHamster.lifeStages.0.label>
+  <Ratkin_KingHamster.lifeStages.0.labelPlural>새끼 햄스트록스들</Ratkin_KingHamster.lifeStages.0.labelPlural>
+  <RK_PawnKind_Nomad.label>유랑민</RK_PawnKind_Nomad.label>
+  <RK_PawnKind_Nomad.modExtensions.0.conditions.0.desc.0>조금 큰 마을에서 살고 싶어. 떠돌이 생활은 너무 힘들어.</RK_PawnKind_Nomad.modExtensions.0.conditions.0.desc.0>
+  <RK_PawnKind_Nomad.modExtensions.0.conditions.0.desc.1>안정적인 마을에서 살고 싶어. 작은 마을은 너무 힘들어.</RK_PawnKind_Nomad.modExtensions.0.conditions.0.desc.1>
+  <RK_PawnKind_Nomad.modExtensions.0.conditions.1.desc.0>반가워요!</RK_PawnKind_Nomad.modExtensions.0.conditions.1.desc.0>
+  <RK_PawnKind_Nomad.modExtensions.0.conditions.1.desc.1>잘 부탁해요!</RK_PawnKind_Nomad.modExtensions.0.conditions.1.desc.1>
+  <RK_PawnKind_Nomad.modExtensions.0.conditions.2.desc.0>길 위의 삶도 좋지만, 한동안 머무는 것도 좋아.</RK_PawnKind_Nomad.modExtensions.0.conditions.2.desc.0>
+  <RK_PawnKind_Nomad.modExtensions.0.conditions.2.desc.1>떠돌이라도 취향은 있어. 내가 쓸 만한 물건쯤은 있어야지.</RK_PawnKind_Nomad.modExtensions.0.conditions.2.desc.1>
+  <RK_PawnKind_Wanderer.label>방랑객</RK_PawnKind_Wanderer.label>
+  <RK_PawnKind_Wanderer.modExtensions.0.conditions.0.desc.0>나보다 강한 자의 명령만을 듣는다.</RK_PawnKind_Wanderer.modExtensions.0.conditions.0.desc.0>
+  <RK_PawnKind_Wanderer.modExtensions.0.conditions.0.desc.1>강자를 찾고 있다. 이곳에 싸움 좀 하는 놈이 있나?</RK_PawnKind_Wanderer.modExtensions.0.conditions.0.desc.1>
+  <RK_PawnKind_Wanderer.modExtensions.0.conditions.1.desc.0>몸 정도는 지킬 힘을 얻고 싶어.</RK_PawnKind_Wanderer.modExtensions.0.conditions.1.desc.0>
+  <RK_PawnKind_Wanderer.modExtensions.0.conditions.1.desc.1>싸우든 만들든, 하나쯤은 제대로 아는 놈이 있는 곳이어야 해.</RK_PawnKind_Wanderer.modExtensions.0.conditions.1.desc.1>
+  <RK_PawnKind_Wanderer.modExtensions.0.conditions.2.desc.0>길 위의 삶도 좋지만, 한동안 머무는 것도 좋아.</RK_PawnKind_Wanderer.modExtensions.0.conditions.2.desc.0>
+  <RK_PawnKind_Wanderer.modExtensions.0.conditions.2.desc.1>떠돌이라도 취향은 있어. 내가 쓸 만한 물건쯤은 있어야지.</RK_PawnKind_Wanderer.modExtensions.0.conditions.2.desc.1>
+  <RK_PawnKind_CaravanLeader.label>상단 리더</RK_PawnKind_CaravanLeader.label>
+  <RK_PawnKind_CaravanGuard.label>호위 용병</RK_PawnKind_CaravanGuard.label>
+</LanguageData>

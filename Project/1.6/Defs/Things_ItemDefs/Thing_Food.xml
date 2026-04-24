@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="MealBase">
+        <defName>RK_Food_Hardtack</defName>
+        <label>hardtack</label>
+        <description>A hardtack is a type of food that is made from flour and water. It is a long-lasting food that can be stored for a long time. It is a good food for traveling.</description>
+        <graphicData>
+            <texPath>Things/Food/RK_TextureFood_Hardtack</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <DeteriorationRate>0.5</DeteriorationRate>
+            <MarketValue>4</MarketValue>
+            <Mass>0.15</Mass>
+            <WorkToMake>450</WorkToMake>
+            <Nutrition>0.6</Nutrition>
+        </statBases>
+        <stackLimit>75</stackLimit>
+        <ingestible>
+            <preferability>MealSimple</preferability>
+            <optimalityOffsetHumanlikes>5</optimalityOffsetHumanlikes>
+            <optimalityOffsetFeedingAnimals>-100</optimalityOffsetFeedingAnimals>
+            <ingestEffect>EatVegetarian</ingestEffect>
+            <ingestSound>Meal_Eat</ingestSound>
+            <chairSearchRadius>0</chairSearchRadius>
+            <tableDesired>false</tableDesired>
+            <canAutoSelectAsFoodForCaravan>true</canAutoSelectAsFoodForCaravan>
+        </ingestible>
+        <allowedArchonexusCount>40</allowedArchonexusCount>
+        <smallVolume>true</smallVolume>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>120</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+            <li Class="CompProperties_Ingredients">
+                <noIngredientsFoodKind>NonMeat</noIngredientsFoodKind>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!-- Make Hardtack Recipe -->
+    <RecipeDef>
+        <defName>RK_Recipe_Hardtack</defName>
+        <label>make hardtack</label>
+        <description>Make hardtack from corn and plant ingredients. A long-lasting food that can be stored for a long time. It is a good food for traveling.</description>
+        <jobString>Making hardtack.</jobString>
+        <workAmount>450</workAmount>
+        <workSpeedStat>CookSpeed</workSpeedStat>
+        <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_CookMeal</soundWorking>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+        <researchPrerequisites>
+            <li>RK_Research_FoodPreservation</li>
+        </researchPrerequisites>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>PlantFoodRaw</li>
+                    </categories>
+                </filter>
+                <count>0.6</count>
+            </li>
+        </ingredients>
+        <products>
+            <RK_Food_Hardtack>1</RK_Food_Hardtack>
+        </products>
+        <fixedIngredientFilter>
+            <categories>
+                <li>PlantFoodRaw</li>
+            </categories>
+            <disallowedCategories>
+                <li>AnimalProductRaw</li>
+                <li>MeatRaw</li>
+            </disallowedCategories>
+            <disallowedThingDefs>
+                <li>Meat_Human</li>
+                <li>Meat_Megaspider</li>
+                <li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
+            </disallowedThingDefs>
+        </fixedIngredientFilter>
+        <defaultIngredientFilter>
+            <categories>
+                <li>PlantFoodRaw</li>
+            </categories>
+        </defaultIngredientFilter>
+        <workSkill>Cooking</workSkill>
+        <displayPriority>420</displayPriority>
+    </RecipeDef>
+
+    <!-- Make Hardtack Bulk Recipe -->
+    <RecipeDef>
+        <defName>RK_Recipe_HardtackBulk</defName>
+        <label>make hardtack x4</label>
+        <description>Make bulk hardtack from corn and plant ingredients. A long-lasting food that can be stored for a long time. It is a good food for traveling.</description>
+        <jobString>Making bulk hardtack.</jobString>
+        <workAmount>1800</workAmount>
+        <workSpeedStat>CookSpeed</workSpeedStat>
+        <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_CookMeal</soundWorking>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+        <researchPrerequisites>
+            <li>RK_Research_FoodPreservation</li>
+        </researchPrerequisites>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>PlantFoodRaw</li>
+                    </categories>
+                </filter>
+                <count>2.4</count>
+            </li>
+        </ingredients>
+        <products>
+            <RK_Food_Hardtack>8</RK_Food_Hardtack>
+        </products>
+        <fixedIngredientFilter>
+            <categories>
+                <li>PlantFoodRaw</li>
+            </categories>
+            <disallowedCategories>
+                <li>AnimalProductRaw</li>
+                <li>MeatRaw</li>
+            </disallowedCategories>
+            <disallowedThingDefs>
+                <li>Meat_Human</li>
+                <li>Meat_Megaspider</li>
+                <li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
+            </disallowedThingDefs>
+        </fixedIngredientFilter>
+        <defaultIngredientFilter>
+            <categories>
+                <li>PlantFoodRaw</li>
+            </categories>
+        </defaultIngredientFilter>
+        <workSkill>Cooking</workSkill>
+        <displayPriority>425</displayPriority>
+    </RecipeDef>
+</Defs>

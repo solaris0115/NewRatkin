@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RK_Research_Carpentry.label>목공</RK_Research_Carpentry.label>
+  <RK_Research_Agriculture.label>농업</RK_Research_Agriculture.label>
+  <RK_Research_Smithing.label>랫킨식 단조</RK_Research_Smithing.label>
+  <RK_Research_Tailoring.label>랫킨 의류</RK_Research_Tailoring.label>
+  <RK_Research_FoodPreservation.label>식품 보존</RK_Research_FoodPreservation.label>
+  <RK_Research_Metallurgy.label>랫킨식 제련</RK_Research_Metallurgy.label>
+  <RK_Research_SwordAndShield.label>검과 방패</RK_Research_SwordAndShield.label>
+  <RK_Research_FunctionalApparel.label>기능성 의류</RK_Research_FunctionalApparel.label>
+  <RK_Research_AdvancedApparel.label>고급 의류</RK_Research_AdvancedApparel.label>
+  <RK_Research_Fortification.label>요새화</RK_Research_Fortification.label>
+  <RK_Research_NobleApparel.label>귀족 의류</RK_Research_NobleApparel.label>
+  <RK_Research_RatkinEngineering.label>랫킨 공학</RK_Research_RatkinEngineering.label>
+  <RK_Research_GearMechanics.label>챗바퀴 역학</RK_Research_GearMechanics.label>
+  <RK_Research_ObservationAndSurveying.label>관측과 측량</RK_Research_ObservationAndSurveying.label>
+  <RK_Research_SeparationMechanics.label>분리 역학</RK_Research_SeparationMechanics.label>
+  <RK_Research_DragonFlame.label>용의 화염</RK_Research_DragonFlame.label>
+  <RK_Research_OrbitalEquipment.label>궤도 장비</RK_Research_OrbitalEquipment.label>
+  <RK_Research_AngryRatProject.label>성난쥐 프로젝트</RK_Research_AngryRatProject.label>
+  <RK_Research_CrusaderArmor.label>크루세이더 갑옷</RK_Research_CrusaderArmor.label>
+</LanguageData>

@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 도끼 수확속도 +5% 수확량 +5% -->
+
+  <RK_Axe.label>鼠族斧頭</RK_Axe.label>
+  <RK_Axe.description>這是一把用來砍樹的斧子。雖然有點小，但仍能助於切砍的工作。</RK_Axe.description>
+  <RK_Axe.tools.0.label>手柄</RK_Axe.tools.0.label>
+  <RK_Axe.tools.1.label>利刃</RK_Axe.tools.1.label>
+
+
+  <!-- 식칼 조리 속도 +5% 해체량 +10% -->
+
+  <RK_Cleaver.label>鼠族剁肉刀</RK_Cleaver.label>
+  <RK_Cleaver.description>一把切肉用的刀。能屠宰出更多的肉。但卻不是一件稱手的武器。</RK_Cleaver.description>
+  <RK_Cleaver.tools.0.label>手柄</RK_Cleaver.tools.0.label>
+  <RK_Cleaver.tools.1.label>利刃</RK_Cleaver.tools.1.label>
+
+
+  <!-- 쟁기 수확속도 +5% 수확량 +15% -->
+
+  <RK_Hockey.label>鼠族鋤頭</RK_Hockey.label>
+  <RK_Hockey.description>這是一種耕田用的犁。挖地會更容易。</RK_Hockey.description>
+  <RK_Hockey.tools.0.label>握桿</RK_Hockey.tools.0.label>
+  <RK_Hockey.tools.1.label>鋤頭</RK_Hockey.tools.1.label>
+
+
+  <!-- 포크삽 수확속도 +10% 수확량 +10% -->
+
+  <RK_Fork.label>鼠族草叉</RK_Fork.label>
+  <RK_Fork.description>一段有開叉的鋒利尖端，用來堆稻草很方便。</RK_Fork.description>
+  <RK_Fork.tools.0.label>握桿</RK_Fork.tools.0.label>
+  <RK_Fork.tools.1.label>尖刺</RK_Fork.tools.1.label>
+
+
+  <!-- 기본 근접값은  초당 8.84 -->
+
+  <RK_LongSword.label>鼠族長劍</RK_LongSword.label>
+  <RK_LongSword.description>保護花園的守護者的佩劍。這把武器有利於你在看家護院時和敵人作戰的優勢。</RK_LongSword.description>
+  <RK_LongSword.tools.0.label>劍刃</RK_LongSword.tools.0.label>
+  <RK_LongSword.tools.1.label>劍柄</RK_LongSword.tools.1.label>
+
+
+  <!-- 석궁 스탤스 +10% -->
+
+  <RK_Crossbow.label>鼠族十字弩</RK_Crossbow.label>
+  <RK_Crossbow.description>這是一個簡易的弩弓。常用於狩獵。</RK_Crossbow.description>
+  <RK_Crossbow.tools.0.label>握把</RK_Crossbow.tools.0.label>
+  <RK_Crossbow.tools.1.label>槍管</RK_Crossbow.tools.1.label>
+
+  <Bolt_RK_Crossbow.label>十字弩箭</Bolt_RK_Crossbow.label>
+
+
+  <!-- 개량석궁 -->
+
+  <RK_EnhanceCrossBow.label>鼠族加強型十字弩</RK_EnhanceCrossBow.label>
+  <RK_EnhanceCrossBow.description>改進型的弩弓。能射得更遠，有更好的穿透力。</RK_EnhanceCrossBow.description>
+  <RK_EnhanceCrossBow.tools.0.label>握把</RK_EnhanceCrossBow.tools.0.label>
+  <RK_EnhanceCrossBow.tools.1.label>槍管</RK_EnhanceCrossBow.tools.1.label>
+
+  <Bolt_RK_EnhanceCrossBow.label>十字弩箭</Bolt_RK_EnhanceCrossBow.label>
+
+
+  <!-- 연발석궁 -->
+
+  <RK_AutoCrossBow.label>鼠族渦輪連發弩</RK_AutoCrossBow.label>
+  <RK_AutoCrossBow.description>機械式發射的半自動弩。從一個圓形彈匣裡高速發射弩箭。</RK_AutoCrossBow.description>
+  <RK_AutoCrossBow.tools.0.label>握把</RK_AutoCrossBow.tools.0.label>
+  <RK_AutoCrossBow.tools.1.label>槍管</RK_AutoCrossBow.tools.1.label>
+
+  <Bolt_RK_AutoCrossBow.label>十字弩箭</Bolt_RK_AutoCrossBow.label>
+
+
+  <!-- 라이플 -->
+
+  <RK_Rifle.label>鼠族步槍</RK_Rifle.label>
+  <RK_Rifle.description>仿照人類步槍、發射鼠族飛鏢彈的步槍。穿透力高、射程比弩更遠，並附有短刃應付近戰。</RK_Rifle.description>
+  <RK_Rifle.tools.0.label>握把</RK_Rifle.tools.0.label>
+  <RK_Rifle.tools.1.label>刺刀</RK_Rifle.tools.1.label>
+  <RK_Rifle.tools.2.label>飛鏢彈頭</RK_Rifle.tools.2.label>
+
+  <Bullet_RK_Rifle.label>飛鏢步槍彈</Bullet_RK_Rifle.label>
+
+
+  <!-- 저격 라이플 -->
+
+  <RK_SniperRifle.label>鼠族狙擊步槍</RK_SniperRifle.label>
+  <RK_SniperRifle.description>發射飛鏢彈的鼠族望遠狙擊步槍。擅長在遠距離擊穿重甲目標，近距離瞄準較難，並附有短刃應付近戰。</RK_SniperRifle.description>
+  <RK_SniperRifle.tools.0.label>握把</RK_SniperRifle.tools.0.label>
+  <RK_SniperRifle.tools.1.label>刺刀</RK_SniperRifle.tools.1.label>
+  <RK_SniperRifle.tools.2.label>飛鏢彈頭</RK_SniperRifle.tools.2.label>
+
+  <Bullet_RK_SniperRifle.label>飛鏢狙擊彈</Bullet_RK_SniperRifle.label>
+
+
+  <!-- 랫킨용 실험용총 2연발 -->
+
+  <RK_PrototypePulseRifle.label>鼠族原型脈衝步槍</RK_PrototypePulseRifle.label>
+  <RK_PrototypePulseRifle.description>試做型能量步槍。是為了前衛的鼠族而製的。增加了特殊的視鏡來改善遠近視野。這種武器的靈感來自鼠族的飛鏢子彈，發射楔形高穿透力的彈藥。</RK_PrototypePulseRifle.description>
+  <RK_PrototypePulseRifle.tools.0.label>握把</RK_PrototypePulseRifle.tools.0.label>
+  <RK_PrototypePulseRifle.tools.1.label>槍管</RK_PrototypePulseRifle.tools.1.label>
+  <RK_PrototypePulseRifle.verbs.0.label>快速射擊</RK_PrototypePulseRifle.verbs.0.label>
+  <RK_PrototypePulseRifle.verbs.1.label>精確射擊</RK_PrototypePulseRifle.verbs.1.label>
+
+  <Bullet_RK_PrototypePulseRifleLight.label>楔形彈頭</Bullet_RK_PrototypePulseRifleLight.label>
+  <Bullet_RK_PrototypePulseRifleHeavy.label>楔形彈頭</Bullet_RK_PrototypePulseRifleHeavy.label>
+
+
+  <!-- BFR 3000 -->
+
+  <RK_BFR.label>BFR 3000</RK_BFR.label>
+  <RK_BFR.description>重型狙擊步槍 3000型。</RK_BFR.description>
+  <RK_BFR.tools.0.label>握把</RK_BFR.tools.0.label>
+  <RK_BFR.tools.1.label>槍管</RK_BFR.tools.1.label>
+  <RK_BFR.verbs.0.label>AP火力</RK_BFR.verbs.0.label>
+  <RK_BFR.verbs.1.label>SC火力</RK_BFR.verbs.1.label>
+
+  <Bullet_BFR_AP.label>楔形彈頭(AP)</Bullet_BFR_AP.label>
+  <Bullet_BFR_SC.label>楔形彈頭(SC)</Bullet_BFR_SC.label>
+
+
+  <!--<Bullet_RK_PrototypePulseRifle.label>楔形彈頭</Bullet_RK_PrototypePulseRifle.label>-->
+
+</LanguageData>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <NamerSettlement_RatkinKingdom.rulePack.rulesStrings>
+    <li>r_name-&gt;[townname_wordgen]</li>
+    <li>r_name-&gt;[townname_fixed]</li>
+    <li>townname_wordgen-&gt;[WordImperial]</li>
+    <li>townname_wordgen-&gt;[WordImperial][townend]</li>
+    <li>townend(p=3)-&gt;움</li>
+    <li>townend(p=3)-&gt;이어</li>
+    <li>townend(p=3)-&gt;폴리스</li>
+    <li>townend-&gt;노르</li>
+    <li>townend-&gt;르안</li>
+    <li>townend-&gt;랙스</li>
+    <li>townend-&gt;리스</li>
+    <li>townend-&gt;린</li>
+    <li>townend-&gt;리안</li>
+    <li>townend-&gt;프럼</li>
+    <li>townend-&gt;포르</li>
+    <li>townend-&gt;테오르</li>
+    <li>townend-&gt;오플</li>
+    <li>townend-&gt;옵니움</li>
+    <li>townend-&gt;오어</li>
+    <li>townend-&gt;에토르</li>
+    <li>townend-&gt;에눔</li>
+    <li>townend-&gt;에티움</li>
+    <li>townend-&gt;암</li>
+    <li>townend-&gt;에움</li>
+  </NamerSettlement_RatkinKingdom.rulePack.rulesStrings>
+</LanguageData>

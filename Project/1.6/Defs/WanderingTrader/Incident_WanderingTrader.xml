@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Ratkin Wandering Trader - IncidentDef -->
+<!-- RK_WanderingTrader Incident -->
+<Defs>
+
+	<IncidentDef>
+		<defName>RK_Incident_WanderingTrader</defName>
+		<label>ratkin wandering trader arrival</label>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>NewRatkin.IncidentWorker_RatkinWanderingTrader</workerClass>
+		<category>Misc</category>
+		<baseChance>1</baseChance>
+		<minRefireDays>45</minRefireDays>
+		<requireColonistsPresent>True</requireColonistsPresent>
+		<modExtensions>
+			<li Class="NewRatkin.IncidentDefExtension_WanderingCaravan">
+				<initialSettlerCount>3</initialSettlerCount>
+				<maxRosterCount>5</maxRosterCount>
+				<yearlyRecruitRange>1~2</yearlyRecruitRange>
+				<overflowRecruitCount>1</overflowRecruitCount>
+				<maxPoolSize>-1</maxPoolSize>
+				<expireAfterAppearances>-1</expireAfterAppearances>
+				<!-- 합류 요청 가능한 유랑민 풀 PawnKind. <PawnKind>가중치</PawnKind> 형식. 가중치 높을수록 등장 확률 증가 -->
+				<settlerPawnKinds>
+					<RK_PawnKind_Nomad>10</RK_PawnKind_Nomad>
+					<RK_PawnKind_Wanderer>7</RK_PawnKind_Wanderer>
+					<RatkinColonist>5</RatkinColonist>
+					<RatkinServant>3</RatkinServant>
+					<RatkinPriest>2</RatkinPriest>
+					<RatkinEliteGuardener>1</RatkinEliteGuardener>
+				</settlerPawnKinds>
+			</li>
+		</modExtensions>
+	</IncidentDef>
+
+</Defs>

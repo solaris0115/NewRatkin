@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- RangedWeapon_Cooldown에 RatHolic Gun Spooling StatPart 추가 -->
+  <!-- 기존 RangedCooldownFactor StatPart는 제거: RangedWeapon_Cooldown에 직접 적용하는 방식으로 변경 -->
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <!-- parts가 없으면 생성 -->
+      <li Class="PatchOperationTest">
+        <success>Invert</success>
+        <xpath>*/StatDef[defName = "RangedWeapon_Cooldown"]/parts</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>*/StatDef[defName = "RangedWeapon_Cooldown"]</xpath>
+        <value>
+          <parts>
+          </parts>
+        </value>
+      </li>
+      <!-- parts에 StatPart 추가 -->
+      <li Class="PatchOperationAdd">
+        <xpath>*/StatDef[defName = "RangedWeapon_Cooldown"]/parts</xpath>
+        <value>
+          <!-- <li Class="NewRatkin.StatPart_RatHolicGunSpooling_Cooldown"> -->
+            <!-- Hediff의 RK_Stat_RangeCoolDown offset을 읽어서 RangedWeapon_Cooldown에서 직접 감소 -->
+          <!-- </li> -->
+          <li Class="NewRatkin.StatPart_RatHolicGunSpooling_Cooldown_Multiplier">
+            <!-- Hediff의 RK_Stat_RangeCoolDownMultiplier statFactors를 읽어서 RangedWeapon_Cooldown에 배율 적용 -->
+          </li>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

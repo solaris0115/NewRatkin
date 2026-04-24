@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ReliquaryPilgrims_Ratkin.questContentRules.rulesStrings>
+    <li>pilgrimsArrivedLetterLabel-&gt;[factionAdj] [pilgrimSingularOrPlural]의 방문</li>
+    <li>pilgrimsArrivedLetterText-&gt;[questDescription]</li>
+    <li>delayedRewardLetterText-&gt;[pawns0_nameDef][andFollowers](은)는 자신들이 [relic_name](을)를 순례할 기회를 얻은 것에 감사를 표합니다. 그에 대한 보답으로 [pawns0_nameDef](은)는 수송 포드로 다음 물품을 보냈습니다.\n\n[rewards] (총 가치 [rewardsMarketValue_money])</li>
+    <li>pilgrimsLeavingMessage-&gt;[pilgrimsLabelSingularOrPlural](이)가 [relic_name] 숭배를 마치고 떠나고 있습니다.</li>
+    <li>pilgrimsLeftMessage-&gt;[pilgrimsLabelSingularOrPlural](이)가 지도를 떠났습니다.</li>
+    <li>areIs(pilgrimCount==1)-&gt;</li>
+    <li>areIs(pilgrimCount&gt;=2)-&gt;</li>
+    <li>andFollowers(pilgrimCount==1)-&gt;</li>
+    <li>andFollowers(pilgrimCount==2)-&gt;(와)과 다른 [faction_pawnSingular]</li>
+    <li>andFollowers(pilgrimCount&gt;=3)-&gt;(와)과 다른 [faction_pawnsPlural]</li>
+    <li>pilgrimSingularOrPlural(pilgrimCount==1)-&gt;순례자</li>
+    <li>pilgrimSingularOrPlural(pilgrimCount&gt;=2)-&gt;순례자들</li>
+    <li>factionAdj(pilgrimFaction==true)-&gt;</li>
+    <li>factionAdj(pilgrimFaction==false)-&gt;[faction_pawnSingular]</li>
+  </ReliquaryPilgrims_Ratkin.questContentRules.rulesStrings>
+</LanguageData>

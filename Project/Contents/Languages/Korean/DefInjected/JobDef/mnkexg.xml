@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RK_Job_HamsterWheel.reportString>TargetA에서 달리는 중.</RK_Job_HamsterWheel.reportString>
+  <RK_Job_PrayerService.reportString>기도하는 중.</RK_Job_PrayerService.reportString>
+  <RK_Job_SpectatePray.reportString>기도하는 중.</RK_Job_SpectatePray.reportString>
+  <RK_Job_TalkToCaravanLeader.reportString>유랑단 리더에게 말 걸는 중.</RK_Job_TalkToCaravanLeader.reportString>
+  <RK_Job_DismissCaravanLeader.reportString>유랑단 돌려보내는 중.</RK_Job_DismissCaravanLeader.reportString>
+  <RK_Job_ShieldFaceDirection.reportString>방향 추적 중.</RK_Job_ShieldFaceDirection.reportString>
+</LanguageData>

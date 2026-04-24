@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- JoinCondition - Caravan settler join proposal. DescShort=line2 details, Desc=line1 flavor -->
+<LanguageData>
+
+  <!-- InjuredPatientCount -->
+  <RK_JoinReq_Injured_DescShort>At least {0} injured folk in the settlement.</RK_JoinReq_Injured_DescShort>
+  <RK_JoinReq_Priest_Injured_Desc1>Are there any here in need of a healing hand?</RK_JoinReq_Priest_Injured_Desc1>
+  <RK_JoinReq_Priest_Injured_Desc2>With faith, even hardship may yet be overcome.</RK_JoinReq_Priest_Injured_Desc2>
+
+  <!-- MedicineQuantity -->
+  <RK_JoinReq_Medicine_DescShort>At least {0} medicine in store.</RK_JoinReq_Medicine_DescShort>
+  <RK_JoinReq_Priest_Medicine_Desc1>It would ease my heart to see ample remedies here.</RK_JoinReq_Priest_Medicine_Desc1>
+  <RK_JoinReq_Priest_Medicine_Desc2>With enough medicine, I could tend to many more souls...</RK_JoinReq_Priest_Medicine_Desc2>
+
+  <!-- ColonyWealth -->
+  <RK_JoinReq_StableLife_DescShort>Settlement wealth must be at least {0}.</RK_JoinReq_StableLife_DescShort>
+  <RK_JoinReq_StableLife_Desc1>I long to dwell in a proper village. The wanderer's road is too cruel.</RK_JoinReq_StableLife_Desc1>
+  <RK_JoinReq_StableLife_Desc2>I seek a steadier village life. Small hamlets ask too much of a soul.</RK_JoinReq_StableLife_Desc2>
+  <RK_JoinReq_NewLife_DescShort>Settlement wealth must be at least {0}.</RK_JoinReq_NewLife_DescShort>
+  <RK_JoinReq_NewLife_Desc1>With means such as these, perhaps I could begin anew.</RK_JoinReq_NewLife_Desc1>
+  <RK_JoinReq_NewLife_Desc2>I have had my fill of a poor life.</RK_JoinReq_NewLife_Desc2>
+
+  <!-- ColonistBackstory -->
+  <RK_JoinReq_NobleTired_DescShort>No settlers with these backgrounds: {0}</RK_JoinReq_NobleTired_DescShort>
+  <RK_JoinReq_NobleTired_Desc1>I am weary of bowing and scraping before the highborn.</RK_JoinReq_NobleTired_Desc1>
+  <RK_JoinReq_NobleTired_Desc2>I want no more dealings with nobles.</RK_JoinReq_NobleTired_Desc2>
+
+  <!-- ColonistRoyalTitle / Empire title (Ratkin Servant) -->
+  <RK_JoinReq_ServantRoyalTitle_DescShort>Highest Empire title among settlers must be {0} or lower.</RK_JoinReq_ServantRoyalTitle_DescShort>
+  <RK_JoinReq_ServantRoyalTitle_Desc1>I am weary of currying favor with the highborn.</RK_JoinReq_ServantRoyalTitle_Desc1>
+  <RK_JoinReq_ServantRoyalTitle_Desc2>If I must serve, I shall choose my own master.</RK_JoinReq_ServantRoyalTitle_Desc2>
+
+  <!-- ThingQuantity -->
+  <RK_JoinReq_ItemSeparatorOr> or </RK_JoinReq_ItemSeparatorOr>
+  <RK_JoinReq_WindFreedom_DescShort>Required: {0}</RK_JoinReq_WindFreedom_DescShort>
+  <RK_JoinReq_WindFreedom_Desc1>Life on the road has its charms, yet a spell of rest does too.</RK_JoinReq_WindFreedom_Desc1>
+  <RK_JoinReq_WindFreedom_Desc2>Even a wanderer has tastes. I would need gear worth using.</RK_JoinReq_WindFreedom_Desc2>
+
+  <!-- SkillMentorMulti -->
+  <RK_JoinReq_SeekingMentor_DescShort>Need a settler with all of these skills: {0}</RK_JoinReq_SeekingMentor_DescShort>
+  <RK_JoinReq_SeekingMentor_Desc1>I heed only one stronger than myself.</RK_JoinReq_SeekingMentor_Desc1>
+  <RK_JoinReq_SeekingMentor_Desc2>I seek a true warrior. Is there one among you?</RK_JoinReq_SeekingMentor_Desc2>
+  <RK_JoinReq_Prepared_DescShort>Need a settler with at least one of these skills: {0}</RK_JoinReq_Prepared_DescShort>
+  <RK_JoinReq_Prepared_Desc1>I am tired of surviving by my wits alone. I seek a proper mentor.</RK_JoinReq_Prepared_Desc1>
+  <RK_JoinReq_Prepared_Desc2>Be it battle or craft, someone here must truly know their trade.</RK_JoinReq_Prepared_Desc2>
+
+  <!-- AlwaysMet / JoinHope -->
+  <RK_JoinReq_JoinHope_DescShort>No special requirements.</RK_JoinReq_JoinHope_DescShort>
+  <RK_JoinReq_JoinHope_Desc1>A pleasure to meet you.</RK_JoinReq_JoinHope_Desc1>
+  <RK_JoinReq_JoinHope_Desc2>I hope we shall get along well.</RK_JoinReq_JoinHope_Desc2>
+
+</LanguageData>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <NamerIdeo_RatkinKingdom.rulePack.rulesStrings>
+    <li>globalAdjective(p=10)-&gt;기사도적인</li>
+    <li>globalAdjective(p=8)-&gt;봉건의</li>
+    <li>globalAdjective(p=6)-&gt;고귀한</li>
+    <li>globalAdjective(p=5)-&gt;왕실의</li>
+    <li>globalAdjective(p=4)-&gt;기사의</li>
+    <li>globalAdjective(p=3)-&gt;명예로운</li>
+  </NamerIdeo_RatkinKingdom.rulePack.rulesStrings>
+</LanguageData>

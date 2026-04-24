@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- 신 타입 생성기: 랫킨 왕국 문화 -->
+	<!-- 기사도/봉건주의 관련 신 타입 -->
+	<RulePackDef>
+		<defName>DeityTypeMaker_RatkinKingdom</defName>
+		<include>
+			<li>DeityTypeMakerGlobal</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<!-- 기사도 관련 신 타입 추가 -->
+				<li>god(p=3)->God of Honor</li>
+				<li>god(p=3, gender==Female)->Goddess of Honor</li>
+				<li>god(p=2)->God of Chivalry</li>
+				<li>god(p=2, gender==Female)->Goddess of Chivalry</li>
+				<li>god(p=2)->God of Valor</li>
+				<li>god(p=2, gender==Female)->Goddess of Valor</li>
+				<li>god(p=1)->God of Nobility</li>
+				<li>god(p=1, gender==Female)->Goddess of Nobility</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>
+

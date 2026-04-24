@@ -74,10 +74,8 @@
 		<label>emp Bomb</label>
 		<description>EMP폭탄입니다. 복잡하게 만들어서 폭발을 막는 방법은 직접 파괴하거나 해체를 하는 방법뿐입니다.</description>
 		<thingClass>NewRatkin.Building_EmpBomb</thingClass>
-		<minifiedDef>MinifiedEMP</minifiedDef>		
-		<thingCategories>
-			<li>BuildingsSpecial</li>
-		</thingCategories>		
+		<minifiedDef IsNull="True" />
+		<thingCategories Inherit="False" />
 		<graphicData>
 			<texPath>Things/Item/RK_EMP</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<StyleCategoryDef>
+		<defName>Floristian</defName>
+		<label>Floristian</label>
+		<iconPath>UI/StyleCategories/PraiseDeSunFlower</iconPath>
+		<soundOngoingRitual>RitualSustainer_Theist</soundOngoingRitual>
+		<ritualVisualEffectDef>Christian</ritualVisualEffectDef>
+		<thingDefStyles>
+		</thingDefStyles>
+	</StyleCategoryDef>
+</Defs>

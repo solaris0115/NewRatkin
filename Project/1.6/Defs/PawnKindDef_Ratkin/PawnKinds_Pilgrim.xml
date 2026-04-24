@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- 순례자 계열 -->
+	<!-- 히든 순례자 소속 -->
+
+	<!-- Pilgrim -->
+	<PawnKindDef Name="RK_PawnKindAttr_PilgrimBase" ParentName="RKBasePawnKind">
+		<defName>RK_PawnKind_Pilgrim</defName>
+		<label>pilgrim</label>
+		<defaultFactionDef>RK_Faction_Pilgrims</defaultFactionDef>
+		<combatPower>35</combatPower>
+		<gearHealthRange>0.1~0.3</gearHealthRange>
+		<itemQuality>Awful</itemQuality>
+		<apparelMoney>80~250</apparelMoney>
+		<apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>RK_ApparelTag_Pilgrim</li>
+		</apparelTags>
+		<weaponMoney>0~0</weaponMoney>
+		<techHediffsChance>0</techHediffsChance>
+		<inventoryOptions>
+			<skipChance>0.9</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>10~25</countRange>
+				</li>
+				<li>
+					<thingDef>MedicineHerbal</thingDef>
+					<countRange>1</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>4~8</initialResistanceRange>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="RK_PawnKindAttr_PilgrimBase">
+		<defName>RK_PawnKind_Priest</defName>
+		<label>pilgrim</label>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>RK_Backstory_Pilgrim</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelRequired>
+			<li>RK_SistersVeil</li>
+			<li>RK_SistersDerss</li>
+		</apparelRequired>
+	</PawnKindDef>
+
+	<!-- 귀족 계통 -->
+	<!-- 귀족의류는 고급이지만 너덜너덜. 실제 귀족들이 속죄 목적으로 순례길 도는경우가 많아 허름하게 -->
+	<!-- WellEquippedTraveler 급이지만 의상은 허름해야됨. -->
+	<PawnKindDef ParentName="RK_PawnKindAttr_PilgrimBase">
+		<defName>RK_PawnKind_NoblePilgrim</defName>
+		<label>pilgrim</label>
+		<defaultFactionDef>Rakinia</defaultFactionDef>
+		<combatPower>70</combatPower>
+		<gearHealthRange>0.1~0.3</gearHealthRange>
+		<itemQuality>Awful</itemQuality>
+		<apparelMoney>80~250</apparelMoney>
+		<apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
+		<weaponMoney>0~0</weaponMoney>
+		<techHediffsMoney>500~1000</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<techHediffsChance>0.15</techHediffsChance>
+		<inventoryOptions>
+			<skipChance>0.9</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>50~100</countRange>
+				</li>
+				<li>
+					<thingDef>MedicineIndustrial</thingDef>
+					<countRange>3</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<initialWillRange>3~5</initialWillRange>
+		<initialResistanceRange>30~40</initialResistanceRange>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>RK_Backstory_Noble</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelTags inherit="false">
+			<li>RK_ApparelTag_Noble</li>
+		</apparelTags>
+	</PawnKindDef>
+</Defs>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- Biotech xenoType 적용을 위해 RK_Race_Ratkin의 statBases 제거 -->
+	<!-- xenoType에서 스탯을 정의하므로 ThingDef_AlienRace의 statBases는 더 이상 필요하지 않음 -->
+	<!-- bodyAddons도 xenoType에서 정의하므로 ThingDef_AlienRace의 bodyAddons 제거 -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/statBases</xpath>
+				</li>
+				<!-- <li Class="PatchOperationRemove">
+					<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/generalSettings/alienPartGenerator/bodyAddons</xpath>
+				</li> -->
+			</operations>
+		</match>
+	</Operation>
+</Patch>

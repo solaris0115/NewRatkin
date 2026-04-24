@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <NamerPerson_RatkinKingdom.rulePack.rulesStrings>
+    <li>r_name(p=4)-&gt;[RK_FirstName] [RK_LastName]</li>
+    <li>r_name(p=2)-&gt;[RK_First_ElfStyle] [RK_Noun_Prefix_Flower]</li>
+    <li>r_name(p=1)-&gt;[RK_First_ElfStyle] [RK_Noun_Prefix_Flower]티</li>
+  </NamerPerson_RatkinKingdom.rulePack.rulesStrings>
+</LanguageData>

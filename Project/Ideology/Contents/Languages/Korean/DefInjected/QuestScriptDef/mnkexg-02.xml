@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ReliquaryPilgrims_Ratkin.questNameRules.rulesStrings>
+    <li>questName(pilgrimCount==1)-&gt;[pilgrimsLabelSingularOrPlural]의 [visitAdj] [visit]</li>
+    <li>questName(pilgrimCount&gt;=2)-&gt;[pilgrimsLabelSingularOrPlural]의 [visitAdj] [visit]</li>
+    <li>visitAdj(p=6)-&gt;</li>
+    <li>visitAdj-&gt;성스러운</li>
+    <li>visitAdj-&gt;신성한</li>
+    <li>visitAdj-&gt;영적인</li>
+    <li>visitAdj-&gt;엄숙한</li>
+    <li>visitAdj-&gt;고결한</li>
+    <li>visitAdj-&gt;근엄한</li>
+    <li>visitAdj-&gt;고귀한</li>
+    <li>visitAdj-&gt;축복받은</li>
+    <li>visit-&gt;방문</li>
+    <li>visit-&gt;순례</li>
+    <li>visit-&gt;사명</li>
+    <li>visit-&gt;원정</li>
+    <li>visit-&gt;여행</li>
+    <li>visit-&gt;관광</li>
+    <li>visit-&gt;숭배</li>
+  </ReliquaryPilgrims_Ratkin.questNameRules.rulesStrings>
+</LanguageData>

@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using RimWorld;
 using UnityEngine;
 using Verse;
@@ -7,6 +8,20 @@ using Verse.AI.Group;
 
 namespace NewRatkin
 {
+	public enum PrayerServiceSpotBlockReason
+	{
+		None = 0,
+		CannotReachPulpit,
+		CannotReservePulpit,
+		InteractionCellOutOfBounds,
+		InteractionCellForbidden,
+		InteractionCellNotStandable,
+		PulpitForbidden,
+		PulpitBurning,
+		PulpitDangerous,
+		RoomTooSmall
+	}
+
     public class Command_AbilityPrayService : Command_Ability
 	{
 		public Command_AbilityPrayService(Ability ability, Pawn pawn) : base(ability, pawn) { }
@@ -75,10 +90,11 @@ namespace NewRatkin
 				disabled = true;
 			}
 
-			var pulpits = ability.pawn.Map.listerBuildings.AllBuildingsColonistOfDef(RatkinBuildingDefOf.RK_Pulpit).Where(x => IsPrayerServiceAvailableSpot(ability.pawn, x));
-			if (pulpits.Count() == 0)
+			var map = ability.pawn.Map;
+			var allPulpits = map.listerBuildings.AllBuildingsColonistOfDef(RatkinBuildingDefOf.RK_Pulpit).ToList();
+			if (!allPulpits.Any(b => IsPrayerServiceAvailableSpot(ability.pawn, b)))
 			{
-				disabledReason = "AbilityPrayerServiceDisabledNoPulpit".Translate();
+				disabledReason = GetPrayerServiceSpotDisabledReason(ability.pawn, allPulpits);
 				disabled = true;
 			}
 		}
@@ -120,32 +136,119 @@ namespace NewRatkin
 			return true;
 		}
 
-		public bool IsPrayerServiceAvailableSpot(Pawn organizer, Building pulpit)
+		public static PrayerServiceSpotBlockReason GetPrayerServiceSpotBlockReason(Pawn organizer, Building pulpit)
 		{
-			if (!organizer.CanReserveAndReach(pulpit, PathEndMode.InteractionCell, Danger.None))
+			if (!organizer.CanReach(pulpit, PathEndMode.InteractionCell, Danger.None))
 			{
-				return false;
+				return PrayerServiceSpotBlockReason.CannotReachPulpit;
+			}
+
+			if (!organizer.CanReserve(pulpit))
+			{
+				return PrayerServiceSpotBlockReason.CannotReservePulpit;
 			}
 
 			Map map = organizer.Map;
-			var interactionCell = pulpit.InteractionCell;
-			if (!interactionCell.InBounds(map) || interactionCell.IsForbidden(organizer) || !interactionCell.Standable(map))
+			IntVec3 interactionCell = pulpit.InteractionCell;
+			if (!interactionCell.InBounds(map))
 			{
-				return false;
+				return PrayerServiceSpotBlockReason.InteractionCellOutOfBounds;
 			}
 
-			if (pulpit.IsForbidden(organizer) || pulpit.IsBurning() || pulpit.IsDangerousFor(organizer))
+			if (interactionCell.IsForbidden(organizer))
 			{
-				return false;
+				return PrayerServiceSpotBlockReason.InteractionCellForbidden;
+			}
+
+			if (!interactionCell.Standable(map))
+			{
+				return PrayerServiceSpotBlockReason.InteractionCellNotStandable;
+			}
+
+			if (pulpit.IsForbidden(organizer))
+			{
+				return PrayerServiceSpotBlockReason.PulpitForbidden;
+			}
+
+			if (pulpit.IsBurning())
+			{
+				return PrayerServiceSpotBlockReason.PulpitBurning;
+			}
+
+			if (pulpit.IsDangerousFor(organizer))
+			{
+				return PrayerServiceSpotBlockReason.PulpitDangerous;
 			}
 
 			Room room = interactionCell.GetRoom(map);
 			if (room != null && room.CellCount <= 25)
 			{
-				return false;
+				return PrayerServiceSpotBlockReason.RoomTooSmall;
 			}
 
-			return true;
+			return PrayerServiceSpotBlockReason.None;
+		}
+
+		public static string BlockReasonToTranslationKey(PrayerServiceSpotBlockReason reason)
+		{
+			switch (reason)
+			{
+				case PrayerServiceSpotBlockReason.CannotReachPulpit:
+					return "AbilityPrayerServiceDisabledCannotReachPulpit";
+				case PrayerServiceSpotBlockReason.CannotReservePulpit:
+					return "AbilityPrayerServiceDisabledCannotReservePulpit";
+				case PrayerServiceSpotBlockReason.InteractionCellOutOfBounds:
+					return "AbilityPrayerServiceDisabledInteractionCellOutOfBounds";
+				case PrayerServiceSpotBlockReason.InteractionCellForbidden:
+					return "AbilityPrayerServiceDisabledInteractionCellForbidden";
+				case PrayerServiceSpotBlockReason.InteractionCellNotStandable:
+					return "AbilityPrayerServiceDisabledInteractionCellNotStandable";
+				case PrayerServiceSpotBlockReason.PulpitForbidden:
+					return "AbilityPrayerServiceDisabledPulpitForbidden";
+				case PrayerServiceSpotBlockReason.PulpitBurning:
+					return "AbilityPrayerServiceDisabledPulpitBurning";
+				case PrayerServiceSpotBlockReason.PulpitDangerous:
+					return "AbilityPrayerServiceDisabledPulpitDangerous";
+				case PrayerServiceSpotBlockReason.RoomTooSmall:
+					return "AbilityPrayerServiceDisabledRoomTooSmall";
+				default:
+					return "AbilityPrayerServiceDisabledNoPulpitBuilding";
+			}
+		}
+
+		public static string GetPrayerServiceSpotDisabledReason(Pawn organizer, List<Building> colonistPulpits)
+		{
+			if (colonistPulpits.NullOrEmpty())
+			{
+				return "AbilityPrayerServiceDisabledNoPulpitBuilding".Translate();
+			}
+
+			List<PrayerServiceSpotBlockReason> reasons = new List<PrayerServiceSpotBlockReason>();
+			foreach (Building b in colonistPulpits)
+			{
+				PrayerServiceSpotBlockReason r = GetPrayerServiceSpotBlockReason(organizer, b);
+				if (r == PrayerServiceSpotBlockReason.None)
+				{
+					Log.Warning("GetPrayerServiceSpotDisabledReason: valid pulpit exists; UI should not query disabled text.");
+					return string.Empty;
+				}
+
+				reasons.Add(r);
+			}
+
+			PrayerServiceSpotBlockReason chosen = reasons
+				.GroupBy(r => r)
+				.OrderByDescending(g => g.Count())
+				.ThenBy(g => (int)g.Key)
+				.First()
+				.Key;
+
+			return BlockReasonToTranslationKey(chosen).Translate();
+		}
+
+		public bool IsPrayerServiceAvailableSpot(Pawn organizer, Building pulpit)
+		{
+			return GetPrayerServiceSpotBlockReason(organizer, pulpit) == PrayerServiceSpotBlockReason.None;
 		}
 	}
 

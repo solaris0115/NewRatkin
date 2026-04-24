@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BodyPartBionicBase">
+		<defName>RK_Thing_BionicTail</defName>
+		<label>bionic tail</label>
+		<description>An advanced artificial tail. It also has a small AI that automatically balances the user's missing.</description>
+		<techLevel>Spacer</techLevel>
+		<costList> 
+			<Plasteel>12</Plasteel>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+		<statBases>
+			<WorkToMake>26000</WorkToMake>
+			<Mass>5</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+</Defs>

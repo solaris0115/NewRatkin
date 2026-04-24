@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RK_WorkType_GeneratePower.labelShort>전력</RK_WorkType_GeneratePower.labelShort>
+  <RK_WorkType_GeneratePower.pawnLabel>작업자</RK_WorkType_GeneratePower.pawnLabel>
+  <RK_WorkType_GeneratePower.gerundLabel>전력 생산</RK_WorkType_GeneratePower.gerundLabel>
+  <RK_WorkType_GeneratePower.description>제어 가능한 전력 시설로부터 전력을 생산합니다.</RK_WorkType_GeneratePower.description>
+  <RK_WorkType_GeneratePower.verb>에서 전력생산</RK_WorkType_GeneratePower.verb>
+</LanguageData>

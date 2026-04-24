@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RK_Pulpit.label>예배용 연단</RK_Pulpit.label>
+  <RK_Pulpit.description>예배를 할 수 있는 작은 연단입니다. 일반 사람이 하기에는 높이가 낮습니다. 랫킨의 사제들이 이곳에서 기도할 수 있습니다.</RK_Pulpit.description>
+  <RK_HamsterWheelGenerator.label>쳇바퀴 발전기</RK_HamsterWheelGenerator.label>
+  <RK_HamsterWheelGenerator.description>쳇바퀴를 돌려 회전 에너지로부터 전기를 생산할 수 있습니다. 생산되는 전력량은 달리기 속도에 비례합니다.</RK_HamsterWheelGenerator.description>
+  <RK_HandTailoringBench.label>랫킨 수동 재봉틀</RK_HandTailoringBench.label>
+  <RK_HandTailoringBench.description>랫킨 의류 생산을 위한 작업대입니다. 전기 작업대의 65% 속도로 작동합니다.</RK_HandTailoringBench.description>
+  <RK_ElectricTailoringBench.label>랫킨 전기 재봉틀</RK_ElectricTailoringBench.label>
+  <RK_ElectricTailoringBench.description>랫킨 빠른 의류 생산을 위한 작업대입니다. 전기 없이도 65% 속도로 작동합니다.</RK_ElectricTailoringBench.description>
+  <RK_FueledSmithy.label>랫킨 단조대</RK_FueledSmithy.label>
+  <RK_FueledSmithy.description>랫킨 무기와 도구를 생산하기 위한 작업대입니다. 나무를 태워 작동합니다.</RK_FueledSmithy.description>
+  <RK_ElectricSmithy.label>랫킨 전기식 단조대</RK_ElectricSmithy.label>
+  <RK_ElectricSmithy.description>기계가 사용되지 않는 랫킨 금속 무기와 도구를 생산하기 위한 작업대입니다. 전기로 작동합니다.</RK_ElectricSmithy.description>
+  <RK_GuerrillaTunnel.label>드릴 포드</RK_GuerrillaTunnel.label>
+  <RK_GuerrillaTunnel.description>지하로 이동하는 단방향 수송포드입니다. 수송포드의 앞부분에 드릴을 달아 산 깊숙한 곳으로도 이동이 가능합니다.</RK_GuerrillaTunnel.description>
+  <RK_GuerrillaTunnelSpawner.label>지진파 진원지</RK_GuerrillaTunnelSpawner.label>
+  <RK_EmpBomb.label>EMP 폭탄</RK_EmpBomb.label>
+  <RK_EmpBomb.description>EMP 폭탄입니다. 복잡하게 만들어서 폭발을 막는 방법은 직접 파괴하거나 해체를 하는 방법뿐입니다.</RK_EmpBomb.description>
+  <MinifiedEMP.label>포장된 EMP</MinifiedEMP.label>
+  <RK_Building_Ballista.label>노포</RK_Building_Ballista.label>
+  <RK_Building_Ballista.description>거대한 화살을 발사하는 기계입니다. 재장전 시간이 오래 걸리지만 높은 명중률과 뛰어난 관통력을 갖고 있습니다.</RK_Building_Ballista.description>
+  <RK_Weapon_Ballista.label>랫킨 노포</RK_Weapon_Ballista.label>
+  <RK_Weapon_Ballista.description>거대한 화살을 발사할 수 있는 장치입니다. 재장전 시간이 오래 걸리지만 높은 명중률과 뛰어난 관통력을 갖고 있습니다.</RK_Weapon_Ballista.description>
+  <RK_Weapon_Ballista.verbs.Verb_Shoot.label>노포</RK_Weapon_Ballista.verbs.Verb_Shoot.label>
+  <RK_Ammo_BallistaBoltNormal.label>거대한 화살</RK_Ammo_BallistaBoltNormal.label>
+  <RK_Ammo_BallistaBoltNormal.description>거대한 화살입니다.</RK_Ammo_BallistaBoltNormal.description>
+  <RK_Projectile_BallistaBoltNormal.label>거대한 화살</RK_Projectile_BallistaBoltNormal.label>
+  <RK_Ammo_BallistaBoltAP.label>거대한 화살(관통)</RK_Ammo_BallistaBoltAP.label>
+  <RK_Ammo_BallistaBoltAP.description>거대한 화살입니다. 더 많은 대상을 관통할 수 있습니다.</RK_Ammo_BallistaBoltAP.description>
+  <RK_Projectile_BallistaBoltAP.label>거대한 화살</RK_Projectile_BallistaBoltAP.label>
+  <RK_Building_Cannon.label>대포</RK_Building_Cannon.label>
+  <RK_Building_Cannon.description>포탄을 쏠 수 있는 대포입니다. 관통력은 낮지만 포탄에 맞은 적에게 확실한 피해를 가할 수 있습니다.</RK_Building_Cannon.description>
+  <RK_Building_CannonTurret.label>대포</RK_Building_CannonTurret.label>
+  <RK_Building_CannonTurret.description>포탄을 쏠 수 있는 대포입니다. 관통력은 낮지만 포탄에 맞은 적에게 확실한 피해를 가할 수 있습니다.</RK_Building_CannonTurret.description>
+  <RK_Building_CannonTurret.verbs.Verb_Shoot.label>대포</RK_Building_CannonTurret.verbs.Verb_Shoot.label>
+  <RK_Ammo_CannonBall.label>포탄</RK_Ammo_CannonBall.label>
+  <RK_Ammo_CannonBall.description>커다란 강철 탄환입니다. 둥글어 관통력은 낮아 보이지만 그 무게로 상대의 방어구를 박살 내버릴 수 있습니다.</RK_Ammo_CannonBall.description>
+  <RK_Projectile_CannonBall.label>포탄</RK_Projectile_CannonBall.label>
+  <Ratkin.label>랫킨</Ratkin.label>
+  <Ratkin.description>설치류 유전자와 흡사한 인간입니다. 출처는 알 수 없으나 주로 농경사회를 기반으로 한 왕정을 이루고 살고 있습니다. 일부 랫킨들은 도시에서 인간들과 함께 생활하고 있습니다. 여성 개체가 남성보다 많으며 외관상 성별 구분이 힘듭니다.</Ratkin.description>
+  <Ratkin.tools.0.label>앞니</Ratkin.tools.0.label>
+  <Ratkin.tools.1.label>왼 주먹</Ratkin.tools.1.label>
+  <Ratkin.tools.2.label>오른 주먹</Ratkin.tools.2.label>
+  <RK_KingHamster.label>햄스트록스</RK_KingHamster.label>
+  <RK_KingHamster.description>커다란 햄스트록스입니다. 개척을 유전적 개량을 거친 햄스터입니다. 길들여서 짐꾼으로 사용할 수 있을 것 같습니다. 더운 온도에 비교적 잘 적응합니다.</RK_KingHamster.description>
+  <RK_KingHamster.tools.0.label>머리</RK_KingHamster.tools.0.label>
+  <RK_KingHamster.tools.1.label>왼 발</RK_KingHamster.tools.1.label>
+  <RK_KingHamster.tools.2.label>오른 발</RK_KingHamster.tools.2.label>
+  <RK_Leather_KingHamster.label>햄스트록스 가죽</RK_Leather_KingHamster.label>
+  <RK_Leather_KingHamster.description>햄스트록스의 가죽입니다. 지방층이 많으며 부드러운 것이 특징입니다. 더운 환경에서 적응하기 좋습니다.</RK_Leather_KingHamster.description>
+  <RK_Wool_KingHamster.label>햄스트록스 털</RK_Wool_KingHamster.label>
+  <RK_Wool_KingHamster.description>부드럽고 가벼운 좋은 단열재입니다. 햄스트록스 털옷은 통풍성과 보온성이 뛰어나 극지방이나 사막에서 활동하기 좋습니다.</RK_Wool_KingHamster.description>
+  <RK_Thing_BionicTail.label>생체공학 꼬리</RK_Thing_BionicTail.label>
+  <RK_Thing_BionicTail.description>생체공학적인 인공 꼬리입니다. 사용자의 균형을 자동으로 조정하는 소형 AI도 탑재되어 있습니다.</RK_Thing_BionicTail.description>
+  <RK_StrawberryBeer.label>딸기맥주</RK_StrawberryBeer.label>
+  <RK_StrawberryBeer.description>전통 방식으로 제조 딸기 맥주입니다. 랫킨이 마시기 위해 만들어져 도수가 조금 낮습니다.</RK_StrawberryBeer.description>
+  <RK_StrawberryBeer.ingestible.ingestCommandString>{0} 마시기</RK_StrawberryBeer.ingestible.ingestCommandString>
+  <RK_StrawberryBeer.ingestible.ingestReportString>{0} 마시는 중.</RK_StrawberryBeer.ingestible.ingestReportString>
+  <RK_StrawberryBeer.tools.0.label>딸기 맥주병</RK_StrawberryBeer.tools.0.label>
+  <RK_StrawberryBeer.verbs.Verb_Shoot.label>딸기 맥주</RK_StrawberryBeer.verbs.Verb_Shoot.label>
+  <RK_StrawberryBeer_Bullet.label>딸기 맥주</RK_StrawberryBeer_Bullet.label>
+  <RK_Filth_BeerFoam.label>맥주 거품</RK_Filth_BeerFoam.label>
+  <RK_Food_Hardtack.label>건빵</RK_Food_Hardtack.label>
+  <RK_Food_Hardtack.description>밀가루로 만든 단단한 보존식입니다. 오래 저장할 수 있어 여행 식량으로 적합합니다.</RK_Food_Hardtack.description>
+  <RK_Plate.label>랫킨 판금 갑옷</RK_Plate.label>
+  <RK_Plate.description>금속으로 만든 방어구입니다. 덧입을 수 있어 방어력을 한층 더 올릴 수 있습니다.</RK_Plate.description>
+  <RK_PlateHelm.label>랫킨 판금 투구</RK_PlateHelm.label>
+  <RK_PlateHelm.description>금속으로 만든 투구입니다.</RK_PlateHelm.description>
+  <RK_SantaRobe.label>랫킨 산타 로브</RK_SantaRobe.label>
+  <RK_SantaRobe.description>산타들이 입는 로브입니다.</RK_SantaRobe.description>
+  <RK_SantaHat.label>랫킨 산타 모자</RK_SantaHat.label>
+  <RK_SantaHat.description>털장식이 달린 산타모자입니다.</RK_SantaHat.description>
+  <RK_SantaSack.label>랫킨 산타 보따리</RK_SantaSack.label>
+  <RK_SantaSack.description>커다란 보따리 입니다. 산타의 물건답게 선물을 많이 넣을 수 있는 커다란 보따리입니다.</RK_SantaSack.description>
+  <RK_WhiteCoat.label>랫킨 순백 코트</RK_WhiteCoat.label>
+  <RK_WhiteCoat.description>순백색의 두꺼운 코트입니다. 질 좋은 원단과 세심하게 마감하였습니다. 고위직을 위한 의복같아 보입니다.</RK_WhiteCoat.description>
+  <RK_Sack.label>랫킨 보따리</RK_Sack.label>
+  <RK_Sack.description>등에 편하게 맬 수 있는 보따리입니다. 물건을 많이 넣을 수 있기 때문에 도둑들이 애용합니다.</RK_Sack.description>
+  <RK_RoyalRobe.label>랫킨 로열 로브</RK_RoyalRobe.label>
+  <RK_RoyalRobe.description>고풍스러운 귀족을 위한 외투입니다. 직물을 아낌없이 사용하여 아름다운 장식과 화려함이 그 권위를 말해주고 있습니다.</RK_RoyalRobe.description>
+  <RK_RoyalCrown.label>랫킨 로열 왕관</RK_RoyalCrown.label>
+  <RK_RoyalCrown.description>금속으로 만든 커라단 왕관 입니다. 그 크기가 착용자의 권위를 말해주고 있습니다.</RK_RoyalCrown.description>
+  <RK_WoodenShield.label>랫킨 목재 방패</RK_WoodenShield.label>
+  <RK_WoodenShield.description>적의 공격을 방어할 수 있는 목재 방패입니다. 정면에서 오는 공격을 어느 정도 방어할 수 있습니다. 착용자의 능력에 따라 방어를 더 잘 할 수 있습니다. 한손 무기(원거리포함)와 일부 양손 무기를 함께 사용 할 수 있습니다.</RK_WoodenShield.description>
+  <RK_HeavyShield.label>랫킨 금속 방패</RK_HeavyShield.label>
+  <RK_HeavyShield.description>적의 공격을 방어할 수 있는 금속 방패입니다. 정면에서 오는 공격을 방어할 수 있습니다. 착용자의 능력과 소재에 따라 방어를 더 잘 할 수 있습니다. 한손 무기(원거리포함)와 일부 양손 무기를 함께 사용 할 수 있습니다.</RK_HeavyShield.description>
+  <RK_TowerShield.label>랫킨 대형 금속 방패</RK_TowerShield.label>
+  <RK_TowerShield.description>적의 공격을 방어할 수 있는 대형 방패입니다. 정면에서 오는 공격을 다수를 방어할 수 있습니다. 착용자의 능력과 소재에 따라 방어를 더 잘 할 수 있습니다.  한손 무기(원거리포함)와 함게 사용 할 수 있습니다.</RK_TowerShield.description>
+  <RK_Apparel_VacsuitHelmet.label>랫킨 진공 방호복 헬멧</RK_Apparel_VacsuitHelmet.label>
+  <RK_Apparel_VacsuitHelmet.description>사용자의 산소를 효율적으로 재순환하여 진공 상태에서도 몇 시간은 호흡할 수 있게 해주는 헬멧입니다. 완전히 효율적이지는 않으므로, 착용자는 주기적으로 가압 환경으로 돌아와야 합니다.</RK_Apparel_VacsuitHelmet.description>
+  <RK_Apparel_Vacsuit.label>랫킨 진공 방호복</RK_Apparel_Vacsuit.label>
+  <RK_Apparel_Vacsuit.description>우주의 진공으로부터 착용자를 안전하게 지켜주는 보호복입니다. 진공 방호복을 입으면 움직임이 제한돼 이동 속도가 크게 감소합니다.</RK_Apparel_Vacsuit.description>
+  <RK_Apparel_VacsuitChildren.label>랫킨 어린이 진공 방호복</RK_Apparel_VacsuitChildren.label>
+  <RK_Apparel_VacsuitChildren.description>어린이를 위해 설계된 보호복입니다. 우주의 진공으로부터 착용자를 안전하게 지켜줍니다.</RK_Apparel_VacsuitChildren.description>
+  <RK_Apparel_SpaceArmor.label>랫킨 바스티온 갑옷</RK_Apparel_SpaceArmor.label>
+  <RK_Apparel_SpaceArmor.description>플라스틸과 강철, 우라늄을 섞어 주조한 강화 동력 갑옷입니다. 뛰어난 열 내구성과 육중한 충격을 견뎌낼 수 있으며, 포위된 상황에서 굳건하게 버틸 수 있게 해줍니다.n\n뛰어난 전사에게 수여되며 갑옷의 무게만큼 수호할 의무가 부여됩니다.</RK_Apparel_SpaceArmor.description>
+  <RK_Apparel_SpaceArmorHelmet.label>랫킨 바스티온 투구</RK_Apparel_SpaceArmorHelmet.label>
+  <RK_Apparel_SpaceArmorHelmet.description>증강 신경망이 적용된 중장갑 헬멧으로, 착용하지 않은 듯 한 감각을 제공하며 주변의 전장 상황을 분석해주는 투구입니다.</RK_Apparel_SpaceArmorHelmet.description>
+  <RK_Apparel_Banner.label>랫킨 전쟁 깃발</RK_Apparel_Banner.label>
+  <RK_Apparel_Banner.description>주변 아군의 사기를 북돋웁니다.</RK_Apparel_Banner.description>
+  <RK_CrossBack.label>랫킨 봇짐</RK_CrossBack.label>
+  <RK_CrossBack.description>간단한 봇짐입니다. 짐을 조금 더 나를 수 있게 해줍니다.</RK_CrossBack.description>
+  <RK_Backpack.label>랫킨 가방</RK_Backpack.label>
+  <RK_Backpack.description>등에 맬 수 있는 가방입니다. 짐을 더 많이 나를 수 있게 해줍니다.</RK_Backpack.description>
+  <RK_OutdoorBackpack.label>랫킨 등짐가방</RK_OutdoorBackpack.label>
+  <RK_OutdoorBackpack.description>랫킨용 등짐 가방입니다. 랫킨 신체에 맞도록 고안된 가방으로 더욱 많은 짐을 들 수 있도록 해줍니다.</RK_OutdoorBackpack.description>
+  <RK_ApronSkirt.label>랫킨 에이프런 스커트</RK_ApronSkirt.label>
+  <RK_ApronSkirt.description>앞치마가 달린 간단한 의류입니다.</RK_ApronSkirt.description>
+  <RK_ApronSkirtChildren.label>랫킨 어린이 치마</RK_ApronSkirtChildren.label>
+  <RK_ApronSkirtChildren.description>어린이용 일상복입니다.</RK_ApronSkirtChildren.description>
+  <RK_SummerDress.label>랫킨 여름 드레스</RK_SummerDress.label>
+  <RK_SummerDress.description>여름용 흰 드레스입니다. 통풍이 잘되어 체온을 빠르게 식혀줍니다.</RK_SummerDress.description>
+  <RK_StrawHat.label>랫킨 밀짚모자</RK_StrawHat.label>
+  <RK_StrawHat.description>건초로 만든 밀짚모자입니다. 뜨거운 땡볕으로부터 몸을 지켜줍니다.</RK_StrawHat.description>
+  <RK_Muffler.label>랫킨 머플러</RK_Muffler.label>
+  <RK_Muffler.description>목에 두르는 목도리입니다. 목을 통해 체온이 빠져나가는걸 방지해줍니다. 사막을 횡단할때 쓸 수 있습니다.</RK_Muffler.description>
+  <RK_Cardigan.label>랫킨 가디건</RK_Cardigan.label>
+  <RK_Cardigan.description>옷 겉에 입는 외투입니다. 옷을 한겹 더입어 추위로부터 몸을 지킬 수 있습니다.</RK_Cardigan.description>
+  <RK_WoolenHat.label>랫킨 털모자</RK_WoolenHat.label>
+  <RK_WoolenHat.description>털 달린 모자입니다.</RK_WoolenHat.description>
+  <RK_WorkerWear.label>랫킨 작업복</RK_WorkerWear.label>
+  <RK_WorkerWear.description>작업하기 편한 옷입니다. 일상생활에서 일하기 편하도록 디자인되었습니다.</RK_WorkerWear.description>
+  <RK_Coif.label>랫킨 코이프</RK_Coif.label>
+  <RK_Coif.description>작업할 때 쓰는 모자입니다. 머리카락이 넘어오지 않도록 방지해줍니다.</RK_Coif.description>
+  <RK_ResearchGown.label>랫킨 연구가운</RK_ResearchGown.label>
+  <RK_ResearchGown.description>연구할때 입는 가운입니다. 먼지를 날리지 않으며 지적으로 보입니다.</RK_ResearchGown.description>
+  <RK_ResearchGlasses.label>랫킨 안경</RK_ResearchGlasses.label>
+  <RK_ResearchGlasses.description>랫킨용 안경입니다. 더 높은 수준의 연구를 해야할 때 필요합니다. 랫킨의 시력을 개선해주고 똑똑해진것 같다는 느낌도 조금 줍니다.</RK_ResearchGlasses.description>
+  <RK_ExplorerWear.label>랫킨 탐험복</RK_ExplorerWear.label>
+  <RK_ExplorerWear.description>오지를 탐험할때 입는 옷입니다. 이동에 편리하고 몸에서 나는 소리를 줄여줍니다.</RK_ExplorerWear.description>
+  <RK_ExplorerHat.label>랫킨 탐험모</RK_ExplorerHat.label>
+  <RK_ExplorerHat.description>탐험 모자입니다. 땡볕을 막아줍니다.</RK_ExplorerHat.description>
+  <RK_ChefSuit.label>랫킨 요리사복</RK_ChefSuit.label>
+  <RK_ChefSuit.description>쉐프 복장입니다. 요리하기 편하도록 디자인 되어 조리속도를 상승시켜줍니다.</RK_ChefSuit.description>
+  <RK_ChefHat.label>랫킨 요리모자</RK_ChefHat.label>
+  <RK_ChefHat.description>쉐프 모자입니다. 음식에 머리카락이나 이물질이 들어가지 않도록 방지해줍니다.</RK_ChefHat.description>
+  <RK_GaurdenUniform.label>랫킨 정원사 의복</RK_GaurdenUniform.label>
+  <RK_GaurdenUniform.description>정원 지킴이들이 입는 정장입니다. 농경이 중요한 랫킨의 사회에서 정원을 지키는것은 중요한 일이며 가장 유능한 인재들만이 정원사가 될 수 있습니다.</RK_GaurdenUniform.description>
+  <RK_WinterRobe.label>랫킨 겨울예복</RK_WinterRobe.label>
+  <RK_WinterRobe.description>겨울용 예복입니다. 극지에서 활동할때 입습니다.</RK_WinterRobe.description>
+  <RK_OrderUniform.label>랫킨 제복</RK_OrderUniform.label>
+  <RK_OrderUniform.description>랫킨식 제식 전투복입니다. 랫킨식 전투에 유리하도록 디자인된 의류입니다. 착용자에게 약간의 고양감을 주어 강인한 전투원으로 만들어줍니다.</RK_OrderUniform.description>
+  <RK_BulletProofHelmet.label>랫킨 방탄 헬멧</RK_BulletProofHelmet.label>
+  <RK_BulletProofHelmet.description>랫킨용 방탄 모자입니다. 착용자의 공포감을 조금 덜어주고 조준을 수월하게 해줍니다.</RK_BulletProofHelmet.description>
+  <RK_FlatColorCoat.label>랫킨 플랫칼라 원피스</RK_FlatColorCoat.label>
+  <RK_FlatColorCoat.description>단아한 단색 원피스입니다. 편하면서 공식적 자리에 입기 좋아보입니다.</RK_FlatColorCoat.description>
+  <RK_FrillOnepiece.label>랫킨 프릴 원피스</RK_FrillOnepiece.label>
+  <RK_FrillOnepiece.description>프릴장식이 있는 귀여운 원피스입니다. 상류층의 아가씨들에게 인기가 많습니다.</RK_FrillOnepiece.description>
+  <RK_HairCorsage.label>랫킨 코사주</RK_HairCorsage.label>
+  <RK_HairCorsage.description>머리에 쓰는 코사주입니다. 코사주의 우아함은 말 한마디마다 힘을 실어줍니다.</RK_HairCorsage.description>
+  <RK_RibbonHairBand.label>랫킨 리본머리띠</RK_RibbonHairBand.label>
+  <RK_RibbonHairBand.description>머리에 착용하는 작고 이쁜 리본입니다. 리본의 귀여움은 사탕하나를 더 주고 싶도록 만들것입니다.</RK_RibbonHairBand.description>
+  <RK_SistersDerss.label>랫킨 수녀복</RK_SistersDerss.label>
+  <RK_SistersDerss.description>수녀들이 입는 단아한 원피스입니다. 약간의 옆트임이 있어 움직임이 편합니다. 랫킨의 수녀들은 아픈 사람들을 돌보기도 합니다.</RK_SistersDerss.description>
+  <RK_SistersVeil.label>랫킨 수녀베일</RK_SistersVeil.label>
+  <RK_SistersVeil.description>수녀들이 머리에 쓰는 베일입니다. 머리를 단정하게 해줍니다.</RK_SistersVeil.description>
+  <RK_BattleSuit.label>랫킨 전투복</RK_BattleSuit.label>
+  <RK_BattleSuit.description>침투에 유리하도록 디자인된 전투복입니다. 극한의 온도상황에서 활동할 수 있도록 설계되어있습니다.</RK_BattleSuit.description>
+  <RK_HeadBand.label>랫킨 빨간 머리띠</RK_HeadBand.label>
+  <RK_HeadBand.description>빨간 머리띠입니다. 큰 기능은 없으나 고양감을 주어 고통을 더 참을 수 있게 해줍니다.</RK_HeadBand.description>
+  <RK_PlateHelmA.label>랫킨 판금 투구</RK_PlateHelmA.label>
+  <RK_PlateHelmA.description>금속으로 만든 투구입니다.</RK_PlateHelmA.description>
+  <RK_PlateHelmB.label>랫킨 판금 투구</RK_PlateHelmB.label>
+  <RK_PlateHelmB.description>금속으로 만든 투구입니다.</RK_PlateHelmB.description>
+  <RK_PlateHelmC.label>랫킨 판금 투구</RK_PlateHelmC.label>
+  <RK_PlateHelmC.description>금속으로 만든 투구입니다.</RK_PlateHelmC.description>
+  <RK_Mask.label>랫킨 마스크 헬멧</RK_Mask.label>
+  <RK_Mask.description>마스크가 있는 헬멧입니다. 유독성 환경에서도 장시간 활동할 수 있도록 고안되었습니다.</RK_Mask.description>
+  <RK_MaskB.label>랫킨 마스크 헬멧</RK_MaskB.label>
+  <RK_MaskB.description>마스크가 있는 헬멧입니다. 유독성 환경에서도 장시간 활동할 수 있도록 고안되었습니다.</RK_MaskB.description>
+  <RK_MagicWand.label>랫킨 요술봉</RK_MagicWand.label>
+  <RK_MagicWand.description>충격에 민감한 랫킨제 요술봉입니다. 잠긴 문을 열거나 가구를 치울때 사용합니다. 제정신인 랫킨이라면 이걸 던지겠지만..</RK_MagicWand.description>
+  <RK_MagicWand.tools.0.label>머리</RK_MagicWand.tools.0.label>
+  <RK_MagicWand.tools.1.label>끝</RK_MagicWand.tools.1.label>
+  <RK_Weapon_Gunlance.label>랫킨 건랜스</RK_Weapon_Gunlance.label>
+  <RK_Weapon_Gunlance.description>포격이 가능한 무거운 기계식 랜스입니다. 근접 공격 시 전방으로 포격을 가할 수 있습니다.\n장전된 특수 탄약을 소모하여 전방에 큰 피해를 줄 수 있는 용격포를 사용할 수 있습니다. 용격포 사용 후 약간의 냉각 시간이 필요합니다.</RK_Weapon_Gunlance.description>
+  <RK_Weapon_Gunlance.tools.0.label>날끝</RK_Weapon_Gunlance.tools.0.label>
+  <RK_Weapon_Gunlance.tools.1.label>날</RK_Weapon_Gunlance.tools.1.label>
+  <RK_Weapon_Gunlance.comps.1.chargeNoun>용격포 장약</RK_Weapon_Gunlance.comps.1.chargeNoun>
+  <RK_Ammo_WyvernFire.label>용격포 탄환</RK_Ammo_WyvernFire.label>
+  <RK_Ammo_WyvernFire.description>건랜스 용격포를 쏠 수 있는 탄약입니다. 손상되면 폭발할 수 있습니다. 탄약은 2단으로 구성되어 있어 1차 연료로 예열 후 2차 화약을 분사하여 큰 폭발을 만들어 냅니다.</RK_Ammo_WyvernFire.description>
+  <GunlancePreIgnition.label>점화</GunlancePreIgnition.label>
+  <GunlanceAfterIgnition.label>점화</GunlanceAfterIgnition.label>
+  <RK_Weapon_ProtoChainSword.label>랫킨 체인소드</RK_Weapon_ProtoChainSword.label>
+  <RK_Weapon_ProtoChainSword.description>날에 달린 회전 사슬로 대상을 찢어발기는 무기입니다.</RK_Weapon_ProtoChainSword.description>
+  <RK_Weapon_ProtoChainSword.tools.0.label>전기 톱날</RK_Weapon_ProtoChainSword.tools.0.label>
+  <RK_Weapon_ProtoChainSword.tools.1.label>전기 톱날</RK_Weapon_ProtoChainSword.tools.1.label>
+  <RK_Weapon_ProtoFlameChainSword.label>랫킨 화염 체인소드</RK_Weapon_ProtoFlameChainSword.label>
+  <RK_Weapon_ProtoFlameChainSword.description>불꽃을 두른 회전 사슬로 대상을 찢어발기는 무기입니다.</RK_Weapon_ProtoFlameChainSword.description>
+  <RK_Weapon_ProtoFlameChainSword.tools.0.label>날끝</RK_Weapon_ProtoFlameChainSword.tools.0.label>
+  <RK_Weapon_ProtoFlameChainSword.tools.1.label>날</RK_Weapon_ProtoFlameChainSword.tools.1.label>
+  <RK_Dagger.label>랫킨 단검</RK_Dagger.label>
+  <RK_Dagger.description>작고 예리한 단검입니다. 가벼운만큼 빠르게 찌를 수 있습니다.</RK_Dagger.description>
+  <RK_Dagger.tools.0.label>칼끝</RK_Dagger.tools.0.label>
+  <RK_Dagger.tools.1.label>칼날</RK_Dagger.tools.1.label>
+  <RK_OneHanded.label>랫킨 한손검</RK_OneHanded.label>
+  <RK_OneHanded.description>한손에 들 수 있는 검입니다. 완벽한 무게 밸런스를 이루고 있습니다.</RK_OneHanded.description>
+  <RK_OneHanded.tools.0.label>칼끝</RK_OneHanded.tools.0.label>
+  <RK_OneHanded.tools.1.label>칼날</RK_OneHanded.tools.1.label>
+  <RK_OneHanded.tools.2.label>자루</RK_OneHanded.tools.2.label>
+  <RK_Mace.label>랫킨 철퇴</RK_Mace.label>
+  <RK_Mace.description>한손에 들 수 있는 철퇴입니다. 완벽한 무게 밸런스를 이루고 있습니다.</RK_Mace.description>
+  <RK_Mace.tools.0.label>머리</RK_Mace.tools.0.label>
+  <RK_Mace.tools.1.label>자루</RK_Mace.tools.1.label>
+  <RK_LightLance.label>랫킨 우든 랜스</RK_LightLance.label>
+  <RK_LightLance.description>철을 덧대어 파괴력을 높인 목재 랜스입니다. 무게 때문에 숙달되지 않으면 명중시키기 힘들어 보입니다.</RK_LightLance.description>
+  <RK_LightLance.tools.0.label>창끝</RK_LightLance.tools.0.label>
+  <RK_LightLance.tools.1.label>창끝</RK_LightLance.tools.1.label>
+  <RK_LightLance.tools.2.label>창대</RK_LightLance.tools.2.label>
+  <RK_TwoHanded.label>랫킨 양손검</RK_TwoHanded.label>
+  <RK_TwoHanded.description>양손으로 들 수 있는 검입니다. 무겁지만 적을 확실하게 두동강 낼 수 있습니다.</RK_TwoHanded.description>
+  <RK_TwoHanded.tools.0.label>자루</RK_TwoHanded.tools.0.label>
+  <RK_TwoHanded.tools.1.label>칼끝</RK_TwoHanded.tools.1.label>
+  <RK_TwoHanded.tools.2.label>칼날</RK_TwoHanded.tools.2.label>
+  <RK_HeavyLance.label>랫킨 헤비 랜스</RK_HeavyLance.label>
+  <RK_HeavyLance.description>크고 무거운 금속 랜스입니다. 육중한 무게로 대상의 장갑을 확실하게 뚫을 수 있습니다. 적을 향해 짧은거리를 돌진하여 큰 피해를 줄 수 있습니다.</RK_HeavyLance.description>
+  <RK_HeavyLance.tools.0.label>창끝</RK_HeavyLance.tools.0.label>
+  <RK_HeavyLance.tools.1.label>창끝</RK_HeavyLance.tools.1.label>
+  <RK_HeavyLance.tools.2.label>창대</RK_HeavyLance.tools.2.label>
+  <RK_LongSword.label>랫킨 정원사의 검</RK_LongSword.label>
+  <RK_LongSword.description>밭을 지키는 정원사들의 검입니다. 정원 손질에 쓰거나 적들을 손질할때 씁니다.</RK_LongSword.description>
+  <RK_LongSword.tools.0.label>날끝</RK_LongSword.tools.0.label>
+  <RK_LongSword.tools.1.label>날</RK_LongSword.tools.1.label>
+  <RK_LongSword.tools.2.label>자루</RK_LongSword.tools.2.label>
+  <RK_Spear.label>랫킨 창</RK_Spear.label>
+  <RK_Spear.description>간단하게 만든 창입니다. 길이가 짧아서 인간이 보기에는 단창처럼 보입니다.</RK_Spear.description>
+  <RK_Spear.tools.0.label>창 끝</RK_Spear.tools.0.label>
+  <RK_Spear.tools.1.label>창 날</RK_Spear.tools.1.label>
+  <RK_Halberd.label>랫킨 할버드</RK_Halberd.label>
+  <RK_Halberd.description>창과 도끼가 합쳐진 무기입니다. 주변의 대상을 함께 베어넘길 수 있습니다.</RK_Halberd.description>
+  <RK_Halberd.tools.0.label>창 끝</RK_Halberd.tools.0.label>
+  <RK_Halberd.tools.1.label>도끼날</RK_Halberd.tools.1.label>
+  <RK_Rifle_line.label>랫킨 산탄총</RK_Rifle_line.label>
+  <RK_Rifle_line.description>소드오프 샷건입니다. 적의 근처에서 폭발하여 탄환을 흩뿌립니다.</RK_Rifle_line.description>
+  <RK_Rifle_line.tools.0.label>개머리판</RK_Rifle_line.tools.0.label>
+  <RK_Rifle_line.tools.1.label>총열</RK_Rifle_line.tools.1.label>
+  <RK_Bullet_SectorShot_Dummy.label>산탄</RK_Bullet_SectorShot_Dummy.label>
+  <RK_Crossbow.label>랫킨 석궁</RK_Crossbow.label>
+  <RK_Crossbow.description>간단한 석궁입니다. 사냥을 할때 쓰입니다.</RK_Crossbow.description>
+  <RK_Crossbow.verbs.Verb_Shoot.label>석궁</RK_Crossbow.verbs.Verb_Shoot.label>
+  <RK_Crossbow.tools.0.label>활대</RK_Crossbow.tools.0.label>
+  <RK_Crossbow.tools.1.label>볼트촉</RK_Crossbow.tools.1.label>
+  <Bolt_RK_Crossbow.label>석궁 볼트</Bolt_RK_Crossbow.label>
+  <RK_AutoCrossBow.label>랫킨 연발 석궁</RK_AutoCrossBow.label>
+  <RK_AutoCrossBow.description>기계식으로 발사되는 반자동 석궁입니다. 원형 탄창에서 빠른속도로 볼트를 발사할 수 있습니다.</RK_AutoCrossBow.description>
+  <RK_AutoCrossBow.verbs.Verb_Shoot.label>연발 석궁</RK_AutoCrossBow.verbs.Verb_Shoot.label>
+  <RK_AutoCrossBow.tools.0.label>활대</RK_AutoCrossBow.tools.0.label>
+  <RK_AutoCrossBow.tools.1.label>볼트촉</RK_AutoCrossBow.tools.1.label>
+  <Bolt_RK_AutoCrossBow.label>석궁 볼트</Bolt_RK_AutoCrossBow.label>
+  <RK_Weapon_Arbalest.label>랫킨 대형 석궁</RK_Weapon_Arbalest.label>
+  <RK_Weapon_Arbalest.description>대형 석궁입니다. 장전속도가 느리지만 뛰어난 저지력을 갖고 있습니다.</RK_Weapon_Arbalest.description>
+  <RK_Weapon_Arbalest.verbs.Verb_Shoot.label>대형 석궁</RK_Weapon_Arbalest.verbs.Verb_Shoot.label>
+  <RK_Weapon_Arbalest.tools.0.label>활대</RK_Weapon_Arbalest.tools.0.label>
+  <RK_Weapon_Arbalest.tools.1.label>볼트</RK_Weapon_Arbalest.tools.1.label>
+  <RK_Projectile_Arbalest.label>대형 석궁 볼트</RK_Projectile_Arbalest.label>
+  <RK_Rifle.label>랫킨 소총</RK_Rifle.label>
+  <RK_Rifle.description>반자동 소총입니다. 탄환은 가늘고 예리하여 관통력은 높으나 피해량이 조금 낮습니다. 착검되어 있어 근접전에 유리합니다.</RK_Rifle.description>
+  <RK_Rifle.verbs.Verb_Shoot.label>소총</RK_Rifle.verbs.Verb_Shoot.label>
+  <RK_Rifle.tools.0.label>개머리판</RK_Rifle.tools.0.label>
+  <RK_Rifle.tools.1.label>총검</RK_Rifle.tools.1.label>
+  <Bullet_RK_Rifle.label>화살촉탄</Bullet_RK_Rifle.label>
+  <RK_SniperRifle.label>랫킨 망원 소총</RK_SniperRifle.label>
+  <RK_SniperRifle.description>망원 렌즈가 달린 반자동 소총입니다. 망원 렌즈를 통해 조금 더 조준하고 쏠 수 있습니다. 탄환은 가늘고 예리하여 관통력은 높으나 피해량이 조금 낮습니다. 착검되어 있어 근접전에 유리합니다.</RK_SniperRifle.description>
+  <RK_SniperRifle.verbs.Verb_Shoot.label>저격 소총</RK_SniperRifle.verbs.Verb_Shoot.label>
+  <RK_SniperRifle.tools.0.label>개머리판</RK_SniperRifle.tools.0.label>
+  <RK_SniperRifle.tools.1.label>총검</RK_SniperRifle.tools.1.label>
+  <Bullet_RK_SniperRifle.label>화살촉탄</Bullet_RK_SniperRifle.label>
+  <RK_Weapon_SawedOff.label>랫킨 소드오프 샷건</RK_Weapon_SawedOff.label>
+  <RK_Weapon_SawedOff.description>한손으로 들 수 있는 샷건입니다. 발사된 투사체가 일정 거리 앞에서 분사됩니다.</RK_Weapon_SawedOff.description>
+  <RK_Weapon_SawedOff.verbs.Verb_Shoot.label>소드오프 샷건</RK_Weapon_SawedOff.verbs.Verb_Shoot.label>
+  <RK_Weapon_SawedOff.tools.0.label>개머리판</RK_Weapon_SawedOff.tools.0.label>
+  <RK_Weapon_SawedOff.tools.1.label>총열</RK_Weapon_SawedOff.tools.1.label>
+  <RK_Bullet_SawedOff.label>산탄</RK_Bullet_SawedOff.label>
+  <RK_Weapon_Bolter.label>랫킨 핸드캐넌</RK_Weapon_Bolter.label>
+  <RK_Weapon_Bolter.description>대구경 탄환을 쏘는 핸드캐넌 입니다. 대구경 탄환을 발사하여 뛰어난 피해량과 저지력을 갖고 있습니다. 탄환에 코팅된 에너지 장으로 인해 이따금 에너지 장을 무력화 할 수 있으며, 대상을 기절 시킬 수도 있습니다.</RK_Weapon_Bolter.description>
+  <RK_Weapon_Bolter.verbs.Verb_Shoot.label>핸드캐넌 사격</RK_Weapon_Bolter.verbs.Verb_Shoot.label>
+  <RK_Weapon_Bolter.tools.0.label>손잡이</RK_Weapon_Bolter.tools.0.label>
+  <RK_Weapon_Bolter.tools.1.label>총열</RK_Weapon_Bolter.tools.1.label>
+  <RK_Bullet_Bolter.label>대구경 탄환</RK_Bullet_Bolter.label>
+  <RK_PrototypePulseRifle.label>랫킨 파동 소총</RK_PrototypePulseRifle.label>
+  <RK_PrototypePulseRifle.description>에너지 탄환을 쏘는 소총입니다. 내장된 유동 콘덴서를 통해 발사할 에너지량을 빠르게 조절하여 발사 상황에 맞게 대응할 수 있습니다. 근·중거리 교전시 빠르게 4발을 속사 하며, 원거리 교전시 고밀도 쐐기탄을 2발을 정밀 발사합니다.</RK_PrototypePulseRifle.description>
+  <RK_PrototypePulseRifle.verbs.Verb_PulseRifleShoot.label>속사</RK_PrototypePulseRifle.verbs.Verb_PulseRifleShoot.label>
+  <RK_PrototypePulseRifle.tools.0.label>개머리판</RK_PrototypePulseRifle.tools.0.label>
+  <RK_PrototypePulseRifle.tools.1.label>총열</RK_PrototypePulseRifle.tools.1.label>
+  <Bullet_RK_PrototypePulseRifleLight.label>쐐기탄</Bullet_RK_PrototypePulseRifleLight.label>
+  <Bullet_RK_PrototypePulseRifleHeavy.label>고밀도 쐐기탄</Bullet_RK_PrototypePulseRifleHeavy.label>
+  <RK_Weapon_BFR.label>랫킨 다목적 저격 소총</RK_Weapon_BFR.label>
+  <RK_Weapon_BFR.description>대구경 저격 소총입니다. 다목적 상황을 가정하여 개발되었으며 연구를 통해 여러 탄환 사용이 가능합니다.</RK_Weapon_BFR.description>
+  <RK_Weapon_BFR.verbs.Verb_BFRShoot.label>AP 사격</RK_Weapon_BFR.verbs.Verb_BFRShoot.label>
+  <RK_Weapon_BFR.tools.0.label>개머리판</RK_Weapon_BFR.tools.0.label>
+  <RK_Weapon_BFR.tools.1.label>총열</RK_Weapon_BFR.tools.1.label>
+  <Bullet_BFR_AP.label>관통탄</Bullet_BFR_AP.label>
+  <Bullet_BFR_HE.label>공중폭발탄</Bullet_BFR_HE.label>
+  <RK_Weapon_RatHolicGun.label>랫킨 쥑이는 총</RK_Weapon_RatHolicGun.label>
+  <RK_Weapon_RatHolicGun.description>수동식 다총열 기관총입니다. 손으로 돌려 발사하기 때문에 초기 발사속도가 느리지만 속도가 붙은 후 빠르게 연사합니다.</RK_Weapon_RatHolicGun.description>
+  <RK_Weapon_RatHolicGun.tools.0.label>총열</RK_Weapon_RatHolicGun.tools.0.label>
+  <RK_Bullet_RatHolicGun.label>탄환</RK_Bullet_RatHolicGun.label>
+  <RK_Axe.label>랫킨 도끼</RK_Axe.label>
+  <RK_Axe.description>나무를 벨 때 쓰는 도끼입니다. 벌목에 용이합니다.</RK_Axe.description>
+  <RK_Axe.tools.0.label>자루</RK_Axe.tools.0.label>
+  <RK_Axe.tools.1.label>날</RK_Axe.tools.1.label>
+  <RK_Cleaver.label>랫킨 식칼</RK_Cleaver.label>
+  <RK_Cleaver.description>고기를 자를 때 쓰는 식칼입니다. 조리 속도를 개선하고 도축시 고기를 더 많이 얻을 수 있습니다.</RK_Cleaver.description>
+  <RK_Cleaver.tools.0.label>자루</RK_Cleaver.tools.0.label>
+  <RK_Cleaver.tools.1.label>날</RK_Cleaver.tools.1.label>
+  <RK_Hockey.label>랫킨 쟁기</RK_Hockey.label>
+  <RK_Hockey.description>밭을 갈때 쓰는 쟁기입니다. 식물을 재배하는 데 도움이 됩니다.</RK_Hockey.description>
+  <RK_Hockey.tools.0.label>쟁기 날끝</RK_Hockey.tools.0.label>
+  <RK_Hockey.tools.1.label>쟁기 날</RK_Hockey.tools.1.label>
+  <RK_Fork.label>랫킨 포크삽</RK_Fork.label>
+  <RK_Fork.description>끝치 갈라진 포크형태의 삽입니다. 작물을 효율적으로 퍼나르고 수확하는데 도움이 됩니다.</RK_Fork.description>
+  <RK_Fork.tools.0.label>포크삽 끝</RK_Fork.tools.0.label>
+  <RK_Fork.tools.1.label>포크삽 날</RK_Fork.tools.1.label>
+  <RK_Pickaxe.label>랫킨 곡괭이</RK_Pickaxe.label>
+  <RK_Pickaxe.description>채굴할 때 쓰는 곡괭이입니다. 돌을 파고 채석 작업을 하는데 도움이 됩니다.</RK_Pickaxe.description>
+  <RK_Pickaxe.tools.0.label>망치면</RK_Pickaxe.tools.0.label>
+  <RK_Pickaxe.tools.1.label>곡괭이 끝</RK_Pickaxe.tools.1.label>
+</LanguageData>

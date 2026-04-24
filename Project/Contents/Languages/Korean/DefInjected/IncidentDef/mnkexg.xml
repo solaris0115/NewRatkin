@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RatkinTunnel_Guerrilla.label>터널 침투</RatkinTunnel_Guerrilla.label>
+  <RatkinTunnel_Guerrilla.letterLabel>터널 침투</RatkinTunnel_Guerrilla.letterLabel>
+  <RatkinTunnel_Guerrilla.letterText>땅속 흔들림이 감지되었습니다.\n\n적어도 좋은 일은 아닌 것 같습니다. 대비를 해야할 것 같습니다.</RatkinTunnel_Guerrilla.letterText>
+  <RatkinFollowUpTroops.label>후속 부대 습격</RatkinFollowUpTroops.label>
+  <RatkinFollowUpTroops.letterLabel>후속 습격</RatkinFollowUpTroops.letterLabel>
+  <RatkinFollowUpTroops.letterText>폭발과 함께 대기 중이던 후속 부대가 습격을 시작했습니다.</RatkinFollowUpTroops.letterText>
+  <RK_Incident_VagabondJoin.label>방랑자 합류</RK_Incident_VagabondJoin.label>
+  <RK_Incident_VagabondJoin.letterLabel>방랑자</RK_Incident_VagabondJoin.letterLabel>
+  <RK_Incident_VagabondJoin.letterText>위기의 순간, 두 명의 방랑자가 나타났습니다. 그들이 운명을 바꿀 수 있을까요?</RK_Incident_VagabondJoin.letterText>
+  <RK_Incident_PriestJoin.label>사제 합류</RK_Incident_PriestJoin.label>
+  <RK_Incident_PriestJoin.letterLabel>사제 합류</RK_Incident_PriestJoin.letterLabel>
+  <RK_Incident_PriestJoin.letterText>사제 [PAWN_nameDef]이(가) 당신의 정착지에 합류하고자 합니다.\n\n[PAWN_pronoun]은(는) 신앙심이 깊고 치유의 손길을 지닌 이입니다.</RK_Incident_PriestJoin.letterText>
+  <RK_Incident_WanderingTrader.label>유랑 상인 도착</RK_Incident_WanderingTrader.label>
+</LanguageData>

@@ -49,7 +49,6 @@
 				<label>edge</label>
 				<capacities>
 					<li>GunlanceShell_Normal</li>
-					<li>Cut</li>
 				</capacities>
 				<power>27</power>
 				<cooldownTime>3.4</cooldownTime>
@@ -80,42 +79,8 @@
 					<position>(-0.45,-0.3,-0.05)</position>
 					<angle>-10</angle>
 				</westOffset>
-			</li>			
-			<li Class="NewRatkin.CompProperties_GunlanceFuel">
-				<compClass>NewRatkin.CompGunlanceFuel</compClass>
-				<fuelLabel>Shots until barrel change</fuelLabel>
-				<fuelGizmoLabel>wyvern ammo</fuelGizmoLabel>
-				<fuelFilter>
-					<thingDefs>
-						<li>RK_WyvernAmmo_NormalType</li>
-					</thingDefs>
-				</fuelFilter>
-				<fuelCapacity>3</fuelCapacity>
-				<initialFuelPercent>0</initialFuelPercent>
-				<autoRefuelPercent>0.75</autoRefuelPercent>
-				<showFuelGizmo>true</showFuelGizmo>
-				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
-				<outOfFuelMessage>Ammo out: Needs Wyvern ammo(normal)</outOfFuelMessage>
-				<fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
 			</li>
 		</comps>
-		<!-- <verbs> -->
-			<!-- <li Class="NewRatkin.VerbProperties_Gunlance"> -->
-				<!-- <verbClass>NewRatkin.Verb_WyvernFire</verbClass> -->
-				<!-- <hasStandardCommand>true</hasStandardCommand> -->
-				<!-- <warmupTime>0.5</warmupTime> -->
-				<!-- <range>5</range> -->
-				<!-- <onlyManualCast>True</onlyManualCast> -->
-				<!-- <muzzleFlashScale>15</muzzleFlashScale> -->
-				<!-- <consumeFuelPerShot>1</consumeFuelPerShot> -->
-				<!-- <burstShotCount>2</burstShotCount> -->
-				<!-- <ticksBetweenBurstShots>130</ticksBetweenBurstShots> -->
-				<!-- <damageDef>Bomb</damageDef> -->
-				<!-- <damageAmount>25</damageAmount> -->
-				<!-- <stopBurstWithoutLos>false</stopBurstWithoutLos> -->
-				<!-- <angle>50</angle> -->
-			<!-- </li> -->
-		<!-- </verbs> -->
 	</ThingDef>
 
 	<ToolCapacityDef>

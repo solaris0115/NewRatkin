@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- 지도자 칭호 생성기: 랫킨 왕국 문화 -->
+	<!-- 봉건주의 칭호 (King, Duke, Count, Baron, Knight 등) -->
+	<RulePackDef>
+		<defName>LeaderTitleMaker_RatkinKingdom</defName>
+		<include>
+			<li>LeaderTitleMaker_GlobalStructure</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<!-- 봉건주의 칭호 구조 -->
+				<li>memeLeaderNoun(priority=1)->[cultureLeaderNoun]</li>
+				
+				<li>cultureLeaderTitle->[cultureLeaderAdjective] [cultureLeaderNoun]</li>
+				<li>cultureLeaderTitle(p=3)->[cultureLeaderNoun]</li>
+
+				<!-- 형용사 -->
+				<li>cultureLeaderAdjective->high</li>
+				<li>cultureLeaderAdjective->great</li>
+				<li>cultureLeaderAdjective->noble</li>
+				<li>cultureLeaderAdjective->royal</li>
+				<li>cultureLeaderAdjective->grand</li>
+				<li>cultureLeaderAdjective->first</li>
+				<li>cultureLeaderAdjective->prime</li>
+
+				<!-- 봉건주의 칭호 -->
+				<li>cultureLeaderNoun(p=8)->King</li>
+				<li>cultureLeaderNoun(p=6)->Queen</li>
+				<li>cultureLeaderNoun(p=5)->Duke</li>
+				<li>cultureLeaderNoun(p=5)->Duchess</li>
+				<li>cultureLeaderNoun(p=4)->Count</li>
+				<li>cultureLeaderNoun(p=4)->Countess</li>
+				<li>cultureLeaderNoun(p=3)->Baron</li>
+				<li>cultureLeaderNoun(p=3)->Baroness</li>
+				<li>cultureLeaderNoun(p=2)->Knight</li>
+				<li>cultureLeaderNoun(p=2)->Lord</li>
+				<li>cultureLeaderNoun(p=2)->Lady</li>
+				<li>cultureLeaderNoun(p=1)->Earl</li>
+				<li>cultureLeaderNoun(p=1)->Marquis</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>
+

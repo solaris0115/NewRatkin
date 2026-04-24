@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- 유랑단 캐러반 이벤트를 바닐라 스토리텔러(Cassandra, Phoebe, Randy)에 추가 -->
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/StorytellerDef[defName="Cassandra"]/comps</xpath>
+				<value>
+					<li Class="NewRatkin.StorytellerCompProperties_WanderingCaravan">
+						<incident>RK_Incident_WanderingTrader</incident>
+						<minDaysPassed>30</minDaysPassed>
+						<springMtbDays>3</springMtbDays>
+						<summerMtbDays>1.5</summerMtbDays>
+						<fallbackMtbDays>0.5</fallbackMtbDays>
+						<minRefireDays>45</minRefireDays>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/StorytellerDef[defName="Phoebe"]/comps</xpath>
+				<value>
+					<li Class="NewRatkin.StorytellerCompProperties_WanderingCaravan">
+						<incident>RK_Incident_WanderingTrader</incident>
+						<minDaysPassed>30</minDaysPassed>
+						<springMtbDays>3</springMtbDays>
+						<summerMtbDays>1.5</summerMtbDays>
+						<fallbackMtbDays>0.5</fallbackMtbDays>
+						<minRefireDays>45</minRefireDays>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/StorytellerDef[defName="Randy"]/comps</xpath>
+				<value>
+					<li Class="NewRatkin.StorytellerCompProperties_WanderingCaravan">
+						<incident>RK_Incident_WanderingTrader</incident>
+						<minDaysPassed>30</minDaysPassed>
+						<springMtbDays>3</springMtbDays>
+						<summerMtbDays>1.5</summerMtbDays>
+						<fallbackMtbDays>0.5</fallbackMtbDays>
+						<minRefireDays>45</minRefireDays>
+					</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

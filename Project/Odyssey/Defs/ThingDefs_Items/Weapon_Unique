@@ -1,0 +1,914 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- 유니크 무기 - Weapon_HighTech.xml -->
+	
+	<!-- 건랜스 일반형 -->
+	<ThingDef ParentName="RK_WeaponAttr_Gunlance">
+		<defName>RK_Weapon_Gunlance_Unique</defName>
+		<label>unique ratkin gunlance</label>
+		<description>A unique gunlance with customized parts and enhanced capabilities.</description>
+
+		<comps Inherit="False">
+			<li Class="SYS.CompProperties_WeaponExtention">
+				<littleDown>True</littleDown>
+				<northOffset>
+					<position>(0.45,0,0.15)</position>
+					<angle>-15</angle>
+				</northOffset>
+				<southOffset>
+					<position>(-0.45,0.3,0.1)</position>
+					<angle>35</angle>
+				</southOffset>
+				<eastOffset>
+					<position>(0.45,0.3,-0.05)</position>
+					<angle>10</angle>
+				</eastOffset>
+				<westOffset>
+					<position>(-0.45,-0.3,-0.05)</position>
+					<angle>-10</angle>
+				</westOffset>
+			</li>
+			<li Class="CompProperties_EquippableAbilityReloadable">
+				<abilityDef>RK_WyvernFire_Ability</abilityDef>
+				<maxCharges>2</maxCharges>
+				<soundReload>RK_Sound_Reload</soundReload>
+				<chargeNoun>wyvern charge</chargeNoun>
+				<ammoDef>RK_Ammo_WyvernFire</ammoDef>
+				<ammoCountPerCharge>1</ammoCountPerCharge>
+				<baseReloadTicks>60</baseReloadTicks>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Biocodable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+			<li Class="CompProperties_UniqueWeapon">
+				<weaponCategories>
+					<li>Melee</li>
+					<li>TwoHanded</li>
+					<li>Gunlance</li>
+				</weaponCategories>
+				<namerLabels>
+					<li>gunlance</li>
+					<li>lance</li>
+					<li>weapon</li>
+				</namerLabels>
+			</li>
+		</comps>
+
+		<generateAllowChance>0</generateAllowChance>
+		<possessionCount>0</possessionCount>
+		<tradeability>Sellable</tradeability>
+		<thingSetMakerTags Inherit="False">
+			<li>UniqueWeapon</li>
+		</thingSetMakerTags>
+		<recipeMaker Inherit="False" IsNull="True" />
+	</ThingDef>
+
+	<!-- 화염 체인소드 -->
+	<ThingDef ParentName="RK_WeaponAttr_FlameChainSword">
+		<defName>RK_Weapon_FlameChainSword_Unique</defName>
+		<label>unique flame chain sword</label>
+		<description>A unique flame chain sword with enhanced fire capabilities.</description>
+
+		<comps Inherit="False">
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponMelee</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+			<li Class="CompProperties_UniqueWeapon">
+				<weaponCategories>
+					<li>Melee</li>
+					<li>OneHanded</li>
+					<li>ChainSword</li>
+				</weaponCategories>
+				<namerLabels>
+					<li>chain sword</li>
+					<li>flame sword</li>
+					<li>sword</li>
+				</namerLabels>
+			</li>
+		</comps>
+
+		<generateAllowChance>0</generateAllowChance>
+		<possessionCount>0</possessionCount>
+		<tradeability>Sellable</tradeability>
+		<thingSetMakerTags Inherit="False">
+			<li>UniqueWeapon</li>
+		</thingSetMakerTags>
+		<recipeMaker Inherit="False" IsNull="True" />
+	</ThingDef>
+
+	<!-- EMP 체인소드 -->
+	<ThingDef ParentName="RK_WeaponAttr_EMPChainSword">
+		<defName>RK_Weapon_EMPChainSword_Unique</defName>
+		<label>unique EMP chain sword</label>
+		<description>A unique EMP chain sword with enhanced EMP capabilities.</description>
+
+		<comps Inherit="False">
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponMelee</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+			<li Class="CompProperties_UniqueWeapon">
+				<weaponCategories>
+					<li>Melee</li>
+					<li>OneHanded</li>
+					<li>ChainSword</li>
+				</weaponCategories>
+				<namerLabels>
+					<li>chain sword</li>
+					<li>EMP sword</li>
+					<li>sword</li>
+				</namerLabels>
+			</li>
+		</comps>
+
+		<generateAllowChance>0</generateAllowChance>
+		<possessionCount>0</possessionCount>
+		<tradeability>Sellable</tradeability>
+		<thingSetMakerTags Inherit="False">
+			<li>UniqueWeapon</li>
+		</thingSetMakerTags>
+		<recipeMaker Inherit="False" IsNull="True" />
+	</ThingDef>
+
+	<!-- 유니크 무기 - Weapon_Melee.xml -->
+	
+	<!-- 철퇴 -->
+	<ThingDef ParentName="RK_WeaponAttr_Mace">
+		<defName>RK_Mace_Unique</defName>
+		<label>unique ratkin mace</label>
+		<description>A unique ratkin mace with enhanced capabilities.</description>
+
+		<comps Inherit="False">
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponMelee</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+			<li Class="CompProperties_UniqueWeapon">
+				<weaponCategories>
+					<li>Melee</li>
+					<li>OneHanded</li>
+					<li>Blunt</li>
+				</weaponCategories>
+				<namerLabels>
+					<li>mace</li>
+					<li>club</li>
+					<li>weapon</li>
+				</namerLabels>
+			</li>
+		</comps>
+
+		<generateAllowChance>0</generateAllowChance>
+		<possessionCount>0</possessionCount>
+		<tradeability>Sellable</tradeability>
+		<thingSetMakerTags Inherit="False">
+			<li>UniqueWeapon</li>
+		</thingSetMakerTags>
+		<recipeMaker Inherit="False" IsNull="True" />
+	</ThingDef>
+
+	<!-- 양손검 -->
+	<ThingDef ParentName="RK_WeaponAttr_TwoHanded">
+		<defName>RK_TwoHanded_Unique</defName>
+		<label>unique two-handed sword</label>
+		<description>A unique two-handed sword with enhanced capabilities.</description>
+
+		<comps Inherit="False">
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponMelee</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+			<li Class="CompProperties_UniqueWeapon">
+				<weaponCategories>
+					<li>Melee</li>
+					<li>TwoHanded</li>
+					<li>Sharp</li>
+				</weaponCategories>
+				<namerLabels>
+					<li>two-handed sword</li>
+					<li>greatsword</li>
+					<li>sword</li>
+				</namerLabels>
+			</li>
+		</comps>
+
+		<generateAllowChance>0</generateAllowChance>
+		<possessionCount>0</possessionCount>
+		<tradeability>Sellable</tradeability>
+		<thingSetMakerTags Inherit="False">
+			<li>UniqueWeapon</li>
+		</thingSetMakerTags>
+		<recipeMaker Inherit="False" IsNull="True" />
+	</ThingDef>
+
+	<!-- 헤비 랜스 -->
+	<ThingDef ParentName="RK_WeaponAttr_HeavyLance">
+		<defName>RK_HeavyLance_Unique</defName>
+		<label>unique heavy lance</label>
+		<description>A unique heavy lance with enhanced capabilities.</description>
+
+		<comps Inherit="False">
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponMelee</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+			<li Class="CompProperties_UniqueWeapon">
+				<weaponCategories>
+					<li>Melee</li>
+					<li>TwoHanded</li>
+					<li>Lance</li>
+				</weaponCategories>
+				<namerLabels>
+					<li>heavy lance</li>
+					<li>lance</li>
+					<li>spear</li>
+				</namerLabels>
+			</li>
+		</comps>
+
+		<generateAllowChance>0</generateAllowChance>
+		<possessionCount>0</possessionCount>
+		<tradeability>Sellable</tradeability>
+		<thingSetMakerTags Inherit="False">
+			<li>UniqueWeapon</li>
+		</thingSetMakerTags>
+		<recipeMaker Inherit="False" IsNull="True" />
+	</ThingDef>
+
+	<!-- 정원사검 -->
+	<ThingDef ParentName="RK_WeaponAttr_LongSword">
+		<defName>RK_LongSword_Unique</defName>
+		<label>unique longsword</label>
+		<description>A unique longsword with enhanced capabilities.</description>
+
+		<comps Inherit="False">
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponMelee</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+			<li Class="CompProperties_UniqueWeapon">
+				<weaponCategories>
+					<li>Melee</li>
+					<li>OneHanded</li>
+					<li>Sharp</li>
+				</weaponCategories>
+				<namerLabels>
+					<li>longsword</li>
+					<li>sword</li>
+					<li>blade</li>
+				</namerLabels>
+			</li>
+		</comps>
+
+		<generateAllowChance>0</generateAllowChance>
+		<possessionCount>0</possessionCount>
+		<tradeability>Sellable</tradeability>
+		<thingSetMakerTags Inherit="False">
+			<li>UniqueWeapon</li>
+		</thingSetMakerTags>
+		<recipeMaker Inherit="False" IsNull="True" />
+	</ThingDef>
+
+	<!-- 창 -->
+	<ThingDef ParentName="RK_WeaponAttr_Spear">
+		<defName>RK_Spear_Unique</defName>
+		<label>unique spear</label>
+		<description>A unique spear with enhanced capabilities.</description>
+
+		<comps Inherit="False">
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponMelee</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+			<li Class="CompProperties_UniqueWeapon">
+				<weaponCategories>
+					<li>Melee</li>
+					<li>TwoHanded</li>
+					<li>Spear</li>
+				</weaponCategories>
+				<namerLabels>
+					<li>spear</li>
+					<li>lance</li>
+					<li>polearm</li>
+				</namerLabels>
+			</li>
+		</comps>
+
+		<generateAllowChance>0</generateAllowChance>
+		<possessionCount>0</possessionCount>
+		<tradeability>Sellable</tradeability>
+		<thingSetMakerTags Inherit="False">
+			<li>UniqueWeapon</li>
+		</thingSetMakerTags>
+		<recipeMaker Inherit="False" IsNull="True" />
+	</ThingDef>
+
+	<!-- 할버드 -->
+	<ThingDef ParentName="RK_WeaponAttr_Halberd">
+		<defName>RK_Halberd_Unique</defName>
+		<label>unique halberd</label>
+		<description>A unique halberd with enhanced capabilities.</description>
+
+		<comps Inherit="False">
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponMelee</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+			<li Class="CompProperties_UniqueWeapon">
+				<weaponCategories>
+					<li>Melee</li>
+					<li>TwoHanded</li>
+					<li>Polearm</li>
+				</weaponCategories>
+				<namerLabels>
+					<li>halberd</li>
+					<li>polearm</li>
+					<li>weapon</li>
+				</namerLabels>
+			</li>
+		</comps>
+
+		<generateAllowChance>0</generateAllowChance>
+		<possessionCount>0</possessionCount>
+		<tradeability>Sellable</tradeability>
+		<thingSetMakerTags Inherit="False">
+			<li>UniqueWeapon</li>
+		</thingSetMakerTags>
+		<recipeMaker Inherit="False" IsNull="True" />
+	</ThingDef>
+
+	<!-- 유니크 무기 - Weapon_Range.xml -->
+	
+	<!-- 석궁 -->
+	<ThingDef ParentName="RK_WeaponAttr_Crossbow">
+		<defName>RK_Crossbow_Unique</defName>
+		<label>unique crossbow</label>
+		<description>A unique crossbow with enhanced capabilities.</description>
+
+		<comps Inherit="False">
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+			<li Class="CompProperties_UniqueWeapon">
+				<weaponCategories>
+					<li>Ranged</li>
+					<li>Bow</li>
+					<li>Crossbow</li>
+				</weaponCategories>
+				<namerLabels>
+					<li>crossbow</li>
+					<li>bow</li>
+					<li>weapon</li>
+				</namerLabels>
+			</li>
+		</comps>
+
+		<generateAllowChance>0</generateAllowChance>
+		<possessionCount>0</possessionCount>
+		<tradeability>Sellable</tradeability>
+		<thingSetMakerTags Inherit="False">
+			<li>UniqueWeapon</li>
+		</thingSetMakerTags>
+		<recipeMaker Inherit="False" IsNull="True" />
+	</ThingDef>
+
+	<!-- 저격 라이플 -->
+	<ThingDef ParentName="RK_WeaponAttr_SniperRifle">
+		<defName>RK_SniperRifle_Unique</defName>
+		<label>unique sniper rifle</label>
+		<description>A unique sniper rifle with enhanced capabilities.</description>
+
+		<comps Inherit="False">
+			<li Class="CompProperties_EquippableAbilityReloadable" />
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Biocodable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+			<li Class="CompProperties_UniqueWeapon">
+				<weaponCategories>
+					<li>Ranged</li>
+					<li>BulletFiring</li>
+					<li>Gun</li>
+					<li>Rifle</li>
+					<li>Sighted</li>
+				</weaponCategories>
+				<namerLabels>
+					<li>sniper rifle</li>
+					<li>rifle</li>
+					<li>gun</li>
+				</namerLabels>
+			</li>
+		</comps>
+
+		<generateAllowChance>0</generateAllowChance>
+		<possessionCount>0</possessionCount>
+		<tradeability>Sellable</tradeability>
+		<thingSetMakerTags Inherit="False">
+			<li>UniqueWeapon</li>
+		</thingSetMakerTags>
+		<recipeMaker Inherit="False" IsNull="True" />
+	</ThingDef>
+
+	<!-- 플레셰트 라이플 -->
+	<ThingDef ParentName="RK_WeaponAttr_Rifle">
+		<defName>RK_FlechetteRifle_Unique</defName>
+		<label>unique flechette rifle</label>
+		<description>A unique flechette rifle with enhanced capabilities.</description>
+
+		<comps Inherit="False">
+			<li Class="CompProperties_EquippableAbilityReloadable" />
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Biocodable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+			<li Class="CompProperties_UniqueWeapon">
+				<weaponCategories>
+					<li>Ranged</li>
+					<li>BulletFiring</li>
+					<li>Gun</li>
+					<li>Rifle</li>
+					<li>Sighted</li>
+				</weaponCategories>
+				<namerLabels>
+					<li>flechette rifle</li>
+					<li>rifle</li>
+					<li>gun</li>
+				</namerLabels>
+			</li>
+		</comps>
+
+		<generateAllowChance>0</generateAllowChance>
+		<possessionCount>0</possessionCount>
+		<tradeability>Sellable</tradeability>
+		<thingSetMakerTags Inherit="False">
+			<li>UniqueWeapon</li>
+		</thingSetMakerTags>
+		<recipeMaker Inherit="False" IsNull="True" />
+	</ThingDef>
+
+	<!-- 플레셰트 저격 라이플 -->
+	<ThingDef ParentName="RK_WeaponAttr_SniperRifle">
+		<defName>RK_FlechetteSniperRifle_Unique</defName>
+		<label>unique flechette sniper rifle</label>
+		<description>A unique flechette sniper rifle with enhanced capabilities.</description>
+
+		<comps Inherit="False">
+			<li Class="CompProperties_EquippableAbilityReloadable" />
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Biocodable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+			<li Class="CompProperties_UniqueWeapon">
+				<weaponCategories>
+					<li>Ranged</li>
+					<li>BulletFiring</li>
+					<li>Gun</li>
+					<li>Rifle</li>
+					<li>Sighted</li>
+				</weaponCategories>
+				<namerLabels>
+					<li>flechette sniper rifle</li>
+					<li>sniper rifle</li>
+					<li>rifle</li>
+				</namerLabels>
+			</li>
+		</comps>
+
+		<generateAllowChance>0</generateAllowChance>
+		<possessionCount>0</possessionCount>
+		<tradeability>Sellable</tradeability>
+		<thingSetMakerTags Inherit="False">
+			<li>UniqueWeapon</li>
+		</thingSetMakerTags>
+		<recipeMaker Inherit="False" IsNull="True" />
+	</ThingDef>
+
+	<!-- 대형 쇠뇌 -->
+	<ThingDef ParentName="RK_WeaponAttr_Arbalest">
+		<defName>RK_Weapon_Arbalest_Unique</defName>
+		<label>unique arbalest</label>
+		<description>A unique arbalest with enhanced capabilities.</description>
+
+		<comps Inherit="False">
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+			<li Class="CompProperties_UniqueWeapon">
+				<weaponCategories>
+					<li>Ranged</li>
+					<li>Bow</li>
+					<li>Crossbow</li>
+				</weaponCategories>
+				<namerLabels>
+					<li>arbalest</li>
+					<li>crossbow</li>
+					<li>weapon</li>
+				</namerLabels>
+			</li>
+		</comps>
+
+		<generateAllowChance>0</generateAllowChance>
+		<possessionCount>0</possessionCount>
+		<tradeability>Sellable</tradeability>
+		<thingSetMakerTags Inherit="False">
+			<li>UniqueWeapon</li>
+		</thingSetMakerTags>
+		<recipeMaker Inherit="False" IsNull="True" />
+	</ThingDef>
+
+	<!-- 연발 석궁 -->
+	<ThingDef ParentName="RK_WeaponAttr_AutoCrossBow">
+		<defName>RK_AutoCrossBow_Unique</defName>
+		<label>unique autocrossbow</label>
+		<description>A unique autocrossbow with enhanced capabilities.</description>
+
+		<comps Inherit="False">
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+			<li Class="CompProperties_UniqueWeapon">
+				<weaponCategories>
+					<li>Ranged</li>
+					<li>Bow</li>
+					<li>Crossbow</li>
+				</weaponCategories>
+				<namerLabels>
+					<li>autocrossbow</li>
+					<li>crossbow</li>
+					<li>weapon</li>
+				</namerLabels>
+			</li>
+		</comps>
+
+		<generateAllowChance>0</generateAllowChance>
+		<possessionCount>0</possessionCount>
+		<tradeability>Sellable</tradeability>
+		<thingSetMakerTags Inherit="False">
+			<li>UniqueWeapon</li>
+		</thingSetMakerTags>
+		<recipeMaker Inherit="False" IsNull="True" />
+	</ThingDef>
+
+	<!-- 라이플 -->
+	<ThingDef ParentName="RK_WeaponAttr_Rifle">
+		<defName>RK_Rifle_Unique</defName>
+		<label>unique ratkin rifle</label>
+		<description>A unique ratkin rifle with enhanced capabilities.</description>
+
+		<comps Inherit="False">
+			<li Class="CompProperties_EquippableAbilityReloadable" />
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Biocodable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+			<li Class="CompProperties_UniqueWeapon">
+				<weaponCategories>
+					<li>Ranged</li>
+					<li>BulletFiring</li>
+					<li>Gun</li>
+					<li>Rifle</li>
+					<li>Sighted</li>
+				</weaponCategories>
+				<namerLabels>
+					<li>ratkin rifle</li>
+					<li>rifle</li>
+					<li>gun</li>
+				</namerLabels>
+			</li>
+		</comps>
+
+		<generateAllowChance>0</generateAllowChance>
+		<possessionCount>0</possessionCount>
+		<tradeability>Sellable</tradeability>
+		<thingSetMakerTags Inherit="False">
+			<li>UniqueWeapon</li>
+		</thingSetMakerTags>
+		<recipeMaker Inherit="False" IsNull="True" />
+	</ThingDef>
+
+	<!-- 샷건 -->
+	<ThingDef ParentName="RK_WeaponAttr_Rifle_line">
+		<defName>RK_Rifle_line_Unique</defName>
+		<label>unique shotgun</label>
+		<description>A unique shotgun with enhanced capabilities.</description>
+
+		<comps Inherit="False">
+			<li Class="CompProperties_EquippableAbilityReloadable" />
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Biocodable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+			<li Class="CompProperties_UniqueWeapon">
+				<weaponCategories>
+					<li>Ranged</li>
+					<li>BulletFiring</li>
+					<li>Gun</li>
+					<li>Shotgun</li>
+				</weaponCategories>
+				<namerLabels>
+					<li>shotgun</li>
+					<li>gun</li>
+					<li>weapon</li>
+				</namerLabels>
+			</li>
+		</comps>
+
+		<generateAllowChance>0</generateAllowChance>
+		<possessionCount>0</possessionCount>
+		<tradeability>Sellable</tradeability>
+		<thingSetMakerTags Inherit="False">
+			<li>UniqueWeapon</li>
+		</thingSetMakerTags>
+		<recipeMaker Inherit="False" IsNull="True" />
+	</ThingDef>
+
+	<!-- 볼터건 Attr -->
+	<ThingDef ParentName="RK_Weapon_Bolter" Name="RK_WeaponAttr_Bolter" Abstract="True">
+	</ThingDef>
+
+	<!-- 볼터건 -->
+	<ThingDef ParentName="RK_WeaponAttr_Bolter">
+		<defName>RK_Weapon_Bolter_Unique</defName>
+		<label>unique bolter</label>
+		<description>A unique bolter with enhanced capabilities.</description>
+
+		<comps Inherit="False">
+			<li Class="CompProperties_EquippableAbilityReloadable" />
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Biocodable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+			<li Class="CompProperties_UniqueWeapon">
+				<weaponCategories>
+					<li>Ranged</li>
+					<li>BulletFiring</li>
+					<li>Gun</li>
+					<li>Rifle</li>
+				</weaponCategories>
+				<namerLabels>
+					<li>bolter</li>
+					<li>rifle</li>
+					<li>gun</li>
+				</namerLabels>
+			</li>
+		</comps>
+
+		<generateAllowChance>0</generateAllowChance>
+		<possessionCount>0</possessionCount>
+		<tradeability>Sellable</tradeability>
+		<thingSetMakerTags Inherit="False">
+			<li>UniqueWeapon</li>
+		</thingSetMakerTags>
+		<recipeMaker Inherit="False" IsNull="True" />
+	</ThingDef>
+
+	<!-- 프로토타입 펄스 라이플 -->
+	<ThingDef ParentName="RK_WeaponAttr_PrototypePulseRifle">
+		<defName>RK_PrototypePulseRifle_Unique</defName>
+		<label>unique prototype pulse rifle</label>
+		<description>A unique prototype pulse rifle with enhanced capabilities.</description>
+
+		<comps Inherit="False">
+			<li Class="CompProperties_EquippableAbilityReloadable" />
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Biocodable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+			<li Class="CompProperties_UniqueWeapon">
+				<weaponCategories>
+					<li>Ranged</li>
+					<li>BulletFiring</li>
+					<li>Gun</li>
+					<li>Rifle</li>
+					<li>Sighted</li>
+				</weaponCategories>
+				<namerLabels>
+					<li>pulse rifle</li>
+					<li>rifle</li>
+					<li>gun</li>
+				</namerLabels>
+			</li>
+		</comps>
+
+		<generateAllowChance>0</generateAllowChance>
+		<possessionCount>0</possessionCount>
+		<tradeability>Sellable</tradeability>
+		<thingSetMakerTags Inherit="False">
+			<li>UniqueWeapon</li>
+		</thingSetMakerTags>
+		<recipeMaker Inherit="False" IsNull="True" />
+	</ThingDef>
+
+	<!-- BFR 3000 -->
+	<ThingDef ParentName="RK_WeaponAttr_BFR">
+		<defName>RK_Weapon_BFR_Unique</defName>
+		<label>unique BFR 3000</label>
+		<description>A unique BFR 3000 with enhanced capabilities.</description>
+
+		<comps Inherit="False">
+			<li Class="CompProperties_EquippableAbilityReloadable" />
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Biocodable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+			<li Class="CompProperties_UniqueWeapon">
+				<weaponCategories>
+					<li>Ranged</li>
+					<li>BulletFiring</li>
+					<li>Gun</li>
+					<li>Rifle</li>
+					<li>Sighted</li>
+				</weaponCategories>
+				<namerLabels>
+					<li>BFR</li>
+					<li>rifle</li>
+					<li>gun</li>
+				</namerLabels>
+			</li>
+		</comps>
+
+		<generateAllowChance>0</generateAllowChance>
+		<possessionCount>0</possessionCount>
+		<tradeability>Sellable</tradeability>
+		<thingSetMakerTags Inherit="False">
+			<li>UniqueWeapon</li>
+		</thingSetMakerTags>
+		<recipeMaker Inherit="False" IsNull="True" />
+	</ThingDef>
+
+	<!-- RatHolic Gun -->
+	<ThingDef ParentName="RK_WeaponAttr_RatHolicGun">
+		<defName>RK_Weapon_RatHolicGun_Unique</defName>
+		<label>unique RatHolic gun</label>
+		<description>A unique RatHolic gun with enhanced capabilities.</description>
+
+		<comps Inherit="False">
+			<li Class="CompProperties_EquippableAbilityReloadable" />
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Biocodable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+			<li Class="CompProperties_UniqueWeapon">
+				<weaponCategories>
+					<li>Ranged</li>
+					<li>BulletFiring</li>
+					<li>Gun</li>
+					<li>MachineGun</li>
+				</weaponCategories>
+				<namerLabels>
+					<li>RatHolic gun</li>
+					<li>machine gun</li>
+					<li>gun</li>
+				</namerLabels>
+			</li>
+		</comps>
+
+		<generateAllowChance>0</generateAllowChance>
+		<possessionCount>0</possessionCount>
+		<tradeability>Sellable</tradeability>
+		<thingSetMakerTags Inherit="False">
+			<li>UniqueWeapon</li>
+		</thingSetMakerTags>
+		<recipeMaker Inherit="False" IsNull="True" />
+	</ThingDef>
+</Defs>

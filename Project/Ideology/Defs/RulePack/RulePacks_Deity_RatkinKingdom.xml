@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- 신 이름 생성기: 랫킨 왕국 문화 -->
+	<!-- 기사도/봉건주의 테마의 신 이름 -->
+	<RulePackDef>
+		<defName>NamerDeity_RatkinKingdom</defName>
+		<include>
+			<li>NamerDeityGlobal</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<!-- 기사도/봉건주의 스타일의 신 이름 -->
+				<li>name->[syl][end]</li>
+				<li>name->[syl][syl][end]</li>
+				<li>name->[syl]-[syl][end]</li>
+
+				<!-- 시작 음절 -->
+				<li>syl->[SylG]</li>
+				<li>syl->hon</li>
+				<li>syl->val</li>
+				<li>syl->roy</li>
+				<li>syl->knight</li>
+				<li>syl->lord</li>
+				<li>syl->nob</li>
+				<li>syl->cour</li>
+				<li>syl->chiv</li>
+
+				<!-- 끝 음절 -->
+				<li>end->al</li>
+				<li>end->ar</li>
+				<li>end->us</li>
+				<li>end->ius</li>
+				<li>end->on</li>
+				<li>end->or</li>
+				<li>end->an</li>
+				<li>end->en</li>
+				<li>end->in</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>
+

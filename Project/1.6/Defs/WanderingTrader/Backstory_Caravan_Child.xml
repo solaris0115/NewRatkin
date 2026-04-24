@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Ratkin Wandering Trader - 유랑 상인 유년기 (Childhood) -->
+<!-- RK_WanderingTrader WandererChild Backstory -->
+<Defs>
+
+	<AlienRace.AlienBackstoryDef ParentName="RK_Backstory_WandererChildhoodBase">
+		<defName>RK_Backstory_WandererChild</defName>
+		<title>Ratkin wanderer child</title>
+		<titleShort>wanderer child</titleShort>
+		<description>[PAWN_nameDef]은 어려서부터 유랑 생활을 해왔습니다. [PAWN_pronoun]은 한곳에 머무르지 못하고 떠돌아다니며 살아남는 법을 배웠습니다.</description>
+		<skillGains>
+			<Social>2</Social>
+			<Animals>1</Animals>
+			<Plants>1</Plants>
+			<Construction>1</Construction>
+		</skillGains>
+		<workDisables>
+			<li>Intellectual</li>
+		</workDisables>
+	</AlienRace.AlienBackstoryDef>
+
+</Defs>

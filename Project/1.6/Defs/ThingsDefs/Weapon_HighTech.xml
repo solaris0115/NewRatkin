@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- 건랜스 -->
+	<ThingDef ParentName="RK_MeleeWeapon" Name="RK_WeaponAttr_Gunlance">
+		<defName>RK_Weapon_Gunlance</defName>
+		<label>ratkin gunlance</label>
+		<description>포격이 가능한 무거운 기계식 랜스입니다. 포격시 전방으로 화염을 방사합니다.\n전용 탄환을 이용하여 용격포(Wyvern Fire)를 쏠 수 있습니다. 용격포는 전방 원뿔 범위에 폭발 데미지를 가하며, 2발까지 사용 가능하고 각 발 사용 후 2시간의 재사용 대기시간이 있습니다.\n\n일반 포격형: 짧은 거리에서 포격할 수 있습니다.</description>
+		<graphicData>
+			<onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
+			<texPath>Weapon/RK_Texture_WeaponGunlanceA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<weaponTags Inherit="false">
+			<li>RK_EliteDefender</li>
+			<li>RK_Gunlance</li>
+			<li>RK_WeaponTag_TwoHand</li>
+			<li>RK_WeaponTag_TwoHandMelee</li>
+			<li>RK_WeaponTag_TwoHandMeleeAttack</li>
+			<li>RK_WeaponTag_ShieldCompatible</li>
+			<li>RK_WeaponTag_HighTech</li>
+		</weaponTags>
+		<tradeTags>
+			<li>RK_TradeTag_4TierWeapon</li>
+			<li>RK_TradeTag_HighTech</li>
+		</tradeTags>
+		<costStuffCount>100</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costList>
+			<Steel>100</Steel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>35000</WorkToMake>
+			<Mass>20</Mass>
+			<AccuracyTouch>1</AccuracyTouch>
+			<AccuracyShort>1</AccuracyShort>
+			<RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<MeleeHitChance>-4</MeleeHitChance>
+			<MoveSpeed>-0.25</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>45</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>3</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>GunlanceShell_Normal</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>3</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>RK_Research_SwordAndShield</li>
+				<li>RK_Research_Metallurgy</li>
+				<li>RK_Research_DragonFlame</li>
+			</researchPrerequisites>
+			<recipeUsers Inherit="false">
+				<li>TableMachining</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+			<displayPriority>78540</displayPriority>
+		</recipeMaker>
+		<comps Inherit="false">
+			<li Class="SYS.CompProperties_WeaponExtention">
+				<littleDown>True</littleDown>
+				<northOffset>
+					<position>(0.45,0,0.15)</position>
+					<angle>-15</angle>
+				</northOffset>
+				<southOffset>
+					<position>(-0.45,0.3,0.1)</position>
+					<angle>35</angle>
+				</southOffset>
+				<eastOffset>
+					<position>(0.45,0.3,-0.05)</position>
+					<angle>10</angle>
+				</eastOffset>
+				<westOffset>
+					<position>(-0.45,-0.3,-0.05)</position>
+					<angle>-10</angle>
+				</westOffset>
+			</li>
+			<li Class="CompProperties_EquippableAbilityReloadable">
+				<abilityDef>RK_WyvernFire_Ability</abilityDef>
+				<maxCharges>6</maxCharges>
+				<soundReload>RK_Sound_GunlanceAmmoReload</soundReload>
+				<chargeNoun>wyvern charge</chargeNoun>
+				<ammoDef>RK_Ammo_WyvernFire</ammoDef>
+				<ammoCountPerCharge>1</ammoCountPerCharge>
+				<baseReloadTicks>60</baseReloadTicks>
+				<replenishAfterCooldown>False</replenishAfterCooldown>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Biocodable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ToolCapacityDef>
+		<defName>GunlanceShell_Normal</defName>
+	</ToolCapacityDef>
+
+	<ManeuverDef>
+		<defName>RK_GunlanceExplosion_Normal</defName>
+		<requiredCapacity>GunlanceShell_Normal</requiredCapacity>
+		<verb Class="NewRatkin.VerbProperties_Gunlance">
+			<verbClass>NewRatkin.Verb_GunlanceFiring</verbClass>
+			<damageDef>Bomb</damageDef>
+			<range>1.7</range>
+			<angle>50</angle>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>RK_Maneuver_Shell_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>RK_Maneuver_Shell_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>RK_Maneuver_Shell_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>RK_Maneuver_Shell_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+
+	<ThingDef ParentName="MakeableShellBase">
+		<defName>RK_Ammo_WyvernFire</defName>
+		<label>wyvern fire</label>
+		<description>A shell filled with high explosives. Can be fired from mortars or installed as a trap. Explodes when damaged.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/WyvernAmmo_Normal</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<costList>
+			<Steel>25</Steel>
+			<Chemfuel>30</Chemfuel>
+		</costList>
+		<tradeability>Sellable</tradeability>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>2.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+				<startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+				<wickTicks>30~60</wickTicks>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>RK_Research_SwordAndShield</li>
+				<li>RK_Research_Metallurgy</li>
+				<li>RK_Research_DragonFlame</li>
+			</researchPrerequisites>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<effectWorking>Cook</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<workAmount>1000</workAmount>
+			<targetCountAdjustment>5</targetCountAdjustment>
+			<workSkill>Crafting</workSkill>
+			<recipeUsers Inherit="false">
+				<li>TableMachining</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<thingCategories Inherit="false">
+			<li>Manufactured</li>
+		</thingCategories>
+		<tradeTags>
+			<li>MortarShell</li>
+			<li>RK_TradeTag_4TierWeapon</li>
+			<li>RK_TradeTag_HighTech</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef>
+		<defName>GunlancePreIgnition</defName>
+		<label>ignition</label>
+		<thingClass>NewRatkin.AttachableThing_GunlanceIgnition</thingClass>
+		<category>Attachment</category>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<!-- 실제 렌더링은 AttachableThing_GunlanceIgnition에서 PreIgnitionA와 PreIgnitionB를 번갈아가며 사용 -->
+			<!-- 여기서는 로드 시점 오류 방지를 위해 PreIgnitionA를 참조 -->
+			<texPath>Things/Special/PreIgnitionA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<altitudeLayer>PawnState</altitudeLayer>
+		<useHitPoints>false</useHitPoints>
+		<comps>
+			<li Class="NewRatkin.CompProperties_AttachableIgnition">
+				<positionOffset>(0.15, 0, 0.15)</positionOffset>
+				<powerIncreasePerTick>0.02</powerIncreasePerTick>
+				<maxPower>1</maxPower>
+				<directionOffsetDistance>1.1</directionOffsetDistance>
+				<preIgnitionBaseSize>2.5</preIgnitionBaseSize>
+				<preIgnitionSizeMultiplier>4</preIgnitionSizeMultiplier>
+				<preIgnitionMaxSize>2</preIgnitionMaxSize>
+				<preIgnitionSizeScale>1.5</preIgnitionSizeScale>
+				<preIgnitionHeightBase>1.1</preIgnitionHeightBase>
+				<preIgnitionHeightReduction>0.2</preIgnitionHeightReduction>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef>
+		<defName>GunlanceAfterIgnition</defName>
+		<label>ignition</label>
+		<thingClass>NewRatkin.AttachableThing_AfterIgnition</thingClass>
+		<category>Attachment</category>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<texPath>Things/Special/WyvernFire</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<altitudeLayer>Gas</altitudeLayer>
+		<useHitPoints>false</useHitPoints>
+		<comps>
+			<li Class="NewRatkin.CompProperties_AttachableIgnition">
+				<positionOffset>(0, 0.4, 0)</positionOffset>
+				<powerDecreasePerTick>0.1</powerDecreasePerTick>
+				<initialPower>1</initialPower>
+				<directionOffsetDistance>1.1</directionOffsetDistance>
+				<afterIgnitionSizeMultiplier>4</afterIgnitionSizeMultiplier>
+				<afterIgnitionSizeScale>2</afterIgnitionSizeScale>
+				<afterIgnitionHeightMultiplier>2</afterIgnitionHeightMultiplier>
+				<afterIgnitionBaseColor>(1, 0.75, 0.75)</afterIgnitionBaseColor>
+				<afterIgnitionAlphaMultiplier>1.25</afterIgnitionAlphaMultiplier>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- Wyvern Fire Ability -->
+	<AbilityDef>
+		<defName>RK_WyvernFire_Ability</defName>
+		<label>wyvern fire</label>
+		<description>Unleash a devastating cone of explosive force.</description>
+		<iconPath>Things/Special/WyvernFire</iconPath>
+		<abilityClass>NewRatkin.Ability_WyvernFire</abilityClass>
+		<cooldownTicksRange>2400</cooldownTicksRange>
+		<cooldownPerCharge>False</cooldownPerCharge>
+		<aiCanUse>true</aiCanUse>
+		<ai_IsOffensive>true</ai_IsOffensive>
+		<ai_SearchAOEForTargets>true</ai_SearchAOEForTargets>
+		<warmupStartSound>RK_Sound_WyvernFireCast</warmupStartSound>
+		<showOnCharacterCard>false</showOnCharacterCard>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<requireLineOfSight>true</requireLineOfSight>
+			<range>5.5</range>
+			<warmupTime>1.7</warmupTime>
+			<soundCast>RK_Sound_WyvernFireShoot</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="NewRatkin.CompProperties_AbilityWyvernFire">
+				<range>6</range>
+				<lineWidthEnd>5</lineWidthEnd>
+				<damageDef>Bomb</damageDef>
+				<damAmount>35</damAmount>
+				<armorPenetration>0.7</armorPenetration>
+				<canHitFilledCells>true</canHitFilledCells>
+				<meleeCooldownTime>0.5</meleeCooldownTime>
+				<cooldownEndSound>RK_Sound_WyvernFireOverheat</cooldownEndSound>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly" Class="NewRatkin.CompProperties_AbilityBurnerCustom">
+				<numStreams>8</numStreams>
+				<range>5.5</range>
+				<coneSizeDegrees>18.2</coneSizeDegrees>
+				<moteDef>RK_Mote_IncineratorBurst</moteDef>
+				<barrelOffsetDistance>4</barrelOffsetDistance>
+				<spawnOffsetDistance>-1</spawnOffsetDistance>
+				<sizeReductionDistanceThreshold>2</sizeReductionDistanceThreshold>
+				<lifespanTicks>10</lifespanTicks>
+				<lifespanNoise>0</lifespanNoise>
+				<rangeNoise>.2</rangeNoise>
+				<effecterDef>RK_Effecter_BurnerUsed</effecterDef>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<ThingDef ParentName="MoteBase" MayRequire="Ludeon.RimWorld.Anomaly">
+		<defName>RK_Mote_IncineratorBurst</defName>
+		<thingClass>MoteDualAttached</thingClass>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<isSaveable>false</isSaveable>		<!-- because it's pure-vis, and weirdly constructed, it's better to not persist them at all -->
+		<mote>
+			<fadeInTime>0</fadeInTime>
+			<fadeOutTime>1</fadeOutTime>
+			<solidTime>999999</solidTime>
+			<needsMaintenance>True</needsMaintenance>
+			<rotateTowardsTarget>True</rotateTowardsTarget>
+			<scaleToConnectTargets>False</scaleToConnectTargets>
+			<fadeOutUnmaintained>True</fadeOutUnmaintained>
+		</mote>
+		<drawOffscreen>true</drawOffscreen>
+		<graphicData>
+			<texPath>Things/Mote/IncineratorFlameSheet</texPath>
+			<graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+			<shaderType>MoteIncineratorBeam</shaderType>
+			<shaderParameters>
+				<_GradientTex>/Things/Mote/IncineratorBeamGradient</_GradientTex>
+				<_AgeScalarNoise>/Things/Mote/IncineratorBeamAgeNoise</_AgeScalarNoise>
+				<_ScrollSpeedA>-4</_ScrollSpeedA>
+				<_ScrollSpeedB>8</_ScrollSpeedB>
+				<_Intensity>0</_Intensity>
+				<_NumFrames>12</_NumFrames>
+				<_FramesPerSec>30</_FramesPerSec>
+			</shaderParameters>
+			<drawSize>10</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<EffecterDef MayRequire="Ludeon.RimWorld.Anomaly">
+		<defName>RK_Effecter_BurnerUsed</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggeredDelayed</subEffecterClass>
+				<fleckDef>Fleck_BurnerUsedSmoke</fleckDef>
+				<initialDelayTicks>5</initialDelayTicks>
+				<scale>.1~1</scale>
+				<burstCount>2</burstCount>
+				<spawnLocType>OnSource</spawnLocType>
+				<absoluteAngle>True</absoluteAngle>
+				<positionRadius>2</positionRadius>
+				<positionRadiusMin>0</positionRadiusMin>
+				<angle>0</angle>
+				<speed>5</speed>
+				<rotation>0~360</rotation>
+				<fleckUsesAngleForVelocity>True</fleckUsesAngleForVelocity>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggeredDelayed</subEffecterClass>
+				<fleckDef>Fleck_BurnerUsedEmber</fleckDef>
+				<initialDelayTicks>7</initialDelayTicks>
+				<scale>.1~.5</scale>
+				<burstCount>1~4</burstCount>
+				<spawnLocType>OnSource</spawnLocType>
+				<absoluteAngle>True</absoluteAngle>
+				<positionRadius>3</positionRadius>
+				<positionRadiusMin>0</positionRadiusMin>
+				<angle>0</angle>
+				<speed>.1~.9</speed>
+				<rotation>0~360</rotation>
+				<fleckUsesAngleForVelocity>True</fleckUsesAngleForVelocity>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggeredDelayed</subEffecterClass>
+				<fleckDef>Fleck_BurnerUsedEmberBlack</fleckDef>
+				<initialDelayTicks>7</initialDelayTicks>
+				<scale>.1~.3</scale>
+				<burstCount>1</burstCount>
+				<spawnLocType>OnSource</spawnLocType>
+				<absoluteAngle>True</absoluteAngle>
+				<positionRadius>3</positionRadius>
+				<positionRadiusMin>0</positionRadiusMin>
+				<angle>0</angle>
+				<speed>.3~1.5</speed>
+				<rotation>0~360</rotation>
+				<fleckUsesAngleForVelocity>True</fleckUsesAngleForVelocity>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<!--
+		Royalty MeleeWeaponUltratech 와 동일(품질·예술·바이오코딩 등). Royalty 비활성 시 부모 없음 오류 방지 — 코어 BaseWeapon 상속.
+	-->
+	<ThingDef Name="RK_WeaponAttr_UltratechBase" ParentName="BaseWeapon" Abstract="True">
+		<techLevel>Ultra</techLevel>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+			<WorkToMake>60000</WorkToMake>
+			<Mass>10</Mass>
+		</statBases>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponMelee</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+			<li Class="CompProperties_Biocodable"/>
+			<li Class="SYS.CompProperties_WeaponExtention">
+				<northOffset>
+					<position>(0.20,-1,-0.3)</position>
+					<angle>70</angle>
+				</northOffset>
+				<southOffset>
+					<position>(-0.22,1,-0.3)</position>
+					<angle>-60</angle>
+				</southOffset>
+				<eastOffset>
+					<position>(-0.15,0.3,-0.25)</position>
+					<angle>195</angle>
+				</eastOffset>
+				<westOffset>
+					<position>(0.15,-0.3,-0.25)</position>
+					<angle>-195</angle>
+				</westOffset>
+			</li>
+		</comps>
+		<smeltable>true</smeltable>
+		<burnableByRecipe>true</burnableByRecipe>
+		<equippedAngleOffset>-15</equippedAngleOffset>
+		<weaponTags Inherit="false">
+			<li>RK_WeaponTag_All</li>
+			<li>RK_WeaponTag_Melee</li>
+			<li>RK_WeaponTag_TwoHand</li>
+			<li>RK_WeaponTag_TwoHandMelee</li>
+			<li>RK_WeaponTag_TwoHandMeleeAttack</li>
+			<li>RK_WeaponTag_HighTech</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>Ultratech</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>RK_TradeTag_Weapon</li>
+			<li>RK_TradeTag_MeleeWeapon</li>
+			<li>RK_TradeTag_UltraTech</li>
+			<li>RK_TradeTag_4TierWeapon</li>
+			<li>RK_TradeTag_HighTech</li>
+			<!-- <li>RK_TradeTag_Exotic</li> -->
+		</tradeTags>
+		<thingCategories>
+			<li>RK_ThingCategory_Melee</li>
+		</thingCategories>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>FabricationBench</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+			<researchPrerequisite>RK_Research_AngryRatProject</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+			<displayPriority>78550</displayPriority>
+		</recipeMaker>
+	</ThingDef>
+
+	<!-- 체인소드 -->
+	<ThingDef ParentName="RK_WeaponAttr_UltratechBase">
+		<defName>RK_Weapon_ProtoChainSword</defName>
+		<label>chain sword</label>
+		<description>체인소드는 체인을 사용하여 공격하는 무기입니다. 반갈죽</description>
+		<graphicData>
+			<texPath>Weapon/RK_Texture_WeaponProtoTypeChainSword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(1,1,1,1)</color>
+		</graphicData>
+		<costList>
+			<ComponentSpacer>5</ComponentSpacer>
+			<Plasteel>50</Plasteel>
+			<Steel>150</Steel>
+		</costList>
+		<tools>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>RK_ToolCapacity_ChainSword</li>
+				</capacities>
+				<power>20</power>
+				<armorPenetration>0.7</armorPenetration>
+				<cooldownTime>2</cooldownTime>
+				<chanceFactor>5.0</chanceFactor>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="RK_WeaponAttr_UltratechBase">
+		<defName>RK_Weapon_ProtoFlameChainSword</defName>
+		<label>flame chain sword</label>
+		<description>체인소드는 체인을 사용하여 공격하는 무기입니다. 반갈죽</description>
+		<graphicData>
+			<texPath>Weapon/RK_Texture_WeaponFlameProtoTypeChainSword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(1,1,1,1)</color>
+		</graphicData>
+		<costList>
+			<ComponentSpacer>6</ComponentSpacer>
+			<Plasteel>50</Plasteel>
+			<Steel>150</Steel>
+			<Uranium>50</Uranium>
+		</costList>
+		<tools>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>RK_ToolCapacity_ChainSword</li>
+				</capacities>
+				<power>20</power>
+				<armorPenetration>0.7</armorPenetration>
+				<cooldownTime>2</cooldownTime>
+				<chanceFactor>5.0</chanceFactor>
+				<extraMeleeDamages>
+					<li>
+						<def>Burn</def>
+						<amount>5</amount>
+						<chance>0.5</chance>
+					</li>
+				</extraMeleeDamages>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<!-- 
+	<ThingDef ParentName="RK_WeaponAttr_UltratechBase" Name="RK_WeaponAttr_FlameChainSword">
+		<defName>RK_Weapon_FlameChainSword</defName>
+		<label>chain sword</label>
+		<description>체인소드는 체인을 사용하여 공격하는 무기입니다. 반갈죽</description>
+		<graphicData>
+			<texPath>Weapon/RK_Texture_WeaponFlameChainSword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(1,1,1,1)</color>
+		</graphicData>
+		<smeltable>false</smeltable>
+		<relicChance>3</relicChance>
+		<tools>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>RK_ToolCapacity_ChainSword</li>
+				</capacities>
+				<power>25</power>
+				<armorPenetration>0.7</armorPenetration>
+				<cooldownTime>2.6</cooldownTime>
+				<chanceFactor>5.0</chanceFactor>
+				<extraMeleeDamages>
+					<li>
+						<def>Burn</def>
+						<amount>10</amount>
+						<chance>0.5</chance>
+					</li>
+				</extraMeleeDamages>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>RK_ToolCapacity_ChainSword</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>2.6</cooldownTime>
+				<armorPenetration>0.7</armorPenetration>
+				<chanceFactor>5.0</chanceFactor>
+				<extraMeleeDamages>
+					<li>
+						<def>Burn</def>
+						<amount>10</amount>
+						<chance>0.5</chance>
+					</li>
+				</extraMeleeDamages>
+			</li>
+		</tools>
+		<weaponTags>
+			<li>RK_WeaponTag_Reward</li>
+			<li>RK_WeaponTag_Exotic</li>
+			<li>RK_WeaponTag_HighTech</li>
+		</weaponTags>
+	</ThingDef>
+
+	<ThingDef ParentName="RK_WeaponAttr_UltratechBase" Name="RK_WeaponAttr_EMPChainSword">
+		<defName>RK_Weapon_EMPChainSword</defName>
+		<label>chain sword</label>
+		<description>체인소드는 체인을 사용하여 공격하는 무기입니다. 반갈죽</description>
+		<graphicData>
+			<texPath>Weapon/RK_Texture_WeaponEMPChainSword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(1,1,1,1)</color>
+		</graphicData>
+		<smeltable>false</smeltable>
+		<relicChance>3</relicChance>
+		<tools>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>RK_ToolCapacity_ChainSword</li>
+				</capacities>
+				<power>25</power>
+				<armorPenetration>0.8</armorPenetration>
+				<cooldownTime>2.6</cooldownTime>
+				<chanceFactor>5.0</chanceFactor>
+				<extraMeleeDamages>
+					<li>
+						<def>EMP</def>
+						<amount>9</amount>
+					</li>
+				</extraMeleeDamages>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>RK_ToolCapacity_ChainSword</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>2.6</cooldownTime>
+				<armorPenetration>0.8</armorPenetration>
+				<chanceFactor>5.0</chanceFactor>
+				<extraMeleeDamages>
+					<li>
+						<def>EMP</def>
+						<amount>9</amount>
+					</li>
+				</extraMeleeDamages>
+			</li>
+		</tools>
+		<weaponTags>
+			<li>RK_WeaponTag_Reward</li>
+			<li>RK_WeaponTag_Exotic</li>
+			<li>RK_WeaponTag_HighTech</li>
+		</weaponTags>
+	</ThingDef> -->
+
+	<!-- 신규 데미지 유형 -->
+	<ToolCapacityDef>
+		<defName>RK_ToolCapacity_ChainSword</defName>
+		<label>saw</label>
+	</ToolCapacityDef>
+
+	<ManeuverDef>
+		<defName>RK_Maneuver_ChainSword</defName>
+		<requiredCapacity>RK_ToolCapacity_ChainSword</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>RK_Damage_Torn</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Smash_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Smash_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Smash_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Smash_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+
+	<DamageDef>
+		<defName>RK_Damage_Torn</defName>
+		<label>torn</label>
+		<workerClass>DamageWorker_Torn</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been cut to death.</deathMessage>
+		<hediff>RK_Hediff_Torn</hediff>
+		<hediffSkin>RK_Hediff_Torn</hediffSkin>
+		<hediffSolid>Crush</hediffSolid>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>RK_Impact_ChainSaw</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<overkillPctToDestroyPart>0~0.1</overkillPctToDestroyPart>
+		<cutExtraTargetsCurve>
+			<points>
+				<li>0, 4</li>
+				<li>0.6, 6</li>
+				<li>0.9, 8</li>
+				<li>1, 9</li>
+			</points>
+		</cutExtraTargetsCurve>
+		<cutCleaveBonus>1.2</cutCleaveBonus>
+	</DamageDef>
+
+	<DamageDef>
+		<defName>RK_Damage_BurnTorn</defName>
+		<label>torn</label>
+		<workerClass>DamageWorker_Torn</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been cut to death.</deathMessage>
+		<hediff>RK_Hediff_Torn</hediff>
+		<hediffSkin>RK_Hediff_Torn</hediffSkin>
+		<hediffSolid>Crush</hediffSolid>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>RK_Impact_ChainSaw</impactSoundType>
+		<armorCategory>Heat</armorCategory>
+		<overkillPctToDestroyPart>0~0.1</overkillPctToDestroyPart>
+		<cutExtraTargetsCurve>
+			<points>
+				<li>0, 1</li>
+				<li>0.6, 5</li>
+				<li>0.9, 7</li>
+				<li>1, 9</li>
+			</points>
+		</cutExtraTargetsCurve>
+		<cutCleaveBonus>1.2</cutCleaveBonus>
+	</DamageDef>
+
+	<!-- 일반 피해 유형보다 부가 피해를 더 유발 -->
+	<HediffDef ParentName="InjuryBase">
+		<defName>RK_Hediff_Torn</defName>
+		<label>torn</label>
+		<labelNoun>a torn wound</labelNoun>
+		<description>A torn wound.</description>
+		<comps>
+			<li Class="HediffCompProperties_TendDuration">
+				<labelTendedWell>bandaged</labelTendedWell>
+				<labelTendedWellInner>sutured</labelTendedWellInner>
+				<labelSolidTendedWell>set</labelSolidTendedWell>
+			</li>
+			<li Class="HediffCompProperties_Infecter">
+				<infectionChance>0.3</infectionChance>
+			</li>
+			<li Class="HediffCompProperties_GetsPermanent">
+				<permanentLabel>torn scar</permanentLabel>
+			</li>
+		</comps>
+		<injuryProps>
+			<painPerSeverity>0.01875</painPerSeverity>
+			<averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
+			<bleedRate>0.08</bleedRate>
+			<canMerge>false</canMerge>
+			<destroyedLabel>Torn off</destroyedLabel>
+			<destroyedOutLabel>Torn out</destroyedOutLabel>
+		</injuryProps>
+	</HediffDef>
+
+	<!-- 체인소드 사운드 정의 -->
+	<SoundDef>
+		<defName>RK_Sound_ChainSaw</defName>
+		<eventNames />
+		<context>MapOnly</context>
+		<maxSimultaneous>2</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Weapon/RK_Sound_ChainSaw</clipPath>
+					</li>
+				</grains>
+				<volumeRange>35~45</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- 체인소드 임팩트 사운드 타입 -->
+	<ImpactSoundTypeDef>
+		<defName>RK_Impact_ChainSaw</defName>
+		<soundDef>RK_Sound_ChainSaw</soundDef>
+		<playOnlyIfHitPawn>false</playOnlyIfHitPawn>
+	</ImpactSoundTypeDef>
+</Defs>

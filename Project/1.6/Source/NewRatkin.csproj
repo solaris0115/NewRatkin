@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0B01D357-6CFE-43F4-B378-FC19134D4C76}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NewRatkin</RootNamespace>
+    <AssemblyName>NewRatkin</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <!-- RatkinDevFeatures: AutoTests·InfoCard 패치 등 선택 포함 + RATKIN_DEV_FEATURES(발리스타 등 Tick 경로 디버그 드로우 전처리 제거). DebugActions·랫킨 Dev 메뉴는 Release에도 항상 포함. -->
+  <PropertyGroup>
+    <RatkinDevFeatures Condition="'$(RatkinDevFeatures)' == '' And '$(Configuration)' == 'Debug'">true</RatkinDevFeatures>
+    <RatkinDevFeatures Condition="'$(RatkinDevFeatures)' == ''">false</RatkinDevFeatures>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Assemblies\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <!-- 림이 읽는 모드 Assemblies와 동일 경로 (Release만 bin에 두면 타입 누락처럼 보일 수 있음) -->
+    <OutputPath>..\Assemblies\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(RatkinDevFeatures)' == 'true'">
+    <DefineConstants>$(DefineConstants);RATKIN_DEV_FEATURES</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\workshop\content\294100\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.XML" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreFontEngineModule">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreTextEngineModule">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="**\*.cs" Exclude="
+      bin\**\*.cs;
+      obj\**\*.cs;
+      AutoTests\AutoTests.cs;
+      Patch_InfoCard_OpenHotkey.cs;
+      Patch_InfoCard_HotSwap.cs" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(RatkinDevFeatures)' == 'true'">
+    <Compile Include="AutoTests\AutoTests.cs" />
+    <Compile Include="Patch_InfoCard_OpenHotkey.cs" />
+    <Compile Include="Patch_InfoCard_HotSwap.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- OutputPath는 항상 ..\Assemblies\ 이다. 예전 bin\Release 잔재를 수동 복사하면 def는 최신인데 DLL만 구버전이 되어 타입 누락 오류가 난다. -->
+  <Target Name="DeleteStaleBinNewRatkinDll" AfterTargets="Build">
+    <ItemGroup>
+      <_StaleBinNewRatkinDll Include="$(MSBuildProjectDirectory)\bin\**\NewRatkin.dll" />
+    </ItemGroup>
+    <Delete Files="@(_StaleBinNewRatkinDll)" ContinueOnError="true" />
+  </Target>
+</Project>

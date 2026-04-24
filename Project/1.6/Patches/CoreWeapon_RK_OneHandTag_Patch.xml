@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- Core 한손 근접 무기: RK_WeaponTag_OneHand, RK_WeaponTag_OneHandMelee, RK_WeaponTag_OneHandMeleeAttack -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName='MeleeWeapon_Club' or defName='MeleeWeapon_Knife' or defName='MeleeWeapon_Ikwa' or defName='MeleeWeapon_Spear' or defName='MeleeWeapon_Mace' or defName='MeleeWeapon_Gladius' or defName='MeleeWeapon_LongSword' or defName='MeleeWeapon_BreachAxe' or defName='MeleeWeapon_Axe']/weaponTags</xpath>
+		<value>
+			<li>RK_WeaponTag_OneHand</li>
+			<li>RK_WeaponTag_OneHandMelee</li>
+			<li>RK_WeaponTag_OneHandMeleeAttack</li>
+		</value>
+	</Operation>
+
+	<!-- Royalty 단분자검·결속 단분자검: 방패(allowedWeaponTags: RK_WeaponTag_OneHand) 동시 착용 -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ludeon.RimWorld.Royalty</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName='MeleeWeapon_MonoSword' or defName='MeleeWeapon_MonoSwordBladelink']/weaponTags</xpath>
+			<value>
+				<li>RK_WeaponTag_OneHand</li>
+				<li>RK_WeaponTag_OneHandMelee</li>
+				<li>RK_WeaponTag_OneHandMeleeAttack</li>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- Core 한손 원거리 무기: Pila, 권총류, 수류탄 - RK_WeaponTag_OneHand, RK_WeaponTag_OneHandRange, RK_WeaponTag_OneHandRangeAttack -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName='Pila' or defName='Gun_Revolver' or defName='Gun_Autopistol' or defName='Gun_MachinePistol' or defName='Weapon_GrenadeFrag' or defName='Weapon_GrenadeMolotov' or defName='Weapon_GrenadeEMP']/weaponTags</xpath>
+		<value>
+			<li>RK_WeaponTag_OneHand</li>
+			<li>RK_WeaponTag_OneHandRange</li>
+			<li>RK_WeaponTag_OneHandRangeAttack</li>
+		</value>
+	</Operation>
+</Patch>

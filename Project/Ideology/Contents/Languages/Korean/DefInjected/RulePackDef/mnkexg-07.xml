@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings>
+    <li>god(p=3)-&gt;명예의 신</li>
+    <li>god(p=3, gender==Female)-&gt;명예의 여신</li>
+    <li>god(p=2)-&gt;기사도의 신</li>
+    <li>god(p=2, gender==Female)-&gt;기사도의 여신</li>
+    <li>god(p=2)-&gt;용맹의 신</li>
+    <li>god(p=2, gender==Female)-&gt;용맹의 여신</li>
+    <li>god(p=1)-&gt;고귀함의 신</li>
+    <li>god(p=1, gender==Female)-&gt;고귀함의 여신</li>
+  </DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings>
+</LanguageData>

@@ -38,6 +38,26 @@
 			</li>
 		</subSounds>
 	</SoundDef>
+	<!-- BFR 3000 발포 사운드: PrototypePulse 기반, 피치 20% 낮춰 중저음 강조 -->
+	<SoundDef>
+		<defName>RK_Sound_BFRFire</defName>
+		<eventNames />
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>PrototypePulse</clipPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>0.74</min>
+					<max>0.84</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
 	<SoundDef>
 		<defName>FlechetteRifle</defName>
 		<eventNames />

@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Ratkin Backstory - 유년기 (Childhood) -->
+<Defs>
+	<AlienRace.AlienBackstoryDef Name="BaseRatkinBackStory" Abstract="True">
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<disallowedTraitsChance>
+			<li>
+				<defName Degree="-1">Beauty</defName>
+				<chance>100</chance>
+			</li>
+			<li>
+				<defName Degree="-2">Beauty</defName>
+				<chance>100</chance>
+			</li>
+		</disallowedTraitsChance>
+		<spawnCategories>
+			<li>RatkinViolence</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 랫킨 자유 유년기 -->
+	<!-- 들쥐 -->
+	<AlienRace.AlienBackstoryDef ParentName="BaseRatkinBackStory">
+		<defName>Ratkin_WildChild</defName>
+		<title>Ratkin wild born</title>
+		<titleShort>wild born</titleShort>
+		<description>[PAWN_nameDef]은 문명의 혜택을 받지 못한 채로 야생에서 자랐습니다. 거친 야생은 [PAWN_pronoun]을 강하게 만들었지만 제대로 된 교육을 받지 못하게 하였습니다.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Melee>2</Melee>
+			<Animals>3</Animals>
+			<Plants>2</Plants>
+			<Mining>2</Mining>
+		</skillGains>
+		<workDisables>
+			<li>Firefighting</li>
+			<li>Intellectual</li>
+		</workDisables>
+		<spawnCategories>
+			<li>RatkinStory</li>
+			<li>RatkinMurderer</li>
+			<li>RatkinWild</li>
+			<li>RatkinThief</li>
+			<li>RatkinDefender</li>
+			<li>RatkinUneducated</li>
+			<li>RatkinDemoman</li>
+			<li>RK_Backstory_Wanderer</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 땅쥐 -->
+	<AlienRace.AlienBackstoryDef ParentName="BaseRatkinBackStory">
+		<defName>Ratkin_LandRat</defName>
+		<title>Ratkin land rat</title>
+		<titleShort>land rat</titleShort>
+		<description>[PAWN_nameDef]은 암흑속에서 태어났습니다. 오랜 동굴생활을 하며 [PAWN_pronoun]은 땅을 파는 일이 능숙하지만 한편으로 많은 동족이 지상으로 나갈때 이를 뒤로했습니다.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>-2</Shooting>
+			<Melee>1</Melee>
+			<Social>-3</Social>
+			<Plants>2</Plants>
+			<Mining>3</Mining>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<defName>Undergrounder</defName>
+				<chance>50</chance>
+			</li>
+		</forcedTraitsChance>
+		<spawnCategories>
+			<li>RatkinStory</li>
+			<li>RatkinWild</li>
+			<li>RatkinThief</li>
+			<li>RatkinMurderer</li>
+			<li>RatkinDemoman</li>
+			<li>RK_Backstory_Wanderer</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 시골아이 -->
+	<AlienRace.AlienBackstoryDef ParentName="BaseRatkinBackStory">
+		<defName>Ratkin_CountryKid</defName>
+		<title>Ratkin country kid</title>
+		<titleShort>country kid</titleShort>
+		<description>[PAWN_nameDef]의 조부모는 농부였으며 부모님도 농부입니다. 그리고 [PAWN_pronoun]또한 가족 전통에 따라 농부가 될것입니다. 앞으로도 이어질겁니다.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Melee>1</Melee>
+			<Cooking>1</Cooking>
+			<Plants>2</Plants>
+		</skillGains>
+		<workDisables>
+			<li>Intellectual</li>
+		</workDisables>
+		<spawnCategories>
+			<li>RatkinStory</li>
+			<li>RatkinPriest</li>
+			<li>RatkinFarm</li>
+			<li>RatkinThief</li>
+			<li>RatkinUneducated</li>
+			<li>RatkinEliteDefender</li>
+			<li>RatkinServant</li>
+			<li>RatkinSoldier</li>
+			<li>RatkinDefender</li>
+			<li>RatkinGuardener</li>
+			<li>RatkinKnight</li>
+			<li>RatkinKnightCommander</li>
+			<li>RK_Backstory_Wanderer</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 꼬마목동 -->
+	<AlienRace.AlienBackstoryDef ParentName="BaseRatkinBackStory">
+		<defName>Ratkin_ShepherdBoy</defName>
+		<title>Ratkin shepherd boy</title>
+		<titleFemale>Ratkin shepherd girl</titleFemale>
+		<titleShort>shepherd boy</titleShort>
+		<titleShortFemale>shepherd girl</titleShortFemale>
+		<description>[PAWN_nameDef]은 어려서부터 다양한 가축들 사이에서 자랐습니다. [PAWN_pronoun]은 동물들을 친구처럼 생각하고 있습니다.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Melee>1</Melee>
+			<Animals>2</Animals>
+			<Cooking>1</Cooking>
+			<Plants>2</Plants>
+			<Artistic>-2</Artistic>
+			<Intellectual>-2</Intellectual>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>RatkinStory</li>
+			<li>RatkinPriest</li>
+			<li>RatkinFarm</li>
+			<li>RatkinEliteDefender</li>
+			<li>RatkinGuardener</li>
+			<li>RatkinUneducated</li>
+			<li>RatkinKnight</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 고아 -->
+	<AlienRace.AlienBackstoryDef ParentName="BaseRatkinBackStory">
+		<defName>Ratkin_Orphan</defName>
+		<title>Ratkin orphan</title>
+		<titleShort>orphan</titleShort>
+		<description>일찍이 버려진 [PAWN_nameDef]에게 부모님은 존재하지 않았습니다. [PAWN_pronoun]은 혼자서 살아남아야 했기에 전문적 지식은 없지만 다양한 일을 해낼 수 있습니다.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Melee>4</Melee>
+			<Cooking>2</Cooking>
+			<Crafting>2</Crafting>
+			<Intellectual>-3</Intellectual>
+		</skillGains>
+		<spawnCategories>
+			<li>RatkinStory</li>
+			<li>RatkinMurderer</li>
+			<li>RatkinMercenary</li>
+			<li>RatkinKingdom</li>
+			<li>RatkinServant</li>
+			<li>RatkinUneducated</li>
+			<li>RatkinEliteDefender</li>
+			<li>RatkinGuardener</li>
+			<li>RatkinThief</li>
+			<li>RatkinPriest</li>
+			<li>RatkinDefender</li>
+			<li>RatkinSoldier</li>
+			<li>RatkinKnight</li>
+			<li>RK_Backstory_Wanderer</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 학생 -->
+	<AlienRace.AlienBackstoryDef ParentName="BaseRatkinBackStory">
+		<defName>Ratkin_Student</defName>
+		<title>Ratkin student</title>
+		<titleShort>student</titleShort>
+		<description>[PAWN_nameDef]의 집안은 부유하진 않았지만 공부를 하지 못할만큼 가난하지도 않았습니다. [PAWN_pronoun]은 머리를 쓰는 공부에 능숙했지만 체육과목에 대한 점수는 그리 좋지 못했습니다.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>-2</Shooting>
+			<Melee>-2</Melee>
+			<Social>1</Social>
+			<Plants>1</Plants>
+			<Medicine>1</Medicine>
+			<Crafting>1</Crafting>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+		<spawnCategories>
+			<li>RatkinStory</li>
+			<li>RatkinServant</li>
+			<li>RatkinPriest</li>
+			<li>RatkinKingdom</li>
+			<li>RatkinEducated</li>
+			<li>RatkinSoldier</li>
+			<li>RatkinDemoman</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 사서자식 -->
+	<AlienRace.AlienBackstoryDef ParentName="BaseRatkinBackStory">
+		<defName>Ratkin_LittleLibrarian</defName>
+		<title>Ratkin little librarian</title>
+		<titleShort>little librarian</titleShort>
+		<description>사서를 부모로 둔 [PAWN_nameDef]은 책더미속에서 지냈습니다. 많은 책들은 [PAWN_pronoun]의 학문수준을 더 깊고 넓혀주었지만 덕분에 안경없이는 보기 힘든 시력을 갖게되었습니다.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>-3</Shooting>
+			<Melee>-2</Melee>
+			<Medicine>1</Medicine>
+			<Construction>1</Construction>
+			<Mining>-4</Mining>
+			<Artistic>2</Artistic>
+			<Crafting>2</Crafting>
+			<Intellectual>3</Intellectual>
+		</skillGains>
+		<spawnCategories>
+			<li>RatkinStory</li>
+			<li>RatkinKingdom</li>
+			<li>RatkinNoble</li>
+			<li>RatkinEducated</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 금수저 -->
+	<AlienRace.AlienBackstoryDef ParentName="BaseRatkinBackStory">
+		<defName>Ratkin_GoldenSpoon</defName>
+		<title>Ratkin golden spoon</title>
+		<titleShort>golden spoon</titleShort>
+		<description>[PAWN_nameDef]은 부족할것 없는 부잣집에서 태어났습니다. 금지옥엽으로 길러진 [PAWN_pronoun]은 다양한 미술품 사이에서 자랐지만 할줄아는것이 그리 많지 않습니다.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Social>2</Social>
+			<Cooking>-2</Cooking>
+			<Artistic>4</Artistic>
+		</skillGains>
+		<workDisables>
+			<li>Violent</li>
+		</workDisables>
+		<spawnCategories>
+			<li>RatkinStory</li>
+			<li>RatkinKingdom</li>
+			<li>RatkinMerchant</li>
+			<li>RatkinEducated</li>
+			<li>RatkinNoble</li>
+			<li>RatkinNonViolence</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 서자 -->
+	<AlienRace.AlienBackstoryDef ParentName="BaseRatkinBackStory">
+		<defName>Ratkin_Bastard</defName>
+		<title>Ratkin bastard</title>
+		<titleShort>bastard</titleShort>
+		<description>[PAWN_nameDef]은 첩의 자식으로 태어났습니다. [PAWN_pronoun]은 후계자가 되기위해 수를 쓰다 발각되어 도망자 신분이 되었습니다.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>1</Shooting>
+			<Melee>3</Melee>
+			<Intellectual>1</Intellectual>
+		</skillGains>
+		<workDisables>
+			<li>Cleaning</li>
+		</workDisables>
+		<spawnCategories>
+			<li>RatkinStory</li>
+			<li>RatkinKingdom</li>
+			<li>RatkinEducated</li>
+			<li>RatkinVagabond</li>
+			<li>RatkinMercenary</li>
+			<li>RatkinGuardener</li>
+			<li>RatkinEliteDefender</li>
+			<li>RatkinSoldier</li>
+			<li>RatkinDefender</li>
+			<li>RatkinNoble</li>
+			<li>RatkinCombatant</li>
+			<li>RatkinKnight</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 후계자 -->
+	<AlienRace.AlienBackstoryDef ParentName="BaseRatkinBackStory">
+		<defName>Ratkin_Successor</defName>
+		<title>Ratkin heir</title>
+		<titleFemale>Ratkin heiress</titleFemale>
+		<titleShort>Heir</titleShort>
+		<titleShortFemale>Heiress</titleShortFemale>
+		<description>[PAWN_nameDef]은 귀족의 후계자로 태어났습니다. 한때 찬란했던 가문이 기울자 [PAWN_pronoun]은 일으키기 위해 길을 떠나야만 했습니다.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Melee>1</Melee>
+			<Social>1</Social>
+		</skillGains>
+		<workDisables>
+			<li>Cleaning</li>
+		</workDisables>
+		<spawnCategories>
+			<li>RatkinStory</li>
+			<li>RatkinSoldier</li>
+			<li>RatkinKingdom</li>
+			<li>RatkinGuardener</li>
+			<li>RatkinEliteDefender</li>
+			<li>RatkinEducated</li>
+			<li>RatkinNoble</li>
+			<li>RatkinKnight</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 정원사지망 -->
+	<AlienRace.AlienBackstoryDef ParentName="BaseRatkinBackStory">
+		<defName>Ratkin_GuardenerStudent</defName>
+		<title>Ratkin Guardener Student</title>
+		<titleShort>Guardener Student</titleShort>
+		<description>[PAWN_nameDef]은 정원사가 되기 위해 수련의 길에 올랐습니다. 오직 최고만이 랫킨사회에서 정원을 지킬 수 있기에 [PAWN_pronoun]은 피나는 노력을 해야만 했습니다.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Melee>4</Melee>
+			<Plants>2</Plants>
+			<Mining>-4</Mining>
+		</skillGains>
+		<spawnCategories>
+			<li>RatkinStory</li>
+			<li>RatkinKingdom</li>
+			<li>RatkinVagabond</li>
+			<li>RatkinGuardener</li>
+			<li>RatkinDefender</li>
+			<li>RatkinEliteDefender</li>
+			<li>RatkinSoldier</li>
+			<li>RatkinEducated</li>
+			<li>RatkinCombatant</li>
+			<li>RatkinKnight</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 쉐프지망생 -->
+	<AlienRace.AlienBackstoryDef ParentName="BaseRatkinBackStory">
+		<defName>Ratkin_ChefStudent</defName>
+		<title>Ratkin Chef Student</title>
+		<titleShort>Chef Student</titleShort>
+		<description>[PAWN_nameDef]은 먹는것이 좋아 요리를 시작했습니다. [PAWN_pronoun]에게 음식은 삶의 낙이자 즐거움이기에 더 맛있는 음식을 먹기위해 모험을 나섰습니다.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Melee>2</Melee>
+			<Animals>-2</Animals>
+			<Cooking>2</Cooking>
+		</skillGains>
+		<spawnCategories>
+			<li>RatkinStory</li>
+			<li>RatkinKingdom</li>
+			<li>RatkinChef</li>
+			<li>RatkinDefender</li>
+			<li>RatkinGuardener</li>
+			<li>RatkinEliteDefender</li>
+			<li>RatkinServant</li>
+			<li>RatkinEducated</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 집시아이 -->
+	<AlienRace.AlienBackstoryDef ParentName="BaseRatkinBackStory">
+		<defName>Ratkin_RomanyKid</defName>
+		<title>Ratkin Romany Kid</title>
+		<titleShort>Romany Kid</titleShort>
+		<description>[PAWN_nameDef]은 유랑생활을 하며 이곳 저곳을 정처없이 떠돌아 다녔습니다. [PAWN_pronoun]은 다재다능하지만 정처없는 생활은 사람과 깊은 인연을 갖기엔 부족해 보입니다.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Animals>1</Animals>
+			<Cooking>1</Cooking>
+			<Plants>1</Plants>
+			<Artistic>1</Artistic>
+			<Crafting>2</Crafting>
+		</skillGains>
+		<workDisables>
+			<li>Social</li>
+		</workDisables>
+		<spawnCategories>
+			<li>RatkinStory</li>
+			<li>RatkinMurderer</li>
+			<li>RatkinKingdom</li>
+			<li>RatkinMerchant</li>
+			<li>RatkinEliteDefender</li>
+			<li>RatkinWanderer</li>
+			<li>RatkinVagabond</li>
+			<li>RatkinGuardener</li>
+			<li>RatkinServant</li>
+			<li>RatkinThief</li>
+			<li>RatkinUneducated</li>
+			<li>RK_Backstory_Wanderer</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 장교의 아이 -->
+	<AlienRace.AlienBackstoryDef ParentName="BaseRatkinBackStory">
+		<defName>Ratkin_OfficerChild</defName>
+		<title>Ratkin Officer Child</title>
+		<titleShort>Officer Child</titleShort>
+		<description>[PAWN_nameDef]은 장교의 자제로 태어났습니다. 어려서부터 부모에게 배운 사격솜씨와 카리스마는 [PAWN_pronoun]을 장교감으로 만들었지만 반대로 그를 거만하게 만들기도 했습니다.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Melee>3</Melee>
+			<Social>1</Social>
+		</skillGains>
+		<workDisables>
+			<li>Cleaning</li>
+		</workDisables>
+		<spawnCategories>
+			<li>RatkinStory</li>
+			<li>RatkinKingdom</li>
+			<li>RatkinEducated</li>
+			<li>RatkinMercenary</li>
+			<li>RatkinGuardener</li>
+			<li>RatkinDefender</li>
+			<li>RatkinNoble</li>
+			<li>RatkinEliteDefender</li>
+			<li>RatkinSoldier</li>
+			<li>RatkinCombatant</li>
+			<li>RatkinKnight</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 상인아이 -->
+	<AlienRace.AlienBackstoryDef ParentName="BaseRatkinBackStory">
+		<defName>Ratkin_MerchantKid</defName>
+		<title>Ratkin Merchant Kid</title>
+		<titleShort>Merchant Kid</titleShort>
+		<description>[PAWN_nameDef]은 상단의 아이로 태어났습니다. [PAWN_pronoun]은 부모곁에서 어깨너머로 장사를 배우며 어떻게 해야 돈을 벌 수있는지에 대해 잘 알고 있습니다.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>-1</Shooting>
+			<Melee>-2</Melee>
+			<Social>3</Social>
+			<Cooking>1</Cooking>
+		</skillGains>
+		<spawnCategories>
+			<li>RatkinStory</li>
+			<li>RatkinServant</li>
+			<li>RatkinKingdom</li>
+			<li>RatkinMerchant</li>
+			<li>RatkinEducated</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 일반아이 -->
+	<AlienRace.AlienBackstoryDef ParentName="BaseRatkinBackStory">
+		<defName>Ratkin_Kid</defName>
+		<title>Ratkin Kid</title>
+		<titleShort>Kid</titleShort>
+		<description>[PAWN_nameDef]은 평범한 아이입니다. 일반적인 가정에서 부모님들이 하는 일을 어깨너머로 이것저것 배웠습니다. 하지만 고등 교육을 받을 기회가 없어 전문적 지식을 쌓을 수 없었습니다.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>-1</Shooting>
+			<Cooking>2</Cooking>
+			<Construction>1</Construction>
+			<Plants>1</Plants>
+			<Crafting>2</Crafting>
+		</skillGains>
+		<workDisables>
+			<li>Intellectual</li>
+		</workDisables>
+		<spawnCategories>
+			<li>RatkinStory</li>
+			<li>RatkinCombatant</li>
+			<li>RatkinKingdom</li>
+			<li>RatkinGuardener</li>
+			<li>RatkinServant</li>
+			<li>RatkinPriest</li>
+			<li>RatkinMerchant</li>
+			<li>RatkinDefender</li>
+			<li>RatkinEliteDefender</li>
+			<li>RatkinUneducated</li>
+			<li>RatkinKnight</li>
+			<li>RatkinSoldier</li>
+			<li>RK_Backstory_Wanderer</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 하인자식 -->
+	<AlienRace.AlienBackstoryDef ParentName="BaseRatkinBackStory">
+		<defName>Ratkin_ServentChild</defName>
+		<title>Ratkin Servent Child</title>
+		<titleShort>Servent Child</titleShort>
+		<description>[PAWN_nameDef]은 하인의 자식으로 태어났습니다. 법에 따라 [PAWN_pronoun]도 하인이 될 운명이지만 스스로의 운명을 바꾸고자 도망쳤습니다.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>-1</Shooting>
+			<Melee>2</Melee>
+			<Cooking>1</Cooking>
+			<Plants>1</Plants>
+			<Crafting>1</Crafting>
+		</skillGains>
+		<spawnCategories>
+			<li>RatkinStory</li>
+			<li>RatkinSoldier</li>
+			<li>RatkinCombatant</li>
+			<li>RatkinCity</li>
+			<li>RatkinDefender</li>
+			<li>RatkinServant</li>
+			<li>RatkinGuardener</li>
+			<li>RatkinThief</li>
+			<li>RatkinKnight</li>
+			<li>RatkinUneducated</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 인간조수 -->
+	<AlienRace.AlienBackstoryDef ParentName="BaseRatkinBackStory">
+		<defName>Ratkin_HumanAssistant</defName>
+		<title>Ratkin Human Assistant</title>
+		<titleShort>Human Assistant</titleShort>
+		<description>[PAWN_nameDef]은 인간의 조수로 어려서부터 작은 일들을 도왔습니다. 하지만 주인이 사고로 죽자 [PAWN_pronoun]은 스스로의 삶을 찾기위해 길을 나섰습니다.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>-2</Shooting>
+			<Melee>-1</Melee>
+			<Medicine>2</Medicine>
+			<Plants>1</Plants>
+			<Intellectual>1</Intellectual>
+		</skillGains>
+		<spawnCategories>
+			<li>RatkinStory</li>
+			<li>RatkinCity</li>
+			<li>RatkinServant</li>
+			<li>RatkinMerchant</li>
+			<li>RatkinEducated</li>
+			<li>RatkinDemoman</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 도시쥐자식 -->
+	<AlienRace.AlienBackstoryDef ParentName="BaseRatkinBackStory">
+		<defName>Ratkin_CityKid</defName>
+		<title>Ratkin City Kid</title>
+		<titleShort>City Kid</titleShort>
+		<description>[PAWN_nameDef]은 도시에서 태어났습니다. [PAWN_pronoun]은 도시의 문명에 노출되어 다른 랫킨들과 달리 문물을 쉽게 이해할 수 있었습니다.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Melee>-1</Melee>
+			<Animals>-3</Animals>
+			<Construction>2</Construction>
+			<Crafting>2</Crafting>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+		<spawnCategories>
+			<li>RatkinStory</li>
+			<li>RatkinMerchant</li>
+			<li>RatkinCombatant</li>
+			<li>RatkinCity</li>
+			<li>RatkinServant</li>
+			<li>RatkinThief</li>
+			<li>RatkinEducated</li>
+			<li>RK_Backstory_Wanderer</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 노예 -->
+	<AlienRace.AlienBackstoryDef ParentName="BaseRatkinBackStory">
+		<defName>Ratkin_SlaveKid</defName>
+		<title>Ratkin Slave Kid</title>
+		<titleShort>Slave Kid</titleShort>
+		<description>[PAWN_nameDef]은 어떻게 왔는지 모르지만 노예낙인이 찍혀있습니다. [PAWN_pronoun]은 온갖 잡일을 하다 견디지 못해 자유를 위하여 도망쳤습니다.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Melee>3</Melee>
+			<Artistic>-4</Artistic>
+			<Mining>3</Mining>
+			<Construction>3</Construction>
+			<Crafting>2</Crafting>
+		</skillGains>
+		<workDisables>
+			<li>Intellectual</li>
+		</workDisables>
+		<spawnCategories>
+			<li>RatkinStory</li>
+			<li>RatkinCity</li>
+			<li>RatkinSoldier</li>
+			<li>RatkinDefender</li>
+			<li>RatkinEliteDefender</li>
+			<li>RatkinServant</li>
+			<li>RatkinMercenary</li>
+			<li>RatkinUneducated</li>
+			<li>RatkinCombatant</li>
+			<li>RatkinThief</li>
+			<li>RatkinDemoman</li>
+			<li>RatkinKnight</li>
+			<li>RK_Backstory_Wanderer</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 실험실쥐 -->
+	<AlienRace.AlienBackstoryDef ParentName="BaseRatkinBackStory">
+		<defName>Ratkin_LaboratoryRats</defName>
+		<title>Ratkin Specimen</title>
+		<titleShort>Ratkin Specimen</titleShort>
+		<description>[PAWN_nameDef]은 군용 실험체로서 유전자 조작이 가해진체 인간들의 실험실에서 태어났습니다. 자유를 향한 깊은 갈망을 느끼던 [PAWN_pronoun]은 탈출을 결심했습니다.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Melee>4</Melee>
+			<Medicine>2</Medicine>
+		</skillGains>
+		<workDisables>
+			<li>Artistic</li>
+			<li>Social</li>
+		</workDisables>
+		<spawnCategories>
+			<li>RatkinStory</li>
+			<li>RatkinMurderer</li>
+			<li>RatkinSoldier</li>
+			<li>RatkinCombatant</li>
+			<li>RatkinCity</li>
+			<li>RatkinUneducated</li>
+			<li>RatkinDemoman</li>
+			<li>RK_Backstory_Wanderer</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 좀도둑 -->
+	<AlienRace.AlienBackstoryDef ParentName="BaseRatkinBackStory">
+		<defName>Ratkin_PettyTheft</defName>
+		<title>Ratkin Petty Theft</title>
+		<titleShort>Petty Theft</titleShort>
+		<description>[PAWN_nameDef]에게 도둑질은 잠깐 빌리는 것이였습니다. [PAWN_pronoun]의 잦은 도둑질은 결국 꼬리를 밟히게 되었고 노예로 잡혀가던중 습격을 받아 가까스로 탈출할 수 있었습니다.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Melee>2</Melee>
+			<Social>2</Social>
+			<Animals>-4</Animals>
+			<Medicine>-2</Medicine>
+			<Cooking>2</Cooking>
+			<Crafting>2</Crafting>
+			<Intellectual>-4</Intellectual>
+		</skillGains>
+		<spawnCategories>
+			<li>RatkinStory</li>
+			<li>RatkinCombatant</li>
+			<li>RatkinMercenary</li>
+			<li>RatkinMurderer</li>
+			<li>RatkinCity</li>
+			<li>RatkinServant</li>
+			<li>RatkinMerchant</li>
+			<li>RatkinDefender</li>
+			<li>RatkinUneducated</li>
+			<li>RatkinThief</li>
+			<li>RatkinDemoman</li>
+			<li>RK_Backstory_Wanderer</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+</Defs>

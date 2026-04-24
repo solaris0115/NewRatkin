@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rakinia.pawnSingular>랫킨</Rakinia.pawnSingular>
+  <Rakinia.pawnsPlural>랫킨들</Rakinia.pawnsPlural>
+  <Rakinia.leaderTitle>집행관</Rakinia.leaderTitle>
+  <Rakinia.label>랫킨 왕국</Rakinia.label>
+  <Rakinia.description>랫킨 왕국입니다. 농경 생활을 하며 지내는 봉건 집단입니다. 작은 크기로 인해 숨어 지내다 최근 타 문명과 교류를 시작했습니다. 교류를 통해 현대적인 도구도 사용하지만 중세 시대의 무기도 자주 사용합니다. 어느정도 우호적이지만 궁지에 몰린다면 공격할 수 있습니다.</Rakinia.description>
+
+  <RK_Faction_Pilgrims.label>순례자 무리</RK_Faction_Pilgrims.label>
+  <RK_Faction_Pilgrims.pawnSingular>순례자</RK_Faction_Pilgrims.pawnSingular>
+  <RK_Faction_Pilgrims.pawnsPlural>순례자들</RK_Faction_Pilgrims.pawnsPlural>
+  <RK_Faction_Pilgrims.description>여러 이유로 순례길에 오른 순례자 무리입니다. 이중에는 귀족도, 군인도 있으며 자신만의 이유로 고단한 순례 길에 오른 집단입니다.</RK_Faction_Pilgrims.description>
+  <RK_Faction_Pilgrims.leaderTitle>지도자</RK_Faction_Pilgrims.leaderTitle>
+
+  <RK_Faction_Caravan.label>랫킨 상단</RK_Faction_Caravan.label>
+  <RK_Faction_Caravan.pawnSingular>랫킨 상인</RK_Faction_Caravan.pawnSingular>
+  <RK_Faction_Caravan.pawnsPlural>랫킨 상인들</RK_Faction_Caravan.pawnsPlural>
+  <RK_Faction_Caravan.description>세계 곳곳을 떠돌아 다니며 거래하는 행상 무리입니다. 일부 유랑민은 대화를 통해 합류를 제안 할 수 있습니다.</RK_Faction_Caravan.description>
+  <RK_Faction_Caravan.leaderTitle>상단장</RK_Faction_Caravan.leaderTitle>
+  
+  <RK_PlayerFaction.label>새로운 시작</RK_PlayerFaction.label>
+  <RK_PlayerFaction.description>당신의 랫킨 정착지 입니다.</RK_PlayerFaction.description>
+  <RK_PlayerFaction.pawnSingular>주민</RK_PlayerFaction.pawnSingular>
+  <RK_PlayerFaction.pawnsPlural>주민들</RK_PlayerFaction.pawnsPlural>
+  <RK_PlayerFaction.leaderTitle>지도자</RK_PlayerFaction.leaderTitle>
+</LanguageData>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RK_WorkType_GeneratePower.label>人力發電</RK_WorkType_GeneratePower.label>
+  <RK_WorkType_GeneratePower.description>通過使用人力做功來發電。</RK_WorkType_GeneratePower.description>
+  <RK_WorkType_GeneratePower.labelShort>人力發電</RK_WorkType_GeneratePower.labelShort>
+  <RK_WorkType_GeneratePower.pawnLabel>勞工</RK_WorkType_GeneratePower.pawnLabel>
+  <RK_WorkType_GeneratePower.gerundLabel>發電</RK_WorkType_GeneratePower.gerundLabel>
+  <RK_WorkType_GeneratePower.verb>正在做功發電</RK_WorkType_GeneratePower.verb>
+
+
+</LanguageData>

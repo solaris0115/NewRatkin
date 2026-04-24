@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- Hardtack: Remove FoodPoisonable comp (no food poisoning from cooking) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName='RK_Food_Hardtack']/comps</xpath>
+		<value>
+			<comps>
+				<li Class="CompProperties_Forbiddable" />
+				<li Class="CompProperties_Rottable">
+					<daysToRotStart>120</daysToRotStart>
+					<rotDestroys>true</rotDestroys>
+				</li>
+				<li Class="CompProperties_Ingredients">
+					<noIngredientsFoodKind>NonMeat</noIngredientsFoodKind>
+				</li>
+			</comps>
+		</value>
+	</Operation>
+
+	<!-- Hardtack: Set food poison chance to 0 -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName='RK_Food_Hardtack']/statBases</xpath>
+		<value>
+			<FoodPoisonChanceFixedHuman>0</FoodPoisonChanceFixedHuman>
+		</value>
+	</Operation>
+
+	<!-- Hardtack recipes: any ThingDef whose defName contains "Stove" and has a recipes list (vanilla + modded cook stoves). Put Ratkin after furniture/cooking mods in the mod list so their defs exist when this runs. -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[contains(defName,'Stove')]/recipes</xpath>
+		<value>
+			<li>RK_Recipe_Hardtack</li>
+			<li>RK_Recipe_HardtackBulk</li>
+		</value>
+	</Operation>
+</Patch>
+

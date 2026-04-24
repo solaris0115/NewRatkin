@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings>
+    <li>memeLeaderNoun(priority=1)-&gt;[cultureLeaderNoun]</li>
+    <li>cultureLeaderTitle-&gt;[cultureLeaderAdjective] [cultureLeaderNoun]</li>
+    <li>cultureLeaderTitle(p=3)-&gt;[cultureLeaderNoun]</li>
+    <li>cultureLeaderAdjective-&gt;고위</li>
+    <li>cultureLeaderAdjective-&gt;위대한</li>
+    <li>cultureLeaderAdjective-&gt;고귀한</li>
+    <li>cultureLeaderAdjective-&gt;왕실의</li>
+    <li>cultureLeaderAdjective-&gt;장엄한</li>
+    <li>cultureLeaderAdjective-&gt;제1</li>
+    <li>cultureLeaderAdjective-&gt;으뜸</li>
+    <li>cultureLeaderNoun(p=8)-&gt;왕</li>
+    <li>cultureLeaderNoun(p=6)-&gt;여왕</li>
+    <li>cultureLeaderNoun(p=5)-&gt;공작</li>
+    <li>cultureLeaderNoun(p=5)-&gt;공작부인</li>
+    <li>cultureLeaderNoun(p=4)-&gt;백작</li>
+    <li>cultureLeaderNoun(p=4)-&gt;백작부인</li>
+    <li>cultureLeaderNoun(p=3)-&gt;남작</li>
+    <li>cultureLeaderNoun(p=3)-&gt;남작부인</li>
+    <li>cultureLeaderNoun(p=2)-&gt;기사</li>
+    <li>cultureLeaderNoun(p=2)-&gt;영주</li>
+    <li>cultureLeaderNoun(p=2)-&gt;귀부인</li>
+    <li>cultureLeaderNoun(p=1)-&gt;백작</li>
+    <li>cultureLeaderNoun(p=1)-&gt;후작</li>
+  </LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings>
+</LanguageData>

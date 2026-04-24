@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- 랫킨 스토리텔러 -->
+	<StorytellerDef ParentName="BaseStoryteller">
+		<defName>RK_Storyteller_RottyMilden</defName>
+		<label>Rotty Milden</label>
+		<description>로티 마일던은 시골과 같은 느긋한 이야기를 들려주는 스토리텔러입니다.
+새 마을이 자라며 낯선 이가 들르고, 상인과 나그네의 발길로 마을이 조금씩 북적이는 경험을 할 수 있습니다.
+
+로티 마일던은 작은 장난을 좋아하는 시골 소녀입니다.\n\n그녀의 자잘한 장난 덕에 이야기가 지루해지지 않지만, 가끔은 뜻밖의 큰 소동을 일으키기도 합니다.\n\n큰 위협은 잦지 않은 대신, 방문과 거래, 길 위에서의 만남, 새 동료가 합류하는 소식이 더 자주 이어집니다.</description>
+		<portraitLarge>Storyteller/RK_STORY</portraitLarge>
+		<portraitTiny>Storyteller/RK_STORY_TINY</portraitTiny>
+		<listOrder>60</listOrder>
+		<comps>
+			<!-- Home threats - 카산드라 스타일, 카산드라/랜디 중간값, 낮은 빈도 -->
+			<li Class="StorytellerCompProperties_OnOffCycle">
+				<category>ThreatBig</category>
+				<minDaysPassed>15.0</minDaysPassed>
+				<onDays>6.0</onDays>
+				<offDays>10.0</offDays>
+				<minSpacingDays>2.5</minSpacingDays>
+				<numIncidentsRange>1~2</numIncidentsRange>
+				<forceRaidEnemyBeforeDaysPassed>20</forceRaidEnemyBeforeDaysPassed>
+				<disallowedTargetTags>
+					<li>Map_RaidBeacon</li>
+				</disallowedTargetTags>
+			</li>
+			<li Class="StorytellerCompProperties_ThreatsGenerator">
+				<allowedTargetTags>
+					<li>Map_RaidBeacon</li>
+				</allowedTargetTags>
+				<parms>
+					<allowedThreats>Raids</allowedThreats>
+					<onDays>2.0</onDays>
+					<offDays>0.5</offDays>
+					<minSpacingDays>0.6</minSpacingDays>
+					<numIncidentsRange>2~3</numIncidentsRange>
+					<minThreatPoints>500</minThreatPoints>
+				</parms>
+			</li>
+			<li Class="StorytellerCompProperties_OnOffCycle">
+				<category>ThreatSmall</category>
+				<minDaysPassed>6.0</minDaysPassed>
+				<onDays>5.0</onDays>
+				<offDays>8.0</offDays>
+				<numIncidentsRange>0.2~1</numIncidentsRange>
+				<acceptPercentFactorPerThreatPointsCurve>
+					<points>
+						<li>(800, 1)</li>
+						<li>(2800, 0)</li>
+					</points>
+				</acceptPercentFactorPerThreatPointsCurve>
+			</li>
+			<!-- Home misc incidents - 랜디/피비 중간값, 낮은 빈도 -->
+			<li Class="StorytellerCompProperties_CategoryMTB">
+				<category>Misc</category>
+				<allowedTargetTags>
+					<li>Map_PlayerHome</li>
+				</allowedTargetTags>
+				<minDaysPassed>5</minDaysPassed>
+				<mtbDays>6.0</mtbDays>
+			</li>
+			<li Class="StorytellerCompProperties_Disease">
+				<category>DiseaseHuman</category>
+				<minDaysPassed>6</minDaysPassed>
+			</li>
+			<li Class="StorytellerCompProperties_Disease">
+				<category>DiseaseAnimal</category>
+				<minDaysPassed>6</minDaysPassed>
+			</li>
+			<!-- Ally/neutral interaction - 랜디/피비 중간값 -->
+			<li Class="StorytellerCompProperties_FactionInteraction">
+				<incident>RaidFriendly</incident>
+				<baseIncidentsPerYear>12</baseIncidentsPerYear>
+				<minSpacingDays>1</minSpacingDays>
+				<fullAlliesOnly>true</fullAlliesOnly>
+				<minDanger>High</minDanger>
+			</li>
+			<li Class="StorytellerCompProperties_FactionInteraction">
+				<incident>TraderCaravanArrival</incident>
+				<minDaysPassed>12</minDaysPassed>
+				<baseIncidentsPerYear>6</baseIncidentsPerYear>
+				<minSpacingDays>4</minSpacingDays>
+				<allowedTargetTags>
+					<li>Map_PlayerHome</li>
+				</allowedTargetTags>
+			</li>
+			<li Class="StorytellerCompProperties_FactionInteraction">
+				<incident>VisitorGroup</incident>
+				<minDaysPassed>3</minDaysPassed>
+				<baseIncidentsPerYear>4</baseIncidentsPerYear>
+				<minSpacingDays>5</minSpacingDays>
+				<allowedTargetTags>
+					<li>Map_PlayerHome</li>
+				</allowedTargetTags>
+			</li>
+			<li Class="StorytellerCompProperties_FactionInteraction">
+				<incident>TravelerGroup</incident>
+				<minDaysPassed>1</minDaysPassed>
+				<baseIncidentsPerYear>6</baseIncidentsPerYear>
+				<minSpacingDays>1</minSpacingDays>
+				<allowedTargetTags>
+					<li>Map_PlayerHome</li>
+				</allowedTargetTags>
+			</li>
+			<!-- Caravan / temp map -->
+			<li Class="StorytellerCompProperties_CategoryIndividualMTBByBiome">
+				<category>Misc</category>
+				<allowedTargetTags>
+					<li>Caravan</li>
+					<li>Map_TempIncident</li>
+				</allowedTargetTags>
+			</li>
+			<li Class="StorytellerCompProperties_CategoryIndividualMTBByBiome">
+				<category>ThreatSmall</category>
+				<applyCaravanVisibility>true</applyCaravanVisibility>
+				<allowedTargetTags>
+					<li>Caravan</li>
+					<li>Map_TempIncident</li>
+				</allowedTargetTags>
+			</li>
+			<li Class="StorytellerCompProperties_CategoryIndividualMTBByBiome">
+				<category>ThreatBig</category>
+				<applyCaravanVisibility>true</applyCaravanVisibility>
+				<allowedTargetTags>
+					<li>Caravan</li>
+					<li>Map_TempIncident</li>
+				</allowedTargetTags>
+			</li>
+			<!-- 퀘스트 둘중 하나만 적용됨. 로열티가 있거나 없거나. 로열티의 경우 빈도가 조금 더 오름 -->
+			<!-- Quests - non-Royalty - 랜디/피비 중간값 -->
+			<li Class="StorytellerCompProperties_RandomQuest">
+				<category>GiveQuest</category>
+				<allowedTargetTags>
+					<li>World</li>
+				</allowedTargetTags>
+				<onDays>10</onDays>
+				<numIncidentsRange>1</numIncidentsRange>
+				<acceptFractionByDaysPassedCurve>
+					<points>
+						<li>(8, 0)</li>
+						<li>(15, 1)</li>
+					</points>
+				</acceptFractionByDaysPassedCurve>
+				<minSpacingDays>1.6</minSpacingDays>
+				<disableIfAnyModActive>
+					<li>Ludeon.RimWorld.Royalty</li>
+				</disableIfAnyModActive>
+			</li>
+			<!-- Quests - Royalty - 랜디/피비 중간값 -->
+			<li Class="StorytellerCompProperties_RandomQuest">
+				<category>GiveQuest</category>
+				<allowedTargetTags>
+					<li>World</li>
+				</allowedTargetTags>
+				<onDays>12</onDays>
+				<numIncidentsRange>1~2</numIncidentsRange>
+				<acceptFractionByDaysPassedCurve>
+					<points>
+						<li>(8, 0)</li>
+						<li>(15, 1)</li>
+					</points>
+				</acceptFractionByDaysPassedCurve>
+				<minSpacingDays>1.6</minSpacingDays>
+				<enableIfAnyModActive>
+					<li>Ludeon.RimWorld.Royalty</li>
+				</enableIfAnyModActive>
+			</li>
+			<!-- World misc incidents - 랜디/피비 중간값 -->
+			<li Class="StorytellerCompProperties_CategoryMTB">
+				<category>Misc</category>
+				<allowedTargetTags>
+					<li>World</li>
+				</allowedTargetTags>
+				<minDaysPassed>8</minDaysPassed>
+				<mtbDays>15</mtbDays>
+			</li>
+			<li Class="StorytellerCompProperties_Triggered">
+				<incident>RK_Incident_VagabondJoin</incident>
+				<delayTicks>300</delayTicks>
+			</li>
+			<!-- 사제 합류 이벤트: 60일 이후 1회만 트리거 -->
+			<li Class="StorytellerCompProperties_RK_PriestJoin">
+				<incident>RK_Incident_PriestJoin</incident>
+				<fireAfterDaysPassed>60</fireAfterDaysPassed>
+				<mtbDays>3</mtbDays>
+			</li>
+			<!-- 유랑단 캐러반: 봄 MTB 시작, 여름 확률 상승, 연 1회 이상 minRefireDays 간격 -->
+			<li Class="NewRatkin.StorytellerCompProperties_WanderingCaravan">
+				<incident>RK_Incident_WanderingTrader</incident>
+				<minDaysPassed>30</minDaysPassed>
+				<springMtbDays>3</springMtbDays>
+				<summerMtbDays>1.5</summerMtbDays>
+				<fallbackMtbDays>0.5</fallbackMtbDays>
+				<minRefireDays>45</minRefireDays>
+			</li>
+		</comps>
+	</StorytellerDef>
+
+	<IncidentDef>
+		<defName>RK_Incident_VagabondJoin</defName>
+		<label>vagabond join</label>
+		<category>Special</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>NewRatkin.IncidentWorker_WandererJoin</workerClass>
+		<letterLabel>Vagabond</letterLabel>
+		<letterText>위기의 순간, 두 방랑자가 나타났습니다. 그들이 운명을 바꿀 수 있을까요?</letterText>
+		<baseChance>0</baseChance>
+		<minRefireDays>60</minRefireDays>
+		<minGreatestPopulation>3</minGreatestPopulation>
+		<pawnMustBeCapableOfViolence>true</pawnMustBeCapableOfViolence>
+		<!-- 여러 pawnKind 지원 -->
+		<modExtensions>
+			<li Class="NewRatkin.IncidentDefExtension_WandererJoin">
+				<pawnKindCounts>
+					<li>
+						<pawnKind>RatkinVagabond</pawnKind>
+						<count>1</count>
+						<!-- mustBeCapableOfViolence 미지정 시 IncidentDef의 기본값(true) 사용 -->
+					</li>
+					<li>
+						<pawnKind>RatkinPriest</pawnKind>
+						<count>1</count>
+						<!-- 비전투 종교인도 포함 가능하도록 폭력 요구사항 해제 -->
+						<mustBeCapableOfViolence>false</mustBeCapableOfViolence>
+					</li>
+				</pawnKindCounts>
+			</li>
+		</modExtensions>
+	</IncidentDef>
+
+	<!-- 랫킨 사제 합류 이벤트 -->
+	<IncidentDef>
+		<defName>RK_Incident_PriestJoin</defName>
+		<label>ratkin priest join</label>
+		<category>Special</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>IncidentWorker_GiveQuest</workerClass>
+		<questScriptDef>RK_QuestScript_PriestJoin</questScriptDef>
+		<letterLabel>랫킨 사제 합류</letterLabel>
+		<letterText>랫킨 사제 [PAWN_nameDef]이(가) 당신의 정착지에 합류하고자 합니다.\n\n[PAWN_pronoun]은(는) 신앙심이 깊고 치유의 손길을 가진 자입니다.</letterText>
+		<baseChance>0.4</baseChance>
+		<pawnKind>RatkinPriest</pawnKind>
+		<populationEffect>IncreaseEasy</populationEffect>
+	</IncidentDef>
+
+	<QuestScriptDef>
+		<defName>RK_QuestScript_PriestJoin</defName>
+		<autoAccept>true</autoAccept>
+		<defaultHidden>true</defaultHidden>
+		<isRootSpecial>true</isRootSpecial>
+		<successHistoryEvent MayRequire="Ludeon.RimWorld.Ideology">CharityFulfilled_WandererJoins</successHistoryEvent>
+		<failedOrExpiredHistoryEvent MayRequire="Ludeon.RimWorld.Ideology">CharityRefused_WandererJoins</failedOrExpiredHistoryEvent>
+		<questNameRules>
+			<rulesStrings>
+				<li>questName->랫킨 사제 합류</li>
+			</rulesStrings>
+		</questNameRules>
+		<questDescriptionRules>
+			<rulesStrings>
+				<li>questDescription->랫킨 사제가 정착지에 합류하고자 합니다.</li>
+			</rulesStrings>
+		</questDescriptionRules>
+		<root Class="NewRatkin.QuestNode_Root_PriestJoin" />
+	</QuestScriptDef>
+</Defs>

@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ========================================
+	     Ratkin Custom Genes
+	     ======================================== -->
+
+	<!-- 가벼운 체형 - Thin bodyType 고정 -->
+	<GeneDef>
+		<defName>RK_Gene_SmallBody</defName>
+		<label>small body</label>
+		<labelShortAdj>small-bodied</labelShortAdj>
+		<description>Small, compact body that dodges better but hits weaker and carries less.</description>
+		<iconPath>UI/Icons/Genes/Gene_BodyThin</iconPath>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<endogeneCategory>BodyType</endogeneCategory>
+		<bodyType>Thin</bodyType>
+		<exclusionTags>
+			<li>BodyType</li>
+		</exclusionTags>
+		<statOffsets>
+			<CarryingCapacity>-15</CarryingCapacity>
+		</statOffsets>
+		<biostatMet>1</biostatMet>
+		<biostatCpx>0</biostatCpx>
+	</GeneDef>
+
+	<!-- TODO: 독성 레지스턴스 웨이스터나 이타킨등 기존거 재활용 이용-->
+	<!-- <GeneDef>
+		<defName>RK_Gene_ToxicEnvironmentResistance_Mild</defName>
+		<label>mild antitoxic lungs</label>
+		<labelShortAdj>tox-adapted</labelShortAdj>
+		<description>Carriers of this gene have adapted to toxic sewer environments and are slightly resistant to environmental toxins. They get less toxic buildup from tox gas, polluted terrain, and toxic fallout.</description>
+		<iconPath>UI/Icons/Genes/Gene_PartialPollutionResistance</iconPath>
+		<displayCategory>ResistanceAndWeakness</displayCategory>
+		<displayOrderInCategory>15</displayOrderInCategory>
+		<statOffsets>
+			<ToxicEnvironmentResistance>0.35</ToxicEnvironmentResistance>
+		</statOffsets>
+		<biostatMet>-1</biostatMet>
+		<biostatCpx>0</biostatCpx>
+		<exclusionTags>
+			<li>ToxicEnvironmentResistance</li>
+		</exclusionTags>
+	</GeneDef> -->
+
+	<!-- 전투 특성 -->
+	<!-- TODO: 재빠름은 있지만 없어서 추가. 그리고 어중간한 회피율이라 가벼운 몸과 추가 -->
+	<GeneDef>
+		<defName>RK_Gene_Nimble</defName>
+		<label>nimble</label>
+		<labelShortAdj>nimble</labelShortAdj>
+		<description>Carriers of this gene have heightened sensory receptor sensitivity, allowing them to better detect nearby threats and evade close-range attacks more effectively.</description>
+		<iconPath>UI/Icons/Gene/RK_Icon_GeneNimble</iconPath>
+		<displayCategory>Violence</displayCategory>
+		<displayOrderInCategory>45</displayOrderInCategory>
+		<statOffsets>
+			<MoveSpeed>0.1</MoveSpeed>
+		</statOffsets>
+		<statFactors>
+			<MeleeDodgeChance>1.3</MeleeDodgeChance>
+		</statFactors>
+		<biostatMet>-2</biostatMet>
+		<biostatCpx>1</biostatCpx>
+	</GeneDef>
+
+	<!-- 근시 특성 -->
+	<GeneDef>
+		<defName>RK_Gene_PoorEyesight</defName>
+		<label>poor eyesight</label>
+		<labelShortAdj>poor eyesight</labelShortAdj>
+		<description>Carriers of this gene have difficulty with precision aiming, resulting in slower aim time and research speed.</description>
+		<iconPath>UI/Icons/Genes/Gene_Nearsighted</iconPath>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>55</displayOrderInCategory>
+		<statFactors>
+			<AimingDelayFactor>1.15</AimingDelayFactor>
+			<ShootingAccuracyPawn>0.9</ShootingAccuracyPawn>
+		</statFactors>
+		<biostatMet>3</biostatMet>
+		<biostatCpx>1</biostatCpx>
+	</GeneDef>
+
+	<!-- 약함 특성 -->
+	<GeneDef>
+		<defName>RK_Gene_FragilePain</defName>
+		<label>fragile pain threshold</label>
+		<labelShortAdj>fragile</labelShortAdj>
+		<description>Carriers of this gene have a lower pain shock threshold and go down more easily from injuries.</description>
+		<iconPath>UI/Icons/Genes/Gene_ExtraPain</iconPath>
+		<displayCategory>Pain</displayCategory>
+		<displayOrderInCategory>25</displayOrderInCategory>
+		<statOffsets>
+			<PainShockThreshold>-0.1</PainShockThreshold>
+		</statOffsets>
+		<biostatMet>1</biostatMet>
+		<biostatCpx>1</biostatCpx>
+	</GeneDef>
+
+	<!-- 작업 능력 -->
+
+	<GeneDef>
+		<defName>RK_Gene_GoodGardening</defName>
+		<label>good gardening</label>
+		<labelShortAdj>green thumb</labelShortAdj>
+		<description>Carriers of this gene work more efficiently with plants.</description>
+		<iconPath>UI/Icons/Genes/Skills/Plants/Strong</iconPath>
+		<displayCategory>Aptitudes</displayCategory>
+		<displayOrderInCategory>8040</displayOrderInCategory>
+		<statFactors>
+			<!-- <PlantWorkSpeed>1.0</PlantWorkSpeed> 1이라서 주석 처리 -->
+			<PlantHarvestYield>1.3</PlantHarvestYield>
+		</statFactors>
+		<biostatMet>-1</biostatMet>
+		<biostatCpx>1</biostatCpx>
+	</GeneDef>
+
+	<!-- ========================================
+	     Ratkin Appearance Genes
+	     ======================================== -->
+
+	<!-- 피부색 - 랫킨 전용 (순백색, 밝은 회색, 창백한 노란색 중 랜덤) -->
+	<GeneDef ParentName="GeneSkinColorOverride" MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>RK_Skin_PureWhite</defName>
+		<label>pure white skin</label>
+		<labelShortAdj>snow-white</labelShortAdj>
+		<description>Carriers of this gene have pure white skin characteristic of ratkin.</description>
+		<skinColorOverride>(255, 255, 255)</skinColorOverride>
+		<randomBrightnessFactor>0</randomBrightnessFactor>
+		<displayOrderInCategory>93</displayOrderInCategory>
+		<selectionWeight>1</selectionWeight>
+		<randomChosen>true</randomChosen>
+	</GeneDef>
+
+	<!-- 큰 귀 -->
+	<GeneDef>
+		<defName>RK_Gene_LargeEars</defName>
+		<label>large round ears</label>
+		<labelShortAdj>big-eared</labelShortAdj>
+		<description>Carriers of this gene have distinctively large, round ears that give them enhanced hearing and an unmistakably ratkin appearance.</description>
+		<iconPath>UI/Icons/Genes/Gene_EarCat</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayCategory>Cosmetic</displayCategory>
+		<displayOrderInCategory>75</displayOrderInCategory>
+		<randomChosen>false</randomChosen>
+		<biostatCpx>0</biostatCpx>
+		<endogeneCategory>Ears</endogeneCategory>
+		<exclusionTags>
+			<li>Ears</li>
+		</exclusionTags>
+		<!-- <renderNodeProperties>
+			<li Class="PawnRenderNodeProperties_EarHideByApparelTag">
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<texPath>Things/Ratkin/Body/RK_Texture_EarLeft</texPath>
+				<colorType>Skin</colorType>
+				<parentTagDef>Head</parentTagDef>
+				<linkedBodyPartsGroup>RK_LeftEar</linkedBodyPartsGroup>
+				<useSkinShader>true</useSkinShader>
+				<useRottenColor>true</useRottenColor>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<hiddenUnderApparelTags>
+					<li>RK_ApparelTag_HideEar</li>
+				</hiddenUnderApparelTags>
+				<drawData>
+					<scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+					<defaultData>
+						<layer>105</layer>
+					</defaultData>
+					<dataNorth>
+						<offset>(0.02, 0, 0.16)</offset>
+					</dataNorth>
+					<dataSouth>
+						<offset>(-0.04, 0, 0.19)</offset>
+					</dataSouth>
+					<dataEast>
+						<offset>(-0.15, -0.25, 0.26)</offset>
+					</dataEast>
+					<dataWest>
+						<offset>(0.15,0.15, 0.26)</offset>
+					</dataWest>
+				</drawData>
+			</li>
+			<li Class="PawnRenderNodeProperties_EarHideByApparelTag">
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<texPath>Things/Ratkin/Body/RK_Texture_EarRight</texPath>
+				<colorType>Skin</colorType>
+				<parentTagDef>Head</parentTagDef>
+				<linkedBodyPartsGroup>RK_RightEar</linkedBodyPartsGroup>
+				<useSkinShader>true</useSkinShader>
+				<useRottenColor>true</useRottenColor>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<hiddenUnderApparelTags>
+					<li>RK_ApparelTag_HideEar</li>
+				</hiddenUnderApparelTags>
+				<drawData>
+					<scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+					<defaultData>
+						<layer>105</layer>
+					</defaultData>
+					<dataNorth>
+						<offset>(-0.02, 0, 0.16)</offset>
+					</dataNorth>
+					<dataSouth>
+						<offset>(0.04, 0, 0.19)</offset>
+					</dataSouth>
+					<dataEast>
+						<offset>(-0.15, 0.15, 0.26)</offset>
+					</dataEast>
+					<dataWest>
+						<offset>(0.15, -0.25, 0.26)</offset>
+					</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties> -->
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>rat</symbol>
+				</li>
+				<li>
+					<symbol>squeak</symbol>
+				</li>
+				<li>
+					<symbol>whisk</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>rat</symbol>
+				</li>
+				<li>
+					<symbol>ear</symbol>
+				</li>
+				<li>
+					<symbol>squeak</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<!-- 얇은 꼬리 - 외형만 (이동속도 보너스 제거됨) -->
+	<GeneDef>
+		<defName>RK_Gene_ThinTail</defName>
+		<label>thin tail</label>
+		<labelShortAdj>thin-tailed</labelShortAdj>
+		<description>Carriers of this gene have a long, thin, hairless tail that helps with balance and is a signature feature of ratkin anatomy.</description>
+		<iconPath>UI/Icons/Genes/Gene_TailSmooth</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>1000</displayOrderInCategory>
+		<randomChosen>true</randomChosen>
+		<biostatMet>0</biostatMet>
+		<biostatCpx>1</biostatCpx>
+		<exclusionTags>
+			<li>Tail</li>
+		</exclusionTags>
+		<!-- <renderNodeProperties>
+			<li>
+				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+				<texPath>Things/Ratkin/Body/RK_Texture_Tail</texPath>
+				<colorType>Skin</colorType>
+				<overrideMeshSize>(1, 1)</overrideMeshSize>
+				<parentTagDef>Body</parentTagDef>
+				<linkedBodyPartsGroup>RK_Tail</linkedBodyPartsGroup>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<drawData>
+					<scale>1.5</scale>
+					<childScale>1</childScale>
+					<scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+					<defaultData>
+						<layer>-2</layer>
+					</defaultData>
+					<dataNorth>
+						<offset>(0, 0.15,-0.45)</offset>
+						<layer>90</layer>
+					</dataNorth>
+					<dataSouth>
+						<offset>(0, 0,0)</offset>
+					</dataSouth>
+					<dataEast>
+						<offset>(-0.37, 0,-0.29)</offset>
+					</dataEast>
+					<dataWest>
+						<offset>(0.37, 0,-0.29)</offset>
+					</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties> -->
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>tail</symbol>
+				</li>
+				<li>
+					<symbol>rat</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>tail</symbol>
+				</li>
+				<li>
+					<symbol>rat</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<!-- 귀여운 얼굴 -->
+	<GeneDef>
+		<defName>RK_Gene_CuteFace</defName>
+		<label>cute face</label>
+		<labelShortAdj>cute-faced</labelShortAdj>
+		<description>Carriers of this gene have an adorable facial structure with rounded features, button nose, and expressive eyes that make them appear endearing and approachable.</description>
+		<iconPath>UI/Icons/Genes/Gene_Beautiful</iconPath>
+		<displayCategory>Beauty</displayCategory>
+		<displayOrderInCategory>35</displayOrderInCategory>
+		<endogeneCategory>Head</endogeneCategory>
+		<selectionWeight>5.0</selectionWeight>
+		<exclusionTags>
+			<li>FaceType</li>
+		</exclusionTags>
+		<forcedHeadTypes>
+			<li>RK_HeadType_Head1</li>
+			<li>RK_HeadType_Head2</li>
+			<li>RK_HeadType_Head3</li>
+			<li>RK_HeadType_Head4</li>
+			<li>RK_HeadType_Head5</li>
+			<li>RK_HeadType_Head6</li>
+			<li>RK_HeadType_Head7</li>
+			<li>RK_HeadType_Head8</li>
+		</forcedHeadTypes>
+		<statFactors>
+			<NegotiationAbility>0.80</NegotiationAbility>
+			<TradePriceImprovement>0.90</TradePriceImprovement>
+			<SocialImpact>1.20</SocialImpact>
+		</statFactors>
+		<biostatMet>0</biostatMet>
+		<biostatCpx>1</biostatCpx>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>cute</symbol>
+				</li>
+				<li>
+					<symbol>sweet</symbol>
+				</li>
+				<li>
+					<symbol>charm</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>charm</symbol>
+				</li>
+				<li>
+					<symbol>cute</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+</Defs>

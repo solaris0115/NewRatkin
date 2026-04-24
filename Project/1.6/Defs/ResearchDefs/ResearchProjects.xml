@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- 랫킨용 아노말리 탭 -->
+	<!-- TODO: 기본 아노말리에 포함 시키거나 또는 따로 탭을 만든다?.. 너무 탭 많지 않나. -->
+	<!-- Ratnormaly는 따로 파일을 분리해서 복잡치 않도록 정리 -->
+	<!-- 연구 항목은 Draw.io 파일 참고 -->
+
+	<!-- 랫킨 연구 탭 -->
+	<ResearchTabDef>
+		<defName>RK_ResearchTab_Default</defName>
+		<label>ratkin tech</label>
+	</ResearchTabDef>
+
+	<!-- 개발용 참고 샘플. 상속 받지도, 사용도 하지 말것 -->
+	<ResearchProjectDef Name="RK_ResearchAttr_DontUse" Abstract="True">
+		<defName>RK_Research_Sample</defName>
+		<label>sample research</label>
+		<description>연구 설명입니다.</description>
+		<tab>RK_ResearchTab_Default</tab>
+		<baseCost>600</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>0</researchViewX>
+		<researchViewY>1</researchViewY>
+		<!-- 선행 연구 -->
+		<prerequisites>
+			<li>RK_Research_Smithing</li>
+			<li>RK_Research_Metallurgy</li>
+		</prerequisites>
+		<hiddenPrerequisites>
+			<li>RK_Research_Carpentry</li>
+		</hiddenPrerequisites>
+		<tags>
+			<li>RK_ResearchTag_MedievalBasic</li>
+		</tags>
+		<!-- 필요 연구 시설, 연구 장치-->
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<!-- 테크 프린트 -->
+		<techprintCount MayRequire="Ludeon.RimWorld.Royalty">1</techprintCount>
+		<techprintCommonality MayRequire="Ludeon.RimWorld.Royalty">1.0</techprintCommonality>
+		<techprintMarketValue MayRequire="Ludeon.RimWorld.Royalty">1000</techprintMarketValue>
+		<heldByFactionCategoryTags MayRequire="Ludeon.RimWorld.Royalty">
+			<li>Empire</li>
+		</heldByFactionCategoryTags>
+		<!-- Biotech 메카나이터 여부와 분석물건 -->
+		<requiresMechanitor>false</requiresMechanitor>
+		<requiredAnalyzed>
+			<li>MechanoidRemains</li>
+		</requiredAnalyzed>
+		<!-- Anormaly 연구 카테고리 -->
+		<knowledgeCategory>RK_KnowledgeCategory</knowledgeCategory>
+		<knowledgeCost>100</knowledgeCost>
+		<!-- 오디세이 중력엔진 검사 여부 -->
+		<!-- <requireGravEngineInspected>false</requireGravEngineInspected> -->
+	</ResearchProjectDef>
+
+	<!-- 랫킨 연구용 기본 항목 -->
+	<ResearchProjectDef Name="RK_ResearchAttr_Base" Abstract="True">
+		<tab>RK_ResearchTab_Default</tab>
+		<baseCost>600</baseCost>
+		<techLevel>Medieval</techLevel>
+	</ResearchProjectDef>
+
+	<!-- 1티어 연구 -->
+	<!-- 목공 -->
+	<ResearchProjectDef ParentName="RK_ResearchAttr_Base">
+		<defName>RK_Research_Carpentry</defName>
+		<label>목공</label>
+		<baseCost>800</baseCost>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+
+	<!-- 농업 -->
+	<ResearchProjectDef ParentName="RK_ResearchAttr_Base">
+		<defName>RK_Research_Agriculture</defName>
+		<label>농업</label>
+		<baseCost>600</baseCost>
+		<researchViewX>0</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+
+	<!-- 랫킨식 단조 -->
+	<ResearchProjectDef ParentName="RK_ResearchAttr_Base">
+		<defName>RK_Research_Smithing</defName>
+		<label>랫킨식 단조</label>
+		<baseCost>600</baseCost>
+		<researchViewX>0</researchViewX>
+		<researchViewY>2</researchViewY>
+		<tags>
+			<li>RK_ResearchTag_MedievalBasic</li>
+		</tags>
+	</ResearchProjectDef>
+
+	<!-- 랫킨 의류 -->
+	<ResearchProjectDef ParentName="RK_ResearchAttr_Base">
+		<defName>RK_Research_Tailoring</defName>
+		<label>랫킨 의류</label>
+		<baseCost>600</baseCost>
+		<researchViewX>0</researchViewX>
+		<researchViewY>4</researchViewY>
+		<tags>
+			<li>RK_ResearchTag_MedievalBasic</li>
+		</tags>
+	</ResearchProjectDef>
+
+	<!-- 방직 (주석처리) -->
+	<!--
+	<ResearchProjectDef ParentName="RK_ResearchAttr_Base">
+		<defName>RK_Research_Weaving</defName>
+		<label>방직</label>
+		<baseCost>600</baseCost>
+		<researchViewX>0</researchViewX>
+		<researchViewY>5</researchViewY>
+	</ResearchProjectDef>
+	-->
+
+	<!-- 2티어 연구 -->
+	<!-- 식품 보존 -->
+	<ResearchProjectDef ParentName="RK_ResearchAttr_Base">
+		<defName>RK_Research_FoodPreservation</defName>
+		<label>식품 보존</label>
+		<baseCost>800</baseCost>
+		<researchViewX>1</researchViewX>
+		<researchViewY>1</researchViewY>
+		<prerequisites>
+			<li>RK_Research_Agriculture</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 랫킨식 제련 -->
+	<ResearchProjectDef ParentName="RK_ResearchAttr_Base">
+		<defName>RK_Research_Metallurgy</defName>
+		<label>랫킨식 제련</label>
+		<baseCost>1000</baseCost>
+		<researchViewX>1</researchViewX>
+		<researchViewY>2</researchViewY>
+		<prerequisites>
+			<li>RK_Research_Smithing</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 검과 방패 -->
+	<ResearchProjectDef ParentName="RK_ResearchAttr_Base">
+		<defName>RK_Research_SwordAndShield</defName>
+		<label>검과 방패</label>
+		<baseCost>800</baseCost>
+		<researchViewX>1</researchViewX>
+		<researchViewY>3</researchViewY>
+		<prerequisites>
+			<li>RK_Research_Smithing</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 기능성 의류 -->
+	<ResearchProjectDef ParentName="RK_ResearchAttr_Base">
+		<defName>RK_Research_FunctionalApparel</defName>
+		<label>기능성 의류</label>
+		<baseCost>600</baseCost>
+		<researchViewX>1</researchViewX>
+		<researchViewY>4</researchViewY>
+		<prerequisites>
+			<li>RK_Research_Tailoring</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 고급 의류 -->
+	<ResearchProjectDef ParentName="RK_ResearchAttr_Base">
+		<defName>RK_Research_AdvancedApparel</defName>
+		<label>고급 의류</label>
+		<baseCost>800</baseCost>
+		<researchViewX>1</researchViewX>
+		<researchViewY>5</researchViewY>
+		<prerequisites>
+			<li>RK_Research_Tailoring</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 3티어 연구 -->
+	<!-- 요새화 -->
+	<ResearchProjectDef ParentName="RK_ResearchAttr_Base">
+		<defName>RK_Research_Fortification</defName>
+		<label>요새화</label>
+		<baseCost>800</baseCost>
+		<researchViewX>2</researchViewX>
+		<researchViewY>0</researchViewY>
+		<prerequisites>
+			<li>RK_Research_Carpentry</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 귀족 의류 -->
+	<ResearchProjectDef ParentName="RK_ResearchAttr_Base">
+		<defName>RK_Research_NobleApparel</defName>
+		<label>귀족 의류</label>
+		<baseCost>400</baseCost>
+		<researchViewX>2</researchViewX>
+		<researchViewY>4</researchViewY>
+		<prerequisites>
+			<li>RK_Research_AdvancedApparel</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 4티어 연구 -->
+	<!-- 랫킨 공학 -->
+	<ResearchProjectDef ParentName="RK_ResearchAttr_Base">
+		<defName>RK_Research_RatkinEngineering</defName>
+		<label>랫킨 공학</label>
+		<baseCost>1200</baseCost>
+		<researchViewX>3</researchViewX>
+		<researchViewY>1</researchViewY>
+		<prerequisites>
+			<li>Machining</li>
+			<li>RK_Research_Carpentry</li>
+			<li>RK_Research_Smithing</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 5티어 연구 -->
+	<!-- 챗바퀴 역학 -->
+	<ResearchProjectDef ParentName="RK_ResearchAttr_Base">
+		<defName>RK_Research_GearMechanics</defName>
+		<label>챗바퀴 역학</label>
+		<baseCost>1000</baseCost>
+		<researchViewX>4</researchViewX>
+		<researchViewY>0</researchViewY>
+		<prerequisites>
+			<li>RK_Research_RatkinEngineering</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 관측과 측량 -->
+	<ResearchProjectDef ParentName="RK_ResearchAttr_Base">
+		<defName>RK_Research_ObservationAndSurveying</defName>
+		<label>관측과 측량</label>
+		<baseCost>1200</baseCost>
+		<researchViewX>4</researchViewX>
+		<researchViewY>2</researchViewY>
+		<prerequisites>
+			<li>RK_Research_RatkinEngineering</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 분리 역학 -->
+	<ResearchProjectDef ParentName="RK_ResearchAttr_Base">
+		<defName>RK_Research_SeparationMechanics</defName>
+		<label>분리 역학</label>
+		<baseCost>800</baseCost>
+		<researchViewX>4</researchViewX>
+		<researchViewY>3</researchViewY>
+		<prerequisites>
+			<li>RK_Research_RatkinEngineering</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 용의 화염 -->
+	<ResearchProjectDef ParentName="RK_ResearchAttr_Base">
+		<defName>RK_Research_DragonFlame</defName>
+		<label>용의 화염</label>
+		<baseCost>1200</baseCost>
+		<researchViewX>4</researchViewX>
+		<researchViewY>1</researchViewY>
+		<prerequisites>
+			<li>RK_Research_RatkinEngineering</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 궤도 장비 -->
+	<ResearchProjectDef ParentName="RK_ResearchAttr_Base">
+		<defName>RK_Research_OrbitalEquipment</defName>
+		<label>궤도 장비</label>
+		<techLevel>Industrial</techLevel>
+		<baseCost>1200</baseCost>
+		<researchViewX>4.5</researchViewX>
+		<researchViewY>4</researchViewY>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<prerequisites>
+			<li>RK_Research_RatkinEngineering</li>
+			<li>MicroelectronicsBasics</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 5.5티어 연구 -->
+	<!-- 성난쥐 프로젝트 -->
+	<ResearchProjectDef ParentName="RK_ResearchAttr_Base">
+		<defName>RK_Research_AngryRatProject</defName>
+		<label>성난쥐 프로젝트</label>
+		<techLevel>Spacer</techLevel>
+		<baseCost>3500</baseCost>
+		<researchViewX>5</researchViewX>
+		<researchViewY>1</researchViewY>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<techprintCount MayRequire="Ludeon.RimWorld.Royalty">2</techprintCount>
+		<techprintCommonality MayRequire="Ludeon.RimWorld.Royalty">3</techprintCommonality>
+		<techprintMarketValue MayRequire="Ludeon.RimWorld.Royalty">3000</techprintMarketValue>
+		<heldByFactionCategoryTags MayRequire="Ludeon.RimWorld.Royalty">
+			<li>Empire</li>
+		</heldByFactionCategoryTags>
+	</ResearchProjectDef>
+
+	<!-- 6.5티어 연구 -->
+	<!-- 크루세이더 갑옷 (랫킨 스페이스 아머) -->
+	<ResearchProjectDef ParentName="RK_ResearchAttr_Base">
+		<defName>RK_Research_CrusaderArmor</defName>
+		<label>크루세이더 갑옷</label>
+		<techLevel>Spacer</techLevel>
+		<baseCost>3500</baseCost>
+		<researchViewX>5.5</researchViewX>
+		<researchViewY>4</researchViewY>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<techprintCount MayRequire="Ludeon.RimWorld.Royalty">2</techprintCount>
+		<techprintCommonality MayRequire="Ludeon.RimWorld.Royalty">3</techprintCommonality>
+		<techprintMarketValue MayRequire="Ludeon.RimWorld.Royalty">3000</techprintMarketValue>
+		<heldByFactionCategoryTags MayRequire="Ludeon.RimWorld.Royalty">
+			<li>Empire</li>
+		</heldByFactionCategoryTags>
+		<prerequisites>
+			<li>Fabrication</li>
+			<li>RK_Research_OrbitalEquipment</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<ResearchProjectTagDef>
+		<defName>RK_ResearchTag_MedievalBasic</defName>
+	</ResearchProjectTagDef>
+
+	<ResearchProjectTagDef>
+		<defName>RK_ResearchTag_IndustrialBasic</defName>
+	</ResearchProjectTagDef>
+</Defs>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<CultureDef>
+		<defName>RK_Culture_Virtuard</defName>
+		<label>kingdom</label>
+		<description>A chivalrous feudal kingdom culture of the Ratkin, where honor and nobility are held in high regard. While their technology remains medieval, they have access to some ultratech equipment through trade and ancient relics.</description>
+		<pawnNameMaker>NamerPerson_RatkinKingdom</pawnNameMaker>
+		<pawnNameMakerFemale>NamerPerson_RatkinKingdom</pawnNameMakerFemale>
+		<!-- ideoNameMaker: 이데올로기 이름 생성기 (Ideology DLC 필요). 새로 만들어야 함 -->
+		<!-- TODO: RulePackDef 파일에 NamerIdeo_RatkinKingdom 생성 필요 -->
+		<ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeo_RatkinKingdom</ideoNameMaker>
+		<!-- deityNameMaker: 신 이름 생성기 (Ideology DLC 필요). 새로 만들어야 함 -->
+		<!-- TODO: RulePackDef 파일에 NamerDeity_RatkinKingdom 생성 필요 -->
+		<deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeity_RatkinKingdom</deityNameMaker>
+		<!-- deityTypeMaker: 신 타입 생성기 (Ideology DLC 필요). 기사도/봉건주의에 맞는 신 타입 -->
+		<!-- TODO: RulePackDef 파일에 DeityTypeMaker_RatkinKingdom 생성 필요 (기사도 관련 신 타입 추가) -->
+		<deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMaker_RatkinKingdom</deityTypeMaker>
+		<!-- leaderTitleMaker: 지도자 칭호 생성기 (Ideology DLC 필요). 봉건주의 칭호 (King, Duke, Count, Knight 등) -->
+		<!-- TODO: RulePackDef 파일에 LeaderTitleMaker_RatkinKingdom 생성 필요 (King, Duke, Count, Baron, Knight 등) -->
+		<leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_RatkinKingdom</leaderTitleMaker>
+		<!-- festivalNameMaker: 축제 이름 생성기 (Ideology DLC 필요). 새로 만들어야 함 -->
+		<!-- TODO: RulePackDef 파일에 NamerFestival_RatkinKingdom 생성 필요 -->
+		<festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestival_RatkinKingdom</festivalNameMaker>
+		<!-- allowedPlaceTags: 허용된 장소 태그. 봉건주의 왕국이므로 OriginTechnoFeudal 또는 OriginSpacer 사용 -->
+		<!-- OriginTechnoFeudal: 기술-봉건주의 기원 (Royalty Sophiamunda PlaceDef만 해당; Royalty 비활성 시 후보 0개가 되어 place_foeSoldiers 문법 오류 발생) -->
+		<!-- OriginSpacer: Ideology PlaceDef 다수와 매칭 — Royalty 없이도 이데올로기 서사 문법이 정상 동작하도록 필수 -->
+		<!-- OriginTribal: 부족 기원 (부적합, 봉건주의와 맞지 않음) -->
+		<allowedPlaceTags>
+			<li>OriginTechnoFeudal</li>
+			<li>OriginSpacer</li>
+		</allowedPlaceTags>
+		<!-- iconPath: 아이콘 경로. 랫킨 전용 아이콘 사용 -->
+		<iconPath>UI/Cultures/RK_icon</iconPath>
+		<!-- styleItemTags: 스타일 아이템 태그 및 가중치. 랫킨 특성 반영 -->
+		<styleItemTags>
+			<!-- NoBeard: 수염 없음. 랫킨은 남녀 구분이 어렵고 수염이 나지 않으므로 매우 높은 가중치 -->
+			<li>
+				<tag>NoBeard</tag>
+				<baseWeight>20</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<!-- NoTattoo: 문신 없음. 봉건주의 왕국에서는 문신이 일반적이지 않음 -->
+			<li>
+				<tag>NoTattoo</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			
+			<!-- RK_Style: 랫킨 전용 스타일 태그 (이미 프로젝트에 존재) -->
+			<li>
+				<tag>RK_Style</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
+	</CultureDef>
+</Defs>

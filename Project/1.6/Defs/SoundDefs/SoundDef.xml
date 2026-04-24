@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<SoundDef>
+		<defName>Rifle</defName>
+		<eventNames />
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>FlechetteRifle</clipPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>0.9152174</min>
+					<max>1.042391</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>PrototypePulse</defName>
+		<eventNames />
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>PrototypePulse</clipPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>0.9152174</min>
+					<max>1.042391</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>RK_Sound_BolterFire</defName>
+		<eventNames />
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>PrototypePulse</clipPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>0.6</min>
+					<max>0.7</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<!-- BFR 3000 발포 사운드: PrototypePulse 기반, 피치 20% 낮춰 중저음 강조 -->
+	<SoundDef>
+		<defName>RK_Sound_BFRFire</defName>
+		<eventNames />
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>PrototypePulse</clipPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>0.74</min>
+					<max>0.84</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>FlechetteRifle</defName>
+		<eventNames />
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Rifle</clipPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>0.9152174</min>
+					<max>1.042391</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- 소드오프 발포: 코어 Shot_Shotgun 메인 레이어 수치 + A/B 클립 무작위 -->
+	<SoundDef>
+		<defName>RK_Sound_ShotgunSawedOff</defName>
+		<eventNames />
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Weapon/RK_Sound_ShotgunA</clipPath>
+					</li>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Weapon/RK_Sound_ShotgunB</clipPath>
+					</li>
+				</grains>
+				<volumeRange>94.70588~94.70588</volumeRange>
+				<distRange>39.11765~70</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- 건랜스 사운드 정의 (HellcatBurner 및 코어 사운드 참고) -->
+	<SoundDef>
+		<defName>RK_Sound_WyvernFireCast</defName>
+		<eventNames />
+		<context>MapOnly</context>
+		<maxSimultaneous>3</maxSimultaneous>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Gunlance/RK_Sound_WyvernFireCast</clipPath>
+					</li>
+				</grains>
+				<volumeRange>50~60</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+				<muteWhenPaused>True</muteWhenPaused>
+				<tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>RK_Sound_GunlanceFire</defName>
+		<eventNames />
+		<context>MapOnly</context>
+		<maxSimultaneous>3</maxSimultaneous>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Gunlance/RK_Sound_GunlanceFire</clipPath>
+					</li>
+				</grains>
+				<volumeRange>55~65</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>RK_Sound_WyvernFireOverheat</defName>
+		<eventNames />
+		<context>MapOnly</context>
+		<maxSimultaneous>2</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Gunlance/RK_Sound_WyvernFireOverheat</clipPath>
+					</li>
+				</grains>
+				<volumeRange>40~50</volumeRange>
+				<pitchRange>
+					<min>0.85</min>
+					<max>1.0</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>RK_Sound_WyvernFireShoot</defName>
+		<eventNames />
+		<context>MapOnly</context>
+		<maxSimultaneous>2</maxSimultaneous>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Gunlance/RK_Sound_WyvernFireShoot</clipPath>
+					</li>
+				</grains>
+				<volumeRange>70~80</volumeRange>
+				<pitchRange>
+					<min>0.8</min>
+					<max>1.0</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>RK_Sound_GunlanceAmmoReload</defName>
+		<eventNames />
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Gunlance/RK_Sound_GunlanceAmmoReload</clipPath>
+					</li>
+				</grains>
+				<volumeRange>35~45</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>RK_Sound_WyvernFireCoolDownEnd</defName>
+		<eventNames />
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Gunlance/RK_Sound_WyvernFireCoolDownEnd</clipPath>
+					</li>
+				</grains>
+				<volumeRange>40~50</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+</Defs>

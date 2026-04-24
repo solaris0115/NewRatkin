@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Ratkin Wandering Trader - 유랑 상인 성인기 (Adulthood) -->
+<!-- RK_WanderingTrader Gypsy Refugee Slave Mercenary Backstory -->
+<Defs>
+
+	<!-- ========== BackstoryDef (성인기 5종) ========== -->
+	<AlienRace.AlienBackstoryDef ParentName="RK_Backstory_WandererAdulthoodBase">
+		<defName>RK_Backstory_Gypsy</defName>
+		<title>Ratkin gypsy</title>
+		<titleShort>gypsy</titleShort>
+		<description>[PAWN_nameDef]은 유랑 예능인으로 여러 마을을 돌아다니며 노래와 춤으로 생계를 이어왔습니다. [PAWN_pronoun]은 사람들과 어울리는 데 능숙합니다.</description>
+		<skillGains>
+			<Social>4</Social>
+			<Artistic>4</Artistic>
+			<Animals>2</Animals>
+		</skillGains>
+		<workDisables>
+			<li>Mining</li>
+		</workDisables>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="RK_Backstory_WandererAdulthoodBase">
+		<defName>RK_Backstory_RefugeeSlave</defName>
+		<title>Ratkin refugee slave</title>
+		<titleShort>refugee slave</titleShort>
+		<description>[PAWN_nameDef]은 노예로 지내다가 가까스로 탈출한 피난민입니다. [PAWN_pronoun]은 힘든 노동을 견뎌내며 살아남았습니다.</description>
+		<skillGains>
+			<Mining>3</Mining>
+			<Plants>3</Plants>
+			<Construction>2</Construction>
+		</skillGains>
+		<workDisables>
+			<li>Artistic</li>
+			<li>Intellectual</li>
+		</workDisables>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="RK_Backstory_WandererAdulthoodBase">
+		<defName>RK_Backstory_WanderingRefugee</defName>
+		<title>Ratkin wandering refugee</title>
+		<titleShort>wandering refugee</titleShort>
+		<description>[PAWN_nameDef]은 전쟁으로 고향을 잃고 떠돌아다니는 피난민입니다. [PAWN_pronoun]은 새로운 삶을 위해 정착할 곳을 찾고 있습니다.</description>
+		<skillGains>
+			<Construction>3</Construction>
+			<Cooking>3</Cooking>
+			<Plants>2</Plants>
+		</skillGains>
+		<workDisables>
+			<li>Artistic</li>
+		</workDisables>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="RK_Backstory_CaravanLeaderBase">
+		<defName>RK_Backstory_CaravanLeader</defName>
+		<title>Ratkin caravan leader</title>
+		<titleShort>caravan leader</titleShort>
+		<description>[PAWN_nameDef]은 유랑단을 이끄는 상인입니다. [PAWN_pronoun]은 여러 마을을 돌아다니며 물자를 거래하고, 정착을 원하는 이들을 연결해줍니다.</description>
+		<skillGains>
+			<Social>4</Social>
+			<Intellectual>3</Intellectual>
+			<Crafting>2</Crafting>
+		</skillGains>
+		<workDisables>
+			<li>Mining</li>
+		</workDisables>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="RK_Backstory_WandererAdulthoodBase">
+		<defName>RK_Backstory_WanderingMercenary</defName>
+		<title>Ratkin wandering mercenary</title>
+		<titleShort>wandering mercenary</titleShort>
+		<description>[PAWN_nameDef]은 떠돌이 용병으로 여러 전장을 전전해왔습니다. [PAWN_pronoun]은 전투에 능숙하며 새로운 고용주를 찾고 있습니다.</description>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Melee>4</Melee>
+			<Medicine>2</Medicine>
+		</skillGains>
+		<workDisables>
+			<li>PlantWork</li>
+		</workDisables>
+	</AlienRace.AlienBackstoryDef>
+
+</Defs>

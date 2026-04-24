@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- 랫킨 전용 필그림 이벤트 -->
+	<IncidentDef>
+		<defName>GiveQuest_ReliquaryPilgrims_Ratkin</defName>
+		<category>GiveQuest</category>
+		<label>pilgrims arrive</label>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<letterLabel>pilgrims arrive</letterLabel>
+		<questScriptDef>ReliquaryPilgrims_Ratkin</questScriptDef>
+		<workerClass>IncidentWorker_GiveQuest</workerClass>
+		<baseChance>0</baseChance> <!-- Storyteller comp에 의해 제어됨 -->
+		<requireColonistsPresent>True</requireColonistsPresent>
+	</IncidentDef>
+
+</Defs>

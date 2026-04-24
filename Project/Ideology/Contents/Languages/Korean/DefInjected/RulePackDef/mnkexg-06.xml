@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <NamerDeity_RatkinKingdom.rulePack.rulesStrings>
+    <li>name-&gt;[syl][end]</li>
+    <li>name-&gt;[syl][syl][end]</li>
+    <li>name-&gt;[syl]-[syl][end]</li>
+    <li>syl-&gt;[SylG]</li>
+    <li>syl-&gt;hon</li>
+    <li>syl-&gt;val</li>
+    <li>syl-&gt;roy</li>
+    <li>syl-&gt;knight</li>
+    <li>syl-&gt;lord</li>
+    <li>syl-&gt;nob</li>
+    <li>syl-&gt;cour</li>
+    <li>syl-&gt;chiv</li>
+    <li>end-&gt;al</li>
+    <li>end-&gt;ar</li>
+    <li>end-&gt;us</li>
+    <li>end-&gt;ius</li>
+    <li>end-&gt;on</li>
+    <li>end-&gt;or</li>
+    <li>end-&gt;an</li>
+    <li>end-&gt;en</li>
+    <li>end-&gt;in</li>
+  </NamerDeity_RatkinKingdom.rulePack.rulesStrings>
+</LanguageData>

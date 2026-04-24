@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings>
+    <li>festivalName(p=3)-&gt;[chivalryFestival]</li>
+    <li>festivalName(p=2)-&gt;[royalFestival]</li>
+    <li>festivalName(p=1)-&gt;[knightFestival]</li>
+    <li>chivalryFestival-&gt;기사도 축제</li>
+    <li>chivalryFestival-&gt;기사도 기념제</li>
+    <li>chivalryFestival-&gt;명예 축제</li>
+    <li>chivalryFestival-&gt;용맹 대축전</li>
+    <li>royalFestival-&gt;왕실 축제</li>
+    <li>royalFestival-&gt;왕관 기념제</li>
+    <li>royalFestival-&gt;귀족 축제</li>
+    <li>royalFestival-&gt;궁정 박람회</li>
+    <li>knightFestival-&gt;기사 토너먼트</li>
+    <li>knightFestival-&gt;기사 축제</li>
+    <li>knightFestival-&gt;토너먼트 기념제</li>
+    <li>knightFestival-&gt;마상 시합 박람회</li>
+  </NamerFestival_RatkinKingdom.rulePack.rulesStrings>
+</LanguageData>

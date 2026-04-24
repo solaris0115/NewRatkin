@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- 1. 완전 공통 (완전 부모) -->
+	<ThingDef ParentName="RK_ApparelAttr_ShieldBase" Name="RK_ApparelAttr_ShieldDeflect_Abstract" Abstract="True">
+		<thingClass>NewRatkin.ApparelShieldTowerSecond</thingClass>
+	</ThingDef>
+
+	<!-- 2. 정적 데이터 부모 — 소방패 (밸런스·재료 제외) -->
+	<ThingDef ParentName="RK_ApparelAttr_ShieldDeflect_Abstract" Name="RK_ApparelAttr_ShieldDeflect_Wooden_Static" Abstract="True">
+		<label>ratkin Wooden Shield</label>
+		<description>소형 목재 방패. 가볍고 기동성이 좋지만 방어력이 낮다.</description>
+		<graphicData>
+			<texPath>Apparel/Util/RK_WoodenShield</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>RK_Research_Carpentry</researchPrerequisite>
+			<displayPriority>47340</displayPriority>
+		</recipeMaker>
+		<comps>
+			<li Class="NewRatkin.CompProperties_ShieldDeflect" />
+			<li Class="NewRatkin.CompProperties_ExtraDrawer">
+				<drawSize>(1.0, 1.0)</drawSize>
+				<draftedDrawData>
+					<graphicPath>Apparel/Util/RK_WoodenShield</graphicPath>
+					<offsetNorth>(-0.2, -0.2, -0.09)</offsetNorth>
+					<offsetSouth>(0.2, 0.2, -0.15)</offsetSouth>
+					<offsetEast>(0.2, -0.2, -0.2)</offsetEast>
+					<offsetWest>(-0.2, 0.2, -0.15)</offsetWest>
+					<angleNorth>0</angleNorth>
+					<angleSouth>0</angleSouth>
+					<angleEast>0</angleEast>
+					<angleWest>0</angleWest>
+				</draftedDrawData>
+				<backDrawData>
+					<graphicPath>Apparel/Util/RK_WoodenShieldUnarm</graphicPath>
+					<offsetNorth>(0, 0.2, -0.2)</offsetNorth>
+					<offsetSouth>(0, -0.2, -0.09)</offsetSouth>
+					<offsetEast>(-0.15, 0.05, -0.07)</offsetEast>
+					<offsetWest>(0.15, -2.0, -0.07)</offsetWest>
+					<angleNorth>0</angleNorth>
+					<angleSouth>0</angleSouth>
+					<angleEast>15</angleEast>
+					<angleWest>-15</angleWest>
+				</backDrawData>
+			</li>
+			<li Class="NewRatkin.CompProperties_ShieldWeaponIncompatible">
+				<allowedWeaponTags>
+					<li>RK_WeaponTag_OneHand</li>
+					<li>RK_WeaponTag_ShieldCompatible</li>
+				</allowedWeaponTags>
+				<blockReasonKey>RK_ShieldWeaponIncompatible</blockReasonKey>
+			</li>
+			<li Class="NewRatkin.CompProperties_ShieldFaceDirection">
+				<cooldownTicks>180</cooldownTicks>
+			</li>
+		</comps>
+		<apparel>
+			<bodyPartGroups>
+				<li>Waist</li>
+			</bodyPartGroups>
+			<tags>
+				<li>RK_LightArmor</li>
+				<li>RK_ApparelTag_Shield</li>
+				<li>RK_ApparelTag_ArmedWanderer</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+	<!-- 2. 정적 데이터 부모 — 중방패 (밸런스·재료 제외) -->
+	<ThingDef ParentName="RK_ApparelAttr_ShieldDeflect_Abstract" Name="RK_ApparelAttr_ShieldDeflect_Heavy_Static" Abstract="True">
+		<label>ratkin Heavy Shield</label>
+		<description>중형 금속 방패. 방어력과 기동성의 균형.</description>
+		<graphicData>
+			<texPath>Apparel/Util/RK_HeavyShield</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+			<researchPrerequisite>RK_Research_SwordAndShield</researchPrerequisite>
+			<recipeUsers Inherit="false">
+				<li>RK_FueledSmithy</li>
+				<li>RK_ElectricSmithy</li>
+			</recipeUsers>
+			<defaultIngredientFilter>
+				<disallowedThingDefs>
+					<li>Gold</li>
+					<li>Silver</li>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>
+			<displayPriority>47345</displayPriority>
+		</recipeMaker>
+		<comps>
+			<li Class="NewRatkin.CompProperties_ShieldDeflect" />
+			<li Class="NewRatkin.CompProperties_ExtraDrawer">
+				<drawSize>(1.0, 1.0)</drawSize>
+				<draftedDrawData>
+					<graphicPath>Apparel/Util/RK_HeavyShield</graphicPath>
+					<offsetNorth>(-0.2, -0.2, -0.09)</offsetNorth>
+					<offsetSouth>(0.2, 0.2, -0.15)</offsetSouth>
+					<offsetEast>(0.2, -0.2, -0.2)</offsetEast>
+					<offsetWest>(-0.2, 0.2, -0.15)</offsetWest>
+					<angleNorth>0</angleNorth>
+					<angleSouth>0</angleSouth>
+					<angleEast>0</angleEast>
+					<angleWest>0</angleWest>
+				</draftedDrawData>
+				<backDrawData>
+					<graphicPath>Apparel/Util/RK_HeavyShieldUnarm</graphicPath>
+					<offsetNorth>(0, 0.2, -0.2)</offsetNorth>
+					<offsetSouth>(0, -0.2, -0.09)</offsetSouth>
+					<offsetEast>(-0.15, 0.05, -0.07)</offsetEast>
+					<offsetWest>(0.15, -2.0, -0.07)</offsetWest>
+					<angleNorth>0</angleNorth>
+					<angleSouth>0</angleSouth>
+					<angleEast>15</angleEast>
+					<angleWest>-15</angleWest>
+				</backDrawData>
+			</li>
+			<li Class="NewRatkin.CompProperties_ShieldWeaponIncompatible">
+				<allowedWeaponTags>
+					<li>RK_WeaponTag_OneHand</li>
+					<li>RK_WeaponTag_ShieldCompatible</li>
+				</allowedWeaponTags>
+				<blockReasonKey>RK_ShieldWeaponIncompatible</blockReasonKey>
+			</li>
+			<li Class="NewRatkin.CompProperties_ShieldFaceDirection">
+				<cooldownTicks>240</cooldownTicks>
+			</li>
+		</comps>
+		<apparel>
+			<bodyPartGroups>
+				<li>Waist</li>
+			</bodyPartGroups>
+			<tags>
+				<li>RK_HeavyArmor</li>
+				<li>RK_ApparelTag_Shield</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+	<!-- 2. 정적 데이터 부모 — 타워 방패 (밸런스·재료 제외) -->
+	<ThingDef ParentName="RK_ApparelAttr_ShieldDeflect_Abstract" Name="RK_ApparelAttr_ShieldDeflect_Tower_Static" Abstract="True">
+		<label>ratkin Tower Shield</label>
+		<description>금속 대방패.</description>
+		<graphicData>
+			<texPath>Apparel/Util/RK_TowerShield</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(0.9, 0.9)</drawSize>
+		</graphicData>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+			<researchPrerequisites>
+				<li>RK_Research_SwordAndShield</li>
+				<li>RK_Research_Metallurgy</li>
+			</researchPrerequisites>
+			<recipeUsers Inherit="false">
+				<li>RK_FueledSmithy</li>
+				<li>RK_ElectricSmithy</li>
+			</recipeUsers>
+			<defaultIngredientFilter>
+				<disallowedThingDefs>
+					<li>Gold</li>
+					<li>Silver</li>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>
+			<displayPriority>47350</displayPriority>
+		</recipeMaker>
+		<comps>
+			<li Class="NewRatkin.CompProperties_ShieldDeflect" />
+			<li Class="NewRatkin.CompProperties_ExtraDrawer">
+				<drawSize>(0.9, 0.9)</drawSize>
+				<draftedDrawData>
+					<graphicPath>Apparel/Util/RK_TowerShield</graphicPath>
+					<offsetNorth>(-0.25, -0.2, 0.01)</offsetNorth>
+					<offsetSouth>(0.25, 0.2, -0.1)</offsetSouth>
+					<offsetEast>(0.3, -0.2, -0.1)</offsetEast>
+					<offsetWest>(-0.3, 0.2, -0.1)</offsetWest>
+					<angleNorth>0</angleNorth>
+					<angleSouth>0</angleSouth>
+					<angleEast>0</angleEast>
+					<angleWest>0</angleWest>
+				</draftedDrawData>
+				<backDrawData>
+					<graphicPath>Apparel/Util/RK_TowerShieldUnarm</graphicPath>
+					<offsetNorth>(0, 0.2, -0.1)</offsetNorth>
+					<offsetSouth>(0, -0.2, 0.01)</offsetSouth>
+					<offsetEast>(-0.15, 0.05, 0.03)</offsetEast>
+					<offsetWest>(0.15, -2.0, 0.03)</offsetWest>
+					<angleNorth>0</angleNorth>
+					<angleSouth>0</angleSouth>
+					<angleEast>15</angleEast>
+					<angleWest>-15</angleWest>
+				</backDrawData>
+			</li>
+			<li Class="NewRatkin.CompProperties_ShieldWeaponIncompatible">
+				<allowedWeaponTags>
+					<li>RK_WeaponTag_OneHand</li>
+				</allowedWeaponTags>
+				<blockReasonKey>RK_ShieldWeaponIncompatible</blockReasonKey>
+			</li>
+			<li Class="NewRatkin.CompProperties_ShieldFaceDirection">
+				<cooldownTicks>300</cooldownTicks>
+			</li>
+		</comps>
+		<apparel>
+			<bodyPartGroups>
+				<li>Waist</li>
+			</bodyPartGroups>
+			<tags>
+				<li>RK_HeavyArmor</li>
+				<li>RK_ApparelTag_Shield</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+	<!-- 3. 밸런싱 실데이터 — 소방패 -->
+	<ThingDef ParentName="RK_ApparelAttr_ShieldDeflect_Wooden_Static">
+		<defName>RK_WoodenShield</defName>
+		<costList>
+			<Steel>25</Steel>
+			<WoodLog>120</WoodLog>
+		</costList>
+		<stuffCategories Inherit="False" />
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToMake>15000</WorkToMake>
+			<Mass>3</Mass>
+			<Flammability>0.8</Flammability>
+			<EquipDelay>1</EquipDelay>
+			<RK_Stat_Shield_Sharp>0.35</RK_Stat_Shield_Sharp>
+			<RK_Stat_Shield_Blunt>0.25</RK_Stat_Shield_Blunt>
+			<RK_Stat_Shield_Heat>0.10</RK_Stat_Shield_Heat>
+			<RK_Stat_DeflectAngle>100</RK_Stat_DeflectAngle>
+		</statBases>
+	</ThingDef>
+
+	<!-- 3. 밸런싱 실데이터 — 중방패 -->
+	<ThingDef ParentName="RK_ApparelAttr_ShieldDeflect_Heavy_Static">
+		<defName>RK_HeavyShield</defName>
+		<costList>
+			<Steel>50</Steel>
+			<Plasteel>15</Plasteel>
+		</costList>
+		<costStuffCount>120</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<WorkToMake>25000</WorkToMake>
+			<Mass>6</Mass>
+			<Flammability>0.2</Flammability>
+			<EquipDelay>1</EquipDelay>
+			<RK_Stat_ShieldStuffBase>0.45</RK_Stat_ShieldStuffBase>
+			<RK_Stat_Shield_Sharp>0.15</RK_Stat_Shield_Sharp>
+			<RK_Stat_Shield_Blunt>0.30</RK_Stat_Shield_Blunt>
+			<RK_Stat_Shield_Heat>0.15</RK_Stat_Shield_Heat>
+			<RK_Stat_DeflectAngle>120</RK_Stat_DeflectAngle>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.2</MoveSpeed>
+			<RK_Stat_ShieldBlockChance>2</RK_Stat_ShieldBlockChance>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<!-- 3. 밸런싱 실데이터 — 타워 방패 (Odyssey: ParentName=RK_ApparelAttr_TowerShield) -->
+	<ThingDef ParentName="RK_ApparelAttr_ShieldDeflect_Tower_Static" Name="RK_ApparelAttr_TowerShield">
+		<defName>RK_TowerShield</defName>
+		<costList>
+			<Steel>70</Steel>
+			<Plasteel>30</Plasteel>
+		</costList>
+		<costStuffCount>160</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>10</Mass>
+			<Flammability>0.2</Flammability>
+			<EquipDelay>1</EquipDelay>
+			<RK_Stat_ShieldStuffBase>0.65</RK_Stat_ShieldStuffBase>
+			<RK_Stat_Shield_Sharp>0.20</RK_Stat_Shield_Sharp>
+			<RK_Stat_Shield_Blunt>0.45</RK_Stat_Shield_Blunt>
+			<RK_Stat_Shield_Heat>0.15</RK_Stat_Shield_Heat>
+			<RK_Stat_DeflectAngle>140</RK_Stat_DeflectAngle>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.5</MoveSpeed>
+			<RK_Stat_ShieldBlockChance>4</RK_Stat_ShieldBlockChance>
+			<MeleeHitChance>-0.2</MeleeHitChance>
+		</equippedStatOffsets>
+	</ThingDef>
+</Defs>

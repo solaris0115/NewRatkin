@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ReliquaryPilgrims_Ratkin.questDescriptionAndNameRules.rulesStrings>
+    <li>pilgrimsLabel-&gt;[pawns0_nameDef]</li>
+    <li>pilgrimsLabelPlural-&gt;[faction_pawnsPlural]</li>
+    <li>pilgrimsLabelSingularOrPlural(pilgrimCount==1)-&gt;[pilgrimsLabel]</li>
+    <li>pilgrimsLabelSingularOrPlural(pilgrimCount&gt;=2)-&gt;[pilgrimsLabelPlural]</li>
+    <li>hasHave(pilgrimCount==1)-&gt;</li>
+    <li>hasHave(pilgrimCount&gt;=2)-&gt;</li>
+  </ReliquaryPilgrims_Ratkin.questDescriptionAndNameRules.rulesStrings>
+</LanguageData>

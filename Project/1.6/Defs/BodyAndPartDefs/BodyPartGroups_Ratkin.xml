@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ========================================
+	     Ratkin Custom BodyPartGroups
+	     귀와 꼬리 렌더링 제어를 위한 전용 그룹
+	     ======================================== -->
+
+	<!-- 좌측 귀 전용 그룹 -->
+	<BodyPartGroupDef>
+		<defName>RK_LeftEar</defName>
+		<label>left ear</label>
+		<listOrder>196</listOrder>
+	</BodyPartGroupDef>
+
+	<!-- 우측 귀 전용 그룹 -->
+	<BodyPartGroupDef>
+		<defName>RK_RightEar</defName>
+		<label>right ear</label>
+		<listOrder>197</listOrder>
+	</BodyPartGroupDef>
+
+	<!-- 꼬리 전용 그룹 -->
+	<BodyPartGroupDef>
+		<defName>RK_Tail</defName>
+		<label>tail</label>
+		<listOrder>45</listOrder>
+	</BodyPartGroupDef>
+
+</Defs>
+

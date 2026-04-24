@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- RatHolic Gun Spooling 효과를 위한 커스텀 스탯 -->
+  <!-- 원거리 무기 쿨다운을 직접 감소시키는 offset 스탯 -->
+  <StatDef>
+    <defName>RK_Stat_RangeCoolDown</defName>
+    <label>ranged cooldown reduction</label>
+    <description>Reduces the cooldown time of ranged weapons. This stat is used by RatHolic Gun spooling effect.</description>
+    <category>PawnCombat</category>
+    <defaultBaseValue>0</defaultBaseValue>
+    <minValue>-999</minValue>
+    <toStringStyle>FloatTwo</toStringStyle>
+    <formatString>{0} s</formatString>
+    <showIfUndefined>false</showIfUndefined>
+    <alwaysHide>true</alwaysHide>
+    <displayPriorityInCategory>1206</displayPriorityInCategory>
+  </StatDef>
+
+  <!-- 원거리 무기 쿨다운을 배율로 조정하는 multiplier 스탯 -->
+  <StatDef>
+    <defName>RK_Stat_RangeCoolDownMultiplier</defName>
+    <label>ranged cooldown multiplier</label>
+    <description>Multiplies the cooldown time of ranged weapons. This stat is used by RatHolic Gun spooling effect with statFactors.</description>
+    <category>PawnCombat</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <minValue>0.01</minValue>
+    <toStringStyle>FloatTwo</toStringStyle>
+    <formatString>{0}×</formatString>
+    <showIfUndefined>false</showIfUndefined>
+    <alwaysHide>true</alwaysHide>
+    <displayPriorityInCategory>1207</displayPriorityInCategory>
+  </StatDef>
+</Defs>
+

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- 축제 이름 생성기: 랫킨 왕국 문화 -->
+	<!-- 봉건주의/기사도 테마의 축제 이름 -->
+	<RulePackDef>
+		<defName>NamerFestival_RatkinKingdom</defName>
+		<include>
+			<li>NamerFestivalGlobal</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<!-- 봉건주의/기사도 관련 축제 이름 -->
+				<li>festivalName(p=3)->[chivalryFestival]</li>
+				<li>festivalName(p=2)->[royalFestival]</li>
+				<li>festivalName(p=1)->[knightFestival]</li>
+
+				<!-- 기사도 축제 -->
+				<li>chivalryFestival->Festival of Chivalry</li>
+				<li>chivalryFestival->Chivalry Celebration</li>
+				<li>chivalryFestival->Honor Festival</li>
+				<li>chivalryFestival->Valor Jubilee</li>
+
+				<!-- 왕실 축제 -->
+				<li>royalFestival->Royal Festival</li>
+				<li>royalFestival->Crown Celebration</li>
+				<li>royalFestival->Noble Fiesta</li>
+				<li>royalFestival->Court Fair</li>
+
+				<!-- 기사 축제 -->
+				<li>knightFestival->Knight's Tournament</li>
+				<li>knightFestival->Knight Festival</li>
+				<li>knightFestival->Tournament Celebration</li>
+				<li>knightFestival->Jousting Fair</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>
+

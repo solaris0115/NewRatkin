@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Biotech DLC가 있을 경우 기본 시작 폰 설정을 제노타입 설정으로 교체하는 패치 -->
+	<!-- 기본 설정을 제거하고 제노타입 설정으로 교체 -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ScenarioDef[defName="RK_Scenario_Settler"]/scenario/parts/li[def="ConfigPage_ConfigureStartingPawns"]</xpath>
+			<value>
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+					<def>ConfigurePawnsXenotypes</def>
+					<pawnChoiceCount>5</pawnChoiceCount>
+					<overrideKinds>
+						<li>
+							<xenotype>RK_XenoType_Ratkin</xenotype>
+							<pawnKind>RatkinColonist</pawnKind>
+						</li>
+					</overrideKinds>
+					<xenotypeCounts>
+						<li>
+							<xenotype>RK_XenoType_Ratkin</xenotype>
+							<count>5</count>
+							<allowedDevelopmentalStages>Adult</allowedDevelopmentalStages>
+						</li>
+					</xenotypeCounts>
+				</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>

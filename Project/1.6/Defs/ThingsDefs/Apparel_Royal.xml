@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- 로열 외투-->
+	<ThingDef ParentName="RK_ApparelMakeableBase">
+		<defName>RK_RoyalRobe</defName>
+		<label>ratkin royal robe</label>
+		<description>고풍스러운 귀족을 위한 외투입니다. 직물을 여러번 덧대어 튼튼하고 방풍이 잘되도록 만들었습니다.</description>
+		<graphicData>
+			<texPath>Apparel/RK_RoyalRobe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>RK_Research_NobleApparel</researchPrerequisite>
+		</recipeMaker>
+		<costStuffCount>120</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<techLevel>Medieval</techLevel>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>3</Mass>
+			<StuffEffectMultiplierArmor>0.36</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>1.4</StuffEffectMultiplierInsulation_Cold>
+			<Insulation_Cold>12</Insulation_Cold>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.2</SocialImpact>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.3</SlaveSuppressionOffset>
+			<NegotiationAbility>0.3</NegotiationAbility>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<wornGraphicPath>Apparel/RK_RoyalRobe</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>RK_Noble</li>
+				<li>RK_3Tier</li>
+				<li>Royal</li>
+				<li>RoyalTier6</li>
+				<li>RoyalTier7</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+	<!-- 왕관 -->
+	<ThingDef ParentName="RK_HatMakeableBase">
+		<defName>RK_RoyalCrown</defName>
+		<label>Ratkin royal crown</label>
+		<description>금속제 왕관입니다.</description>
+		<thingCategories>
+			<li>HeadgearNoble</li>
+		</thingCategories>
+		<graphicData>
+			<texPath>Apparel/RK_RoyalCrown</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costList>
+			<Steel>25</Steel>
+		</costList>
+		<costStuffCount>75</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>0.6</Mass>
+			<EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.2</SocialImpact>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.3</SlaveSuppressionOffset>
+			<NegotiationAbility>0.3</NegotiationAbility>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/RK_RoyalCrown</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<tags>
+				<li>RK_Noble</li>
+				<li>RK_3Tier</li>
+				<li>Royal</li>
+				<li>RoyalTier5</li>
+				<li>RoyalTier6</li>
+				<li>RoyalTier7</li>
+			</tags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+		</apparel>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+			<researchPrerequisite>RK_Research_NobleApparel</researchPrerequisite>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers Inherit="false">
+				<li>RK_FueledSmithy</li>
+				<li>RK_ElectricSmithy</li>
+			</recipeUsers>
+			<defaultIngredientFilter>
+				<categories>
+					<li>Root</li>
+				</categories>
+				<disallowedThingDefs>
+					<li>Jade</li>
+					<li>Uranium</li>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>
+		</recipeMaker>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- <RK_StrawberryBeer_Bullet.label>いちごビール</RK_StrawberryBeer_Bullet.label> -->
+
+  <Make_RK_StrawberryBeer.label>いちごビールを作る</Make_RK_StrawberryBeer.label>
+  <Make_RK_StrawberryBeer.description>ベリー(生)からいちごビールを作る。</Make_RK_StrawberryBeer.description>
+  <Make_RK_StrawberryBeer.jobString>いちごビールを作成中</Make_RK_StrawberryBeer.jobString>
+
+</LanguageData>

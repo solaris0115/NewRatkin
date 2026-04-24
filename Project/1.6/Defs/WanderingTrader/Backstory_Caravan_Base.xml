@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Ratkin Wandering Trader - 유랑 상인 Backstory 공통 Parent -->
+<!-- RK_WanderingTrader Gypsy Refugee Slave Mercenary PawnKind Backstory TraderKind Incident -->
+<Defs>
+
+	<!-- 유랑 상인 백스토리 공통 (bodyType, spawnCategories 등) -->
+	<AlienRace.AlienBackstoryDef Name="RK_Backstory_CaravanBase" ParentName="BaseRatkinBackStory" Abstract="True">
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+	</AlienRace.AlienBackstoryDef>
+
+	<!-- 유년기 공통 (Childhood + RK_Backstory_Wanderer) -->
+	<AlienRace.AlienBackstoryDef Name="RK_Backstory_WandererChildhoodBase" ParentName="RK_Backstory_CaravanBase" Abstract="True">
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>RK_Backstory_Wanderer</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<!-- 성인기 공통 - 방랑자 계열 (Adulthood + RK_Backstory_Wanderer) -->
+	<AlienRace.AlienBackstoryDef Name="RK_Backstory_WandererAdulthoodBase" ParentName="RK_Backstory_CaravanBase" Abstract="True">
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>RK_Backstory_Wanderer</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<!-- 성인기 공통 - 캐러반 리더 (Adulthood + RK_Backstory_CaravanLeader) -->
+	<AlienRace.AlienBackstoryDef Name="RK_Backstory_CaravanLeaderBase" ParentName="RK_Backstory_CaravanBase" Abstract="True">
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>RK_Backstory_CaravanLeader</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+</Defs>

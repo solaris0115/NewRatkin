@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- 이데올로기 이름 생성기: 랫킨 왕국 문화 -->
+	<RulePackDef>
+		<defName>NamerIdeo_RatkinKingdom</defName>
+		<include>
+			<li>NamerIdeoGlobal</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<!-- 봉건주의/기사도 관련 형용사 -->
+				<li>globalAdjective(p=10)->Chivalrous</li> <!-- Chivalrous: 기사도적인, 기사다운 -->
+				<li>globalAdjective(p=8)->Feudal</li>      <!-- Feudal: 봉건제의, 봉건적인 -->
+				<li>globalAdjective(p=6)->Noble</li>       <!-- Noble: 고귀한, 귀족적인 -->
+				<li>globalAdjective(p=5)->Royal</li>       <!-- Royal: 왕실의, 왕의 -->
+				<li>globalAdjective(p=4)->Knightly</li>    <!-- Knightly: 기사(騎士)의, 기사다운 -->
+				<li>globalAdjective(p=3)->Honorable</li>   <!-- Honorable: 명예로운, 고결한 -->
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>
+

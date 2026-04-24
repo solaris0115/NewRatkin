@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<JobDef>
+		<defName>RK_Job_ShieldFaceDirection</defName>
+		<driverClass>NewRatkin.JobDriver_ShieldFaceDirection</driverClass>
+		<reportString>facing direction.</reportString>
+		<casualInterruptible>false</casualInterruptible>
+	</JobDef>
+</Defs>

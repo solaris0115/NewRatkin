@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <AbilityPrayerServiceCooldown>次回の祈祷会の準備:</AbilityPrayerServiceCooldown>
+  <MessagePrayerServiceStart>{PAWN_labelShort}が、祈祷会を主催します。</MessagePrayerServiceStart>
+  <MessagePrayerServiceAborted>祈祷会は何らかの理由で中止になりました。</MessagePrayerServiceAborted>
+  <MessagePrayerServiceEnded>祈祷会は終わりました。</MessagePrayerServiceEnded>
+
+</LanguageData>

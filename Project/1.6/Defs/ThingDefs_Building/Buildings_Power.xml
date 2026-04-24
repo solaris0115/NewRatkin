@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>RK_HamsterWheelGenerator</defName>
+		<label>hamster wheel generator</label>
+		<description>Produces electricity from a hamster wheel. The amount of power generated is proportional to the running speed.</description>
+		<thingClass>Building</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Things/Building/RK_HamsterWheelGeneratorBody</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<castEdgeShadows>false</castEdgeShadows>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Standable</passability>
+		<blockWind>true</blockWind>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<fillPercent>1</fillPercent>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,0)</interactionCellOffset>
+		<blockLight>false</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<MaxHitPoints>280</MaxHitPoints>
+			<WorkToBuild>2500</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>-5</Beauty>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(1,1)</size>
+		<costList>
+			<WoodLog>280</WoodLog>
+			<Steel>25</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="NewRatkin.CompProperties_PowerHamsterWheel">
+				<basePowerConsumption>-1</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+				<maxPowerOutputWatts>1000</maxPowerOutputWatts>
+				<referenceMoveSpeedForFullOutput>5</referenceMoveSpeedForFullOutput>
+				<!-- 드로잉 오프셋 및 스케일 설정 -->
+				<centerOffset>(0, 0, 0.15)</centerOffset>
+				<centerFacingOffset>0</centerFacingOffset>
+				<frontOffset>(0, 1, -0.1)</frontOffset>
+				<backOffset>(0, -1, 0.15)</backOffset>
+				<rimScale>(1, 0.5, 1)</rimScale>
+				<bladeScale>(1, 0.5, 1.6)</bladeScale>
+				<bladeRadius>0.475</bladeRadius>
+				<bladeYOffset>0.086875</bladeYOffset>
+				<bladeZOffset>0.45</bladeZOffset>
+				<bladeCount>16</bladeCount>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<rotatable>false</rotatable>
+		<terrainAffordanceNeeded/>
+		<designationCategory>Power</designationCategory>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
+		<constructEffect>ConstructWood</constructEffect>
+		<researchPrerequisites>
+			<li>Electricity</li>
+			<li>RK_Research_RatkinEngineering</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	</ThingDef>	
+
+</Defs>

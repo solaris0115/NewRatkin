@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- 유니크 방어구 - Apparel_Various.xml -->
+	
+	<!-- 판금 갑옷 -->
+	<ThingDef ParentName="RK_ApparelAttr_Plate">
+		<defName>RK_Plate_Unique</defName>
+		<label>unique ratkin plate armor</label>
+		<description>A unique ratkin plate armor with enhanced protection and craftsmanship.</description>
+		
+		<comps Inherit="False">
+			<li Class="CompProperties_Forbiddable" />
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtApparel</nameMaker>
+				<descriptionMaker>ArtDescription_Apparel</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+		
+		<generateAllowChance>0</generateAllowChance>
+		<possessionCount>0</possessionCount>
+		<tradeability>Sellable</tradeability>
+		<recipeMaker Inherit="False" IsNull="True" />
+	</ThingDef>
+
+	<!-- 판금 투구 A -->
+	<ThingDef ParentName="RK_ApparelAttr_PlateHelmA">
+		<defName>RK_PlateHelmA_Unique</defName>
+		<label>unique ratkin plate helm A</label>
+		<description>A unique ratkin plate helm A with enhanced protection and craftsmanship.</description>
+		
+		<comps Inherit="False">
+			<li Class="CompProperties_Forbiddable" />
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtApparel</nameMaker>
+				<descriptionMaker>ArtDescription_Apparel</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+		
+		<generateAllowChance>0</generateAllowChance>
+		<possessionCount>0</possessionCount>
+		<tradeability>Sellable</tradeability>
+		<recipeMaker Inherit="False" IsNull="True" />
+	</ThingDef>
+
+	<!-- 판금 투구 B -->
+	<ThingDef ParentName="RK_ApparelAttr_PlateHelmB">
+		<defName>RK_PlateHelmB_Unique</defName>
+		<label>unique ratkin plate helm B</label>
+		<description>A unique ratkin plate helm B with enhanced protection and craftsmanship.</description>
+		
+		<comps Inherit="False">
+			<li Class="CompProperties_Forbiddable" />
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtApparel</nameMaker>
+				<descriptionMaker>ArtDescription_Apparel</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+		
+		<generateAllowChance>0</generateAllowChance>
+		<possessionCount>0</possessionCount>
+		<tradeability>Sellable</tradeability>
+		<recipeMaker Inherit="False" IsNull="True" />
+	</ThingDef>
+
+	<!-- 판금 투구 C -->
+	<ThingDef ParentName="RK_ApparelAttr_PlateHelmC">
+		<defName>RK_PlateHelmC_Unique</defName>
+		<label>unique ratkin plate helm C</label>
+		<description>A unique ratkin plate helm C with enhanced protection and craftsmanship.</description>
+		
+		<comps Inherit="False">
+			<li Class="CompProperties_Forbiddable" />
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtApparel</nameMaker>
+				<descriptionMaker>ArtDescription_Apparel</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+		
+		<generateAllowChance>0</generateAllowChance>
+		<possessionCount>0</possessionCount>
+		<tradeability>Sellable</tradeability>
+		<recipeMaker Inherit="False" IsNull="True" />
+	</ThingDef>
+
+	<!-- 판금 투구 (텍스처 바리에이션) -->
+	<ThingDef ParentName="RK_ApparelAttr_PlateHelm">
+		<defName>RK_PlateHelm_Unique</defName>
+		<label>unique ratkin plate helm</label>
+		<description>A unique ratkin plate helm with enhanced protection and craftsmanship.</description>
+		
+		<comps Inherit="False">
+			<li Class="CompProperties_Forbiddable" />
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtApparel</nameMaker>
+				<descriptionMaker>ArtDescription_Apparel</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+		
+		<generateAllowChance>0</generateAllowChance>
+		<possessionCount>0</possessionCount>
+		<tradeability>Sellable</tradeability>
+		<recipeMaker Inherit="False" IsNull="True" />
+	</ThingDef>
+
+	<!-- 유니크 방어구 - Apparel_Spacer.xml -->
+	
+	<!-- Spacearmor (cataphract armor) -->
+	<ThingDef ParentName="RK_ApparelAttr_SpaceArmor">
+		<defName>RK_Apparel_SpaceArmor_Unique</defName>
+		<label>unique cataphract armor</label>
+		<description>A unique cataphract armor with enhanced protection and advanced technology.</description>
+		
+		<comps Inherit="False">
+			<li Class="CompProperties_Forbiddable" />
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtApparel</nameMaker>
+				<descriptionMaker>ArtDescription_Apparel</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+		
+		<generateAllowChance>0</generateAllowChance>
+		<possessionCount>0</possessionCount>
+		<tradeability>Sellable</tradeability>
+		<recipeMaker Inherit="False" IsNull="True" />
+	</ThingDef>
+
+	<!-- Spacearmor Helmet (cataphract helmet) -->
+	<ThingDef ParentName="RK_ApparelAttr_SpaceArmorHelmet">
+		<defName>RK_Apparel_SpaceArmorHelmet_Unique</defName>
+		<label>unique cataphract helmet</label>
+		<description>A unique cataphract helmet with enhanced protection and advanced technology.</description>
+		
+		<comps Inherit="False">
+			<li Class="CompProperties_Forbiddable" />
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtApparel</nameMaker>
+				<descriptionMaker>ArtDescription_Apparel</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+		
+		<generateAllowChance>0</generateAllowChance>
+		<possessionCount>0</possessionCount>
+		<tradeability>Sellable</tradeability>
+		<recipeMaker Inherit="False" IsNull="True" />
+	</ThingDef>
+
+	<!-- 유니크 방어구 - Apparel_Util.xml -->
+	
+	<!-- 목재 방패 -->
+	<ThingDef ParentName="RK_ApparelAttr_WoodenShield">
+		<defName>RK_WoodenShield_Unique</defName>
+		<label>unique wooden shield</label>
+		<description>A unique wooden shield with enhanced durability and craftsmanship.</description>
+		
+		<comps Inherit="False">
+			<li Class="CompProperties_Forbiddable" />
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtApparel</nameMaker>
+				<descriptionMaker>ArtDescription_Apparel</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+			<!-- 기존 방패 컴포넌트들 유지 필요 -->
+		</comps>
+		
+		<generateAllowChance>0</generateAllowChance>
+		<possessionCount>0</possessionCount>
+		<tradeability>Sellable</tradeability>
+		<recipeMaker Inherit="False" IsNull="True" />
+	</ThingDef>
+
+	<!-- 금속 방패 -->
+	<ThingDef ParentName="RK_ApparelAttr_HeavyShield">
+		<defName>RK_HeavyShield_Unique</defName>
+		<label>unique heavy shield</label>
+		<description>A unique heavy shield with enhanced durability and protection.</description>
+		
+		<comps Inherit="False">
+			<li Class="CompProperties_Forbiddable" />
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtApparel</nameMaker>
+				<descriptionMaker>ArtDescription_Apparel</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+			<!-- 기존 방패 컴포넌트들 유지 필요 -->
+		</comps>
+		
+		<generateAllowChance>0</generateAllowChance>
+		<possessionCount>0</possessionCount>
+		<tradeability>Sellable</tradeability>
+		<recipeMaker Inherit="False" IsNull="True" />
+	</ThingDef>
+
+	<!-- 타워 방패 -->
+	<ThingDef ParentName="RK_ApparelAttr_TowerShield">
+		<defName>RK_TowerShield_Unique</defName>
+		<label>unique tower shield</label>
+		<description>A unique tower shield with enhanced durability and protection.</description>
+		
+		<comps Inherit="False">
+			<li Class="CompProperties_Forbiddable" />
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtApparel</nameMaker>
+				<descriptionMaker>ArtDescription_Apparel</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+			<!-- 기존 방패 컴포넌트들 유지 필요 -->
+		</comps>
+		
+		<generateAllowChance>0</generateAllowChance>
+		<possessionCount>0</possessionCount>
+		<tradeability>Sellable</tradeability>
+		<recipeMaker Inherit="False" IsNull="True" />
+	</ThingDef>
+
+	<!-- 전쟁 배너 -->
+	<ThingDef ParentName="RK_ApparelAttr_Banner">
+		<defName>RK_Apparel_Banner_Unique</defName>
+		<label>unique war banner</label>
+		<description>A unique war banner with enhanced morale-boosting capabilities.</description>
+		
+		<comps Inherit="False">
+			<li Class="CompProperties_Forbiddable" />
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtApparel</nameMaker>
+				<descriptionMaker>ArtDescription_Apparel</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+		
+		<generateAllowChance>0</generateAllowChance>
+		<possessionCount>0</possessionCount>
+		<tradeability>Sellable</tradeability>
+		<recipeMaker Inherit="False" IsNull="True" />
+	</ThingDef>
+</Defs>

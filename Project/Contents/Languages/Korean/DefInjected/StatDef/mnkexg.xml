@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RK_Stat_RangeCoolDown.label>원거리 재사용 대기시간 감소</RK_Stat_RangeCoolDown.label>
+  <RK_Stat_RangeCoolDown.description>원거리 무기의 재사용 대기시간을 줄입니다. 이 스탯은 랫홀릭 건의 가열 효과에 사용됩니다.</RK_Stat_RangeCoolDown.description>
+  <RK_Stat_RangeCoolDown.formatString>{0}초</RK_Stat_RangeCoolDown.formatString>
+  <RK_Stat_RangeCoolDownMultiplier.label>원거리 재사용 대기시간 배수</RK_Stat_RangeCoolDownMultiplier.label>
+  <RK_Stat_RangeCoolDownMultiplier.description>원거리 무기의 재사용 대기시간에 배율을 적용합니다. 이 스탯은 랫홀릭 건의 가열 효과에서 스탯 계수와 함께 사용됩니다.</RK_Stat_RangeCoolDownMultiplier.description>
+  <RK_Stat_RangeCoolDownMultiplier.formatString>{0}×</RK_Stat_RangeCoolDownMultiplier.formatString>
+  <RK_Stat_ShieldBlockChance.label>방패 방어율</RK_Stat_ShieldBlockChance.label>
+  <RK_Stat_ShieldBlockChance.description>방패로 방어를 시도할 확률입니다.\n\n방패 방어에 성공하면, 방패가 관통 당했는지 결정합니다.\n\n근접 스킬, 조작, 시야의 영향을 받습니다.</RK_Stat_ShieldBlockChance.description>
+  <RK_Stat_DeflectAngle.label>방패 방어 각도</RK_Stat_DeflectAngle.label>
+  <RK_Stat_DeflectAngle.description>이 방패가 들어오는 공격을 막아낼 수 있는 전방 부채꼴 각도입니다. 예를 들어 90°라면 좌우 각각 45° 범위를 뜻합니다.</RK_Stat_DeflectAngle.description>
+  <RK_Stat_DeflectAngle.formatString>{0}°</RK_Stat_DeflectAngle.formatString>
+  <RK_Stat_ShieldStuffBase.label>방패 방어도 - 재료효과 계수</RK_Stat_ShieldStuffBase.label>
+  <RK_Stat_Shield_Sharp.label>방패 방어도 - 날카로움</RK_Stat_Shield_Sharp.label>
+  <RK_Stat_Shield_Sharp.description>총알, 자상, 폭발, 동물에게 물리는 것 등 날카로운 피해에 대한 이 방패의 방어도입니다.\n\n공격을 받았을 때 방어력은 공격하는 무기의 관통값만큼 감소합니다.\n\n이 방패에 한해, 남은 방어도는 무작위 판정 한 번과 비교됩니다.\n\n    - 무작위 값이 남은 방어도보다 낮으면 공격은 무효화됩니다.\n    - 그렇지 않으면 방어는 아무런 효과가 없습니다.\n\n예를 들어 방어도 90%, 관통값 10%의 공격이면 남은 방어도는 80%이고, 공격이 막힐 확률은 약 80%입니다.</RK_Stat_Shield_Sharp.description>
+  <RK_Stat_Shield_Blunt.label>방패 방어도 - 둔탁함</RK_Stat_Shield_Blunt.label>
+  <RK_Stat_Shield_Blunt.description>주먹과 둔기, 낙석과 같은 둔탁한 원인에 의한 손상에 대한 이 방패의 방어도입니다.\n\n공격을 받았을 때 방어력은 공격하는 무기의 관통값만큼 감소합니다.\n\n이 방패에 한해, 남은 방어도는 무작위 판정 한 번과 비교됩니다.\n\n    - 무작위 값이 남은 방어도보다 낮으면 공격은 무효화됩니다.\n    - 그렇지 않으면 방어는 아무런 효과가 없습니다.\n\n예를 들어 방어도 90%, 관통값 10%의 공격이면 남은 방어도는 80%이고, 공격이 막힐 확률은 약 80%입니다.</RK_Stat_Shield_Blunt.description>
+  <RK_Stat_Shield_Heat.label>방패 방어도 - 열기</RK_Stat_Shield_Heat.label>
+  <RK_Stat_Shield_Heat.description>화상, 불, 기타 열 기반 공격 등 온도에 의한 손상에 대한 이 방패의 방어도입니다.\n\n공격을 받았을 때 방어력은 공격하는 무기의 관통값만큼 감소합니다.\n\n이 방패에 한해, 남은 방어도는 무작위 판정 한 번과 비교됩니다.\n\n    - 무작위 값이 남은 방어도보다 낮으면 공격은 무효화됩니다.\n    - 그렇지 않으면 방어는 아무런 효과가 없습니다.\n\n예를 들어 방어도 90%, 관통값 10%의 공격이면 남은 방어도는 80%이고, 공격이 막힐 확률은 약 80%입니다.</RK_Stat_Shield_Heat.description>
+</LanguageData>

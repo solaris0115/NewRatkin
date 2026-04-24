@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Ratkin Wandering Trader - 유랑 상인 판매용 PawnKindDef -->
+<!-- RK_PawnKind_Nomad WanderingMercenary -->
+<Defs>
+
+	<PawnKindDef ParentName="RKBasePawnKind">
+		<defName>RK_PawnKind_Nomad</defName>
+		<label>ratkin nomad</label>
+		<defaultFactionDef>RK_Faction_Caravan</defaultFactionDef>
+		<combatPower>25</combatPower>
+		<isFighter>false</isFighter>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>RK_Backstory_Wanderer</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelRequired>
+			<li>RK_Cardigan</li>
+		</apparelRequired>
+		<apparelMoney>800~1600</apparelMoney>
+		<weaponMoney>0~0</weaponMoney>
+		<apparelAllowHeadgearChance>0.3</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>RK_Apparel_CommonClothes</li>
+		</apparelTags>
+		<modExtensions>
+			<li Class="NewRatkin.PawnKindDefExtension_WanderingCaravanJoin">
+				<conditions>
+					<li Class="NewRatkin.JoinCondition_ColonyWealth">
+						<weight>3</weight>
+						<countRange>15000~81000</countRange>
+						<descShort>RK_JoinReq_StableLife_DescShort</descShort>
+						<desc>
+							<li>RK_JoinReq_StableLife_Desc1</li>
+							<li>RK_JoinReq_StableLife_Desc2</li>
+						</desc>
+					</li>
+					<li Class="NewRatkin.JoinCondition_AlwaysMet">
+						<weight>3</weight>
+						<descShort>RK_JoinReq_JoinHope_DescShort</descShort>
+						<desc>
+							<li>RK_JoinReq_JoinHope_Desc1</li>
+							<li>RK_JoinReq_JoinHope_Desc2</li>
+						</desc>
+					</li>
+					<li Class="NewRatkin.JoinCondition_ThingQuantity">
+						<weight>3</weight>
+						<mode>OR</mode>
+						<thingCounts>
+							<!-- ThingDefCountClass: 요소명=Def이름, 내용=수량 (li+thingDef+count 형식은 InnerText가 합쳐져 Telescope1 오류 발생) -->
+							<Telescope>1</Telescope>
+							<Harp MayRequire="Ludeon.RimWorld.Royalty">1</Harp>
+						</thingCounts>
+						<descShort>RK_JoinReq_WindFreedom_DescShort</descShort>
+						<desc>
+							<li>RK_JoinReq_WindFreedom_Desc1</li>
+							<li>RK_JoinReq_WindFreedom_Desc2</li>
+						</desc>
+					</li>
+				</conditions>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="RKCombatantBase">
+		<defName>RK_PawnKind_Wanderer</defName>
+		<label>ratkin wanderer</label>
+		<defaultFactionDef>RK_Faction_Caravan</defaultFactionDef>
+		<combatPower>55</combatPower>
+		<isFighter>true</isFighter>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>RK_Backstory_Wanderer</li>
+				</categories>
+				<exclude>
+					<li>RatkinNonViolence</li>
+				</exclude>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelMoney>400~1200</apparelMoney>
+		<weaponMoney>1500~3000</weaponMoney>
+		<weaponTags>
+			<li>RK_WeaponTag_Wanderer</li>
+		</weaponTags>
+		<apparelTags>
+			<li>RK_ApparelTag_ArmedWanderer</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+		<gearHealthRange>0.3~0.6</gearHealthRange>
+		<modExtensions>
+			<li Class="NewRatkin.PawnKindDefExtension_WanderingCaravanJoin">
+				<conditions>
+					<li Class="NewRatkin.JoinCondition_SkillMentorMulti">
+						<weight>3</weight>
+						<mode>AND</mode>
+						<skillList>
+							<li>
+								<skillDef>Melee</skillDef>
+								<levelRange>5~8</levelRange>
+							</li>
+							<li>
+								<skillDef>Shooting</skillDef>
+								<levelRange>5~8</levelRange>
+							</li>
+						</skillList>
+						<descShort>RK_JoinReq_SeekingMentor_DescShort</descShort>
+						<desc>
+							<li>RK_JoinReq_SeekingMentor_Desc1</li>
+							<li>RK_JoinReq_SeekingMentor_Desc2</li>
+						</desc>
+					</li>
+					<li Class="NewRatkin.JoinCondition_SkillMentorMulti">
+						<weight>3</weight>
+						<mode>OR</mode>
+						<skillList>
+							<li>
+								<skillDef>Melee</skillDef>
+								<levelRange>5~8</levelRange>
+							</li>
+							<li>
+								<skillDef>Shooting</skillDef>
+								<levelRange>5~8</levelRange>
+							</li>
+							<li>
+								<skillDef>Crafting</skillDef>
+								<levelRange>5~8</levelRange>
+							</li>
+						</skillList>
+						<descShort>RK_JoinReq_Prepared_DescShort</descShort>
+						<desc>
+							<li>RK_JoinReq_Prepared_Desc1</li>
+							<li>RK_JoinReq_Prepared_Desc2</li>
+						</desc>
+					</li>
+					<li Class="NewRatkin.JoinCondition_ThingQuantity">
+						<weight>3</weight>
+						<mode>OR</mode>
+						<thingCategoryCounts>
+							<li>
+								<group>Weapon</group>
+								<countRange>3~6</countRange>
+							</li>
+						</thingCategoryCounts>
+						<descShort>RK_JoinReq_WindFreedom_DescShort</descShort>
+						<desc>
+							<li>RK_JoinReq_WindFreedom_Desc1</li>
+							<li>RK_JoinReq_WindFreedom_Desc2</li>
+						</desc>
+					</li>
+				</conditions>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<!-- 캐러반 리더: 상호작용 대상, 거래·의뢰 핵심 인물 -->
+	<PawnKindDef ParentName="RKBasePawnKind">
+		<defName>RK_PawnKind_CaravanLeader</defName>
+		<label>ratkin caravan leader</label>
+		<minGenerationAge>19</minGenerationAge>
+		<defaultFactionDef>RK_Faction_Caravan</defaultFactionDef>
+		<combatPower>30</combatPower>
+		<isFighter>false</isFighter>
+		<trader>true</trader>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>RK_Backstory_Wanderer</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>RK_Backstory_CaravanLeader</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelMoney>1500~3000</apparelMoney>
+		<weaponMoney>1500~3000</weaponMoney>
+		<weaponTags>
+			<li>RK_WeaponTag_Wanderer</li>
+		</weaponTags>
+		<apparelTags>
+			<li>RK_Apparel_CommonClothes</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+	</PawnKindDef>
+
+	<!-- 캐러반 호위: 경무장 근접 위주 -->
+	<PawnKindDef ParentName="RKCombatantBase">
+		<defName>RK_PawnKind_CaravanGuard</defName>
+		<label>ratkin caravan guard</label>
+		<minGenerationAge>19</minGenerationAge>
+		<defaultFactionDef>RK_Faction_Caravan</defaultFactionDef>
+		<combatPower>45</combatPower>
+		<isFighter>true</isFighter>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>RK_Backstory_Wanderer</li>
+				</categoriesChildhood>
+				<exclude>
+					<li>RatkinNonViolence</li>
+				</exclude>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelMoney>1500~3000</apparelMoney>
+		<weaponMoney>1500~3000</weaponMoney>
+		<weaponTags>
+			<li>RK_WeaponTag_Wanderer</li>
+			<li>RK_WeaponTag_ArmedWanderer</li>
+		</weaponTags>
+		<apparelTags>
+			<li>RK_ApparelTag_ArmedWanderer</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+		<gearHealthRange>0.3~0.6</gearHealthRange>
+	</PawnKindDef>
+</Defs>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<ThingDef Name="RK_BaseBullet" Abstract="True">
 		<category>Projectile</category>
@@ -1175,7 +1175,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<soundCast>PrototypePulse</soundCast>
+				<soundCast>RK_Sound_BFRFire</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 
 				<defaultProjectile>Bullet_BFR_AP</defaultProjectile>

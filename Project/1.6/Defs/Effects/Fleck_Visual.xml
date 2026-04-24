@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- WyvernFire BFR HE탄 기폭점 폭발 이펙트. 잿빛, 알파 0.7, 1.2배 스케일(코드), 0.7배 재생시간. 사운드 Shockwave -->
+<Defs>
+  <FleckDef ParentName="FleckBase">
+    <defName>RK_WyvernFireExplosion</defName>
+    <graphicData>
+      <texPath>Things/Special/WyvernFire</texPath>
+      <shaderType>TransparentPostLight</shaderType>
+      <renderInstanced>true</renderInstanced>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <solidTime>0</solidTime>
+    <fadeOutTime>0.14</fadeOutTime>
+  </FleckDef>
+</Defs>

@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- 우주복 헬멧 -->
+	<ThingDef ParentName="ArmorHelmetMakeableBase" MayRequire="Ludeon.RimWorld.Odyssey">
+		<defName>RK_Apparel_VacsuitHelmet</defName>
+		<label>vacsuit helmet</label>
+		<description>A helmet that efficiently recycles the user's oxygen, allowing them to breathe in the vacuum of space for hours at a time. The process isn't perfectly efficient, so the user must periodically return to a pressurized environment.</description>
+		<possessionCount>1</possessionCount>
+		<generateAllowChance>0</generateAllowChance>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<texPath>Apparel/Vacsuit/RK_Apparel_VacsuitHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<ignoreThingDrawColor>true</ignoreThingDrawColor>
+		</graphicData>
+		<statBases>
+			<WorkToMake>15000</WorkToMake>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Mass>1.5</Mass>
+			<Flammability>0.4</Flammability>
+			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.4</ArmorRating_Heat>
+			<Insulation_Cold>10</Insulation_Cold>
+			<Insulation_Heat>20</Insulation_Heat>
+			<EquipDelay>4</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
+			<VacuumResistance>0.69</VacuumResistance>
+			<AimingDelayFactor>-0.12</AimingDelayFactor>
+			<ShootingAccuracyPawn>4</ShootingAccuracyPawn>
+		</equippedStatOffsets>
+		<smeltable>true</smeltable>
+		<thingCategories>
+			<li>RK_Apparel</li>
+			<li>RK_Headgear</li>
+		</thingCategories>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/Vacsuit/RK_Apparel_VacsuitHelmet</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>RK_4Tier</li>
+				<li>RK_ApparelTag_SpaceWear</li>
+				<li>RK_ApparelTag_HideEar</li>
+				<li>RK_ApparelTag_HighTech</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Spacefarer</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_White" Inherit="False" />
+		<tradeTags>
+			<li>RK_Apparel_Rare</li>
+		</tradeTags>
+		<costList>
+			<DevilstrandCloth>10</DevilstrandCloth>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<Steel>40</Steel>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>RK_Research_OrbitalEquipment</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<displayPriority>47237</displayPriority>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers Inherit="false">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+
+	<!-- 성인용 우주복 -->
+	<ThingDef ParentName="ApparelMakeableBase" MayRequire="Ludeon.RimWorld.Odyssey">
+		<defName>RK_Apparel_Vacsuit</defName>
+		<label>vacsuit</label>
+		<description>A protective suit that keeps the user safe in the vacuum of space. The suit restricts the wearer's movement, considerably reducing their movement speed.</description>
+		<generateAllowChance>0</generateAllowChance>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<texPath>Apparel/Vacsuit/RK_Apparel_Vacsuit</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<ignoreThingDrawColor>true</ignoreThingDrawColor>
+		</graphicData>
+		<statBases>
+			<WorkToMake>48000</WorkToMake>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Mass>12</Mass>
+			<Flammability>0.4</Flammability>
+			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.4</ArmorRating_Heat>
+			<Insulation_Cold>70</Insulation_Cold>
+			<Insulation_Heat>30</Insulation_Heat>
+			<EquipDelay>14</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>0.25</MoveSpeed>
+			<VacuumResistance>0.32</VacuumResistance>
+			<CarryingCapacity>35</CarryingCapacity>
+		</equippedStatOffsets>
+		<thingCategories>
+			<li>RK_Apparel</li>
+		</thingCategories>
+		<tradeTags inherit="false">
+		</tradeTags>
+		<smeltable>true</smeltable>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/Vacsuit/RK_Apparel_Vacsuit</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+				<li>BackPack</li>
+			</layers>
+			<tags>
+				<li>RK_4Tier</li>
+				<li>RK_ApparelTag_SpaceWear</li>
+				<li>RK_ApparelTag_HideTail</li>
+				<li>RK_ApparelTag_HighTech</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Spacefarer</li>
+			</defaultOutfitTags>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+			<soundWear>Wear_PowerArmor</soundWear>
+			<soundRemove>Remove_PowerArmor</soundRemove>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_White" Inherit="False" />
+		<costList>
+			<!-- <DevilstrandCloth>15</DevilstrandCloth> -->
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<Steel>90</Steel>
+			<Plasteel>20</Plasteel>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>RK_Research_OrbitalEquipment</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<displayPriority>47235</displayPriority>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	<!-- 어린이용 우주복 -->
+	<ThingDef ParentName="ApparelBase" MayRequire="Ludeon.RimWorld.Odyssey,Ludeon.RimWorld.Biotech">
+		<defName>RK_Apparel_VacsuitChildren</defName>
+		<label>kid vacsuit</label>
+		<description>A protective suit designed for children. It keeps the user safe in the vacuum of space.</description>
+		<generateAllowChance>0</generateAllowChance>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<texPath>Apparel/Vacsuit/RK_Apparel_Vacsuit</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+			<ignoreThingDrawColor>true</ignoreThingDrawColor>
+		</graphicData>
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>8</Mass>
+			<Flammability>0.4</Flammability>
+			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.4</ArmorRating_Heat>
+			<Insulation_Cold>70</Insulation_Cold>
+			<Insulation_Heat>30</Insulation_Heat>
+			<EquipDelay>14</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>0.25</MoveSpeed>
+			<VacuumResistance>0.32</VacuumResistance>
+			<CarryingCapacity>35</CarryingCapacity>
+		</equippedStatOffsets>
+		<thingCategories>
+			<li>RK_Apparel</li>
+		</thingCategories>
+		<tradeTags>
+			<li>RK_Apparel_Rare</li>
+		</tradeTags>
+		<smeltable>true</smeltable>
+		<apparel>
+			<developmentalStageFilter>Child</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/Vacsuit/RK_Apparel_Vacsuit</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+				<li>BackPack</li>
+			</layers>
+			<tags>
+				<li>RK_4Tier</li>
+				<li>RK_ApparelTag_SpaceWear</li>
+				<li>RK_ApparelTag_HideTail</li>
+				<li>RK_ApparelTag_HighTech</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Spacefarer</li>
+			</defaultOutfitTags>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+			<soundWear>Wear_PowerArmor</soundWear>
+			<soundRemove>Remove_PowerArmor</soundRemove>
+			<drawData>
+				<childScale>0.7</childScale>
+			</drawData>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_White" Inherit="False" />
+		<costList>
+			<!-- <DevilstrandCloth>15</DevilstrandCloth> -->
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<Steel>45</Steel>
+			<Plasteel>10</Plasteel>
+		</costList>
+		<recipeMaker MayRequire="Ludeon.RimWorld.Biotech">
+			<researchPrerequisite>RK_Research_OrbitalEquipment</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<displayPriority>47235</displayPriority>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+
+	<!--
+		Royalty ApparelArmorCataphractBase / HelmetCataphractBase 는 DLC XML 전용.
+		Royalty·Odyssey 등이 꺼져도 로드되도록 코어 ArmorMachineableBase 계열 + 코어 PowerArmor 텍스처 경로(추상용 플레이스홀더) 사용.
+		자식(RK_Apparel_SpaceArmor)이 그래픽·수치를 덮어씀. Ideology 노예/억압·Odyssey 진공 저항은 자식 equippedStatOffsets 의 MayRequire 로 DLC 켠 경우만 적용.
+		연구는 자식 recipeMaker(RK_Research_CrusaderArmor 등)에서 지정.
+	-->
+	<ThingDef Name="RK_ApparelAttr_CataphractArmorBase" ParentName="ArmorMachineableBase" Abstract="True">
+		<techLevel>Spacer</techLevel>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.25</uiIconScale>
+		<generateCommonality>2</generateCommonality>
+		<statBases>
+			<WorkToMake>75000</WorkToMake>
+			<MaxHitPoints>400</MaxHitPoints>
+			<Mass>15</Mass>
+			<Flammability>0.4</Flammability>
+			<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.6</ArmorRating_Heat>
+			<Insulation_Cold>70</Insulation_Cold>
+			<Insulation_Heat>12</Insulation_Heat>
+			<EquipDelay>17</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.5</MoveSpeed>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.3</SlaveSuppressionOffset>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.3</VacuumResistance>
+		</equippedStatOffsets>
+		<tradeTags>
+			<li>HiTechArmor</li>
+		</tradeTags>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<costList>
+			<ComponentSpacer>6</ComponentSpacer>
+			<Plasteel>150</Plasteel>
+			<Uranium>50</Uranium>
+		</costList>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+				<li>Spacefarer</li>
+			</defaultOutfitTags>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+			<soundWear>Wear_PowerArmor</soundWear>
+			<soundRemove>Remove_PowerArmor</soundRemove>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(0.9,0.9,0.9)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.33,0.33,0.33)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.65,0.65,0.65)</only>
+				</li>
+				<li>
+					<weight>6</weight>
+					<min>(0.3,0.3,0.3)</min>
+					<max>(0.5,0.5,0.5)</max>
+				</li>
+			</options>
+		</colorGenerator>
+		<comps>
+			<li Class="CompProperties_Biocodable"/>
+		</comps>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<ThingDef Name="RK_ApparelAttr_CataphractHelmetBase" ParentName="ArmorHelmetMakeableBase" Abstract="True">
+		<techLevel>Spacer</techLevel>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/PowerArmorHelmet/PowerArmorHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(0.9, 0.9)</drawSize>
+		</graphicData>
+		<tradeTags>
+			<li>HiTechArmor</li>
+			<li>Armor</li>
+		</tradeTags>
+		<generateCommonality>2</generateCommonality>
+		<statBases>
+			<WorkToMake>26250</WorkToMake>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Mass>2</Mass>
+			<Flammability>0.4</Flammability>
+			<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.6</ArmorRating_Heat>
+			<Insulation_Cold>4</Insulation_Cold>
+			<Insulation_Heat>2</Insulation_Heat>
+			<EquipDelay>6</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.68</VacuumResistance>
+		</equippedStatOffsets>
+		<costList>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Plasteel>50</Plasteel>
+		</costList>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/PowerArmorHelmet/PowerArmorHelmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+				<li>Spacefarer</li>
+			</defaultOutfitTags>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(0.33,0.33,0.33,1)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.65,0.65,0.65,1)</only>
+				</li>
+				<li>
+					<weight>6</weight>
+					<min>(0.3,0.3,0.3,1)</min>
+					<max>(0.5,0.5,0.5,1)</max>
+				</li>
+				<li>
+					<weight>10.1</weight>
+					<only>(0.9,0.9,0.9,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<comps>
+			<li Class="CompProperties_Biocodable"/>
+		</comps>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<!-- 우주 갑옷-->
+	<ThingDef ParentName="RK_ApparelAttr_CataphractArmorBase" Name="RK_ApparelAttr_SpaceArmor">
+		<defName>RK_Apparel_SpaceArmor</defName>
+		<label>cataphract armor</label>
+		<description>A suit of heavy powered armor, built for maximum protection at the cost of mobility. Heavy layered plasteel-weave plates with solid ablative coatings stop all but the most well-aimed or powerful attacks. Neuro-memetic assistors prevent the suit's massive weight from immobilizing the wearer entirely, but the suit is still quite cumbersome.\n\nArmor like this is used by imperial cataphracts to break heavily fortified positions in frontal assaults when no other option is available.</description>
+		<graphicData>
+			<texPath>Apparel/SpaceArmor/RK_Apparel_SpaceArmor</texPath>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+			<WorkToMake>75000</WorkToMake>
+			<MaxHitPoints>400</MaxHitPoints>
+			<Mass>10.5</Mass>
+			<ArmorRating_Sharp>1.1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.8</ArmorRating_Heat>
+			<Insulation_Cold>70</Insulation_Cold>
+			<Insulation_Heat>70</Insulation_Heat>
+			<EquipDelay>10</EquipDelay>
+			<Flammability>0.1</Flammability>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.5</MoveSpeed>
+			<MeleeDodgeChance>4</MeleeDodgeChance>
+			<Flammability>-0.68</Flammability>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.3</SlaveSuppressionOffset>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.3</VacuumResistance>
+		</equippedStatOffsets>
+		<costList>
+			<Steel>100</Steel>
+			<ComponentSpacer>6</ComponentSpacer>
+			<Plasteel>120</Plasteel>
+			<Uranium>50</Uranium>
+		</costList>
+		<apparel>
+			<wornGraphicPath>Apparel/SpaceArmor/RK_Apparel_SpaceArmor</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+				<li>BackPack</li>
+			</layers>
+			<tags>
+				<!-- RoyalTitles_Empire requiredApparel: PrestigeCombatGear (vanilla prestige cataphract). 없으면 작위 의류 요구 미충족 무드 발생. -->
+				<li>PrestigeCombatGear</li>
+				<li>RK_ApparelTag_HideTail</li>
+				<li>RK_ApparelTag_HighTech</li>
+			</tags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_White" Inherit="False" />
+		<recipeMaker>
+			<researchPrerequisite>RK_Research_CrusaderArmor</researchPrerequisite>
+			<displayPriority>47125</displayPriority>
+		</recipeMaker>
+		<thingCategories>
+			<li>RK_Apparel</li>
+		</thingCategories>
+		<tradeTags>
+			<li>RK_Apparel_Rare</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!-- 우주 갑옷 헬멧 -->
+	<ThingDef ParentName="RK_ApparelAttr_CataphractHelmetBase" Name="RK_ApparelAttr_SpaceArmorHelmet">
+		<defName>RK_Apparel_SpaceArmorHelmet</defName>
+		<label>cataphract helmet</label>
+		<description>A heavily-armored high-tech helmet, with a solid plasteel-weave shell and indirect visual system for non-frontal view angles. It protects against all but the most powerful or luckily-aimed shots.\n\nArmor like this is used by imperial cataphracts to break heavily fortified positions in frontal assaults when no other option is available.</description>
+		<graphicData>
+			<texPath>Apparel/SpaceArmor/RK_Apparel_SpaceArmorHelmet</texPath>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+			<WorkToMake>26250</WorkToMake>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Mass>1.4</Mass>
+			<Flammability>0.1</Flammability>
+			<ArmorRating_Sharp>1.0</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.7</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.7</ArmorRating_Heat>
+			<Insulation_Cold>10</Insulation_Cold>
+			<Insulation_Heat>50</Insulation_Heat>
+			<EquipDelay>6</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.1</MoveSpeed>
+			<Flammability>-0.16</Flammability>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.68</VacuumResistance>
+		</equippedStatOffsets>
+		<costList>
+			<Steel>50</Steel>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Plasteel>50</Plasteel>
+		</costList>
+		<apparel>
+			<wornGraphicPath>Apparel/SpaceArmor/RK_Apparel_SpaceArmorHelmet</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li>PrestigeCombatGear</li>
+				<li>RK_ApparelTag_HideEar</li>
+				<li>RK_ApparelTag_HighTech</li>
+			</tags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_White" Inherit="False" />
+		<recipeMaker>
+			<researchPrerequisite>RK_Research_CrusaderArmor</researchPrerequisite>
+			<displayPriority>47120</displayPriority>
+		</recipeMaker>
+		<thingCategories>
+			<li>RK_Apparel</li>
+			<li>RK_Headgear</li>
+		</thingCategories>
+		<tradeTags>
+			<li>RK_Apparel_Rare</li>
+		</tradeTags>
+	</ThingDef>
+
+
+</Defs>

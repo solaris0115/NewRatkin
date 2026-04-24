@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- 랫킨 물자상단 -->
+	<!-- 랫킨은 중세와 산업 사이 어딘가 -->
+	<TraderKindDef>
+		<defName>RK_TraderKind_KingdomBulkGoods</defName>
+		<label>bulk goods trader</label>
+		<stockGenerators>
+
+			<!-- Resources -->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>750~1200</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>ComponentIndustrial</thingDef>
+				<countRange>30~40</countRange>
+			</li>
+			<!-- 중세 수준이라 제외 -->
+			<!-- <li Class="StockGenerator_SingleDef">
+				<thingDef>ComponentSpacer</thingDef>
+				<countRange>-10~2</countRange>
+			</li> -->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Steel</thingDef>
+				<countRange>250~400</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Cloth</thingDef>
+				<countRange>250~400</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Chemfuel</thingDef>
+				<countRange>100~250</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Neutroamine</thingDef>
+				<countRange>0~40</countRange>
+			</li>
+			<!-- 기존 술을 대체 -->
+			<li Class="StockGenerator_SingleDef">
+				<!-- <thingDef>Beer</thingDef> -->
+				<thingDef>RK_StrawberryBeer</thingDef>
+				<totalPriceRange>25~100</totalPriceRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Chocolate</thingDef>
+				<totalPriceRange>40~80</totalPriceRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Dye</thingDef>
+				<countRange>15~20</countRange>
+			</li>
+			<!-- 중세~산업 사이라서 취급 잘 안함 -->
+			<!-- <li Class="StockGenerator_ReinforcedBarrels">
+				<countRange>1~2</countRange>
+			</li> -->
+			<li Class="StockGenerator_Category">
+				<categoryDef>FoodRaw</categoryDef>
+				<thingDefCountRange>3~3</thingDefCountRange>
+				<totalPriceRange>150~600</totalPriceRange>
+				<excludedCategories>
+					<li>EggsFertilized</li>
+				</excludedCategories>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>Textiles</categoryDef>
+				<excludedThingDefs>
+					<li MayRequire="Ludeon.RimWorld.Anomaly">Leather_Dread</li>
+				</excludedThingDefs>
+			</li>
+			<!-- 랫킨 고유 식량 -->
+			<li Class="StockGenerator_MultiDef">
+				<thingDefs>
+					<li>Chocolate</li>
+					<li>Kibble</li>
+					<li>RK_Food_Hardtack</li>
+				</thingDefs>
+			</li>
+
+			<!-- Drugs -->
+			<li Class="StockGenerator_MultiDef">
+				<thingDefs>
+					<li>PsychiteTea</li>
+					<li>SmokeleafJoint</li>
+				</thingDefs>
+			</li>
+			<!-- <li Class="StockGenerator_Category">
+				<categoryDef>Drugs</categoryDef>
+			</li> -->
+
+			<!-- Techprints -->
+			<!-- none -->
+
+			<!-- Books -->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>TextBook</thingDef>
+				<countRange>1~4</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Schematic</thingDef>
+				<countRange>1~1</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Novel</thingDef>
+				<countRange>1~3</countRange>
+			</li>
+
+			<!-- Weapons -->
+			<!-- none -->
+
+			<!-- Apparel -->
+			<li Class="StockGenerator_MarketValue">
+				<tradeTag>BasicClothing</tradeTag>
+				<countRange>7~7</countRange>
+			</li>
+			<li Class="StockGenerator_MarketValue">
+				<tradeTag>Clothing</tradeTag>
+				<countRange>3~3</countRange>
+			</li>
+
+			<!-- Implants -->
+			<!-- none -->
+
+			<!-- Buildings 중세 물자 상단은 무거워서 이런거 못팜-->
+			<!-- none -->
+			<!-- <li Class="StockGenerator_Category">
+				<categoryDef>BuildingsFurniture</categoryDef>
+				<thingDefCountRange>3~3</thingDefCountRange>
+				<countRange>1~1</countRange>
+			</li> -->
+
+			<!-- Exotic -->
+			<!-- none -->
+
+			<!-- Slaves -->
+			<!-- none -->
+
+			<!-- Animals -->
+			<li Class="StockGenerator_Animals">
+				<maxWildness>0.70</maxWildness>
+				<tradeTagsSell>
+					<li>AnimalFarm</li>
+				</tradeTagsSell>
+				<tradeTagsBuy>
+					<li>AnimalExotic</li>
+				</tradeTagsBuy>
+				<kindCountRange>1</kindCountRange>
+				<countRange>3~4</countRange>
+				<createMatingPair>
+					<li>AnimalFarm</li>
+				</createMatingPair>
+			</li>
+
+			<!-- Buying -->
+			<li Class="StockGenerator_BuyExpensiveSimple" />
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>Art</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>MusicalInstrument</tag>
+			</li>
+
+		</stockGenerators>
+	</TraderKindDef>
+
+	<!-- 랫킨 의류 상단 -->
+	<TraderKindDef>
+		<defName>RK_TraderKind_KingdomDressMerchant</defName>
+		<label>dress merchant</label>
+		<stockGenerators>
+			<!-- Resources -->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>750~1200</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>ComponentIndustrial</thingDef>
+				<countRange>30~40</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Steel</thingDef>
+				<countRange>250~400</countRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>Textiles</categoryDef>
+				<thingDefCountRange>3~3</thingDefCountRange>
+				<excludedThingDefs>
+					<li MayRequire="Ludeon.RimWorld.Anomaly">Leather_Dread</li>
+				</excludedThingDefs>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Dye</thingDef>
+				<countRange>15~20</countRange>
+			</li>
+
+			<!-- Apparel -->
+			<li Class="StockGenerator_MarketValue">
+				<tradeTag>BasicClothing</tradeTag>
+				<countRange>7~7</countRange>
+			</li>
+			<li Class="StockGenerator_MarketValue">
+				<tradeTag>Clothing</tradeTag>
+				<countRange>3~3</countRange>
+			</li>
+			<!-- 기본 의류 + Royal 태그 -->
+			<li Class="StockGenerator_MarketValue">
+				<tradeTag>BasicClothing</tradeTag>
+				<apparelTag>Royal</apparelTag>
+				<countRange>1~5</countRange>
+			</li>
+			<!-- 고급 의류 + Royal 태그 -->
+			<li Class="StockGenerator_MarketValue">
+				<tradeTag>Clothing</tradeTag>
+				<apparelTag>Royal</apparelTag>
+				<countRange>1~3</countRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>PsychicApparel</tradeTag>
+				<thingDefCountRange>1~2</thingDefCountRange>
+				<countRange>1~2</countRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>HiTechArmor</tradeTag>
+				<thingDefCountRange>0~2</thingDefCountRange>
+				<countRange>0~1</countRange>
+			</li>
+
+			<!-- Exotic -->
+			<!-- none -->
+
+			<!-- Buying -->
+			<li Class="StockGenerator_BuyExpensiveSimple" />
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>Art</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>MusicalInstrument</tag>
+			</li>
+
+		</stockGenerators>
+	</TraderKindDef>
+
+	<!-- 랫킨 전투 물자 -->
+	<TraderKindDef>
+		<defName>RK_TraderKind_KingdomCombatSupplier</defName>
+		<label>combat supplier</label>
+		<stockGenerators>
+
+			<!-- Resources -->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>750~1200</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>MedicineIndustrial</thingDef>
+				<countRange>10~20</countRange>
+			</li>
+
+			<!-- Drugs -->
+			<!-- none -->
+
+			<!-- Techprints -->
+			<li Class="StockGenerator_Techprints" MayRequire="Ludeon.RimWorld.Royalty">
+				<countChances>
+					<li>
+						<count>1</count>
+						<chance>1</chance>
+					</li>
+				</countChances>
+			</li>
+
+			<!-- 랫킨용 무기 -->
+			<li Class="StockGenerator_MarketValue">
+				<tradeTag>RK_TradeTag_Range</tradeTag>
+				<weaponTag>RK_WeaponTag_1Tier</weaponTag>
+				<countRange>5~5</countRange>
+			</li>
+			<li Class="StockGenerator_MarketValue">
+				<tradeTag>RK_TradeTag_Range</tradeTag>
+				<weaponTag>RK_WeaponTag_1Tier</weaponTag>
+				<countRange>5~5</countRange>
+			</li>
+			<!-- 범용 인간용 무기 -->
+			<!-- Weapons -->
+			<li Class="StockGenerator_MarketValue">
+				<tradeTag>WeaponRanged</tradeTag>
+				<countRange>2~4</countRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>WeaponsMelee</categoryDef>
+				<thingDefCountRange>3~3</thingDefCountRange>
+				<countRange>2~4</countRange>
+			</li>
+			<!-- 건랜스 탄환 -->
+			<li Class="StockGenerator_Tag">
+				<tradeTag>MortarShell</tradeTag>
+				<thingDefCountRange>1~2</thingDefCountRange>
+				<countRange>3~15</countRange>
+				<excludedThingDefs>
+					<li MayRequire="Ludeon.RimWorld.Anomaly">Shell_Deadlife</li>
+				</excludedThingDefs>
+			</li>
+			<!-- 랫킨용 갑옷 -->
+			<li Class="StockGenerator_MarketValue">
+				<tradeTag>RK_TradeTag_Armor</tradeTag>
+				<countRange>2~5</countRange>
+			</li>
+			<!-- Apparel -->
+			<li Class="StockGenerator_MarketValue">
+				<tradeTag>Armor</tradeTag>
+				<countRange>2~5</countRange>
+			</li>
+
+			<!-- Implants -->
+			<!-- none -->
+
+			<!-- Buildings -->
+			<!-- none -->
+
+			<!-- Exotic -->
+			<!-- none -->
+
+			<!-- Slaves -->
+			<!-- none -->
+
+			<!-- Animals -->
+			<!-- none -->
+
+			<!-- Buying -->
+			<li Class="StockGenerator_BuyExpensiveSimple" />
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>Art</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>HiTechArmor</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>MusicalInstrument</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>Drugs</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>HoraxWeapon</tag>
+			</li>
+
+		</stockGenerators>
+	</TraderKindDef>
+
+	<!-- 랫킨 희귀품 상단 -->
+	<TraderKindDef>
+		<defName>RK_TraderKind_KingdomExotic</defName>
+		<label>exotic goods trader</label>
+		<stockGenerators>
+
+			<!-- Resources -->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>750~1200</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>ComponentIndustrial</thingDef>
+				<countRange>6~20</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>ComponentSpacer</thingDef>
+				<countRange>1~4</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Plasteel</thingDef>
+				<countRange>50~150</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Gold</thingDef>
+				<countRange>40~80</countRange>
+			</li>
+			
+			<!-- Drugs -->
+			<!-- none -->
+			
+			<!-- Techprints -->
+			<li Class="StockGenerator_Techprints" MayRequire="Ludeon.RimWorld.Royalty">
+				<countChances>
+					<li>
+						<count>3</count>
+						<chance>1</chance>
+					</li>
+				</countChances>
+			</li>
+
+			<!-- Books -->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>TextBook</thingDef>
+				<countRange>1~2</countRange>
+			</li>
+
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Schematic</thingDef>
+				<countRange>0~1</countRange>
+			</li>
+
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Novel</thingDef>
+				<countRange>0~1</countRange>
+			</li>
+			
+			<li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_Tomes">
+				<countRange>0~1</countRange>
+			</li>
+			
+			<!-- Weapons -->
+			<li Class="StockGenerator_MarketValue">
+				<tradeTag>WeaponMelee</tradeTag>
+				<weaponTag>RK_WeaponTag_HighTech</weaponTag>
+				<countRange>1~2</countRange>
+			</li>
+				
+			<!-- Apparel -->
+			<li Class="StockGenerator_MarketValue">
+				<tradeTag>Clothing</tradeTag>
+				<apparelTag>RK_Noble</apparelTag>
+				<countRange>1~3</countRange>
+			</li>
+			<li Class="StockGenerator_MarketValue">
+				<tradeTag>HiTechArmor</tradeTag>
+				<apparelTag>RK_ApparelTag_HighTech</apparelTag>
+				<countRange>1~2</countRange>
+			</li>
+			
+			<!-- Implants -->
+			<li Class="StockGenerator_Tag">
+				<tradeTag>TechHediff</tradeTag>
+				<thingDefCountRange>3</thingDefCountRange>
+				<countRange>1</countRange>
+			</li>
+			
+			<!-- Buildings -->
+			<li Class="StockGenerator_Tag">
+				<tradeTag>Television</tradeTag>
+				<thingDefCountRange>1~2</thingDefCountRange>
+				<countRange>1~1</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Telescope</thingDef>
+				<countRange>0~1</countRange>
+			</li>
+			<li Class="StockGenerator_MarketValue">
+				<tradeTag>Art</tradeTag>
+				<countRange>4~8</countRange>
+			</li>
+			
+			<!-- Exotic -->
+			<li Class="StockGenerator_Tag">
+				<tradeTag>ExoticMisc</tradeTag>
+				<thingDefCountRange>3~3</thingDefCountRange>
+				<countRange>1~1</countRange>
+				<excludedThingDefs>
+					<li>ComponentSpacer</li> <!-- already handled by single def -->
+					<li MayRequire="Ludeon.RimWorld.Anomaly">Apparel_DisruptorFlarePack</li> <!-- no anomaly technology on basic traders -->
+				</excludedThingDefs>
+				<customCountRanges>
+					<Luciferium>7~25</Luciferium>
+					<Hyperweave>40~120</Hyperweave>
+				</customCountRanges>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>Artifact</tradeTag>
+				<thingDefCountRange>2~2</thingDefCountRange>
+				<countRange>1~1</countRange>
+			</li>
+			
+			<!-- Unique Weapons -->
+			<li MayRequire="Ludeon.RimWorld.Odyssey" Class="NewRatkin.StockGenerator_UniqueWeapon">
+				<tradeTag>RK_TradeTag_Weapon</tradeTag>
+				<countRange>1~3</countRange>
+			</li>
+
+			 <!-- Serums -->
+			<li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_Tag">
+				<tradeTag>Serum</tradeTag>
+				<thingDefCountRange>4~4</thingDefCountRange>
+				<countRange>-3~1</countRange> <!-- 20% chance of appearing -->
+				<excludedThingDefs>
+					<li>VoidsightSerum</li>
+				</excludedThingDefs>
+			</li>
+
+			<!-- Slaves -->
+			<!-- none -->
+			
+			<!-- Animals -->
+			<li Class="StockGenerator_Animals">
+				<tradeTagsSell>
+					<li>AnimalUncommon</li>
+					<li>AnimalFighter</li>
+					<li>AnimalFarm</li>
+					<li>AnimalPet</li>
+				</tradeTagsSell>
+				<tradeTagsBuy>
+					<li>AnimalExotic</li>
+				</tradeTagsBuy>
+				<kindCountRange>3~3</kindCountRange>
+				<countRange>1~3</countRange>
+				<createMatingPair>
+					<li>AnimalFarm</li>
+				</createMatingPair>
+			</li>
+
+			<!-- Buying -->
+			<li Class="StockGenerator_BuyExpensiveSimple" />
+			<li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>ImplantEmpireCommon</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>ImplantEmpireRoyal</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>PsylinkNeuroformer</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>ExoticBuilding</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>MusicalInstrument</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>UtilitySpecial</tag></li>
+			<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>Shell_Deadlife</thingDef></li>
+			<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>VoidSculpture</thingDef></li>
+			<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>Shard</thingDef></li>
+			<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>Bioferrite</thingDef></li>
+			<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>RevenantSpine</thingDef></li>
+			
+		</stockGenerators>
+	</TraderKindDef>
+
+	<!-- 랫킨 식자재 상인 -->
+	<TraderKindDef>
+		<defName>RK_TraderKind_KingdomFoodMerchant</defName>
+		<label>food merchant</label>
+		<stockGenerators>
+
+			<!-- Resources -->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>750~1200</countRange>
+		</li>
+
+	<!-- 일반 동물 고기 (MeatRaw 카테고리, Fish 제외) -->
+		<li Class="StockGenerator_Category">
+			<categoryDef>MeatRaw</categoryDef>
+			<thingDefCountRange>4~6</thingDefCountRange>
+			<totalPriceRange>300~600</totalPriceRange>
+			<excludedCategories>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">Fish</li>
+			</excludedCategories>
+		</li>
+
+		<!-- 야채 (PlantFoodRaw 카테고리) -->
+		<li Class="StockGenerator_Category">
+			<categoryDef>PlantFoodRaw</categoryDef>
+			<thingDefCountRange>4~6</thingDefCountRange>
+			<totalPriceRange>200~600</totalPriceRange>
+		</li>
+
+		<!-- 비수정란 (EggsUnfertilized 카테고리) -->
+		<li Class="StockGenerator_Category">
+			<categoryDef>EggsUnfertilized</categoryDef>
+			<thingDefCountRange>2~3</thingDefCountRange>
+			<totalPriceRange>100~250</totalPriceRange>
+		</li>
+
+		<!-- 우유 -->
+		<li Class="StockGenerator_SingleDef">
+			<thingDef>Milk</thingDef>
+			<countRange>20~50</countRange>
+		</li>
+
+		<!-- 조리된 음식 (3개 중 하나) -->
+		<li Class="StockGenerator_MultiDef">
+			<thingDefs>
+				<li>MealSimple</li>
+				<li>MealFine</li>
+				<li>MealLavish</li>
+			</thingDefs>
+			<countRange>30~60</countRange>
+		</li>
+
+		<!-- 기타 음식류 (Pemmican, Chocolate 등) -->
+		<li Class="StockGenerator_MultiDef">
+			<thingDefs>
+				<li>Pemmican</li>
+				<li>Chocolate</li>
+				<li>Kibble</li>
+			</thingDefs>
+			<countRange>20~50</countRange>
+		</li>
+
+		<!-- 랫킨 고유 식자재 -->
+		<li Class="StockGenerator_MultiDef">
+			<thingDefs>
+				<li>RK_Food_Hardtack</li>
+				<li>RK_StrawberryBeer</li>
+			</thingDefs>
+			<countRange>15~40</countRange>
+		</li>
+
+			<!-- 식자재 보관 관련 -->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>WoodLog</thingDef>
+				<countRange>200~400</countRange>
+			</li>
+
+			<!-- Buying -->
+			<li Class="StockGenerator_BuyExpensiveSimple" />
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>Art</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>MusicalInstrument</tag>
+			</li>
+
+		</stockGenerators>
+	</TraderKindDef>
+
+	<!-- 랫킨 원단 상인 -->
+	<TraderKindDef>
+		<defName>RK_TraderKind_KingdomTextileMerchant</defName>
+		<label>textile merchant</label>
+		<stockGenerators>
+
+			<!-- Resources -->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>750~1200</countRange>
+			</li>
+
+			<!-- 원단 카테고리 -->
+			<li Class="StockGenerator_Category">
+				<categoryDef>Textiles</categoryDef>
+				<thingDefCountRange>10~16</thingDefCountRange>
+				<totalPriceRange>400~1000</totalPriceRange>
+				<excludedThingDefs>
+					<li MayRequire="Ludeon.RimWorld.Anomaly">Leather_Dread</li>
+				</excludedThingDefs>
+			</li>
+
+			<!-- 천 (Cloth) -->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Cloth</thingDef>
+				<countRange>300~600</countRange>
+			</li>
+
+			<!-- 염료 (Dye) -->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Dye</thingDef>
+				<countRange>30~60</countRange>
+			</li>
+
+			<!-- 기타 원단 관련 원자재 -->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Steel</thingDef>
+				<countRange>100~200</countRange>
+			</li>
+
+			<!-- Buying -->
+			<li Class="StockGenerator_BuyExpensiveSimple" />
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>Art</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>MusicalInstrument</tag>
+			</li>
+
+		</stockGenerators>
+	</TraderKindDef>
+</Defs>

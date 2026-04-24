@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- 랫킨 기도회, 수녀만 가능, 무드를 올려줌  -->
+	<AbilityDef Name="Speech">
+		<defName>RK_PrayerService</defName>
+		<label>prayer service</label>
+		<description>hosting prayer service that makes people calm and peaceful.</description>
+		<iconPath>UI/Abilities/PrayerService</iconPath>
+		<hotKey>Misc12</hotKey>
+		<gizmoClass>NewRatkin.Command_AbilityPrayService</gizmoClass>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<cooldownTicksRange>180000~300000</cooldownTicksRange>
+		<targetRequired>False</targetRequired>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>-1</range>
+		</verbProperties>
+		<comps>
+			<li Class="NewRatkin.CompProperties_AbilityPrayService"/>
+		</comps>
+	</AbilityDef>
+
+	<!-- ============================== 기수 배너 능력 ==============================-->
+	<!-- 증강용 기능에 대해서는 중복 불가. -->
+	<AbilityGroupDef>
+		<defName>RK_AbilityGroup_MoraleBoost</defName>
+		<cooldownTicks>60000</cooldownTicks>
+	</AbilityGroupDef>
+
+	<!--
+		Ideology RoleStatBuff / RoleAuraBuffBase / CombatRoleAuraBuffHediffBase 대응.
+		Ideology 비활성 시 부모 Def 없음 오류 방지. DLC 켜면 바닐라 동일 메커닉(오라·헤딥 단계) 유지.
+		CombatRoleAuraBuff 의 Link+Mote 는 Ideology 전용 에셋(Mote_CombatCommandLinkLine) 의존이라 제외 — 버프 수치만 동일.
+	-->
+	<HediffDef Abstract="True" Name="RK_HediffAttr_RoleStatBuff">
+		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+	</HediffDef>
+
+	<HediffDef Abstract="True" Name="RK_HediffAttr_CombatRoleAuraBuff" ParentName="RK_HediffAttr_RoleStatBuff">
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>false</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<isBad>false</isBad>
+	</HediffDef>
+
+	<AbilityDef Abstract="True" Name="RK_AbilityAttr_RoleAuraBuffBase">
+		<jobDef>CastAbilityOnThing</jobDef>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<groupDef>RK_AbilityGroup_MoraleBoost</groupDef>
+		<hotKey>Misc12</hotKey>
+		<warmupStartSound>CombatCommand_Warmup</warmupStartSound>
+		<statBases>
+			<Ability_Duration>1000</Ability_Duration>
+			<Ability_EffectRadius>9.9</Ability_EffectRadius>
+		</statBases>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>0.5</warmupTime>
+			<range>9.9</range>
+			<drawAimPie>False</drawAimPie>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetAnimals>false</canTargetAnimals>
+				<canTargetHumans>false</canTargetHumans>
+				<canTargetMechs>false</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+	</AbilityDef>
+
+	<!-- 시전자 사기스킬과 기타 레벨에 따라서 능력 추가 -->
+	<AbilityDef ParentName="RK_AbilityAttr_RoleAuraBuffBase">
+		<defName>RK_Ability_MeleeMoraleBooster</defName>
+		<label>morale booster</label>
+		<description>Boost the morale of everyone nearby.</description>
+		<iconPath>UI/Abilities/RK_TextureIcon_Banner</iconPath>
+		<warmupMoteSocialSymbol>UI/Icons/RK_TextureIcon_Horn</warmupMoteSocialSymbol>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<aiCanUse>true</aiCanUse>
+		<groupDef>RK_AbilityGroup_MoraleBoost</groupDef>		<!--overrides MultiRole-->
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>3</warmupTime>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>RK_Hediff_MoraleBoosterCaster</hediffDef>
+				<onlyBrain>True</onlyBrain>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+		</comps>
+		<warmupStartSound>RK_Sound_MoraleBoost</warmupStartSound>
+		<sendMessageOnCooldownComplete>false</sendMessageOnCooldownComplete>
+	</AbilityDef>
+
+	<SoundDef>
+		<defName>RK_Sound_MoraleBoost</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>2</maxSimultaneous>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Horn/RK_Sound_Horn1</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>70</min>
+					<max>80</max>
+				</volumeRange>
+				<distRange>
+					<min>0</min>
+					<max>100</max>
+				</distRange>
+				<muteWhenPaused>True</muteWhenPaused>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- 민트색 오라 Mote -->
+	<ThingDef ParentName="MoteBase">
+		<defName>RK_Mote_MoraleBooster</defName>
+		<thingClass>MoteAttached</thingClass>
+		<altitudeLayer>LightingOverlay</altitudeLayer>
+		<drawOffscreen>true</drawOffscreen>
+		<mote>
+			<solidTime>9999999</solidTime>
+			<needsMaintenance>true</needsMaintenance>
+		</mote>
+		<graphicData>
+			<graphicClass>Graphic_Mote</graphicClass>
+			<!-- CombatCommandMask is Ideology-only; BrightFlash is Core + MoteGlow -->
+			<texPath>Things/Mote/BrightFlash</texPath>
+			<shaderType>MoteGlow</shaderType>
+			<color>(0, 200, 150, 50)</color>
+			<drawSize>20</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<!-- 사기 진작 시전자 헤딥 -->
+	<HediffDef ParentName="RK_HediffAttr_RoleStatBuff">
+		<defName>RK_Hediff_MoraleBoosterCaster</defName>
+		<label>morale booster</label>
+		<description>This person is using a special ability to boost the morale of everyone nearby. Everyone within an effect radius gains combat bonuses.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="NewRatkin.HediffCompProperties_GiveHediffsInRange">
+				<range>9.9</range>
+				<mote>RK_Mote_MoraleBooster</mote>
+				<hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted>
+				<targetingParameters>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>false</canTargetAnimals>
+					<canTargetMechs>false</canTargetMechs>
+				</targetingParameters>
+				<!-- 시전자 Social: 0~7 약함, 8~14 보통, 15+ 강함 -->
+				<socialSkillHediffTiers>
+					<li>
+						<minLevel>0</minLevel>
+						<hediff>RK_Hediff_MoraleBoosterBuffWeak</hediff>
+					</li>
+					<li>
+						<minLevel>5</minLevel>
+						<hediff>RK_Hediff_MoraleBoosterBuffDefault</hediff>
+					</li>
+					<li>
+						<minLevel>10</minLevel>
+						<hediff>RK_Hediff_MoraleBoosterBuffStrong</hediff>
+					</li>
+				</socialSkillHediffTiers>
+			</li>
+		</comps>
+		<isBad>false</isBad>
+	</HediffDef>
+
+	<!-- 사기 진작 버프: 시전자 Social 0~7 -->
+	<HediffDef ParentName="RK_HediffAttr_CombatRoleAuraBuff">
+		<defName>RK_Hediff_MoraleBoosterBuffWeak</defName>
+		<label>morale booster (minor)</label>
+		<description>Someone with limited social presence is using the morale booster ability nearby. This person's combat effectiveness is boosted slightly.</description>
+		<debugLabelExtra>other</debugLabelExtra>
+		<stages>
+			<li>
+				<statOffsets>
+					<PainShockThreshold>0.15</PainShockThreshold>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!-- 사기 진작 버프: 시전자 Social 8~14 -->
+	<HediffDef ParentName="RK_HediffAttr_CombatRoleAuraBuff">
+		<defName>RK_Hediff_MoraleBoosterBuffDefault</defName>
+		<label>morale booster</label>
+		<description>Someone is using the morale booster ability nearby, boosting this person's combat effectiveness.</description>
+		<debugLabelExtra>other</debugLabelExtra>
+		<stages>
+			<li>
+				<statOffsets>
+					<MeleeDodgeChance>0.15</MeleeDodgeChance>
+					<MoveSpeed>0.10</MoveSpeed>
+					<PainShockThreshold>0.15</PainShockThreshold>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!-- 사기 진작 버프: 시전자 Social 15+ -->
+	<HediffDef ParentName="RK_HediffAttr_CombatRoleAuraBuff">
+		<defName>RK_Hediff_MoraleBoosterBuffStrong</defName>
+		<label>morale booster (major)</label>
+		<description>An inspiring leader is using the morale booster ability nearby, greatly boosting this person's combat effectiveness.</description>
+		<debugLabelExtra>other</debugLabelExtra>
+		<stages>
+			<li>
+				<statOffsets>
+					<MeleeDodgeChance>0.15</MeleeDodgeChance>
+					<MoveSpeed>0.10</MoveSpeed>
+					<PainShockThreshold>0.15</PainShockThreshold>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+</Defs>

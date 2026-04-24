@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RK_PriestPray.stages.0.label>축복 받음</RK_PriestPray.stages.0.label>
+  <RK_PriestPrayMood.stages.0.label>축복 받음</RK_PriestPrayMood.stages.0.label>
+  <RK_PriestPrayMood.stages.0.description>예배를 하고나니 마음이 한결 가벼워 졌어.</RK_PriestPrayMood.stages.0.description>
+  <RK_AttendPrayerMeetingMood.stages.0.label>예배에 참석</RK_AttendPrayerMeetingMood.stages.0.label>
+  <RK_AttendPrayerMeetingMood.stages.0.description>예배를 하고나니 마음이 한결 가벼워 졌어.</RK_AttendPrayerMeetingMood.stages.0.description>
+</LanguageData>

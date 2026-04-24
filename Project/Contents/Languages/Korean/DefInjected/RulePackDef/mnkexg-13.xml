@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <NamerFaction_RatkinKingdom.rulePack.rulesStrings>
+    <li>r_name(p=2)-&gt;[ofThing]의 [empire]</li>
+    <li>r_name(p=2)-&gt;[ofThing] [empire]</li>
+    <li>r_name-&gt;위대한 [empire]</li>
+    <li>r_name-&gt;강철 랫킨</li>
+    <li>r_name-&gt;래키니아 [empire]</li>
+    <li>empire(p=3)-&gt;왕국</li>
+    <li>empire-&gt;제국</li>
+    <li>ofThing(p=3)-&gt;[WordImperial]</li>
+    <li>ofThing-&gt;가드너</li>
+    <li>ofThing-&gt;해바라기</li>
+    <li>ofThing-&gt;땅콩</li>
+    <li>ofThing-&gt;강철랫킨</li>
+  </NamerFaction_RatkinKingdom.rulePack.rulesStrings>
+</LanguageData>

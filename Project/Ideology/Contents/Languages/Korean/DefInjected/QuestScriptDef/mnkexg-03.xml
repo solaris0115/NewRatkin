@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ReliquaryPilgrims_Ratkin.questDescriptionRules.rulesStrings>
+    <li>questDescription-&gt;[pilgrimsLabelSingularOrPlural](이)가 [relic_name](을)를 보러 찾아왔습니다.\n\n[pronounSingularOrPlural](이)가 순례를 진행하는 동안 존중하며 안전하게 보호해 준다면 보답이 있을 것입니다.</li>
+    <li>questDescription(pilgrimCount==1,childCount==1,priority=1)-&gt;한 아이 [pilgrimsLabelSingularOrPlural](이)가 [relic_name](을)를 보러 찾아왔습니다.\n\n[pronounSingularOrPlural](이)가 순례를 진행하는 동안 존중하며 안전하게 보호해 준다면 보답이 있을 것입니다.</li>
+    <li>questDescription(pilgrimCount&gt;=2,childCount==1,priority=1)-&gt;아이가 포함된 [pilgrimsLabelSingularOrPlural](이)가 [relic_name](을)를 보러 찾아왔습니다.\n\n[pronounSingularOrPlural](이)가 순례를 진행하는 동안 존중하며 안전하게 보호해 준다면 보답이 있을 것입니다.</li>
+    <li>questDescription(pilgrimCount&gt;=2,childCount&gt;=2,allChildren==false,priority=1)-&gt;몇몇 아이들이 포함된 [pilgrimsLabelSingularOrPlural](이)가 [relic_name](을)를 보러 찾아왔습니다.\n\n[pronounSingularOrPlural](이)가 순례를 진행하는 동안 존중하며 안전하게 보호해 준다면 보답이 있을 것입니다.</li>
+    <li>questDescription(pilgrimCount&gt;=2,allChildren==true,priority=1)-&gt;한 무리의 아이 [pilgrimsLabelSingularOrPlural](이)가 [relic_name](을)를 보러 찾아왔습니다.\n\n[pronounSingularOrPlural](이)가 순례를 진행하는 동안 존중하며 안전하게 보호해 준다면 보답이 있을 것입니다.</li>
+    <li>isAre(pilgrimCount==1)-&gt;</li>
+    <li>isAre(pilgrimCount&gt;=2)-&gt;</li>
+    <li>pronounSingularOrPlural(pilgrimCount==1)-&gt;[pawns0_pronoun]</li>
+    <li>pronounSingularOrPlural(pilgrimCount&gt;=2)-&gt;그들</li>
+    <li>visitSingularOrPlural(pilgrimCount==1)-&gt;방문</li>
+    <li>visitSingularOrPlural(pilgrimCount&gt;=2)-&gt;방문</li>
+  </ReliquaryPilgrims_Ratkin.questDescriptionRules.rulesStrings>
+</LanguageData>

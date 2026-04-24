@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LanceCharge: RK_Ability_LanceCharge, RK_PawnFlyer_LanceCharge, RK_Hediff_LanceCharge* -->
+<Defs>
+	<!-- 헤비랜스 돌진: LOS 기반 목적지, 최소 3칸~최대 5칸 -->
+	<AbilityDef>
+		<defName>RK_Ability_LanceCharge</defName>
+		<label>charge</label>
+		<description>Short-range charge toward a hostile target (3-5 tiles). Stops at the last clear tile before obstacles. After landing, movement speed is reduced but melee hit chance increases.</description>
+		<cooldownTicksRange>12000~12000</cooldownTicksRange>
+		<ai_IsOffensive>true</ai_IsOffensive>
+		<aiCanUse>true</aiCanUse>
+		<jobDef>CastJump</jobDef>
+		<verbProperties>
+			<verbClass>NewRatkin.Verb_CastAbilityCharge</verbClass>
+			<range>7.7</range>
+			<soundCast>RK_Sound_LanceCharge</soundCast>
+			<minRange>2.9</minRange>
+			<requireLineOfSight>true</requireLineOfSight>
+			<warmupTime>0.75</warmupTime>
+			<flightEffecterDef>RK_LanceChargeFlightEffect</flightEffecterDef>
+			<targetParams>
+				<canTargetLocations>false</canTargetLocations>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetBuildings>true</canTargetBuildings>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="NewRatkin.CompProperties_ChargeOnJump">
+				<pawnFlyerDef>RK_PawnFlyer_LanceCharge</pawnFlyerDef>
+				<exhaustionHediffDef>RK_Hediff_LanceChargeExhaustion</exhaustionHediffDef>
+				<exhaustionDurationTicks>1200</exhaustionDurationTicks>
+				<focusHediffDef>RK_Hediff_LanceChargeFocus</focusHediffDef>
+				<focusDurationTicks>1200</focusDurationTicks>
+				<momentumHediffDef>RK_Hediff_LanceChargeMomentum</momentumHediffDef>
+				<momentumDurationTicks>300</momentumDurationTicks>
+				<onlyHostilePawns>true</onlyHostilePawns>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!-- 랜스 차지 비행체 (돌진 이동용) -->
+	<ThingDef ParentName="PawnFlyerBase">
+		<defName>RK_PawnFlyer_LanceCharge</defName>
+		<thingClass>NewRatkin.PawnFlyer_LanceCharge</thingClass>
+		<pawnFlyer>
+			<flightDurationMin>0.3</flightDurationMin>
+			<flightSpeed>20</flightSpeed>
+			<heightFactor>0.0</heightFactor>
+		</pawnFlyer>
+	</ThingDef>
+
+	<!-- 랜스 차지 후 피로 (이동속도 감소) -->
+	<HediffDef>
+		<defName>RK_Hediff_LanceChargeExhaustion</defName>
+		<label>lance charge exhaustion</label>
+		<description>Exhausted from the lance charge. Movement speed reduced.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>600~600</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<MoveSpeed>-1.6</MoveSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!-- 랜스 차지 후 집중 (근접 명중률 증가) -->
+	<HediffDef>
+		<defName>RK_Hediff_LanceChargeFocus</defName>
+		<label>lance charge focus</label>
+		<description>Focused from the lance charge. Melee hit chance increased.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>2400~2400</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<MeleeHitChance>4</MeleeHitChance>
+					<MeleeDodgeChance>-4</MeleeDodgeChance>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!-- 랜스 차지 모멘텀 (최초 공격 시 피해량 +25%, 공격 시 소멸) -->
+	<HediffDef>
+		<defName>RK_Hediff_LanceChargeMomentum</defName>
+		<label>lance charge momentum</label>
+		<description>Momentum from the lance charge. First melee attack deals 25% more damage, then this effect is consumed.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>300~300</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<statOffsets>
+					<MeleeDamageFactor>0.25</MeleeDamageFactor>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!-- 랜스 차지 돌진 비행 이펙트 (경로 먼지 트레일) -->
+	<EffecterDef>
+		<defName>RK_LanceChargeFlightEffect</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+				<scale>0.6~0.9</scale>
+				<spawnLocType>OnSource</spawnLocType>
+				<positionOffset>(0,0,-0.3)</positionOffset>
+				<fleckDef>DustPuffThick</fleckDef>
+				<ticksBetweenMotes>1</ticksBetweenMotes>
+				<maxMoteCount>20</maxMoteCount>
+				<speed>2~3</speed>
+				<angle>160~200</angle>
+				<absoluteAngle>true</absoluteAngle>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+				<scale>0.3~0.5</scale>
+				<spawnLocType>OnSource</spawnLocType>
+				<positionOffset>(0,0,-0.2)</positionOffset>
+				<fleckDef>DustPuff</fleckDef>
+				<ticksBetweenMotes>2</ticksBetweenMotes>
+				<maxMoteCount>12</maxMoteCount>
+				<speed>3~5</speed>
+				<angle>140~220</angle>
+				<absoluteAngle>true</absoluteAngle>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<!-- 랜스 차지 돌진 사운드 (warmup 시작 시 재생) -->
+	<SoundDef>
+		<defName>RK_Sound_LanceCharge</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>3</maxSimultaneous>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>LanceCharge/RK_Sound_LanceCharge</clipPath>
+					</li>
+				</grains>
+				<volumeRange>50~70</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+				<muteWhenPaused>True</muteWhenPaused>
+			</li>
+		</subSounds>
+	</SoundDef>
+</Defs>

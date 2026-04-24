@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- ═══════════════════════════════════════════════════════════
+		 방패 블록 찬스 (ShieldBlockChance) — Pawn 스탯 (1단계 게이트)
+		 MeleeHitChance와 동일 구조: 근접 스킬 + 조작 + 시야 → 0~1.
+		 이 값으로 블락 시도 성공 여부만 판정. 아머와 무관.
+		 성공 시 2단계: RK_Stat_Shield_Sharp/Blunt/Heat vs AP 아머 롤.
+	     ═══════════════════════════════════════════════════════════ -->
+	<StatDef>
+		<defName>RK_Stat_ShieldBlockChance</defName>
+		<label>shield block chance</label>
+		<description>Chance to attempt blocking an incoming attack with this shield.\n\nIf the attempt succeeds, a second armor roll (shield armor vs attacker AP) determines whether the attack is fully deflected.\n\nAffected by melee skill, manipulation, and sight — identical modifiers to melee hit chance.</description>
+		<workerClass>NewRatkin.StatWorker_ShieldBlockChance</workerClass>
+		<category>PawnCombat</category>
+		<defaultBaseValue>0</defaultBaseValue>
+		<minValue>0</minValue>
+		<maxValue>1</maxValue>
+		<hideAtValue>0</hideAtValue>
+		<toStringStyle>PercentZero</toStringStyle>
+		<toStringStyleUnfinalized>FloatOne</toStringStyleUnfinalized>
+		<finalizeEquippedStatOffset>false</finalizeEquippedStatOffset>
+		<showIfUndefined>true</showIfUndefined>
+		<noSkillOffset>4</noSkillOffset>
+		<skillNeedOffsets>
+			<li Class="SkillNeed_BaseBonus">
+				<skill>Melee</skill>
+				<baseValue>0</baseValue>
+				<bonusPerLevel>1</bonusPerLevel>
+			</li>
+		</skillNeedOffsets>
+		<capacityOffsets>
+			<li>
+				<capacity>Manipulation</capacity>
+				<scale>12</scale>
+				<max>1.5</max>
+			</li>
+			<li>
+				<capacity>Sight</capacity>
+				<scale>12</scale>
+				<max>1.5</max>
+			</li>
+		</capacityOffsets>
+		<postProcessCurve>
+			<points>
+				<li>(-20, 0.05)</li>
+				<li>(-10, 0.10)</li>
+				<li>(0.0, 0.50)</li>
+				<li>(10, 0.80)</li>
+				<li>(20, 0.90)</li>
+				<li>(40, 0.96)</li>
+				<li>(60, 0.98)</li>
+			</points>
+		</postProcessCurve>
+		<displayPriorityInCategory>4200</displayPriorityInCategory>
+	</StatDef>
+
+
+	<!-- ═══════════════════════════════════════════════════════════
+		 방패 각도 (DeflectAngle) — Thing 스탯 (방패 statBases 고정값)
+		 스킬 보정 없음. 방패 아이템에서 직접 읽음.
+		 내부 판정(ApparelShieldTowerSecond)은 /2 하여 반각 사용.
+	     ═══════════════════════════════════════════════════════════ -->
+	<StatDef>
+		<defName>RK_Stat_DeflectAngle</defName>
+		<label>shield deflect angle</label>
+		<description>The total frontal arc (in degrees) within which this shield can deflect incoming attacks. For example, 90° means ±45° to each side.</description>
+		<workerClass>NewRatkin.StatWorker_ShieldDeflectAngle</workerClass>
+		<category>Apparel</category>
+		<defaultBaseValue>0</defaultBaseValue>
+		<minValue>0</minValue>
+		<toStringStyle>FloatOne</toStringStyle>
+		<formatString>{0}°</formatString>
+		<hideAtValue>0</hideAtValue>
+		<displayPriorityInCategory>88</displayPriorityInCategory>
+	</StatDef>
+
+
+	<!-- ═══════════════════════════════════════════════════════════
+		 방패 전용 방어력 (Shield Armor)
+		 바닐라 StuffEffectMultiplierArmor + ArmorRating 3종의 방패 전용 버전.
+		 방패별로 독립적으로 stuff 배율·품질 계수·기본 방어력을 튜닝 가능.
+	     ═══════════════════════════════════════════════════════════ -->
+
+	<!-- 방패 stuff 배율 (hidden) — 바닐라 StuffEffectMultiplierArmor 대응 -->
+	<StatDef>
+		<defName>RK_Stat_ShieldStuffBase</defName>
+		<label>Shield Armor - Material effect multiplier</label>
+		<category>Apparel</category>
+		<defaultBaseValue>0</defaultBaseValue>
+		<minValue>0</minValue>
+		<alwaysHide>true</alwaysHide>
+		<displayPriorityInCategory>83</displayPriorityInCategory>
+	</StatDef>
+
+	<!-- 방패 방어력 공통 부모 (Abstract) -->
+	<StatDef Name="RK_ShieldArmorBase" Abstract="True">
+		<category>Apparel</category>
+		<defaultBaseValue>0</defaultBaseValue>
+		<minValue>0</minValue>
+		<hideAtValue>0</hideAtValue>
+		<maxValue>2</maxValue>
+		<toStringStyle>PercentOne</toStringStyle>
+		<parts>
+			<li Class="StatPart_Quality">
+				<factorAwful>0.70</factorAwful>
+				<factorPoor>0.85</factorPoor>
+				<factorNormal>1.00</factorNormal>
+				<factorGood>1.10</factorGood>
+				<factorExcellent>1.20</factorExcellent>
+				<factorMasterwork>1.35</factorMasterwork>
+				<factorLegendary>1.60</factorLegendary>
+			</li>
+		</parts>
+	</StatDef>
+
+	<!-- 방패 방어도 - 날카로움 -->
+	<StatDef ParentName="RK_ShieldArmorBase">
+		<defName>RK_Stat_Shield_Sharp</defName>
+		<label>Shield Armor - Sharp</label>
+		<description>The protection this shield provides against sharp damage, such as bullets, knife stabs, explosions, and animal bites.
+
+Unlike body armor, a shield either blocks an attack entirely or lets it through completely — there is no partial mitigation or blunt conversion.
+
+When an attack lands within the shield's deflect arc and the block attempt succeeds, the shield's sharp armor rating is compared against the attacker's armor penetration:
+
+    threshold = max(Shield Armor - Attacker AP, 0)
+
+A random roll from 0 to 1 is then made:
+    - If the roll is below the threshold, the attack is fully blocked and deals no damage.
+    - If the roll meets or exceeds the threshold, the attack fully penetrates — the shield has no effect.
+
+For example, with 50% shield armor against an attack with 20% armor penetration, the threshold is 30%. There is a 30% chance of a full block, and a 70% chance of full penetration.
+
+The shield's armor is applied only once, and only when a block attempt has already been triggered.</description>
+		<displayPriorityInCategory>87</displayPriorityInCategory>
+		<parts>
+			<li Class="StatPart_Stuff">
+				<priority>100</priority>
+				<stuffPowerStat>StuffPower_Armor_Sharp</stuffPowerStat>
+				<multiplierStat>RK_Stat_ShieldStuffBase</multiplierStat>
+			</li>
+		</parts>
+	</StatDef>
+
+	<!-- 방패 방어도 - 둔탁함 -->
+	<StatDef ParentName="RK_ShieldArmorBase">
+		<defName>RK_Stat_Shield_Blunt</defName>
+		<label>Shield Armor - Blunt</label>
+		<description>The protection this shield provides against blunt damage, such as fists, club impacts, and falling rocks.
+
+Unlike body armor, a shield either blocks an attack entirely or lets it through completely — there is no partial mitigation or damage type conversion.
+
+When an attack lands within the shield's deflect arc and the block attempt succeeds, the shield's blunt armor rating is compared against the attacker's armor penetration:
+
+    threshold = max(Shield Armor - Attacker AP, 0)
+
+A random roll from 0 to 1 is then made:
+    - If the roll is below the threshold, the attack is fully blocked and deals no damage.
+    - If the roll meets or exceeds the threshold, the attack fully penetrates — the shield has no effect.
+
+For example, with 40% shield armor against an attack with 10% armor penetration, the threshold is 30%. There is a 30% chance of a full block, and a 70% chance of full penetration.
+
+The shield's armor is applied only once, and only when a block attempt has already been triggered.</description>
+		<displayPriorityInCategory>86</displayPriorityInCategory>
+		<parts>
+			<li Class="StatPart_Stuff">
+				<priority>100</priority>
+				<stuffPowerStat>StuffPower_Armor_Blunt</stuffPowerStat>
+				<multiplierStat>RK_Stat_ShieldStuffBase</multiplierStat>
+			</li>
+		</parts>
+	</StatDef>
+
+	<!-- 방패 방어도 - 열기 -->
+	<StatDef ParentName="RK_ShieldArmorBase">
+		<defName>RK_Stat_Shield_Heat</defName>
+		<label>Shield Armor - Heat</label>
+		<description>The protection this shield provides against temperature-related damage, such as burns, fire, and heat-based attacks.
+
+Unlike body armor, a shield either blocks an attack entirely or lets it through completely — there is no partial mitigation.
+
+When an attack lands within the shield's deflect arc and the block attempt succeeds, the shield's heat armor rating is compared against the attacker's armor penetration:
+
+    threshold = max(Shield Armor - Attacker AP, 0)
+
+A random roll from 0 to 1 is then made:
+    - If the roll is below the threshold, the attack is fully blocked and deals no damage.
+    - If the roll meets or exceeds the threshold, the attack fully penetrates — the shield has no effect.
+
+For example, with 30% shield armor against an attack with 10% armor penetration, the threshold is 20%. There is a 20% chance of a full block, and an 80% chance of full penetration.
+
+The shield's armor is applied only once, and only when a block attempt has already been triggered.</description>
+		<displayPriorityInCategory>85</displayPriorityInCategory>
+		<parts>
+			<li Class="StatPart_Stuff">
+				<priority>100</priority>
+				<stuffPowerStat>StuffPower_Armor_Heat</stuffPowerStat>
+				<multiplierStat>RK_Stat_ShieldStuffBase</multiplierStat>
+			</li>
+		</parts>
+	</StatDef>
+
+</Defs>

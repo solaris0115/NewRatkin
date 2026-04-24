@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RK_EMP.label>전자기 화상</RK_EMP.label>
+  <RK_EMP.deathMessage>{0}(이)가 전자기 열에 타서 죽었습니다.</RK_EMP.deathMessage>
+  <RK_Damage_PickaxeStab.label>찍힘</RK_Damage_PickaxeStab.label>
+  <RK_Damage_PickaxeStab.deathMessage>{0}(이)가 찍혀 죽었습니다.</RK_Damage_PickaxeStab.deathMessage>
+  <ShockWaveLight.label>충격파</ShockWaveLight.label>
+  <ShockWaveLight.deathMessage>{0}(이)가 충격파에 휘말려 죽었습니다.</ShockWaveLight.deathMessage>
+  <ShockWaveHeavy.label>충격파</ShockWaveHeavy.label>
+  <ShockWaveHeavy.deathMessage>{0}(이)가 충격파에 휘말려 죽었습니다.</ShockWaveHeavy.deathMessage>
+  <DemoBomb.label>폭발</DemoBomb.label>
+  <DemoBomb.deathMessage>{0}(이)가 폭발에 휘말려 죽었습니다.</DemoBomb.deathMessage>
+  <RK_Damage_Torn.label>찢겨짐</RK_Damage_Torn.label>
+  <RK_Damage_Torn.deathMessage>{0}(이)가 열상으로 죽었습니다.</RK_Damage_Torn.deathMessage>
+  <RK_Damage_BurnTorn.label>찢겨짐(열기)</RK_Damage_BurnTorn.label>
+  <RK_Damage_BurnTorn.deathMessage>{0}(이)가 열상으로 죽었습니다.</RK_Damage_BurnTorn.deathMessage>
+  <RK_Damage_BonusCut.label>베기</RK_Damage_BonusCut.label>
+</LanguageData>

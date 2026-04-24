@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ====================== 배너류 ========================== -->
+	<ThingDef Name="RK_ApparelAttr_BannerBase" Abstract="True" ParentName="RK_ApparelMakeableBase">
+		<thingCategories Inherit="false">
+			<li>RK_ThingCategory_Util</li>
+		</thingCategories>
+		<graphicData>
+			<texPath>Apparel/Util/RK_TextureApparel_Banner</texPath>			<!--배너 기본 그래픽-->
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costList>
+			<WoodLog>100</WoodLog>
+		</costList>
+		<costStuffCount>120</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<techLevel>Medieval</techLevel>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>25000</WorkToMake>
+			<Mass>2</Mass>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MeleeDodgeChance>-0.15</MeleeDodgeChance>
+			<MoveSpeed>-0.1</MoveSpeed>
+		</equippedStatOffsets>
+		<comps>
+			<li Class="NewRatkin.CompProperties_ExtraDrawer">
+				<!-- 배너 조건부 드로잉 Comp -->
+				<drawSize>(1.0, 1.0)</drawSize>
+				<!-- 소집 시 드로잉 데이터 (그래픽 경로 + 팔/어깨 위치) -->
+				<draftedDrawData>
+					<graphicPath>Apparel/Util/RK_TextureApparel_BannerArm</graphicPath>					<!--배너 기본 그래픽-->
+					<offsetNorth>(-0.20, -0.18, -0.08)</offsetNorth>
+					<offsetSouth>(0.30, 0.15, -0.08)</offsetSouth>
+					<offsetEast>(0.35, -0.12, -0.12)</offsetEast>
+					<offsetWest>(-0.15, 0.12, -0.12)</offsetWest>
+					<angleNorth>0</angleNorth>
+					<angleSouth>0</angleSouth>
+					<angleEast>0</angleEast>
+					<angleWest>0</angleWest>
+				</draftedDrawData>
+
+				<!-- 비소집 시 드로잉 데이터 (그래픽 경로 + 등 위치) -->
+				<backDrawData>
+					<graphicPath>Apparel/Util/RK_TextureApparel_BannerUnarm</graphicPath>					<!--배너 기본 그래픽-->
+					<offsetNorth>(-0.25, -0.18, -0.08)</offsetNorth>
+					<offsetSouth>(0.25, 0.15, -0.08)</offsetSouth>
+					<offsetEast>(0.25, -0.12, -0.12)</offsetEast>
+					<offsetWest>(-0.25, 0.12, -0.12)</offsetWest>
+					<angleNorth>-15</angleNorth>
+					<angleSouth>15</angleSouth>
+					<angleEast>15</angleEast>
+					<angleWest>-15</angleWest>
+				</backDrawData>
+
+				<!-- 소집 시 이념 아이콘 드로잉 데이터 (위치 + 각도, 경로는 Pawn.Ideo에서 자동 참조) -->
+				<draftedIdeoIconData>
+					<offsetNorth>(-0.24, -0.18, -0.08)</offsetNorth>
+					<offsetSouth>(0.26, 0.15, -0.08)</offsetSouth>
+					<offsetEast>(0.31, -0.12, -0.12)</offsetEast>
+					<offsetWest>(-0.19, 0.12, -0.12)</offsetWest>
+					<angleNorth>0</angleNorth>
+					<angleSouth>0</angleSouth>
+					<angleEast>0</angleEast>
+					<angleWest>0</angleWest>
+					<iconSize>0.2</iconSize>
+				</draftedIdeoIconData>
+			</li>
+			<li Class="NewRatkin.CompProperties_ShieldWeaponIncompatible">
+				<allowedWeaponTags>
+					<li>RK_WeaponTag_OneHand</li>
+				</allowedWeaponTags>
+			</li>
+		</comps>
+		<apparel>
+			<!-- Belt + Waist: 랫킨 방패와 동일 슬롯 → 동시 착용 불가 -->
+			<bodyPartGroups>
+				<li>Waist</li>
+			</bodyPartGroups>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<layers>
+				<li>Belt</li>
+			</layers>
+			<tags>
+				<li>RK_ApparelTag_All</li>
+				<li>RK_ApparelTag_Banner</li>
+				<li>RK_ApparelTag_Support</li>
+				<li>RK_ApparelTag_Buffer</li>
+			</tags>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+			<recipeUsers Inherit="false">
+				<li>RK_FueledSmithy</li>
+				<li>RK_ElectricSmithy</li>
+			</recipeUsers>
+			<researchPrerequisite>RK_Research_SwordAndShield</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RK_ApparelAttr_BannerBase" Name="RK_ApparelAttr_Banner">
+		<defName>RK_Apparel_Banner</defName>
+		<label>war banner</label>
+		<description>주변 아군을 브루스 배너로 만듭니다.</description>
+		<recipeMaker>
+			<researchPrerequisite>RK_Research_SwordAndShield</researchPrerequisite>
+			<displayPriority>47335</displayPriority>
+		</recipeMaker>
+		<apparel>
+			<abilities>
+				<li>RK_Ability_MeleeMoraleBooster</li>
+			</abilities>
+		</apparel>
+	</ThingDef>
+
+
+
+	<!-- ====================== 가방류 ========================== -->
+	<ThingDef ParentName="RK_ApparelMakeableBase" Name="RK_ApparelAttr_BackpackBase" Abstract="True">
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<techLevel>Medieval</techLevel>
+		<apparel>
+			<bodyPartGroups>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<layers>
+				<li>BackPack</li>
+			</layers>
+			<tags>
+				<li>RK_Apparel</li>
+				<li>RK_Backpack</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="RK_ApparelAttr_BackpackBase">
+		<defName>RK_CrossBack</defName>
+		<label>cross back</label>
+		<description>간단한 봇짐입니다. 짐을 조금 더 나를 수 있게 해줍니다.</description>
+		<recipeMaker>
+			<researchPrerequisite>RK_Research_Tailoring</researchPrerequisite>
+			<displayPriority>47320</displayPriority>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Apparel/RK_CrossBack</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costStuffCount>45</costStuffCount>
+		<costList>
+			<Steel>5</Steel>
+		</costList>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<WorkToMake>3500</WorkToMake>
+			<Mass>0.3</Mass>
+			<EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<CarryingCapacity>15</CarryingCapacity>
+		</equippedStatOffsets>
+		<apparel>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<wornGraphicPath>Apparel/RK_CrossBack</wornGraphicPath>
+			<tags>
+				<li>RK_1Tier</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+	<!-- 2티어 -->
+	<!-- 가방  운반용량 +20 -->
+	<ThingDef ParentName="RK_ApparelAttr_BackpackBase">
+		<defName>RK_Backpack</defName>
+		<label>backpack</label>
+		<description>등에 맬 수 있는 가방입니다. 짐을 더 많이 나를 수 있게 해줍니다.</description>
+		<graphicData>
+			<texPath>Apparel/RK_Backpack</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>RK_Research_FunctionalApparel</researchPrerequisite>
+			<displayPriority>47325</displayPriority>
+		</recipeMaker>
+		<costStuffCount>45</costStuffCount>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToMake>5500</WorkToMake>
+			<Mass>0.3</Mass>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<CarryingCapacity>23</CarryingCapacity>
+		</equippedStatOffsets>
+		<apparel>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<wornGraphicPath>Apparel/RK_Backpack</wornGraphicPath>
+			<tags>
+				<li>RK_2Tier</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+	<!-- 3티어 -->
+	<!-- 군용가방 +30 내구도 +20 -->
+	<ThingDef ParentName="RK_ApparelAttr_BackpackBase">
+		<defName>RK_OutdoorBackpack</defName>
+		<label>ratkin outdoor backpack</label>
+		<description>랫킨용 등짐 가방입니다. 랫킨 신체에 맞도록 고안된 가방으로 더욱 많은 짐을 들 수 있도록 해줍니다.</description>
+		<graphicData>
+			<texPath>Apparel/RK_OutdoorBackpack</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>RK_Research_AdvancedApparel</li>
+				<li>RK_Research_FunctionalApparel</li>
+			</researchPrerequisites>
+			<displayPriority>47330</displayPriority>
+		</recipeMaker>
+		<costList>
+			<Steel>20</Steel>
+		</costList>
+		<costStuffCount>60</costStuffCount>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>8000</WorkToMake>
+			<Mass>0.5</Mass>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<CarryingCapacity>35</CarryingCapacity>
+		</equippedStatOffsets>
+		<apparel>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<wornGraphicPath>Apparel/RK_OutdoorBackpack</wornGraphicPath>
+			<tags>
+				<li>RK_3Tier</li>
+				<li>RK_ApparelTag_ArmedWanderer</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+
+
+	<!-- ====================== 방패류 ========================== -->
+	<ThingDef ParentName="RK_ApparelMakeableBase" Name="RK_ApparelAttr_ShieldBase" Abstract="True">
+		<thingCategories Inherit="false">
+			<li>RK_ThingCategory_Util</li>
+		</thingCategories>
+		<graphicData>
+			<ignoreThingDrawColor>false</ignoreThingDrawColor>
+		</graphicData>
+		<thingClass>Apparel</thingClass>
+		<techLevel>Medieval</techLevel>
+		<tickerType>Normal</tickerType>
+		<apparel>
+			<wearPerDay>0.2</wearPerDay>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<bodyPartGroups>
+				<li>Waist</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Belt</li>
+			</layers>
+		</apparel>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+			<!-- <researchPrerequisite>RatkinClothing</researchPrerequisite> -->
+			<recipeUsers Inherit="false">
+				<li>RK_FueledSmithy</li>
+				<li>RK_ElectricSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+
+
+</Defs>

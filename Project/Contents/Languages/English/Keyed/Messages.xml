@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Prayer Service -->
+  <AbilityPrayerServiceCooldown>Next Prayer meeting ready in</AbilityPrayerServiceCooldown>
+  <MessagePrayerServiceStart>{PAWN_labelShort} hosts prayer meeting.</MessagePrayerServiceStart>
+  <MessagePrayerServiceAborted>prayer meeting is aborted by some reason.</MessagePrayerServiceAborted>
+  <MessagePrayerServiceEnded>prayer meeting is ended.</MessagePrayerServiceEnded>
+  
+  <!-- Shield-Weapon Compatibility -->
+  <RK_ApparelWeaponIncompatible_Dropped>Equipped {0} and dropped {1}. Reason: {2}</RK_ApparelWeaponIncompatible_Dropped>
+  <RK_ApparelWeaponIncompatible_Dropped_Default>Equipped {0} and dropped {1}.</RK_ApparelWeaponIncompatible_Dropped_Default>
+  <RK_ShieldWeaponIncompatible>Cannot be worn with shield</RK_ShieldWeaponIncompatible>
+  
+  <!-- FloatMenu Equip Block Messages -->
+  <RK_ShieldWeaponIncompatible_Equip>Cannot equip {0}: incompatible with equipped weapon {1}. {2}</RK_ShieldWeaponIncompatible_Equip>
+  <RK_ShieldWeaponIncompatible_Equip_Default>Cannot equip {0}: incompatible with equipped weapon {1}.</RK_ShieldWeaponIncompatible_Equip_Default>
+  <RK_WeaponShieldIncompatible_Equip>Cannot equip {0}: incompatible with equipped shield {1}. {2}</RK_WeaponShieldIncompatible_Equip>
+  <RK_WeaponShieldIncompatible_Equip_Default>Cannot equip {0}: incompatible with equipped shield {1}.</RK_WeaponShieldIncompatible_Equip_Default>
+</LanguageData>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AlienRace.RaceSettings>
+		<defName>RK_Race_Setting</defName>
+		<universalBodyAddons>
+			<li>
+				<drawSize>1</drawSize>
+				<path>Things/Ratkin/BodyAddon/RK_Texture_Tail</path>
+				<inFrontOfBody>false</inFrontOfBody>
+				<colorChannel>skin</colorChannel>
+				<defaultOffset>Tail</defaultOffset>
+				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+				<conditions>
+					<BodyPart>
+						<bodyPart>RK_BodyPart_Tail</bodyPart>
+						<bodyPartLabel>tail</bodyPartLabel>
+						<drawWithoutPart>false</drawWithoutPart>
+					</BodyPart>
+					<Posture>
+						<drawnStanding>true</drawnStanding>
+						<drawnLaying>true</drawnLaying>
+						<drawnInBed>false</drawnInBed>
+					</Posture>
+					<RotStage>Fresh,Rotting</RotStage>
+					<Apparel>
+						<!-- 또는 특정 태그 가진 의류 입을 때 숨김 -->
+						<hiddenUnderApparelTag>
+							<li>RK_ApparelTag_HideTail</li>
+						</hiddenUnderApparelTag>
+					</Apparel>
+					<Gene MayRequire="Ludeon.RimWorld.Biotech">RK_Gene_ThinTail</Gene>
+				</conditions>
+				<offsets>
+					<north>
+						<layerOffset>-0.28</layerOffset>
+						<offset>(-0.01,0.1)</offset>
+						<bodyTypes>
+							<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,-0.09)</Baby>
+							<Child MayRequire="Ludeon.RimWorld.Biotech">(0,0.2)</Child>
+						</bodyTypes>
+					</north>
+					<east>
+						<offset>(-0.1,-0.05)</offset>
+						<bodyTypes>
+							<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.1,0.1)</Baby>
+							<Child MayRequire="Ludeon.RimWorld.Biotech">(-0.1,0.1)</Child>
+						</bodyTypes>
+					</east>
+				</offsets>
+			</li>
+			<li>
+				<drawSize>1</drawSize>
+				<path>Things/Ratkin/BodyAddon/RK_Texture_EarLeft</path>
+				<inFrontOfBody>true</inFrontOfBody>
+				<colorChannel>skin</colorChannel>
+				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+				<layerInvert>false</layerInvert>
+				<defaultOffset>Head</defaultOffset>
+				<alignWithHead>true</alignWithHead>
+				<conditions>
+					<BodyPart>
+						<bodyPart>Ear</bodyPart>
+						<bodyPartLabel>left ear</bodyPartLabel>
+						<drawWithoutPart>false</drawWithoutPart>
+					</BodyPart>
+					<Posture>
+						<drawnStanding>true</drawnStanding>
+						<drawnLaying>true</drawnLaying>
+						<drawnInBed>true</drawnInBed>
+					</Posture>
+					<RotStage>Fresh,Rotting</RotStage>
+					<Apparel>
+						<!-- 또는 특정 태그 가진 의류 입을 때 숨김 -->
+						<hiddenUnderApparelTag>
+							<li>RK_ApparelTag_HideEar</li>
+						</hiddenUnderApparelTag>
+					</Apparel>
+					<Gene MayRequire="Ludeon.RimWorld.Biotech">RK_Gene_LargeEars</Gene>
+				</conditions>
+				<offsets>
+					<south>
+						<offset>(-0.03,-0.35)</offset>
+						<bodyTypes>
+							<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.01,-0.07)</Baby>
+							<Child MayRequire="Ludeon.RimWorld.Biotech">(0,-0.02)</Child>
+						</bodyTypes>
+						<portraitBodyTypes>
+							<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.01,-0.07)</Baby>
+							<Child MayRequire="Ludeon.RimWorld.Biotech">(0,-0.02)</Child>
+						</portraitBodyTypes>
+					</south>
+					<north>
+						<offset>(0.03,-0.23)</offset>
+						<bodyTypes>
+							<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.07,-0.19)</Baby>
+							<Child MayRequire="Ludeon.RimWorld.Biotech">(0.01,-0.02)</Child>
+						</bodyTypes>
+						<portraitBodyTypes>
+							<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.07,-0.19)</Baby>
+							<Child MayRequire="Ludeon.RimWorld.Biotech">(0.01,-0.02)</Child>
+						</portraitBodyTypes>
+					</north>
+					<east>
+						<offset>(0.2,-0.25)</offset>
+						<bodyTypes>
+							<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.1,-0.1)</Baby>
+							<Child MayRequire="Ludeon.RimWorld.Biotech">(-0.05,-0.04)</Child>
+						</bodyTypes>
+						<portraitBodyTypes>
+							<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.1,-0.1)</Baby>
+							<Child MayRequire="Ludeon.RimWorld.Biotech">(-0.05,-0.04)</Child>
+						</portraitBodyTypes>
+					</east>
+				</offsets>
+			</li>
+			<li>
+				<drawSize>1</drawSize>
+				<path>Things/Ratkin/BodyAddon/RK_Texture_EarRight</path>
+				<inFrontOfBody>true</inFrontOfBody>
+				<colorChannel>skin</colorChannel>
+				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+				<layerInvert>false</layerInvert>
+				<alignWithHead>true</alignWithHead>
+				<defaultOffset>Head</defaultOffset>
+				<conditions>
+					<BodyPart>
+						<bodyPart>Ear</bodyPart>
+						<bodyPartLabel>right ear</bodyPartLabel>
+						<drawWithoutPart>false</drawWithoutPart>
+					</BodyPart>
+					<Posture>
+						<drawnStanding>true</drawnStanding>
+						<drawnLaying>true</drawnLaying>
+						<drawnInBed>true</drawnInBed>
+					</Posture>
+					<RotStage>Fresh,Rotting</RotStage>
+					<Apparel>
+						<!-- 또는 특정 태그 가진 의류 입을 때 숨김 -->
+						<hiddenUnderApparelTag>
+							<li>RK_ApparelTag_HideEar</li>
+						</hiddenUnderApparelTag>
+					</Apparel>
+					<Gene MayRequire="Ludeon.RimWorld.Biotech">RK_Gene_LargeEars</Gene>
+				</conditions>
+				<offsets>
+					<south>
+						<offset>(0.02,-0.35)</offset>
+						<bodyTypes>
+							<Baby MayRequire="Ludeon.RimWorld.Biotech">(0.02,-0.07)</Baby>
+							<Child MayRequire="Ludeon.RimWorld.Biotech">(0.01,-0.02)</Child>
+						</bodyTypes>
+						<portraitBodyTypes>
+							<Baby MayRequire="Ludeon.RimWorld.Biotech">(0.02,-0.07)</Baby>
+							<Child MayRequire="Ludeon.RimWorld.Biotech">(0.01,-0.02)</Child>
+						</portraitBodyTypes>
+					</south>
+					<north>
+						<offset>(0.0,-0.23)</offset>
+						<bodyTypes>
+							<Baby MayRequire="Ludeon.RimWorld.Biotech">(0.04,-0.19)</Baby>
+							<Child MayRequire="Ludeon.RimWorld.Biotech">(0,-0.02)</Child>
+						</bodyTypes>
+						<portraitBodyTypes>
+							<Baby MayRequire="Ludeon.RimWorld.Biotech">(0.04,-0.19)</Baby>
+							<Child MayRequire="Ludeon.RimWorld.Biotech">(0,-0.02)</Child>
+						</portraitBodyTypes>
+					</north>
+					<east>
+						<offset>(0.2,-0.25)</offset>
+						<bodyTypes>
+							<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.1,-0.1)</Baby>
+							<Child MayRequire="Ludeon.RimWorld.Biotech">(-0.05,-0.04)</Child>
+						</bodyTypes>
+						<portraitBodyTypes>
+							<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.1,-0.1)</Baby>
+							<Child MayRequire="Ludeon.RimWorld.Biotech">(-0.05,-0.04)</Child>
+						</portraitBodyTypes>
+					</east>
+				</offsets>
+			</li>
+		</universalBodyAddons>
+		<pawnKindSettings>
+			<startingColonists>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>RatkinColonist</li>
+							</kindDefs>
+							<chance>50.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>RK_PlayerFaction</li>
+					</factionDefs>
+				</li>
+			</startingColonists>
+			<alienwandererkinds>
+				<!-- 방랑자 합류 이벤트용. 합류를 희망하는것들 -->
+				<!-- 실향민, 농부, 살인자, 전쟁 고아, 범죄자, 개척자, 떠돌이, 사냥꾼, 종교맨, 몰락귀족, 탈영병 -->
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<!-- TODO: 방랑자 합류를 위한 pawnKind 설정이 필요 -->
+								<li>RatkinServant</li>
+							</kindDefs>
+							<chance>100</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>Rakinia</li>
+					</factionDefs>
+				</li>
+			</alienwandererkinds>
+		</pawnKindSettings>
+	</AlienRace.RaceSettings>
+</Defs>

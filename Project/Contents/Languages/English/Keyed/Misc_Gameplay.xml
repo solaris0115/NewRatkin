@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RK_AbilityMustTargetHostile>Must target a hostile pawn.</RK_AbilityMustTargetHostile>
+  <RK_ShieldFaceDirection>Face direction</RK_ShieldFaceDirection>
+  <RK_ShieldFaceDirectionDesc>Click a point to face that direction. Hold position while facing. Target a pawn to track them continuously.</RK_ShieldFaceDirectionDesc>
+  <RK_ShieldFaceDirectionReport>facing direction.</RK_ShieldFaceDirectionReport>
+  <RK_ShieldFaceDirection_NotDrafted>Must be drafted.</RK_ShieldFaceDirection_NotDrafted>
+  <RK_ShieldFaceDirection_InvalidState>Cannot use while dead or downed.</RK_ShieldFaceDirection_InvalidState>
+  <RK_ShieldFaceDirection_Busy>Cannot use while busy.</RK_ShieldFaceDirection_Busy>
+  <RK_ShieldFaceDirection_ShieldInactive>Shield is inactive.</RK_ShieldFaceDirection_ShieldInactive>
+  <RK_ShieldFaceDirection_Cooldown>Cooldown: {0}</RK_ShieldFaceDirection_Cooldown>
+  <AbilityPrayerServiceCooldown>Next Prayer meeting ready in</AbilityPrayerServiceCooldown>
+  <AbilityPrayerServiceDisabledAlreadyGivingPrayerService>already giving a prayer meeting.</AbilityPrayerServiceDisabledAlreadyGivingPrayerService>
+  <AbilityPrayerServiceDisabledDrafted>can't use when drafted.</AbilityPrayerServiceDisabledDrafted>
+  <AbilityPrayerServiceDisabledNoPulpitBuilding>No colonist-built pulpit.</AbilityPrayerServiceDisabledNoPulpitBuilding>
+  <AbilityPrayerServiceDisabledCannotReachPulpit>Cannot path to the pulpit interaction cell.</AbilityPrayerServiceDisabledCannotReachPulpit>
+  <AbilityPrayerServiceDisabledCannotReservePulpit>The pulpit cannot be reserved (in use or blocked).</AbilityPrayerServiceDisabledCannotReservePulpit>
+  <AbilityPrayerServiceDisabledInteractionCellOutOfBounds>Pulpit interaction cell is out of bounds.</AbilityPrayerServiceDisabledInteractionCellOutOfBounds>
+  <AbilityPrayerServiceDisabledInteractionCellForbidden>Pulpit interaction cell is in a forbidden area.</AbilityPrayerServiceDisabledInteractionCellForbidden>
+  <AbilityPrayerServiceDisabledInteractionCellNotStandable>Pulpit interaction cell is not standable.</AbilityPrayerServiceDisabledInteractionCellNotStandable>
+  <AbilityPrayerServiceDisabledPulpitForbidden>The pulpit is forbidden to this pawn.</AbilityPrayerServiceDisabledPulpitForbidden>
+  <AbilityPrayerServiceDisabledPulpitBurning>The pulpit is on fire.</AbilityPrayerServiceDisabledPulpitBurning>
+  <AbilityPrayerServiceDisabledPulpitDangerous>The pulpit area is too dangerous.</AbilityPrayerServiceDisabledPulpitDangerous>
+  <AbilityPrayerServiceDisabledRoomTooSmall>Worship space is too small (room must be larger than 25 cells).</AbilityPrayerServiceDisabledRoomTooSmall>
+
+  <!-- Wandering Trader -->
+  <RK_WanderingTrader_Info>Info</RK_WanderingTrader_Info>
+  <RK_WanderingTrader_ViewSettlers>View settlers seeking to join</RK_WanderingTrader_ViewSettlers>
+  <RK_WanderingTrader_MercenarySearch>Mercenary search</RK_WanderingTrader_MercenarySearch>
+
+  <!-- Wandering Caravan (Rework) -->
+  <RK_WanderingCaravan_TalkToLeader>Talk to leader</RK_WanderingCaravan_TalkToLeader>
+  <RK_WanderingCaravan_DismissCaravan>Dismiss caravan</RK_WanderingCaravan_DismissCaravan>
+  <RK_WanderingCaravan_TradeGoods>Trade goods</RK_WanderingCaravan_TradeGoods>
+  <RK_WanderingCaravan_Commission>Commission item</RK_WanderingCaravan_Commission>
+  <RK_WanderingCaravan_SettleProposal>Propose join</RK_WanderingCaravan_SettleProposal>
+  <RK_WanderingCaravan_EndDialog>End conversation</RK_WanderingCaravan_EndDialog>
+  <RK_WanderingCaravan_LeaderGreeting>{0} greets you warmly.</RK_WanderingCaravan_LeaderGreeting>
+  <RK_WanderingCaravan_LeaderTitle>Caravan leader</RK_WanderingCaravan_LeaderTitle>
+  <RK_WanderingCaravan_ArrivalLetterLabel>Caravan arrival</RK_WanderingCaravan_ArrivalLetterLabel>
+  <RK_WanderingCaravan_ArrivalLetter>A ratkin caravan has arrived. Talk to the leader to trade or recruit settlers.</RK_WanderingCaravan_ArrivalLetter>
+  <RK_WanderingCaravan_AcceptOne>Propose</RK_WanderingCaravan_AcceptOne>
+  <RK_WanderingCaravan_AcceptAll>Propose all</RK_WanderingCaravan_AcceptAll>
+  <RK_WanderingCaravan_OneJoined>{0} has joined the colony.</RK_WanderingCaravan_OneJoined>
+  <RK_WanderingCaravan_AllJoined>{0} have joined the colony.</RK_WanderingCaravan_AllJoined>
+  <RK_WanderingCaravan_CommissionPlaceholder>Commission feature is under development.</RK_WanderingCaravan_CommissionPlaceholder>
+  <RK_WanderingCaravan_AlreadySpawned>The caravan is already on the map.</RK_WanderingCaravan_AlreadySpawned>
+  <RK_WanderingCaravan_AttackedPenalty>The caravan will avoid this settlement for a long time after being attacked.</RK_WanderingCaravan_AttackedPenalty>
+
+  <!-- BFR toggle -->
+  <RK_BFR_Toggle_RequiresSeparationMechanics>Separation Mechanics research required.</RK_BFR_Toggle_RequiresSeparationMechanics>
+  <RK_BFR_Ammo_LabelAP>AP</RK_BFR_Ammo_LabelAP>
+  <RK_BFR_Ammo_LabelHE>HE</RK_BFR_Ammo_LabelHE>
+  <RK_BFR_Ammo_DescToHE>Switch to high-explosive rounds. The round can detonate in a wide cone when it gets close to targets, which helps against tight groups.</RK_BFR_Ammo_DescToHE>
+  <RK_BFR_Ammo_DescToAP>Switch to armor-piercing rounds. The bolt can punch through several targets in a line with strong stab damage.</RK_BFR_Ammo_DescToAP>
+
+  <!-- Prototype pulse rifle fire mode gizmo -->
+  <RK_PulseRifleFireMode_LabelBurst>Burst</RK_PulseRifleFireMode_LabelBurst>
+  <RK_PulseRifleFireMode_LabelSingle>Single</RK_PulseRifleFireMode_LabelSingle>
+  <RK_PulseRifleFireMode_DescToSingle>Switch to single fire. Fires two heavy energy bolts with longer range and better accuracy at medium and long range.</RK_PulseRifleFireMode_DescToSingle>
+  <RK_PulseRifleFireMode_DescToBurst>Switch to burst fire. Fires four lighter bolts in quick succession at shorter effective range, suited to close and mid-range fights.</RK_PulseRifleFireMode_DescToBurst>
+</LanguageData>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ApparelLayerDef>
+		<defName>InnerCoat</defName>
+		<label>inner coat</label>
+		<drawOrder>225</drawOrder>
+	</ApparelLayerDef>	
+		
+	<ApparelLayerDef>
+		<defName>BackPack</defName>
+		<label>backpack</label>
+		<drawOrder>250</drawOrder>
+	</ApparelLayerDef>
+
+	<ApparelLayerDef>
+		<defName>OffHand</defName>
+		<label>off hand</label>
+		<drawOrder>255</drawOrder>
+	</ApparelLayerDef>
+
+	<ApparelLayerDef>
+		<defName>OuterClothing</defName>
+		<label>outer clothing</label>
+		<drawOrder>275</drawOrder>
+	</ApparelLayerDef>
+
+	<ApparelLayerDef>
+		<defName>OnFace</defName>
+		<label>onface</label>
+		<drawOrder>425</drawOrder>
+	</ApparelLayerDef>
+
+	<StuffCategoryDef>
+		<defName>Straw</defName>
+		<label>straw</label>
+	</StuffCategoryDef>
+
+	<StuffCategoryDef>
+		<defName>WeaponMetallic</defName>
+		<label>weapon metallic</label>
+	</StuffCategoryDef>
+
+	
+</Defs>

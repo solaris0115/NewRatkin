@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RK_Hediff_LanceChargeExhaustion.label>탈진</RK_Hediff_LanceChargeExhaustion.label>
+  <RK_Hediff_LanceChargeExhaustion.description>탈진 상태입니다. 이동 속도가 감소합니다.</RK_Hediff_LanceChargeExhaustion.description>
+  <RK_Hediff_LanceChargeFocus.label>전투 집중</RK_Hediff_LanceChargeFocus.label>
+  <RK_Hediff_LanceChargeFocus.description>근접 명중률이 상승합니다.</RK_Hediff_LanceChargeFocus.description>
+  <RK_Hediff_LanceChargeMomentum.label>돌진 관성</RK_Hediff_LanceChargeMomentum.label>
+  <RK_Hediff_LanceChargeMomentum.description>돌격속도로 인한 피해가 증가했습니다.</RK_Hediff_LanceChargeMomentum.description>
+  <RK_Hediff_MoraleBoosterCaster.label>사기 진작</RK_Hediff_MoraleBoosterCaster.label>
+  <RK_Hediff_MoraleBoosterCaster.description>이 사람은 특수 능력으로 주변 동료의 사기를 끌어올리고 있습니다. 효과 범위 안에 있는 모든 이가 전투 보조 효과를 얻습니다.</RK_Hediff_MoraleBoosterCaster.description>
+  <RK_Hediff_MoraleBoosterBuffWeak.label>사기 진작</RK_Hediff_MoraleBoosterBuffWeak.label>
+  <RK_Hediff_MoraleBoosterBuffWeak.description>사기가 올라 능력이 향상되었습니다.</RK_Hediff_MoraleBoosterBuffWeak.description>
+  <RK_Hediff_MoraleBoosterBuffDefault.label>사기 진작</RK_Hediff_MoraleBoosterBuffDefault.label>
+  <RK_Hediff_MoraleBoosterBuffDefault.description>사기가 올라 능력이 향상되었습니다.</RK_Hediff_MoraleBoosterBuffDefault.description>
+  <RK_Hediff_MoraleBoosterBuffStrong.label>사기 진작</RK_Hediff_MoraleBoosterBuffStrong.label>
+  <RK_Hediff_MoraleBoosterBuffStrong.description>사기가 올라 능력이 향상되었습니다.</RK_Hediff_MoraleBoosterBuffStrong.description>
+  <RK_Hediff_FakeEar.label>가짜 귀</RK_Hediff_FakeEar.label>
+  <RK_Hediff_FakeEar.labelNoun>가짜 귀</RK_Hediff_FakeEar.labelNoun>
+  <RK_Hediff_FakeEar.description>이식된 가짜 귀입니다.</RK_Hediff_FakeEar.description>
+  <RK_Hediff_FakeTail.label>가짜 꼬리</RK_Hediff_FakeTail.label>
+  <RK_Hediff_FakeTail.labelNoun>가짜 꼬리</RK_Hediff_FakeTail.labelNoun>
+  <RK_Hediff_FakeTail.description>이식된 가짜 꼬리입니다.</RK_Hediff_FakeTail.description>
+  <RK_Hediff_BionicTail.label>생체공학 꼬리</RK_Hediff_BionicTail.label>
+  <RK_Hediff_BionicTail.description>이식된 첨단 인공 꼬리입니다. 소형 AI가 사용자의 몸 균형을 자동으로 잡아 줍니다.</RK_Hediff_BionicTail.description>
+  <RK_Hediff_BionicTail.labelNoun>생체공학 꼬리</RK_Hediff_BionicTail.labelNoun>
+  <RK_Hediff_Torn.label>찢김</RK_Hediff_Torn.label>
+  <RK_Hediff_Torn.labelNoun>찢어진 상처</RK_Hediff_Torn.labelNoun>
+  <RK_Hediff_Torn.description>찢어진 상처입니다.</RK_Hediff_Torn.description>
+  <RK_Hediff_Torn.injuryProps.destroyedLabel>찢어짐</RK_Hediff_Torn.injuryProps.destroyedLabel>
+  <RK_Hediff_Torn.injuryProps.destroyedOutLabel>찢겨나감</RK_Hediff_Torn.injuryProps.destroyedOutLabel>
+  <RK_Hediff_Torn.comps.0.labelTendedWell>붕대 감음</RK_Hediff_Torn.comps.0.labelTendedWell>
+  <RK_Hediff_Torn.comps.0.labelTendedWellInner>봉합됨</RK_Hediff_Torn.comps.0.labelTendedWellInner>
+  <RK_Hediff_Torn.comps.0.labelSolidTendedWell>접합됨</RK_Hediff_Torn.comps.0.labelSolidTendedWell>
+  <RK_Hediff_Torn.comps.2.permanentLabel>찢긴 흉터</RK_Hediff_Torn.comps.2.permanentLabel>
+  <RK_Hediff_RatHolicGun.label>회전 관성</RK_Hediff_RatHolicGun.label>
+  <RK_Hediff_RatHolicGun.description>랫홀릭 건을 사용중입니다.</RK_Hediff_RatHolicGun.description>
+  <RK_Hediff_RatHolicGunSpooling.label>회전 축적</RK_Hediff_RatHolicGunSpooling.label>
+  <RK_Hediff_RatHolicGunSpooling.description>총열 회전이 축적되어 점점 발사 속도가 빨라집니다.</RK_Hediff_RatHolicGunSpooling.description>
+  <RK_Hediff_RatHolicGunSpoolingAim.label>표적 고정</RK_Hediff_RatHolicGunSpoolingAim.label>
+  <RK_Hediff_RatHolicGunSpoolingAim.description>총열 회전 관성으로 표적 재정렬 시간이 단축됩니다.</RK_Hediff_RatHolicGunSpoolingAim.description>
+</LanguageData>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- Human BodyDef의 Ear 부위에 Ratkin 바디 그룹 추가 -->
+	<!-- RK_LeftEar와 RK_RightEar 그룹을 추가하여 GeneDef의 attachment가 정상 작동하도록 함 -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<!-- Left Ear에 RK_LeftEar 그룹 추가 -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BodyDef[defName="Human"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="Ear"][customLabel="left ear"]/groups</xpath>
+				<value>
+					<li>RK_LeftEar</li>
+				</value>
+			</li>
+			<!-- Right Ear에 RK_RightEar 그룹 추가 -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BodyDef[defName="Human"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="Ear"][customLabel="right ear"]/groups</xpath>
+				<value>
+					<li>RK_RightEar</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
+

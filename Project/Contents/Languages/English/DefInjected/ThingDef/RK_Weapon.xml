@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 도끼 수확속도 +5% 수확량 +5% -->
+
+  <RK_Axe.label>Ratkin axe</RK_Axe.label>
+  <RK_Axe.description>It is an ax for cutting trees. It is a little small, but it will help to cut.</RK_Axe.description>
+  <RK_Axe.tools.0.label>handle</RK_Axe.tools.0.label>
+  <RK_Axe.tools.1.label>edge</RK_Axe.tools.1.label>
+
+
+  <!-- 식칼 조리 속도 +5% 해체량 +10% -->
+
+  <RK_Cleaver.label>Ratkin cleaver</RK_Cleaver.label>
+  <RK_Cleaver.description>It is a knife for cutting meat. Get more meat. It does not seem to be a good weapon.</RK_Cleaver.description>
+  <RK_Cleaver.tools.0.label>handle</RK_Cleaver.tools.0.label>
+  <RK_Cleaver.tools.1.label>edge</RK_Cleaver.tools.1.label>
+
+
+  <!-- 쟁기 수확속도 +5% 수확량 +15% -->
+
+  <RK_Hockey.label>Ratkin hoe</RK_Hockey.label>
+  <RK_Hockey.description>It is a plow for the field. It is easy to dig the ground.</RK_Hockey.description>
+  <RK_Hockey.tools.0.label>point</RK_Hockey.tools.0.label>
+  <RK_Hockey.tools.1.label>edge</RK_Hockey.tools.1.label>
+
+
+  <!-- 포크삽 수확속도 +10% 수확량 +10% -->
+
+  <RK_Fork.label>Ratkin fork</RK_Fork.label>
+  <RK_Fork.description>A fork-shaped insert with a split end. It is convenient when pile straw.</RK_Fork.description>
+  <RK_Fork.tools.0.label>point</RK_Fork.tools.0.label>
+  <RK_Fork.tools.1.label>edge</RK_Fork.tools.1.label>
+
+
+  <!-- 기본 근접값은  초당 8.84 -->
+
+  <RK_LongSword.label>Ratkin longSword</RK_LongSword.label>
+  <RK_LongSword.description>It is the sword of the Guardener who keeps the field. It is good to take care of garden or your enemy.</RK_LongSword.description>
+  <RK_LongSword.tools.0.label>point</RK_LongSword.tools.0.label>
+  <RK_LongSword.tools.1.label>edge</RK_LongSword.tools.1.label>
+
+
+  <!-- 석궁 스탤스 +10% -->
+
+  <RK_Crossbow.label>Ratkin cross bow</RK_Crossbow.label>
+  <RK_Crossbow.description>It is a simple crossbow. It is used when hunting.</RK_Crossbow.description>
+  <RK_Crossbow.tools.0.label>limb</RK_Crossbow.tools.0.label>
+  <RK_Crossbow.tools.1.label>arrow</RK_Crossbow.tools.1.label>
+
+  <Bolt_RK_Crossbow.label>crossbow bolt</Bolt_RK_Crossbow.label>
+
+
+  <!-- 개량석궁 -->
+
+  <RK_EnhanceCrossBow.label>Ratkin enhanced cross bow</RK_EnhanceCrossBow.label>
+  <RK_EnhanceCrossBow.description>Improved crossbow. It goes farther and has excellent penetration.</RK_EnhanceCrossBow.description>
+  <RK_EnhanceCrossBow.tools.0.label>limb</RK_EnhanceCrossBow.tools.0.label>
+  <RK_EnhanceCrossBow.tools.1.label>arrow</RK_EnhanceCrossBow.tools.1.label>
+
+  <Bolt_RK_EnhanceCrossBow.label>crossbow bolt</Bolt_RK_EnhanceCrossBow.label>
+
+
+  <!-- 연발석궁 -->
+
+  <RK_AutoCrossBow.label>Ratkin autocross bow</RK_AutoCrossBow.label>
+  <RK_AutoCrossBow.description>Semi-automatic crossbow that is fired mechanically. You can fire bolts at high speed from a round magazine.</RK_AutoCrossBow.description>
+  <RK_AutoCrossBow.tools.0.label>limb</RK_AutoCrossBow.tools.0.label>
+  <RK_AutoCrossBow.tools.1.label>arrow</RK_AutoCrossBow.tools.1.label>
+
+  <Bolt_RK_AutoCrossBow.label>crossbow bolt</Bolt_RK_AutoCrossBow.label>
+
+
+  <!-- 라이플 -->
+
+  <RK_Rifle.label>Ratkin rifle</RK_Rifle.label>
+  <RK_Rifle.description>A human-style rifle built for Ratkin flechette rounds. High penetration and longer reach than a crossbow, with a small blade for emergency melee.</RK_Rifle.description>
+  <RK_Rifle.tools.0.label>stock</RK_Rifle.tools.0.label>
+  <RK_Rifle.tools.1.label>bayonet</RK_Rifle.tools.1.label>
+  <RK_Rifle.tools.2.label>flechette</RK_Rifle.tools.2.label>
+
+  <Bullet_RK_Rifle.label>flechette rifle round</Bullet_RK_Rifle.label>
+
+
+  <!-- 저격 라이플 -->
+
+  <RK_SniperRifle.label>Ratkin sniper rifle</RK_SniperRifle.label>
+  <RK_SniperRifle.description>A Ratkin telescopic rifle firing flechettes. Excels at dropping armored targets at long range; close-range aiming is harder. Includes a small blade for melee.</RK_SniperRifle.description>
+  <RK_SniperRifle.tools.0.label>stock</RK_SniperRifle.tools.0.label>
+  <RK_SniperRifle.tools.1.label>bayonet</RK_SniperRifle.tools.1.label>
+  <RK_SniperRifle.tools.2.label>flechette</RK_SniperRifle.tools.2.label>
+
+  <Bullet_RK_SniperRifle.label>flechette sniper round</Bullet_RK_SniperRifle.label>
+
+
+  <!-- 랫킨용 실험용총 2연발 -->
+
+  <RK_PrototypePulseRifle.label>Ratkin prototype pulse rifle</RK_PrototypePulseRifle.label>
+  <RK_PrototypePulseRifle.description>Experimental energy rifle. Made for experimental Ratkins. Special sights have been added to improve near and far sighting. This weapon, inspired by the Ratkin Flechette bullet, fires a wedge-shaped, high-penetration energy projectile.</RK_PrototypePulseRifle.description>
+  <RK_PrototypePulseRifle.verbs.0.label>Rapid Fire</RK_PrototypePulseRifle.verbs.0.label>
+  <RK_PrototypePulseRifle.verbs.1.label>Precisely Fire</RK_PrototypePulseRifle.verbs.1.label>
+  <RK_PrototypePulseRifle.tools.0.label>stock</RK_PrototypePulseRifle.tools.0.label>
+  <RK_PrototypePulseRifle.tools.1.label>barrel</RK_PrototypePulseRifle.tools.1.label>
+
+  <Bullet_RK_PrototypePulseRifleLight.label>wedge bullet</Bullet_RK_PrototypePulseRifleLight.label>
+  <Bullet_RK_PrototypePulseRifleHeavy.label>wedge bullet</Bullet_RK_PrototypePulseRifleHeavy.label>
+
+
+  <!-- BFR 3000 -->
+
+  <RK_BFR.label>BFR 3000</RK_BFR.label>
+  <RK_BFR.description>Big Force Rifle 3000.</RK_BFR.description>
+  <RK_BFR.verbs.0.label>AP fire</RK_BFR.verbs.0.label>
+  <RK_BFR.verbs.1.label>SC fire</RK_BFR.verbs.1.label>
+  <RK_BFR.tools.0.label>stock</RK_BFR.tools.0.label>
+  <RK_BFR.tools.1.label>barrel</RK_BFR.tools.1.label>
+
+  <Bullet_BFR_AP.label>wedge bullet (AP)</Bullet_BFR_AP.label>
+  <Bullet_BFR_SC.label>wedge bullet (SC)</Bullet_BFR_SC.label>
+
+
+  <!--<Bullet_RK_PrototypePulseRifle.label>wedge bullet</Bullet_RK_PrototypePulseRifle.label>-->
+  
+  <!-- 샷건 -->
+
+  <RK_Rifle_line.label>ratkin shotgun</RK_Rifle_line.label>
+  <RK_Rifle_line.description>It is a sword-off shotgun. In the Ratkin Kingdom, shotguns shoot ratkin.</RK_Rifle_line.description>
+  <RK_Rifle_line.verbs.0.label>Buck fire</RK_Rifle_line.verbs.0.label>
+  <RK_Rifle_line.verbs.1.label>Slug fire</RK_Rifle_line.verbs.1.label>
+  <RK_Rifle_line.tools.0.label>stock</RK_Rifle_line.tools.0.label>
+  <RK_Rifle_line.tools.1.label>barrel</RK_Rifle_line.tools.1.label>
+  <RK_Rifle_line.tools.2.label>bayonet</RK_Rifle_line.tools.2.label>
+
+  <Bullet_RK_Buck.label>Buck bullet</Bullet_RK_Buck.label>
+  <Bullet_RK_Slug.label>Slug bullet</Bullet_RK_Slug.label>
+
+  
+  <!-- 창 밀리 히트찬스 +3 -->
+
+  <RK_Spear.label>Ratkin Spear</RK_Spear.label>
+  <RK_Spear.description>It is a simple spear. it is a little short to human eyes.</RK_Spear.description>
+  <RK_Spear.tools.0.label>point</RK_Spear.tools.0.label>
+  <RK_Spear.tools.1.label>edge</RK_Spear.tools.1.label>
+
+ <!-- 할버드 밀리 히트찬스 +3 -->
+
+  <RK_Halberd.label>Ratkin Halberd</RK_Halberd.label>
+  <RK_Halberd.description>It is a weapon axe blade with a spike attached together. It's a useful weapon on rugged battlefields.</RK_Halberd.description>
+  <RK_Halberd.tools.0.label>Halberd point</RK_Halberd.tools.0.label>
+  <RK_Halberd.tools.1.label>Halberd edge</RK_Halberd.tools.1.label>
+
+
+</LanguageData>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Ideology 활성 시에만 PreceptDef 존재 → 조건부 패치 (DLC 없으면 xpath 미매칭으로 조용히 스킵) -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>*/PreceptDef[leaderRole = 'true']/roleApparelRequirements</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>*/PreceptDef[leaderRole = 'true']/roleApparelRequirements</xpath>
+			<value>
+				<!-- 머리(UpperHead): 왕관, 베일, 코사주, 리본 -->
+				<li>
+					<requirement>
+						<bodyPartGroupsMatchAny>
+							<li>UpperHead</li>
+						</bodyPartGroupsMatchAny>
+						<requiredDefs>
+							<li>RK_RoyalCrown</li>
+							<li>RK_SistersVeil</li>
+							<li>RK_HairCorsage</li>
+							<li>RK_RibbonHairBand</li>
+						</requiredDefs>
+					</requirement>
+				</li>
+				<!-- 몸통(Torso~Legs): 로열외투, 수녀복, 화이트코트, 프릴원피스, 플랫컬러코트 -->
+				<li>
+					<requirement>
+						<bodyPartGroupsMatchAny>
+							<li>Torso</li>
+							<li>Neck</li>
+							<li>Shoulders</li>
+							<li>Arms</li>
+							<li>Legs</li>
+						</bodyPartGroupsMatchAny>
+						<requiredDefs>
+							<li>RK_RoyalRobe</li>
+							<li>RK_SistersDerss</li>
+							<li>RK_WhiteCoat</li>
+							<li>RK_FrillOnepiece</li>
+							<li>RK_FlatColorCoat</li>
+						</requiredDefs>
+					</requirement>
+				</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>

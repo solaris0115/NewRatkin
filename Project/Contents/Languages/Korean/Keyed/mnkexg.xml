@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <EMPExplode>EMP폭발</EMPExplode>
+  <EMPExplodeDesc>EMP폭발로 인해 전자 설비가 망가졌습니다.</EMPExplodeDesc>
+  <MessageCommandoAssaulting>특수 부대가 정착지를 공격하기 시작합니다.</MessageCommandoAssaulting>
+  <RatHoleGone>쥐구멍이 사라졌습니다.</RatHoleGone>
+  <ShieldBlock>튕겨냄!</ShieldBlock>
+  <ShieldBlockChance>튕김 확률:</ShieldBlockChance>
+  <BlockChance_Heat>방어 확률(열기)</BlockChance_Heat>
+  <BlockChance_Blunt>방어 확률(둔탁함)</BlockChance_Blunt>
+  <BlockChance_Sharp>방어 확률(날카로움)</BlockChance_Sharp>
+  <BlockChanceWear_Heat>착용자 방어 확률(열기)</BlockChanceWear_Heat>
+  <BlockChanceWear_Blunt>착용자 방어 확률(둔탁함)</BlockChanceWear_Blunt>
+  <BlockChanceWear_Sharp>착용자 방어 확률(날카로움)</BlockChanceWear_Sharp>
+  <BlockChanceDefualtDesc>방어 확률\n외적인 원인에 의한 손상을 방어합니다.\n\n정면 140도 이내의 공격만을 방어할 수 있습니다.\n방어 확률은 착용자의 격투 등급과 해당 장비의 기본 방어도에 영향을 받습니다.</BlockChanceDefualtDesc>
+  <RK_JoinReq_Injured_DescShort>부상자 {0}명 이상</RK_JoinReq_Injured_DescShort>
+  <RK_JoinReq_Priest_Injured_Desc1>도움의 손길이 필요한가요?</RK_JoinReq_Priest_Injured_Desc1>
+  <RK_JoinReq_Priest_Injured_Desc2>믿음이 있다면 역경을 이겨낼 수 있어요!</RK_JoinReq_Priest_Injured_Desc2>
+  <RK_JoinReq_Medicine_DescShort>약품 {0}개 이상</RK_JoinReq_Medicine_DescShort>
+  <RK_JoinReq_Priest_Medicine_Desc1>구호 물자가 충분히 있으면 좋겠어요.</RK_JoinReq_Priest_Medicine_Desc1>
+  <RK_JoinReq_Priest_Medicine_Desc2>약품이라도 많다면 충분히 많은 분들을 도울 수 있을텐데..</RK_JoinReq_Priest_Medicine_Desc2>
+  <RK_JoinReq_StableLife_DescShort>정착지 자산 {0} 이상</RK_JoinReq_StableLife_DescShort>
+  <RK_JoinReq_StableLife_Desc1>조금 큰 마을에서 살고 싶어. 떠돌이 생활은 너무 힘들어.</RK_JoinReq_StableLife_Desc1>
+  <RK_JoinReq_StableLife_Desc2>안정적인 마을에서 살고 싶어. 작은 마을은 너무 힘들어.</RK_JoinReq_StableLife_Desc2>
+  <RK_JoinReq_NewLife_DescShort>정착지 자산 {0} 이상</RK_JoinReq_NewLife_DescShort>
+  <RK_JoinReq_NewLife_Desc1>이정도 부가 있다면 새로운 걸 시작할 수 있을 것 같아.</RK_JoinReq_NewLife_Desc1>
+  <RK_JoinReq_NewLife_Desc2>가난한 삶은 이제 싫어.</RK_JoinReq_NewLife_Desc2>
+  <RK_JoinReq_NobleTired_DescShort>정착민 중 {0} 배경 없어야 함</RK_JoinReq_NobleTired_DescShort>
+  <RK_JoinReq_NobleTired_Desc1>높으신 분들 비위 맞추는 삶은 이제 질렸어.</RK_JoinReq_NobleTired_Desc1>
+  <RK_JoinReq_NobleTired_Desc2>귀족들은 더이상 상대하고 싶지 않아요.</RK_JoinReq_NobleTired_Desc2>
+  <RK_JoinReq_ServantRoyalTitle_DescShort>정착민 최고 제국 작위가 {0} 이하여야 함</RK_JoinReq_ServantRoyalTitle_DescShort>
+  <RK_JoinReq_ServantRoyalTitle_Desc1>높으신 분들 비위 맞추는 삶은 이제 질렸어.</RK_JoinReq_ServantRoyalTitle_Desc1>
+  <RK_JoinReq_ServantRoyalTitle_Desc2>섬길 사람은 내가 정해요.</RK_JoinReq_ServantRoyalTitle_Desc2>
+  <RK_JoinReq_ItemSeparatorOr> 또는</RK_JoinReq_ItemSeparatorOr>
+  <RK_JoinReq_WindFreedom_DescShort>필요: {0}</RK_JoinReq_WindFreedom_DescShort>
+  <RK_JoinReq_WindFreedom_Desc1>길 위의 삶도 좋지만, 한동안 머무르는것도 좋아.</RK_JoinReq_WindFreedom_Desc1>
+  <RK_JoinReq_WindFreedom_Desc2>떠돌이라도 취향은 있어. 내가 쓸 만한 물건쯤은 있어야지.</RK_JoinReq_WindFreedom_Desc2>
+  <RK_JoinReq_SeekingMentor_DescShort>{0} 스킬 모두를 충족하는 정착민 필요</RK_JoinReq_SeekingMentor_DescShort>
+  <RK_JoinReq_SeekingMentor_Desc1>나보다 강한 자의 명령만을 듣는다.</RK_JoinReq_SeekingMentor_Desc1>
+  <RK_JoinReq_SeekingMentor_Desc2>강자를 찾고 있다. 이곳에는 싸움좀 하는 놈이 있나?</RK_JoinReq_SeekingMentor_Desc2>
+  <RK_JoinReq_Prepared_DescShort>{0} 하나라도 해당되는 정착민 필요</RK_JoinReq_Prepared_DescShort>
+  <RK_JoinReq_Prepared_Desc1>내 몸정도는 지킬 힘을 얻고 싶어.</RK_JoinReq_Prepared_Desc1>
+  <RK_JoinReq_Prepared_Desc2>싸우든 만들든, 하나쯤은 제대로 아는 놈이 있는 곳이어야 해.</RK_JoinReq_Prepared_Desc2>
+  <RK_JoinReq_JoinHope_DescShort>조건 없음</RK_JoinReq_JoinHope_DescShort>
+  <RK_JoinReq_JoinHope_Desc1>반가워요!</RK_JoinReq_JoinHope_Desc1>
+  <RK_JoinReq_JoinHope_Desc2>잘 부탁해요!</RK_JoinReq_JoinHope_Desc2>
+  <AbilityPrayerServiceCooldown>다음 기도회 준비</AbilityPrayerServiceCooldown>
+  <MessagePrayerServiceStart>{PAWN_labelShort}(이)가 기도회를 열었습니다.</MessagePrayerServiceStart>
+  <MessagePrayerServiceAborted>예배가 어떤 이유로 취소되었습니다.</MessagePrayerServiceAborted>
+  <MessagePrayerServiceEnded>예배가 끝났습니다.</MessagePrayerServiceEnded>
+  <RK_ApparelWeaponIncompatible_Dropped>{0}을(를) 착용하여 {1}을(를) 내려놓았습니다. 사유: {2}</RK_ApparelWeaponIncompatible_Dropped>
+  <RK_ApparelWeaponIncompatible_Dropped_Default>{0}을(를) 착용하여 {1}을(를) 내려놓았습니다.</RK_ApparelWeaponIncompatible_Dropped_Default>
+  <RK_ShieldWeaponIncompatible>방패와 동시 착용할 수 없습니다</RK_ShieldWeaponIncompatible>
+  <RK_ShieldWeaponIncompatible_Equip>{0}을(를) 착용할 수 없습니다: 착용 중인 무기 {1}과(와) 호환되지 않습니다. {2}</RK_ShieldWeaponIncompatible_Equip>
+  <RK_ShieldWeaponIncompatible_Equip_Default>{0}을(를) 착용할 수 없습니다: 착용 중인 무기 {1}과(와) 호환되지 않습니다.</RK_ShieldWeaponIncompatible_Equip_Default>
+  <RK_WeaponShieldIncompatible_Equip>{0}을(를) 착용할 수 없습니다: 착용 중인 방패 {1}과(와) 호환되지 않습니다. {2}</RK_WeaponShieldIncompatible_Equip>
+  <RK_WeaponShieldIncompatible_Equip_Default>{0}을(를) 착용할 수 없습니다: 착용 중인 방패 {1}과(와) 호환되지 않습니다.</RK_WeaponShieldIncompatible_Equip_Default>
+  <RK_AbilityMustTargetHostile>적대적 대상만 지정할 수 있습니다.</RK_AbilityMustTargetHostile>
+  <RK_ShieldFaceDirection>방향 고정</RK_ShieldFaceDirection>
+  <RK_ShieldFaceDirectionDesc>지점을 클릭하면 해당 방향을 바라봅니다. 제자리에서 대기합니다. 대상을 지정하면 지속적으로 추적합니다.</RK_ShieldFaceDirectionDesc>
+  <RK_ShieldFaceDirectionReport>방향을 바라보는 중.</RK_ShieldFaceDirectionReport>
+  <RK_ShieldFaceDirection_NotDrafted>소집 상태에서만 사용 가능합니다.</RK_ShieldFaceDirection_NotDrafted>
+  <RK_ShieldFaceDirection_InvalidState>사망 또는 기절 상태에서는 사용할 수 없습니다.</RK_ShieldFaceDirection_InvalidState>
+  <RK_ShieldFaceDirection_Busy>다른 행동 중에는 사용할 수 없습니다.</RK_ShieldFaceDirection_Busy>
+  <RK_ShieldFaceDirection_ShieldInactive>방패가 비활성 상태입니다.</RK_ShieldFaceDirection_ShieldInactive>
+  <RK_ShieldFaceDirection_Cooldown>재사용 대기: {0}</RK_ShieldFaceDirection_Cooldown>
+  <AbilityPrayerServiceDisabledAlreadyGivingPrayerService>이미 기도회가 진행 중입니다.</AbilityPrayerServiceDisabledAlreadyGivingPrayerService>
+  <AbilityPrayerServiceDisabledDrafted>소집된 상태에서는 사용할 수 없습니다.</AbilityPrayerServiceDisabledDrafted>
+  <AbilityPrayerServiceDisabledNoPulpitBuilding>정착지에 예배용 연단이 없습니다.</AbilityPrayerServiceDisabledNoPulpitBuilding>
+  <AbilityPrayerServiceDisabledCannotReachPulpit>연단의 상호작용 칸까지 길이 이어지지 않아 도달할 수 없습니다.</AbilityPrayerServiceDisabledCannotReachPulpit>
+  <AbilityPrayerServiceDisabledCannotReservePulpit>연단이 다른 작업으로 사용 중이거나 예약할 수 없습니다.</AbilityPrayerServiceDisabledCannotReservePulpit>
+  <AbilityPrayerServiceDisabledInteractionCellOutOfBounds>연단의 상호작용 칸이 맵 밖에 있습니다.</AbilityPrayerServiceDisabledInteractionCellOutOfBounds>
+  <AbilityPrayerServiceDisabledInteractionCellForbidden>예배할 자리가 출입 금지 구역에 있습니다.</AbilityPrayerServiceDisabledInteractionCellForbidden>
+  <AbilityPrayerServiceDisabledInteractionCellNotStandable>예배할 자리에 설 수 없습니다.</AbilityPrayerServiceDisabledInteractionCellNotStandable>
+  <AbilityPrayerServiceDisabledPulpitForbidden>연단이 출입 금지로 설정되어 있습니다.</AbilityPrayerServiceDisabledPulpitForbidden>
+  <AbilityPrayerServiceDisabledPulpitBurning>연단이 불타고 있어 예배를 열 수 없습니다.</AbilityPrayerServiceDisabledPulpitBurning>
+  <AbilityPrayerServiceDisabledPulpitDangerous>연단 주변이 위험해 예배를 열 수 없습니다.</AbilityPrayerServiceDisabledPulpitDangerous>
+  <AbilityPrayerServiceDisabledRoomTooSmall>예배 공간이 너무 좁습니다. (예배할 방은 25칸보다 넓어야 합니다.)</AbilityPrayerServiceDisabledRoomTooSmall>
+  <RK_WanderingTrader_Info>정보</RK_WanderingTrader_Info>
+  <RK_WanderingTrader_ViewSettlers>정착 희망 유랑민 보기</RK_WanderingTrader_ViewSettlers>
+  <RK_WanderingTrader_MercenarySearch>용병 물색</RK_WanderingTrader_MercenarySearch>
+  <RK_WanderingCaravan_TalkToLeader>대화하기</RK_WanderingCaravan_TalkToLeader>
+  <RK_WanderingCaravan_DismissCaravan>돌려보내기</RK_WanderingCaravan_DismissCaravan>
+  <RK_WanderingCaravan_TradeGoods>물자 거래</RK_WanderingCaravan_TradeGoods>
+  <RK_WanderingCaravan_Commission>물건 의뢰</RK_WanderingCaravan_Commission>
+  <RK_WanderingCaravan_SettleProposal>합류 제안</RK_WanderingCaravan_SettleProposal>
+  <RK_WanderingCaravan_EndDialog>대화 마치기</RK_WanderingCaravan_EndDialog>
+  <RK_WanderingCaravan_LeaderGreeting>세상 방방 곡곡 여행하는 {0} 상단! 무엇을 찾고 있나요? 진귀한 큐브? 기계장치? 말만 하세요! 유랑민들도 함께 만나보시고요.</RK_WanderingCaravan_LeaderGreeting>
+  <RK_WanderingCaravan_LeaderTitle>유랑단 리더</RK_WanderingCaravan_LeaderTitle>
+  <RK_WanderingCaravan_ArrivalLetterLabel>유랑단 도착</RK_WanderingCaravan_ArrivalLetterLabel>
+  <RK_WanderingCaravan_ArrivalLetter>랫킨 유랑단이 도착했습니다. 리더에게 말을 걸어 거래하거나 정착민을 영입하세요.</RK_WanderingCaravan_ArrivalLetter>
+  <RK_WanderingCaravan_AcceptOne>제안</RK_WanderingCaravan_AcceptOne>
+  <RK_WanderingCaravan_AcceptAll>일괄 제안</RK_WanderingCaravan_AcceptAll>
+  <RK_WanderingCaravan_OneJoined>{0}이(가) 정착민으로 합류했습니다.</RK_WanderingCaravan_OneJoined>
+  <RK_WanderingCaravan_AllJoined>{0}명이 정착민으로 합류했습니다.</RK_WanderingCaravan_AllJoined>
+  <RK_WanderingCaravan_CommissionPlaceholder>물건 의뢰 기능은 준비 중입니다.</RK_WanderingCaravan_CommissionPlaceholder>
+  <RK_WanderingCaravan_AlreadySpawned>유랑단이 이미 맵에 있습니다.</RK_WanderingCaravan_AlreadySpawned>
+  <RK_WanderingCaravan_AttackedPenalty>유랑단은 공격당한 기억 때문에 당분간 이 정착지를 방문하지 않을 것입니다.</RK_WanderingCaravan_AttackedPenalty>
+  <RK_BFR_Toggle_RequiresSeparationMechanics>분리 역학 연구가 필요합니다.</RK_BFR_Toggle_RequiresSeparationMechanics>
+
+  <RK_BFR_Ammo_LabelAP>관통탄</RK_BFR_Ammo_LabelAP>
+  <RK_BFR_Ammo_LabelHE>공중폭발탄</RK_BFR_Ammo_LabelHE>
+  <RK_BFR_Ammo_DescToHE>공중폭발탄으로 전환합니다. 목표 대상에 가까워 지면 부채꼴로 폭발하여 넓은 범위에 피해를 입힙니다.</RK_BFR_Ammo_DescToHE>
+  <RK_BFR_Ammo_DescToAP>관통탄으로 전환합니다. 여러 대상을 관통하여 피해를 줄 수 있습니다.</RK_BFR_Ammo_DescToAP>
+
+  <RK_PulseRifleFireMode_LabelBurst>속사 모드</RK_PulseRifleFireMode_LabelBurst>
+  <RK_PulseRifleFireMode_LabelSingle>저격 모드</RK_PulseRifleFireMode_LabelSingle>
+  <RK_PulseRifleFireMode_DescToSingle>저격 모드로 전환합니다. 고밀도 쐐기탄을 2발 발사합니다. 중·원거리 교전에 유리합니다.</RK_PulseRifleFireMode_DescToSingle>
+  <RK_PulseRifleFireMode_DescToBurst>속사 모드로 전환합니다. 쐐기탄 4발 빠르게 발사합니다. 근·중거리 교전에 유리합니다.</RK_PulseRifleFireMode_DescToBurst>
+</LanguageData>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RK_Maneuver_Shell.rulePack.rulesStrings>
+    <li>damaged_inf(p=4)-&gt;포격</li>
+    <li>damaged_inf(deflected!=True)-&gt;포격</li>
+    <li>damaged_inf-&gt;포격</li>
+    <li>damaged_past(p=4)-&gt;포격함</li>
+    <li>damaged_past(deflected!=True)-&gt;포격함</li>
+    <li>damaged_past-&gt;포격함</li>
+    <li>damaged_present-&gt;포격 중</li>
+    <li>damaged_present(deflected!=True)-&gt;포격 중</li>
+    <li>destroyed_past-&gt;잿더미가됨</li>
+    <li>destroyed_past-&gt;소각됨</li>
+    <li>destroyed_past-&gt;타버림</li>
+    <li>destroyed_past-&gt;흔적도 없어짐</li>
+    <li>destroyed_past-&gt;완전히 박살남</li>
+    <li>destroyed_past-&gt;폭발해버림</li>
+    <li>destroyed_past-&gt;산산조각남</li>
+    <li>destroyed_past-&gt;으스러짐</li>
+    <li>destroyed_present-&gt;잿더미가 되는 중</li>
+    <li>destroyed_present-&gt;소각되는 중</li>
+    <li>destroyed_present-&gt;타버리는 중</li>
+    <li>destroyed_present-&gt;사라져 버리는 중</li>
+    <li>destroyed_present-&gt;박살나는 중</li>
+    <li>destroyed_present-&gt;폭발하는 중</li>
+  </RK_Maneuver_Shell.rulePack.rulesStrings>
+</LanguageData>

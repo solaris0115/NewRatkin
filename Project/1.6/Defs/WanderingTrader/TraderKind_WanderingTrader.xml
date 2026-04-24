@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Ratkin Wandering Trader - TraderKindDef -->
+<!-- 희귀품 상인(Caravan_Outlander_Exotic)과 동일한 수준의 물품 -->
+<Defs>
+
+	<TraderKindDef>
+		<defName>RK_TraderKind_WanderingTrader</defName>
+		<label>ratkin wandering trader</label>
+		<modExtensions>
+			<li Class="NewRatkin.WanderingTraderSettings">
+				<basePawnPrice>500</basePawnPrice>
+				<combatPowerPriceMultiplier>5</combatPowerPriceMultiplier>
+			</li>
+		</modExtensions>
+		<stockGenerators>
+
+			<!-- Resources -->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>750~1200</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>ComponentIndustrial</thingDef>
+				<countRange>6~20</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>ComponentSpacer</thingDef>
+				<countRange>1~4</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Plasteel</thingDef>
+				<countRange>50~150</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Gold</thingDef>
+				<countRange>40~80</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>MedicineUltratech</thingDef>
+				<countRange>2~8</countRange>
+			</li>
+
+			<!-- Techprints -->
+			<li Class="StockGenerator_Techprints" MayRequire="Ludeon.RimWorld.Royalty">
+				<countChances>
+					<li>
+						<count>3</count>
+						<chance>1</chance>
+					</li>
+				</countChances>
+			</li>
+
+			<!-- Books -->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>TextBook</thingDef>
+				<countRange>1~2</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Schematic</thingDef>
+				<countRange>0~1</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Novel</thingDef>
+				<countRange>0~1</countRange>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_Tomes">
+				<countRange>0~1</countRange>
+			</li>
+
+			<!-- Implants -->
+			<li Class="StockGenerator_Tag">
+				<tradeTag>TechHediff</tradeTag>
+				<thingDefCountRange>3</thingDefCountRange>
+				<countRange>1</countRange>
+			</li>
+
+			<!-- Buildings -->
+			<li Class="StockGenerator_Tag">
+				<tradeTag>Television</tradeTag>
+				<thingDefCountRange>1~2</thingDefCountRange>
+				<countRange>1~1</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Telescope</thingDef>
+				<countRange>0~1</countRange>
+			</li>
+
+			<!-- Exotic -->
+			<li Class="StockGenerator_Tag">
+				<tradeTag>ExoticMisc</tradeTag>
+				<thingDefCountRange>3~3</thingDefCountRange>
+				<countRange>1~1</countRange>
+				<excludedThingDefs>
+					<li>MedicineUltratech</li>
+					<li>ComponentSpacer</li>
+					<li MayRequire="Ludeon.RimWorld.Anomaly">Apparel_DisruptorFlarePack</li>
+				</excludedThingDefs>
+				<customCountRanges>
+					<Luciferium>7~25</Luciferium>
+					<Hyperweave>40~120</Hyperweave>
+				</customCountRanges>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>Artifact</tradeTag>
+				<thingDefCountRange>2~2</thingDefCountRange>
+				<countRange>1~1</countRange>
+			</li>
+
+			<!-- Genepacks -->
+			<li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+				<thingDef>Genepack</thingDef>
+				<countRange>3~4</countRange>
+			</li>
+
+			<!-- Serums -->
+			<li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_Tag">
+				<tradeTag>Serum</tradeTag>
+				<thingDefCountRange>4~4</thingDefCountRange>
+				<countRange>-3~1</countRange>
+				<excludedThingDefs>
+					<li>VoidsightSerum</li>
+				</excludedThingDefs>
+			</li>
+
+			<!-- Animals -->
+			<li Class="StockGenerator_Animals">
+				<tradeTagsSell>
+					<li>AnimalUncommon</li>
+					<li>AnimalFighter</li>
+					<li>AnimalFarm</li>
+					<li>AnimalPet</li>
+				</tradeTagsSell>
+				<tradeTagsBuy>
+					<li>AnimalExotic</li>
+				</tradeTagsBuy>
+				<kindCountRange>3~3</kindCountRange>
+				<countRange>1~3</countRange>
+				<createMatingPair>
+					<li>AnimalFarm</li>
+				</createMatingPair>
+			</li>
+
+			<!-- Archite capsule -->
+			<li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+				<thingDef>ArchiteCapsule</thingDef>
+				<countRange>-8~1</countRange>
+			</li>
+
+			<!-- Deathrest capacity serum -->
+			<li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+				<thingDef>DeathrestCapacitySerum</thingDef>
+				<countRange>0~1</countRange>
+			</li>
+
+			<!-- Buying -->
+			<li Class="StockGenerator_BuyExpensiveSimple" />
+			<li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>ImplantEmpireCommon</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>ImplantEmpireRoyal</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>PsylinkNeuroformer</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>ExoticBuilding</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>MusicalInstrument</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>UtilitySpecial</tag></li>
+			<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>Shell_Deadlife</thingDef></li>
+			<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>VoidSculpture</thingDef></li>
+			<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>Shard</thingDef></li>
+			<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>Bioferrite</thingDef></li>
+			<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>RevenantSpine</thingDef></li>
+
+		</stockGenerators>
+	</TraderKindDef>
+
+</Defs>

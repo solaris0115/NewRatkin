@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>RK_HeadType_Head1</defName>
+		<graphicPath>Things/Ratkin/Head/RK_Texture_Head1</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>RK_HeadType_Head2</defName>
+		<graphicPath>Things/Ratkin/Head/RK_Texture_Head2</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>RK_HeadType_Head3</defName>
+		<graphicPath>Things/Ratkin/Head/RK_Texture_Head3</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>RK_HeadType_Head4</defName>
+		<graphicPath>Things/Ratkin/Head/RK_Texture_Head4</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>RK_HeadType_Head5</defName>
+		<graphicPath>Things/Ratkin/Head/RK_Texture_Head5</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>RK_HeadType_Head6</defName>
+		<graphicPath>Things/Ratkin/Head/RK_Texture_Head6</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>RK_HeadType_Head7</defName>
+		<graphicPath>Things/Ratkin/Head/RK_Texture_Head7</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>RK_HeadType_Head8</defName>
+		<graphicPath>Things/Ratkin/Head/RK_Texture_Head8</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+</Defs>
