@@ -1,6 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <RatkinTech.label>ラットキンの研究</RatkinTech.label>
+  <!-- Ratkin Research Tab -->
+
+  <RK_ResearchTab_Default.label>ラットキンの研究</RK_ResearchTab_Default.label>
+
 
 </LanguageData>
