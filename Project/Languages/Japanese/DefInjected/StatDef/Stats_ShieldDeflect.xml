@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- shield block chance -->
+  <!-- シールドブロックチャンス（ShieldBlockChance）— ポーンステータス（1段階ゲート）
+  MeleeHitChanceと同じ構造:近接スキル+操作+視界→0~1.
+  この値でブロックの試行成功かどうかだけを判定. アーマーとは無関係.
+  成功時の第2段階：RK_Stat_Shield_Sharp/Blunt/Heat vs AP アーマーロール.
+  -->
+
+  <RK_Stat_ShieldBlockChance.label>シールドブロックの確率</RK_Stat_ShieldBlockChance.label>
+  <RK_Stat_ShieldBlockChance.description>この盾で飛来する攻撃を防御するチャンス.\n\n防御が成功した場合,2回目の防御判定（盾の防御力&#160;vs&#160;攻撃者の防御力）で攻撃が完全に防御されるかどうかが決定されます.\n\n近接戦闘スキル,操作,視覚の影響を受けます.近接戦闘の命中率と同じ修正値です.</RK_Stat_ShieldBlockChance.description>
+
+
+  <!-- shield deflect angle -->
+  <!-- シールド角度（DeflectAngle）— Thingステータス（シールド statBases の固定値）
+  スキル補正なし. 盾アイテムから直接取得.
+  内部判定（ApparelShieldTowerSecond）は /2 で半角を使用.
+  -->
+
+  <RK_Stat_DeflectAngle.label>シールド受け流し角</RK_Stat_DeflectAngle.label>
+  <RK_Stat_DeflectAngle.description>このシールドが飛来する攻撃を受け流す事が可能な正面方向の全範囲（度数）.例えば,90度は正面から左右それぞれ±45度を意味します.</RK_Stat_DeflectAngle.description>
+  <RK_Stat_DeflectAngle.formatString>{0}度</RK_Stat_DeflectAngle.formatString>
+
+
+  <!-- Shield stuff magnification (hidden) — Vanilla StuffEffectMultiplierArmor Response -->
+
+  <RK_Stat_ShieldStuffBase.label>シールドアーマー&#160;-&#160;素材効果系数</RK_Stat_ShieldStuffBase.label>
+
+
+  <!-- Shield defences - Sharp -->
+
+  <RK_Stat_Shield_Sharp.label>シールドアーマー - 突刺系</RK_Stat_Shield_Sharp.label>
+  <RK_Stat_Shield_Sharp.description>この盾は,銃弾,ナイフによる刺突,爆発,動物の噛みつきといった鋭利な攻撃から身を守ります.
+
+アーマーとは異なり,シールドは攻撃を完全に防ぐか,完全に貫通させるかのどちらかです.部分的なダメージ軽減や打撲系ダメージの抵抗はありません.
+
+攻撃がシールドの防御範囲内に着弾し,防御が成功した場合,シールドの鋭利防御力と攻撃者の装甲貫通力が比較されます:
+
+閾値 = 最大(シールド防御力 - 攻撃者の装甲貫通力 ,0%の場合)
+
+次に0%から100%までのランダムな出目が決定されます.
+- 出目が閾値未満の場合,攻撃は完全に防がれ,ダメージは与えられません.
+- 出目が閾値以上の場合,攻撃は完全に貫通し,シールドの効果はなくなります.
+
+例えば,防御力50%のシールドで,装甲貫通力20%の攻撃を受けた場合,閾値は30%となります.完全防御の確率は30%,完全貫通の確率は70%です.
+
+シールドの防御効果は一度だけ適用され,しかも防御行動が既に実行された場合にだけ発動します.</RK_Stat_Shield_Sharp.description>
+
+
+  <!-- Shield defences - Blunt -->
+
+  <RK_Stat_Shield_Blunt.label>シールドアーマー - 打撲系</RK_Stat_Shield_Blunt.label>
+  <RK_Stat_Shield_Blunt.description>この盾は,拳,棍棒による打撃,落石などの鈍器による攻撃から身​​を守ります.
+
+アーマーとは異なり,シールドは攻撃を完全に防ぐか,完全に貫通させるかのどちらかです.部分的なダメージ軽減や打撲系ダメージの抵抗はありません.
+
+攻撃がシールドの防御範囲内に着弾し,防御が成功した場合,シールドの鋭利防御力と攻撃者の装甲貫通力が比較されます:
+
+閾値 = 最大(シールド防御力 - 攻撃者の装甲貫通力 ,0%の場合)
+
+次に0%から100%までのランダムな出目が決定されます.
+- 出目が閾値未満の場合,攻撃は完全に防がれ,ダメージは与えられません.
+- 出目が閾値以上の場合,攻撃は完全に貫通し,シールドの効果はなくなります.
+
+例えば,防御力が50%のシールドで,装甲貫通力20%の攻撃を受けた場合,閾値は30%となります.完全防御の確率は30%,完全貫通の確率は70%です.
+
+シールドの防御効果は一度だけ適用され,しかも防御行動が既に実行された場合にだけ発動します.</RK_Stat_Shield_Blunt.description>
+
+
+  <!-- Shield defense - Heat -->
+
+  <RK_Stat_Shield_Heat.label>シールドアーマー - 熱系</RK_Stat_Shield_Heat.label>
+  <RK_Stat_Shield_Heat.description>この盾は,火傷や火災や熱を利用した攻撃など,温度に関連する攻撃から身​​を守ります.
+
+アーマーとは異なり,シールドは攻撃を完全に防ぐか,完全に貫通させるかのどちらかです.部分的なダメージ軽減や打撲系ダメージの抵抗はありません.
+
+攻撃がシールドの防御範囲内に着弾し,防御が成功した場合,シールドの鋭利防御力と攻撃者の装甲貫通力が比較されます:
+
+閾値 = 最大(シールド防御力 - 攻撃者の装甲貫通力 ,0%の場合)
+
+次に0%から100%までのランダムな出目が決定されます.
+- 出目が閾値未満の場合,攻撃は完全に防がれ,ダメージは与えられません.
+- 出目が閾値以上の場合,攻撃は完全に貫通し,シールドの効果はなくなります.
+
+例えば,防御力30%のシールドで,防御力貫通率10%の攻撃を受けた場合,閾値は20%となります.完全防御の確率は20%,完全貫通の確率は80%です.
+
+シールドの防御効果は一度だけ適用され,しかも防御行動が既に実行された場合にだけ発動します.</RK_Stat_Shield_Heat.description>
+
+
+</LanguageData>
