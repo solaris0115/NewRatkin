@@ -1,11 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <RK_HamsterWheel.label>発電</RK_HamsterWheel.label>
-  <RK_HamsterWheel.labelShort>発電</RK_HamsterWheel.labelShort>
-  <RK_HamsterWheel.pawnLabel>発電係</RK_HamsterWheel.pawnLabel>
-  <RK_HamsterWheel.gerundLabel>発電</RK_HamsterWheel.gerundLabel>
-  <RK_HamsterWheel.description>電力を産み出します。</RK_HamsterWheel.description>
-  <RK_HamsterWheel.verb>発電</RK_HamsterWheel.verb>
+  <RK_WorkType_GeneratePower.label>発電</RK_WorkType_GeneratePower.label>
+  <RK_WorkType_GeneratePower.labelShort>発電</RK_WorkType_GeneratePower.labelShort>
+  <RK_WorkType_GeneratePower.pawnLabel>発電係</RK_WorkType_GeneratePower.pawnLabel>
+  <RK_WorkType_GeneratePower.gerundLabel>発電</RK_WorkType_GeneratePower.gerundLabel>
+  <RK_WorkType_GeneratePower.description>電力を産み出します.</RK_WorkType_GeneratePower.description>
+  <RK_WorkType_GeneratePower.verb>発電</RK_WorkType_GeneratePower.verb>
+
 
 </LanguageData>
