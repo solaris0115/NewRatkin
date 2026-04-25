@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- offset stat that directly reduces long-range weapon cooldowns -->
+
+  <RK_Stat_RangeCoolDown.label>射撃クールダウン短縮</RK_Stat_RangeCoolDown.label>
+  <RK_Stat_RangeCoolDown.description>長距離射程武器のクールダウン時間を短縮します.このステータスは,ラットホリックガンのスプール効果によって使用されます.</RK_Stat_RangeCoolDown.description>
+  <RK_Stat_RangeCoolDown.formatString>{0}秒</RK_Stat_RangeCoolDown.formatString>
+
+
+  <!-- multiplier stat that adjusts the long-range weapon cool-down to magnification -->
+
+  <RK_Stat_RangeCoolDownMultiplier.label>射撃クールダウン倍率</RK_Stat_RangeCoolDownMultiplier.label>
+  <RK_Stat_RangeCoolDownMultiplier.description>長距離射程武器のクールダウン時間を倍増します.このステータスは,倍率ステータスを使用するラットホリックガンのスプール効果によって使用されます.</RK_Stat_RangeCoolDownMultiplier.description>
+  <RK_Stat_RangeCoolDownMultiplier.formatString>{0}倍</RK_Stat_RangeCoolDownMultiplier.formatString>
+
+
+</LanguageData>

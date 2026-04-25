@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Pilgrim -->
+
+  <RK_PawnKind_Pilgrim.label>巡礼者</RK_PawnKind_Pilgrim.label>
+  <RK_PawnKind_Pilgrim.labelPlural>巡礼者</RK_PawnKind_Pilgrim.labelPlural>
+
+  <RK_PawnKind_Priest.label>司祭</RK_PawnKind_Priest.label>
+  <RK_PawnKind_Priest.labelPlural>司祭</RK_PawnKind_Priest.labelPlural>
+
+
+  <!-- WellEquippedTraveler They are Noble, but the outfit has to be shabby. -->
+
+  <RK_PawnKind_NoblePilgrim.label>高貴な巡礼者</RK_PawnKind_NoblePilgrim.label>
+  <RK_PawnKind_NoblePilgrim.labelPlural>高貴な巡礼者</RK_PawnKind_NoblePilgrim.labelPlural>
+
+
+</LanguageData>

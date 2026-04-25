@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RK_Job_HamsterWheel.reportString>TargetAをクルクル回しています.</RK_Job_HamsterWheel.reportString>
+
+
+  <!-- </JoyGiverDef> -->
+
+  <RK_Job_PrayerService.reportString>祈りを捧げている</RK_Job_PrayerService.reportString>
+  <RK_Job_SpectatePray.reportString>祈っている</RK_Job_SpectatePray.reportString>
+
+
+  <!-- Talk to the nomadic leader after moving (you can talk to him in person, just like the trader) -->
+
+  <RK_Job_TalkToCaravanLeader.reportString>キャラバンの隊長と話しています</RK_Job_TalkToCaravanLeader.reportString>
+
+
+  <!-- Move and send back directly to the nomadic leader (can be met in person, as in conversation) -->
+
+  <RK_Job_DismissCaravanLeader.reportString>キャラバンを帰らせている</RK_Job_DismissCaravanLeader.reportString>
+
+
+</LanguageData>

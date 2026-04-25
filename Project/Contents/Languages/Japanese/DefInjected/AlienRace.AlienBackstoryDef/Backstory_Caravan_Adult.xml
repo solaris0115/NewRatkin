@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- BackstoryDef (5 adult ratkins) -->
+
+  <RK_Backstory_Gypsy.title>ラットキンのジプシー</RK_Backstory_Gypsy.title>
+  <RK_Backstory_Gypsy.titleShort>ジプシー</RK_Backstory_Gypsy.titleShort>
+  <RK_Backstory_Gypsy.description>[PAWN_nameDef]は流浪の芸人として様々な村を回り,歌と踊りで生計を立ててきました.[PAWN_pronoun]は人々と交流することに長けています.</RK_Backstory_Gypsy.description>
+
+  <RK_Backstory_RefugeeSlave.title>ラットキンの逃亡奴隷</RK_Backstory_RefugeeSlave.title>
+  <RK_Backstory_RefugeeSlave.titleShort>逃亡奴隷</RK_Backstory_RefugeeSlave.titleShort>
+  <RK_Backstory_RefugeeSlave.description>[PAWN_nameDef]は奴隷として過ごしていましたが,かろうじて脱出した避難民です.[PAWN_pronoun]は過酷な労働に耐え抜き,生き延びてきました.</RK_Backstory_RefugeeSlave.description>
+
+  <RK_Backstory_WanderingRefugee.title>ラットキンの放浪避難民</RK_Backstory_WanderingRefugee.title>
+  <RK_Backstory_WanderingRefugee.titleShort>避難民</RK_Backstory_WanderingRefugee.titleShort>
+  <RK_Backstory_WanderingRefugee.description>[PAWN_nameDef]は戦争で故郷を失い,各地をさまよっている避難民です.[PAWN_pronoun]は新しい生活のために定住できる場所を探しています.</RK_Backstory_WanderingRefugee.description>
+
+  <RK_Backstory_CaravanLeader.title>ラットキンのキャラバンリーダー</RK_Backstory_CaravanLeader.title>
+  <RK_Backstory_CaravanLeader.titleShort>キャラバンリーダー</RK_Backstory_CaravanLeader.titleShort>
+  <RK_Backstory_CaravanLeader.description>[PAWN_nameDef]はキャラバンを率いる商人です.[PAWN_pronoun]は様々な村を回って物資を取引し,定住を希望する人々を仲介しています.</RK_Backstory_CaravanLeader.description>
+
+  <RK_Backstory_WanderingMercenary.title>ラットキンの放浪傭兵</RK_Backstory_WanderingMercenary.title>
+  <RK_Backstory_WanderingMercenary.titleShort>傭兵</RK_Backstory_WanderingMercenary.titleShort>
+  <RK_Backstory_WanderingMercenary.description>[PAWN_nameDef]は流れの傭兵として,数々の戦場を渡り歩いてきました.[PAWN_pronoun]は戦闘に精通しており,新しい雇い主を探しています.</RK_Backstory_WanderingMercenary.description>
+
+
+</LanguageData>

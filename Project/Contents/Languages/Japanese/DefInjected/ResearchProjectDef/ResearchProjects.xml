@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Reference sample for development. No inheritance, no use -->
+
+  <!-- <RK_Research_Sample.label>サンプル研究</RK_Research_Sample.label>
+  <RK_Research_Sample.description>研究の説明です.</RK_Research_Sample.description> -->
+
+
+  <!-- wood working -->
+
+  <RK_Research_Carpentry.label>木工</RK_Research_Carpentry.label>
+
+
+  <!-- agriculture -->
+
+  <RK_Research_Agriculture.label>農業</RK_Research_Agriculture.label>
+
+
+  <!-- Ratkin's Forging -->
+
+  <RK_Research_Smithing.label>ラットキンの鍛冶</RK_Research_Smithing.label>
+
+
+  <!-- Ratkin's Clothing -->
+
+  <RK_Research_Tailoring.label>ラットキンの衣類</RK_Research_Tailoring.label>
+  <!-- <RK_Research_Tailoring.description>ラットキンが着る便利な衣類を考案します.もう少し多様な衣類を生産することができます.</RK_Research_Tailoring.description> -->
+
+
+  <!-- food preservation -->
+
+  <RK_Research_FoodPreservation.label>食品保存</RK_Research_FoodPreservation.label>
+
+
+  <!-- Ratkin smelting -->
+
+  <RK_Research_Metallurgy.label>ラットキンの製錬</RK_Research_Metallurgy.label>
+
+
+  <!-- Sword and shield -->
+
+  <RK_Research_SwordAndShield.label>剣と盾</RK_Research_SwordAndShield.label>
+
+
+  <!-- functional clothing -->
+
+  <RK_Research_FunctionalApparel.label>機能的な衣類</RK_Research_FunctionalApparel.label>
+
+
+  <!-- high-end clothing -->
+
+  <RK_Research_AdvancedApparel.label>高級な衣類</RK_Research_AdvancedApparel.label>
+  <!-- <RK_Research_AdvancedApparel.description>ラットキン社会の高位職が着る服を研究します.より古風で質の良い服を生産することができます.研究にはラットキンのメガネが必要です.</RK_Research_AdvancedApparel.description> -->
+
+
+  <!-- fortification -->
+
+  <RK_Research_Fortification.label>要塞化</RK_Research_Fortification.label>
+
+
+  <!-- noble clothing -->
+
+  <RK_Research_NobleApparel.label>貴族の衣類</RK_Research_NobleApparel.label>
+
+
+  <!-- Ratkin Engineering -->
+
+  <RK_Research_RatkinEngineering.label>ラットキンの工学</RK_Research_RatkinEngineering.label>
+
+
+  <!-- rat wheel mechanics -->
+
+  <RK_Research_GearMechanics.label>回し車力学</RK_Research_GearMechanics.label>
+
+
+  <!-- Observations and measurements -->
+
+  <RK_Research_ObservationAndSurveying.label>観測と測量</RK_Research_ObservationAndSurveying.label>
+
+
+  <!-- separation dynamics -->
+
+  <RK_Research_SeparationMechanics.label>分離力学</RK_Research_SeparationMechanics.label>
+  <!-- <RK_Research_SeparationMechanics.description>投射体分離機能が使用可能になります.BFR 3000のAP/HE弾種トグルが解放されます.</RK_Research_SeparationMechanics.description> -->
+
+
+  <!-- flame of a dragon -->
+
+  <RK_Research_DragonFlame.label>竜の火炎</RK_Research_DragonFlame.label>
+
+
+  <!-- orbit equipment -->
+
+  <RK_Research_OrbitalEquipment.label>軌道装備</RK_Research_OrbitalEquipment.label>
+
+
+  <!-- angry rat rampant project -->
+
+  <RK_Research_AngryRatProject.label>怒れるネズミ計画</RK_Research_AngryRatProject.label>
+
+
+  <!-- crusader armor (Ratkin space armour) -->
+
+  <RK_Research_CrusaderArmor.label>クルセイダーアーマー</RK_Research_CrusaderArmor.label>
+
+
+</LanguageData>

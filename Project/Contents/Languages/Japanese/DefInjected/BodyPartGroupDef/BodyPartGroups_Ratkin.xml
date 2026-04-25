@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Left ear only group -->
+
+  <RK_LeftEar.label>左耳</RK_LeftEar.label>
+
+
+  <!-- Right ear only group -->
+
+  <RK_RightEar.label>右耳</RK_RightEar.label>
+
+
+  <!-- a tail-only group -->
+
+  <RK_Tail.label>尻尾</RK_Tail.label>
+
+
+</LanguageData>

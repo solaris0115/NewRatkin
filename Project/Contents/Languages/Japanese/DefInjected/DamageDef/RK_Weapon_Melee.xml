@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Same as Cut, HalberdCleave on one's back cutExtraTargetsCurve/cutCleaveBonus for adjustment purposes -->
+
+  <RK_Damage_BonusCut.label>会心の一撃</RK_Damage_BonusCut.label>
+  <RK_Damage_BonusCut.deathMessage>{0}は切り殺された.</RK_Damage_BonusCut.deathMessage>
+
+
+</LanguageData>

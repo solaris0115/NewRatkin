@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- The basic supplies are what you need to build a village, or a very simple cold-air cooler and a little bit of food -->
+
+  <RK_Scenario_Settler.label>ラットキンのコロニー</RK_Scenario_Settler.label>
+  <RK_Scenario_Settler.description>それぞれの事情を持って新たな人生のために旅立った4匹のラットキンの物語です.</RK_Scenario_Settler.description>
+  <RK_Scenario_Settler.scenario.name>ラットキンのコロニー</RK_Scenario_Settler.scenario.name>
+  <RK_Scenario_Settler.scenario.summary>それはラットキンの話,それぞれ物語があります.</RK_Scenario_Settler.scenario.summary>
+  <RK_Scenario_Settler.scenario.description>それぞれの事情を持って新たな人生のために旅立った4匹のラットキンの物語です.</RK_Scenario_Settler.scenario.description>
+  <RK_Scenario_Settler.scenario.parts.15.text>故郷を離れ,新しい生活のために旅立ったラトキンたちが一堂に会しました.その道のりは簡単ではありませんが,今こそ新たな拠点を築く時です.皆で勤勉に取り組めば,良い村になるでしょう.</RK_Scenario_Settler.scenario.parts.15.text>
+
+
+</LanguageData>

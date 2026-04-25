@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ratkin Storyteller -->
+
+  <RK_Incident_VagabondJoin.label>放浪者の加入</RK_Incident_VagabondJoin.label>
+  <RK_Incident_VagabondJoin.letterText>危機の瞬間,2人の放浪者が現れました.彼らは運命を変えることができるでしょうか?</RK_Incident_VagabondJoin.letterText>
+  <RK_Incident_VagabondJoin.letterLabel>放浪者が来た</RK_Incident_VagabondJoin.letterLabel>
+
+
+  <!-- Ratkin's joining event -->
+
+  <RK_Incident_PriestJoin.label>ラットキンの司祭の加入</RK_Incident_PriestJoin.label>
+  <RK_Incident_PriestJoin.letterText>ラットキンの司祭[PAWN_nameDef]があなたの入植地に加わりたがっています.\n\n[PAWN_pronoun]は信仰心が深く,癒やしの手を持つ者です.</RK_Incident_PriestJoin.letterText>
+  <RK_Incident_PriestJoin.letterLabel>ラットキンの司祭が来た</RK_Incident_PriestJoin.letterLabel>
+
+
+</LanguageData>

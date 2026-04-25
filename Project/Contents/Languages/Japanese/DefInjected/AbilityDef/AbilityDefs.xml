@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ratkin Prayer, only nuns, raising the mood -->
+
+  <RK_PrayerService.label>祈祷奉仕</RK_PrayerService.label>
+  <RK_PrayerService.description>人々を落ち着かせて、平和を祈る祈祷を行います。</RK_PrayerService.description>
+
+
+  <!-- Add capabilities based on visual-electronic fraud skills and other levels -->
+
+  <RK_Ability_MeleeMoraleBooster.label>戦意高揚</RK_Ability_MeleeMoraleBooster.label>
+  <RK_Ability_MeleeMoraleBooster.description>周囲の味方全員の士気を高めます.</RK_Ability_MeleeMoraleBooster.description>
+
+
+</LanguageData>

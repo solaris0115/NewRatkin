@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Fatigue after lance charge (reduced travel speed) -->
+
+  <RK_Hediff_LanceChargeExhaustion.label>ランスチャージ疲労</RK_Hediff_LanceChargeExhaustion.label>
+  <RK_Hediff_LanceChargeExhaustion.description>ランスによる突撃で疲弊しています.移動速度が低下しています.</RK_Hediff_LanceChargeExhaustion.description>
+
+
+  <!-- Focus after lance charge (increased close accuracy rate) -->
+
+  <RK_Hediff_LanceChargeFocus.label>ランスチャージ集中</RK_Hediff_LanceChargeFocus.label>
+  <RK_Hediff_LanceChargeFocus.description>ランスによる突撃で集中力が高まっています.近接攻撃の命中率が向上しています.</RK_Hediff_LanceChargeFocus.description>
+
+
+  <!-- Lance Charge Momentum (Damage +25% during initial attack, vanish during attack) -->
+
+  <RK_Hediff_LanceChargeMomentum.label>ランスチャージ突進</RK_Hediff_LanceChargeMomentum.label>
+  <RK_Hediff_LanceChargeMomentum.description>ランスによる突撃で勢いがついています.最初の近接攻撃のダメージが25%増加し,一撃した後この効果は消失します.</RK_Hediff_LanceChargeMomentum.description>
+
+
+</LanguageData>

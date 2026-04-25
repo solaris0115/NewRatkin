@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Direct Balusta -->
+
+  <RK_Building_Ballista.label>RK バリスタ</RK_Building_Ballista.label>
+  <RK_Building_Ballista.description>大きな矢を発射する機械です.ラットキンによって操作しやすいように設計されています.</RK_Building_Ballista.description>
+  <Blueprint_RK_Building_Ballista.label>バリスタ(設計)</Blueprint_RK_Building_Ballista.label>
+  <Blueprint_Install_RK_Building_Ballista.label>バリスタ(移動先)</Blueprint_Install_RK_Building_Ballista.label>
+  <Frame_RK_Building_Ballista.label>バリスタ(施工)</Frame_RK_Building_Ballista.label>
+  <Frame_RK_Building_Ballista.description>大きな矢を発射する機械です.ラットキンによって操作しやすいように設計されています.</Frame_RK_Building_Ballista.description>
+
+  <RK_Weapon_Ballista.label>RK バリスタ</RK_Weapon_Ballista.label>
+  <RK_Weapon_Ballista.description>バリスタの矢を発射します.精度が高く射程が長いのが特徴です.</RK_Weapon_Ballista.description>
+  <RK_Weapon_Ballista.verbs.Verb_Shoot.label>バリスタ</RK_Weapon_Ballista.verbs.Verb_Shoot.label>
+
+
+  <!-- Ballista Bolt (Normal) -->
+
+  <RK_Ammo_BallistaBoltNormal.label>RK バリスタの矢(通常)</RK_Ammo_BallistaBoltNormal.label>
+  <RK_Ammo_BallistaBoltNormal.description>これはバリスタの矢です.この大きな矢が命中して生き残ることは難しいでしょう.</RK_Ammo_BallistaBoltNormal.description>
+
+  <RK_Projectile_BallistaBoltNormal.label>バリスタの矢(通常)</RK_Projectile_BallistaBoltNormal.label>
+
+
+  <!-- Ballista Bolt (High penetration) -->
+
+  <RK_Ammo_BallistaBoltAP.label>RK バリスタの矢(貫通)</RK_Ammo_BallistaBoltAP.label>
+  <RK_Ammo_BallistaBoltAP.description>これは高い貫通力を持つバリスタの矢です.射線上の複数の目標を貫通することが可能です.</RK_Ammo_BallistaBoltAP.description>
+
+  <RK_Projectile_BallistaBoltAP.label>バリスタの矢(貫通)</RK_Projectile_BallistaBoltAP.label>
+
+
+  <!-- Squeegee -->
+
+  <RK_Building_Cannon.label>RK 大砲</RK_Building_Cannon.label>
+  <RK_Building_Cannon.description>丸く削られた石の塊を長距離まで発射できる大砲です.敵を遠くから制圧するために開発されましたが,臼砲の様に曲射して丘の向こうを射撃することはできません.ニックネームは「チューチューポイ」です.</RK_Building_Cannon.description>
+  <Blueprint_RK_Building_Cannon.label>RK 大砲 (設計)</Blueprint_RK_Building_Cannon.label>
+  <Blueprint_Install_RK_Building_Cannon.label>RK 大砲 (移動先)</Blueprint_Install_RK_Building_Cannon.label>
+  <Frame_RK_Building_Cannon.label>RK 大砲 (施工)</Frame_RK_Building_Cannon.label>
+  <Frame_RK_Building_Cannon.description>丸く削られた石の塊を長距離まで発射できる大砲です.敵を遠くから制圧するために開発されましたが,臼砲の様に曲射して丘の向こうを射撃することはできません.ニックネームは「チューチューポイ」です.</Frame_RK_Building_Cannon.description>
+
+  <RK_Building_CannonTurret.label>RK 大砲</RK_Building_CannonTurret.label>
+  <RK_Building_CannonTurret.description>丸く削られた石の塊を長距離まで発射できる大砲です.敵を遠くから制圧するために開発されましたが,臼砲の様に曲射して丘の向こうを射撃することはできません.ニックネームは「チューチューポイ」です.</RK_Building_CannonTurret.description>
+  <RK_Building_CannonTurret.verbs.Verb_Shoot.label>RK 大砲</RK_Building_CannonTurret.verbs.Verb_Shoot.label>
+
+
+  <!-- Big Mouse -->
+
+  <RK_Ammo_CannonBall.label>RK 大砲の砲弾</RK_Ammo_CannonBall.label>
+  <RK_Ammo_CannonBall.description>磨かれた石の表面をスチールで補強した砲弾です.</RK_Ammo_CannonBall.description>
+
+  <RK_Projectile_CannonBall.label>RK 大砲の砲弾</RK_Projectile_CannonBall.label>
+
+
+</LanguageData>

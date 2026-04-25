@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RK_PawnKind_Nomad.label>ラットキン遊牧民</RK_PawnKind_Nomad.label>
+  <RK_PawnKind_Nomad.labelPlural>ラットキン遊牧民</RK_PawnKind_Nomad.labelPlural>
+
+  <RK_PawnKind_Wanderer.label>ラットキン放浪者</RK_PawnKind_Wanderer.label>
+  <RK_PawnKind_Wanderer.labelPlural>ラットキン放浪者</RK_PawnKind_Wanderer.labelPlural>
+
+
+  <!-- Caravan Leader: Interaction Target, Deal, and Client Key Person -->
+
+  <RK_PawnKind_CaravanLeader.label>ラットキンのキャラバン隊長</RK_PawnKind_CaravanLeader.label>
+  <RK_PawnKind_CaravanLeader.labelPlural>ラットキンのキャラバン隊長</RK_PawnKind_CaravanLeader.labelPlural>
+
+
+  <!-- Caravan Guard: Light armoured close proximity -->
+
+  <RK_PawnKind_CaravanGuard.label>ラットキンのキャラバン護衛</RK_PawnKind_CaravanGuard.label>
+  <RK_PawnKind_CaravanGuard.labelPlural>ラットキンのキャラバン護衛</RK_PawnKind_CaravanGuard.labelPlural>
+
+
+</LanguageData>

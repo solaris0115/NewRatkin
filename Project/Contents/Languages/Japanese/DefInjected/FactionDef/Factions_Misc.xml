@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Rakinia.label>ラットキン王国</Rakinia.label>
+  <Rakinia.description>ラットキン王国です.人間の目につかないよう隠れ住んでおり,農耕生活を中心に生活している争いを好まない種です.</Rakinia.description>
+  <Rakinia.pawnsPlural>ラットキン臣民</Rakinia.pawnsPlural>
+  <Rakinia.leaderTitle>国王</Rakinia.leaderTitle>
+  <Rakinia.pawnSingular>ラットキン</Rakinia.pawnSingular>
+  <Rakinia.messageDefendersAttacking>{1}の{0}があなたの{2}を攻撃しています.</Rakinia.messageDefendersAttacking>
+
+  <RK_Faction_Pilgrims.label>巡礼者</RK_Faction_Pilgrims.label>
+  <RK_Faction_Pilgrims.description>古代の遺物を崇拝するために集まった巡礼者の集団です.</RK_Faction_Pilgrims.description>
+  <RK_Faction_Pilgrims.pawnsPlural>巡礼者</RK_Faction_Pilgrims.pawnsPlural>
+  <RK_Faction_Pilgrims.leaderTitle>リーダー</RK_Faction_Pilgrims.leaderTitle>
+  <RK_Faction_Pilgrims.pawnSingular>巡礼者</RK_Faction_Pilgrims.pawnSingular>
+  <RK_Faction_Pilgrims.messageDefendersAttacking>{1}の{0}があなたの{2}を攻撃しています.</RK_Faction_Pilgrims.messageDefendersAttacking>
+
+
+  <!-- Merchant-only Faction. hidden=true → HasGoodwill=false → no rise/fall in friendliness. actionHostileOnHarmByPlayer=true→adversarial transition upon attack -->
+
+  <RK_Faction_Caravan.label>ラットキンキャラバン</RK_Faction_Caravan.label>
+  <RK_Faction_Caravan.description>ラットキンのキャラバン隊です.津々浦々を流浪し取引をしたり,傭兵の斡旋もします.</RK_Faction_Caravan.description>
+  <RK_Faction_Caravan.pawnsPlural>ラットキン商隊員</RK_Faction_Caravan.pawnsPlural>
+  <RK_Faction_Caravan.leaderTitle>キャラバン隊長</RK_Faction_Caravan.leaderTitle>
+  <RK_Faction_Caravan.pawnSingular>ラットキン商隊員</RK_Faction_Caravan.pawnSingular>
+  <RK_Faction_Caravan.messageDefendersAttacking>{1}の{0}があなたの{2}を攻撃しています.</RK_Faction_Caravan.messageDefendersAttacking>
+
+
+</LanguageData>

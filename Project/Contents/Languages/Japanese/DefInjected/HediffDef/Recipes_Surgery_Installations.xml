@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RK_Hediff_FakeEar.label>ニセ耳</RK_Hediff_FakeEar.label>
+  <RK_Hediff_FakeEar.description>取り付けられた偽の耳です.</RK_Hediff_FakeEar.description>
+  <RK_Hediff_FakeEar.labelNoun>ニセの耳</RK_Hediff_FakeEar.labelNoun>
+
+  <RK_Hediff_FakeTail.label>ニセ尻尾</RK_Hediff_FakeTail.label>
+  <RK_Hediff_FakeTail.description>取り付けられた偽の尻尾です.</RK_Hediff_FakeTail.description>
+  <RK_Hediff_FakeTail.labelNoun>ニセ尻尾</RK_Hediff_FakeTail.labelNoun>
+
+  <RK_Hediff_BionicTail.label>強化尻尾</RK_Hediff_BionicTail.label>
+  <RK_Hediff_BionicTail.description>移植された強化義肢の尻尾です.小さなAIが内蔵されて,装着者のバランスを取ります.</RK_Hediff_BionicTail.description>
+  <RK_Hediff_BionicTail.labelNoun>強化尻尾</RK_Hediff_BionicTail.labelNoun>
+
+
+</LanguageData>

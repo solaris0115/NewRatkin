@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RK_Recipe_InstallFakeEar.label>ニセ耳を付ける</RK_Recipe_InstallFakeEar.label>
+  <RK_Recipe_InstallFakeEar.description>ニセ耳を付ける.</RK_Recipe_InstallFakeEar.description>
+  <RK_Recipe_InstallFakeEar.jobString>ニセ耳を装着中</RK_Recipe_InstallFakeEar.jobString>
+
+  <RK_Recipe_InstallFakeTail.label>ニセ尻尾を付ける</RK_Recipe_InstallFakeTail.label>
+  <RK_Recipe_InstallFakeTail.description>ニセ尻尾を付ける.</RK_Recipe_InstallFakeTail.description>
+  <RK_Recipe_InstallFakeTail.jobString>ニセ尻尾を装着中</RK_Recipe_InstallFakeTail.jobString>
+
+  <RK_Recipe_InstallBionicTail.label>強化尻尾 移植</RK_Recipe_InstallBionicTail.label>
+  <RK_Recipe_InstallBionicTail.description>強化尻尾を移植します.</RK_Recipe_InstallBionicTail.description>
+  <RK_Recipe_InstallBionicTail.jobString>強化尻尾を移植中</RK_Recipe_InstallBionicTail.jobString>
+
+
+</LanguageData>

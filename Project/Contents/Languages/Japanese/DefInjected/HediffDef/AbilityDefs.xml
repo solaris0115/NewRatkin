@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Morale Booster Caster Hediff -->
+
+  <RK_Hediff_MoraleBoosterCaster.label>士気高揚使用中</RK_Hediff_MoraleBoosterCaster.label>
+  <RK_Hediff_MoraleBoosterCaster.description>この人物は,付近にいる全員の士気を高める特殊能力を使用しています.効果範囲内の全員が戦闘ボーナスを得ます.</RK_Hediff_MoraleBoosterCaster.description>
+
+
+  <!-- Morale Boost Buff: Electronics Social 0~7 -->
+
+  <RK_Hediff_MoraleBoosterBuffWeak.label>士気高揚中 (小)</RK_Hediff_MoraleBoosterBuffWeak.label>
+  <RK_Hediff_MoraleBoosterBuffWeak.description>社交スキルの低い人物が,付近で戦意高揚の能力を使用しています.この人物の戦闘能力がわずかに向上しています.</RK_Hediff_MoraleBoosterBuffWeak.description>
+
+
+  <!-- Morale Boost Buff: Electronics Social 8~14 -->
+
+  <RK_Hediff_MoraleBoosterBuffDefault.label>士気高揚中</RK_Hediff_MoraleBoosterBuffDefault.label>
+  <RK_Hediff_MoraleBoosterBuffDefault.description>誰かが付近で戦意高揚の能力を使用中で,この人物の戦闘能力が向上しています.</RK_Hediff_MoraleBoosterBuffDefault.description>
+
+
+  <!-- Morale Boost Buff: Electronic Social 15+ -->
+
+  <RK_Hediff_MoraleBoosterBuffStrong.label>士気高揚中 (大)</RK_Hediff_MoraleBoosterBuffStrong.label>
+  <RK_Hediff_MoraleBoosterBuffStrong.description>社交スキルの高い人物が,付近で戦意高揚の能力を使用中で,この人物の戦闘能力が大幅に向上しています.</RK_Hediff_MoraleBoosterBuffStrong.description>
+
+
+</LanguageData>

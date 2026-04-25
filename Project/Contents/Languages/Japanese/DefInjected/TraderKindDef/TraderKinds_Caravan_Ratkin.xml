@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ratkin Bulk Goods -->
+
+  <RK_TraderKind_KingdomBulkGoods.label>貿易商</RK_TraderKind_KingdomBulkGoods.label>
+
+
+  <!-- Ratkin Dress Merchant -->
+
+  <RK_TraderKind_KingdomDressMerchant.label>ドレス商人</RK_TraderKind_KingdomDressMerchant.label>
+
+
+  <!-- Ratkin CombatSupplier -->
+
+  <RK_TraderKind_KingdomCombatSupplier.label>武器商</RK_TraderKind_KingdomCombatSupplier.label>
+
+
+  <!-- Ratkin Exotic Trader -->
+
+  <RK_TraderKind_KingdomExotic.label>輸入品商</RK_TraderKind_KingdomExotic.label>
+
+
+  <!-- Ratkin food and beverage merchant -->
+
+  <RK_TraderKind_KingdomFoodMerchant.label>食品商</RK_TraderKind_KingdomFoodMerchant.label>
+
+
+  <!-- Ratkin fabric merchant -->
+
+  <RK_TraderKind_KingdomTextileMerchant.label>繊維商</RK_TraderKind_KingdomTextileMerchant.label>
+
+
+</LanguageData>
