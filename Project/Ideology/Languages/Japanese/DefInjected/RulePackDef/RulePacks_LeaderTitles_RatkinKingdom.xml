@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Leader title generator: Ratkin Kingdom culture -->
+  <!-- Feudalism titles (King, Duke, Count, Baron, Knight, etc.) -->
+
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings>
+    <!-- Feudalism's title structure -->
+    <li>memeLeaderNoun(priority=1)->[cultureLeaderNoun]</li>
+
+    <li>cultureLeaderTitle->[cultureLeaderAdjective][cultureLeaderNoun]</li>
+    <li>cultureLeaderTitle(p=3)->[cultureLeaderNoun]</li>
+
+    <!-- Adjective -->
+    <li>cultureLeaderAdjective->偉大な</li>
+    <li>cultureLeaderAdjective->大</li>
+    <li>cultureLeaderAdjective->高位</li>
+    <li>cultureLeaderAdjective->最高位の</li>
+    <li>cultureLeaderAdjective->大</li>
+    <li>cultureLeaderAdjective->上位の</li>
+    <li>cultureLeaderAdjective->最上位の</li>
+
+    <!-- Feudal Title -->
+    <li>cultureLeaderNoun(p=8)->王</li>
+    <li>cultureLeaderNoun(p=6)->女王</li>
+    <li>cultureLeaderNoun(p=5)->公爵</li>
+    <li>cultureLeaderNoun(p=5)->女公爵</li>
+    <li>cultureLeaderNoun(p=4)->伯爵</li>
+    <li>cultureLeaderNoun(p=4)->女伯爵</li>
+    <li>cultureLeaderNoun(p=3)->男爵</li>
+    <li>cultureLeaderNoun(p=3)->女男爵</li>
+    <li>cultureLeaderNoun(p=2)->騎士</li>
+    <li>cultureLeaderNoun(p=2)->ロード</li>
+    <li>cultureLeaderNoun(p=2)->レディ</li>
+    <li>cultureLeaderNoun(p=1)->伯爵</li>
+    <li>cultureLeaderNoun(p=1)->侯爵</li>
+  </LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings>
+
+
+</LanguageData>

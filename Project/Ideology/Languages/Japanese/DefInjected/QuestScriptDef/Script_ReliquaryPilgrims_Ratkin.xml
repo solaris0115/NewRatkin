@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ratkin Exclusive Pilgrim Quest -->
+
+  <ReliquaryPilgrims_Ratkin.questDescriptionAndNameRules.rulesStrings>
+    <!-- Labels -->
+    <li>pilgrimsLabel->[pawns0_nameDef]</li>
+    <li>pilgrimsLabelPlural->[faction_pawnsPlural]</li>
+    <li>pilgrimsLabelSingularOrPlural(pilgrimCount==1)->[pilgrimsLabel]</li>
+    <li>pilgrimsLabelSingularOrPlural(pilgrimCount>=2)->[pilgrimsLabelPlural]</li>
+
+    <!-- Pieces -->
+    <li>hasHave(pilgrimCount==1)-></li>
+    <li>hasHave(pilgrimCount>=2)-></li>
+  </ReliquaryPilgrims_Ratkin.questDescriptionAndNameRules.rulesStrings>
+
+  <ReliquaryPilgrims_Ratkin.questNameRules.rulesStrings>
+    <!-- Quest name -->
+    <li>questName(pilgrimCount==1)->[pilgrimsLabelSingularOrPlural]の[visitAdj][visit]</li>
+    <li>questName(pilgrimCount>=2)->[pilgrimsLabelSingularOrPlural] [visitAdj][visit]</li>
+
+    <li>visitAdj(p=6)-></li>
+    <li>visitAdj->聖なる</li>
+    <li>visitAdj->神聖な</li>
+    <li>visitAdj->崇高な</li>
+    <li>visitAdj->天啓の</li>
+    <li>visitAdj->神聖化された</li>
+    <li>visitAdj->厳粛な</li>
+    <li>visitAdj->聖礼典の</li>
+    <li>visitAdj->聖別された</li>
+
+    <li>visit->訪問</li>
+    <li>visit->巡礼</li>
+    <li>visit->伝道</li>
+    <li>visit->遠征</li>
+    <li>visit->小旅行</li>
+    <li>visit->周遊</li>
+    <li>visit->崇拝</li>
+  </ReliquaryPilgrims_Ratkin.questNameRules.rulesStrings>
+
+  <ReliquaryPilgrims_Ratkin.questDescriptionRules.rulesStrings>
+    <!-- Quest description -->
+    <li>questDescription->[pilgrimsLabelSingularOrPlural][hasHave][relic_name]を礼拝するために到着しました.\n\n[pronounSingularOrPlural]が太古の遺物を[visitSingularOrPlural]している間,安全で尊重されていることを保証すしたのなら,[pronounSingularOrPlural][isAre]あなたに報酬を与えるかもしれません.</li>
+    <li>questDescription(pilgrimCount==1,childCount==1,priority=1)->子供の[pilgrimsLabelSingularOrPlural]が[relic_name]を崇敬するために到着しました[hasHave].\n\n[pronounSingularOrPlural]が太古の遺物を[visitSingularOrPlural]している間,安全で尊重されていることを保証すしたのなら,[pronounSingularOrPlural][isAre]あなたに報酬を与えるかもしれません.</li>
+    <li>questDescription(pilgrimCount>=2,childCount==1,priority=1)->子供を含む[pilgrimsLabelSingularOrPlural]の一行が[relic_name]を崇拝するために到着しました.\n\n[pronounSingularOrPlural]が太古の遺物を[visitSingularOrPlural]している間,安全で尊重されていることを保証すしたのなら,[pronounSingularOrPlural][isAre]あなたに報酬を与えるかもしれません.</li>
+    <li>questDescription(pilgrimCount>=2,childCount>=2,allChildren==false,priority=1)->子供を含む[pilgrimsLabelSingularOrPlural]の一団が[relic_name]を礼拝するために到着しました.\n\n[pronounSingularOrPlural]が太古の遺物を[visitSingularOrPlural]している間,安全で尊重されていることを保証すしたのなら,[pronounSingularOrPlural][isAre]あなたに報酬を与えるかもしれません.</li>
+    <li>questDescription(pilgrimCount>=2,allChildren==true,priority=1)->子供[pilgrimsLabelSingularOrPlural]の一団が[relic_name]を礼拝するために到着しました.\n\n[pronounSingularOrPlural]が太古の遺物を[visitSingularOrPlural]している間,安全で尊重されていることを保証すしたのなら,[pronounSingularOrPlural][isAre]あなたに報酬を与えるかもしれません.</li>
+
+    <!-- Pieces -->
+    <li>isAre(pilgrimCount==1)->は</li>
+    <li>isAre(pilgrimCount>=2)->たちは</li>
+
+    <li>pronounSingularOrPlural(pilgrimCount==1)->[pawns0_pronoun]</li>
+    <li>pronounSingularOrPlural(pilgrimCount>=2)->彼ら</li>
+
+    <li>visitSingularOrPlural(pilgrimCount==1)->訪問</li>
+    <li>visitSingularOrPlural(pilgrimCount>=2)->巡礼</li>
+  </ReliquaryPilgrims_Ratkin.questDescriptionRules.rulesStrings>
+
+  <ReliquaryPilgrims_Ratkin.questContentRules.rulesStrings>
+    <!-- Letters -->
+    <li>pilgrimsArrivedLetterLabel->[factionAdj][pilgrimSingularOrPlural]が到着しました</li>
+
+    <li>pilgrimsArrivedLetterText->[questDescription]</li>
+
+    <li>delayedRewardLetterText->[pawns0_nameDef]は,[pawns0_objective][andFollowers][venerateDate]に[relic_name]を崇拝することを許可してもらった事を感謝しています.その対価として,[pawns0_nameDef]は輸送ポッドで以下のアイテムをお送りします（合計価値[rewardsMarketValue_money])：\n\n[rewards].</li>
+
+    <!-- Messages -->
+    <li>pilgrimsLeavingMessage->[pilgrimsLabelSingularOrPlural][hasHave]は[relic_name]の崇敬を終えて,[areIs]今から出発します.</li>
+    <li>pilgrimsLeftMessage->[pilgrimsLabelSingularOrPlural][hasHave]はマップから立ち去った.</li>
+
+    <!-- Pieces -->
+    <li>areIs(pilgrimCount==1)-></li>
+    <li>areIs(pilgrimCount>=2)-></li>
+
+    <li>andFollowers(pilgrimCount==1)-></li>
+    <li>andFollowers(pilgrimCount==2)->と他の[faction_pawnSingular]が</li>
+    <li>andFollowers(pilgrimCount>=3)->と他の[faction_pawnsPlural]が</li>
+
+    <li>pilgrimSingularOrPlural(pilgrimCount==1)->巡礼者</li>
+    <li>pilgrimSingularOrPlural(pilgrimCount>=2)->巡礼者たち</li>
+
+    <li>factionAdj(pilgrimFaction==true)-></li>
+    <li>factionAdj(pilgrimFaction==false)->[faction_pawnSingular]</li>
+  </ReliquaryPilgrims_Ratkin.questContentRules.rulesStrings>
+
+
+</LanguageData>
