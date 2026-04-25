@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RK_AbilityMustTargetHostile>敵対的な対象のみ指定できます。</RK_AbilityMustTargetHostile>
+  <RK_ShieldFaceDirection>方向指定</RK_ShieldFaceDirection>
+  <RK_ShieldFaceDirectionDesc>マップをクリックしてその方向を向きます.向きを維持したまま待機します.ポーンを対象にすると継続的に追跡します.</RK_ShieldFaceDirectionDesc>
+  <RK_ShieldFaceDirectionReport>その方向を向いています.</RK_ShieldFaceDirectionReport>
+  <RK_ShieldFaceDirection_NotDrafted>徴兵されている必要があります.</RK_ShieldFaceDirection_NotDrafted>
+  <RK_ShieldFaceDirection_InvalidState>死亡または転倒中は使用できません.</RK_ShieldFaceDirection_InvalidState>
+  <RK_ShieldFaceDirection_Busy>作業中は使用できません.</RK_ShieldFaceDirection_Busy>
+  <RK_ShieldFaceDirection_ShieldInactive>シールドが作動していません.</RK_ShieldFaceDirection_ShieldInactive>
+  <RK_ShieldFaceDirection_Cooldown>クールダウン:{0}</RK_ShieldFaceDirection_Cooldown>
+  <AbilityPrayerServiceCooldown>次回の祈祷会の準備:</AbilityPrayerServiceCooldown>
+  <AbilityPrayerServiceDisabledAlreadyGivingPrayerService>すでに祈祷会を行っています。</AbilityPrayerServiceDisabledAlreadyGivingPrayerService>
+  <AbilityPrayerServiceDisabledDrafted>徴兵時には行えません。</AbilityPrayerServiceDisabledDrafted>
+  <AbilityPrayerServiceDisabledNoPulpitBuilding>入植地に説教壇がありません。</AbilityPrayerServiceDisabledNoPulpitBuilding>
+  <AbilityPrayerServiceDisabledCannotReachPulpit>説教壇の操作マスまで経路がありません。</AbilityPrayerServiceDisabledCannotReachPulpit>
+  <AbilityPrayerServiceDisabledCannotReservePulpit>説教壇を予約できません（使用中かブロックされています）。</AbilityPrayerServiceDisabledCannotReservePulpit>
+  <AbilityPrayerServiceDisabledInteractionCellOutOfBounds>説教壇の操作マスがマップ外です。</AbilityPrayerServiceDisabledInteractionCellOutOfBounds>
+  <AbilityPrayerServiceDisabledInteractionCellForbidden>祈祷の立ち位置が立入禁止区域にあります。</AbilityPrayerServiceDisabledInteractionCellForbidden>
+  <AbilityPrayerServiceDisabledInteractionCellNotStandable>祈祷の立ち位置に立てません。</AbilityPrayerServiceDisabledInteractionCellNotStandable>
+  <AbilityPrayerServiceDisabledPulpitForbidden>説教壇が立入禁止になっています。</AbilityPrayerServiceDisabledPulpitForbidden>
+  <AbilityPrayerServiceDisabledPulpitBurning>説教壇が炎上しており祈祷会を開けません。</AbilityPrayerServiceDisabledPulpitBurning>
+  <AbilityPrayerServiceDisabledPulpitDangerous>説教壇周辺が危険すぎて祈祷会を開けません。</AbilityPrayerServiceDisabledPulpitDangerous>
+  <AbilityPrayerServiceDisabledRoomTooSmall>祈祷の空間が狭すぎます（部屋は25マスより大きい必要があります）。</AbilityPrayerServiceDisabledRoomTooSmall>
+
+  <!-- Wandering Trader -->
+  <RK_WanderingTrader_Info>情報</RK_WanderingTrader_Info>
+  <RK_WanderingTrader_ViewSettlers>加入を希望する入植者を表示</RK_WanderingTrader_ViewSettlers>
+  <RK_WanderingTrader_MercenarySearch>傭兵を探す</RK_WanderingTrader_MercenarySearch>
+
+  <!-- Wandering Caravan (Rework) -->
+  <RK_WanderingCaravan_TalkToLeader>リーダーと会話</RK_WanderingCaravan_TalkToLeader>
+  <RK_WanderingCaravan_DismissCaravan>キャラバンを退去</RK_WanderingCaravan_DismissCaravan>
+  <RK_WanderingCaravan_TradeGoods>商品を取引</RK_WanderingCaravan_TradeGoods>
+  <RK_WanderingCaravan_Commission>アイテムを依頼</RK_WanderingCaravan_Commission>
+  <RK_WanderingCaravan_SettleProposal>加入を提案</RK_WanderingCaravan_SettleProposal>
+  <RK_WanderingCaravan_EndDialog>会話を終了</RK_WanderingCaravan_EndDialog>
+  <RK_WanderingCaravan_LeaderGreeting>{0}はあなたを温かく迎えました.</RK_WanderingCaravan_LeaderGreeting>
+  <RK_WanderingCaravan_LeaderTitle>キャラバンリーダー</RK_WanderingCaravan_LeaderTitle>
+  <RK_WanderingCaravan_ArrivalLetterLabel>キャラバンが到着</RK_WanderingCaravan_ArrivalLetterLabel>
+  <RK_WanderingCaravan_ArrivalLetter>ラットキンのキャラバンが到着しました.リーダーと話して取引を行うか,入植者を勧誘してください.</RK_WanderingCaravan_ArrivalLetter>
+  <RK_WanderingCaravan_AcceptOne>提案する</RK_WanderingCaravan_AcceptOne>
+  <RK_WanderingCaravan_AcceptAll>すべてを提案する</RK_WanderingCaravan_AcceptAll>
+  <RK_WanderingCaravan_OneJoined>{0}がコロニーに加入しました.</RK_WanderingCaravan_OneJoined>
+  <RK_WanderingCaravan_AllJoined>{0}たちがコロニーに加入しました.</RK_WanderingCaravan_AllJoined>
+  <RK_WanderingCaravan_CommissionPlaceholder>依頼機能は開発中です.</RK_WanderingCaravan_CommissionPlaceholder>
+  <RK_WanderingCaravan_AlreadySpawned>キャラバンはすでにマップ上に存在します.</RK_WanderingCaravan_AlreadySpawned>
+  <RK_WanderingCaravan_AttackedPenalty>攻撃を受けたため,キャラバンは長期間このコロニーを避けるようになります.</RK_WanderingCaravan_AttackedPenalty>
+
+  <!-- BFR toggle -->
+  <RK_BFR_Toggle_RequiresSeparationMechanics>分離力学の研究が必要です。</RK_BFR_Toggle_RequiresSeparationMechanics>
+  <RK_BFR_Ammo_LabelAP>徹甲弾 (AP)</RK_BFR_Ammo_LabelAP>
+  <RK_BFR_Ammo_LabelHE>榴弾 (HE)</RK_BFR_Ammo_LabelHE>
+  <RK_BFR_Ammo_DescToHE>榴弾 (HE) に切り替えます。目標に近づくと広い扇状で炸裂し、密集した敵に有効です。</RK_BFR_Ammo_DescToHE>
+  <RK_BFR_Ammo_DescToAP>徹甲弾 (AP) に切り替えます。一直線上の複数目標を貫通し、高い刺突ダメージを与えます。</RK_BFR_Ammo_DescToAP>
+
+  <!-- Prototype pulse rifle fire mode gizmo -->
+  <RK_PulseRifleFireMode_LabelBurst>バースト</RK_PulseRifleFireMode_LabelBurst>
+  <RK_PulseRifleFireMode_LabelSingle>単発</RK_PulseRifleFireMode_LabelSingle>
+  <RK_PulseRifleFireMode_DescToSingle>単発射撃に切り替えます。重いエネルギー弾を2発連射し、射程が長く中・遠距離の命中に有利です。</RK_PulseRifleFireMode_DescToSingle>
+  <RK_PulseRifleFireMode_DescToBurst>バースト射撃に切り替えます。軽い弾を4発素早く撃ち、射程は短いが近・中距離の戦い向きです。</RK_PulseRifleFireMode_DescToBurst>
+
+</LanguageData>

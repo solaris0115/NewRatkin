@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Prayer Service -->
+  <AbilityPrayerServiceCooldown>次回の祈祷会の準備:</AbilityPrayerServiceCooldown>
+  <MessagePrayerServiceStart>{PAWN_labelShort}が、祈祷会を主催します。</MessagePrayerServiceStart>
+  <MessagePrayerServiceAborted>祈祷会は何らかの理由で中止になりました。</MessagePrayerServiceAborted>
+  <MessagePrayerServiceEnded>祈祷会は終わりました。</MessagePrayerServiceEnded>
+
+  <!-- Shield-Weapon Compatibility -->
+  <RK_ApparelWeaponIncompatible_Dropped>{0}を装備して,{1}を落としました.理由:{2}</RK_ApparelWeaponIncompatible_Dropped>
+  <RK_ApparelWeaponIncompatible_Dropped_Default>{0}を装備して,{1}を落としました.</RK_ApparelWeaponIncompatible_Dropped_Default>
+  <RK_ShieldWeaponIncompatible>シールドと同時に装備できません</RK_ShieldWeaponIncompatible>
+
+  <!-- FloatMenu Equip Block Messages -->
+  <RK_ShieldWeaponIncompatible_Equip>{0}を装備できません：装備中の武器{1}と互換性がありません.&#160;{2}</RK_ShieldWeaponIncompatible_Equip>
+  <RK_ShieldWeaponIncompatible_Equip_Default>{0}を装備できません：装備中の武器{1}と互換性がありません.</RK_ShieldWeaponIncompatible_Equip_Default>
+  <RK_WeaponShieldIncompatible_Equip>{0}を装備できません：装備中のシールド{1}と互換性がありません.&#160;{2}</RK_WeaponShieldIncompatible_Equip>
+  <RK_WeaponShieldIncompatible_Equip_Default>{0}を装備できません：装備中のシールド{1}と互換性がありません.</RK_WeaponShieldIncompatible_Equip_Default>
+
+</LanguageData>
