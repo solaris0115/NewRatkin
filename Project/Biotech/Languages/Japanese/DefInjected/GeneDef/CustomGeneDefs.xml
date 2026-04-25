@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Light body type - Thin body type fixed -->
+
+  <RK_Gene_SmallBody.label>小柄な体格</RK_Gene_SmallBody.label>
+  <RK_Gene_SmallBody.labelShortAdj>小柄な体格</RK_Gene_SmallBody.labelShortAdj>
+  <RK_Gene_SmallBody.description>回避能力に優れますが,攻撃力が弱く,持ち運べる量も少なくなる小柄な体格です.</RK_Gene_SmallBody.description>
+
+
+  <!-- TODO: It's quick, but it's not there, so it's added. And it's an intermediate avoidance rate, so a light body and addition -->
+
+  <RK_Gene_Nimble.label>素早い</RK_Gene_Nimble.label>
+  <RK_Gene_Nimble.labelShortAdj>素早い</RK_Gene_Nimble.labelShortAdj>
+  <RK_Gene_Nimble.description>この遺伝子の保有者は感覚受容体の感度が高く,周囲の脅威をより素早く察知して近接攻撃を効果的に回避できます.</RK_Gene_Nimble.description>
+
+
+  <!-- Characteristics of nearsightedness -->
+
+  <RK_Gene_PoorEyesight.label>近視</RK_Gene_PoorEyesight.label>
+  <RK_Gene_PoorEyesight.labelShortAdj>近視</RK_Gene_PoorEyesight.labelShortAdj>
+  <RK_Gene_PoorEyesight.description>この遺伝子の保有者は精密な照準を合わせることが難しく,射撃の照準時間と研究速度が低下します.</RK_Gene_PoorEyesight.description>
+
+
+  <!-- Weakness characteristics -->
+
+  <RK_Gene_FragilePain.label>虚弱な痛覚耐性</RK_Gene_FragilePain.label>
+  <RK_Gene_FragilePain.labelShortAdj>虚弱な痛覚耐性</RK_Gene_FragilePain.labelShortAdj>
+  <RK_Gene_FragilePain.description>この遺伝子の保有者は痛みの限界値が低く,負傷した際に倒れやすくなります.</RK_Gene_FragilePain.description>
+
+
+  <!-- Ability to work -->
+
+  <RK_Gene_GoodGardening.label>栽培が得意</RK_Gene_GoodGardening.label>
+  <RK_Gene_GoodGardening.labelShortAdj>栽培が得意</RK_Gene_GoodGardening.labelShortAdj>
+  <RK_Gene_GoodGardening.description>この遺伝子の保有者は植物に関する作業をより効率的に行えます.</RK_Gene_GoodGardening.description>
+
+
+  <!-- Skin Color - Ratkin Exclusive (Random among Pure White, Bright Gray, and Pale Yellow) -->
+
+  <RK_Skin_PureWhite.label>純白の肌</RK_Skin_PureWhite.label>
+  <RK_Skin_PureWhite.labelShortAdj>純白の肌</RK_Skin_PureWhite.labelShortAdj>
+  <RK_Skin_PureWhite.description>この遺伝子の保有者はラットキン特有の純白の肌を持っています.</RK_Skin_PureWhite.description>
+
+
+  <!-- Big ears -->
+
+  <RK_Gene_LargeEars.label>大きな丸耳</RK_Gene_LargeEars.label>
+  <RK_Gene_LargeEars.labelShortAdj>大きな丸耳</RK_Gene_LargeEars.labelShortAdj>
+  <RK_Gene_LargeEars.description>この遺伝子の保有者は特徴的な大きく丸い耳を持っており,聴覚が強化され,一目でラットキンだと分かる外見になります.</RK_Gene_LargeEars.description>
+  <RK_Gene_LargeEars.symbolPack.prefixSymbols.0.symbol>ネズミ</RK_Gene_LargeEars.symbolPack.prefixSymbols.0.symbol>
+  <RK_Gene_LargeEars.symbolPack.prefixSymbols.1.symbol>鳴き声</RK_Gene_LargeEars.symbolPack.prefixSymbols.1.symbol>
+  <RK_Gene_LargeEars.symbolPack.prefixSymbols.2.symbol>毛</RK_Gene_LargeEars.symbolPack.prefixSymbols.2.symbol>
+  <RK_Gene_LargeEars.symbolPack.suffixSymbols.0.symbol>ネズミ</RK_Gene_LargeEars.symbolPack.suffixSymbols.0.symbol>
+  <RK_Gene_LargeEars.symbolPack.suffixSymbols.1.symbol>耳</RK_Gene_LargeEars.symbolPack.suffixSymbols.1.symbol>
+  <RK_Gene_LargeEars.symbolPack.suffixSymbols.2.symbol>鳴き声</RK_Gene_LargeEars.symbolPack.suffixSymbols.2.symbol>
+
+
+  <!-- Thin tail - appearance only (movement speed bonus removed) -->
+
+  <RK_Gene_ThinTail.label>細い尻尾</RK_Gene_ThinTail.label>
+  <RK_Gene_ThinTail.labelShortAdj>細い尻尾</RK_Gene_ThinTail.labelShortAdj>
+  <RK_Gene_ThinTail.description>この遺伝子の保有者は長く細い無毛の尻尾を持っており,バランス感覚を助けるラットキン特有の解剖学的特徴となっています.</RK_Gene_ThinTail.description>
+  <RK_Gene_ThinTail.symbolPack.prefixSymbols.0.symbol>尻尾</RK_Gene_ThinTail.symbolPack.prefixSymbols.0.symbol>
+  <RK_Gene_ThinTail.symbolPack.prefixSymbols.1.symbol>ネズミ</RK_Gene_ThinTail.symbolPack.prefixSymbols.1.symbol>
+  <RK_Gene_ThinTail.symbolPack.suffixSymbols.0.symbol>尻尾</RK_Gene_ThinTail.symbolPack.suffixSymbols.0.symbol>
+  <RK_Gene_ThinTail.symbolPack.suffixSymbols.1.symbol>ネズミ</RK_Gene_ThinTail.symbolPack.suffixSymbols.1.symbol>
+
+  <!-- Cute face -->
+
+  <RK_Gene_CuteFace.label>可愛い顔</RK_Gene_CuteFace.label>
+  <RK_Gene_CuteFace.labelShortAdj>可愛い顔</RK_Gene_CuteFace.labelShortAdj>
+  <RK_Gene_CuteFace.description>この遺伝子の保有者は丸みを帯びた顔立ち,ボタンのような鼻,表情豊かな瞳という愛らしい顔の構造を持っており,ラットキン特有の親しみやすく魅力的な印象を与えます.</RK_Gene_CuteFace.description>
+  <RK_Gene_CuteFace.symbolPack.prefixSymbols.0.symbol>可愛い</RK_Gene_CuteFace.symbolPack.prefixSymbols.0.symbol>
+  <RK_Gene_CuteFace.symbolPack.prefixSymbols.1.symbol>美しい</RK_Gene_CuteFace.symbolPack.prefixSymbols.1.symbol>
+  <RK_Gene_CuteFace.symbolPack.prefixSymbols.2.symbol>魅力的</RK_Gene_CuteFace.symbolPack.prefixSymbols.2.symbol>
+  <RK_Gene_CuteFace.symbolPack.suffixSymbols.0.symbol>魅力的</RK_Gene_CuteFace.symbolPack.suffixSymbols.0.symbol>
+  <RK_Gene_CuteFace.symbolPack.suffixSymbols.1.symbol>可愛い</RK_Gene_CuteFace.symbolPack.suffixSymbols.1.symbol>
+
+
+</LanguageData>
