@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- spacesuit helmet -->
+
+  <RK_Apparel_VacsuitHelmet.label>RK 真空スーツヘルメット</RK_Apparel_VacsuitHelmet.label>
+  <RK_Apparel_VacsuitHelmet.description>使用者の酸素を効率的にリサイクルし,宇宙の真空で何時間も呼吸できるようにするヘルメットです.しかし,このプロセスは完全に効率的ではないため,使用者は定期的に加圧された環境に戻る必要がある.</RK_Apparel_VacsuitHelmet.description>
+
+
+  <!-- adult space suit -->
+
+  <RK_Apparel_Vacsuit.label>RK 真空スーツ</RK_Apparel_Vacsuit.label>
+  <RK_Apparel_Vacsuit.description>着用者を宇宙の真空から守る防護スーツです.このスーツは着用者の動きを制限し,移動速度を大幅に低下させます.</RK_Apparel_Vacsuit.description>
+
+
+  <!-- children's spacesuit -->
+
+  <RK_Apparel_VacsuitChildren.label>RK 子供用真空スーツ</RK_Apparel_VacsuitChildren.label>
+  <RK_Apparel_VacsuitChildren.description>子供向けに設計された防護スーツです.着用者を宇宙の真空から守ります.</RK_Apparel_VacsuitChildren.description>
+
+
+  <!-- space armor -->
+
+  <RK_Apparel_SpaceArmor.label>RK クルセイダーアーマー</RK_Apparel_SpaceArmor.label>
+  <RK_Apparel_SpaceArmor.description>機動性を犠牲にして,最大限の防御を実現するために設計された重パワーアーマーです.堅牢なアブレーティブ塗装を施した重層プラスチール繊維が,狙撃や強力な攻撃を除くあらゆるダメージを防ぎます.神経記憶補助装置が,スーツの重量によって着用者が身動きできなくなるのを防ぎますが,依然として扱いにくい代物です.\n\nこうした防具は,要塞化された陣地を正面攻撃で突破する以外に方法がない場合に,王国のクルセイダー部隊によって使用されます.</RK_Apparel_SpaceArmor.description>
+
+
+  <!-- space armor helmets -->
+
+  <RK_Apparel_SpaceArmorHelmet.label>RK クルセイダーヘルメット</RK_Apparel_SpaceArmorHelmet.label>
+  <RK_Apparel_SpaceArmorHelmet.description>堅牢なプラスチール素材の外殻と全周囲を視野に入れる間接視覚システムを備えたハイテクヘルメットです.強力な攻撃や打ち所の悪い射撃を除くあらゆるダメージを防ぎます.\n\nこうした防具は,要塞化された陣地を正面攻撃で突破する以外に方法がない場合に,王国のクルセイダー部隊によって使用されます.</RK_Apparel_SpaceArmorHelmet.description>
+
+
+</LanguageData>

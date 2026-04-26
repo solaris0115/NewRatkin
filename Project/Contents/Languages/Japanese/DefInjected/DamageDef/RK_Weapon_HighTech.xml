@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- New Damage Type -->
+
+  <RK_Damage_Torn.label>引き裂かれた</RK_Damage_Torn.label>
+  <RK_Damage_Torn.deathMessage>{0}は引き裂かれて死んだ.</RK_Damage_Torn.deathMessage>
+
+  <RK_Damage_BurnTorn.label>高熱裂傷</RK_Damage_BurnTorn.label>
+  <RK_Damage_BurnTorn.deathMessage>{0}は高熱で焼かれてバラバラになって死んだ.</RK_Damage_BurnTorn.deathMessage>
+
+
+</LanguageData>

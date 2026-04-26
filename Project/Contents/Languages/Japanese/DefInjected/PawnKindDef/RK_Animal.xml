@@ -2,8 +2,8 @@
 <LanguageData>
 
   <Ratkin_KingHamster.label>キングハムスター</Ratkin_KingHamster.label>
-  <Ratkin_KingHamster.labelPlural>キングハムスターたち</Ratkin_KingHamster.labelPlural>
-  <Ratkin_KingHamster.lifeStages.king_hamster_calf.label>仔キングハムスター</Ratkin_KingHamster.lifeStages.king_hamster_calf.label>
-  <Ratkin_KingHamster.lifeStages.king_hamster_calf.labelPlural>仔キングハムスターたち</Ratkin_KingHamster.lifeStages.king_hamster_calf.labelPlural>
+  <Ratkin_KingHamster.labelPlural>キングハムスター</Ratkin_KingHamster.labelPlural>
+  <Ratkin_KingHamster.lifeStages.Hamstrox_calf.label>仔キングハムスター</Ratkin_KingHamster.lifeStages.Hamstrox_calf.label>
+  <Ratkin_KingHamster.lifeStages.Hamstrox_calf.labelPlural>仔キングハムスター</Ratkin_KingHamster.lifeStages.Hamstrox_calf.labelPlural>
 
 </LanguageData>

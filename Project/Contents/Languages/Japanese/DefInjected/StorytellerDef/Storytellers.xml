@@ -1,7 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <RottyMilden.label>ロッティマイルダン</RottyMilden.label>
-  <RottyMilden.description>ロティマイルダンは小さないたずらを好きな田舎の少女です。\n\n彼女の細かいイタズラは退屈しないようにしてくれますが、時には大きな事故も起こします。ランダムベースの小さなイベントが頻繁に発生する代わりに、大きなイベントが少なくなります。</RottyMilden.description>
+  <!-- Ratkin Storyteller -->
+
+  <RK_Storyteller_RottyMilden.label>ロッティ・マイルダン</RK_Storyteller_RottyMilden.label>
+  <RK_Storyteller_RottyMilden.description>ロッティ・マイルダンは,田舎のようにゆったりとした物語を語るストーリーテラーです.
+新しい村が育ち,見知らぬ人が訪れ,商人や旅人の足跡で村が少しずつ賑わう体験ができます.
+
+ロッティ・マイルダンは,いたずら好きな田舎の少女です.\n\n彼女のちょっとしたいたずらのおかげで話は退屈になりませんが,時には思いがけない大騒ぎを起こすこともあります.\n\n大きな脅威は頻繁ではありませんが,訪問や取引や移動中での出会いや,新しい仲間が加わるニュースがより頻繁に続きます.</RK_Storyteller_RottyMilden.description>
+
 
 </LanguageData>

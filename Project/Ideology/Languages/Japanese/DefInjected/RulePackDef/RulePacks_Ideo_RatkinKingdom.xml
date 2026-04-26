@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ideological Name Generator: Ratkin Kingdom Culture -->
+
+  <NamerIdeo_RatkinKingdom.rulePack.rulesStrings>
+    <!-- feudalism/chivalry related adjectives -->
+    <li>globalAdjective(p=10)->騎士道精神</li>
+    <li>globalAdjective(p=8)->封建主義</li>
+    <li>globalAdjective(p=6)->高潔</li>
+    <li>globalAdjective(p=5)->忠義</li>
+    <li>globalAdjective(p=4)->騎士道</li>
+    <li>globalAdjective(p=3)->名誉</li>
+  </NamerIdeo_RatkinKingdom.rulePack.rulesStrings>
+
+
+</LanguageData>

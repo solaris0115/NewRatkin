@@ -1,7 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
   <RK_EMP.label>EMP</RK_EMP.label>
-  <RK_EMP.deathMessage>{0}は、EMPの効果で死んだ。</RK_EMP.deathMessage>
+  <RK_EMP.deathMessage>{0}は,EMPの効果で死んだ.</RK_EMP.deathMessage>
+
+
+  <!-- Pickpicking Damage - Additional Damage to Buildings -->
+
+  <RK_Damage_PickaxeStab.label>つるはしの刺突</RK_Damage_PickaxeStab.label>
+  <RK_Damage_PickaxeStab.deathMessage>{0}は刺し殺された.</RK_Damage_PickaxeStab.deathMessage>
+
 
 </LanguageData>

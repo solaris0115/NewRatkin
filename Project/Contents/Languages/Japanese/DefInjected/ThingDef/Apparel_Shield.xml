@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 3. Balancing Real Data — Wooden shield -->
+
+  <RK_WoodenShield.label>RK ウッドシールド</RK_WoodenShield.label>
+  <RK_WoodenShield.description>小型の木製シールド.軽量で取り扱いやすいが防御力は低い.</RK_WoodenShield.description>
+
+
+  <!-- 3. Balancing Real Data — Medium shield -->
+
+  <RK_HeavyShield.label>RK ヘビーシールド</RK_HeavyShield.label>
+  <RK_HeavyShield.description>中型の金属シールド.防御力と取り扱いやすさのバランスが取れています.</RK_HeavyShield.description>
+
+
+  <!-- 3. Balancing Real Data — Tower shield (Odyssey: ParentName=RK_ApparelAttr_TowerShield) -->
+
+  <RK_TowerShield.label>RK タワーシールド</RK_TowerShield.label>
+  <RK_TowerShield.description>金属製の大きな盾です.重くて取り扱いにくいですが高い防御力を持ちます.</RK_TowerShield.description>
+
+
+</LanguageData>

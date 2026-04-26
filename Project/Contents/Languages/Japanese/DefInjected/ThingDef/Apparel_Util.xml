@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- banner -->
+
+  <RK_Apparel_Banner.label>戦旗</RK_Apparel_Banner.label>
+  <RK_Apparel_Banner.description>周囲の味方の士気を高めます.</RK_Apparel_Banner.description>
+
+
+  <!-- bags -->
+
+  <RK_CrossBack.label>クロスバック</RK_CrossBack.label>
+  <RK_CrossBack.description>簡単な背負い鞄です.運べる荷物を少し増やすことができます.</RK_CrossBack.description>
+
+
+  <!-- bag carrying capacity +20 -->
+
+  <RK_Backpack.label>バックパック</RK_Backpack.label>
+  <RK_Backpack.description>背中に掛けるバッグです.より多くの荷物を運ぶことができます.</RK_Backpack.description>
+
+
+  <!-- military bag +30 durability +20 -->
+
+  <RK_OutdoorBackpack.label>RK アウトドアバック</RK_OutdoorBackpack.label>
+  <RK_OutdoorBackpack.description>ラットキン用の軍用バックパックです.ラットキンの身体に合わせて設計されたバッグで,さらに多くの荷物を運ぶことができるようになります.</RK_OutdoorBackpack.description>
+
+
+</LanguageData>

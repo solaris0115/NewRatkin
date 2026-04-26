@@ -1,7 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <RK_Mote_MoraleBooster.label>Mote</RK_Mote_MoraleBooster.label>
   <Mote_CountDown.label>Mote</Mote_CountDown.label>
   <Mote_ShockWave.label>Mote</Mote_ShockWave.label>
+  <RK_Mote_IncineratorBurst.label>Mote</RK_Mote_IncineratorBurst.label>
+
 
 </LanguageData>

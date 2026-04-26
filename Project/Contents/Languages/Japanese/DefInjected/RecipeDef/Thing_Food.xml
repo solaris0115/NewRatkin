@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Make Hardtack Recipe -->
+
+  <RK_Recipe_Hardtack.label>乾パンを作る</RK_Recipe_Hardtack.label>
+  <RK_Recipe_Hardtack.description>トウモロコシや植物性原料から作る乾パンです.長期保存が可能なため,旅行にも最適な食品です.</RK_Recipe_Hardtack.description>
+  <RK_Recipe_Hardtack.jobString>乾パンを作成中</RK_Recipe_Hardtack.jobString>
+
+
+  <!-- Make Hardtack Bulk Recipe -->
+
+  <RK_Recipe_HardtackBulk.label>乾パン x4</RK_Recipe_HardtackBulk.label>
+  <RK_Recipe_HardtackBulk.description>トウモロコシや植物性原料からまとめて乾パンを作ります.長期保存が可能なため,旅行にも最適な食品です.</RK_Recipe_HardtackBulk.description>
+  <RK_Recipe_HardtackBulk.jobString>乾パン4つを作成中</RK_Recipe_HardtackBulk.jobString>
+
+
+</LanguageData>

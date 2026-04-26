@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Wild Child -->
+
+  <Ratkin_WildChild.title>野生のラットキン</Ratkin_WildChild.title>
+  <Ratkin_WildChild.titleShort>野生育ち</Ratkin_WildChild.titleShort>
+  <Ratkin_WildChild.description>[PAWN_nameDef]は,文明の恩恵を受けていないまま,野生で育ちました.その経験は,[PAWN_pronoun]を強靭にしましたが,文明社会の教育を理解できなってしまいました.</Ratkin_WildChild.description>
+
+
+  <!-- Land Rat -->
+
+  <Ratkin_LandRat.title>ラットキン穴ねずみ</Ratkin_LandRat.title>
+  <Ratkin_LandRat.titleShort>穴ねずみ</Ratkin_LandRat.titleShort>
+  <Ratkin_LandRat.description>[PAWN_nameDef]は,真っ暗な巣穴で産まれました.長い間巣穴で生活しており,[PAWN_pronoun]は地下を掘るのが上手ですが,多くの同族が地上に出て行った時も,巣穴に戻ってしまいました.</Ratkin_LandRat.description>
+
+
+  <!-- Country Kid -->
+
+  <Ratkin_CountryKid.title>ラットキン農村育ち</Ratkin_CountryKid.title>
+  <Ratkin_CountryKid.titleShort>農村育ち</Ratkin_CountryKid.titleShort>
+  <Ratkin_CountryKid.description>[PAWN_nameDef]の祖父母が農家であり,両親も農家です.そして[PAWN_pronoun]も,家族の伝統に従って農家になります.それは子孫にも続くでしょう.</Ratkin_CountryKid.description>
+
+
+  <!-- Shepherd Boy -->
+
+  <Ratkin_ShepherdBoy.title>ラットキン羊飼いの少年</Ratkin_ShepherdBoy.title>
+  <Ratkin_ShepherdBoy.titleFemale>ラットキン羊飼いの少女</Ratkin_ShepherdBoy.titleFemale>
+  <Ratkin_ShepherdBoy.titleShort>羊飼いの少年</Ratkin_ShepherdBoy.titleShort>
+  <Ratkin_ShepherdBoy.titleShortFemale>羊飼いの少女</Ratkin_ShepherdBoy.titleShortFemale>
+  <Ratkin_ShepherdBoy.description>[PAWN_nameDef]は,幼い頃から様々な家畜の間で育った.\n\n[PAWN_pronoun]は,動物を友達のように考えています.</Ratkin_ShepherdBoy.description>
+
+
+  <!-- Orphan -->
+
+  <Ratkin_Orphan.title>ラットキンの孤児</Ratkin_Orphan.title>
+  <Ratkin_Orphan.titleShort>孤児</Ratkin_Orphan.titleShort>
+  <Ratkin_Orphan.description>かつて捨てられた[PAWN_nameDef]に両親は居ませんでした.\n\n[PAWN_pronoun]は一人で生き延びたので専門的な知識はありませんが,様々な仕事をこなすことができます.</Ratkin_Orphan.description>
+
+
+  <!-- Student -->
+
+  <Ratkin_Student.title>ラットキンの学生</Ratkin_Student.title>
+  <Ratkin_Student.titleShort>学生</Ratkin_Student.titleShort>
+  <Ratkin_Student.description>[PAWN_nameDef]の家は裕福ではありませんが,勉強できないほど貧しくもありませんでした.[PAWN_pronoun]は頭を使う勉強は得意でしたが体育の成績はあまり良くありませんでした.</Ratkin_Student.description>
+
+
+  <!-- Little Librarian -->
+
+  <Ratkin_LittleLibrarian.title>ラットキン子供図書委員</Ratkin_LittleLibrarian.title>
+  <Ratkin_LittleLibrarian.titleShort>図書委員</Ratkin_LittleLibrarian.titleShort>
+  <Ratkin_LittleLibrarian.description>司書を親に持つ[PAWN_nameDef]は,図書館の中に住んでいました.多くの本を読んで[PAWN_pronoun]は専門的な知識と視野をより深く広げた結果,メガネなしで文字を読むのが難しいほど視力が悪くなりました.</Ratkin_LittleLibrarian.description>
+
+
+  <!-- Golden Spoon -->
+
+  <Ratkin_GoldenSpoon.title>ラットキン大金持ちの子供</Ratkin_GoldenSpoon.title>
+  <Ratkin_GoldenSpoon.titleShort>金持ちの子供</Ratkin_GoldenSpoon.titleShort>
+  <Ratkin_GoldenSpoon.description>[PAWN_nameDef]は,何不自由のない金持ちの家に産まれました.わがままな子供に育った[PAWN_pronoun]は,沢山の美術品の中で育ちましたが芸術に対して知識はそれほど多くありませんでした.</Ratkin_GoldenSpoon.description>
+
+
+  <!-- Bastard -->
+
+  <Ratkin_Bastard.title>ラットキン私生子</Ratkin_Bastard.title>
+  <Ratkin_Bastard.titleShort>私生子</Ratkin_Bastard.titleShort>
+  <Ratkin_Bastard.description>[PAWN_nameDef]は,妾の子として産まれました.[PAWN_pronoun]は後継者になるために兄弟を殺した事が発覚して逃亡しました.</Ratkin_Bastard.description>
+
+
+  <!-- Successor -->
+
+  <Ratkin_Successor.title>ラットキンの跡取り</Ratkin_Successor.title>
+  <Ratkin_Successor.titleFemale>ラットキンの跡取り娘</Ratkin_Successor.titleFemale>
+  <Ratkin_Successor.titleShort>跡取り</Ratkin_Successor.titleShort>
+  <Ratkin_Successor.titleShortFemale>跡取り娘</Ratkin_Successor.titleShortFemale>
+  <Ratkin_Successor.description>[PAWN_nameDef]は,貴族の後継者として産まれました.かつてきらびやかだった家が衰退した事で[PAWN_pronoun]は生活のために家を離れなければなりませんでした.</Ratkin_Successor.description>
+
+
+  <!-- Guardener Student -->
+
+  <Ratkin_GuardenerStudent.title>ラットキン近衛兵見習い</Ratkin_GuardenerStudent.title>
+  <Ratkin_GuardenerStudent.titleShort>近衛兵見習い</Ratkin_GuardenerStudent.titleShort>
+  <Ratkin_GuardenerStudent.description>[PAWN_nameDef]は,近衛兵になるために修練をしています.最高の者だけがラットキン社会で近衛兵になることができるので,[PAWN_pronoun]は血のにじむ努力をしなければなりませんでした.</Ratkin_GuardenerStudent.description>
+
+
+  <!-- Chef Student -->
+
+  <Ratkin_ChefStudent.title>ラットキンシェフ見習い</Ratkin_ChefStudent.title>
+  <Ratkin_ChefStudent.titleShort>シェフ見習い</Ratkin_ChefStudent.titleShort>
+  <Ratkin_ChefStudent.description>[PAWN_nameDef]は,食べることが大好きで,料理を始めました.[PAWN_pronoun]にとって食べ物は人生そのものであり,生きがいなので,もっとおいしい料理を食べるために挑戦していました.</Ratkin_ChefStudent.description>
+
+
+  <!-- Romany Kid -->
+
+  <Ratkin_RomanyKid.title>ラットキン流浪民の子供</Ratkin_RomanyKid.title>
+  <Ratkin_RomanyKid.titleShort>流浪民の子供</Ratkin_RomanyKid.titleShort>
+  <Ratkin_RomanyKid.description>[PAWN_nameDef]は,流浪民としてあちこちをさ迷っていました.\n\n[PAWN_pronoun]行くあてもない生活は,人々と深い縁を持てるほど十分なものとは言えない浅い付き合いでした.</Ratkin_RomanyKid.description>
+
+
+  <!-- Officer Child -->
+
+  <Ratkin_OfficerChild.title>ラットキン将校の子供</Ratkin_OfficerChild.title>
+  <Ratkin_OfficerChild.titleShort>将校の子供</Ratkin_OfficerChild.titleShort>
+  <Ratkin_OfficerChild.description>[PAWN_nameDef]は,将校の子供として産まれました.幼い頃から親から学んだ射撃スキルとカリスマ性は,[PAWN_pronoun]を驚異的な将校の資質を持つ子供にしましたが,逆に傲慢な性格にもしました.</Ratkin_OfficerChild.description>
+
+
+  <!-- Merchant Kid -->
+
+  <Ratkin_MerchantKid.title>ラットキン商人の子供</Ratkin_MerchantKid.title>
+  <Ratkin_MerchantKid.titleShort>商人の子供</Ratkin_MerchantKid.titleShort>
+  <Ratkin_MerchantKid.description>[PAWN_nameDef]は,上層階級の子供として産まれました.\n\n[PAWN_pronoun]は,親のそばで働く姿を見て商売を学び,どうすればお金を稼ぐことができるかに精通しています.</Ratkin_MerchantKid.description>
+
+
+  <!-- Kid -->
+
+  <Ratkin_Kid.title>ラットキンの子供</Ratkin_Kid.title>
+  <Ratkin_Kid.titleShort>子供</Ratkin_Kid.titleShort>
+  <Ratkin_Kid.description>[PAWN_nameDef]は,普通の子です.一般的な家庭で両親が働く姿を見て色々な事を学びました.しかし,高等教育を受ける機会がなかったので専門知識を学ぶことができませんでした.</Ratkin_Kid.description>
+
+
+  <!-- Servent Child -->
+
+  <Ratkin_ServentChild.title>ラットキン召使いの子供</Ratkin_ServentChild.title>
+  <Ratkin_ServentChild.titleShort>召使いの子供</Ratkin_ServentChild.titleShort>
+  <Ratkin_ServentChild.description>[PAWN_nameDef]は,召使いの子供として産まれました.法によって,[PAWN_pronoun]も召使いになる運命だったので,自分の運命を変えたい一心で逃亡しました.</Ratkin_ServentChild.description>
+
+
+  <!-- Human Assistant -->
+
+  <Ratkin_HumanAssistant.title>ラットキン人間の召使い</Ratkin_HumanAssistant.title>
+  <Ratkin_HumanAssistant.titleShort>人間の召使い</Ratkin_HumanAssistant.titleShort>
+  <Ratkin_HumanAssistant.description>[PAWN_nameDef]は,人間の召使いとして幼い頃から仕えてきました.しかし,主人が事故で亡くなった[PAWN_pronoun]は自らの人生を探すために旅立ちました.</Ratkin_HumanAssistant.description>
+
+
+  <!-- City Kid -->
+
+  <Ratkin_CityKid.title>ラットキン都会の子供</Ratkin_CityKid.title>
+  <Ratkin_CityKid.titleShort>都会の子供</Ratkin_CityKid.titleShort>
+  <Ratkin_CityKid.description>[PAWN_nameDef]は,都会で産まれました.\n\n[PAWN_pronoun]は,都会の文化と触れていたので,他のラットキンとは異なり,文明的な技術について簡単に理解することができました.</Ratkin_CityKid.description>
+
+
+  <!-- Slave Kid -->
+
+  <Ratkin_SlaveKid.title>ラットキン奴隷の子供</Ratkin_SlaveKid.title>
+  <Ratkin_SlaveKid.titleShort>奴隷の子供</Ratkin_SlaveKid.titleShort>
+  <Ratkin_SlaveKid.description>[PAWN_nameDef]は,どのように生きてきたのか不明ですが,奴隷の烙印を押されています.\n\n[PAWN_pronoun]は強制される雑用に耐えられず,自由のために逃亡しました.</Ratkin_SlaveKid.description>
+
+
+  <!-- Laboratory Rats -->
+
+  <Ratkin_LaboratoryRats.title>ラットキン実験体</Ratkin_LaboratoryRats.title>
+  <Ratkin_LaboratoryRats.titleShort>実験体</Ratkin_LaboratoryRats.titleShort>
+  <Ratkin_LaboratoryRats.description>[PAWN_nameDef]は軍用ラットキンとして遺伝子操作が行われた肉体を持って,人間の実験室で生まれました.自由への深い憧れを抱いていた[PAWN_pronoun]は,ある日,脱出をする事を決意しました.</Ratkin_LaboratoryRats.description>
+
+
+  <!-- Petty Theft -->
+
+  <Ratkin_PettyTheft.title>ラットキンせこい泥棒</Ratkin_PettyTheft.title>
+  <Ratkin_PettyTheft.titleShort>せこい泥棒</Ratkin_PettyTheft.titleShort>
+  <Ratkin_PettyTheft.description>[PAWN_nameDef]にはちょっとしたものを盗む癖がありました.\n\n[PAWN_pronoun]の病的な盗み癖は,最後は捕まって拷問を受けて尻尾を失い奴隷に落とされましたが,運ばれる途中で襲撃を受け,どさくさに紛れて逃げ出すことができました.</Ratkin_PettyTheft.description>
+
+
+</LanguageData>

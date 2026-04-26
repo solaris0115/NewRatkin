@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Axe Harvesting speed +5% Yield +5% -->
+
+  <RK_Axe.label>RK 斧</RK_Axe.label>
+  <RK_Axe.description>斧です.少し小さいが伐採に役立つはずです.</RK_Axe.description>
+  <RK_Axe.tools.handle.label>柄</RK_Axe.tools.handle.label>
+  <RK_Axe.tools.edge.label>刃</RK_Axe.tools.edge.label>
+
+
+  <!-- Cooking Tool Cooking speed +5% Decay amount +10% -->
+
+  <RK_Cleaver.label>RK 肉切り包丁</RK_Cleaver.label>
+  <RK_Cleaver.description>肉を切る時に使う包丁です.肉を多く得ることができます.武器へは適して見えません.</RK_Cleaver.description>
+  <RK_Cleaver.tools.handle.label>柄</RK_Cleaver.tools.handle.label>
+  <RK_Cleaver.tools.edge.label>刃</RK_Cleaver.tools.edge.label>
+
+
+  <!-- Hoe Harvesting Rate +5% Yield +15% -->
+
+  <RK_Hockey.label>RK クワ</RK_Hockey.label>
+  <RK_Hockey.description>畑に行く時使う.土地を耕すのに向いてます.</RK_Hockey.description>
+  <RK_Hockey.tools.point.label>先端</RK_Hockey.tools.point.label>
+  <RK_Hockey.tools.edge.label>刃</RK_Hockey.tools.edge.label>
+
+
+  <!-- Fork Harvest Speed +10% Yield +10% -->
+
+  <RK_Fork.label>RK フォーク</RK_Fork.label>
+  <RK_Fork.description>わらを運ぶときに便利です.</RK_Fork.description>
+  <RK_Fork.tools.point.label>先端</RK_Fork.tools.point.label>
+  <RK_Fork.tools.edge.label>刃</RK_Fork.tools.edge.label>
+
+
+  <!-- Picking speed +10% -->
+
+  <RK_Pickaxe.label>RK ツルハシ</RK_Pickaxe.label>
+  <RK_Pickaxe.description>採掘に使用するツルハシです.石を掘るのに役立ちそうです.</RK_Pickaxe.description>
+  <RK_Pickaxe.tools.hammer.label>ハンマー</RK_Pickaxe.tools.hammer.label>
+  <RK_Pickaxe.tools.point.label>先端</RK_Pickaxe.tools.point.label>
+
+
+</LanguageData>

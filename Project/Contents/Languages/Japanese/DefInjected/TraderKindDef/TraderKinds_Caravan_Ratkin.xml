@@ -3,18 +3,32 @@
 
   <!-- Ratkin Bulk Goods -->
 
-  <Caravan_Ratkin_BulkGoods.label>貿易商</Caravan_Ratkin_BulkGoods.label>
+  <RK_TraderKind_KingdomBulkGoods.label>貿易商</RK_TraderKind_KingdomBulkGoods.label>
+
 
   <!-- Ratkin Dress Merchant -->
 
-  <Caravan_Ratkin_DressMerchant.label>ドレス商人</Caravan_Ratkin_DressMerchant.label>
+  <RK_TraderKind_KingdomDressMerchant.label>ドレス商人</RK_TraderKind_KingdomDressMerchant.label>
+
 
   <!-- Ratkin CombatSupplier -->
 
-  <Caravan_Ratkin_CombatSupplier.label>武器商</Caravan_Ratkin_CombatSupplier.label>
+  <RK_TraderKind_KingdomCombatSupplier.label>武器商</RK_TraderKind_KingdomCombatSupplier.label>
 
-  <!-- Ratkin Free Company -->
 
-  <Caravan_Ratkin_Free_company.label>ラットキン自由商</Caravan_Ratkin_Free_company.label>
+  <!-- Ratkin Exotic Trader -->
+
+  <RK_TraderKind_KingdomExotic.label>輸入品商</RK_TraderKind_KingdomExotic.label>
+
+
+  <!-- Ratkin food and beverage merchant -->
+
+  <RK_TraderKind_KingdomFoodMerchant.label>食品商</RK_TraderKind_KingdomFoodMerchant.label>
+
+
+  <!-- Ratkin fabric merchant -->
+
+  <RK_TraderKind_KingdomTextileMerchant.label>繊維商</RK_TraderKind_KingdomTextileMerchant.label>
+
 
 </LanguageData>

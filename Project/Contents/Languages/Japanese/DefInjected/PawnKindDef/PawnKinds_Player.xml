@@ -79,6 +79,12 @@
   <RatkinKnightCommander.labelPlural>ラットキン騎士団長</RatkinKnightCommander.labelPlural>
 
 
+  <!-- Ratkin Rider (Melee Heavy Infantry) -->
+
+  <RK_PawnKind_StandardBearer.label>ラットキン旗手</RK_PawnKind_StandardBearer.label>
+  <RK_PawnKind_StandardBearer.labelPlural>ラットキン旗手</RK_PawnKind_StandardBearer.labelPlural>
+
+
   <!-- Elite Soldier -->
 
   <RatkinEliteSoldier.label>ラットキンエリート兵</RatkinEliteSoldier.label>
@@ -115,10 +121,10 @@
   <RatkinMercenaryLight.labelPlural>ラットキン傭兵</RatkinMercenaryLight.labelPlural>
 
 
-  <!-- Subject -->
+  <!-- Subject 1.5 -->
 
-  <RatkinSubject.label>ラットキン実験体</RatkinSubject.label>
-  <RatkinSubject.labelPlural>ラットキン実験体</RatkinSubject.labelPlural>
+  <!-- <RatkinSubject.label>ラットキン実験体</RatkinSubject.label>
+  <RatkinSubject.labelPlural>ラットキン実験体</RatkinSubject.labelPlural> -->
 
 
   <!-- Mercenary -->

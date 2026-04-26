@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- RatHolic Gun Integrated Management Hediff (permanent) -->
+
+  <RK_Hediff_RatHolicGun.label>ラットホリックガン高速化管理</RK_Hediff_RatHolicGun.label>
+  <RK_Hediff_RatHolicGun.description>ラットホリックガンの高速化効果を管理します.</RK_Hediff_RatHolicGun.description>
+
+
+  <!-- RatHolic Gun Increased launch speed buff -->
+
+  <RK_Hediff_RatHolicGunSpooling.label>リロード高速化</RK_Hediff_RatHolicGunSpooling.label>
+  <RK_Hediff_RatHolicGunSpooling.description>武器が高速化して,発射されるたびにリロード時間が短縮されます.</RK_Hediff_RatHolicGunSpooling.description>
+
+
+  <!-- RatHolic Gun Aiming speed increase buff -->
+
+  <RK_Hediff_RatHolicGunSpoolingAim.label>照準時間高速化</RK_Hediff_RatHolicGunSpoolingAim.label>
+  <RK_Hediff_RatHolicGunSpoolingAim.description>武器が高速化して,照準時間が短縮され,発射されるたびに命中精度が向上します.</RK_Hediff_RatHolicGunSpoolingAim.description>
+
+
+</LanguageData>

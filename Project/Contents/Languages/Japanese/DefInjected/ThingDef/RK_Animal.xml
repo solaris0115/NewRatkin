@@ -4,8 +4,10 @@
   <RK_KingHamster.label>キングハムスター</RK_KingHamster.label>
   <RK_KingHamster.description>大きなハムスターです。性格はおとなしいですがとても体が大きくなりました。キングハムスターはラットキン派閥の商人から買うことができます。知能レベルはハムスターと同じままですが、あなたは荷獣としてそれを使役することができます。キングハムスターの毛は断熱性に優れます。</RK_KingHamster.description>
   <RK_KingHamster.tools.head.label>頭</RK_KingHamster.tools.head.label>
-  <RK_KingHamster.tools.left_hand.label>左手</RK_KingHamster.tools.left_hand.label>
-  <RK_KingHamster.tools.right_hand.label>右手</RK_KingHamster.tools.right_hand.label>
+  <RK_KingHamster.tools.left_paw.label>左手</RK_KingHamster.tools.left_paw.label>
+  <RK_KingHamster.tools.left_paw.labelNoLocation>手</RK_KingHamster.tools.left_paw.labelNoLocation>
+  <RK_KingHamster.tools.right_paw.label>右手</RK_KingHamster.tools.right_paw.label>
+  <RK_KingHamster.tools.right_paw.labelNoLocation>手</RK_KingHamster.tools.right_paw.labelNoLocation>
   <Meat_RK_KingHamster.label>キングハムスターの肉</Meat_RK_KingHamster.label>
   <Meat_RK_KingHamster.description>キングハムスターの肉</Meat_RK_KingHamster.description>
   <Corpse_RK_KingHamster.label>キングハムスターの死骸</Corpse_RK_KingHamster.label>
@@ -18,5 +20,6 @@
   <RK_Wool_KingHamster.label>キングハムスター毛</RK_Wool_KingHamster.label>
   <RK_Wool_KingHamster.description>柔らかくて軽い良い断熱性を持ちます。この毛で編んだ服は、過酷な環境の極地や砂漠などでも体温を保持することができます。</RK_Wool_KingHamster.description>
   <RK_Wool_KingHamster.stuffProps.stuffAdjective>キングハムスター毛</RK_Wool_KingHamster.stuffProps.stuffAdjective>
+
 
 </LanguageData>

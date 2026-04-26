@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 일반 피해 유형보다 부가 피해를 더 유발 -->
+
+  <RK_Hediff_Torn.label>裂傷</RK_Hediff_Torn.label>
+  <RK_Hediff_Torn.description>身体の一部が切り裂かれた傷です.</RK_Hediff_Torn.description>
+  <RK_Hediff_Torn.comps.HediffComp_GetsPermanent.permanentLabel>裂傷痕</RK_Hediff_Torn.comps.HediffComp_GetsPermanent.permanentLabel>
+  <RK_Hediff_Torn.comps.HediffComp_TendDuration.labelTendedWell>包帯</RK_Hediff_Torn.comps.HediffComp_TendDuration.labelTendedWell>
+  <RK_Hediff_Torn.comps.HediffComp_TendDuration.labelTendedWellInner>縫合</RK_Hediff_Torn.comps.HediffComp_TendDuration.labelTendedWellInner>
+  <RK_Hediff_Torn.comps.HediffComp_TendDuration.labelSolidTendedWell>セット</RK_Hediff_Torn.comps.HediffComp_TendDuration.labelSolidTendedWell>
+  <RK_Hediff_Torn.injuryProps.destroyedLabel>千切れた</RK_Hediff_Torn.injuryProps.destroyedLabel>
+  <RK_Hediff_Torn.injuryProps.destroyedOutLabel>千切れた</RK_Hediff_Torn.injuryProps.destroyedOutLabel>
+  <RK_Hediff_Torn.labelNoun>裂傷</RK_Hediff_Torn.labelNoun>
+  <RK_Hediff_Torn.labelNounPretty>{1}内の{0}</RK_Hediff_Torn.labelNounPretty>
+
+
+</LanguageData>

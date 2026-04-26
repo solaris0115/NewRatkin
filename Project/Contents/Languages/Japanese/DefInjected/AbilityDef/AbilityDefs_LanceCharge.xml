@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Heavy Lance Rushing: LOS-based destinations, at least 3 to 5 compartments -->
+
+  <RK_Ability_LanceCharge.label>突撃</RK_Ability_LanceCharge.label>
+  <RK_Ability_LanceCharge.description>敵対ターゲットに向かって短距離の突進（3～5タイル)を実行します.障害物の手前の最後の空いているタイルで停止します.突撃した後,移動速度は低下しますが近接攻撃の命中率が上昇します.</RK_Ability_LanceCharge.description>
+
+
+</LanguageData>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ratkin's joining event -->
+
+  <RK_QuestScript_PriestJoin.questNameRules.rulesStrings>
+    <li>questName->ラットキンの司祭の加入</li>
+  </RK_QuestScript_PriestJoin.questNameRules.rulesStrings>
+
+  <RK_QuestScript_PriestJoin.questDescriptionRules.rulesStrings>
+    <li>questDescription->ラットキンの司祭があなたの入植地に加わりたがっています.</li>
+  </RK_QuestScript_PriestJoin.questDescriptionRules.rulesStrings>
+
+
+</LanguageData>

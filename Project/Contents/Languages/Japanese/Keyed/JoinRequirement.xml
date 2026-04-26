@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- JoinCondition - Caravan settler join proposal. DescShort=line2 details, Desc=line1 flavor -->
+<LanguageData>
+
+  <!-- InjuredPatientCount -->
+  <RK_JoinReq_Injured_DescShort>入植地に少なくとも{0}人の負傷者がいること.</RK_JoinReq_Injured_DescShort>
+  <RK_JoinReq_Priest_Injured_Desc1>ここに癒やし手を必要としている方はいませんか?</RK_JoinReq_Priest_Injured_Desc1>
+  <RK_JoinReq_Priest_Injured_Desc2>信仰があれば,困難さえも克服できるでしょう.</RK_JoinReq_Priest_Injured_Desc2>
+
+  <!-- MedicineQuantity -->
+  <RK_JoinReq_Medicine_DescShort>少なくとも{0}個の医薬品が備蓄されてること.</RK_JoinReq_Medicine_DescShort>
+  <RK_JoinReq_Priest_Medicine_Desc1>ここに十分な治療薬があれば安心できます.</RK_JoinReq_Priest_Medicine_Desc1>
+  <RK_JoinReq_Priest_Medicine_Desc2>十分な医薬品があれば,もっと多くの魂を救えるのですが...</RK_JoinReq_Priest_Medicine_Desc2>
+
+  <!-- ColonyWealth -->
+  <RK_JoinReq_StableLife_DescShort>コロニーの資産が少なくとも{0}であること.</RK_JoinReq_StableLife_DescShort>
+  <RK_JoinReq_StableLife_Desc1>ちゃんとした村に住みたいです.放浪の旅はあまりに過酷ですから.</RK_JoinReq_StableLife_Desc1>
+  <RK_JoinReq_StableLife_Desc2>もっと安定した村での生活を求めています.小さな集落は負担が大きすぎます.</RK_JoinReq_StableLife_Desc2>
+  <RK_JoinReq_NewLife_DescShort>コロニーの資産が少なくとも{0}であること.</RK_JoinReq_NewLife_DescShort>
+  <RK_JoinReq_NewLife_Desc1>これほどの資産があれば,新生活を始められるかもしれません.</RK_JoinReq_NewLife_Desc1>
+  <RK_JoinReq_NewLife_Desc2>貧しい生活にはもう飽き飽きです.</RK_JoinReq_NewLife_Desc2>
+
+  <!-- ColonistBackstory -->
+  <RK_JoinReq_NobleTired_DescShort>以下の背景を持つ入植者がいないこと:{0}</RK_JoinReq_NobleTired_DescShort>
+  <RK_JoinReq_NobleTired_Desc1>高貴な方々にへりくだるのはもう疲れました.</RK_JoinReq_NobleTired_Desc1>
+  <RK_JoinReq_NobleTired_Desc2>貴族とはもう関わりたくありません.</RK_JoinReq_NobleTired_Desc2>
+
+  <!-- ColonistRoyalTitle / Empire title (Ratkin Servant) -->
+  <RK_JoinReq_ServantRoyalTitle_DescShort>入植者の帝国の爵位が最高で{0}以下であること.</RK_JoinReq_ServantRoyalTitle_DescShort>
+  <RK_JoinReq_ServantRoyalTitle_Desc1>身分の高い人たちの機嫌を取るのはもう疲れました.</RK_JoinReq_ServantRoyalTitle_Desc1>
+  <RK_JoinReq_ServantRoyalTitle_Desc2>仕える必要があるなら,主人は自分で選びます.</RK_JoinReq_ServantRoyalTitle_Desc2>
+
+  <!-- ThingQuantity -->
+  <RK_JoinReq_ItemSeparatorOr>または</RK_JoinReq_ItemSeparatorOr>
+  <RK_JoinReq_WindFreedom_DescShort>必要：{0}</RK_JoinReq_WindFreedom_DescShort>
+  <RK_JoinReq_WindFreedom_Desc1>放浪の旅も魅力的ですが,休息もまた同じです.</RK_JoinReq_WindFreedom_Desc1>
+  <RK_JoinReq_WindFreedom_Desc2>放浪者にも好みはあります.使う価値のある装備が必要ですね.</RK_JoinReq_WindFreedom_Desc2>
+
+  <!-- SkillMentorMulti -->
+  <RK_JoinReq_SeekingMentor_DescShort>これらすべてのスキルを持つ入植者が必要:{0}</RK_JoinReq_SeekingMentor_DescShort>
+  <RK_JoinReq_SeekingMentor_Desc1>私は自分より強い者の言葉しか聞きません.</RK_JoinReq_SeekingMentor_Desc1>
+  <RK_JoinReq_SeekingMentor_Desc2>真の戦士を探しています.あなたがたの中にいますか?</RK_JoinReq_SeekingMentor_Desc2>
+  <RK_JoinReq_Prepared_DescShort>これらのスキルのうち少なくとも1つを持つ入植者が必要:{0}</RK_JoinReq_Prepared_DescShort>
+  <RK_JoinReq_Prepared_Desc1>知恵だけで生き残るのは疲れました.まともな指導者を求めています.</RK_JoinReq_Prepared_Desc1>
+  <RK_JoinReq_Prepared_Desc2>戦闘であれ工芸であれ,誰か一人はその道のプロであるべきです.</RK_JoinReq_Prepared_Desc2>
+
+  <!-- AlwaysMet / JoinHope -->
+  <RK_JoinReq_JoinHope_DescShort>特別な条件はありません.</RK_JoinReq_JoinHope_DescShort>
+  <RK_JoinReq_JoinHope_Desc1>お会いできて光栄です.</RK_JoinReq_JoinHope_Desc1>
+  <RK_JoinReq_JoinHope_Desc2>仲良くできることを願っています.</RK_JoinReq_JoinHope_Desc2>
+
+</LanguageData>
