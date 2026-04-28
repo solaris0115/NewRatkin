@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Unique Pawn Sample — "Ash Claw" Kira
+  BackstoryDef (Childhood + Adulthood) + PawnKindDef combination -->
+
+  <!-- BackstoryDef: Childhood -->
+
+  <RK_Unique_Kira_Childhood.title>灰トンネルの孤児</RK_Unique_Kira_Childhood.title>
+  <RK_Unique_Kira_Childhood.titleShort>地下孤児</RK_Unique_Kira_Childhood.titleShort>
+  <RK_Unique_Kira_Childhood.description>[PAWN_nameDef]は,崩壊したトンネルの中で一人で生き残った孤児です.暗闇の中で道を見つける方法を自分で身につけて,危険を本能的に感知する感覚を覚えました.</RK_Unique_Kira_Childhood.description>
+
+  <!-- BackstoryDef: Adulthood -->
+
+  <RK_Unique_Kira_Adulthood.title>灰の爪</RK_Unique_Kira_Adulthood.title>
+  <RK_Unique_Kira_Adulthood.titleShort>伝説の戦士</RK_Unique_Kira_Adulthood.titleShort>
+  <RK_Unique_Kira_Adulthood.description>[PAWN_nameDef]は,「グレイクロー(灰の爪)」と呼ばれる伝説の戦士です.数多くの襲撃を一人で防ぎ,その二つ名を得て,同族たちの間で恐怖と尊敬を同時に受ける存在です.</RK_Unique_Kira_Adulthood.description>
+
+
+</LanguageData>
