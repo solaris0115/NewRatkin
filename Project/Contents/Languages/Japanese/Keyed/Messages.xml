@@ -9,12 +9,24 @@
   <!-- Shield-Weapon Compatibility -->
   <RK_ApparelWeaponIncompatible_Dropped>{0}を装備して,{1}を落としました.理由:{2}</RK_ApparelWeaponIncompatible_Dropped>
   <RK_ApparelWeaponIncompatible_Dropped_Default>{0}を装備して,{1}を落としました.</RK_ApparelWeaponIncompatible_Dropped_Default>
-  <RK_ShieldWeaponIncompatible>シールドと同時に装備できません</RK_ShieldWeaponIncompatible>
 
-  <!-- FloatMenu Equip Block Messages -->
-  <RK_ShieldWeaponIncompatible_Equip>{0}を装備できません：装備中の武器{1}と互換性がありません.&#160;{2}</RK_ShieldWeaponIncompatible_Equip>
-  <RK_ShieldWeaponIncompatible_Equip_Default>{0}を装備できません：装備中の武器{1}と互換性がありません.</RK_ShieldWeaponIncompatible_Equip_Default>
-  <RK_WeaponShieldIncompatible_Equip>{0}を装備できません：装備中のシールド{1}と互換性がありません.&#160;{2}</RK_WeaponShieldIncompatible_Equip>
-  <RK_WeaponShieldIncompatible_Equip_Default>{0}を装備できません：装備中のシールド{1}と互換性がありません.</RK_WeaponShieldIncompatible_Equip_Default>
+  <!-- Equip Block Incompatible Messages -->
+
+  <RK_GripIncompatible>互換性のない武器です</RK_GripIncompatible>
+  <RK_GripIncompatible_Equip>{0}を装備できません：装備中の武器{1}と互換性がありません.&#160;{2}</RK_GripIncompatible_Equip>
+  <RK_GripIncompatible_Equip_Default>{0}を着用できません：装備中の武器{1}と互換性がありません.</RK_GripIncompatible_Equip_Default>
+  <RK_WeaponGripIncompatible_Equip>{0}を装備できません：装備中の装備{1}と互換性がありません.&#160;{2}</RK_WeaponGripIncompatible_Equip>
+  <RK_WeaponGripIncompatible_Equip_Default>{0}を装備できません：装備中の装備{1}と互換性がありません.</RK_WeaponGripIncompatible_Equip_Default>
+
+  <!-- Weapon Grip Type -->
+
+  <RK_GripType_OneHand>片手</RK_GripType_OneHand>
+  <RK_GripType_TwoHand>両手</RK_GripType_TwoHand>
+  <RK_GripType_Special>特殊</RK_GripType_Special>
+  <RK_WeaponGripType_Label>武器の持ち手タイプ</RK_WeaponGripType_Label>
+  <RK_WeaponGripType_Report>この武器の持ち手の種類と装備方法の分類です.装備形式によって,他の装備と併用できるか変化します.</RK_WeaponGripType_Report>
+  <RK_AllowedGripType_Label>対応武器タイプ</RK_AllowedGripType_Label>
+  <RK_AllowedGripType_Report>この装備と一緒に主武器として装備できる武器の持ち手タイプです.</RK_AllowedGripType_Report>
+
 
 </LanguageData>
