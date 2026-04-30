@@ -16,4 +16,9 @@
   <RK_Tail.label>尻尾</RK_Tail.label>
 
 
+  <!-- Group for full head coverage (FullHead replacement) -->
+
+  <RK_BodyGroup_FullHead.label>頭部</RK_BodyGroup_FullHead.label>
+
+
 </LanguageData>
