@@ -2,16 +2,20 @@
 <LanguageData>
 
   <RK_Hediff_FakeEar.label>ニセ耳</RK_Hediff_FakeEar.label>
-  <RK_Hediff_FakeEar.description>取り付けられた偽の耳です.</RK_Hediff_FakeEar.description>
+  <RK_Hediff_FakeEar.description>取り付けられた偽のラットキン用耳です.</RK_Hediff_FakeEar.description>
   <RK_Hediff_FakeEar.labelNoun>ニセの耳</RK_Hediff_FakeEar.labelNoun>
 
   <RK_Hediff_FakeTail.label>ニセ尻尾</RK_Hediff_FakeTail.label>
-  <RK_Hediff_FakeTail.description>取り付けられた偽の尻尾です.</RK_Hediff_FakeTail.description>
+  <RK_Hediff_FakeTail.description>取り付けられた偽のラットキン用尻尾です.</RK_Hediff_FakeTail.description>
   <RK_Hediff_FakeTail.labelNoun>ニセ尻尾</RK_Hediff_FakeTail.labelNoun>
 
   <RK_Hediff_BionicTail.label>強化尻尾</RK_Hediff_BionicTail.label>
-  <RK_Hediff_BionicTail.description>移植された強化義肢の尻尾です.小さなAIが内蔵されて,装着者のバランスを取ります.</RK_Hediff_BionicTail.description>
+  <RK_Hediff_BionicTail.description>移植された強化義肢のラットキン用尻尾です.小さなAIが内蔵されて,装着者のバランスを取ります.</RK_Hediff_BionicTail.description>
   <RK_Hediff_BionicTail.labelNoun>強化尻尾</RK_Hediff_BionicTail.labelNoun>
+
+  <RK_Hediff_ArchotechTail.label>アルコテック尻尾（ラットキン)</RK_Hediff_ArchotechTail.label>
+  <RK_Hediff_ArchotechTail.description>移植されたラットキン用アルコテック尻尾です.姿勢や微細な前進の動きを感知して,完璧に近いバランスを維持します.見た目も手触りも自然の肉体に似ていますが,プラスティールよりも傷つきにくい.たとえ傷つけられたとしても,時間の経過とともに自己修復します.その内部構造は人間の頭脳では理解できない謎に包まれている.</RK_Hediff_ArchotechTail.description>
+  <RK_Hediff_ArchotechTail.labelNoun>アルコテック尻尾（ラットキン)</RK_Hediff_ArchotechTail.labelNoun>
 
 
 </LanguageData>
