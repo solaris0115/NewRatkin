@@ -41,4 +41,12 @@
   <RK_Pickaxe.tools.point.label>先端</RK_Pickaxe.tools.point.label>
 
 
+  <!-- Construction Tool Construction speed +30% Smoothing Speed +30% Smelting Speed +30% -->
+
+  <RK_Weapon_Maul.label>作業用ハンマー</RK_Weapon_Maul.label>
+  <RK_Weapon_Maul.description>作業用のハンマーです。硬いものを扱うときに役立ちます。</RK_Weapon_Maul.description>
+  <RK_Weapon_Maul.tools.Head.label>槌頭</RK_Weapon_Maul.tools.Head.label>
+  <RK_Weapon_Maul.tools.handle.label>柄</RK_Weapon_Maul.tools.handle.label>
+
+
 </LanguageData>
