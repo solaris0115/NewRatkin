@@ -4,5 +4,8 @@
   <RK_Thing_BionicTail.label>RK 強化尻尾</RK_Thing_BionicTail.label>
   <RK_Thing_BionicTail.description>生体強化された人工の尻尾です.それは同時に自動的に装着者が向かう方向へバランスをとるための小さなAIを内蔵しています.</RK_Thing_BionicTail.description>
 
+  <RK_Thing_ArchotechTail.label>アルコテック尻尾（ラットキン)</RK_Thing_ArchotechTail.label>
+  <RK_Thing_ArchotechTail.description>ラットキン用のアルコテック化された尻尾です.姿勢や微細な前進の動きを感知して,完璧に近いバランスを維持します.見た目も手触りも自然の肉体に似ていますが,プラスティールよりも傷つきにくい.たとえ傷つけられたとしても,時間の経過とともに自己修復します.その内部構造は人間の頭脳では理解できない謎に包まれている.</RK_Thing_ArchotechTail.description>
+
 
 </LanguageData>
