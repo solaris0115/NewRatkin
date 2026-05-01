@@ -4,7 +4,12 @@
   <RK_Apparel.label>RK 衣服</RK_Apparel.label>
   <RK_Headgear.label>RK 帽子</RK_Headgear.label>
   <RK_ThingCategory_Melee.label>RK 近接武器</RK_ThingCategory_Melee.label>
+  <RK_ThingCategory_Range.label>RK 遠距離武器</RK_ThingCategory_Range.label>
   <RK_ThingCategory_Util.label>RK 多用途道具</RK_ThingCategory_Util.label>
+  <RK_ApparelArmor.label>RK 防具</RK_ApparelArmor.label>
+  <RK_ArmorHeadgear.label>RK 防具（頭)</RK_ArmorHeadgear.label>
+  <RK_ApparelNoble.label>RK 貴族服</RK_ApparelNoble.label>
+  <RK_HeadgearNoble.label>RK 貴族帽子</RK_HeadgearNoble.label>
 
 
 </LanguageData>

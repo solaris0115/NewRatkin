@@ -13,5 +13,9 @@
   <RK_Recipe_InstallBionicTail.description>強化尻尾を移植します.</RK_Recipe_InstallBionicTail.description>
   <RK_Recipe_InstallBionicTail.jobString>強化尻尾を移植中</RK_Recipe_InstallBionicTail.jobString>
 
+  <RK_Recipe_InstallArchotechTail.label>アルコテック尻尾（ラットキン) 移植</RK_Recipe_InstallArchotechTail.label>
+  <RK_Recipe_InstallArchotechTail.description>ラットキン用のアルコテック尻尾を移植します.</RK_Recipe_InstallArchotechTail.description>
+  <RK_Recipe_InstallArchotechTail.jobString>アルコテック尻尾（ラットキン)を移植中</RK_Recipe_InstallArchotechTail.jobString>
+
 
 </LanguageData>
