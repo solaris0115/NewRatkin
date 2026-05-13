@@ -6,9 +6,6 @@
   <RK_ApronSkirt.label>RK エプロンスカート</RK_ApronSkirt.label>
   <RK_ApronSkirt.description>エプロンが付いたシンプルな服です.</RK_ApronSkirt.description>
 
-  <RK_ApronSkirtChildren.label>子供用スカート</RK_ApronSkirtChildren.label>
-  <RK_ApronSkirtChildren.description>子供用の普段着です.</RK_ApronSkirtChildren.description>
-
 
   <!-- Summer Dress Heat Resistance +7 -->
 
@@ -98,13 +95,6 @@
 
   <RK_WinterRobe.label>RK 冬のローブ</RK_WinterRobe.label>
   <RK_WinterRobe.description>冬のローブです.極寒で活動する時.</RK_WinterRobe.description>
-
-  <RK_Apparel_ChildrenWinterRobe.label>RK 子供用冬のローブ</RK_Apparel_ChildrenWinterRobe.label>
-  <RK_Apparel_ChildrenWinterRobe.description>子供向けの冬のローブです.大人用と同じ用途です.</RK_Apparel_ChildrenWinterRobe.description>
-  <RK_Apparel_ChildrenSummerDress.label>RK 子供用サマードレス</RK_Apparel_ChildrenSummerDress.label>
-  <RK_Apparel_ChildrenSummerDress.description>子供向けの夏用ドレスです.通気性がよく暑い日向きです.</RK_Apparel_ChildrenSummerDress.description>
-  <RK_Apparel_ChildrenCardigan.label>RK 子供用カーディガン</RK_Apparel_ChildrenCardigan.label>
-  <RK_Apparel_ChildrenCardigan.description>子供向けのカーディガンです.上着として寒さを和らげます.</RK_Apparel_ChildrenCardigan.description>
 
 
   <!-- Uniform Social Influence +5% Closer Avoided Chance 5% Mental Threshold +5% Pain Threshold +10% Sharp Defense Good Level -->

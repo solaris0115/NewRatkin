@@ -13,12 +13,6 @@
   <RK_Apparel_Vacsuit.description>着用者を宇宙の真空から守る防護スーツです.このスーツは着用者の動きを制限し,移動速度を大幅に低下させます.</RK_Apparel_Vacsuit.description>
 
 
-  <!-- children's spacesuit -->
-
-  <RK_Apparel_VacsuitChildren.label>RK 子供用真空スーツ</RK_Apparel_VacsuitChildren.label>
-  <RK_Apparel_VacsuitChildren.description>子供向けに設計された防護スーツです.着用者を宇宙の真空から守ります.</RK_Apparel_VacsuitChildren.description>
-
-
   <!-- space armor -->
 
   <RK_Apparel_SpaceArmor.label>RK クルセイダーアーマー</RK_Apparel_SpaceArmor.label>
