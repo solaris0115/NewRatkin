@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Children Apron Skirt -->
+
+  <RK_ApronSkirtChildren.label>子供用スカート</RK_ApronSkirtChildren.label>
+  <RK_ApronSkirtChildren.description>子供用の普段着です.</RK_ApronSkirtChildren.description>
+
+
+  <!-- Children's Spacesuit -->
+
+  <RK_Apparel_VacsuitChildren.label>RK 子供用真空スーツ</RK_Apparel_VacsuitChildren.label>
+  <RK_Apparel_VacsuitChildren.description>子供向けに設計された防護スーツです.着用者を宇宙の真空から守ります.</RK_Apparel_VacsuitChildren.description>
+
+
+  <!-- Children Robe -->
+
+  <RK_Apparel_ChildrenWinterRobe.label>RK 子供用冬のローブ</RK_Apparel_ChildrenWinterRobe.label>
+  <RK_Apparel_ChildrenWinterRobe.description>子供向けの冬のローブです.大人用と同じ用途です.</RK_Apparel_ChildrenWinterRobe.description>
+
+
+  <!-- Children Summer Dress -->
+
+  <RK_Apparel_ChildrenSummerDress.label>RK 子供用サマードレス</RK_Apparel_ChildrenSummerDress.label>
+  <RK_Apparel_ChildrenSummerDress.description>子供向けの夏用ドレスです.通気性がよく暑い日向きです.</RK_Apparel_ChildrenSummerDress.description>
+
+
+  <!-- Children Cardigan -->
+
+  <RK_Apparel_ChildrenCardigan.label>RK 子供用カーディガン</RK_Apparel_ChildrenCardigan.label>
+  <RK_Apparel_ChildrenCardigan.description>子供向けのカーディガンです.上着として寒さを和らげます.</RK_Apparel_ChildrenCardigan.description>
+
+
+</LanguageData>
