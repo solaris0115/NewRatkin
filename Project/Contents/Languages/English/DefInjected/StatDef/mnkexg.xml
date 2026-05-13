@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RK_Stat_RangeCoolDown.label>Ranged cooldown reduction</RK_Stat_RangeCoolDown.label>
+  <RK_Stat_RangeCoolDown.description>Reduces the cooldown of ranged weapons. This stat is used for the RatHolic gun's spin-up effect.</RK_Stat_RangeCoolDown.description>
+  <RK_Stat_RangeCoolDown.formatString>{0}s</RK_Stat_RangeCoolDown.formatString>
+  <RK_Stat_RangeCoolDownMultiplier.label>Ranged cooldown multiplier</RK_Stat_RangeCoolDownMultiplier.label>
+  <RK_Stat_RangeCoolDownMultiplier.description>Applies a multiplier to ranged weapon cooldowns. This stat is used together with stat factors for the RatHolic gun's spin-up effect.</RK_Stat_RangeCoolDownMultiplier.description>
+  <RK_Stat_RangeCoolDownMultiplier.formatString>{0}×</RK_Stat_RangeCoolDownMultiplier.formatString>
+  <RK_Stat_ShieldBlockChance.label>Shield block chance</RK_Stat_ShieldBlockChance.label>
+  <RK_Stat_ShieldBlockChance.description>The chance to attempt a block with a shield.\n\nIf the shield block succeeds, the game then determines whether the attack penetrates the shield.\n\nAffected by Melee skill, Manipulation, and Sight.</RK_Stat_ShieldBlockChance.description>
+  <RK_Stat_DeflectAngle.label>Shield block angle</RK_Stat_DeflectAngle.label>
+  <RK_Stat_DeflectAngle.description>The forward cone angle within which this shield can block incoming attacks. For example, 90° means 45° to either side.</RK_Stat_DeflectAngle.description>
+  <RK_Stat_DeflectAngle.formatString>{0}°</RK_Stat_DeflectAngle.formatString>
+  <RK_Stat_ShieldStuffBase.label>Shield armor - material factor</RK_Stat_ShieldStuffBase.label>
+  <RK_Stat_Shield_Sharp.label>Shield armor - sharp</RK_Stat_Shield_Sharp.label>
+  <RK_Stat_Shield_Sharp.description>This shield's armor against sharp damage, such as bullets, cuts, explosions, and animal bites.\n\nWhen attacked, armor is reduced by the attacking weapon's armor penetration.\n\nFor this shield only, the remaining armor is compared against a single random roll.\n\n    - If the random value is lower than the remaining armor, the attack is negated.\n    - Otherwise, the block has no effect.\n\nFor example, against an attack with 90% armor and 10% penetration, the remaining armor is 80%, so the attack has about an 80% chance to be blocked.</RK_Stat_Shield_Sharp.description>
+  <RK_Stat_Shield_Blunt.label>Shield armor - blunt</RK_Stat_Shield_Blunt.label>
+  <RK_Stat_Shield_Blunt.description>This shield's armor against blunt damage, such as fists, blunt weapons, and falling rocks.\n\nWhen attacked, armor is reduced by the attacking weapon's armor penetration.\n\nFor this shield only, the remaining armor is compared against a single random roll.\n\n    - If the random value is lower than the remaining armor, the attack is negated.\n    - Otherwise, the block has no effect.\n\nFor example, against an attack with 90% armor and 10% penetration, the remaining armor is 80%, so the attack has about an 80% chance to be blocked.</RK_Stat_Shield_Blunt.description>
+  <RK_Stat_Shield_Heat.label>Shield armor - heat</RK_Stat_Shield_Heat.label>
+  <RK_Stat_Shield_Heat.description>This shield's armor against temperature-based damage, such as burns, fire, and other heat attacks.\n\nWhen attacked, armor is reduced by the attacking weapon's armor penetration.\n\nFor this shield only, the remaining armor is compared against a single random roll.\n\n    - If the random value is lower than the remaining armor, the attack is negated.\n    - Otherwise, the block has no effect.\n\nFor example, against an attack with 90% armor and 10% penetration, the remaining armor is 80%, so the attack has about an 80% chance to be blocked.</RK_Stat_Shield_Heat.description>
+</LanguageData>

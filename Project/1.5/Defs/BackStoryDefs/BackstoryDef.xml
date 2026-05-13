@@ -107,6 +107,7 @@
 			<li>RatkinGuardener</li>
 			<li>RatkinKnight</li>
 			<li>RatkinKnightCommander</li>
+			<li>RK_Backstory_Pilgrim</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- 꼬마목동 -->
@@ -138,6 +139,7 @@
 			<li>RatkinGuardener</li>
 			<li>RatkinUneducated</li>
 			<li>RatkinKnight</li>
+			<li>RK_Backstory_Pilgrim</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- 고아 -->
@@ -170,6 +172,7 @@
 			<li>RatkinDefender</li>
 			<li>RatkinSoldier</li>
 			<li>RatkinKnight</li>
+			<li>RK_Backstory_Pilgrim</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- 학생 -->
@@ -198,6 +201,7 @@
 			<li>RatkinEducated</li>
 			<li>RatkinSoldier</li>
 			<li>RatkinDemoman</li>
+			<li>RK_Backstory_Pilgrim</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- 사서자식 -->
@@ -485,6 +489,7 @@
 			<li>RatkinUneducated</li>
 			<li>RatkinKnight</li>
 			<li>RatkinSoldier</li>
+			<li>RK_Backstory_Pilgrim</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- 하인자식 -->
@@ -1340,6 +1345,7 @@
 			<li>RatkinPriest</li>
 			<li>RatkinKingdom</li>
 			<li>RatkinNonViolence</li>
+			<li>RK_Backstory_Pilgrim</li>
 		</spawnCategories>
 		<forcedTraitsChance Inherit="False">
 			<li Inherit="False">

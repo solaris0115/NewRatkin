@@ -1436,6 +1436,7 @@
 		</costList>
 		<costStuffCount>35</costStuffCount>
 		<stuffCategories>
+			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
 		<statBases>
@@ -1705,6 +1706,7 @@
 		</costList>
 		<costStuffCount>85</costStuffCount>
 		<stuffCategories>
+			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>		
 		<techLevel>Industrial</techLevel>

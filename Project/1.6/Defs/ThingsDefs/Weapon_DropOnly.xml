@@ -23,6 +23,11 @@
 		</statBases>
 		<equippedAngleOffset>-55</equippedAngleOffset>
 		<comps>
+			<li Class="NewRatkin.CompProperties_WeaponGripType">
+				<gripTypes>
+					<li>OneHand</li>
+				</gripTypes>
+			</li>
 			<li Class="CompProperties_Explosive">
 				<explosiveRadius>2</explosiveRadius>
 				<explosiveDamageType>DemoBomb</explosiveDamageType>

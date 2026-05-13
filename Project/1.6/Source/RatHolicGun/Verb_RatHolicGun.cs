@@ -15,6 +15,37 @@ namespace NewRatkin
         private VerbProperties_RatHolicGun RatHolicGunProps => 
             this.verbProps as VerbProperties_RatHolicGun;
 
+        /// <summary>
+        /// Verb_Shoot.WarmupComplete는 조준 종료 시 170/20×AdjustedFullCycleTime 만큼 Learn한다.
+        /// base를 호출하면 그대로 들어가므로, Verb_LaunchProjectile과 동일한 전처리 후 배율만 곱해 Learn한다.
+        /// </summary>
+        public override void WarmupComplete()
+        {
+            this.burstShotsLeft = this.ShotsPerBurst;
+            this.state = VerbState.Bursting;
+            this.TryCastNextBurstShot();
+
+            BattleLog battleLog = Find.BattleLog;
+            Thing caster = this.caster;
+            Thing target = this.currentTarget.HasThing ? this.currentTarget.Thing : null;
+            ThingWithComps equipmentSource = base.EquipmentSource;
+            battleLog.Add(new BattleLogEntry_RangedFire(
+                caster,
+                target,
+                equipmentSource != null ? equipmentSource.def : null,
+                this.Projectile,
+                this.ShotsPerBurst > 1));
+
+            Pawn pawn = this.currentTarget.Thing as Pawn;
+            if (pawn != null && !pawn.Downed && !pawn.IsColonyMech && this.CasterIsPawn && this.CasterPawn.skills != null)
+            {
+                float num = pawn.HostileTo(this.caster) ? 170f : 20f;
+                float num2 = this.verbProps.AdjustedFullCycleTime(this, this.CasterPawn);
+                float factor = RatHolicGunProps != null ? RatHolicGunProps.shootingXpFactor : 1f;
+                this.CasterPawn.skills.Learn(SkillDefOf.Shooting, num * num2 * factor, false, false);
+            }
+        }
+
         protected override bool TryCastShot()
         {
             // 기본 발사 로직 실행

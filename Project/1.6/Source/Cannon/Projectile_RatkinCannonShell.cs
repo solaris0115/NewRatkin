@@ -8,7 +8,7 @@ using Verse.Sound;
 namespace NewRatkin
 {
 	/// <summary>
-	/// 랫킨 포탄: 직격 시 폭발. 빈 지면 첫 착탄 시 <see cref="ProjectileProperties_RatkinCannonShell"/>의 반경·피해로 폭발 후 같은 방향으로 비행 거리 절반만 비행.
+	/// 랫킨 포탄: 직격 시 폭발. 빈 지면 첫 착탄 시 <see cref="ProjectileProperties_RatkinCannonShell"/>의 반경·피해로 폭발 후 같은 방향으로 비행 거리 절반 비행(상한 <see cref="ProjectileProperties_RatkinCannonShell.groundBounceMaxDistance"/>).
 	/// 지면 도탄 전·후 모두 동일하게 가로채기(실드·벽·폰 등)를 적용하며, 가로채기 후보는 <see cref="ThingCategory.Building"/>과 <see cref="Pawn"/>만이다.
 	/// 지면 도탄 이후 구간은 가로채기·착탄에서 <c>Rand.Chance</c> 없이, 바닐라와 동일한 가중치가 양수이면 첫 후보에 히트한다.
 	/// </summary>
@@ -26,6 +26,9 @@ namespace NewRatkin
 
 		private float GroundTouchExplosionRadiusCells =>
 			Mathf.Max(0.01f, ShellProps?.groundTouchExplosionRadius ?? def.projectile.explosionRadius);
+
+		private float GroundBounceMaxDistanceCells =>
+			Mathf.Max(0f, ShellProps?.groundBounceMaxDistance ?? 13f);
 
 		private bool didGroundBounce;
 
@@ -566,7 +569,7 @@ namespace NewRatkin
 			}
 
 			float fullLeg = Mathf.Max(MinBounceLegCells, (destination - origin).MagnitudeHorizontal());
-			float leg = fullLeg * 0.5f;
+			float leg = Mathf.Min(GroundBounceMaxDistanceCells, fullLeg * 0.5f);
 			Vector3 pos = ExactPosition;
 			origin = pos + dir * 0.06f;
 			destination = origin + dir * Mathf.Max(0.25f, leg);

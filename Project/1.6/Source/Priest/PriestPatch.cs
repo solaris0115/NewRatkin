@@ -1,5 +1,4 @@
 using System;
-using System.Linq;
 using HarmonyLib;
 using RimWorld;
 using Verse;
@@ -26,35 +25,59 @@ namespace NewRatkin
             );
 
             harmony.Patch(
+                AccessTools.Method(typeof(Pawn_AgeTracker), "RecalculateLifeStageIndex"),
+                postfix: new HarmonyMethod(patchType, nameof(RecalculateLifeStageIndex_Postfix))
+            );
+
+            harmony.Patch(
                 AccessTools.Method(typeof(NegativeInteractionUtility), nameof(NegativeInteractionUtility.NegativeInteractionChanceFactor)),
                 prefix: new HarmonyMethod(patchType, nameof(NegativeInteraction_Prefix))
             );
         }
 
+        /// <summary>
+        /// 사제 kind는 성인 단계에서만 예배 능력 부여. 신생아는 어머니 kind를 물려 받아 GeneratePawn 시점에 부여되던 문제 방지.
+        /// 유아·아동은 성장 후 RecalculateLifeStageIndex 포스트픽스에서 성인 전환 시 보충.
+        /// </summary>
+        private static void TryGrantPriestPrayerService(Pawn pawn)
+        {
+            if (pawn?.abilities == null)
+            {
+                return;
+            }
+
+            if (!pawn.DevelopmentalStage.Adult())
+            {
+                return;
+            }
+
+            bool isPriest = pawn.kindDef == RatkinPawnKindDefOf.RatkinPriest
+                || pawn.kindDef == RatkinPawnKindDefOf.RK_PawnKind_Priest;
+
+            if (!isPriest || pawn.abilities.GetAbility(RatkinAbilityDefOf.RK_PrayerService) != null)
+            {
+                return;
+            }
+
+            pawn.abilities.GainAbility(RatkinAbilityDefOf.RK_PrayerService);
+        }
+
         public static void GeneratePawn_Postfix(Pawn __result)
         {
-            if (__result?.abilities == null) return;
-
-            bool isPriest = __result.kindDef == RatkinPawnKindDefOf.RatkinPriest
-                || __result.kindDef == RatkinPawnKindDefOf.RK_PawnKind_Priest;
-
-            if (isPriest && __result.abilities.GetAbility(RatkinAbilityDefOf.RK_PrayerService) == null)
-            {
-                __result.abilities.GainAbility(RatkinAbilityDefOf.RK_PrayerService);
-            }
+            TryGrantPriestPrayerService(__result);
         }
 
         public static void ExposeData_Postfix(Pawn_AbilityTracker __instance, Pawn ___pawn)
         {
             if (Scribe.mode != LoadSaveMode.ResolvingCrossRefs) return;
 
-            bool isPriest = ___pawn?.kindDef == RatkinPawnKindDefOf.RatkinPriest
-                || ___pawn?.kindDef == RatkinPawnKindDefOf.RK_PawnKind_Priest;
+            TryGrantPriestPrayerService(___pawn);
+        }
 
-            if (isPriest && !__instance.abilities.Any(x => x.def == RatkinAbilityDefOf.RK_PrayerService))
-            {
-                __instance.GainAbility(RatkinAbilityDefOf.RK_PrayerService);
-            }
+        public static void RecalculateLifeStageIndex_Postfix(Pawn_AgeTracker __instance)
+        {
+            Pawn pawn = Traverse.Create(__instance).Field<Pawn>("pawn").Value;
+            TryGrantPriestPrayerService(pawn);
         }
 
         public static bool NegativeInteraction_Prefix(ref float __result, Pawn initiator, Pawn recipient)

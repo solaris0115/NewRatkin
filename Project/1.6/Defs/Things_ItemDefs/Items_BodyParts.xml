@@ -17,4 +17,18 @@
 			<li>Advanced</li>
 		</techHediffsTags>
 	</ThingDef>
+
+	<ThingDef ParentName="BodyPartArchotechBase">
+		<defName>RK_Thing_ArchotechTail</defName>
+		<label>archotech ratkin tail</label>
+		<description>An artificial ratkin tail built by an archotech. It senses posture and micro-movements to keep the bearer perfectly balanced, feels like living flesh, and is harder to damage than plasteel. If harmed, it repairs itself over time. Its inner workings are a mystery.</description>
+		<descriptionHyperlinks><RecipeDef>RK_Recipe_InstallArchotechTail</RecipeDef></descriptionHyperlinks>
+		<statBases>
+			<MarketValue>2800</MarketValue>
+			<Mass>4</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardCore</li>
+		</thingSetMakerTags>
+	</ThingDef>
 </Defs>

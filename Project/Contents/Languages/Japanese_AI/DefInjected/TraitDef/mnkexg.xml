@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Faith.degreeDatas.0.label>揺るぎない</Faith.degreeDatas.0.label>
+  <Faith.degreeDatas.0.description>{PAWN_nameDef}の信仰は確固たるものです。どんな逆境が訪れても、{PAWN_objective}は信仰によって耐え抜くことができます。</Faith.degreeDatas.0.description>
+</LanguageData>

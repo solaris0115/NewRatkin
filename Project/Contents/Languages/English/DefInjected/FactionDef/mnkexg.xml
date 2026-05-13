@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rakinia.pawnSingular>Ratkin</Rakinia.pawnSingular>
+  <Rakinia.pawnsPlural>Ratkins</Rakinia.pawnsPlural>
+  <Rakinia.leaderTitle>prime executor</Rakinia.leaderTitle>
+  <Rakinia.label>ratkin kingdom</Rakinia.label>
+  <Rakinia.description>Ratkin Kingdom. A non-invasive group of ratkin mostly invisible to humans.</Rakinia.description>
+
+  <RK_Faction_Pilgrims.label>pilgrim band</RK_Faction_Pilgrims.label>
+  <RK_Faction_Pilgrims.pawnSingular>pilgrim</RK_Faction_Pilgrims.pawnSingular>
+  <RK_Faction_Pilgrims.pawnsPlural>pilgrims</RK_Faction_Pilgrims.pawnsPlural>
+  <RK_Faction_Pilgrims.leaderTitle>leader</RK_Faction_Pilgrims.leaderTitle>
+  <RK_Faction_Pilgrims.description>A band of pilgrims traveling for many different reasons. Some are nobles, some are soldiers, some might even be looking for a new home, each has their own reasons for why.</RK_Faction_Pilgrims.description>
+
+  <RK_Faction_Caravan.label>Ratkin caravan</RK_Faction_Caravan.label>
+  <RK_Faction_Caravan.pawnSingular>caravaner</RK_Faction_Caravan.pawnSingular>
+  <RK_Faction_Caravan.pawnsPlural>caravaners</RK_Faction_Caravan.pawnsPlural>
+  <RK_Faction_Caravan.description>An independent traveling merchant band that roams the world to trade, or perhaps join, with anyone willing to speak to them.</RK_Faction_Caravan.description>
+  <RK_Faction_Caravan.leaderTitle>caravan master</RK_Faction_Caravan.leaderTitle>
+  
+	<!-- Player -->
+
+  <RK_PlayerFaction.label>Ratkin Settlers</RK_PlayerFaction.label>
+  <RK_PlayerFaction.description>A recently-formed group of independent Ratkin looking to make a new home for themselves.</RK_PlayerFaction.description>
+  <RK_PlayerFaction.pawnSingular>pioneer</RK_PlayerFaction.pawnSingular>
+  <RK_PlayerFaction.pawnsPlural>pioneers</RK_PlayerFaction.pawnsPlural>
+  <RK_PlayerFaction.leaderTitle>lead pioneer</RK_PlayerFaction.leaderTitle>
+</LanguageData>

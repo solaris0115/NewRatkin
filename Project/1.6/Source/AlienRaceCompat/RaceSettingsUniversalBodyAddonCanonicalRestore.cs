@@ -11,13 +11,17 @@ namespace NewRatkin.AlienRaceCompat
     ///     <see cref="AlienRace.RaceSettings" />의 <c>universalBodyAddons</c>는 Def당 싱글톤이며,
     ///     <c>ConditionBodyPart.bodyPartLabel</c>은 HAR가 <c>BodyPartRecord.untranslatedCustomLabel</c>과 비교하므로
     ///     번역 문자열이 들어가면 깨집니다.
-    ///     플레이 스테이지 진입 직후 <see cref="Game.FinalizeInit" />에서 한 번만 원문으로 맞춘다(신규 게임·세이브 로드 공통).
+    ///     <b>Auto Translation</b> 모드(<c>seohyeon.autotranslation</c>)가 활성일 때만,
+    ///     플레이 스테이지 진입 직후 <see cref="Game.FinalizeInit" />에서 한 번 원문으로 맞춘다(신규 게임·세이브 로드 공통).
     ///     (디버그) AutoTranslation <c>InjectTranslation</c> 시점 로그는 아래 패치·메서드 주석 참고.
     /// </summary>
     [StaticConstructorOnStartup]
     internal static class RaceSettingsUniversalBodyAddonCanonicalRestore
     {
         private const string HarmonyId = "com.NewRatkin.rimworld.mod.racesettingsbodyaddonrestore";
+
+        /// <summary>About.xml <c>packageId</c> — Auto Translation (SeoHyeon).</summary>
+        private const string AutoTranslationPackageId = "seohyeon.autotranslation";
 
         private const string RaceSettingsDefName = "RK_Race_Setting";
 
@@ -45,6 +49,9 @@ namespace NewRatkin.AlienRaceCompat
 
         static RaceSettingsUniversalBodyAddonCanonicalRestore()
         {
+            if (!ModsConfig.IsActive(AutoTranslationPackageId))
+                return;
+
             var harmony = new Harmony(HarmonyId);
             harmony.Patch(
                 AccessTools.Method(typeof(Game), nameof(Game.FinalizeInit)),
@@ -74,7 +81,7 @@ namespace NewRatkin.AlienRaceCompat
         /// </summary>
         private static void AfterGameFinalizeInit(Game __instance)
         {
-            if (__instance == null)
+            if (__instance == null || !ModsConfig.IsActive(AutoTranslationPackageId))
                 return;
 
             try

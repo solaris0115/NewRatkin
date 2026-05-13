@@ -78,6 +78,16 @@
   <Make_RK_WinterRobe.description>製作冬季外袍。</Make_RK_WinterRobe.description>
   <Make_RK_WinterRobe.jobString>正在製作冬季外袍</Make_RK_WinterRobe.jobString>
 
+  <Make_RK_Apparel_ChildrenWinterRobe.label>製作兒童冬季外袍</Make_RK_Apparel_ChildrenWinterRobe.label>
+  <Make_RK_Apparel_ChildrenWinterRobe.description>製作兒童冬季外袍。</Make_RK_Apparel_ChildrenWinterRobe.description>
+  <Make_RK_Apparel_ChildrenWinterRobe.jobString>正在製作兒童冬季外袍</Make_RK_Apparel_ChildrenWinterRobe.jobString>
+  <Make_RK_Apparel_ChildrenSummerDress.label>製作兒童夏季連衣裙</Make_RK_Apparel_ChildrenSummerDress.label>
+  <Make_RK_Apparel_ChildrenSummerDress.description>製作兒童夏季連衣裙。</Make_RK_Apparel_ChildrenSummerDress.description>
+  <Make_RK_Apparel_ChildrenSummerDress.jobString>正在製作兒童夏季連衣裙</Make_RK_Apparel_ChildrenSummerDress.jobString>
+  <Make_RK_Apparel_ChildrenCardigan.label>製作兒童羊毛衫</Make_RK_Apparel_ChildrenCardigan.label>
+  <Make_RK_Apparel_ChildrenCardigan.description>製作兒童羊毛衫。</Make_RK_Apparel_ChildrenCardigan.description>
+  <Make_RK_Apparel_ChildrenCardigan.jobString>正在製作兒童羊毛衫</Make_RK_Apparel_ChildrenCardigan.jobString>
+
   <Make_RK_OutdoorBackpack.label>製作戶外背包</Make_RK_OutdoorBackpack.label>
   <Make_RK_OutdoorBackpack.description>製作戶外背包。</Make_RK_OutdoorBackpack.description>
   <Make_RK_OutdoorBackpack.jobString>正在製作戶外背包</Make_RK_OutdoorBackpack.jobString>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <NamerFaction_RatkinKingdom.rulePack.rulesStrings>
+    <li>r_name(p=2)-&gt;[ofThing]の[empire]</li>
+    <li>r_name(p=2)-&gt;[ofThing] [empire]</li>
+    <li>r_name-&gt;偉大なる[empire]</li>
+    <li>r_name-&gt;鋼鉄ラットキン</li>
+    <li>r_name-&gt;ラキニア[empire]</li>
+    <li>empire(p=3)-&gt;王国</li>
+    <li>empire-&gt;帝国</li>
+    <li>ofThing(p=3)-&gt;[WordImperial]</li>
+    <li>ofThing-&gt;ガードナー</li>
+    <li>ofThing-&gt;ヒマワリ</li>
+    <li>ofThing-&gt;ピーナッツ</li>
+    <li>ofThing-&gt;鋼鉄ラットキン</li>
+  </NamerFaction_RatkinKingdom.rulePack.rulesStrings>
+</LanguageData>

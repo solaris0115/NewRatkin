@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RK_Hediff_LanceChargeExhaustion.label>疲労</RK_Hediff_LanceChargeExhaustion.label>
+  <RK_Hediff_LanceChargeExhaustion.description>疲労状態です。移動速度が低下します。</RK_Hediff_LanceChargeExhaustion.description>
+  <RK_Hediff_LanceChargeFocus.label>戦闘集中</RK_Hediff_LanceChargeFocus.label>
+  <RK_Hediff_LanceChargeFocus.description>近接命中率が上昇します。</RK_Hediff_LanceChargeFocus.description>
+  <RK_Hediff_LanceChargeMomentum.label>突撃慣性</RK_Hediff_LanceChargeMomentum.label>
+  <RK_Hediff_LanceChargeMomentum.description>突撃速度によるダメージが増加しています。</RK_Hediff_LanceChargeMomentum.description>
+  <RK_Hediff_MoraleBoosterCaster.label>士気高揚</RK_Hediff_MoraleBoosterCaster.label>
+  <RK_Hediff_MoraleBoosterCaster.description>この人物は特殊能力で周囲の仲間の士気を高めています。効果範囲内の全員が戦闘補助効果を得ます。</RK_Hediff_MoraleBoosterCaster.description>
+  <RK_Hediff_MoraleBoosterBuffWeak.label>士気高揚</RK_Hediff_MoraleBoosterBuffWeak.label>
+  <RK_Hediff_MoraleBoosterBuffWeak.description>士気が上がり、能力が向上しています。</RK_Hediff_MoraleBoosterBuffWeak.description>
+  <RK_Hediff_MoraleBoosterBuffDefault.label>士気高揚</RK_Hediff_MoraleBoosterBuffDefault.label>
+  <RK_Hediff_MoraleBoosterBuffDefault.description>士気が上がり、能力が向上しています。</RK_Hediff_MoraleBoosterBuffDefault.description>
+  <RK_Hediff_MoraleBoosterBuffStrong.label>士気高揚</RK_Hediff_MoraleBoosterBuffStrong.label>
+  <RK_Hediff_MoraleBoosterBuffStrong.description>士気が上がり、能力が向上しています。</RK_Hediff_MoraleBoosterBuffStrong.description>
+  <RK_Hediff_FakeEar.label>偽耳</RK_Hediff_FakeEar.label>
+  <RK_Hediff_FakeEar.labelNoun>偽耳</RK_Hediff_FakeEar.labelNoun>
+  <RK_Hediff_FakeEar.description>移植された偽耳です。</RK_Hediff_FakeEar.description>
+  <RK_Hediff_FakeTail.label>偽尻尾</RK_Hediff_FakeTail.label>
+  <RK_Hediff_FakeTail.labelNoun>偽尻尾</RK_Hediff_FakeTail.labelNoun>
+  <RK_Hediff_FakeTail.description>移植された偽尻尾です。</RK_Hediff_FakeTail.description>
+  <RK_Hediff_BionicTail.label>生体工学尻尾</RK_Hediff_BionicTail.label>
+  <RK_Hediff_BionicTail.description>移植された先進的な人工尻尾です。小型AIが使用者の体のバランスを自動で整えます。</RK_Hediff_BionicTail.description>
+  <RK_Hediff_BionicTail.labelNoun>生体工学尻尾</RK_Hediff_BionicTail.labelNoun>
+  <RK_Hediff_ArchotechTail.label>アーキテック尻尾（ラットキン）</RK_Hediff_ArchotechTail.label>
+  <RK_Hediff_ArchotechTail.description>移植されたアーキテック製のラットキン用人工尻尾です。姿勢と微細な動きを感知し、完璧に近いバランスを保ちます。生身のような感触ですがプラスチールより傷つきにくく、損傷しても時間とともに自己修復します。内部構造は人間の理解を超えています。</RK_Hediff_ArchotechTail.description>
+  <RK_Hediff_ArchotechTail.labelNoun>アーキテック尻尾（ラットキン）</RK_Hediff_ArchotechTail.labelNoun>
+  <RK_Hediff_Torn.label>裂傷</RK_Hediff_Torn.label>
+  <RK_Hediff_Torn.labelNoun>裂けた傷</RK_Hediff_Torn.labelNoun>
+  <RK_Hediff_Torn.description>裂けた傷です。</RK_Hediff_Torn.description>
+  <RK_Hediff_Torn.injuryProps.destroyedLabel>裂けた</RK_Hediff_Torn.injuryProps.destroyedLabel>
+  <RK_Hediff_Torn.injuryProps.destroyedOutLabel>引き千切れた</RK_Hediff_Torn.injuryProps.destroyedOutLabel>
+  <RK_Hediff_Torn.comps.0.labelTendedWell>包帯済み</RK_Hediff_Torn.comps.0.labelTendedWell>
+  <RK_Hediff_Torn.comps.0.labelTendedWellInner>縫合済み</RK_Hediff_Torn.comps.0.labelTendedWellInner>
+  <RK_Hediff_Torn.comps.0.labelSolidTendedWell>接合済み</RK_Hediff_Torn.comps.0.labelSolidTendedWell>
+  <RK_Hediff_Torn.comps.2.permanentLabel>裂けた傷跡</RK_Hediff_Torn.comps.2.permanentLabel>
+  <RK_Hediff_RatHolicGun.label>回転慣性</RK_Hediff_RatHolicGun.label>
+  <RK_Hediff_RatHolicGun.description>ラットホリックガンを使用中です。</RK_Hediff_RatHolicGun.description>
+  <RK_Hediff_RatHolicGunSpooling.label>回転蓄積</RK_Hediff_RatHolicGunSpooling.label>
+  <RK_Hediff_RatHolicGunSpooling.description>銃身の回転が蓄積し、発射速度がだんだん速くなります。</RK_Hediff_RatHolicGunSpooling.description>
+  <RK_Hediff_RatHolicGunSpoolingAim.label>標的固定</RK_Hediff_RatHolicGunSpoolingAim.label>
+  <RK_Hediff_RatHolicGunSpoolingAim.description>銃身の回転慣性により、標的の再捕捉時間が短縮されます。</RK_Hediff_RatHolicGunSpoolingAim.description>
+</LanguageData>

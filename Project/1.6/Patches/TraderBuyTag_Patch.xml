@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- 바닐라/DLC 상단이 랫킨 의류·무기를 구매(플레이어 판매)할 수 있도록 BuyTradeTag 추가 -->
+	<!-- RK_Apparel: 일반 랫킨 의류, RK_TradeTag_Armor: 랫킨 갑옷, RK_TradeTag_All: 전체 -->
+
+	<!-- === Core: 아웃랜더 캐러반 === -->
+
+	<!-- 아웃랜더 물자상 -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TraderKindDef[defName="Caravan_Outlander_BulkGoods"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_BuyTradeTag"><tag>RK_Apparel</tag></li>
+		</value>
+	</Operation>
+
+	<!-- 아웃랜더 전투상 -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TraderKindDef[defName="Caravan_Outlander_CombatSupplier"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_BuyTradeTag"><tag>RK_TradeTag_Armor</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>RK_TradeTag_All</tag></li>
+		</value>
+	</Operation>
+
+	<!-- 아웃랜더 해적상 -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TraderKindDef[defName="Caravan_Outlander_PirateMerchant"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_BuyTradeTag"><tag>RK_TradeTag_All</tag></li>
+		</value>
+	</Operation>
+
+	<!-- 아웃랜더 희귀품상 -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TraderKindDef[defName="Caravan_Outlander_Exotic"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_BuyTradeTag"><tag>RK_TradeTag_ArmorHighTech</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>RK_TradeTag_All</tag></li>
+		</value>
+	</Operation>
+
+	<!-- === Core: 아웃랜더/원주민 거점 === -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TraderKindDef[defName="Base_Outlander_Standard"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_BuyTradeTag"><tag>RK_Apparel</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>RK_TradeTag_All</tag></li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TraderKindDef[defName="Base_Neolithic_Standard"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_BuyTradeTag"><tag>RK_Apparel</tag></li>
+		</value>
+	</Operation>
+
+	<!-- === Core: 궤도 상선 === -->
+
+	<!-- 궤도 물자상 -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TraderKindDef[defName="Orbital_BulkGoods"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_BuyTradeTag"><tag>RK_Apparel</tag></li>
+		</value>
+	</Operation>
+
+	<!-- 궤도 전투상 -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TraderKindDef[defName="Orbital_CombatSupplier"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_BuyTradeTag"><tag>RK_TradeTag_Armor</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>RK_TradeTag_All</tag></li>
+		</value>
+	</Operation>
+
+	<!-- 궤도 희귀품상 -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TraderKindDef[defName="Orbital_Exotic"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_BuyTradeTag"><tag>RK_TradeTag_ArmorHighTech</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>RK_TradeTag_All</tag></li>
+		</value>
+	</Operation>
+
+	<!-- 궤도 해적상 -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TraderKindDef[defName="Orbital_PirateMerchant"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_BuyTradeTag"><tag>RK_TradeTag_All</tag></li>
+		</value>
+	</Operation>
+
+	<!-- === Royalty: 제국 === -->
+
+	<Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty">
+		<xpath>Defs/TraderKindDef[defName="Empire_Caravan_TraderGeneral"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_BuyTradeTag"><tag>RK_Apparel</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>RK_TradeTag_All</tag></li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty">
+		<xpath>Defs/TraderKindDef[defName="Orbital_Empire"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_BuyTradeTag"><tag>RK_Apparel</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>RK_TradeTag_All</tag></li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty">
+		<xpath>Defs/TraderKindDef[defName="Base_Empire_Standard"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_BuyTradeTag"><tag>RK_Apparel</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>RK_TradeTag_All</tag></li>
+		</value>
+	</Operation>
+
+</Patch>

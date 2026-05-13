@@ -105,6 +105,13 @@
   <RK_WinterRobe.label>랫킨 겨울예복</RK_WinterRobe.label>
   <RK_WinterRobe.description>겨울용 예복입니다. 극지에서 활동할때 입습니다.</RK_WinterRobe.description>
 
+  <RK_Apparel_ChildrenWinterRobe.label>랫킨 어린이 겨울예복</RK_Apparel_ChildrenWinterRobe.label>
+  <RK_Apparel_ChildrenWinterRobe.description>어린이 체형에 맞춘 겨울 예복입니다. 성인용 겨울예복과 용도는 같습니다.</RK_Apparel_ChildrenWinterRobe.description>
+  <RK_Apparel_ChildrenSummerDress.label>랫킨 어린이 여름 드레스</RK_Apparel_ChildrenSummerDress.label>
+  <RK_Apparel_ChildrenSummerDress.description>어린이용 여름 드레스입니다. 통풍이 잘되어 더운 날씨에 적합합니다.</RK_Apparel_ChildrenSummerDress.description>
+  <RK_Apparel_ChildrenCardigan.label>랫킨 어린이 가디건</RK_Apparel_ChildrenCardigan.label>
+  <RK_Apparel_ChildrenCardigan.description>어린이용 가디건입니다. 겉옷으로 추위를 덜어줍니다.</RK_Apparel_ChildrenCardigan.description>
+
 
   <!-- 군용가방 +30 내구도 +20 -->
 

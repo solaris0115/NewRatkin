@@ -47,8 +47,6 @@ namespace NewRatkin
             Map map = Map;
             IntVec3 impactPos = Position;
 
-            GenClamor.DoClamor(this, 12f, ClamorDefOf.Impact);
-
             ProjectileProperties_ProximityBurst props = ProximityProps;
             if (map == null || props == null)
             {
@@ -58,9 +56,18 @@ namespace NewRatkin
 
             if (blockedByShield)
             {
+                GenClamor.DoClamor(this, 12f, ClamorDefOf.Impact);
                 Destroy(DestroyMode.Vanish);
                 return;
             }
+
+            if (ShouldSuppressSectorBurstOnHit(hitThing))
+            {
+                base.Impact(hitThing, blockedByShield);
+                return;
+            }
+
+            GenClamor.DoClamor(this, 12f, ClamorDefOf.Impact);
 
             if (!reachedDetonationPoint && props.preDetonationDistance > 0f)
             {
@@ -82,6 +89,16 @@ namespace NewRatkin
             SpawnShieldBlockEffects(map, shieldedCells, hitShields);
 
             Destroy(DestroyMode.Vanish);
+        }
+
+        private static bool ShouldSuppressSectorBurstOnHit(Thing hitThing)
+        {
+            if (hitThing is Building b)
+            {
+                if (b.def.IsWall) return true;
+                if (b.def.building != null && b.def.building.isNaturalRock) return true;
+            }
+            return hitThing is Building_Door d && !d.Open;
         }
 
         private int ScaledRangedDamageFromBase(int baseAmount)
@@ -189,6 +206,20 @@ namespace NewRatkin
                 }
             }
 
+            if (center.InBounds(map))
+            {
+                int centerShield = GetBlockingShieldIndex(center, shieldZones);
+                if (centerShield >= 0)
+                {
+                    shieldedCells.Add(center);
+                    hitShields.Add(shieldZones[centerShield].comp);
+                }
+                else if (!result.Contains(center))
+                {
+                    result.Add(center);
+                }
+            }
+
             AddAdjacentWallCells(center, map, sectorRadius, result);
             return result;
         }
@@ -222,12 +253,12 @@ namespace NewRatkin
             List<Thing> interceptors = map.listerThings.ThingsInGroup(ThingRequestGroup.ProjectileInterceptor);
             for (int i = 0; i < interceptors.Count; i++)
             {
-                var comp = interceptors[i].TryGetComp<CompProjectileInterceptor>();
+                Thing shieldThing = interceptors[i];
+                var comp = shieldThing.TryGetComp<CompProjectileInterceptor>();
                 if (comp == null || !comp.Active)
                     continue;
                 if (!comp.Props.interceptGroundProjectiles)
                     continue;
-                Thing shieldThing = interceptors[i];
                 if (launcher != null && shieldThing.Faction != null && !launcher.HostileTo(shieldThing))
                     continue;
                 Vector3 pos = shieldThing.Position.ToVector3Shifted();
@@ -366,26 +397,55 @@ namespace NewRatkin
             int damAmount = props.damageAmountExplosion > 0 ? ScaledRangedDamageFromBase(props.damageAmountExplosion) : DamageAmount;
             float armorPen = props.armorPenetrationExplosion >= 0f ? ScaledExplicitArmorPen(props.armorPenetrationExplosion, damageDef) : ArmorPenetration;
 
-            GenExplosion.DoExplosion(
-                center, map, 0f, damageDef, launcher,
-                damAmount, armorPen, def.projectile.soundExplode,
-                equipmentDef, def, intendedTarget.Thing,
-                def.projectile.postExplosionSpawnThingDef,
-                def.projectile.postExplosionSpawnChance,
-                def.projectile.postExplosionSpawnThingCount,
-                null, null, 255,
-                def.projectile.applyDamageToExplosionCellsNeighbors,
-                def.projectile.preExplosionSpawnThingDef,
-                def.projectile.preExplosionSpawnChance,
-                def.projectile.preExplosionSpawnThingCount,
-                def.projectile.explosionChanceToStartFire,
-                def.projectile.explosionDamageFalloff,
-                null, null, null, false,
-                damageDef.expolosionPropagationSpeed,
-                0f, true,
-                def.projectile.postExplosionSpawnThingDefWater,
-                def.projectile.screenShakeFactor,
-                null, sectorCells, null, null);
+            float launcherAngle = (destination - origin).Yto0().AngleFlat();
+
+            Pawn instigatorPawn = launcher as Pawn;
+            bool instigatorGuilty = instigatorPawn == null || !instigatorPawn.Drafted;
+
+            HashSet<Thing> alreadyDamaged = new HashSet<Thing>();
+
+            foreach (IntVec3 cell in sectorCells)
+            {
+                List<Thing> thingList = cell.GetThingList(map);
+                for (int i = thingList.Count - 1; i >= 0; i--)
+                {
+                    Thing t = thingList[i];
+                    if (t == launcher || t == this) continue;
+                    if (t.Destroyed) continue;
+                    if (t.def.category == ThingCategory.Mote || t.def.category == ThingCategory.Ethereal) continue;
+                    if (alreadyDamaged.Contains(t)) continue;
+
+                    alreadyDamaged.Add(t);
+
+                    float angle;
+                    if (launcher != null && launcher.Spawned && t.Position != launcher.Position)
+                    {
+                        angle = (t.Position - launcher.Position).AngleFlat;
+                    }
+                    else
+                    {
+                        angle = launcherAngle;
+                    }
+
+                    DamageInfo dinfo = new DamageInfo(
+                        damageDef,
+                        damAmount,
+                        armorPen,
+                        angle,
+                        launcher,
+                        null,
+                        equipmentDef,
+                        DamageInfo.SourceCategory.ThingOrUnknown,
+                        intendedTarget.Thing,
+                        instigatorGuilty,
+                        true,
+                        QualityCategory.Normal,
+                        true,
+                        false);
+                    dinfo.SetWeaponQuality(equipmentQuality);
+                    t.TakeDamage(dinfo);
+                }
+            }
         }
     }
 }

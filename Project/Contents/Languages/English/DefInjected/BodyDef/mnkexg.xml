@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RK_Body_Ratkin.label>Ratkin</RK_Body_Ratkin.label>
+  <RK_Body_Ratkin.corePart.parts.6.customLabel>left lung</RK_Body_Ratkin.corePart.parts.6.customLabel>
+  <RK_Body_Ratkin.corePart.parts.7.customLabel>right lung</RK_Body_Ratkin.corePart.parts.7.customLabel>
+  <RK_Body_Ratkin.corePart.parts.8.customLabel>left kidney</RK_Body_Ratkin.corePart.parts.8.customLabel>
+  <RK_Body_Ratkin.corePart.parts.9.customLabel>right kidney</RK_Body_Ratkin.corePart.parts.9.customLabel>
+  <RK_Body_Ratkin.corePart.parts.12.customLabel>left shoulder</RK_Body_Ratkin.corePart.parts.12.customLabel>
+  <RK_Body_Ratkin.corePart.parts.13.customLabel>right shoulder</RK_Body_Ratkin.corePart.parts.13.customLabel>
+  <RK_Body_Ratkin.corePart.parts.15.customLabel>tail</RK_Body_Ratkin.corePart.parts.15.customLabel>
+  <RK_Body_Ratkin.corePart.parts.16.customLabel>left leg</RK_Body_Ratkin.corePart.parts.16.customLabel>
+  <RK_Body_Ratkin.corePart.parts.17.customLabel>right leg</RK_Body_Ratkin.corePart.parts.17.customLabel>
+  <RK_Body_Ratkin.corePart.parts.12.parts.0.customLabel>left clavicle</RK_Body_Ratkin.corePart.parts.12.parts.0.customLabel>
+  <RK_Body_Ratkin.corePart.parts.12.parts.1.customLabel>left arm</RK_Body_Ratkin.corePart.parts.12.parts.1.customLabel>
+  <RK_Body_Ratkin.corePart.parts.13.parts.0.customLabel>right clavicle</RK_Body_Ratkin.corePart.parts.13.parts.0.customLabel>
+  <RK_Body_Ratkin.corePart.parts.13.parts.1.customLabel>right arm</RK_Body_Ratkin.corePart.parts.13.parts.1.customLabel>
+  <RK_Body_Ratkin.corePart.parts.16.parts.0.customLabel>left femur</RK_Body_Ratkin.corePart.parts.16.parts.0.customLabel>
+  <RK_Body_Ratkin.corePart.parts.16.parts.1.customLabel>left tibia</RK_Body_Ratkin.corePart.parts.16.parts.1.customLabel>
+  <RK_Body_Ratkin.corePart.parts.16.parts.2.customLabel>left foot</RK_Body_Ratkin.corePart.parts.16.parts.2.customLabel>
+  <RK_Body_Ratkin.corePart.parts.17.parts.0.customLabel>right femur</RK_Body_Ratkin.corePart.parts.17.parts.0.customLabel>
+  <RK_Body_Ratkin.corePart.parts.17.parts.1.customLabel>right tibia</RK_Body_Ratkin.corePart.parts.17.parts.1.customLabel>
+  <RK_Body_Ratkin.corePart.parts.17.parts.2.customLabel>right foot</RK_Body_Ratkin.corePart.parts.17.parts.2.customLabel>
+  <RK_Body_Ratkin.corePart.parts.11.parts.0.parts.1.customLabel>left eye</RK_Body_Ratkin.corePart.parts.11.parts.0.parts.1.customLabel>
+  <RK_Body_Ratkin.corePart.parts.11.parts.0.parts.2.customLabel>right eye</RK_Body_Ratkin.corePart.parts.11.parts.0.parts.2.customLabel>
+  <RK_Body_Ratkin.corePart.parts.11.parts.0.parts.3.customLabel>left ear</RK_Body_Ratkin.corePart.parts.11.parts.0.parts.3.customLabel>
+  <RK_Body_Ratkin.corePart.parts.11.parts.0.parts.4.customLabel>right ear</RK_Body_Ratkin.corePart.parts.11.parts.0.parts.4.customLabel>
+  <RK_Body_Ratkin.corePart.parts.12.parts.1.parts.0.customLabel>left humerus</RK_Body_Ratkin.corePart.parts.12.parts.1.parts.0.customLabel>
+  <RK_Body_Ratkin.corePart.parts.12.parts.1.parts.1.customLabel>left radius</RK_Body_Ratkin.corePart.parts.12.parts.1.parts.1.customLabel>
+  <RK_Body_Ratkin.corePart.parts.12.parts.1.parts.2.customLabel>left hand</RK_Body_Ratkin.corePart.parts.12.parts.1.parts.2.customLabel>
+  <RK_Body_Ratkin.corePart.parts.13.parts.1.parts.0.customLabel>right humerus</RK_Body_Ratkin.corePart.parts.13.parts.1.parts.0.customLabel>
+  <RK_Body_Ratkin.corePart.parts.13.parts.1.parts.1.customLabel>right radius</RK_Body_Ratkin.corePart.parts.13.parts.1.parts.1.customLabel>
+  <RK_Body_Ratkin.corePart.parts.13.parts.1.parts.2.customLabel>right hand</RK_Body_Ratkin.corePart.parts.13.parts.1.parts.2.customLabel>
+  <RK_Body_Ratkin.corePart.parts.16.parts.2.parts.0.customLabel>left little toe</RK_Body_Ratkin.corePart.parts.16.parts.2.parts.0.customLabel>
+  <RK_Body_Ratkin.corePart.parts.16.parts.2.parts.1.customLabel>left fourth toe</RK_Body_Ratkin.corePart.parts.16.parts.2.parts.1.customLabel>
+  <RK_Body_Ratkin.corePart.parts.16.parts.2.parts.2.customLabel>left middle toe</RK_Body_Ratkin.corePart.parts.16.parts.2.parts.2.customLabel>
+  <RK_Body_Ratkin.corePart.parts.16.parts.2.parts.3.customLabel>left second toe</RK_Body_Ratkin.corePart.parts.16.parts.2.parts.3.customLabel>
+  <RK_Body_Ratkin.corePart.parts.16.parts.2.parts.4.customLabel>left big toe</RK_Body_Ratkin.corePart.parts.16.parts.2.parts.4.customLabel>
+  <RK_Body_Ratkin.corePart.parts.17.parts.2.parts.0.customLabel>right little toe</RK_Body_Ratkin.corePart.parts.17.parts.2.parts.0.customLabel>
+  <RK_Body_Ratkin.corePart.parts.17.parts.2.parts.1.customLabel>right fourth toe</RK_Body_Ratkin.corePart.parts.17.parts.2.parts.1.customLabel>
+  <RK_Body_Ratkin.corePart.parts.17.parts.2.parts.2.customLabel>right middle toe</RK_Body_Ratkin.corePart.parts.17.parts.2.parts.2.customLabel>
+  <RK_Body_Ratkin.corePart.parts.17.parts.2.parts.3.customLabel>right second toe</RK_Body_Ratkin.corePart.parts.17.parts.2.parts.3.customLabel>
+  <RK_Body_Ratkin.corePart.parts.17.parts.2.parts.4.customLabel>right big toe</RK_Body_Ratkin.corePart.parts.17.parts.2.parts.4.customLabel>
+  <RK_Body_Ratkin.corePart.parts.12.parts.1.parts.2.parts.0.customLabel>left little finger</RK_Body_Ratkin.corePart.parts.12.parts.1.parts.2.parts.0.customLabel>
+  <RK_Body_Ratkin.corePart.parts.12.parts.1.parts.2.parts.1.customLabel>left ring finger</RK_Body_Ratkin.corePart.parts.12.parts.1.parts.2.parts.1.customLabel>
+  <RK_Body_Ratkin.corePart.parts.12.parts.1.parts.2.parts.2.customLabel>left middle finger</RK_Body_Ratkin.corePart.parts.12.parts.1.parts.2.parts.2.customLabel>
+  <RK_Body_Ratkin.corePart.parts.12.parts.1.parts.2.parts.3.customLabel>left index finger</RK_Body_Ratkin.corePart.parts.12.parts.1.parts.2.parts.3.customLabel>
+  <RK_Body_Ratkin.corePart.parts.12.parts.1.parts.2.parts.4.customLabel>left thumb</RK_Body_Ratkin.corePart.parts.12.parts.1.parts.2.parts.4.customLabel>
+  <RK_Body_Ratkin.corePart.parts.13.parts.1.parts.2.parts.0.customLabel>right little finger</RK_Body_Ratkin.corePart.parts.13.parts.1.parts.2.parts.0.customLabel>
+  <RK_Body_Ratkin.corePart.parts.13.parts.1.parts.2.parts.1.customLabel>right ring finger</RK_Body_Ratkin.corePart.parts.13.parts.1.parts.2.parts.1.customLabel>
+  <RK_Body_Ratkin.corePart.parts.13.parts.1.parts.2.parts.2.customLabel>right middle finger</RK_Body_Ratkin.corePart.parts.13.parts.1.parts.2.parts.2.customLabel>
+  <RK_Body_Ratkin.corePart.parts.13.parts.1.parts.2.parts.3.customLabel>right index finger</RK_Body_Ratkin.corePart.parts.13.parts.1.parts.2.parts.3.customLabel>
+  <RK_Body_Ratkin.corePart.parts.13.parts.1.parts.2.parts.4.customLabel>right thumb</RK_Body_Ratkin.corePart.parts.13.parts.1.parts.2.parts.4.customLabel>
+</LanguageData>

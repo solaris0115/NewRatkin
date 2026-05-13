@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RK_WorkType_GeneratePower.labelShort>gen power</RK_WorkType_GeneratePower.labelShort>
+  <RK_WorkType_GeneratePower.pawnLabel>Worker</RK_WorkType_GeneratePower.pawnLabel>
+  <RK_WorkType_GeneratePower.gerundLabel>producing power</RK_WorkType_GeneratePower.gerundLabel>
+  <RK_WorkType_GeneratePower.description>Generates power by running on hamster wheels.</RK_WorkType_GeneratePower.description>
+  <RK_WorkType_GeneratePower.verb>Working at</RK_WorkType_GeneratePower.verb>
+</LanguageData>

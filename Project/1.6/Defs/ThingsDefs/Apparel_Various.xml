@@ -79,6 +79,7 @@
 		</comps>
 		<tradeTags>
 			<li>RK_Apparel</li>
+			<li>RK_TradeTag_All</li>
 		</tradeTags>
 		<apparel>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -172,60 +173,7 @@
 		</recipeMaker>
 	</ThingDef>
 
-	<ThingDef ParentName="RK_ApparelMakeableBase" MayRequire="Ludeon.RimWorld.Biotech">
-		<defName>RK_ApronSkirtChildren</defName>
-		<label>kid skirt</label>
-		<description>어린이용 일상복입니다.</description>
-		<graphicData>
-			<texPath>Apparel/RK_ApronSkirt</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
-			<WorkToMake>1200</WorkToMake>
-			<Mass>0.2</Mass>
-			<StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.20</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
-			<EquipDelay>1.5</EquipDelay>
-		</statBases>
-		<costStuffCount>50</costStuffCount>
-		<stuffCategories>
-			<li>Fabric</li>
-			<li>Leathery</li>
-		</stuffCategories>
-		<apparel>
-			<bodyPartGroups>
-				<li>Torso</li>
-				<li>Shoulders</li>
-				<li>Arms</li>
-				<li>Legs</li>
-			</bodyPartGroups>
-			<defaultOutfitTags>
-				<li>Child</li>
-			</defaultOutfitTags>
-			<wornGraphicPath>Apparel/RK_ApronSkirt</wornGraphicPath>
-			<layers>
-				<li>OnSkin</li>
-			</layers>
-			<tags>
-				<li>RK_Worker</li>
-				<li>RK_Servant</li>
-				<li>RK_Maid</li>
-				<li>RK_1Tier</li>
-				<li>RK_Thief</li>
-				<li>RK_Apparel_CommonClothes</li>
-			</tags>
-			<drawData>
-				<childScale>0.7</childScale>
-			</drawData>
-			<developmentalStageFilter>Child</developmentalStageFilter>
-		</apparel>
-		<recipeMaker>
-			<researchPrerequisite>RK_Research_Tailoring</researchPrerequisite>
-			<displayPriority>47205</displayPriority>
-		</recipeMaker>
-	</ThingDef>
+	<!-- RK_ApronSkirtChildren → Apparel_Child.xml -->
 
 	<!-- 더위저항 +12 -->
 	<!-- 여름드레스 더위저항 +7 -->
@@ -311,6 +259,10 @@
 				<li>RoyalTier2</li>
 				<li>RK_Apparel_CommonClothes</li>
 			</tags>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<drawData>
+				<childScale>0.7</childScale>
+			</drawData>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_Options">
 			<options>
@@ -371,6 +323,10 @@
 			<layers>
 				<li>OuterClothing</li>
 			</layers>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<drawData>
+				<childScale>0.7</childScale>
+			</drawData>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_Options">
 			<options>
@@ -512,6 +468,10 @@
 			<layers>
 				<li>Overhead</li>
 			</layers>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<drawData>
+				<childScale>0.7</childScale>
+			</drawData>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_Options">
 			<options>
@@ -734,14 +694,14 @@
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
-				<li>UpperHead</li>
+				<li>Eyes</li>
 			</bodyPartGroups>
 			<defaultOutfitTags>
 				<li>Worker</li>
 			</defaultOutfitTags>
 			<wornGraphicPath>Apparel/RK_ResearchGlasses</wornGraphicPath>
 			<layers>
-				<li>Overhead</li>
+				<li>EyeCover</li>
 			</layers>
 			<tags>
 				<li>RK_Doctor</li>
@@ -1062,6 +1022,9 @@
 	<ThingDef ParentName="RK_ApparelMakeableBase">
 		<defName>RK_WinterRobe</defName>
 		<label>winter robe</label>
+		<thingCategories>
+			<li>RK_ApparelNoble</li>
+		</thingCategories>
 		<description>겨울용 예복입니다. 극지에서 활동할때 입습니다.</description>
 		<graphicData>
 			<texPath>Apparel/RK_WinterRobe</texPath>
@@ -1126,6 +1089,12 @@
 	<ThingDef ParentName="RK_ApparelMakeableBase">
 		<defName>RK_OrderUniform</defName>
 		<label>ratkin order uniform</label>
+		<tradeTags>
+			<li>RK_TradeTag_Armor</li>
+		</tradeTags>
+		<thingCategories>
+			<li>RK_ApparelArmor</li>
+		</thingCategories>
 		<description>랫킨식 제식 전투복입니다. 랫킨식 전투에 유리하도록 디자인된 의류입니다. 착용자에게 약간의 고양감을 주어 강인한 전투원으로 만들어줍니다.</description>
 		<graphicData>
 			<texPath>Apparel/RK_OrderUniform</texPath>
@@ -1196,6 +1165,12 @@
 	<ThingDef ParentName="RK_HatMakeableBase">
 		<defName>RK_BulletProofHelmet</defName>
 		<label>Ratkin military helmet</label>
+		<tradeTags>
+			<li>RK_TradeTag_Armor</li>
+		</tradeTags>
+		<thingCategories>
+			<li>RK_ArmorHeadgear</li>
+		</thingCategories>
 		<description>랫킨용 방탄 모자입니다. 착용자의 공포감을 조금 덜어주고 조준을 수월하게 해줍니다.</description>
 		<graphicData>
 			<texPath>Apparel/RK_BulletProofHelmet</texPath>
@@ -1255,6 +1230,9 @@
 	<ThingDef ParentName="RK_ApparelMakeableBase">
 		<defName>RK_FlatColorCoat</defName>
 		<label>flatcolor coat</label>
+		<thingCategories>
+			<li>RK_ApparelNoble</li>
+		</thingCategories>
 		<description>단아한 단색 원피스입니다. 편하면서 공식적 자리에 입기 좋아보입니다.</description>
 		<graphicData>
 			<texPath>Apparel/RK_FlatColorCoat</texPath>
@@ -1316,6 +1294,9 @@
 	<ThingDef ParentName="RK_ApparelMakeableBase">
 		<defName>RK_FrillOnepiece</defName>
 		<label>frill onepiece</label>
+		<thingCategories>
+			<li>RK_ApparelNoble</li>
+		</thingCategories>
 		<description>프릴장식이 있는 귀여운 원피스이빈다. 상류층의 아가씨들에게 인기가 많습니다.</description>
 		<graphicData>
 			<texPath>Apparel/RK_FrillOnepiece</texPath>
@@ -1376,6 +1357,9 @@
 	<ThingDef ParentName="RK_HatMakeableBase">
 		<defName>RK_HairCorsage</defName>
 		<label>hair corsage</label>
+		<thingCategories>
+			<li>RK_HeadgearNoble</li>
+		</thingCategories>
 		<description>머리에 쓰는 코사주입니다. 코사주의 우아함은 말 한마디마다 힘을 실어줍니다.</description>
 		<graphicData>
 			<texPath>Apparel/RK_HairCorsage</texPath>
@@ -1428,6 +1412,9 @@
 	<ThingDef ParentName="RK_HatMakeableBase">
 		<defName>RK_RibbonHairBand</defName>
 		<label>ribbon hair band</label>
+		<thingCategories>
+			<li>RK_HeadgearNoble</li>
+		</thingCategories>
 		<description>머리에 착용하는 작고 이쁜 리본입니다. 리본의 귀여움은 사탕하나를 더 주고 싶도록 만들것입니다.</description>
 		<graphicData>
 			<texPath>Apparel/RK_RibbonHairBand</texPath>
@@ -1440,6 +1427,7 @@
 		</costList>
 		<costStuffCount>35</costStuffCount>
 		<stuffCategories>
+			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
 		<statBases>
@@ -1480,6 +1468,9 @@
 	<ThingDef ParentName="RK_ApparelMakeableBase">
 		<defName>RK_SistersDerss</defName>
 		<label>Sisters Dress</label>
+		<thingCategories>
+			<li>RK_ApparelNoble</li>
+		</thingCategories>
 		<description>수녀들이 입는 단아한 원피스입니다. 약간의 옆트임이 있어 움직임이 편합니다. 랫킨의 수녀들은 아픈 사람들을 돌보기도 합니다.</description>
 		<graphicData>
 			<texPath>Apparel/RK_SistersDerss</texPath>
@@ -1541,6 +1532,9 @@
 	<ThingDef ParentName="RK_HatMakeableBase">
 		<defName>RK_SistersVeil</defName>
 		<label>Veil</label>
+		<thingCategories>
+			<li>RK_HeadgearNoble</li>
+		</thingCategories>
 		<description>수녀들이 머리에 쓰는 베일입니다. 머리를 단정하게 해줍니다.</description>
 		<graphicData>
 			<texPath>Apparel/RK_SistersVeil</texPath>
@@ -1597,6 +1591,9 @@
 	<ThingDef ParentName="RK_ApparelMakeableBase">
 		<defName>RK_BattleSuit</defName>
 		<label>ratkin battlesuit</label>
+		<thingCategories>
+			<li>RK_ApparelArmor</li>
+		</thingCategories>
 		<description>침투에 유리하도록 디자인된 전투복입니다. 극한의 온도상황에서 활동할 수 있도록 설계되어있습니다.</description>
 		<graphicData>
 			<texPath>Apparel/RK_BattleSuit</texPath>
@@ -1625,16 +1622,18 @@
 		</costList>
 		<costStuffCount>85</costStuffCount>
 		<stuffCategories>
+			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
 		<techLevel>Industrial</techLevel>
 		<statBases>
 			<MaxHitPoints>280</MaxHitPoints>
 			<WorkToMake>35000</WorkToMake>
-			<Mass>7</Mass>
+			<Mass>4</Mass>
 			<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.55</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat>
+			<Insulation_Cold>20</Insulation_Cold>
 			<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.6</ArmorRating_Heat>
@@ -1642,6 +1641,7 @@
 			<EquipDelay>2.5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
+			<ToxicEnvironmentResistance>0.20</ToxicEnvironmentResistance>
 			<SocialImpact>-0.2</SocialImpact>
 			<PainShockThreshold>0.1</PainShockThreshold>
 			<Flammability>-0.25</Flammability>
@@ -1673,15 +1673,19 @@
 				<li>RoyalCombatGear</li>
 			</tags>
 		</apparel>
-		<tradeability>Sellable</tradeability>
-		<tradeTags Inherit="false">
+		<tradeTags>
+			<li>RK_TradeTag_Armor</li>
 		</tradeTags>
+		<tradeability>Sellable</tradeability>
 	</ThingDef>
 
 	<!-- 가스마스크 A/B (별도 아이템 — 제작 시 외형 선택) -->
 	<ThingDef ParentName="RK_HatMakeableBase">
 		<defName>RK_Mask</defName>
 		<label>Ratkin mask helmet</label>
+		<thingCategories>
+			<li>RK_ArmorHeadgear</li>
+		</thingCategories>
 		<description>마스크가 있는 헬멧입니다. 유독성 환경에서도 장시간 활동할 수 있도록 고안되었습니다.</description>
 		<graphicData>
 			<texPath>Apparel/RK_Mask</texPath>
@@ -1718,13 +1722,14 @@
 			<StuffEffectMultiplierArmor>0.45</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.55</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat>
+			<Insulation_Cold>10</Insulation_Cold>
 			<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.3</ArmorRating_Heat>
 			<EquipDelay>1.5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<ToxicEnvironmentResistance>0.1</ToxicEnvironmentResistance>
+			<ToxicEnvironmentResistance>0.65</ToxicEnvironmentResistance>
 			<PainShockThreshold>0.05</PainShockThreshold>
 			<Flammability>-0.1</Flammability>
 		</equippedStatOffsets>
@@ -1747,14 +1752,18 @@
 				<li>RoyalCombatGear</li>
 			</tags>
 		</apparel>
-		<tradeability>Sellable</tradeability>
-		<tradeTags Inherit="false">
+		<tradeTags>
+			<li>RK_TradeTag_Armor</li>
 		</tradeTags>
+		<tradeability>Sellable</tradeability>
 	</ThingDef>
 
 	<ThingDef ParentName="RK_HatMakeableBase">
 		<defName>RK_MaskB</defName>
 		<label>Ratkin mask helmet</label>
+		<thingCategories>
+			<li>RK_ArmorHeadgear</li>
+		</thingCategories>
 		<description>마스크가 있는 헬멧입니다. 유독성 환경에서도 장시간 활동할 수 있도록 고안되었습니다.</description>
 		<graphicData>
 			<texPath>Apparel/RK_MaskB</texPath>
@@ -1791,13 +1800,14 @@
 			<StuffEffectMultiplierArmor>0.45</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.55</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat>
+			<Insulation_Cold>10</Insulation_Cold>
 			<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.3</ArmorRating_Heat>
 			<EquipDelay>1.5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<ToxicEnvironmentResistance>0.1</ToxicEnvironmentResistance>
+			<ToxicEnvironmentResistance>0.65</ToxicEnvironmentResistance>
 			<PainShockThreshold>0.05</PainShockThreshold>
 			<Flammability>-0.1</Flammability>
 		</equippedStatOffsets>
@@ -1822,6 +1832,9 @@
 		</apparel>
 		<tradeability>Sellable</tradeability>
 		<tradeTags Inherit="false">
+			<li>RK_Apparel</li>
+			<li>RK_TradeTag_All</li>
+			<li>RK_TradeTag_Armor</li>
 		</tradeTags>
 	</ThingDef>
 
@@ -1872,6 +1885,8 @@
 		</apparel>
 		<tradeability>Sellable</tradeability>
 		<tradeTags Inherit="false">
+			<li>RK_Apparel</li>
+			<li>RK_TradeTag_All</li>
 		</tradeTags>
 	</ThingDef>
 

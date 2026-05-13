@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RK_WorkType_GeneratePower.labelShort>電力</RK_WorkType_GeneratePower.labelShort>
+  <RK_WorkType_GeneratePower.pawnLabel>作業者</RK_WorkType_GeneratePower.pawnLabel>
+  <RK_WorkType_GeneratePower.gerundLabel>発電</RK_WorkType_GeneratePower.gerundLabel>
+  <RK_WorkType_GeneratePower.description>制御可能な発電設備から電力を生産します。</RK_WorkType_GeneratePower.description>
+  <RK_WorkType_GeneratePower.verb>で発電</RK_WorkType_GeneratePower.verb>
+</LanguageData>

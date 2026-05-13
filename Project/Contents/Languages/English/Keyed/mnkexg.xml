@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Events -->
+
+  <EMPExplode>EMP Bomb Explosion</EMPExplode>
+  <EMPExplodeDesc>An electro-magnetic pulse set inside the base has gone off and overloaded the power generators, causing them to break down.</EMPExplodeDesc>
+  <MessageCommandoAssaulting>Seeing that the EMP has gone off from afar, ratkin forces waiting nearby join the assault.</MessageCommandoAssaulting>
+  <RatHoleGone>The rat hole has been destroyed.</RatHoleGone>
+
+  <!-- Shields Functionality -->
+
+  <ShieldBlock>Deflect!</ShieldBlock>
+  <ShieldBlockChance>Deflect Chance:</ShieldBlockChance>
+  <BlockChance_Heat>Block Chance(Heat)</BlockChance_Heat>
+  <BlockChance_Blunt>Block Chance(Blunt)</BlockChance_Blunt>
+  <BlockChance_Sharp>Block Chance(Sharp)</BlockChance_Sharp>
+  <BlockChanceWear_Heat>Wearer Block Chance(Heat)</BlockChanceWear_Heat>
+  <BlockChanceWear_Blunt>Wearer Block Chance(Blunt)</BlockChanceWear_Blunt>
+  <BlockChanceWear_Sharp>Wearer Block Chance(Sharp)</BlockChanceWear_Sharp>
+  <BlockChanceDefualtDesc>Deflection\nThe chance to block damage from outside.\n\nOnly frontal attacks can be blocked; the allowed arc differs by shield. Check this item's &quot;shield deflect angle&quot; stat.\nThis chance is based on wearer's Melee skill and armor rate of this equipment.</BlockChanceDefualtDesc>
+
+  <!-- Join Requirements -->
+
+  <RK_JoinReq_Injured_DescShort>At least {0} injured folk in the settlement.</RK_JoinReq_Injured_DescShort>
+  <RK_JoinReq_Priest_Injured_Desc1>Are there any here in need of a healing hand?</RK_JoinReq_Priest_Injured_Desc1>
+  <RK_JoinReq_Priest_Injured_Desc2>With faith, even hardship may yet be overcome.</RK_JoinReq_Priest_Injured_Desc2>
+  <RK_JoinReq_Medicine_DescShort>At least {0} medicine in store.</RK_JoinReq_Medicine_DescShort>
+  <RK_JoinReq_Priest_Medicine_Desc1>It would ease my heart to see ample remedies here.</RK_JoinReq_Priest_Medicine_Desc1>
+  <RK_JoinReq_Priest_Medicine_Desc2>With enough medicine, I could tend to many more souls...</RK_JoinReq_Priest_Medicine_Desc2>
+  <RK_JoinReq_StableLife_DescShort>Settlement wealth must be at least {0}.</RK_JoinReq_StableLife_DescShort>
+  <RK_JoinReq_StableLife_Desc1>I long to dwell in a proper village. The wanderer's road is too cruel.</RK_JoinReq_StableLife_Desc1>
+  <RK_JoinReq_StableLife_Desc2>I seek a steadier village life. Small hamlets ask too much of a soul.</RK_JoinReq_StableLife_Desc2>
+  <RK_JoinReq_NewLife_DescShort>Settlement wealth must be at least {0}.</RK_JoinReq_NewLife_DescShort>
+  <RK_JoinReq_NewLife_Desc1>With means such as these, perhaps I could begin anew.</RK_JoinReq_NewLife_Desc1>
+  <RK_JoinReq_NewLife_Desc2>I have had my fill of a poor life.</RK_JoinReq_NewLife_Desc2>
+  <RK_JoinReq_NobleTired_DescShort>No settlers with these backgrounds: {0}</RK_JoinReq_NobleTired_DescShort>
+  <RK_JoinReq_NobleTired_Desc1>I am weary of bowing and scraping before the highborn.</RK_JoinReq_NobleTired_Desc1>
+  <RK_JoinReq_NobleTired_Desc2>I want no more dealings with nobles.</RK_JoinReq_NobleTired_Desc2>
+  <RK_JoinReq_ServantRoyalTitle_DescShort>Highest Empire title among settlers must be {0} or lower.</RK_JoinReq_ServantRoyalTitle_DescShort>
+  <RK_JoinReq_ServantRoyalTitle_Desc1>I am weary of currying favor with the highborn.</RK_JoinReq_ServantRoyalTitle_Desc1>
+  <RK_JoinReq_ServantRoyalTitle_Desc2>If I must serve, I shall choose my own master.</RK_JoinReq_ServantRoyalTitle_Desc2>
+  <RK_JoinReq_ItemSeparatorOr> or </RK_JoinReq_ItemSeparatorOr>
+  <RK_JoinReq_WindFreedom_DescShort>Required: {0}</RK_JoinReq_WindFreedom_DescShort>
+  <RK_JoinReq_WindFreedom_Desc1>Life on the road has its charms, yet a spell of rest does too.</RK_JoinReq_WindFreedom_Desc1>
+  <RK_JoinReq_WindFreedom_Desc2>Even a wanderer has tastes. I would need gear worth using.</RK_JoinReq_WindFreedom_Desc2>
+  <RK_JoinReq_SeekingMentor_DescShort>Need a settler with all of these skills: {0}</RK_JoinReq_SeekingMentor_DescShort>
+  <RK_JoinReq_SeekingMentor_Desc1>I heed only one stronger than myself.</RK_JoinReq_SeekingMentor_Desc1>
+  <RK_JoinReq_SeekingMentor_Desc2>I seek a true warrior. Is there one among you?</RK_JoinReq_SeekingMentor_Desc2>
+  <RK_JoinReq_Prepared_DescShort>Need a settler with at least one of these skills: {0}</RK_JoinReq_Prepared_DescShort>
+  <RK_JoinReq_Prepared_Desc1>I am tired of surviving by my wits alone. I seek a proper mentor.</RK_JoinReq_Prepared_Desc1>
+  <RK_JoinReq_Prepared_Desc2>Be it battle or craft, someone here must truly know their trade.</RK_JoinReq_Prepared_Desc2>
+  <RK_JoinReq_JoinHope_DescShort>No special requirements.</RK_JoinReq_JoinHope_DescShort>
+  <RK_JoinReq_JoinHope_Desc1>A pleasure to meet you.</RK_JoinReq_JoinHope_Desc1>
+  <RK_JoinReq_JoinHope_Desc2>I hope we shall get along well.</RK_JoinReq_JoinHope_Desc2>
+
+  <!-- Abilities -->
+
+  <AbilityPrayerServiceCooldown>Next Prayer service ready in</AbilityPrayerServiceCooldown>
+  <MessagePrayerServiceStart>{PAWN_labelShort} hosts a prayer service.</MessagePrayerServiceStart>
+  <MessagePrayerServiceAborted>prayer service has been aborted.</MessagePrayerServiceAborted>
+  <MessagePrayerServiceEnded>prayer service has ended.</MessagePrayerServiceEnded>
+  <RK_AbilityMustTargetHostile>Must target a hostile target.</RK_AbilityMustTargetHostile>
+  <RK_ShieldFaceDirection>Face direction</RK_ShieldFaceDirection>
+  <RK_ShieldFaceDirectionDesc>Click a point to face that direction. Hold position while facing. Target a pawn to track them continuously.</RK_ShieldFaceDirectionDesc>
+  <RK_ShieldFaceDirectionReport>facing direction.</RK_ShieldFaceDirectionReport>
+  <RK_ShieldFaceDirection_NotDrafted>Must be drafted.</RK_ShieldFaceDirection_NotDrafted>
+  <RK_ShieldFaceDirection_InvalidState>Cannot use while dead or downed.</RK_ShieldFaceDirection_InvalidState>
+  <RK_ShieldFaceDirection_Busy>Cannot use while busy.</RK_ShieldFaceDirection_Busy>
+  <RK_ShieldFaceDirection_ShieldInactive>Shield is inactive.</RK_ShieldFaceDirection_ShieldInactive>
+  <RK_ShieldFaceDirection_Cooldown>Cooldown: {0}</RK_ShieldFaceDirection_Cooldown>
+  <AbilityPrayerServiceDisabledAlreadyGivingPrayerService>already giving a prayer meeting.</AbilityPrayerServiceDisabledAlreadyGivingPrayerService>
+  <AbilityPrayerServiceDisabledDrafted>can't use when drafted.</AbilityPrayerServiceDisabledDrafted>
+  <AbilityPrayerServiceDisabledNoPulpitBuilding>No colonist-built pulpit.</AbilityPrayerServiceDisabledNoPulpitBuilding>
+  <AbilityPrayerServiceDisabledCannotReachPulpit>Cannot path to the pulpit interaction cell.</AbilityPrayerServiceDisabledCannotReachPulpit>
+  <AbilityPrayerServiceDisabledCannotReservePulpit>The pulpit cannot be reserved (in use or blocked).</AbilityPrayerServiceDisabledCannotReservePulpit>
+  <AbilityPrayerServiceDisabledInteractionCellOutOfBounds>Pulpit interaction cell is out of bounds.</AbilityPrayerServiceDisabledInteractionCellOutOfBounds>
+  <AbilityPrayerServiceDisabledInteractionCellForbidden>Pulpit interaction cell is in a forbidden area.</AbilityPrayerServiceDisabledInteractionCellForbidden>
+  <AbilityPrayerServiceDisabledInteractionCellNotStandable>Pulpit interaction cell is not standable.</AbilityPrayerServiceDisabledInteractionCellNotStandable>
+  <AbilityPrayerServiceDisabledPulpitForbidden>The pulpit is forbidden to this pawn.</AbilityPrayerServiceDisabledPulpitForbidden>
+  <AbilityPrayerServiceDisabledPulpitBurning>The pulpit is on fire.</AbilityPrayerServiceDisabledPulpitBurning>
+  <AbilityPrayerServiceDisabledPulpitDangerous>The pulpit area is too dangerous.</AbilityPrayerServiceDisabledPulpitDangerous>
+  <AbilityPrayerServiceDisabledRoomTooSmall>Worship space is too small (room must be larger than 25 cells).</AbilityPrayerServiceDisabledRoomTooSmall>
+
+  <!-- Miscellaneous -->
+
+  <RK_ApparelWeaponIncompatible_Dropped>Equipped {0} and dropped {1}. Reason: {2}</RK_ApparelWeaponIncompatible_Dropped>
+  <RK_ApparelWeaponIncompatible_Dropped_Default>Equipped {0} and dropped {1}.</RK_ApparelWeaponIncompatible_Dropped_Default>
+  <RK_GripIncompatible>Incompatible weapon</RK_GripIncompatible>
+  <RK_GripIncompatible_Equip>Cannot equip {0}: incompatible with equipped weapon {1}. {2}</RK_GripIncompatible_Equip>
+  <RK_GripIncompatible_Equip_Default>Cannot equip {0}: incompatible with equipped weapon {1}.</RK_GripIncompatible_Equip_Default>
+  <RK_WeaponGripIncompatible_Equip>Cannot equip {0}: incompatible with worn equipment {1}. {2}</RK_WeaponGripIncompatible_Equip>
+  <RK_WeaponGripIncompatible_Equip_Default>Cannot equip {0}: incompatible with worn equipment {1}.</RK_WeaponGripIncompatible_Equip_Default>
+  <RK_GripType_OneHand>One-handed</RK_GripType_OneHand>
+  <RK_GripType_TwoHand>Two-handed</RK_GripType_TwoHand>
+  <RK_GripType_Special>Special</RK_GripType_Special>
+  <RK_WeaponGripType_Label>Weapon grip type</RK_WeaponGripType_Label>
+  <RK_WeaponGripType_Report>How this weapon is classified by grip type. Equipment with a grip filter allows only weapons that share at least one listed grip type.</RK_WeaponGripType_Report>
+  <RK_AllowedGripType_Label>Compatible weapon types</RK_AllowedGripType_Label>
+  <RK_AllowedGripType_Report>Weapon grip types that can be wielded as primary weapon together with this equipment.</RK_AllowedGripType_Report>
+
+  <!-- Wandering Trader -->
+
+  <RK_WanderingTrader_Info>Info</RK_WanderingTrader_Info>
+  <RK_WanderingTrader_ViewSettlers>View settlers seeking to join</RK_WanderingTrader_ViewSettlers>
+  <RK_WanderingTrader_MercenarySearch>Mercenary search</RK_WanderingTrader_MercenarySearch>
+  <RK_WanderingCaravan_TalkToLeader>Talk to leader</RK_WanderingCaravan_TalkToLeader>
+  <RK_WanderingCaravan_DismissCaravan>Dismiss caravan</RK_WanderingCaravan_DismissCaravan>
+  <RK_WanderingCaravan_TradeGoods>Trade goods</RK_WanderingCaravan_TradeGoods>
+  <RK_WanderingCaravan_Commission>Commission item</RK_WanderingCaravan_Commission>
+  <RK_WanderingCaravan_SettleProposal>Recruit settlers</RK_WanderingCaravan_SettleProposal>
+  <RK_WanderingCaravan_EndDialog>End conversation</RK_WanderingCaravan_EndDialog>
+  <RK_WanderingCaravan_LeaderGreeting>{0} greets you warmly.</RK_WanderingCaravan_LeaderGreeting>
+  <RK_WanderingCaravan_LeaderTitle>Caravan leader</RK_WanderingCaravan_LeaderTitle>
+  <RK_WanderingCaravan_ArrivalLetterLabel>Caravan arrival</RK_WanderingCaravan_ArrivalLetterLabel>
+  <RK_WanderingCaravan_ArrivalLetter>A wandering ratkin caravan is approaching. Talk to the leader to initiate trade or recruit new settlers.</RK_WanderingCaravan_ArrivalLetter>
+  <RK_WanderingCaravan_AcceptOne>Propose</RK_WanderingCaravan_AcceptOne>
+  <RK_WanderingCaravan_AcceptAll>Propose all</RK_WanderingCaravan_AcceptAll>
+  <RK_WanderingCaravan_OneJoined>{0} has joined the colony.</RK_WanderingCaravan_OneJoined>
+  <RK_WanderingCaravan_AllJoined>{0} have joined the colony.</RK_WanderingCaravan_AllJoined>
+  <RK_WanderingCaravan_CommissionPlaceholder>Commission feature is under development.</RK_WanderingCaravan_CommissionPlaceholder>
+  <RK_WanderingCaravan_AlreadySpawned>The caravan is already on the map. Dismiss the current caravan if you want to spawn another one.</RK_WanderingCaravan_AlreadySpawned>
+  <RK_WanderingCaravan_AttackedPenalty>The caravan is trying to leave after being attacked.</RK_WanderingCaravan_AttackedPenalty>
+
+  <!-- Ammo for BFR -->
+
+  <RK_BFR_Toggle_RequiresSeparationMechanics>Separation Mechanics research required.</RK_BFR_Toggle_RequiresSeparationMechanics>
+  <RK_BFR_Ammo_LabelAP>AP</RK_BFR_Ammo_LabelAP>
+  <RK_BFR_Ammo_LabelHE>Airburst</RK_BFR_Ammo_LabelHE>
+  <RK_BFR_Ammo_DescToHE>Switch to airburst rounds. The rounds currently loaded can punch through several targets in a line with strong piercing damage and defeat armor.</RK_BFR_Ammo_DescToHE>
+  <RK_BFR_Ammo_DescToAP>Switch to armor-piercing rounds. The rounds currently used can detonate mid-air when it gets close to its target, dispersing shrapnel in front and shredding tight groups of enemies.</RK_BFR_Ammo_DescToAP>
+
+  <!-- Pulse Rifle -->
+
+  <RK_PulseRifleFireMode_LabelBurst>Burst</RK_PulseRifleFireMode_LabelBurst>
+  <RK_PulseRifleFireMode_LabelSingle>Single</RK_PulseRifleFireMode_LabelSingle>
+  <RK_PulseRifleFireMode_DescToSingle>Switch to sniper mode. Currently fires four lighter bolts in quick succession at shorter effective range, suited to close and mid-range fights.</RK_PulseRifleFireMode_DescToSingle>
+  <RK_PulseRifleFireMode_DescToBurst>Switch to rapid fire mode. Currently fires two heavy energy bolts while offering longer range and better accuracy for medium and long range combat.</RK_PulseRifleFireMode_DescToBurst>
+
+</LanguageData>

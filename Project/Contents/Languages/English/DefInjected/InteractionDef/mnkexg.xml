@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RK_PriestPray.label>pray</RK_PriestPray.label>
+
+  <!-- This string is for now unnecessary. It has been set to be a comment instead.
+  <RK_PriestPray.symbol>Things/Mote/SpeechSymbols/Pray</RK_PriestPray.symbol>
+  -->
+</LanguageData>

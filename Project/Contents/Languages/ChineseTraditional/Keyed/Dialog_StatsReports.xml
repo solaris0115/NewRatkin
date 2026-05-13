@@ -13,6 +13,6 @@
   <BlockChanceWear_Heat>裝備者格檔機率(熱能)</BlockChanceWear_Heat>
   <BlockChanceWear_Blunt>裝備者格檔機率(鈍器)</BlockChanceWear_Blunt>
   <BlockChanceWear_Sharp>裝備者格檔機率(利器)</BlockChanceWear_Sharp>
-  <BlockChanceDefualtDesc>傷害偏轉\n阻擋來自外部傷害的概率。\n\n 偏轉只能阻擋正面140度範圍以內的攻擊。\n該概率取決於(盾牌)裝備者的近戰技能和該裝備的裝甲值。</BlockChanceDefualtDesc>
+  <BlockChanceDefualtDesc>傷害偏轉\n阻擋來自外部傷害的概率。\n\n僅能偏轉來自正面的攻擊；有效前方角度因盾牌而異。請查看此裝備的「盾牌偏轉角度」數值。\n該概率取決於(盾牌)裝備者的近戰技能和該裝備的裝甲值。</BlockChanceDefualtDesc>
 
 </LanguageData>

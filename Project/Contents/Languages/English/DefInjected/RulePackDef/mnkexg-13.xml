@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <NamerFaction_RatkinKingdom.rulePack.rulesStrings>
+    <li>r_name(p=2)-&gt;[empire] of [ofThing]</li>
+    <li>r_name(p=2)-&gt;[ofThing] [empire]</li>
+    <li>r_name-&gt;Great [empire]</li>
+    <li>r_name-&gt;Iron Ratkin</li>
+    <li>r_name-&gt;Rakinian [empire]</li>
+    <li>empire(p=3)-&gt;Kingdom</li>
+    <li>empire-&gt;Empire</li>
+    <li>ofThing(p=3)-&gt;[WordImperial]</li>
+    <li>ofThing-&gt;Gardeners</li>
+    <li>ofThing-&gt;Sunflowers</li>
+    <li>ofThing-&gt;Peanuts</li>
+    <li>ofThing-&gt;Iron Ratkins</li>
+  </NamerFaction_RatkinKingdom.rulePack.rulesStrings>
+</LanguageData>

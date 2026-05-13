@@ -1,8 +1,8 @@
 Cherry
 Carnation
 Iris
-Daffodil
 Lily
+Daffodil
 Snowdrop
 Rose
 Rosemary
@@ -26,7 +26,7 @@ Mint
 Clover
 Strawberry
 Jasmine
-Lavendar
+Lavender
 Freesia
 Azalea
 Maple
@@ -37,9 +37,8 @@ Sage
 Zinnia
 Dandelion
 Edelweiss
-Lavender
 Chamomile
 Lemon
 Coriander
-Savori
+Savory
 Green

@@ -1,37 +1,150 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<!-- Core 한손 근접 무기: RK_WeaponTag_OneHand, RK_WeaponTag_OneHandMelee, RK_WeaponTag_OneHandMeleeAttack -->
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName='MeleeWeapon_Club' or defName='MeleeWeapon_Knife' or defName='MeleeWeapon_Ikwa' or defName='MeleeWeapon_Spear' or defName='MeleeWeapon_Mace' or defName='MeleeWeapon_Gladius' or defName='MeleeWeapon_LongSword' or defName='MeleeWeapon_BreachAxe' or defName='MeleeWeapon_Axe']/weaponTags</xpath>
-		<value>
-			<li>RK_WeaponTag_OneHand</li>
-			<li>RK_WeaponTag_OneHandMelee</li>
-			<li>RK_WeaponTag_OneHandMeleeAttack</li>
-		</value>
+	<!-- ===== Core+Royalty 한손 근접 무기에 gripType 주입 (Axe는 Royalty, 없으면 자동 스킵) ===== -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName='MeleeWeapon_Club' or defName='MeleeWeapon_Knife' or defName='MeleeWeapon_Ikwa' or defName='MeleeWeapon_Spear' or defName='MeleeWeapon_Mace' or defName='MeleeWeapon_Gladius' or defName='MeleeWeapon_LongSword' or defName='MeleeWeapon_BreachAxe' or defName='MeleeWeapon_Axe']/comps</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName='MeleeWeapon_Club' or defName='MeleeWeapon_Knife' or defName='MeleeWeapon_Ikwa' or defName='MeleeWeapon_Spear' or defName='MeleeWeapon_Mace' or defName='MeleeWeapon_Gladius' or defName='MeleeWeapon_LongSword' or defName='MeleeWeapon_BreachAxe' or defName='MeleeWeapon_Axe']/comps</xpath>
+			<value>
+				<li Class="NewRatkin.CompProperties_WeaponGripType">
+					<gripTypes>
+						<li>OneHand</li>
+					</gripTypes>
+				</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName='MeleeWeapon_Club' or defName='MeleeWeapon_Knife' or defName='MeleeWeapon_Ikwa' or defName='MeleeWeapon_Spear' or defName='MeleeWeapon_Mace' or defName='MeleeWeapon_Gladius' or defName='MeleeWeapon_LongSword' or defName='MeleeWeapon_BreachAxe' or defName='MeleeWeapon_Axe']</xpath>
+			<value>
+				<comps>
+					<li Class="NewRatkin.CompProperties_WeaponGripType">
+						<gripTypes>
+							<li>OneHand</li>
+						</gripTypes>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
 	</Operation>
 
-	<!-- Royalty 단분자검·결속 단분자검: 방패(allowedWeaponTags: RK_WeaponTag_OneHand) 동시 착용 -->
+	<!-- ===== Royalty 한손 검류: 단분자검, 플라즈마검 + 결속(Bladelink) 변형 ===== -->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Ludeon.RimWorld.Royalty</li>
 		</mods>
-		<match Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[defName='MeleeWeapon_MonoSword' or defName='MeleeWeapon_MonoSwordBladelink']/weaponTags</xpath>
-			<value>
-				<li>RK_WeaponTag_OneHand</li>
-				<li>RK_WeaponTag_OneHandMelee</li>
-				<li>RK_WeaponTag_OneHandMeleeAttack</li>
-			</value>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[defName='MeleeWeapon_MonoSword' or defName='MeleeWeapon_MonoSwordBladelink' or defName='MeleeWeapon_PlasmaSword' or defName='MeleeWeapon_PlasmaSwordBladelink']/comps</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName='MeleeWeapon_MonoSword' or defName='MeleeWeapon_MonoSwordBladelink' or defName='MeleeWeapon_PlasmaSword' or defName='MeleeWeapon_PlasmaSwordBladelink']/comps</xpath>
+				<value>
+					<li Class="NewRatkin.CompProperties_WeaponGripType">
+						<gripTypes>
+							<li>OneHand</li>
+						</gripTypes>
+					</li>
+				</value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName='MeleeWeapon_MonoSword' or defName='MeleeWeapon_MonoSwordBladelink' or defName='MeleeWeapon_PlasmaSword' or defName='MeleeWeapon_PlasmaSwordBladelink']</xpath>
+				<value>
+					<comps>
+						<li Class="NewRatkin.CompProperties_WeaponGripType">
+							<gripTypes>
+								<li>OneHand</li>
+							</gripTypes>
+						</li>
+					</comps>
+				</value>
+			</nomatch>
 		</match>
 	</Operation>
 
-	<!-- Core 한손 원거리 무기: Pila, 권총류, 수류탄 - RK_WeaponTag_OneHand, RK_WeaponTag_OneHandRange, RK_WeaponTag_OneHandRangeAttack -->
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName='Pila' or defName='Gun_Revolver' or defName='Gun_Autopistol' or defName='Gun_MachinePistol' or defName='Weapon_GrenadeFrag' or defName='Weapon_GrenadeMolotov' or defName='Weapon_GrenadeEMP']/weaponTags</xpath>
-		<value>
-			<li>RK_WeaponTag_OneHand</li>
-			<li>RK_WeaponTag_OneHandRange</li>
-			<li>RK_WeaponTag_OneHandRangeAttack</li>
-		</value>
+	<!-- ===== Core 한손 원거리 무기: Pila, 권총류 (수류탄 제외) ===== -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName='Pila' or defName='Gun_Revolver' or defName='Gun_Autopistol' or defName='Gun_MachinePistol']/comps</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName='Pila' or defName='Gun_Revolver' or defName='Gun_Autopistol' or defName='Gun_MachinePistol']/comps</xpath>
+			<value>
+				<li Class="NewRatkin.CompProperties_WeaponGripType">
+					<gripTypes>
+						<li>OneHand</li>
+					</gripTypes>
+				</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName='Pila' or defName='Gun_Revolver' or defName='Gun_Autopistol' or defName='Gun_MachinePistol']</xpath>
+			<value>
+				<comps>
+					<li Class="NewRatkin.CompProperties_WeaponGripType">
+						<gripTypes>
+							<li>OneHand</li>
+						</gripTypes>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<!-- ===== Odyssey 특제 무기 (Weapons_Unique): 부모와 동일 파지 — 리볼버만 한손, 나머지 양손 ===== -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ludeon.RimWorld.Odyssey</li>
+		</mods>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[defName='Gun_Revolver_Unique']/comps</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName='Gun_Revolver_Unique']/comps</xpath>
+				<value>
+					<li Class="NewRatkin.CompProperties_WeaponGripType">
+						<gripTypes>
+							<li>OneHand</li>
+						</gripTypes>
+					</li>
+				</value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName='Gun_Revolver_Unique']</xpath>
+				<value>
+					<comps>
+						<li Class="NewRatkin.CompProperties_WeaponGripType">
+							<gripTypes>
+								<li>OneHand</li>
+							</gripTypes>
+						</li>
+					</comps>
+				</value>
+			</nomatch>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ludeon.RimWorld.Odyssey</li>
+		</mods>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[defName='Gun_BoltActionRifle_Unique' or defName='Gun_ChainShotgun_Unique' or defName='Gun_HeavySMG_Unique' or defName='Gun_LMG_Unique' or defName='Gun_AssaultRifle_Unique' or defName='Gun_SniperRifle_Unique' or defName='Gun_Minigun_Unique' or defName='Bow_Great_Unique' or defName='Gun_ChargeRifle_Unique' or defName='Gun_ChargeLance_Unique' or defName='Gun_HellcatRifle_Unique' or defName='Gun_BeamRepeater_Unique']/comps</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName='Gun_BoltActionRifle_Unique' or defName='Gun_ChainShotgun_Unique' or defName='Gun_HeavySMG_Unique' or defName='Gun_LMG_Unique' or defName='Gun_AssaultRifle_Unique' or defName='Gun_SniperRifle_Unique' or defName='Gun_Minigun_Unique' or defName='Bow_Great_Unique' or defName='Gun_ChargeRifle_Unique' or defName='Gun_ChargeLance_Unique' or defName='Gun_HellcatRifle_Unique' or defName='Gun_BeamRepeater_Unique']/comps</xpath>
+				<value>
+					<li Class="NewRatkin.CompProperties_WeaponGripType">
+						<gripTypes>
+							<li>TwoHand</li>
+						</gripTypes>
+					</li>
+				</value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName='Gun_BoltActionRifle_Unique' or defName='Gun_ChainShotgun_Unique' or defName='Gun_HeavySMG_Unique' or defName='Gun_LMG_Unique' or defName='Gun_AssaultRifle_Unique' or defName='Gun_SniperRifle_Unique' or defName='Gun_Minigun_Unique' or defName='Bow_Great_Unique' or defName='Gun_ChargeRifle_Unique' or defName='Gun_ChargeLance_Unique' or defName='Gun_HellcatRifle_Unique' or defName='Gun_BeamRepeater_Unique']</xpath>
+				<value>
+					<comps>
+						<li Class="NewRatkin.CompProperties_WeaponGripType">
+							<gripTypes>
+								<li>TwoHand</li>
+							</gripTypes>
+						</li>
+					</comps>
+				</value>
+			</nomatch>
+		</match>
 	</Operation>
 </Patch>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RK_EMP.label>電磁熱傷</RK_EMP.label>
+  <RK_EMP.deathMessage>{0}は電磁熱で焼かれて死亡しました。</RK_EMP.deathMessage>
+  <RK_Damage_PickaxeStab.label>突き刺し</RK_Damage_PickaxeStab.label>
+  <RK_Damage_PickaxeStab.deathMessage>{0}は突き刺されて死亡しました。</RK_Damage_PickaxeStab.deathMessage>
+  <ShockWaveLight.label>衝撃波</ShockWaveLight.label>
+  <ShockWaveLight.deathMessage>{0}は衝撃波に巻き込まれて死亡しました。</ShockWaveLight.deathMessage>
+  <ShockWaveHeavy.label>衝撃波</ShockWaveHeavy.label>
+  <ShockWaveHeavy.deathMessage>{0}は衝撃波に巻き込まれて死亡しました。</ShockWaveHeavy.deathMessage>
+  <DemoBomb.label>爆発</DemoBomb.label>
+  <DemoBomb.deathMessage>{0}は爆発に巻き込まれて死亡しました。</DemoBomb.deathMessage>
+  <RK_Damage_Torn.label>引き裂き</RK_Damage_Torn.label>
+  <RK_Damage_Torn.deathMessage>{0}は裂傷により死亡しました。</RK_Damage_Torn.deathMessage>
+  <RK_Damage_BurnTorn.label>引き裂き(熱)</RK_Damage_BurnTorn.label>
+  <RK_Damage_BurnTorn.deathMessage>{0}は裂傷により死亡しました。</RK_Damage_BurnTorn.deathMessage>
+  <RK_Damage_BonusCut.label>斬撃</RK_Damage_BonusCut.label>
+</LanguageData>

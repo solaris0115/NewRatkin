@@ -5,6 +5,6 @@ chamomile
 jasmine
 lemon
 coriander
-savori
+savory
 sage
 green

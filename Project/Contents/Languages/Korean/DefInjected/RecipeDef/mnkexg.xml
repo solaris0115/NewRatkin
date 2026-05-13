@@ -9,6 +9,9 @@
   <RK_Recipe_InstallBionicTail.label>생체공학 꼬리 이식</RK_Recipe_InstallBionicTail.label>
   <RK_Recipe_InstallBionicTail.description>생체공학 꼬리를 이식합니다.</RK_Recipe_InstallBionicTail.description>
   <RK_Recipe_InstallBionicTail.jobString>생체공학 꼬리 이식 중</RK_Recipe_InstallBionicTail.jobString>
+  <RK_Recipe_InstallArchotechTail.label>초월공학 랫킨 꼬리 이식</RK_Recipe_InstallArchotechTail.label>
+  <RK_Recipe_InstallArchotechTail.description>초월공학 랫킨 꼬리를 이식합니다.</RK_Recipe_InstallArchotechTail.description>
+  <RK_Recipe_InstallArchotechTail.jobString>초월공학 랫킨 꼬리 이식 중</RK_Recipe_InstallArchotechTail.jobString>
   <Make_RK_Ammo_CannonBall.label>랫킨 포탄 만들기</Make_RK_Ammo_CannonBall.label>
   <Make_RK_Ammo_CannonBall.description>랫킨 포탄을 만듭니다.</Make_RK_Ammo_CannonBall.description>
   <Make_RK_Ammo_CannonBall.jobString>랫킨 포탄 만드는 중</Make_RK_Ammo_CannonBall.jobString>
@@ -21,7 +24,7 @@
   <RK_Recipe_Hardtack.label>건빵 만들기</RK_Recipe_Hardtack.label>
   <RK_Recipe_Hardtack.description>식물성 식재료로 건빵을 만듭니다. 오래 두고 먹을 수 있는 보존 식량으로, 여행용으로 좋습니다.</RK_Recipe_Hardtack.description>
   <RK_Recipe_Hardtack.jobString>건빵 만드는 중</RK_Recipe_Hardtack.jobString>
-  <RK_Recipe_HardtackBulk.label>건빵 만들기 (x4)</RK_Recipe_HardtackBulk.label>
-  <RK_Recipe_HardtackBulk.description>식물성 식재료로 건빵을 많이 만듭니다. 오래 두고 먹을 수 있는 보존 식량으로, 여행용으로 좋습니다.</RK_Recipe_HardtackBulk.description>
+  <RK_Recipe_HardtackBulk.label>건빵 만들기 (x8)</RK_Recipe_HardtackBulk.label>
+  <RK_Recipe_HardtackBulk.description>식물성 식재료로 건빵 8개를 한 번에 만듭니다. 오래 두고 먹을 수 있는 보존 식량으로, 여행용으로 좋습니다.</RK_Recipe_HardtackBulk.description>
   <RK_Recipe_HardtackBulk.jobString>건빵 대량 만드는 중</RK_Recipe_HardtackBulk.jobString>
 </LanguageData>

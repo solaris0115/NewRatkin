@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RK_Research_Carpentry.label>Carpentry</RK_Research_Carpentry.label>
+  <RK_Research_Carpentry.description>Make crossbows and wooden shields</RK_Research_Carpentry.description>
+
+  <RK_Research_Agriculture.label>Agriculture</RK_Research_Agriculture.label>
+  <RK_Research_Agriculture.description>Make farming tools to speed up farming work and getting more yield.</RK_Research_Agriculture.description>
+
+  <RK_Research_Smithing.label>Ratkin smithing</RK_Research_Smithing.label>
+  <RK_Research_Smithing.description>Build exclusive ratkin smithies to craft metal tools and basic weaponry.</RK_Research_Smithing.description>
+
+  <RK_Research_Tailoring.label>Ratkin apparel</RK_Research_Tailoring.label>
+  <RK_Research_Tailoring.description>Ratkin clothing that is easy to wear. Produces basic clothing that fit onto ratkin.</RK_Research_Tailoring.description>
+
+  <RK_Research_FoodPreservation.label>Food preservation</RK_Research_FoodPreservation.label>
+  <RK_Research_FoodPreservation.description>Make hardtack, a mixture of water and flour to create a longlasting meal that doesn't go back for a while. Great for traveling.</RK_Research_FoodPreservation.description>
+
+  <RK_Research_Metallurgy.label>Ratkin metallurgy</RK_Research_Metallurgy.label>
+  <RK_Research_Metallurgy.description>Create plate armor for your ratkin.</RK_Research_Metallurgy.description>
+
+  <RK_Research_SwordAndShield.label>Sword and shield</RK_Research_SwordAndShield.label>
+  <RK_Research_SwordAndShield.description>Craft swords and shields for ratkin.</RK_Research_SwordAndShield.description>
+
+  <RK_Research_FunctionalApparel.label>Functional apparel</RK_Research_FunctionalApparel.label>
+  <RK_Research_FunctionalApparel.description>Allows the tailoring of professional clothes that impart work bonuses.</RK_Research_FunctionalApparel.description>
+
+  <RK_Research_AdvancedApparel.label>Advanced apparel</RK_Research_AdvancedApparel.label>
+  <RK_Research_AdvancedApparel.description>Research methods to imitate the armor found on the humans. Need Ratkin glasses to research.</RK_Research_AdvancedApparel.description>
+
+  <RK_Research_Fortification.label>Emplacements</RK_Research_Fortification.label>
+  <RK_Research_Fortification.description>Build emplacements like cannons and mounted ballistas.</RK_Research_Fortification.description>
+
+  <RK_Research_NobleApparel.label>Noble apparel</RK_Research_NobleApparel.label>
+  <RK_Research_NobleApparel.description>Antique, enhanced clothing. Antique clothes for combat and diplomacy. Need Ratkin glasses to research.</RK_Research_NobleApparel.description>
+
+  <RK_Research_RatkinEngineering.label>Ratkin engineering</RK_Research_RatkinEngineering.label>
+  <RK_Research_RatkinEngineering.description>Craft simple firearms that can only be equipped exclusively by ratkin</RK_Research_RatkinEngineering.description>
+
+  <RK_Research_GearMechanics.label>Wheel mechanics</RK_Research_GearMechanics.label>
+  <RK_Research_GearMechanics.description>Assemble RatHolic Guns</RK_Research_GearMechanics.description>
+
+  <RK_Research_ObservationAndSurveying.label>Observation and surveying</RK_Research_ObservationAndSurveying.label>
+  <RK_Research_ObservationAndSurveying.description>Assemble the multipurpose sniper rifle.</RK_Research_ObservationAndSurveying.description>
+
+  <RK_Research_SeparationMechanics.label>Separation Mechanics</RK_Research_SeparationMechanics.label>
+  <RK_Research_SeparationMechanics.description>Enables projectile separation functionality. Unlocks AP/Airburst round toggle for the multipurpose sniper rifle.</RK_Research_SeparationMechanics.description>
+
+  <RK_Research_DragonFlame.label>Wyvern's Fire</RK_Research_DragonFlame.label>
+	<RK_Research_DragonFlame.description>Make Wyvern's Fire and assemble Gunlances. Gunlances are melee weapons with the ability to shoot out Wyvern's Fire, a highly explosive and flammable mixture that catches anything - or anyone - on fire.</RK_Research_DragonFlame.description>
+
+  <RK_Research_OrbitalEquipment.label>Ratkin orbital tech</RK_Research_OrbitalEquipment.label>
+	<RK_Research_OrbitalEquipment.description>Make vacsuits designed to fit onto ratkin and protect against the harsh vacuum of space.</RK_Research_OrbitalEquipment.description>
+
+  <RK_Research_AngryRatProject.label>Angry Rat Project</RK_Research_AngryRatProject.label>
+	<RK_Research_AngryRatProject.description>Make highly dangerous weaponry like chainswords and bolters.</RK_Research_AngryRatProject.description>
+
+  <RK_Research_CrusaderArmor.label>Crusader armor</RK_Research_CrusaderArmor.label>
+  <RK_Research_CrusaderArmor.description>Craft Crusader armor</RK_Research_CrusaderArmor.description>
+</LanguageData>

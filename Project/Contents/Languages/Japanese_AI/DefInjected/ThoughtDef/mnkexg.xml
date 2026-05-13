@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RK_PriestPray.stages.0.label>祝福を受けた</RK_PriestPray.stages.0.label>
+  <RK_PriestPrayMood.stages.0.label>祝福を受けた</RK_PriestPrayMood.stages.0.label>
+  <RK_PriestPrayMood.stages.0.description>礼拝を終えると、心が少し軽くなった。</RK_PriestPrayMood.stages.0.description>
+  <RK_AttendPrayerMeetingMood.stages.0.label>礼拝に参加した</RK_AttendPrayerMeetingMood.stages.0.label>
+  <RK_AttendPrayerMeetingMood.stages.0.description>礼拝を終えると、心が少し軽くなった。</RK_AttendPrayerMeetingMood.stages.0.description>
+</LanguageData>

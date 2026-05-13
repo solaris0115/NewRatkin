@@ -13,7 +13,7 @@
   <BlockChanceWear_Heat>착용자 방어 확률(열기)</BlockChanceWear_Heat>
   <BlockChanceWear_Blunt>착용자 방어 확률(둔탁함)</BlockChanceWear_Blunt>
   <BlockChanceWear_Sharp>착용자 방어 확률(날카로움)</BlockChanceWear_Sharp>
-  <BlockChanceDefualtDesc>방어 확률\n외적인 원인에 의한 손상을 방어합니다.\n\n정면 140도 이내의 공격만을 방어할 수 있습니다.\n방어 확률은 착용자의 격투 등급과 해당 장비의 기본 방어도에 영향을 받습니다.</BlockChanceDefualtDesc>
+  <BlockChanceDefualtDesc>방어 확률\n들어오는 공격을 막아낼 확률입니다.\n\n방어 확률은 착용자의 격투 등급과 해당 장비의 기본 방어도에 영향을 받습니다.</BlockChanceDefualtDesc>
 
   <!--<CanLow>착용자에 의해 보다 낮을 수 있음.</CanLow>-->
 

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RK_ThingCategory_Ammo.label>バリスタボルト</RK_ThingCategory_Ammo.label>
+  <RK_Apparel.label>ラットキン衣類</RK_Apparel.label>
+  <RK_Headgear.label>ラットキン頭装備</RK_Headgear.label>
+  <RK_ThingCategory_Melee.label>ラットキン近接武器</RK_ThingCategory_Melee.label>
+  <RK_ThingCategory_Range.label>ラットキン遠距離武器</RK_ThingCategory_Range.label>
+  <RK_ThingCategory_Util.label>ラットキン多用途具</RK_ThingCategory_Util.label>
+  <RK_ApparelArmor.label>ラットキン防具</RK_ApparelArmor.label>
+  <RK_ArmorHeadgear.label>ラットキン防具（頭）</RK_ArmorHeadgear.label>
+  <RK_ApparelNoble.label>ラットキン貴族服</RK_ApparelNoble.label>
+  <RK_HeadgearNoble.label>ラットキン貴族帽</RK_HeadgearNoble.label>
+</LanguageData>

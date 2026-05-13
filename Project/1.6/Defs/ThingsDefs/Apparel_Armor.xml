@@ -4,11 +4,18 @@
 	<ThingDef ParentName="RK_ApparelMakeableBase" Name="RK_ApparelAttr_Plate">
 		<defName>RK_Plate</defName>
 		<label>ratkin plate armor</label>
+		<tradeTags>
+			<li>RK_TradeTag_Armor</li>
+		</tradeTags>
+		<thingCategories>
+			<li>RK_ApparelArmor</li>
+		</thingCategories>
 		<description>금속으로 만든 방어구입니다. 덧입을 수 있어 방어력을 한층 더 올릴 수 있습니다.</description>
 		<graphicData>
 			<texPath>Apparel/RK_Plate</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<!-- <shaderType>CutoutComplex</shaderType> -->
+			<shaderType>CutoutComplex</shaderType>
+			<ignoreThingDrawColor>false</ignoreThingDrawColor>
 		</graphicData>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
@@ -18,9 +25,9 @@
 				<li>RK_ElectricSmithy</li>
 			</recipeUsers>
 			<defaultIngredientFilter>
-				<categories>
+				<stuffCategoriesToAllow>
 					<li>Metallic</li>
-				</categories>
+				</stuffCategoriesToAllow>
 				<disallowedThingDefs>
 					<li>Gold</li>
 					<li>Silver</li>
@@ -39,7 +46,7 @@
 		<statBases>
 			<MaxHitPoints>280</MaxHitPoints>
 			<WorkToMake>35000</WorkToMake>
-			<Mass>10</Mass>
+			<Mass>9</Mass>
 			<StuffEffectMultiplierArmor>0.63</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.0</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.0</StuffEffectMultiplierInsulation_Heat>
@@ -64,6 +71,7 @@
 				<li>Soldier</li>
 			</defaultOutfitTags>
 			<wornGraphicPath>Apparel/RK_Plate</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Middle</li>
 			</layers>
@@ -81,10 +89,18 @@
 	<!-- 판금 투구 공통 베이스 (텍스처만 상속에서 오버라이드) -->
 	<ThingDef ParentName="RK_HatMakeableBase" Name="RK_ApparelAttr_PlateHelmBase" Abstract="True">
 		<label>Ratkin plate Helm</label>
+		<tradeTags>
+			<li>RK_TradeTag_Armor</li>
+		</tradeTags>
+		<thingCategories>
+			<li>RK_ArmorHeadgear</li>
+		</thingCategories>
 		<description>금속으로 만든 투구입니다.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.8</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<ignoreThingDrawColor>false</ignoreThingDrawColor>
 		</graphicData>
 		<costList>
 			<Steel>25</Steel>
@@ -96,7 +112,7 @@
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToMake>18000</WorkToMake>
-			<Mass>3</Mass>
+			<Mass>2.7</Mass>
 			<StuffEffectMultiplierArmor>0.35</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.0</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.0</StuffEffectMultiplierInsulation_Heat>
@@ -112,6 +128,7 @@
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>
+			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
 			</layers>
@@ -135,9 +152,9 @@
 				<li>RK_ElectricSmithy</li>
 			</recipeUsers>
 			<defaultIngredientFilter>
-				<categories>
+				<stuffCategoriesToAllow>
 					<li>Metallic</li>
-				</categories>
+				</stuffCategoriesToAllow>
 				<disallowedThingDefs>
 					<li>Gold</li>
 					<li>Silver</li>

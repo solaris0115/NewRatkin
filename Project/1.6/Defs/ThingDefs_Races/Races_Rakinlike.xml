@@ -234,6 +234,7 @@
 					<li>RK_BattleSuit</li>
 					<li>RK_BulletProofHelmet</li>
 					<li>RK_Cardigan</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">RK_Apparel_ChildrenCardigan</li>
 					<li>RK_ChefHat</li>
 					<li>RK_ChefSuit</li>
 					<li>RK_Coif</li>
@@ -268,9 +269,11 @@
 					<li>RK_SistersVeil</li>
 					<li>RK_StrawHat</li>
 					<li>RK_SummerDress</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">RK_Apparel_ChildrenSummerDress</li>
 					<li>RK_TowerShield</li>
 					<li>RK_WhiteCoat</li>
 					<li>RK_WinterRobe</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">RK_Apparel_ChildrenWinterRobe</li>
 					<li>RK_WoodenShield</li>
 					<li>RK_WoolenHat</li>
 					<li>RK_WorkerWear</li>
@@ -324,12 +327,6 @@
 				</whiteXenotypeList>
 				<onlyUseRaceRestrictedXenotypes>true</onlyUseRaceRestrictedXenotypes>
 			</raceRestriction>
-			<thoughtSettings>
-				<cannotReceiveThoughts>
-					<li>EnvironmentDark</li>
-					<li>NeedOutdoors</li>
-				</cannotReceiveThoughts>
-			</thoughtSettings>
 		</alienRace>
 		<statBases>
 			<!-- 기본 -->
@@ -453,6 +450,7 @@
 		</race>
 		<recipes>
 			<li>RK_Recipe_InstallBionicTail</li>
+			<li>RK_Recipe_InstallArchotechTail</li>
 			<li>RK_Recipe_InstallFakeEar</li>
 			<li>RK_Recipe_InstallFakeTail</li>
 		</recipes>

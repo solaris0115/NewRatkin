@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RK_Job_HamsterWheel.reportString>TargetAで走っている。</RK_Job_HamsterWheel.reportString>
+  <RK_Job_PrayerService.reportString>祈っている。</RK_Job_PrayerService.reportString>
+  <RK_Job_SpectatePray.reportString>祈っている。</RK_Job_SpectatePray.reportString>
+  <RK_Job_TalkToCaravanLeader.reportString>旅団リーダーに話しかけている。</RK_Job_TalkToCaravanLeader.reportString>
+  <RK_Job_DismissCaravanLeader.reportString>旅団を帰らせている。</RK_Job_DismissCaravanLeader.reportString>
+  <RK_Job_ShieldFaceDirection.reportString>方向を追跡している。</RK_Job_ShieldFaceDirection.reportString>
+</LanguageData>

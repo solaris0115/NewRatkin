@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <Defs>
-	<!-- 건랜스 -->
 	<ThingDef ParentName="RK_MeleeWeapon" Name="RK_WeaponAttr_Gunlance">
 		<defName>RK_Weapon_Gunlance</defName>
 		<label>ratkin gunlance</label>
@@ -77,6 +76,12 @@
 			<displayPriority>78540</displayPriority>
 		</recipeMaker>
 		<comps Inherit="false">
+			<li Class="NewRatkin.CompProperties_WeaponGripType">
+				<gripTypes>
+					<li>TwoHand</li>
+					<li>Special</li>
+				</gripTypes>
+			</li>
 			<li Class="SYS.CompProperties_WeaponExtention">
 				<littleDown>True</littleDown>
 				<northOffset>
@@ -106,9 +111,9 @@
 				<baseReloadTicks>60</baseReloadTicks>
 				<replenishAfterCooldown>False</replenishAfterCooldown>
 			</li>
-			<li Class="CompProperties_Forbiddable"/>
-			<li Class="CompProperties_Styleable"/>
-			<li Class="CompProperties_Biocodable"/>
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_Styleable" />
+			<li Class="CompProperties_Biocodable" />
 			<li>
 				<compClass>CompQuality</compClass>
 			</li>
@@ -119,11 +124,9 @@
 			</li>
 		</comps>
 	</ThingDef>
-
 	<ToolCapacityDef>
 		<defName>GunlanceShell_Normal</defName>
 	</ToolCapacityDef>
-
 	<ManeuverDef>
 		<defName>RK_GunlanceExplosion_Normal</defName>
 		<requiredCapacity>GunlanceShell_Normal</requiredCapacity>
@@ -139,7 +142,6 @@
 		<combatLogRulesMiss>RK_Maneuver_Shell_MeleeMiss</combatLogRulesMiss>
 		<combatLogRulesDodge>RK_Maneuver_Shell_MeleeDodge</combatLogRulesDodge>
 	</ManeuverDef>
-
 	<ThingDef ParentName="MakeableShellBase">
 		<defName>RK_Ammo_WyvernFire</defName>
 		<label>wyvern fire</label>
@@ -190,7 +192,6 @@
 			<li>RK_TradeTag_HighTech</li>
 		</tradeTags>
 	</ThingDef>
-
 	<ThingDef>
 		<defName>GunlancePreIgnition</defName>
 		<label>ignition</label>
@@ -198,8 +199,6 @@
 		<category>Attachment</category>
 		<tickerType>Normal</tickerType>
 		<graphicData>
-			<!-- 실제 렌더링은 AttachableThing_GunlanceIgnition에서 PreIgnitionA와 PreIgnitionB를 번갈아가며 사용 -->
-			<!-- 여기서는 로드 시점 오류 방지를 위해 PreIgnitionA를 참조 -->
 			<texPath>Things/Special/PreIgnitionA</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
@@ -220,7 +219,6 @@
 			</li>
 		</comps>
 	</ThingDef>
-
 	<ThingDef>
 		<defName>GunlanceAfterIgnition</defName>
 		<label>ignition</label>
@@ -247,8 +245,6 @@
 			</li>
 		</comps>
 	</ThingDef>
-
-	<!-- Wyvern Fire Ability -->
 	<AbilityDef>
 		<defName>RK_WyvernFire_Ability</defName>
 		<label>wyvern fire</label>
@@ -298,12 +294,11 @@
 			</li>
 		</comps>
 	</AbilityDef>
-
 	<ThingDef ParentName="MoteBase" MayRequire="Ludeon.RimWorld.Anomaly">
 		<defName>RK_Mote_IncineratorBurst</defName>
 		<thingClass>MoteDualAttached</thingClass>
 		<altitudeLayer>MoteOverhead</altitudeLayer>
-		<isSaveable>false</isSaveable>		<!-- because it's pure-vis, and weirdly constructed, it's better to not persist them at all -->
+		<isSaveable>false</isSaveable>
 		<mote>
 			<fadeInTime>0</fadeInTime>
 			<fadeOutTime>1</fadeOutTime>
@@ -330,7 +325,6 @@
 			<drawSize>10</drawSize>
 		</graphicData>
 	</ThingDef>
-
 	<EffecterDef MayRequire="Ludeon.RimWorld.Anomaly">
 		<defName>RK_Effecter_BurnerUsed</defName>
 		<children>
@@ -381,10 +375,6 @@
 			</li>
 		</children>
 	</EffecterDef>
-
-	<!--
-		Royalty MeleeWeaponUltratech 와 동일(품질·예술·바이오코딩 등). Royalty 비활성 시 부모 없음 오류 방지 — 코어 BaseWeapon 상속.
-	-->
 	<ThingDef Name="RK_WeaponAttr_UltratechBase" ParentName="BaseWeapon" Abstract="True">
 		<techLevel>Ultra</techLevel>
 		<inspectorTabs>
@@ -404,7 +394,7 @@
 				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
 				<minQualityForArtistic>Excellent</minQualityForArtistic>
 			</li>
-			<li Class="CompProperties_Biocodable"/>
+			<li Class="CompProperties_Biocodable" />
 			<li Class="SYS.CompProperties_WeaponExtention">
 				<northOffset>
 					<position>(0.20,-1,-0.3)</position>
@@ -445,7 +435,7 @@
 			<li>RK_TradeTag_UltraTech</li>
 			<li>RK_TradeTag_4TierWeapon</li>
 			<li>RK_TradeTag_HighTech</li>
-			<!-- <li>RK_TradeTag_Exotic</li> -->
+			<li>RK_TradeTag_All</li>
 		</tradeTags>
 		<thingCategories>
 			<li>RK_ThingCategory_Melee</li>
@@ -469,12 +459,11 @@
 			<displayPriority>78550</displayPriority>
 		</recipeMaker>
 	</ThingDef>
-
-	<!-- 체인소드 -->
 	<ThingDef ParentName="RK_WeaponAttr_UltratechBase">
 		<defName>RK_Weapon_ProtoChainSword</defName>
 		<label>chain sword</label>
 		<description>체인소드는 체인을 사용하여 공격하는 무기입니다. 반갈죽</description>
+		<meleeHitSound>RK_Sound_ChainSaw</meleeHitSound>
 		<graphicData>
 			<texPath>Weapon/RK_Texture_WeaponProtoTypeChainSword</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -497,8 +486,14 @@
 				<chanceFactor>5.0</chanceFactor>
 			</li>
 		</tools>
+		<comps>
+			<li Class="NewRatkin.CompProperties_WeaponGripType">
+				<gripTypes>
+					<li>TwoHand</li>
+				</gripTypes>
+			</li>
+		</comps>
 	</ThingDef>
-
 	<ThingDef ParentName="RK_WeaponAttr_UltratechBase">
 		<defName>RK_Weapon_ProtoFlameChainSword</defName>
 		<label>flame chain sword</label>
@@ -533,121 +528,18 @@
 				</extraMeleeDamages>
 			</li>
 		</tools>
+		<comps>
+			<li Class="NewRatkin.CompProperties_WeaponGripType">
+				<gripTypes>
+					<li>TwoHand</li>
+				</gripTypes>
+			</li>
+		</comps>
 	</ThingDef>
-	
-	<!-- 
-	<ThingDef ParentName="RK_WeaponAttr_UltratechBase" Name="RK_WeaponAttr_FlameChainSword">
-		<defName>RK_Weapon_FlameChainSword</defName>
-		<label>chain sword</label>
-		<description>체인소드는 체인을 사용하여 공격하는 무기입니다. 반갈죽</description>
-		<graphicData>
-			<texPath>Weapon/RK_Texture_WeaponFlameChainSword</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<color>(1,1,1,1)</color>
-		</graphicData>
-		<smeltable>false</smeltable>
-		<relicChance>3</relicChance>
-		<tools>
-			<li>
-				<label>point</label>
-				<capacities>
-					<li>RK_ToolCapacity_ChainSword</li>
-				</capacities>
-				<power>25</power>
-				<armorPenetration>0.7</armorPenetration>
-				<cooldownTime>2.6</cooldownTime>
-				<chanceFactor>5.0</chanceFactor>
-				<extraMeleeDamages>
-					<li>
-						<def>Burn</def>
-						<amount>10</amount>
-						<chance>0.5</chance>
-					</li>
-				</extraMeleeDamages>
-			</li>
-			<li>
-				<label>edge</label>
-				<capacities>
-					<li>RK_ToolCapacity_ChainSword</li>
-				</capacities>
-				<power>25</power>
-				<cooldownTime>2.6</cooldownTime>
-				<armorPenetration>0.7</armorPenetration>
-				<chanceFactor>5.0</chanceFactor>
-				<extraMeleeDamages>
-					<li>
-						<def>Burn</def>
-						<amount>10</amount>
-						<chance>0.5</chance>
-					</li>
-				</extraMeleeDamages>
-			</li>
-		</tools>
-		<weaponTags>
-			<li>RK_WeaponTag_Reward</li>
-			<li>RK_WeaponTag_Exotic</li>
-			<li>RK_WeaponTag_HighTech</li>
-		</weaponTags>
-	</ThingDef>
-
-	<ThingDef ParentName="RK_WeaponAttr_UltratechBase" Name="RK_WeaponAttr_EMPChainSword">
-		<defName>RK_Weapon_EMPChainSword</defName>
-		<label>chain sword</label>
-		<description>체인소드는 체인을 사용하여 공격하는 무기입니다. 반갈죽</description>
-		<graphicData>
-			<texPath>Weapon/RK_Texture_WeaponEMPChainSword</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<color>(1,1,1,1)</color>
-		</graphicData>
-		<smeltable>false</smeltable>
-		<relicChance>3</relicChance>
-		<tools>
-			<li>
-				<label>point</label>
-				<capacities>
-					<li>RK_ToolCapacity_ChainSword</li>
-				</capacities>
-				<power>25</power>
-				<armorPenetration>0.8</armorPenetration>
-				<cooldownTime>2.6</cooldownTime>
-				<chanceFactor>5.0</chanceFactor>
-				<extraMeleeDamages>
-					<li>
-						<def>EMP</def>
-						<amount>9</amount>
-					</li>
-				</extraMeleeDamages>
-			</li>
-			<li>
-				<label>edge</label>
-				<capacities>
-					<li>RK_ToolCapacity_ChainSword</li>
-				</capacities>
-				<power>25</power>
-				<cooldownTime>2.6</cooldownTime>
-				<armorPenetration>0.8</armorPenetration>
-				<chanceFactor>5.0</chanceFactor>
-				<extraMeleeDamages>
-					<li>
-						<def>EMP</def>
-						<amount>9</amount>
-					</li>
-				</extraMeleeDamages>
-			</li>
-		</tools>
-		<weaponTags>
-			<li>RK_WeaponTag_Reward</li>
-			<li>RK_WeaponTag_Exotic</li>
-			<li>RK_WeaponTag_HighTech</li>
-		</weaponTags>
-	</ThingDef> -->
-
-	<!-- 신규 데미지 유형 -->
 	<ToolCapacityDef>
 		<defName>RK_ToolCapacity_ChainSword</defName>
 		<label>saw</label>
 	</ToolCapacityDef>
-
 	<ManeuverDef>
 		<defName>RK_Maneuver_ChainSword</defName>
 		<requiredCapacity>RK_ToolCapacity_ChainSword</requiredCapacity>
@@ -661,7 +553,6 @@
 		<combatLogRulesMiss>Maneuver_Smash_MeleeMiss</combatLogRulesMiss>
 		<combatLogRulesDodge>Maneuver_Smash_MeleeDodge</combatLogRulesDodge>
 	</ManeuverDef>
-
 	<DamageDef>
 		<defName>RK_Damage_Torn</defName>
 		<label>torn</label>
@@ -685,7 +576,6 @@
 		</cutExtraTargetsCurve>
 		<cutCleaveBonus>1.2</cutCleaveBonus>
 	</DamageDef>
-
 	<DamageDef>
 		<defName>RK_Damage_BurnTorn</defName>
 		<label>torn</label>
@@ -709,8 +599,6 @@
 		</cutExtraTargetsCurve>
 		<cutCleaveBonus>1.2</cutCleaveBonus>
 	</DamageDef>
-
-	<!-- 일반 피해 유형보다 부가 피해를 더 유발 -->
 	<HediffDef ParentName="InjuryBase">
 		<defName>RK_Hediff_Torn</defName>
 		<label>torn</label>
@@ -738,8 +626,6 @@
 			<destroyedOutLabel>Torn out</destroyedOutLabel>
 		</injuryProps>
 	</HediffDef>
-
-	<!-- 체인소드 사운드 정의 -->
 	<SoundDef>
 		<defName>RK_Sound_ChainSaw</defName>
 		<eventNames />
@@ -760,8 +646,6 @@
 			</li>
 		</subSounds>
 	</SoundDef>
-
-	<!-- 체인소드 임팩트 사운드 타입 -->
 	<ImpactSoundTypeDef>
 		<defName>RK_Impact_ChainSaw</defName>
 		<soundDef>RK_Sound_ChainSaw</soundDef>

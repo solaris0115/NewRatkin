@@ -468,7 +468,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<warmupTime>15.0</warmupTime>
 				<minRange>3</minRange>
-				<range>50</range>
+				<range>30</range>
 				<burstShotCount>1</burstShotCount>
 				<soundCast>RKCannonShot</soundCast>
 				<targetParams>
@@ -516,6 +516,7 @@
 			<soundAmbient>MortarRound_Ambient</soundAmbient>
 			<groundTouchExplosionRadius>1.5</groundTouchExplosionRadius>
 			<groundTouchDamageAmount>10</groundTouchDamageAmount>
+			<groundBounceMaxDistance>13</groundBounceMaxDistance>
 		</projectile>
 	</ThingDef>
 

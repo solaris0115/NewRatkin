@@ -61,6 +61,7 @@
 				<minDaysPassed>5</minDaysPassed>
 				<mtbDays>6.0</mtbDays>
 			</li>
+			<li Class="StorytellerCompProperties_ShipChunkDrop"/>
 			<li Class="StorytellerCompProperties_Disease">
 				<category>DiseaseHuman</category>
 				<minDaysPassed>6</minDaysPassed>
@@ -175,6 +176,13 @@
 				</allowedTargetTags>
 				<minDaysPassed>8</minDaysPassed>
 				<mtbDays>15</mtbDays>
+			</li>
+			<!-- 궤도 상인 -->
+			<li Class="StorytellerCompProperties_OnOffCycle">
+				<incident>OrbitalTraderArrival</incident>
+				<onDays>7</onDays>
+				<offDays>8</offDays>
+				<numIncidentsRange>1</numIncidentsRange>
 			</li>
 			<li Class="StorytellerCompProperties_Triggered">
 				<incident>RK_Incident_VagabondJoin</incident>

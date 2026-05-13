@@ -1,6 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <Defs>
 	<ThingDef Abstract="True" Name="RK_NeolithicRangeWeapon" ParentName="BaseWeaponNeolithic">
+		<thingCategories>
+			<li>RK_ThingCategory_Range</li>
+		</thingCategories>
+		<tradeTags>
+			<li>RK_TradeTag_All</li>
+		</tradeTags>
 		<recipeMaker>
 			<recipeUsers Inherit="false">
 				<li>RK_FueledSmithy</li>
@@ -8,8 +14,6 @@
 			</recipeUsers>
 		</recipeMaker>
 	</ThingDef>
-	<!-- 원거리 무기 -->
-	<!-- 석궁 스탤스 +10%-->
 	<ThingDef ParentName="RK_NeolithicRangeWeapon" Name="RK_WeaponAttr_Crossbow">
 		<defName>RK_Crossbow</defName>
 		<label>cross bow</label>
@@ -85,6 +89,13 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
+		<comps>
+			<li Class="NewRatkin.CompProperties_WeaponGripType">
+				<gripTypes>
+					<li>OneHand</li>
+				</gripTypes>
+			</li>
+		</comps>
 	</ThingDef>
 	<ThingDef ParentName="RK_BaseBullet">
 		<defName>Bolt_RK_Crossbow</defName>
@@ -102,8 +113,6 @@
 			<speed>45</speed>
 		</projectile>
 	</ThingDef>
-
-	<!-- 연발석궁 -->
 	<ThingDef ParentName="RK_NeolithicRangeWeapon" Name="RK_WeaponAttr_AutoCrossBow">
 		<defName>RK_AutoCrossBow</defName>
 		<label>autocross bow</label>
@@ -184,6 +193,13 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
+		<comps>
+			<li Class="NewRatkin.CompProperties_WeaponGripType">
+				<gripTypes>
+					<li>OneHand</li>
+				</gripTypes>
+			</li>
+		</comps>
 	</ThingDef>
 	<ThingDef ParentName="RK_BaseBullet">
 		<defName>Bolt_RK_AutoCrossBow</defName>
@@ -202,15 +218,13 @@
 		</projectile>
 	</ThingDef>
 	<ThingDef Abstract="True" Name="RK_IndustrialRangeWeapon" ParentName="BaseHumanMakeableGun">
-		<!-- <recipeMaker>			 -->
-		<!-- <recipeUsers> -->
-		<!-- <li>RK_FueledSmithy</li> -->
-		<!-- <li>RK_ElectricSmithy</li> -->
-		<!-- </recipeUsers> -->
-		<!-- </recipeMaker> -->
+		<thingCategories>
+			<li>RK_ThingCategory_Range</li>
+		</thingCategories>
+		<tradeTags>
+			<li>RK_TradeTag_All</li>
+		</tradeTags>
 	</ThingDef>
-
-	<!-- 대형 쇠뇌 -->
 	<ThingDef ParentName="RK_NeolithicRangeWeapon" Name="RK_WeaponAttr_Arbalest">
 		<defName>RK_Weapon_Arbalest</defName>
 		<label>large cross bow</label>
@@ -288,8 +302,14 @@
 			</li>
 		</tools>
 		<equippedAngleOffset>45</equippedAngleOffset>
+		<comps>
+			<li Class="NewRatkin.CompProperties_WeaponGripType">
+				<gripTypes>
+					<li>TwoHand</li>
+				</gripTypes>
+			</li>
+		</comps>
 	</ThingDef>
-
 	<ThingDef ParentName="RK_BaseBullet">
 		<defName>RK_Projectile_Arbalest</defName>
 		<label>large crossbow bolt</label>
@@ -307,8 +327,6 @@
 			<speed>80</speed>
 		</projectile>
 	</ThingDef>
-
-	<!-- 라이플 (구 플레셰트 라이플 수치·탄 통합) -->
 	<ThingDef ParentName="RK_IndustrialRangeWeapon" Name="RK_WeaponAttr_Rifle">
 		<defName>RK_Rifle</defName>
 		<label>ratkin rifle</label>
@@ -396,6 +414,13 @@
 			<li>RK_TradeTag_3TierWeapon</li>
 		</tradeTags>
 		<equippedAngleOffset>45</equippedAngleOffset>
+		<comps>
+			<li Class="NewRatkin.CompProperties_WeaponGripType">
+				<gripTypes>
+					<li>TwoHand</li>
+				</gripTypes>
+			</li>
+		</comps>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_RK_Rifle</defName>
@@ -412,7 +437,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingDef>
-	<!-- 저격 라이플 (구 플레셰트 저격 라이플 수치·탄 통합) -->
 	<ThingDef ParentName="RK_IndustrialRangeWeapon" Name="RK_WeaponAttr_SniperRifle">
 		<defName>RK_SniperRifle</defName>
 		<label>ratkin sniper rifle</label>
@@ -498,6 +522,13 @@
 			<li>RK_TradeTag_3TierWeapon</li>
 		</tradeTags>
 		<equippedAngleOffset>45</equippedAngleOffset>
+		<comps>
+			<li Class="NewRatkin.CompProperties_WeaponGripType">
+				<gripTypes>
+					<li>TwoHand</li>
+				</gripTypes>
+			</li>
+		</comps>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_RK_SniperRifle</defName>
@@ -514,7 +545,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingDef>
-	<!-- 소드오프: HE 탄 복제 Bullet_RK_Weapon_SawedOff_HE (값 커스터용) -->
 	<ThingDef ParentName="RK_IndustrialRangeWeapon">
 		<defName>RK_Weapon_SawedOff</defName>
 		<label>ratkin sawed-off</label>
@@ -590,6 +620,13 @@
 			<li>RK_TradeTag_2TierWeapon</li>
 		</tradeTags>
 		<equippedAngleOffset>45</equippedAngleOffset>
+		<comps>
+			<li Class="NewRatkin.CompProperties_WeaponGripType">
+				<gripTypes>
+					<li>OneHand</li>
+				</gripTypes>
+			</li>
+		</comps>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>RK_Bullet_SawedOff</defName>
@@ -604,7 +641,7 @@
 		<projectile Class="NewRatkin.ProjectileProperties_ProximityBurst">
 			<damageDef>RangedStab</damageDef>
 			<damageAmountBase>18</damageAmountBase>
-			<speed>75</speed>
+			<speed>60</speed>
 			<alwaysFreeIntercept>true</alwaysFreeIntercept>
 			<flyOverhead>false</flyOverhead>
 			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
@@ -618,8 +655,6 @@
 			<damageAmountExplosion>18</damageAmountExplosion>
 		</projectile>
 	</ThingDef>
-	
-	<!-- 3티어 -->
 	<ThingDef ParentName="RK_IndustrialRangeWeapon" Name="RK_WeaponAttr_Bolter">
 		<defName>RK_Weapon_Bolter</defName>
 		<label>hand cannon</label>
@@ -682,7 +717,7 @@
 		</weaponTags>
 		<tradeTags Inherit="false">
 			<li>RK_TradeTag_4TierWeapon</li>
-			<!-- <li>ExoticMisc</li> -->
+			<li>RK_TradeTag_All</li>
 		</tradeTags>
 		<tools>
 			<li>
@@ -704,6 +739,13 @@
 			</li>
 		</tools>
 		<tradeability>All</tradeability>
+		<comps>
+			<li Class="NewRatkin.CompProperties_WeaponGripType">
+				<gripTypes>
+					<li>OneHand</li>
+				</gripTypes>
+			</li>
+		</comps>
 	</ThingDef>
 	<ThingDef ParentName="RK_BaseBullet">
 		<defName>RK_Bullet_Bolter</defName>
@@ -726,8 +768,6 @@
 			<extraEmpDamage>6</extraEmpDamage>
 		</projectile>
 	</ThingDef>
-
-	<!-- 랫킨용 실험용총 3점사/단발 토글 -->
 	<ThingDef ParentName="RK_IndustrialRangeWeapon" Name="RK_WeaponAttr_PrototypePulseRifle">
 		<defName>RK_PrototypePulseRifle</defName>
 		<label>prototype pulse rifle</label>
@@ -752,6 +792,11 @@
 			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
 		<comps>
+			<li Class="NewRatkin.CompProperties_WeaponGripType">
+				<gripTypes>
+					<li>TwoHand</li>
+				</gripTypes>
+			</li>
 			<li Class="NewRatkin.CompProperties_PulseRifleFireMode">
 				<projectileBurst>Bullet_RK_PrototypePulseRifleLight</projectileBurst>
 				<projectileSingle>Bullet_RK_PrototypePulseRifleHeavy</projectileSingle>
@@ -778,7 +823,11 @@
 			<li>
 				<verbClass>NewRatkin.Verb_PulseRifleShoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<!-- defaultProjectile, warmupTime, range, burstShotCount, ticksBetweenBurstShots → Comp_PulseRifleFireMode에서 모드별로 덮어씀 -->
+				<!-- 정보 카드는 ThingDef.verbs만 참조함. 기본 연사 모드와 동일하게 두고 Comp가 장착 후 덮어씀 -->
+				<defaultProjectile>Bullet_RK_PrototypePulseRifleLight</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<burstShotCount>4</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
 				<range>27</range>
 				<soundCast>PrototypePulse</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
@@ -809,7 +858,7 @@
 		</weaponTags>
 		<tradeTags Inherit="false">
 			<li>RK_TradeTag_4TierWeapon</li>
-			<!-- <li>ExoticMisc</li> -->
+			<li>RK_TradeTag_All</li>
 		</tradeTags>
 		<tools>
 			<li>
@@ -832,7 +881,6 @@
 		</tools>
 		<tradeability>All</tradeability>
 	</ThingDef>
-
 	<ThingDef ParentName="RK_BaseBullet">
 		<defName>Bullet_RK_PrototypePulseRifleLight</defName>
 		<label>wedge bullet</label>
@@ -847,7 +895,6 @@
 			<armorPenetrationBase>0.50</armorPenetrationBase>
 		</projectile>
 	</ThingDef>
-
 	<ThingDef ParentName="RK_BaseBullet">
 		<defName>Bullet_RK_PrototypePulseRifleHeavy</defName>
 		<label>wedge bullet</label>
@@ -863,9 +910,6 @@
 			<armorPenetrationBase>0.70</armorPenetrationBase>
 		</projectile>
 	</ThingDef>
-
-
-	<!-- BFR 3000 -->
 	<ThingDef ParentName="RK_IndustrialRangeWeapon" Name="RK_WeaponAttr_BFR">
 		<defName>RK_Weapon_BFR</defName>
 		<label>BFR 3000</label>
@@ -891,6 +935,11 @@
 		</costList>
 		<equippedAngleOffset>45</equippedAngleOffset>
 		<comps>
+			<li Class="NewRatkin.CompProperties_WeaponGripType">
+				<gripTypes>
+					<li>TwoHand</li>
+				</gripTypes>
+			</li>
 			<li Class="NewRatkin.CompProperties_BFRAmmoToggle">
 				<projectileAP>Bullet_BFR_AP</projectileAP>
 				<projectileHE>Bullet_BFR_HE</projectileHE>
@@ -899,7 +948,6 @@
 			</li>
 		</comps>
 		<verbs>
-			<!-- 관통탄 -->
 			<li>
 				<verbClass>NewRatkin.Verb_BFRShoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
@@ -939,7 +987,7 @@
 		</weaponTags>
 		<tradeTags Inherit="false">
 			<li>RK_TradeTag_4TierWeapon</li>
-			<!-- <li>ExoticMisc</li> -->
+			<li>RK_TradeTag_All</li>
 		</tradeTags>
 		<tools>
 			<li>
@@ -972,7 +1020,6 @@
 		</graphicData>
 		<thingClass>NewRatkin.Projectile_BallistaBoltAP</thingClass>
 		<projectile Class="NewRatkin.ProjectileProperties_BallistaBoltAP">
-			<!-- <shockWaveDef>ShockWaveLight</shockWaveDef> -->
 			<maxPenetrationCount>3</maxPenetrationCount>
 			<damageReduceRate>0.4</damageReduceRate>
 			<damageDef>RangedStab</damageDef>
@@ -983,7 +1030,6 @@
 			<alwaysFreeIntercept>true</alwaysFreeIntercept>
 			<flyOverhead>false</flyOverhead>
 			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
-			<!-- <soundExplode>Shockwave</soundExplode> -->
 			<soundImpactAnticipate>Flying</soundImpactAnticipate>
 			<soundAmbient>MortarRound_Ambient</soundAmbient>
 		</projectile>
@@ -1008,7 +1054,6 @@
 			<soundExplode>Shockwave</soundExplode>
 			<soundImpactAnticipate>Flying</soundImpactAnticipate>
 			<soundAmbient>MortarRound_Ambient</soundAmbient>
-			<!-- 전방 기폭: preDetonationDistance=목표 N칸 전, sectorRadius=폭발 반지름(칸), sectorAngle=부채꼴 전체 각도 -->
 			<preDetonationDistance>2</preDetonationDistance>
 			<sectorAngle>120</sectorAngle>
 			<sectorRadius>3.7</sectorRadius>
@@ -1016,8 +1061,6 @@
 			<damageAmountExplosion>22</damageAmountExplosion>
 		</projectile>
 	</ThingDef>
-
-	<!-- 쥑이는건(RatHolic Gun) -->
 	<ThingDef ParentName="RK_IndustrialRangeWeapon" Name="RK_WeaponAttr_RatHolicGun">
 		<defName>RK_Weapon_RatHolicGun</defName>
 		<label>RatHolic Gun</label>
@@ -1083,7 +1126,6 @@
 				<warmupTime>2</warmupTime>
 				<range>30.9</range>
 				<burstShotCount>1</burstShotCount>
-				<!-- <ticksBetweenBurstShots>10</ticksBetweenBurstShots> -->
 				<soundCast>Shot_Minigun</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
@@ -1092,6 +1134,7 @@
 					<li>RK_Hediff_RatHolicGunSpoolingAim</li>
 				</hediffDefs>
 				<maxStacks>5</maxStacks>
+				<shootingXpFactor>0.025</shootingXpFactor>
 			</li>
 		</verbs>
 		<tools>
@@ -1105,6 +1148,11 @@
 			</li>
 		</tools>
 		<comps>
+			<li Class="NewRatkin.CompProperties_WeaponGripType">
+				<gripTypes>
+					<li>TwoHand</li>
+				</gripTypes>
+			</li>
 			<li Class="NewRatkin.CompProperties_EquipableHediff">
 				<hediffDefs>
 					<li>RK_Hediff_RatHolicGun</li>
@@ -1127,23 +1175,18 @@
 			<speed>70</speed>
 		</projectile>
 	</ThingDef>
-
-	<!-- RatHolic Gun 통합 관리 Hediff (영구 지속) -->
 	<HediffDef>
 		<defName>RK_Hediff_RatHolicGun</defName>
 		<label>RatHolic Gun Spooling Manager</label>
 		<description>Manages RatHolic Gun spooling effects.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<isBad>false</isBad>
-		<!-- 영구 지속 -->
-		<!-- UI에서 숨김 - 유저에게 드러나지 않음 -->
 		<stages>
 			<li>
 				<becomeVisible>false</becomeVisible>
 			</li>
 		</stages>
 		<comps>
-			<!-- 통합 Comp: 타겟 변경 시 제거할 Hediff와 사격 중이 아닐 때 제거할 Hediff 관리 -->
 			<li Class="NewRatkin.HediffCompProperties_RatHolicGun">
 				<targetChangeRemoveHediffs>
 					<li>RK_Hediff_RatHolicGunSpoolingAim</li>
@@ -1155,27 +1198,21 @@
 			</li>
 		</comps>
 	</HediffDef>
-
-	<!-- RatHolic Gun 발사 속도 증가 버프 -->
 	<HediffDef>
 		<defName>RK_Hediff_RatHolicGunSpooling</defName>
 		<label>spooling up</label>
 		<description>The weapon is spooling up, reducing reload time with each shot fired.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<isBad>false</isBad>
-		<!-- 최대 Severity 1.2 = 6중첩 (코드에서 Severity로 중첩 처리: 0.2=1스택, 0.4=2스택, ..., 1.2=6스택) -->
 		<maxSeverity>1</maxSeverity>
 		<stages>
-			<!-- Stage 1: 1스택 (Severity 0.2) - RK_Stat_RangeCoolDownMultiplier: 0.5× (선형: 0.5→0.1) -->
 			<li>
 				<minSeverity>0.2</minSeverity>
-				<!-- UI에서 숨김 - 유저에게 드러나지 않음 -->
 				<becomeVisible>false</becomeVisible>
 				<statFactors>
 					<RK_Stat_RangeCoolDownMultiplier>0.5</RK_Stat_RangeCoolDownMultiplier>
 				</statFactors>
 			</li>
-			<!-- Stage 2: 2스택 (Severity 0.4) - RK_Stat_RangeCoolDownMultiplier: 0.4× (선형: 0.5→0.1) -->
 			<li>
 				<minSeverity>0.4</minSeverity>
 				<becomeVisible>false</becomeVisible>
@@ -1183,7 +1220,6 @@
 					<RK_Stat_RangeCoolDownMultiplier>0.4</RK_Stat_RangeCoolDownMultiplier>
 				</statFactors>
 			</li>
-			<!-- Stage 3: 3스택 (Severity 0.6) - RK_Stat_RangeCoolDownMultiplier: 0.3× (선형: 0.5→0.1) -->
 			<li>
 				<minSeverity>0.6</minSeverity>
 				<becomeVisible>false</becomeVisible>
@@ -1191,7 +1227,6 @@
 					<RK_Stat_RangeCoolDownMultiplier>0.3</RK_Stat_RangeCoolDownMultiplier>
 				</statFactors>
 			</li>
-			<!-- Stage 4: 4스택 (Severity 0.8) - RK_Stat_RangeCoolDownMultiplier: 0.2× (선형: 0.5→0.1) -->
 			<li>
 				<minSeverity>0.8</minSeverity>
 				<becomeVisible>false</becomeVisible>
@@ -1199,7 +1234,6 @@
 					<RK_Stat_RangeCoolDownMultiplier>0.2</RK_Stat_RangeCoolDownMultiplier>
 				</statFactors>
 			</li>
-			<!-- Stage 5: 5스택 (Severity 1.0) - RK_Stat_RangeCoolDownMultiplier: 0.1× (선형: 0.5→0.1) -->
 			<li>
 				<minSeverity>1.0</minSeverity>
 				<becomeVisible>false</becomeVisible>
@@ -1209,20 +1243,16 @@
 			</li>
 		</stages>
 	</HediffDef>
-
-	<!-- RatHolic Gun 조준 속도 증가 버프 -->
 	<HediffDef>
 		<defName>RK_Hediff_RatHolicGunSpoolingAim</defName>
 		<label>aiming alignment</label>
 		<description>The weapon is spooling up, reducing aiming time and improving accuracy with each shot fired.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<isBad>false</isBad>
-		<!-- 최대 Severity 0.4 = 2중첩 -->
 		<maxSeverity>1</maxSeverity>
 		<stages>
 			<li>
 				<minSeverity>0.2</minSeverity>
-				<!-- UI에서 숨김 - 유저에게 드러나지 않음 -->
 				<becomeVisible>false</becomeVisible>
 				<statFactors>
 					<AimingDelayFactor>0.2</AimingDelayFactor>

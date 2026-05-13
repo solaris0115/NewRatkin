@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<!-- Buildings -->
+
+  <RK_Pulpit.label>pulpit</RK_Pulpit.label>
+  <RK_Pulpit.description>A small pulpit. Ratkin priests can host prayer services here.</RK_Pulpit.description>
+
+  <RK_HamsterWheelGenerator.label>hamster wheel generator</RK_HamsterWheelGenerator.label>
+  <RK_HamsterWheelGenerator.description>Produces electricity using a hamster wheel design. The amount of power generated is proportional to the running speed.</RK_HamsterWheelGenerator.description>
+
+  <RK_HandTailoringBench.label>Ratkin hand tailor bench</RK_HandTailoringBench.label>
+  <RK_HandTailoringBench.description>A workbench for tailoring together Ratkin clothes by hand. Works at 65% of the speed of an electric tailoring bench.</RK_HandTailoringBench.description>
+
+  <RK_ElectricTailoringBench.label>Ratkin electric tailor bench</RK_ElectricTailoringBench.label>
+  <RK_ElectricTailoringBench.description>A workbench with a sewing machine for rapidly tailoring together Ratkin clothing. Can work without electricity at 65% of normal speed.</RK_ElectricTailoringBench.description>
+
+  <RK_FueledSmithy.label>Ratkin fueled smithy</RK_FueledSmithy.label>
+  <RK_FueledSmithy.description>A wood-fueled station for smithing non-mechanical Ratkin weapons and tools.</RK_FueledSmithy.description>
+
+  <RK_ElectricSmithy.label>Ratkin electric smithy</RK_ElectricSmithy.label>
+  <RK_ElectricSmithy.description>An electric-powered station for smithing non-mechanical Ratkin weapons and tools.</RK_ElectricSmithy.description>
+
+  <RK_GuerrillaTunnel.label>Transport Drill</RK_GuerrillaTunnel.label>
+  <RK_GuerrillaTunnel.description>A transport pod repurposed to dig and maneuver through the soil and are commonly fielded by elite ratkin commandos to burrow past hostile defenses and hopefully re-emerge somewhere remote inside the target base.</RK_GuerrillaTunnel.description>
+  <RK_GuerrillaTunnelSpawner.label>Shifting Soil</RK_GuerrillaTunnelSpawner.label>
+
+  <RK_EmpBomb.label>EMP Bomb</RK_EmpBomb.label>
+  <RK_EmpBomb.description>A makeshift electro-magnetic pulse bomb used by Ratkin commandos to disable enemy defenses just before a follow-up raid arrives. Due to its unique construction, it is impossible to diffuse without shooting or deconstructing it.</RK_EmpBomb.description>
+  <MinifiedEMP.label>minified thing</MinifiedEMP.label>
+
+  <RK_Building_Ballista.label>ballista</RK_Building_Ballista.label>
+  <RK_Building_Ballista.description>Ballista bolt launcher. A device capable of firing giant bolts. It takes a long time to reload, but has high accuracy and excellent armor penetration despite its primitive design.</RK_Building_Ballista.description>
+
+  <RK_Weapon_Ballista.label>ballista</RK_Weapon_Ballista.label>
+  <RK_Weapon_Ballista.description>Ballista bolt launcher. A device capable of firing giant bolts. It takes a long time to reload, but has high accuracy and excellent armor penetration despite its primitive design.</RK_Weapon_Ballista.description>
+  <RK_Weapon_Ballista.verbs.Verb_Shoot.label>ballista</RK_Weapon_Ballista.verbs.Verb_Shoot.label>
+
+  <RK_Ammo_BallistaBoltNormal.label>giant bolt</RK_Ammo_BallistaBoltNormal.label>
+  <RK_Ammo_BallistaBoltNormal.description>A giant bolt. This huge projectile on its own can pierce into lightly targets and inflict tremendous damage.</RK_Ammo_BallistaBoltNormal.description>
+  <RK_Projectile_BallistaBoltNormal.label>giant bolt</RK_Projectile_BallistaBoltNormal.label>
+
+  <RK_Ammo_BallistaBoltAP.label>giant bolt (AP)</RK_Ammo_BallistaBoltAP.label>
+  <RK_Ammo_BallistaBoltAP.description>A ballista bolt sharpened to achieve a higher penetrating power and counter otherwise impregnable opponents. It can penetrate straight through multiple targets in firing lines.</RK_Ammo_BallistaBoltAP.description>
+  <RK_Projectile_BallistaBoltAP.label>giant bolt</RK_Projectile_BallistaBoltAP.label>
+
+  <RK_Building_Cannon.label>cannon</RK_Building_Cannon.label>
+  <RK_Building_Cannon.description>An emplaced cannon that can fire cannon shells over long distances. Developed to fire upon enemies from a distance, but cannot be used to shoot over walls. It's commonly called the Squeak Cannon among the ratkin.</RK_Building_Cannon.description>
+
+  <RK_Building_CannonTurret.label>cannon</RK_Building_CannonTurret.label>
+  <RK_Building_CannonTurret.description>An emplaced cannon that can fire cannon shells over long distances. Developed to fire upon enemies from a distance, but cannot be used to shoot over walls. It's commonly called the Squeak Cannon among the ratkin.</RK_Building_CannonTurret.description>
+  <RK_Building_CannonTurret.verbs.Verb_Shoot.label>cannon</RK_Building_CannonTurret.verbs.Verb_Shoot.label>
+
+  <RK_Ammo_CannonBall.label>cannon shell</RK_Ammo_CannonBall.label>
+  <RK_Ammo_CannonBall.description>A stone chunk polished to fit inside a hollow shell of steel, hence the name cannon shell. It can deal monstrous damage to targets and may ricochet when it strikes the ground. Used as ammunition for the Cannon.</RK_Ammo_CannonBall.description>
+  <RK_Projectile_CannonBall.label>cannon shell</RK_Projectile_CannonBall.label>
+
+<!-- Ratkin -->
+
+  <Ratkin.label>ratkin</Ratkin.label>
+  <Ratkin.description>A human with rodent-like genes. Although their origins are unknown, it is known to be a monarchy-based society with a strong emphasis on agriculture. There are more females than males, and it can be difficult to distinguish the gender of ratkin when viewed from the outside.</Ratkin.description>
+  <Ratkin.tools.0.label>teeth</Ratkin.tools.0.label>
+  <Ratkin.tools.1.label>left fist</Ratkin.tools.1.label>
+  <Ratkin.tools.2.label>right fist</Ratkin.tools.2.label>
+
+<!-- hampter -->
+
+  <RK_KingHamster.label>king hamster</RK_KingHamster.label>
+  <RK_KingHamster.description>A giant hamster. Despite growing in size, they're generally docile animals and while its intelligence isn't the best, it can be tamed and used as pack animals. Its adaptation to hot temperatures makes it an ideal choice for ratkin caravans going through deserts.</RK_KingHamster.description>
+  <RK_KingHamster.tools.0.label>head</RK_KingHamster.tools.0.label>
+  <RK_KingHamster.tools.1.label>left hand</RK_KingHamster.tools.1.label>
+  <RK_KingHamster.tools.2.label>right hand</RK_KingHamster.tools.2.label>
+
+<!-- Items -->
+
+  <RK_Leather_KingHamster.label>king hamster leather</RK_Leather_KingHamster.label>
+  <RK_Leather_KingHamster.description>The pelt of a king hamster. Hamsters' unique cuteness is easy to recognize even when they grow in size. Good at temperature regulation in hot climates.</RK_Leather_KingHamster.description>
+  <RK_Wool_KingHamster.label>king Hamster wool</RK_Wool_KingHamster.label>
+  <RK_Wool_KingHamster.description>Soft, light and provides very good insulation. Clothes made from said wool can keep the body warm in even extreme cold.</RK_Wool_KingHamster.description>
+  <RK_Thing_BionicTail.label>bionic ratkin tail</RK_Thing_BionicTail.label>
+  <RK_Thing_BionicTail.description>An installed bionic ratkin tail. It features an AI that monitors the users movement and moves the tail in response, allowing it to replicate the user's missing tail and balance almost perfectly. It's better than a biological tail in almost every way.</RK_Thing_BionicTail.description>
+
+  <RK_StrawberryBeer.label>Strawberry Beer</RK_StrawberryBeer.label>
+  <RK_StrawberryBeer.description>A special beer made by mixing strawberries into beer using the traditional ways of ratkin to create a beverage enjoyed by all. Thanks to this process, the alcohol concentration is reduced enough so ratkin can enjoy alcohol.</RK_StrawberryBeer.description>
+  <RK_StrawberryBeer.ingestible.ingestCommandString>Drink {0}</RK_StrawberryBeer.ingestible.ingestCommandString>
+  <RK_StrawberryBeer.ingestible.ingestReportString>Drinking {0}.</RK_StrawberryBeer.ingestible.ingestReportString>
+  <RK_StrawberryBeer.tools.0.label>strawberry beer mug</RK_StrawberryBeer.tools.0.label>
+  <RK_StrawberryBeer.verbs.Verb_Shoot.label>strawberry beer</RK_StrawberryBeer.verbs.Verb_Shoot.label>
+  <RK_StrawberryBeer_Bullet.label>strawberry beer</RK_StrawberryBeer_Bullet.label>
+  <RK_Filth_BeerFoam.label>beer foam</RK_Filth_BeerFoam.label>
+
+  <RK_Food_Hardtack.label>hardtack</RK_Food_Hardtack.label>
+  <RK_Food_Hardtack.description>A hard preservative made from mixing flour and water together, with salt sprinkled on to add some missing flavor. If kept out of the rain, it can stay abandoned on a shelf for a long time before going bad. Great for traveling.</RK_Food_Hardtack.description>
+
+<!-- Armor -->
+
+  <RK_Plate.label>ratkin plate armor</RK_Plate.label>
+  <RK_Plate.description>Plate armor fit for Ratkin to wear. Overlapping armor allows for even greater protection against incoming projectiles and attacks.</RK_Plate.description>
+
+  <RK_SantaRobe.label>santa robe</RK_SantaRobe.label>
+  <RK_SantaRobe.description>Santa Ratkin's red robes.</RK_SantaRobe.description>
+
+  <RK_SantaHat.label>santa hat</RK_SantaHat.label>
+  <RK_SantaHat.description>Santa Ratkin's red hat.</RK_SantaHat.description>
+
+  <RK_SantaSack.label>santa's sack</RK_SantaSack.label>
+  <RK_SantaSack.description>It's a big, magical sack that allows Santa Ratkin to carry lots of presents on their back.</RK_SantaSack.description>
+
+  <RK_WhiteCoat.label>white coat</RK_WhiteCoat.label>
+  <RK_WhiteCoat.description>A pure white coat. Quality fabric and carefully woven, this outfit is fit for anyone in a high-ranking position.</RK_WhiteCoat.description>
+
+  <RK_Sack.label>ratkin knapsack</RK_Sack.label>
+  <RK_Sack.description>A knapsack for conniving ratkin. Favored by thieves for its light carry weight and ability to quickly throw stolen items into it.</RK_Sack.description>
+
+  <RK_RoyalRobe.label>royal robe</RK_RoyalRobe.label>
+  <RK_RoyalRobe.description>A long flowing robe embroidered with complex decorative designs. Athough wildly impractical, it marks the wearer as a powerful noble and gives an aura of authority.</RK_RoyalRobe.description>
+
+  <RK_RoyalCrown.label>Ratkin royal crown</RK_RoyalCrown.label>
+  <RK_RoyalCrown.description>A grand crown with an elaborate design embroiled onto it. Worn by upper-ranking nobles.</RK_RoyalCrown.description>
+
+  <RK_WoodenShield.label>ratkin wooden shield</RK_WoodenShield.label>
+  <RK_WoodenShield.description>A round shield made out of wood. Can deflect attacks from the front. 
+
+Deflection chance is based on wearer's melee skill and material.</RK_WoodenShield.description>
+
+  <RK_HeavyShield.label>ratkin heavy shield</RK_HeavyShield.label>
+  <RK_HeavyShield.description>A metal shield. Allows the wearer to deflect attacks from the front.  
+
+Deflection chance is based on wearer's melee skill and material.</RK_HeavyShield.description>
+
+  <RK_TowerShield.label>ratkin tower shield</RK_TowerShield.label>
+  <RK_TowerShield.description>A towering metal shield. Allows the wearer to deflect attacks from the front.  
+
+Deflection chance is based on wearer's melee skill and material.</RK_TowerShield.description>
+
+  <RK_Apparel_VacsuitHelmet.label>Ratkin vacsuit helmet</RK_Apparel_VacsuitHelmet.label>
+  <RK_Apparel_VacsuitHelmet.description>A helmet that efficiently recycles the user's oxygen, allowing them to breathe in the vacuum of space for hours at a time. The process isn't perfectly efficient, so the user must periodically return to a pressurized environment.
+
+This suit is designed to only fit onto ratkin.</RK_Apparel_VacsuitHelmet.description>
+
+  <RK_Apparel_Vacsuit.label>Ratkin vacsuit</RK_Apparel_Vacsuit.label>
+  <RK_Apparel_Vacsuit.description>A protective suit that keeps the user safe in the vacuum of space. The suit restricts the wearer's movement, considerably reducing their movement speed.
+
+This suit is designed to only fit ratkin inside it.</RK_Apparel_Vacsuit.description>
+
+  <RK_Apparel_VacsuitChildren.label>Ratkin child vacsuit</RK_Apparel_VacsuitChildren.label>
+  <RK_Apparel_VacsuitChildren.description>A protective suit designed for children. It keeps the user safe in the vacuum of space.
+
+This suit is designed to only fit ratkin children inside it.</RK_Apparel_VacsuitChildren.description>
+
+  <RK_Apparel_SpaceArmor.label>Ratkin bastion armor</RK_Apparel_SpaceArmor.label>
+  <RK_Apparel_SpaceArmor.description>Reinforced power armor cast from a mixture of plasteel, steel, and uranium. It has excellent heat resistance and can withstand heavy impacts, helping the wearer hold firm even when surrounded.
+
+It is awarded to only the most outstanding of warriors, who are given the duty to protect others equal to the weight of the armor.
+
+Only Ratkin can equip this armor.</RK_Apparel_SpaceArmor.description>
+
+  <RK_Apparel_SpaceArmorHelmet.label>Ratkin bastion helmet</RK_Apparel_SpaceArmorHelmet.label>
+  <RK_Apparel_SpaceArmorHelmet.description>A heavy helmet fitted with an augmented neural network. It feels almost weightless to wear and analyzes the surrounding battlefield.
+
+Only Ratkin can equip this armor.</RK_Apparel_SpaceArmorHelmet.description>
+
+  <RK_Apparel_Banner.label>Ratkin war banner</RK_Apparel_Banner.label>
+  <RK_Apparel_Banner.description>A simple war banner that can be carried on the back back until needed.
+
+Provides the ability to bolster the morale of nearby allies depending on the social skill of whoever is holding it.</RK_Apparel_Banner.description>
+
+  <RK_CrossBack.label>cross back</RK_CrossBack.label>
+  <RK_CrossBack.description>It's a simple, improvised backpack. It lets the wearer carry a little more.</RK_CrossBack.description>
+
+  <RK_Backpack.label>Ratkin backpack</RK_Backpack.label>
+  <RK_Backpack.description>A Backpack specially fit for ratkin. It allows the wearer to carry more items on their back.</RK_Backpack.description>
+
+  <RK_OutdoorBackpack.label>Ratkin outdoor backpack</RK_OutdoorBackpack.label>
+  <RK_OutdoorBackpack.description>A backpack made for outdoor activities. It allows the wearer to carry even more items on their back.</RK_OutdoorBackpack.description>
+
+  <RK_ApronSkirt.label>Ratkin apron skirt</RK_ApronSkirt.label>
+  <RK_ApronSkirt.description>Simple clothing with an apron.</RK_ApronSkirt.description>
+
+  <RK_ApronSkirtChildren.label>Ratkin child skirt</RK_ApronSkirtChildren.label>
+  <RK_ApronSkirtChildren.description>Simple, everyday clothing for children.</RK_ApronSkirtChildren.description>
+
+  <RK_SummerDress.label>Ratkin summer dress</RK_SummerDress.label>
+  <RK_SummerDress.description>Summer white dress. The ventilation it provides helps to cool the body relative quickly and offers protection against the sun.</RK_SummerDress.description>
+
+  <RK_StrawHat.label>Ratkin straw hat</RK_StrawHat.label>
+  <RK_StrawHat.description>A straw hat made out of hay. It shields the head from direct sunlight and has decent ventilation to allow heat to escape.</RK_StrawHat.description>
+
+  <RK_Muffler.label>Ratkin muffler</RK_Muffler.label>
+  <RK_Muffler.description>A muffler that wraps around the neck. Prevents body temperature from escaping through neck. It's best used to cross tundras.</RK_Muffler.description>
+
+  <RK_Cardigan.label>Ratkin cardigan</RK_Cardigan.label>
+  <RK_Cardigan.description>Cardigan on the outside of the clothes. It can be worn over other clothes to protect yourself from the cold.</RK_Cardigan.description>
+
+  <RK_WoolenHat.label>Ratkin Wool hat</RK_WoolenHat.label>
+  <RK_WoolenHat.description>A hat made from wool. It insulates the head and protects it from cold weather.</RK_WoolenHat.description>
+
+  <RK_WorkerWear.label>Ratkin worker wear</RK_WorkerWear.label>
+  <RK_WorkerWear.description>Clothes tailored to aid working ratkin complete their jobs quicker, recommended for ratkin who often find themselves doing a lot of work.</RK_WorkerWear.description>
+
+  <RK_Coif.label>Ratkin coif</RK_Coif.label>
+  <RK_Coif.description>A hat for use when working in the kitchen. It can catch hair from falling into food during meal prep.</RK_Coif.description>
+
+  <RK_ResearchGown.label>Ratkin research gown</RK_ResearchGown.label>
+  <RK_ResearchGown.description>A gown made to be worn by researching ratkin. It makes catching stains easier and gives off an intelligent look.</RK_ResearchGown.description>
+
+  <RK_ResearchGlasses.label>Ratkin glasses</RK_ResearchGlasses.label>
+  <RK_ResearchGlasses.description>Glasses sized to fit onto Ratkin. This is needed for Ratkin attempting to researching at higher tech levels. It helps the overcome their poor eyesight and feel a little smarter when researching.</RK_ResearchGlasses.description>
+
+  <RK_ExplorerWear.label>Ratkin explorer wear</RK_ExplorerWear.label>
+  <RK_ExplorerWear.description>Clothing useful when caravaning out in the world. It makes movement easy and muffles the sound coming from said movement.</RK_ExplorerWear.description>
+
+  <RK_ExplorerHat.label>Ratkin explorer hat</RK_ExplorerHat.label>
+  <RK_ExplorerHat.description>An exploring hat. It prevents the sun from shining onto the head and shields the eyes from the sun's glare.</RK_ExplorerHat.description>
+
+  <RK_ChefSuit.label>Ratkin chef dress</RK_ChefSuit.label>
+  <RK_ChefSuit.description>Chef dress. Tailored to make it easier for chefs to cook and increases cooking speed during meal prep.</RK_ChefSuit.description>
+
+  <RK_ChefHat.label>Ratkin chef hat</RK_ChefHat.label>
+  <RK_ChefHat.description>Chef hat. Prevents hair from entering the food during meal prep.</RK_ChefHat.description>
+  <RK_GaurdenUniform.label>Ratkin Guardener uniform</RK_GaurdenUniform.label>
+  <RK_GaurdenUniform.description>A Guardener's uniform is an important piece of attire worn by the guardeners who protect the gardens revered in Ratkin Society. Only the best Ratkin are selected to become Guardeners.</RK_GaurdenUniform.description>
+  <RK_WinterRobe.label>Ratkin winter robe</RK_WinterRobe.label>
+  <RK_WinterRobe.description>A winter robe worn when working in the cold.</RK_WinterRobe.description>
+
+  <RK_OrderUniform.label>Ratkin order uniform</RK_OrderUniform.label>
+  <RK_OrderUniform.description>A combat uniform made for battle. It gives the wearer a feeling of safety and allows them to endure more punishment at the cost of speed, though it can be intimidating when used in social settings.</RK_OrderUniform.description>
+
+  <RK_BulletProofHelmet.label>Ratkin military helmet</RK_BulletProofHelmet.label>
+  <RK_BulletProofHelmet.description>Ratkin bulletproof helmet. Makes it easier to aim while also protecting the head against incoming fire.</RK_BulletProofHelmet.description>
+  <RK_FlatColorCoat.label>Ratkin flatcolor coat</RK_FlatColorCoat.label>
+  <RK_FlatColorCoat.description>A sweet, monochrome dress. Feels comfortable to wear and gives a feeling of being well-appointed.</RK_FlatColorCoat.description>
+  <RK_FrillOnepiece.label>Ratkin frill onepiece</RK_FrillOnepiece.label>
+  <RK_FrillOnepiece.description>A cute one-piece dress with frilly decorations. It is popular with the ladies of upper class ratkin society.</RK_FrillOnepiece.description>
+  <RK_HairCorsage.label>Ratkin hair corsage</RK_HairCorsage.label>
+  <RK_HairCorsage.description>A flower-shaped corsage. The beauty of the flower empowers every word.</RK_HairCorsage.description>
+  <RK_RibbonHairBand.label>Ratkin ribbon hair band</RK_RibbonHairBand.label>
+  <RK_RibbonHairBand.description>A hairband with a cute little ribbon wrapped onto it. The cuteness of the ribbon makes it easier to negotiate for one more candy while trading.</RK_RibbonHairBand.description>
+  <RK_SistersDerss.label>Ratkin Sister dress</RK_SistersDerss.label>
+  <RK_SistersDerss.description>A simple dress worn by the sisters of the ratkin. It features a side slit for ease of movement. The sisters also care for the sick.</RK_SistersDerss.description>
+  <RK_SistersVeil.label>Ratkin veil</RK_SistersVeil.label>
+  <RK_SistersVeil.description>A veil worn over the head by the sisters of the ratkin. It keeps their hair neat and helps instill confidence in the wounded when the sisters are performing medical work.</RK_SistersVeil.description>
+  <RK_BattleSuit.label>ratkin combat suit</RK_BattleSuit.label>
+  <RK_BattleSuit.description>It's a combat suit designed for raiding purposes. Protects the wearer from hot temperatures and because of its construction, it is resistant to catching fire. The look of the uniform is however intimidating if kept on during social interactions.</RK_BattleSuit.description>
+  <RK_HeadBand.label>Ratkin head band</RK_HeadBand.label>
+  <RK_HeadBand.description>A piece of red cloth worn around the head. It is said that if you encounter ratkin with headbands on their head - be careful - They're likely fanatical ratkin who know no fear.</RK_HeadBand.description>
+  <RK_PlateHelmA.label>Ratkin plate helm A</RK_PlateHelmA.label>
+  <RK_PlateHelmA.description>It's a simple plate helm.</RK_PlateHelmA.description>
+  <RK_PlateHelmB.label>Ratkin plate helm B</RK_PlateHelmB.label>
+  <RK_PlateHelmB.description>It's a simple plate helm.</RK_PlateHelmB.description>
+  <RK_PlateHelmC.label>Ratkin plate helm C</RK_PlateHelmC.label>
+  <RK_PlateHelmC.description>It's a simple plate helm.</RK_PlateHelmC.description>
+
+  <RK_Mask.label>Ratkin mask helmet</RK_Mask.label>
+  <RK_Mask.description>A helmet with a mask installed onto it. Made to allow the user to be active for long periods of time in hazardous environments, even in toxic ones.</RK_Mask.description>
+  <RK_MaskB.label>Ratkin mask helmet</RK_MaskB.label>
+  <RK_MaskB.description>A helmet with a mask installed onto it. Made to allow the user to be active for long periods of time in hazardous environments, even in toxic ones.</RK_MaskB.description>
+
+<!-- Weaponry -->
+
+  <RK_MagicWand.label>ratkin magic wand</RK_MagicWand.label>
+  <RK_MagicWand.description>High-yield Ratkin 'magic wand'. Used to blow apart a locked door or destroy furniture. Has a chance to detonate on hit.
+
+A sober ratkin would throw it...</RK_MagicWand.description>
+  <RK_MagicWand.tools.0.label>head</RK_MagicWand.tools.0.label>
+  <RK_MagicWand.tools.1.label>edge</RK_MagicWand.tools.1.label>
+  <RK_Weapon_Gunlance.label>Ratkin gunlance</RK_Weapon_Gunlance.label>
+  <RK_Weapon_Gunlance.description>A heavy, mechanical lance capable of loading special shells into a rotary loading system for combat. By loading special ammunition into its cylinder, it can use Wyvern Fire during melee combat to deal heavy damage in front of the user and setting whoever survived said damage on fire. 
+
+A short cooldown is required after using Wyvern Fire to allow the gunlance time to cool.</RK_Weapon_Gunlance.description>
+  <RK_Weapon_Gunlance.tools.0.label>point</RK_Weapon_Gunlance.tools.0.label>
+  <RK_Weapon_Gunlance.tools.1.label>edge</RK_Weapon_Gunlance.tools.1.label>
+  <RK_Weapon_Gunlance.comps.2.chargeNoun>Wyvern Fire charge</RK_Weapon_Gunlance.comps.2.chargeNoun>
+  <RK_Ammo_WyvernFire.label>Wyvern Fire shell</RK_Ammo_WyvernFire.label>
+  <RK_Ammo_WyvernFire.description>Ammunition required for firing a gunlance's Wyvern Fire. The shell uses a two-stage structure, preheating with primary fuel before spraying secondary powder to create a large explosion.
+
+It may explode if damaged.</RK_Ammo_WyvernFire.description>
+  <GunlancePreIgnition.label>ignition</GunlancePreIgnition.label>
+  <GunlanceAfterIgnition.label>ignition</GunlanceAfterIgnition.label>
+
+  <RK_Weapon_ProtoChainSword.label>Ratkin chainsword</RK_Weapon_ProtoChainSword.label>
+  <RK_Weapon_ProtoChainSword.description>A weapon that tears targets apart using a chain going across the length of the blade and a powerful motor installed inside to pull said chain.</RK_Weapon_ProtoChainSword.description>
+  <RK_Weapon_ProtoChainSword.tools.0.label>chainsaw teeth</RK_Weapon_ProtoChainSword.tools.0.label>
+
+  <RK_Weapon_ProtoFlameChainSword.label>Ratkin flame chainsword</RK_Weapon_ProtoFlameChainSword.label>
+  <RK_Weapon_ProtoFlameChainSword.description>A weapon that tears targets apart using a chain going across the length of the blade and a powerful motor installed inside to pull said chain. It has had a modification installed where it adds a highly flammable oil on the chains and an igniter to set it on fire, allowing the chainsword to add burns to an already open wound.
+
+You'd have to be mad to wield this.</RK_Weapon_ProtoFlameChainSword.description>
+  <RK_Weapon_ProtoFlameChainSword.tools.0.label>chainsaw teeth</RK_Weapon_ProtoFlameChainSword.tools.0.label>
+
+  <RK_Dagger.label>ratkin dagger</RK_Dagger.label>
+  <RK_Dagger.description>It's a small, cute dagger that's better than nothing. Because it's so light and easy to handle, the user can easily weave through an enemies guard, making it a solid option as a last resort.
+
+The handle is too small for a human to use reliably, and too sharp to use as a toothpick.</RK_Dagger.description>
+  <RK_Dagger.tools.0.label>point</RK_Dagger.tools.0.label>
+  <RK_Dagger.tools.1.label>edge</RK_Dagger.tools.1.label>
+
+  <RK_OneHanded.label>ratkin one handed sword</RK_OneHanded.label>
+  <RK_OneHanded.description>A sword that is light enough to be wielded with one hand. Perfectly made to strike the perfect balance between weight and offensive ability.
+
+The size of the weapon makes it impossible for humans to use it.</RK_OneHanded.description>
+  <RK_OneHanded.tools.0.label>point</RK_OneHanded.tools.0.label>
+  <RK_OneHanded.tools.1.label>edge</RK_OneHanded.tools.1.label>
+  <RK_OneHanded.tools.2.label>handle</RK_OneHanded.tools.2.label>
+
+  <RK_Mace.label>ratkin Mace</RK_Mace.label>
+  <RK_Mace.description>A ratkin mace that can be held in one hand. It has been made with the necessary balance to hit the enemy as hard as possible while still being light enough to dodge out of the way of incoming blows. 
+
+The size of the weapon makes it impossible for humans to use it.</RK_Mace.description>
+  <RK_Mace.tools.0.label>Head</RK_Mace.tools.0.label>
+  <RK_Mace.tools.1.label>handle</RK_Mace.tools.1.label>
+
+  <RK_LightLance.label>ratkin wooden lance</RK_LightLance.label>
+  <RK_LightLance.description>A lightweight wooden lance tipped with iron at the end to increase its destructive power. While lightweight, its size still makes it hard to use in melee combat. Allows the ability to charge at enemies in close range.
+
+The size of the weapon makes it impossible for humans to use it.</RK_LightLance.description>
+  <RK_LightLance.tools.0.label>point</RK_LightLance.tools.0.label>
+  <RK_LightLance.tools.1.label>point</RK_LightLance.tools.1.label>
+  <RK_LightLance.tools.2.label>shaft</RK_LightLance.tools.2.label>
+
+  <RK_TwoHanded.label>ratkin two handed sword</RK_TwoHanded.label>
+  <RK_TwoHanded.description>A Ratkin sword designed to be wielded using both hands. Although it is heavy in the hands of the average Ratkin, it can reliably cleave an enemy into two.
+
+The size of the weapon makes it impossible for humans to use it.</RK_TwoHanded.description>
+  <RK_TwoHanded.tools.0.label>handle</RK_TwoHanded.tools.0.label>
+  <RK_TwoHanded.tools.1.label>point</RK_TwoHanded.tools.1.label>
+  <RK_TwoHanded.tools.2.label>edge</RK_TwoHanded.tools.2.label>
+
+  <RK_HeavyLance.label>ratkin heavy lance</RK_HeavyLance.label>
+  <RK_HeavyLance.description>A large, metallic lance. Although slow to use, its sheer weight allows it to pierce armor and deal significant damage. Allows the ability to charge at enemies in close range.
+
+The size of the weapon makes it impossible for humans to use it.</RK_HeavyLance.description>
+  <RK_HeavyLance.tools.0.label>point</RK_HeavyLance.tools.0.label>
+  <RK_HeavyLance.tools.1.label>point</RK_HeavyLance.tools.1.label>
+  <RK_HeavyLance.tools.2.label>shaft</RK_HeavyLance.tools.2.label>
+
+  <RK_LongSword.label>Ratkin long sword</RK_LongSword.label>
+  <RK_LongSword.description>A sword for the Guardeners who protects the fields of the ratkin. The blade makes it easy to take care of the gardens, or if pushed to defend, cut into the enemy.</RK_LongSword.description>
+  <RK_LongSword.tools.0.label>point</RK_LongSword.tools.0.label>
+  <RK_LongSword.tools.1.label>edge</RK_LongSword.tools.1.label>
+  <RK_LongSword.tools.2.label>handle</RK_LongSword.tools.2.label>
+
+  <RK_Spear.label>Ratkin Spear</RK_Spear.label>
+  <RK_Spear.description>A simple spear for a simple Ratkin. 
+
+Because of its length and thin shaft, humans cannot wield this.</RK_Spear.description>
+  <RK_Spear.tools.0.label>point</RK_Spear.tools.0.label>
+  <RK_Spear.tools.1.label>edge</RK_Spear.tools.1.label>
+
+  <RK_Halberd.label>Ratkin Halberd</RK_Halberd.label>
+  <RK_Halberd.description>A bladed axe with a spike on top attached to a long, wooden shaft. It is leagues better than the humble Ratkin spear as it gives options to both stab and slash your enemies.
+
+The size of the weapon makes it impossible for humans to use it.</RK_Halberd.description>
+  <RK_Halberd.tools.0.label>Halberd point</RK_Halberd.tools.0.label>
+  <RK_Halberd.tools.1.label>Halberd edge</RK_Halberd.tools.1.label>
+
+  <RK_Crossbow.label>Ratkin crossbow</RK_Crossbow.label>
+  <RK_Crossbow.description>A crossbow made for Ratkin. Its main purpose is hunting, though Ratkin prefer to do no such thing.
+
+The size of the weapon makes it impossible for humans to use it.</RK_Crossbow.description>
+  <RK_Crossbow.verbs.Verb_Shoot.label>crossbow</RK_Crossbow.verbs.Verb_Shoot.label>
+  <RK_Crossbow.tools.0.label>limb</RK_Crossbow.tools.0.label>
+  <RK_Crossbow.tools.1.label>arrow</RK_Crossbow.tools.1.label>
+
+  <Bolt_RK_Crossbow.label>crossbow bolt</Bolt_RK_Crossbow.label>
+
+  <RK_AutoCrossBow.label>Ratkin semi-automatic crossbow</RK_AutoCrossBow.label>
+  <RK_AutoCrossBow.description>A mechanically operated semi-automatic crossbow. It can launch bolts in bursts thanks to a circular magazine feeding bolts into the grove and the internals quickly drawing the string back before firing again.
+
+The size of the weapon makes it impossible for humans to use it.</RK_AutoCrossBow.description>
+  <RK_AutoCrossBow.verbs.Verb_Shoot.label>repeating crossbow</RK_AutoCrossBow.verbs.Verb_Shoot.label>
+  <RK_AutoCrossBow.tools.0.label>limb</RK_AutoCrossBow.tools.0.label>
+  <RK_AutoCrossBow.tools.1.label>arrow</RK_AutoCrossBow.tools.1.label>
+
+  <Bolt_RK_AutoCrossBow.label>crossbow bolt</Bolt_RK_AutoCrossBow.label>
+
+  <RK_Weapon_Arbalest.label>Ratkin arbalest</RK_Weapon_Arbalest.label>
+  <RK_Weapon_Arbalest.description>A large crossbow. It may reload slowly, but the bolts fired form this thing offer excellent power.</RK_Weapon_Arbalest.description>
+  <RK_Weapon_Arbalest.verbs.Verb_Shoot.label>arbalest</RK_Weapon_Arbalest.verbs.Verb_Shoot.label>
+  <RK_Weapon_Arbalest.tools.0.label>limb</RK_Weapon_Arbalest.tools.0.label>
+  <RK_Weapon_Arbalest.tools.1.label>bolt</RK_Weapon_Arbalest.tools.1.label>
+  <RK_Projectile_Arbalest.label>arbalest bolt</RK_Projectile_Arbalest.label>
+
+  <RK_Rifle.label>Ratkin rifle</RK_Rifle.label>
+  <RK_Rifle.description>A Ratkin rifle made to mimic the human-made bolt-action rifle and offers longer range than the crossbow. The rifle features a small blade attached at the end of the barrel that can be used as a melee weapon in an emergency.
+
+The size of the weapon makes it impossible for humans to use it.</RK_Rifle.description>
+  <RK_Rifle.verbs.Verb_Shoot.label>rifle</RK_Rifle.verbs.Verb_Shoot.label>
+  <RK_Rifle.tools.0.label>stock</RK_Rifle.tools.0.label>
+  <RK_Rifle.tools.1.label>bayonet</RK_Rifle.tools.1.label>
+  <Bullet_RK_Rifle.label>flechette rifle round</Bullet_RK_Rifle.label>
+
+  <RK_SniperRifle.label>Ratkin sniper rifle</RK_SniperRifle.label>
+  <RK_SniperRifle.description>A Ratkin rifle made to mimic the human-created bolt-action rifle and offers longer range than the crossbow. The rifle features a small blade attached at the end of the barrel that can be used as a melee weapon in an emergency. 
+
+This rifle has been made to feature a scope on top of it to improve long range accuracy at the cost of making firing in close range difficult.
+
+The size of the weapon makes it impossible for humans to use it.</RK_SniperRifle.description>
+  <RK_SniperRifle.verbs.Verb_Shoot.label>sniper rifle</RK_SniperRifle.verbs.Verb_Shoot.label>
+  <RK_SniperRifle.tools.0.label>stock</RK_SniperRifle.tools.0.label>
+  <RK_SniperRifle.tools.1.label>bayonet</RK_SniperRifle.tools.1.label>
+  <Bullet_RK_SniperRifle.label>flechette sniper round</Bullet_RK_SniperRifle.label>
+
+  <RK_Weapon_SawedOff.label>Ratkin sawed-off shotgun</RK_Weapon_SawedOff.label>
+  <RK_Weapon_SawedOff.description>A simple shotgun used by the Ratkin. Its loaded with a shell that, upon contact with the enemy, explodes to disperse its shrapnel into their body. The barrel has been sawn off.
+
+The size of the weapon makes it impossible for humans to use it.</RK_Weapon_SawedOff.description>
+  <RK_Weapon_SawedOff.verbs.Verb_Shoot.label>sawed-off shotgun</RK_Weapon_SawedOff.verbs.Verb_Shoot.label>
+  <RK_Weapon_SawedOff.tools.0.label>stock</RK_Weapon_SawedOff.tools.0.label>
+  <RK_Weapon_SawedOff.tools.1.label>barrel</RK_Weapon_SawedOff.tools.1.label>
+  <RK_Bullet_SawedOff.label>buckshot</RK_Bullet_SawedOff.label>
+
+  <RK_Weapon_Bolter.label>Ratkin Bolter</RK_Weapon_Bolter.label>
+  <RK_Weapon_Bolter.description>This unique gun is described as a large-caliber hand cannon by the ratkin and used by said ratkin to defeat heavily armored opponents. Its oversized ammunition gives it excellent damage and stopping power, with the energy field coating each round sometimes disabling energy shields and stunning the target.
+
+Sadly, only Ratkin can equip this.</RK_Weapon_Bolter.description>
+  <RK_Weapon_Bolter.verbs.Verb_Shoot.label>hand cannon shot</RK_Weapon_Bolter.verbs.Verb_Shoot.label>
+  <RK_Weapon_Bolter.tools.0.label>grip</RK_Weapon_Bolter.tools.0.label>
+  <RK_Weapon_Bolter.tools.1.label>barrel</RK_Weapon_Bolter.tools.1.label>
+  <RK_Bullet_Bolter.label>large-caliber round</RK_Bullet_Bolter.label>
+
+  <RK_PrototypePulseRifle.label>Ratkin prototype charge rifle</RK_PrototypePulseRifle.label>
+  <RK_PrototypePulseRifle.description>An experimental charge rifle that fires charge rounds. It uses a built-in charge capacitor to quickly adjust the amount of energy used when firing, allowing the user to adapt to any combat situation. 
+
+It has two firing modes for close-long range combat respectively. Burst mode fires four rounds in rapid succession, while single fires two precise high-density rounds.
+
+The size of the weapon makes it impossible for humans to use it.</RK_PrototypePulseRifle.description>
+  <RK_PrototypePulseRifle.verbs.Verb_PulseRifleShoot.label>rapid fire</RK_PrototypePulseRifle.verbs.Verb_PulseRifleShoot.label>
+  <RK_PrototypePulseRifle.tools.0.label>stock</RK_PrototypePulseRifle.tools.0.label>
+  <RK_PrototypePulseRifle.tools.1.label>barrel</RK_PrototypePulseRifle.tools.1.label>
+
+  <Bullet_RK_PrototypePulseRifleLight.label>wedge bullet</Bullet_RK_PrototypePulseRifleLight.label>
+  <Bullet_RK_PrototypePulseRifleHeavy.label>wedge bullet</Bullet_RK_PrototypePulseRifleHeavy.label>
+
+  <RK_Weapon_BFR.label>Ratkin multipurpose sniper rifle</RK_Weapon_BFR.label>
+  <RK_Weapon_BFR.description>A large-caliber sniper rifle. Designed for multipurpose use, it can be upgraded to fire multiple ammunition types.
+
+The size of the weapon makes it impossible for humans to use it.</RK_Weapon_BFR.description>
+  <RK_Weapon_BFR.verbs.Verb_BFRShoot.label>AP shot</RK_Weapon_BFR.verbs.Verb_BFRShoot.label>
+  <RK_Weapon_BFR.tools.0.label>stock</RK_Weapon_BFR.tools.0.label>
+  <RK_Weapon_BFR.tools.1.label>barrel</RK_Weapon_BFR.tools.1.label>
+  <Bullet_BFR_AP.label>wedge bullet (AP)</Bullet_BFR_AP.label>
+  <Bullet_BFR_HE.label>airburst round</Bullet_BFR_HE.label>
+
+  <RK_Weapon_RatHolicGun.label>RatHolic gun</RK_Weapon_RatHolicGun.label>
+  <RK_Weapon_RatHolicGun.description>A hand-cranked multi-barrel machine gun. Because it is spun by hand, its initial fire rate is slow at first, but once the operator starts building up speed, it starts to send bullets all over the place.</RK_Weapon_RatHolicGun.description>
+  <RK_Weapon_RatHolicGun.tools.0.label>barrel</RK_Weapon_RatHolicGun.tools.0.label>
+  <RK_Bullet_RatHolicGun.label>bullet</RK_Bullet_RatHolicGun.label>
+
+<!-- Tools -->
+
+  <RK_Axe.label>Ratkin axe</RK_Axe.label>
+  <RK_Axe.description>An axe sized for a Ratkin. Ideal for logging and provides more resources while harvesting.
+
+The size of the weapon makes it impossible for humans to use it.</RK_Axe.description>
+  <RK_Axe.tools.0.label>handle</RK_Axe.tools.0.label>
+  <RK_Axe.tools.1.label>edge</RK_Axe.tools.1.label>
+
+  <RK_Cleaver.label>Ratkin cleaver</RK_Cleaver.label>
+  <RK_Cleaver.description>A ratkin cleaver made for cutting meat. While it looks like a good weapon in an emergency, its typically better to use it when the animal you're hunting stops moving. Provides more meat when butchering and speeds up cooking.
+
+The size of the weapon makes it impossible for humans to use it.</RK_Cleaver.description>
+  <RK_Cleaver.tools.0.label>handle</RK_Cleaver.tools.0.label>
+  <RK_Cleaver.tools.1.label>edge</RK_Cleaver.tools.1.label>
+
+  <RK_Hockey.label>Ratkin hoe</RK_Hockey.label>
+  <RK_Hockey.description>A hoe used for fieldwork and agriculture work. Makes harvesting way faster compared to harvesting by hand.
+
+The size of the weapon makes it impossible for humans to use it.</RK_Hockey.description>
+  <RK_Hockey.tools.0.label>point</RK_Hockey.tools.0.label>
+  <RK_Hockey.tools.1.label>edge</RK_Hockey.tools.1.label>
+
+  <RK_Fork.label>Ratkin pitchfork</RK_Fork.label>
+  <RK_Fork.description>A pitchfork used by the Ratkin. It is convenient when piling up straw or when the animals are getting too rowdy. Increases the harvest yield when harvesting plants.
+
+The size of the weapon makes it impossible for humans to use it.</RK_Fork.description>
+  <RK_Fork.tools.0.label>point</RK_Fork.tools.0.label>
+  <RK_Fork.tools.1.label>edge</RK_Fork.tools.1.label>
+
+  <RK_Pickaxe.label>Ratkin pickaxe</RK_Pickaxe.label>
+  <RK_Pickaxe.description>A pickaxe used for mining. It helps with chipping away at stone and makes the normally laborious excavation work go away in a breeze.
+
+Somehow, the pickaxe cannot be used by humans.</RK_Pickaxe.description>
+  <RK_Pickaxe.tools.0.label>hammer face</RK_Pickaxe.tools.0.label>
+  <RK_Pickaxe.tools.1.label>pick point</RK_Pickaxe.tools.1.label>
+</LanguageData>

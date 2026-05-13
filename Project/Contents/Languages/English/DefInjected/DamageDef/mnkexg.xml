@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RK_EMP.label>EMP</RK_EMP.label>
+  <RK_EMP.deathMessage>{0} got shocked to death by an EMP.</RK_EMP.deathMessage>
+  <!-- {0} was shocked that EMPs can kill -->
+
+  <RK_Damage_PickaxeStab.label>pierced</RK_Damage_PickaxeStab.label>
+  <RK_Damage_PickaxeStab.deathMessage>{0} has been pierced to death.</RK_Damage_PickaxeStab.deathMessage>
+  <!-- Perhaps consider {0} has been picked to death... -->
+
+  <ShockWaveLight.label>light shockwave</ShockWaveLight.label>
+  <ShockWaveLight.deathMessage>{0} has died from a light shock wave.</ShockWaveLight.deathMessage>
+  <ShockWaveHeavy.label>heavy shockwave</ShockWaveHeavy.label>
+  <ShockWaveHeavy.deathMessage>{0} has died from a severe shock wave.</ShockWaveHeavy.deathMessage>
+
+  <DemoBomb.label>magic wand</DemoBomb.label>
+  <DemoBomb.deathMessage>{0} perished in an explosion involving a magic wand.</DemoBomb.deathMessage>
+
+  <RK_Damage_Torn.label>tear</RK_Damage_Torn.label>
+  <RK_Damage_Torn.deathMessage>{0} has died from lacerations.</RK_Damage_Torn.deathMessage>
+  <RK_Damage_BurnTorn.label>burn-tear</RK_Damage_BurnTorn.label>
+  <RK_Damage_BurnTorn.deathMessage>{0} has died from lacerations.</RK_Damage_BurnTorn.deathMessage>
+  <RK_Damage_BonusCut.label>cut</RK_Damage_BonusCut.label>
+</LanguageData>

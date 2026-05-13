@@ -3,7 +3,13 @@
 
   <RK_Apparel.label>鼠族服飾</RK_Apparel.label>
   <RK_Headgear.label>鼠族頭飾</RK_Headgear.label>
+  <RK_ThingCategory_Melee.label>鼠族近戰武器</RK_ThingCategory_Melee.label>
+  <RK_ThingCategory_Range.label>鼠族遠程武器</RK_ThingCategory_Range.label>
   <RK_ThingCategory_Util.label>鼠族多用途工具</RK_ThingCategory_Util.label>
+  <RK_ApparelArmor.label>鼠族護甲</RK_ApparelArmor.label>
+  <RK_ArmorHeadgear.label>鼠族護甲頭飾</RK_ArmorHeadgear.label>
+  <RK_ApparelNoble.label>鼠族貴族服飾</RK_ApparelNoble.label>
+  <RK_HeadgearNoble.label>鼠族貴族頭飾</RK_HeadgearNoble.label>
 
 
 </LanguageData>

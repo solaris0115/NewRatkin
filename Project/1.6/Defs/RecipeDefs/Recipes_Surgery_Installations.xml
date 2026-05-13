@@ -116,4 +116,48 @@
 			<partEfficiency>1.25</partEfficiency>
 		</addedPartProps>
 	</HediffDef>
+
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>RK_Hediff_ArchotechTail</defName>
+		<label>archotech ratkin tail</label>
+		<labelNoun>an archotech ratkin tail</labelNoun>
+		<description>An installed archotech ratkin tail. It senses posture and micro-movements to keep the bearer perfectly balanced, feels like living flesh, and is harder to damage than plasteel. If harmed, it repairs itself over time. Its inner workings are a mystery.</description>
+		<descriptionHyperlinks><ThingDef>RK_Thing_ArchotechTail</ThingDef></descriptionHyperlinks>
+		<spawnThingOnRemoved>RK_Thing_ArchotechTail</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.50</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>RK_Recipe_InstallArchotechTail</defName>
+		<label>install archotech ratkin tail</label>
+		<description>Install an archotech ratkin tail.</description>
+		<descriptionHyperlinks>
+			<ThingDef>RK_Thing_ArchotechTail</ThingDef>
+			<HediffDef>RK_Hediff_ArchotechTail</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing archotech ratkin tail.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RK_Thing_ArchotechTail</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RK_Thing_ArchotechTail</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>RK_BodyPart_Tail</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>RK_Hediff_ArchotechTail</addsHediff>
+	</RecipeDef>
 </Defs>

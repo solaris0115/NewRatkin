@@ -54,6 +54,8 @@
 		</apparel>
 		<tradeability>Sellable</tradeability>
 		<tradeTags Inherit="false">
+			<li>RK_Apparel</li>
+			<li>RK_TradeTag_All</li>
 		</tradeTags>
 	</ThingDef>
 
@@ -100,6 +102,8 @@
 		</recipeMaker>
 		<tradeability>Sellable</tradeability>
 		<tradeTags Inherit="false">
+			<li>RK_Apparel</li>
+			<li>RK_TradeTag_All</li>
 		</tradeTags>
 	</ThingDef>
 
@@ -148,6 +152,8 @@
 		</apparel>
 		<tradeability>Sellable</tradeability>
 		<tradeTags Inherit="false">
+			<li>RK_Apparel</li>
+			<li>RK_TradeTag_All</li>
 		</tradeTags>
 	</ThingDef>
 

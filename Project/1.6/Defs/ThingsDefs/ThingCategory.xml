@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+	<!-- 의류 -->
 	<ThingCategoryDef>
 		<defName>RK_Apparel</defName>
 		<label>ratkin apparel</label>
@@ -12,10 +13,43 @@
 		<parent>Headgear</parent>
 	</ThingCategoryDef>
 
+	<!-- 갑옷 -->
+	<ThingCategoryDef>
+		<defName>RK_ApparelArmor</defName>
+		<label>ratkin armor</label>
+		<parent>ApparelArmor</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>RK_ArmorHeadgear</defName>
+		<label>ratkin armor headgear</label>
+		<parent>ArmorHeadgear</parent>
+	</ThingCategoryDef>
+
+	<!-- 귀족 의류 -->
+	<ThingCategoryDef>
+		<defName>RK_ApparelNoble</defName>
+		<label>ratkin noble apparel</label>
+		<parent>ApparelNoble</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>RK_HeadgearNoble</defName>
+		<label>ratkin noble headgear</label>
+		<parent>HeadgearNoble</parent>
+	</ThingCategoryDef>
+
+	<!-- 무기 -->
 	<ThingCategoryDef>
 		<defName>RK_ThingCategory_Melee</defName>
 		<label>ratkin melee</label>
 		<parent>WeaponsMelee</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>RK_ThingCategory_Range</defName>
+		<label>ratkin ranged</label>
+		<parent>WeaponsRanged</parent>
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>

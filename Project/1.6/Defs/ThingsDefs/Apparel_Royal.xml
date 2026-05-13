@@ -4,6 +4,9 @@
 	<ThingDef ParentName="RK_ApparelMakeableBase">
 		<defName>RK_RoyalRobe</defName>
 		<label>ratkin royal robe</label>
+		<thingCategories>
+			<li>RK_ApparelNoble</li>
+		</thingCategories>
 		<description>고풍스러운 귀족을 위한 외투입니다. 직물을 여러번 덧대어 튼튼하고 방풍이 잘되도록 만들었습니다.</description>
 		<graphicData>
 			<texPath>Apparel/RK_RoyalRobe</texPath>
@@ -65,7 +68,7 @@
 		<label>Ratkin royal crown</label>
 		<description>금속제 왕관입니다.</description>
 		<thingCategories>
-			<li>HeadgearNoble</li>
+			<li>RK_HeadgearNoble</li>
 		</thingCategories>
 		<graphicData>
 			<texPath>Apparel/RK_RoyalCrown</texPath>

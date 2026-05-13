@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RK_Stat_RangeCoolDown.label>遠距離再使用待機時間の短縮</RK_Stat_RangeCoolDown.label>
+  <RK_Stat_RangeCoolDown.description>遠距離武器の再使用待機時間を短縮します。このステータスはラットホリックガンの加熱効果に使用されます。</RK_Stat_RangeCoolDown.description>
+  <RK_Stat_RangeCoolDown.formatString>{0}秒</RK_Stat_RangeCoolDown.formatString>
+  <RK_Stat_RangeCoolDownMultiplier.label>遠距離再使用待機時間倍率</RK_Stat_RangeCoolDownMultiplier.label>
+  <RK_Stat_RangeCoolDownMultiplier.description>遠距離武器の再使用待機時間に倍率を適用します。このステータスはラットホリックガンの加熱効果でステータス係数とともに使用されます。</RK_Stat_RangeCoolDownMultiplier.description>
+  <RK_Stat_RangeCoolDownMultiplier.formatString>{0}×</RK_Stat_RangeCoolDownMultiplier.formatString>
+  <RK_Stat_ShieldBlockChance.label>盾の防御率</RK_Stat_ShieldBlockChance.label>
+  <RK_Stat_ShieldBlockChance.description>盾で防御を試みる確率です。\n\n盾による防御に成功すると、盾が貫通されたかどうかを判定します。\n\n近接スキル、操作、視界の影響を受けます。</RK_Stat_ShieldBlockChance.description>
+  <RK_Stat_DeflectAngle.label>盾の防御角度</RK_Stat_DeflectAngle.label>
+  <RK_Stat_DeflectAngle.description>この盾が飛来する攻撃を防げる前方の扇形角度です。たとえば90°なら左右それぞれ45°の範囲を意味します。</RK_Stat_DeflectAngle.description>
+  <RK_Stat_DeflectAngle.formatString>{0}°</RK_Stat_DeflectAngle.formatString>
+  <RK_Stat_ShieldStuffBase.label>盾防御力 - 素材効果係数</RK_Stat_ShieldStuffBase.label>
+  <RK_Stat_Shield_Sharp.label>盾防御力 - 鋭利</RK_Stat_Shield_Sharp.label>
+  <RK_Stat_Shield_Sharp.description>銃弾、刺し傷、爆発、動物の噛みつきなど、鋭利なダメージに対するこの盾の防御力です。\n\n攻撃を受けたとき、防御力は攻撃武器の貫通値ぶん低下します。\n\nこの盾に限り、残った防御力は一度だけランダム判定と比較されます。\n\n    - ランダム値が残り防御力より低ければ、攻撃は無効化されます。\n    - そうでなければ、防御は何の効果もありません。\n\nたとえば防御力90%、貫通値10%の攻撃なら、残り防御力は80%となり、攻撃を防ぐ確率はおよそ80%です。</RK_Stat_Shield_Sharp.description>
+  <RK_Stat_Shield_Blunt.label>盾防御力 - 打撃</RK_Stat_Shield_Blunt.label>
+  <RK_Stat_Shield_Blunt.description>拳や鈍器、落石のような鈍い原因による損傷に対するこの盾の防御力です。\n\n攻撃を受けたとき、防御力は攻撃武器の貫通値ぶん低下します。\n\nこの盾に限り、残った防御力は一度だけランダム判定と比較されます。\n\n    - ランダム値が残り防御力より低ければ、攻撃は無効化されます。\n    - そうでなければ、防御は何の効果もありません。\n\nたとえば防御力90%、貫通値10%の攻撃なら、残り防御力は80%となり、攻撃を防ぐ確率はおよそ80%です。</RK_Stat_Shield_Blunt.description>
+  <RK_Stat_Shield_Heat.label>盾防御力 - 熱</RK_Stat_Shield_Heat.label>
+  <RK_Stat_Shield_Heat.description>火傷、火、その他の熱をもとにした攻撃など、温度による損傷に対するこの盾の防御力です。\n\n攻撃を受けたとき、防御力は攻撃武器の貫通値ぶん低下します。\n\nこの盾に限り、残った防御力は一度だけランダム判定と比較されます。\n\n    - ランダム値が残り防御力より低ければ、攻撃は無効化されます。\n    - そうでなければ、防御は何の効果もありません。\n\nたとえば防御力90%、貫通値10%の攻撃なら、残り防御力は80%となり、攻撃を防ぐ確率はおよそ80%です。</RK_Stat_Shield_Heat.description>
+</LanguageData>

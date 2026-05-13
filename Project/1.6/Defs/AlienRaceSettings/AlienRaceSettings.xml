@@ -75,7 +75,8 @@
 							<li>RK_ApparelTag_HideEar</li>
 						</hiddenUnderApparelTag>
 					</Apparel>
-					<Gene MayRequire="Ludeon.RimWorld.Biotech">RK_Gene_LargeEars</Gene>
+					<!-- 바이오텍 DLC 있으면 Patches/BodyAddon_EarCondition_Patch.xml에서 Gene으로 교체됨 -->
+					<Race>Ratkin</Race>
 				</conditions>
 				<offsets>
 					<south>
@@ -140,7 +141,8 @@
 							<li>RK_ApparelTag_HideEar</li>
 						</hiddenUnderApparelTag>
 					</Apparel>
-					<Gene MayRequire="Ludeon.RimWorld.Biotech">RK_Gene_LargeEars</Gene>
+					<!-- 바이오텍 DLC 있으면 Patches/BodyAddon_EarCondition_Patch.xml에서 Gene으로 교체됨 -->
+					<Race>Ratkin</Race>
 				</conditions>
 				<offsets>
 					<south>

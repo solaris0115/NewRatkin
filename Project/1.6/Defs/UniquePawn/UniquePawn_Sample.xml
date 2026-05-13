@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- ============================================================
+     유니크 Pawn 샘플 — "잿빛 발톱" 키라
+     BackstoryDef(유년+성년) + PawnKindDef 조합
+     ============================================================ -->
+<Defs>
+
+	<!-- ================================ -->
+	<!--    유니크 백스토리 추상 베이스    -->
+	<!-- ================================ -->
+	<AlienRace.AlienBackstoryDef Name="RK_Attr_UniqueBackstoryBase" Abstract="True">
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<shuffleable>false</shuffleable>
+		<disallowedTraitsChance>
+			<li>
+				<defName Degree="-1">Beauty</defName>
+				<chance>100</chance>
+			</li>
+			<li>
+				<defName Degree="-2">Beauty</defName>
+				<chance>100</chance>
+			</li>
+		</disallowedTraitsChance>
+		<spawnCategories>
+			<li>RatkinViolence</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<!-- ======================== -->
+	<!--    BackstoryDef: 유년기   -->
+	<!-- ======================== -->
+	<AlienRace.AlienBackstoryDef ParentName="RK_Attr_UniqueBackstoryBase">
+		<defName>RK_Unique_Kira_Childhood</defName>
+		<title>orphan of the grey tunnels</title>
+		<titleShort>tunnel orphan</titleShort>
+		<slot>Childhood</slot>
+		<description>[PAWN_nameDef]은 무너진 터널 속에서 홀로 살아남은 고아입니다. 어둠 속에서 길을 찾는 법을 스스로 익혔고, 위험을 본능적으로 감지하는 감각을 얻었습니다.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<skillGains>
+			<Melee>3</Melee>
+			<Mining>2</Mining>
+		</skillGains>
+		<workDisables>
+			<li>Social</li>
+		</workDisables>
+		<forcedTraitsChance>
+			<li>
+				<defName>Undergrounder</defName>
+				<chance>100</chance>
+			</li>
+		</forcedTraitsChance>
+		<spawnCategories>
+			<li>RatkinStory</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<!-- ======================== -->
+	<!--    BackstoryDef: 성년기   -->
+	<!-- ======================== -->
+	<AlienRace.AlienBackstoryDef ParentName="RK_Attr_UniqueBackstoryBase">
+		<defName>RK_Unique_Kira_Adulthood</defName>
+		<title>grey claw</title>
+		<titleShort>grey claw</titleShort>
+		<slot>Adulthood</slot>
+		<description>[PAWN_nameDef]은 '잿빛 발톱'이라 불리는 전설적인 전사입니다. 수많은 습격을 혼자 막아내며 그 이름을 얻었고, 동족들 사이에서 두려움과 존경을 동시에 받습니다.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<linkedBackstory>RK_Unique_Kira_Childhood</linkedBackstory>
+		<skillGains>
+			<Melee>6</Melee>
+			<Shooting>3</Shooting>
+			<Medicine>2</Medicine>
+		</skillGains>
+		<workDisables>
+			<li>Intellectual</li>
+		</workDisables>
+		<forcedTraitsChance>
+			<li>
+				<defName>Tough</defName>
+				<chance>100</chance>
+			</li>
+			<li>
+				<defName>Brawler</defName>
+				<chance>100</chance>
+			</li>
+		</forcedTraitsChance>
+		<spawnCategories>
+			<li>RatkinStory</li>
+			<li>RatkinSoldier</li>
+		</spawnCategories>
+		<!-- <possessions>
+			<MeleeWeapon_LongSword>1</MeleeWeapon_LongSword>
+		</possessions> -->
+	</AlienRace.AlienBackstoryDef>
+
+	<!-- ======================== -->
+	<!--       PawnKindDef        -->
+	<!-- ======================== -->
+	<PawnKindDef ParentName="RKBasePawnKind">
+		<defName>RK_Unique_Kira</defName>
+		<label>Kira, the Grey Claw</label>
+
+		<!-- 고정 백스토리 -->
+		<fixedChildBackstories>
+			<li>RK_Unique_Kira_Childhood</li>
+		</fixedChildBackstories>
+		<fixedAdultBackstories>
+			<li>RK_Unique_Kira_Adulthood</li>
+		</fixedAdultBackstories>
+
+		<!-- 성별 고정 -->
+		<fixedGender>Female</fixedGender>
+
+		<!-- 의상 -->
+		<apparelRequired>
+			<li>RK_ApronSkirt</li>
+		</apparelRequired>
+		<apparelMoney>
+			<min>500</min>
+			<max>800</max>
+		</apparelMoney>
+		<apparelTags>
+			<li>RK_Soldier</li>
+		</apparelTags>
+		<!-- <specificApparelRequirements>
+			<li>
+				<bodyPartGroup>UpperHead</bodyPartGroup>
+				<requiredTag>SomeUniqueHoodTag</requiredTag>
+			</li>
+		</specificApparelRequirements> -->
+
+		<!-- 무기 -->
+		<weaponMoney>
+			<min>400</min>
+			<max>800</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>RK_MeleeWeapon</li>
+		</weaponTags>
+
+		<!-- 외모 -->
+		<!-- <forcedHair>SomeHairDef</forcedHair> -->
+		<!-- <forcedHairColor>(180,180,180)</forcedHairColor> -->
+		<!-- <skinColorOverride>(220,210,200)</skinColorOverride> -->
+
+		<!-- 능력 -->
+		<!-- <abilities>
+			<li>SomeAbilityDef</li>
+		</abilities> -->
+
+		<!-- 임플란트 / 바이오닉 -->
+		<!-- <techHediffsRequired>
+			<li>SomeImplantDef</li>
+		</techHediffsRequired> -->
+
+		<!-- 시작 헤딤프 (상처, 흉터 등) -->
+		<!-- <startingHediffs>
+			<li>
+				<def>Scar</def>
+				<part>Torso</part>
+			</li>
+		</startingHediffs> -->
+
+		<!-- 이름 규칙 (고정 이름 부여 시) -->
+		<!-- <nameMaker>SomeRulePackDef</nameMaker> -->
+
+		<!-- 전투 -->
+		<combatPower>80</combatPower>
+		<isFighter>true</isFighter>
+		<canBeSapper>false</canBeSapper>
+
+		<!-- 등장 제어 -->
+		<maxPerGroup>1</maxPerGroup>
+
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>RatkinStory</li>
+					<li>RatkinSoldier</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+</Defs>

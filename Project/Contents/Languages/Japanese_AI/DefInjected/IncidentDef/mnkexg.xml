@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RatkinTunnel_Guerrilla.label>トンネル侵入</RatkinTunnel_Guerrilla.label>
+  <RatkinTunnel_Guerrilla.letterLabel>トンネル侵入</RatkinTunnel_Guerrilla.letterLabel>
+  <RatkinTunnel_Guerrilla.letterText>地中の揺れが検知されました。\n\n少なくとも、良い知らせではなさそうです。備えが必要でしょう。</RatkinTunnel_Guerrilla.letterText>
+  <RatkinFollowUpTroops.label>後続部隊の襲撃</RatkinFollowUpTroops.label>
+  <RatkinFollowUpTroops.letterLabel>後続襲撃</RatkinFollowUpTroops.letterLabel>
+  <RatkinFollowUpTroops.letterText>爆発とともに、待機していた後続部隊が襲撃を開始しました。</RatkinFollowUpTroops.letterText>
+  <RK_Incident_VagabondJoin.label>放浪者の加入</RK_Incident_VagabondJoin.label>
+  <RK_Incident_VagabondJoin.letterLabel>放浪者</RK_Incident_VagabondJoin.letterLabel>
+  <RK_Incident_VagabondJoin.letterText>危機の瞬間、二人の放浪者が現れました。彼らは運命を変えられるでしょうか？</RK_Incident_VagabondJoin.letterText>
+  <RK_Incident_PriestJoin.label>司祭の加入</RK_Incident_PriestJoin.label>
+  <RK_Incident_PriestJoin.letterLabel>司祭の加入</RK_Incident_PriestJoin.letterLabel>
+  <RK_Incident_PriestJoin.letterText>司祭[PAWN_nameDef]があなたの入植地に加わりたいと申し出ています。\n\n[PAWN_pronoun]は信心深く、癒やしの手を持つ者です。</RK_Incident_PriestJoin.letterText>
+  <RK_Incident_WanderingTrader.label>放浪商人が到着</RK_Incident_WanderingTrader.label>
+</LanguageData>

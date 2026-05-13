@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RK_Maneuver_Shell.rulePack.rulesStrings>
+    <li>damaged_inf(p=4)-&gt;砲撃</li>
+    <li>damaged_inf(deflected!=True)-&gt;砲撃</li>
+    <li>damaged_inf-&gt;砲撃</li>
+    <li>damaged_past(p=4)-&gt;砲撃した</li>
+    <li>damaged_past(deflected!=True)-&gt;砲撃した</li>
+    <li>damaged_past-&gt;砲撃した</li>
+    <li>damaged_present-&gt;砲撃中</li>
+    <li>damaged_present(deflected!=True)-&gt;砲撃中</li>
+    <li>destroyed_past-&gt;灰になった</li>
+    <li>destroyed_past-&gt;焼却された</li>
+    <li>destroyed_past-&gt;燃え尽きた</li>
+    <li>destroyed_past-&gt;跡形もなく消えた</li>
+    <li>destroyed_past-&gt;完全に砕けた</li>
+    <li>destroyed_past-&gt;爆発してしまった</li>
+    <li>destroyed_past-&gt;粉々になった</li>
+    <li>destroyed_past-&gt;押し潰された</li>
+    <li>destroyed_present-&gt;灰になっている</li>
+    <li>destroyed_present-&gt;焼却されている</li>
+    <li>destroyed_present-&gt;燃え尽きている</li>
+    <li>destroyed_present-&gt;消え去っている</li>
+    <li>destroyed_present-&gt;砕けている</li>
+    <li>destroyed_present-&gt;爆発している</li>
+  </RK_Maneuver_Shell.rulePack.rulesStrings>
+</LanguageData>

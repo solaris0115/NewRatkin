@@ -15,6 +15,8 @@
 		<canStageAttacks>true</canStageAttacks>
 		<factionIconPath>Icon/RK_icon</factionIconPath>
 		<techLevel>Industrial</techLevel>
+		<!-- HAR/지도자 생성: GetRaceOfFaction 등이 참조. 미지정 시 세력 스폰·지도자 생성에서 NRE 가능 (RK_Faction_Caravan과 동일) -->
+		<basicMemberKind>RatkinColonist</basicMemberKind>
 		<melaninRange>0~0.3</melaninRange>
 		<backstoryCategories>
 			<li>Offworld</li>
@@ -31,7 +33,7 @@
 			<li>Visitor_Outlander_Standard</li>
 		</visitorTraderKinds>
 		<baseTraderKinds>
-			<li>Base_Outlander_Standard</li>
+			<li>RK_TraderKind_Standard</li>
 		</baseTraderKinds>
 		<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
 		<disallowedMemes>
@@ -303,6 +305,16 @@
 					<RatkinSoldier>20</RatkinSoldier>
 					<RatkinDefender>10</RatkinDefender>
 				</guards>
+			</li>
+			<!-- Odyssey 조난 등 Settlement 그룹 스폰용 — Trader만 있을 때 맵 생성 NRE 방지 -->
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<RatkinMerchant>5</RatkinMerchant>
+					<RatkinMercenaryLight>10</RatkinMercenaryLight>
+					<RatkinSoldier>10</RatkinSoldier>
+					<RatkinDefender>8</RatkinDefender>
+				</options>
 			</li>
 		</pawnGroupMakers>
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>

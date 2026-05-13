@@ -5,7 +5,7 @@
 		<label>ratkin</label>
 		<description>기원을 알 수 없으나</description>
 		<descriptionShort>일반적인 랫킨.</descriptionShort>
-		<iconPath>UI/Icons/RK_TextureIcon_XenoTypeRatkin</iconPath>
+		<iconPath>UI/Icons/RK_Texture_XenoType</iconPath>
 		<inheritable>true</inheritable>
 		<!-- 랫킨 제노타입은 네임메이커 미사용 - backstory에 따라 정해지고, 
 		이외 제노인 경우는 나중에 결정된 경우라서. 

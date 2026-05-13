@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RK_Hediff_LanceChargeFocus.label>Combat focus</RK_Hediff_LanceChargeFocus.label>
+  <RK_Hediff_LanceChargeFocus.description>Temporary increase in combat effectiveness after charging. This increases their ability to hit targets at the cost of reduced chance to dodge.</RK_Hediff_LanceChargeFocus.description>
+
+  <RK_Hediff_LanceChargeExhaustion.label>Charge Exhaustion</RK_Hediff_LanceChargeExhaustion.label>
+  <RK_Hediff_LanceChargeExhaustion.description>Generalized exhaustion of the body caused from charging recently. Given some time to rest, this will pass relatively quickly.</RK_Hediff_LanceChargeExhaustion.description>
+
+  <RK_Hediff_LanceChargeMomentum.label>charge momentum</RK_Hediff_LanceChargeMomentum.label>
+  <RK_Hediff_LanceChargeMomentum.description>Damage is being increased by the speed of the charge. Also if you are seeing this, hi! This is normally hidden.</RK_Hediff_LanceChargeMomentum.description>
+
+  <RK_Hediff_MoraleBoosterCaster.label>Rallying cry</RK_Hediff_MoraleBoosterCaster.label>
+  <RK_Hediff_MoraleBoosterCaster.description>This person is using a special ability to raise nearby allies' morale. Everyone within range gains a constant combat support bonus.</RK_Hediff_MoraleBoosterCaster.description>
+
+  <RK_Hediff_MoraleBoosterBuffWeak.label>rallied</RK_Hediff_MoraleBoosterBuffWeak.label>
+  <RK_Hediff_MoraleBoosterBuffWeak.description>Weakly raised morale has improved this person's abilities.</RK_Hediff_MoraleBoosterBuffWeak.description>
+
+  <RK_Hediff_MoraleBoosterBuffDefault.label>rallied</RK_Hediff_MoraleBoosterBuffDefault.label>
+  <RK_Hediff_MoraleBoosterBuffDefault.description>Raised morale has improved this person's abilities.</RK_Hediff_MoraleBoosterBuffDefault.description>
+
+  <RK_Hediff_MoraleBoosterBuffStrong.label>rallied</RK_Hediff_MoraleBoosterBuffStrong.label>
+  <RK_Hediff_MoraleBoosterBuffStrong.description>Significantly raised morale has improved this person's abilities.</RK_Hediff_MoraleBoosterBuffStrong.description>
+
+  <RK_Hediff_FakeEar.label>prosthetic Ratkin ear</RK_Hediff_FakeEar.label>
+  <RK_Hediff_FakeEar.description>A prosthetic ratkin ear. It is made out of cloth and only partially restores hearing.</RK_Hediff_FakeEar.description>
+  <RK_Hediff_FakeEar.labelNoun>a prosthetic Ratkin ear</RK_Hediff_FakeEar.labelNoun>
+
+  <RK_Hediff_BionicTail.label>bionic Ratkin tail</RK_Hediff_BionicTail.label>
+  <RK_Hediff_BionicTail.description>An installed bionic ratkin tail. It features an AI that monitors the users movement and moves the tail in response, allowing it to replicate the user's missing tail almost perfectly. A lattice-dust healing system allows it to recover from damage. It is better than a biological tail in almost every way.</RK_Hediff_BionicTail.description>
+  <RK_Hediff_BionicTail.labelNoun>a bionic Ratkin tail</RK_Hediff_BionicTail.labelNoun>
+
+  <RK_Hediff_FakeTail.label>prosthetic Ratkin tail</RK_Hediff_FakeTail.label>
+  <RK_Hediff_FakeTail.description>A prosthetic ratkin tail. It is less of a tail and more of a counterweight meant to imitate the corrective properties of a biological tail.</RK_Hediff_FakeTail.description>
+  <RK_Hediff_FakeTail.labelNoun>a prosthetic Ratkin tail</RK_Hediff_FakeTail.labelNoun>
+
+  <RK_Hediff_Torn.label>tear</RK_Hediff_Torn.label>
+  <RK_Hediff_Torn.labelNoun>tear wound</RK_Hediff_Torn.labelNoun>
+  <RK_Hediff_Torn.description>A tear wound.</RK_Hediff_Torn.description>
+
+  <RK_Hediff_Torn.injuryProps.destroyedLabel>tear apart</RK_Hediff_Torn.injuryProps.destroyedLabel>
+  <RK_Hediff_Torn.injuryProps.destroyedOutLabel>ripped off</RK_Hediff_Torn.injuryProps.destroyedOutLabel>
+  <RK_Hediff_Torn.comps.0.labelTendedWell>bandaged</RK_Hediff_Torn.comps.0.labelTendedWell>
+  <RK_Hediff_Torn.comps.0.labelTendedWellInner>stitched</RK_Hediff_Torn.comps.0.labelTendedWellInner>
+  <RK_Hediff_Torn.comps.0.labelSolidTendedWell>joined</RK_Hediff_Torn.comps.0.labelSolidTendedWell>
+  <RK_Hediff_Torn.comps.2.permanentLabel>tear scar</RK_Hediff_Torn.comps.2.permanentLabel>
+
+  <RK_Hediff_RatHolicGun.label>rotational inertia</RK_Hediff_RatHolicGun.label>
+  <RK_Hediff_RatHolicGun.description>Using a RatHolic gun.</RK_Hediff_RatHolicGun.description>
+
+  <RK_Hediff_RatHolicGunSpooling.label>spooling up</RK_Hediff_RatHolicGunSpooling.label>
+  <RK_Hediff_RatHolicGunSpooling.description>The barrels are building up rotational speed, and the gun is gradually gaining fire rate.</RK_Hediff_RatHolicGunSpooling.description>
+
+  <RK_Hediff_RatHolicGunSpoolingAim.label>target lock</RK_Hediff_RatHolicGunSpoolingAim.label>
+  <RK_Hediff_RatHolicGunSpoolingAim.description>Barrel inertia shortens the time needed to realign with the target.</RK_Hediff_RatHolicGunSpoolingAim.description>
+
+</LanguageData>

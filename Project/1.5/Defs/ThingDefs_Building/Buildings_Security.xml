@@ -538,7 +538,7 @@
 				<warmupTime>15.0</warmupTime>
 				<forcedMissRadius>0</forcedMissRadius>
 				<minRange>3</minRange>
-				<range>50</range>
+				<range>30</range>
 				<burstShotCount>1</burstShotCount>
 				<soundCast>RKCannonShot</soundCast>
 				<targetParams>

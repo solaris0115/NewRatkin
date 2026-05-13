@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <EMPExplode>EMP爆発</EMPExplode>
+  <EMPExplodeDesc>EMP爆発により電子設備が故障しました。</EMPExplodeDesc>
+  <MessageCommandoAssaulting>特殊部隊が入植地への攻撃を開始しました。</MessageCommandoAssaulting>
+  <RatHoleGone>ネズミ穴が消えました。</RatHoleGone>
+  <ShieldBlock>弾いた！</ShieldBlock>
+  <ShieldBlockChance>弾き率:</ShieldBlockChance>
+  <BlockChance_Heat>防御率(熱)</BlockChance_Heat>
+  <BlockChance_Blunt>防御率(打撃)</BlockChance_Blunt>
+  <BlockChance_Sharp>防御率(鋭利)</BlockChance_Sharp>
+  <BlockChanceWear_Heat>着用者防御率(熱)</BlockChanceWear_Heat>
+  <BlockChanceWear_Blunt>着用者防御率(打撃)</BlockChanceWear_Blunt>
+  <BlockChanceWear_Sharp>着用者防御率(鋭利)</BlockChanceWear_Sharp>
+  <BlockChanceDefualtDesc>防御率\n飛来する攻撃を防ぐ確率です。\n\n防御率は着用者の近接格闘レベルと、この装備の基本防御力の影響を受けます。</BlockChanceDefualtDesc>
+  <RK_JoinReq_Injured_DescShort>負傷者{0}人以上</RK_JoinReq_Injured_DescShort>
+  <RK_JoinReq_Priest_Injured_Desc1>助けの手が必要ですか？</RK_JoinReq_Priest_Injured_Desc1>
+  <RK_JoinReq_Priest_Injured_Desc2>信仰があれば、苦難も乗り越えられます！</RK_JoinReq_Priest_Injured_Desc2>
+  <RK_JoinReq_Medicine_DescShort>医薬品{0}個以上</RK_JoinReq_Medicine_DescShort>
+  <RK_JoinReq_Priest_Medicine_Desc1>救援物資が十分にあるとよいのですが。</RK_JoinReq_Priest_Medicine_Desc1>
+  <RK_JoinReq_Priest_Medicine_Desc2>せめて薬がたくさんあれば、もっと多くの方を助けられるのに……</RK_JoinReq_Priest_Medicine_Desc2>
+  <RK_JoinReq_StableLife_DescShort>入植地の資産{0}以上</RK_JoinReq_StableLife_DescShort>
+  <RK_JoinReq_StableLife_Desc1>少し大きな村で暮らしたい。放浪生活はつらすぎる。</RK_JoinReq_StableLife_Desc1>
+  <RK_JoinReq_StableLife_Desc2>安定した村で暮らしたい。小さな村はつらすぎる。</RK_JoinReq_StableLife_Desc2>
+  <RK_JoinReq_NewLife_DescShort>入植地の資産{0}以上</RK_JoinReq_NewLife_DescShort>
+  <RK_JoinReq_NewLife_Desc1>これだけの財産があれば、新しいことを始められそうだ。</RK_JoinReq_NewLife_Desc1>
+  <RK_JoinReq_NewLife_Desc2>貧しい暮らしはもう嫌だ。</RK_JoinReq_NewLife_Desc2>
+  <RK_JoinReq_NobleTired_DescShort>入植者に{0}の背景がないこと</RK_JoinReq_NobleTired_DescShort>
+  <RK_JoinReq_NobleTired_Desc1>偉い人の機嫌を取って生きるのは、もううんざりだ。</RK_JoinReq_NobleTired_Desc1>
+  <RK_JoinReq_NobleTired_Desc2>貴族とはもう関わりたくありません。</RK_JoinReq_NobleTired_Desc2>
+  <RK_JoinReq_ServantRoyalTitle_DescShort>入植者の最高帝国爵位が{0}以下であること</RK_JoinReq_ServantRoyalTitle_DescShort>
+  <RK_JoinReq_ServantRoyalTitle_Desc1>偉い人の機嫌を取って生きるのは、もううんざりだ。</RK_JoinReq_ServantRoyalTitle_Desc1>
+  <RK_JoinReq_ServantRoyalTitle_Desc2>仕える相手は自分で決めます。</RK_JoinReq_ServantRoyalTitle_Desc2>
+  <RK_JoinReq_ItemSeparatorOr> または</RK_JoinReq_ItemSeparatorOr>
+  <RK_JoinReq_WindFreedom_DescShort>必要: {0}</RK_JoinReq_WindFreedom_DescShort>
+  <RK_JoinReq_WindFreedom_Desc1>路上の暮らしも悪くないけれど、しばらく腰を落ち着けるのもいい。</RK_JoinReq_WindFreedom_Desc1>
+  <RK_JoinReq_WindFreedom_Desc2>放浪者にも好みはある。自分が使える物くらいはあってほしい。</RK_JoinReq_WindFreedom_Desc2>
+  <RK_JoinReq_SeekingMentor_DescShort>{0}のスキルをすべて満たす入植者が必要</RK_JoinReq_SeekingMentor_DescShort>
+  <RK_JoinReq_SeekingMentor_Desc1>自分より強い者の命令だけを聞く。</RK_JoinReq_SeekingMentor_Desc1>
+  <RK_JoinReq_SeekingMentor_Desc2>強者を探している。ここには少しは戦える奴がいるのか？</RK_JoinReq_SeekingMentor_Desc2>
+  <RK_JoinReq_Prepared_DescShort>{0}のいずれかを満たす入植者が必要</RK_JoinReq_Prepared_DescShort>
+  <RK_JoinReq_Prepared_Desc1>自分の身くらい守れる力がほしい。</RK_JoinReq_Prepared_Desc1>
+  <RK_JoinReq_Prepared_Desc2>戦うにせよ作るにせよ、何か一つくらいは本当に分かっている奴がいる場所でなければ。</RK_JoinReq_Prepared_Desc2>
+  <RK_JoinReq_JoinHope_DescShort>条件なし</RK_JoinReq_JoinHope_DescShort>
+  <RK_JoinReq_JoinHope_Desc1>お会いできてうれしいです！</RK_JoinReq_JoinHope_Desc1>
+  <RK_JoinReq_JoinHope_Desc2>よろしくお願いします！</RK_JoinReq_JoinHope_Desc2>
+  <AbilityPrayerServiceCooldown>次の祈祷会の準備</AbilityPrayerServiceCooldown>
+  <MessagePrayerServiceStart>{PAWN_labelShort}が祈祷会を開きました。</MessagePrayerServiceStart>
+  <MessagePrayerServiceAborted>礼拝は何らかの理由で中止されました。</MessagePrayerServiceAborted>
+  <MessagePrayerServiceEnded>礼拝が終わりました。</MessagePrayerServiceEnded>
+  <RK_ApparelWeaponIncompatible_Dropped>{0}を着用したため、{1}を置きました。理由: {2}</RK_ApparelWeaponIncompatible_Dropped>
+  <RK_ApparelWeaponIncompatible_Dropped_Default>{0}を着用したため、{1}を置きました。</RK_ApparelWeaponIncompatible_Dropped_Default>
+  <RK_GripIncompatible>互換性のない武器です</RK_GripIncompatible>
+  <RK_GripIncompatible_Equip>{0}を着用できません: 装備中の武器{1}と互換性がありません。{2}</RK_GripIncompatible_Equip>
+  <RK_GripIncompatible_Equip_Default>{0}を着用できません: 装備中の武器{1}と互換性がありません。</RK_GripIncompatible_Equip_Default>
+  <RK_WeaponGripIncompatible_Equip>{0}を装備できません: 着用中の装備{1}と互換性がありません。{2}</RK_WeaponGripIncompatible_Equip>
+  <RK_WeaponGripIncompatible_Equip_Default>{0}を装備できません: 着用中の装備{1}と互換性がありません。</RK_WeaponGripIncompatible_Equip_Default>
+  <RK_GripType_OneHand>片手</RK_GripType_OneHand>
+  <RK_GripType_TwoHand>両手</RK_GripType_TwoHand>
+  <RK_GripType_Special>特殊</RK_GripType_Special>
+  <RK_WeaponGripType_Label>武器の把持タイプ</RK_WeaponGripType_Label>
+  <RK_WeaponGripType_Report>この武器の把持・着用方式の分類です。方式によって、他の装備と併用できるかが変わります。</RK_WeaponGripType_Report>
+  <RK_AllowedGripType_Label>対応武器タイプ</RK_AllowedGripType_Label>
+  <RK_AllowedGripType_Report>この装備と一緒に主武器として装備できる武器の把持タイプです。</RK_AllowedGripType_Report>
+  <RK_AbilityMustTargetHostile>敵対対象のみ指定できます。</RK_AbilityMustTargetHostile>
+  <RK_ShieldFaceDirection>方向固定</RK_ShieldFaceDirection>
+  <RK_ShieldFaceDirectionDesc>地点をクリックすると、その方向を向きます。その場で待機します。対象を指定すると継続して追跡します。</RK_ShieldFaceDirectionDesc>
+  <RK_ShieldFaceDirectionReport>方向を向いています。</RK_ShieldFaceDirectionReport>
+  <RK_ShieldFaceDirection_NotDrafted>徴兵状態でのみ使用できます。</RK_ShieldFaceDirection_NotDrafted>
+  <RK_ShieldFaceDirection_InvalidState>死亡中または気絶中は使用できません。</RK_ShieldFaceDirection_InvalidState>
+  <RK_ShieldFaceDirection_Busy>他の行動中は使用できません。</RK_ShieldFaceDirection_Busy>
+  <RK_ShieldFaceDirection_ShieldInactive>盾が無効状態です。</RK_ShieldFaceDirection_ShieldInactive>
+  <RK_ShieldFaceDirection_Cooldown>再使用待機: {0}</RK_ShieldFaceDirection_Cooldown>
+  <AbilityPrayerServiceDisabledAlreadyGivingPrayerService>すでに祈祷会が進行中です。</AbilityPrayerServiceDisabledAlreadyGivingPrayerService>
+  <AbilityPrayerServiceDisabledDrafted>徴兵状態では使用できません。</AbilityPrayerServiceDisabledDrafted>
+  <AbilityPrayerServiceDisabledNoPulpitBuilding>入植地に礼拝用の説教壇がありません。</AbilityPrayerServiceDisabledNoPulpitBuilding>
+  <AbilityPrayerServiceDisabledCannotReachPulpit>説教壇の操作マスまで経路がつながっていないため到達できません。</AbilityPrayerServiceDisabledCannotReachPulpit>
+  <AbilityPrayerServiceDisabledCannotReservePulpit>説教壇が他の作業で使用中、または予約できません。</AbilityPrayerServiceDisabledCannotReservePulpit>
+  <AbilityPrayerServiceDisabledInteractionCellOutOfBounds>説教壇の操作マスがマップ外にあります。</AbilityPrayerServiceDisabledInteractionCellOutOfBounds>
+  <AbilityPrayerServiceDisabledInteractionCellForbidden>礼拝する場所が立入禁止区域にあります。</AbilityPrayerServiceDisabledInteractionCellForbidden>
+  <AbilityPrayerServiceDisabledInteractionCellNotStandable>礼拝する場所に立てません。</AbilityPrayerServiceDisabledInteractionCellNotStandable>
+  <AbilityPrayerServiceDisabledPulpitForbidden>説教壇が立入禁止に設定されています。</AbilityPrayerServiceDisabledPulpitForbidden>
+  <AbilityPrayerServiceDisabledPulpitBurning>説教壇が燃えているため礼拝を開けません。</AbilityPrayerServiceDisabledPulpitBurning>
+  <AbilityPrayerServiceDisabledPulpitDangerous>説教壇の周囲が危険なため礼拝を開けません。</AbilityPrayerServiceDisabledPulpitDangerous>
+  <AbilityPrayerServiceDisabledRoomTooSmall>礼拝空間が狭すぎます。(礼拝する部屋は25マスより広い必要があります。)</AbilityPrayerServiceDisabledRoomTooSmall>
+  <RK_WanderingTrader_Info>情報</RK_WanderingTrader_Info>
+  <RK_WanderingTrader_ViewSettlers>定住希望の旅人を見る</RK_WanderingTrader_ViewSettlers>
+  <RK_WanderingTrader_MercenarySearch>傭兵を探す</RK_WanderingTrader_MercenarySearch>
+  <RK_WanderingCaravan_TalkToLeader>会話する</RK_WanderingCaravan_TalkToLeader>
+  <RK_WanderingCaravan_DismissCaravan>帰らせる</RK_WanderingCaravan_DismissCaravan>
+  <RK_WanderingCaravan_TradeGoods>物資を取引</RK_WanderingCaravan_TradeGoods>
+  <RK_WanderingCaravan_Commission>品物を依頼</RK_WanderingCaravan_Commission>
+  <RK_WanderingCaravan_SettleProposal>加入を提案</RK_WanderingCaravan_SettleProposal>
+  <RK_WanderingCaravan_EndDialog>会話を終える</RK_WanderingCaravan_EndDialog>
+  <RK_WanderingCaravan_LeaderGreeting>世界の隅々を旅する{0}商隊です！何をお探しですか？珍しいキューブ？機械装置？何でもお申し付けください！旅人たちにもぜひ会っていってください。</RK_WanderingCaravan_LeaderGreeting>
+  <RK_WanderingCaravan_LeaderTitle>旅団リーダー</RK_WanderingCaravan_LeaderTitle>
+  <RK_WanderingCaravan_ArrivalLetterLabel>旅団が到着</RK_WanderingCaravan_ArrivalLetterLabel>
+  <RK_WanderingCaravan_ArrivalLetter>ラットキンの旅団が到着しました。リーダーに話しかけて取引するか、入植者を勧誘してください。</RK_WanderingCaravan_ArrivalLetter>
+  <RK_WanderingCaravan_AcceptOne>提案</RK_WanderingCaravan_AcceptOne>
+  <RK_WanderingCaravan_AcceptAll>一括提案</RK_WanderingCaravan_AcceptAll>
+  <RK_WanderingCaravan_OneJoined>{0}が入植者として加わりました。</RK_WanderingCaravan_OneJoined>
+  <RK_WanderingCaravan_AllJoined>{0}人が入植者として加わりました。</RK_WanderingCaravan_AllJoined>
+  <RK_WanderingCaravan_CommissionPlaceholder>品物依頼機能は準備中です。</RK_WanderingCaravan_CommissionPlaceholder>
+  <RK_WanderingCaravan_AlreadySpawned>旅団はすでにマップ上にいます。</RK_WanderingCaravan_AlreadySpawned>
+  <RK_WanderingCaravan_AttackedPenalty>旅団は攻撃された記憶のため、しばらくこの入植地を訪れません。</RK_WanderingCaravan_AttackedPenalty>
+  <RK_BFR_Toggle_RequiresSeparationMechanics>分離力学の研究が必要です。</RK_BFR_Toggle_RequiresSeparationMechanics>
+
+  <RK_BFR_Ammo_LabelAP>貫通弾</RK_BFR_Ammo_LabelAP>
+  <RK_BFR_Ammo_LabelHE>空中炸裂弾</RK_BFR_Ammo_LabelHE>
+  <RK_BFR_Ammo_DescToHE>空中炸裂弾に切り替えます。目標に近づくと扇状に炸裂し、広い範囲にダメージを与えます。</RK_BFR_Ammo_DescToHE>
+  <RK_BFR_Ammo_DescToAP>貫通弾に切り替えます。複数の対象を貫通してダメージを与えられます。</RK_BFR_Ammo_DescToAP>
+
+  <RK_PulseRifleFireMode_LabelBurst>速射モード</RK_PulseRifleFireMode_LabelBurst>
+  <RK_PulseRifleFireMode_LabelSingle>狙撃モード</RK_PulseRifleFireMode_LabelSingle>
+  <RK_PulseRifleFireMode_DescToSingle>狙撃モードに切り替えます。高密度の楔弾を2発発射します。中・遠距離戦に有利です。</RK_PulseRifleFireMode_DescToSingle>
+  <RK_PulseRifleFireMode_DescToBurst>速射モードに切り替えます。楔弾4発を素早く発射します。近・中距離戦に有利です。</RK_PulseRifleFireMode_DescToBurst>
+</LanguageData>

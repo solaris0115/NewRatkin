@@ -11,12 +11,12 @@
 		<graphicData>
 			<texPath>Apparel/Vacsuit/RK_Apparel_VacsuitHelmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<ignoreThingDrawColor>true</ignoreThingDrawColor>
+			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<statBases>
 			<WorkToMake>15000</WorkToMake>
 			<MaxHitPoints>120</MaxHitPoints>
-			<Mass>1.5</Mass>
+			<Mass>0.9</Mass>
 			<Flammability>0.4</Flammability>
 			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
@@ -94,12 +94,12 @@
 		<graphicData>
 			<texPath>Apparel/Vacsuit/RK_Apparel_Vacsuit</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<ignoreThingDrawColor>true</ignoreThingDrawColor>
+			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<statBases>
 			<WorkToMake>48000</WorkToMake>
 			<MaxHitPoints>180</MaxHitPoints>
-			<Mass>12</Mass>
+			<Mass>7.2</Mass>
 			<Flammability>0.4</Flammability>
 			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
@@ -117,6 +117,7 @@
 			<li>RK_Apparel</li>
 		</thingCategories>
 		<tradeTags inherit="false">
+			<li>RK_Apparel</li>
 		</tradeTags>
 		<smeltable>true</smeltable>
 		<apparel>
@@ -167,95 +168,7 @@
 			</recipeUsers>
 		</recipeMaker>
 	</ThingDef>
-	<!-- 어린이용 우주복 -->
-	<ThingDef ParentName="ApparelBase" MayRequire="Ludeon.RimWorld.Odyssey,Ludeon.RimWorld.Biotech">
-		<defName>RK_Apparel_VacsuitChildren</defName>
-		<label>kid vacsuit</label>
-		<description>A protective suit designed for children. It keeps the user safe in the vacuum of space.</description>
-		<generateAllowChance>0</generateAllowChance>
-		<techLevel>Spacer</techLevel>
-		<graphicData>
-			<texPath>Apparel/Vacsuit/RK_Apparel_Vacsuit</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>0.8</drawSize>
-			<ignoreThingDrawColor>true</ignoreThingDrawColor>
-		</graphicData>
-		<statBases>
-			<WorkToMake>20000</WorkToMake>
-			<MaxHitPoints>100</MaxHitPoints>
-			<Mass>8</Mass>
-			<Flammability>0.4</Flammability>
-			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.4</ArmorRating_Heat>
-			<Insulation_Cold>70</Insulation_Cold>
-			<Insulation_Heat>30</Insulation_Heat>
-			<EquipDelay>14</EquipDelay>
-		</statBases>
-		<equippedStatOffsets>
-			<MoveSpeed>0.25</MoveSpeed>
-			<VacuumResistance>0.32</VacuumResistance>
-			<CarryingCapacity>35</CarryingCapacity>
-		</equippedStatOffsets>
-		<thingCategories>
-			<li>RK_Apparel</li>
-		</thingCategories>
-		<tradeTags>
-			<li>RK_Apparel_Rare</li>
-		</tradeTags>
-		<smeltable>true</smeltable>
-		<apparel>
-			<developmentalStageFilter>Child</developmentalStageFilter>
-			<bodyPartGroups>
-				<li>Torso</li>
-				<li>Neck</li>
-				<li>Shoulders</li>
-				<li>Arms</li>
-				<li>Legs</li>
-			</bodyPartGroups>
-			<wornGraphicPath>Apparel/Vacsuit/RK_Apparel_Vacsuit</wornGraphicPath>
-			<useWornGraphicMask>true</useWornGraphicMask>
-			<layers>
-				<li>Middle</li>
-				<li>Shell</li>
-				<li>BackPack</li>
-			</layers>
-			<tags>
-				<li>RK_4Tier</li>
-				<li>RK_ApparelTag_SpaceWear</li>
-				<li>RK_ApparelTag_HideTail</li>
-				<li>RK_ApparelTag_HighTech</li>
-			</tags>
-			<defaultOutfitTags>
-				<li>Spacefarer</li>
-			</defaultOutfitTags>
-			<useDeflectMetalEffect>true</useDeflectMetalEffect>
-			<soundWear>Wear_PowerArmor</soundWear>
-			<soundRemove>Remove_PowerArmor</soundRemove>
-			<drawData>
-				<childScale>0.7</childScale>
-			</drawData>
-		</apparel>
-		<colorGenerator Class="ColorGenerator_White" Inherit="False" />
-		<costList>
-			<!-- <DevilstrandCloth>15</DevilstrandCloth> -->
-			<ComponentIndustrial>3</ComponentIndustrial>
-			<Steel>45</Steel>
-			<Plasteel>10</Plasteel>
-		</costList>
-		<recipeMaker MayRequire="Ludeon.RimWorld.Biotech">
-			<researchPrerequisite>RK_Research_OrbitalEquipment</researchPrerequisite>
-			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-			<displayPriority>47235</displayPriority>
-			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-			<workSkill>Crafting</workSkill>
-			<effectWorking>Smith</effectWorking>
-			<soundWorking>Recipe_Smith</soundWorking>
-			<recipeUsers>
-				<li>FabricationBench</li>
-			</recipeUsers>
-		</recipeMaker>
-	</ThingDef>
+	<!-- RK_Apparel_VacsuitChildren → Apparel_Child.xml -->
 
 	<!--
 		Royalty ApparelArmorCataphractBase / HelmetCataphractBase 는 DLC XML 전용.
@@ -283,7 +196,7 @@
 		<statBases>
 			<WorkToMake>75000</WorkToMake>
 			<MaxHitPoints>400</MaxHitPoints>
-			<Mass>15</Mass>
+			<Mass>9</Mass>
 			<Flammability>0.4</Flammability>
 			<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
@@ -299,9 +212,11 @@
 		</equippedStatOffsets>
 		<tradeTags>
 			<li>HiTechArmor</li>
+			<li>RK_TradeTag_ArmorHighTech</li>
+			<li>RK_TradeTag_All</li>
 		</tradeTags>
 		<thingCategories>
-			<li>ApparelArmor</li>
+			<li>RK_ApparelArmor</li>
 		</thingCategories>
 		<costList>
 			<ComponentSpacer>6</ComponentSpacer>
@@ -377,12 +292,14 @@
 		<tradeTags>
 			<li>HiTechArmor</li>
 			<li>Armor</li>
+			<li>RK_TradeTag_ArmorHighTech</li>
+			<li>RK_TradeTag_All</li>
 		</tradeTags>
 		<generateCommonality>2</generateCommonality>
 		<statBases>
 			<WorkToMake>26250</WorkToMake>
 			<MaxHitPoints>180</MaxHitPoints>
-			<Mass>2</Mass>
+			<Mass>1.2</Mass>
 			<Flammability>0.4</Flammability>
 			<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
@@ -454,7 +371,7 @@
 		<statBases>
 			<WorkToMake>75000</WorkToMake>
 			<MaxHitPoints>400</MaxHitPoints>
-			<Mass>10.5</Mass>
+			<Mass>9</Mass>
 			<ArmorRating_Sharp>1.1</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.8</ArmorRating_Heat>
@@ -496,9 +413,6 @@
 			<researchPrerequisite>RK_Research_CrusaderArmor</researchPrerequisite>
 			<displayPriority>47125</displayPriority>
 		</recipeMaker>
-		<thingCategories>
-			<li>RK_Apparel</li>
-		</thingCategories>
 		<tradeTags>
 			<li>RK_Apparel_Rare</li>
 		</tradeTags>
@@ -516,7 +430,7 @@
 		<statBases>
 			<WorkToMake>26250</WorkToMake>
 			<MaxHitPoints>180</MaxHitPoints>
-			<Mass>1.4</Mass>
+			<Mass>1.2</Mass>
 			<Flammability>0.1</Flammability>
 			<ArmorRating_Sharp>1.0</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.7</ArmorRating_Blunt>
@@ -551,8 +465,8 @@
 			<displayPriority>47120</displayPriority>
 		</recipeMaker>
 		<thingCategories>
-			<li>RK_Apparel</li>
-			<li>RK_Headgear</li>
+			<li>RK_ApparelArmor</li>
+			<li>RK_ArmorHeadgear</li>
 		</thingCategories>
 		<tradeTags>
 			<li>RK_Apparel_Rare</li>

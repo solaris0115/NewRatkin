@@ -675,6 +675,7 @@
 			<li>RatkinPriest</li>
 			<li>RatkinKingdom</li>
 			<li>RatkinNonViolence</li>
+			<li>RK_Backstory_Pilgrim</li>
 		</spawnCategories>
 		<forcedTraitsChance Inherit="False">
 			<li Inherit="False">

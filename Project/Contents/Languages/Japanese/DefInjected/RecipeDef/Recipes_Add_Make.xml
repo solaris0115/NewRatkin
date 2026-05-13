@@ -180,6 +180,16 @@
   <Make_RK_WinterRobe.description>冬のローブを作る.</Make_RK_WinterRobe.description>
   <Make_RK_WinterRobe.jobString>冬のローブを作成中</Make_RK_WinterRobe.jobString>
 
+  <Make_RK_Apparel_ChildrenWinterRobe.label>子供用冬のローブを作る</Make_RK_Apparel_ChildrenWinterRobe.label>
+  <Make_RK_Apparel_ChildrenWinterRobe.description>子供用冬のローブを作る.</Make_RK_Apparel_ChildrenWinterRobe.description>
+  <Make_RK_Apparel_ChildrenWinterRobe.jobString>子供用冬のローブを作成中</Make_RK_Apparel_ChildrenWinterRobe.jobString>
+  <Make_RK_Apparel_ChildrenSummerDress.label>子供用サマードレスを作る</Make_RK_Apparel_ChildrenSummerDress.label>
+  <Make_RK_Apparel_ChildrenSummerDress.description>子供用サマードレスを作る.</Make_RK_Apparel_ChildrenSummerDress.description>
+  <Make_RK_Apparel_ChildrenSummerDress.jobString>子供用サマードレスを作成中</Make_RK_Apparel_ChildrenSummerDress.jobString>
+  <Make_RK_Apparel_ChildrenCardigan.label>子供用カーディガンを作る</Make_RK_Apparel_ChildrenCardigan.label>
+  <Make_RK_Apparel_ChildrenCardigan.description>子供用カーディガンを作る.</Make_RK_Apparel_ChildrenCardigan.description>
+  <Make_RK_Apparel_ChildrenCardigan.jobString>子供用カーディガンを作成中</Make_RK_Apparel_ChildrenCardigan.jobString>
+
   <Make_RK_OrderUniform.label>RK 戦闘服を作る</Make_RK_OrderUniform.label>
   <Make_RK_OrderUniform.description>ラットキン戦闘服を作る.</Make_RK_OrderUniform.description>
   <Make_RK_OrderUniform.jobString>RK 戦闘服を作成中</Make_RK_OrderUniform.jobString>

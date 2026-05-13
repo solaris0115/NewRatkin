@@ -10,9 +10,9 @@
 
   <!-- Make Hardtack Bulk Recipe -->
 
-  <RK_Recipe_HardtackBulk.label>乾パン x4</RK_Recipe_HardtackBulk.label>
-  <RK_Recipe_HardtackBulk.description>トウモロコシや植物性原料からまとめて乾パンを作ります.長期保存が可能なため,旅行にも最適な食品です.</RK_Recipe_HardtackBulk.description>
-  <RK_Recipe_HardtackBulk.jobString>乾パン4つを作成中</RK_Recipe_HardtackBulk.jobString>
+  <RK_Recipe_HardtackBulk.label>乾パン x8</RK_Recipe_HardtackBulk.label>
+  <RK_Recipe_HardtackBulk.description>トウモロコシや植物性原料からまとめて乾パンを8つ作ります.長期保存が可能なため,旅行にも最適な食品です.</RK_Recipe_HardtackBulk.description>
+  <RK_Recipe_HardtackBulk.jobString>乾パン8つを作成中</RK_Recipe_HardtackBulk.jobString>
 
 
 </LanguageData>

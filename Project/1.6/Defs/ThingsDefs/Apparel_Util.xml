@@ -72,10 +72,10 @@
 					<iconSize>0.2</iconSize>
 				</draftedIdeoIconData>
 			</li>
-			<li Class="NewRatkin.CompProperties_ShieldWeaponIncompatible">
-				<allowedWeaponTags>
-					<li>RK_WeaponTag_OneHand</li>
-				</allowedWeaponTags>
+			<li Class="NewRatkin.CompProperties_GripTypeFilter">
+				<allowedGripTypes>
+					<li>OneHand</li>
+				</allowedGripTypes>
 			</li>
 		</comps>
 		<apparel>
@@ -104,6 +104,17 @@
 				<li>RK_ElectricSmithy</li>
 			</recipeUsers>
 			<researchPrerequisite>RK_Research_SwordAndShield</researchPrerequisite>
+			<defaultIngredientFilter>
+				<categories>
+					<li>Root</li>
+				</categories>
+				<disallowedThingDefs>
+					<li>DevilstrandCloth</li>
+					<li>Hyperweave</li>
+					<li>Leather_Thrumbo</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">Leather_AlphaThrumbo</li>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>
 		</recipeMaker>
 	</ThingDef>
 

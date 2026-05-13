@@ -3,6 +3,9 @@
 	<!-- 1. 완전 공통 (완전 부모) -->
 	<ThingDef ParentName="RK_ApparelAttr_ShieldBase" Name="RK_ApparelAttr_ShieldDeflect_Abstract" Abstract="True">
 		<thingClass>NewRatkin.ApparelShieldTowerSecond</thingClass>
+		<tradeTags>
+			<li>RK_TradeTag_Armor</li>
+		</tradeTags>
 	</ThingDef>
 
 	<!-- 2. 정적 데이터 부모 — 소방패 (밸런스·재료 제외) -->
@@ -45,12 +48,12 @@
 					<angleWest>-15</angleWest>
 				</backDrawData>
 			</li>
-			<li Class="NewRatkin.CompProperties_ShieldWeaponIncompatible">
-				<allowedWeaponTags>
-					<li>RK_WeaponTag_OneHand</li>
-					<li>RK_WeaponTag_ShieldCompatible</li>
-				</allowedWeaponTags>
-				<blockReasonKey>RK_ShieldWeaponIncompatible</blockReasonKey>
+			<li Class="NewRatkin.CompProperties_GripTypeFilter">
+				<allowedGripTypes>
+					<li>OneHand</li>
+					<li>Special</li>
+				</allowedGripTypes>
+				<blockReasonKey>RK_GripIncompatible</blockReasonKey>
 			</li>
 			<li Class="NewRatkin.CompProperties_ShieldFaceDirection">
 				<cooldownTicks>180</cooldownTicks>
@@ -84,6 +87,9 @@
 				<li>RK_ElectricSmithy</li>
 			</recipeUsers>
 			<defaultIngredientFilter>
+				<stuffCategoriesToAllow>
+					<li>Metallic</li>
+				</stuffCategoriesToAllow>
 				<disallowedThingDefs>
 					<li>Gold</li>
 					<li>Silver</li>
@@ -118,12 +124,12 @@
 					<angleWest>-15</angleWest>
 				</backDrawData>
 			</li>
-			<li Class="NewRatkin.CompProperties_ShieldWeaponIncompatible">
-				<allowedWeaponTags>
-					<li>RK_WeaponTag_OneHand</li>
-					<li>RK_WeaponTag_ShieldCompatible</li>
-				</allowedWeaponTags>
-				<blockReasonKey>RK_ShieldWeaponIncompatible</blockReasonKey>
+			<li Class="NewRatkin.CompProperties_GripTypeFilter">
+				<allowedGripTypes>
+					<li>OneHand</li>
+					<li>Special</li>
+				</allowedGripTypes>
+				<blockReasonKey>RK_GripIncompatible</blockReasonKey>
 			</li>
 			<li Class="NewRatkin.CompProperties_ShieldFaceDirection">
 				<cooldownTicks>240</cooldownTicks>
@@ -161,6 +167,9 @@
 				<li>RK_ElectricSmithy</li>
 			</recipeUsers>
 			<defaultIngredientFilter>
+				<stuffCategoriesToAllow>
+					<li>Metallic</li>
+				</stuffCategoriesToAllow>
 				<disallowedThingDefs>
 					<li>Gold</li>
 					<li>Silver</li>
@@ -195,11 +204,11 @@
 					<angleWest>-15</angleWest>
 				</backDrawData>
 			</li>
-			<li Class="NewRatkin.CompProperties_ShieldWeaponIncompatible">
-				<allowedWeaponTags>
-					<li>RK_WeaponTag_OneHand</li>
-				</allowedWeaponTags>
-				<blockReasonKey>RK_ShieldWeaponIncompatible</blockReasonKey>
+			<li Class="NewRatkin.CompProperties_GripTypeFilter">
+				<allowedGripTypes>
+					<li>OneHand</li>
+				</allowedGripTypes>
+				<blockReasonKey>RK_GripIncompatible</blockReasonKey>
 			</li>
 			<li Class="NewRatkin.CompProperties_ShieldFaceDirection">
 				<cooldownTicks>300</cooldownTicks>

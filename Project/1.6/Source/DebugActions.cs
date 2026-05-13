@@ -554,6 +554,60 @@ namespace NewRatkin
             return null;
         }
 
+        /// <summary>
+        /// 폰 클릭으로 대상 지정 후, 이후 클릭마다 해당 폰의 그리드 좌표만 변경한다.
+        /// Notify_Teleported는 호출하지 않는다(텔레포트 처리·연출 경로 미탑승).
+        /// </summary>
+        [DebugAction("Ratkin", "Teleport pawn (click pawn, then cells)",
+            allowedGameStates = AllowedGameStates.PlayingOnMap,
+            displayPriority = 945)]
+        private static void TeleportPawnClickCells()
+        {
+            Map map = Find.CurrentMap;
+            if (map == null)
+            {
+                Messages.Message("맵이 없습니다.", MessageTypeDefOf.RejectInput);
+                return;
+            }
+
+            Pawn selected = null;
+
+            DebugTool teleportTool = null;
+            teleportTool = new DebugTool("Teleport: click cell (same pawn repeats)...", delegate()
+            {
+                IntVec3 cell = UI.MouseCell();
+                if (selected == null || !selected.Spawned || selected.Map != map)
+                {
+                    Messages.Message("대상 폰이 없습니다. 디버그 메뉴에서 다시 시작하세요.", MessageTypeDefOf.RejectInput);
+                    return;
+                }
+
+                if (!cell.InBounds(map))
+                {
+                    return;
+                }
+
+                selected.Position = cell;
+                if ((selected.Faction == Faction.OfPlayer || selected.IsPlayerControlled) && selected.Position.Fogged(selected.Map))
+                {
+                    FloodFillerFog.FloodUnfog(selected.Position, selected.Map);
+                }
+            }, (Action)null);
+
+            DebugTool pickTool = new DebugTool("Teleport: click pawn...", delegate()
+            {
+                Pawn p = PawnAt(UI.MouseCell());
+                if (p != null)
+                {
+                    selected = p;
+                    Messages.Message($"Teleport 대상: {p.LabelShort}", MessageTypeDefOf.NeutralEvent);
+                    DebugTools.curTool = teleportTool;
+                }
+            }, (Action)null);
+
+            DebugTools.curTool = pickTool;
+        }
+
         private static int CountChildrenOnMap()
         {
             int count = 0;

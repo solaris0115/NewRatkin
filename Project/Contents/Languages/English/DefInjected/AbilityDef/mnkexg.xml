@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RK_PrayerService.label>Prayer service</RK_PrayerService.label>
+  <RK_PrayerService.description>Host a prayer service to address the worries of the people, calming them and bringing peace of mind.</RK_PrayerService.description>
+
+  <!-- Prayer Service for the Ratkin Priest-->
+
+	<RK_Ability_LanceCharge.label>Charge</RK_Ability_LanceCharge.label>
+	<RK_Ability_LanceCharge.description>The person prepares for a moment before lunging towards the target with blistering speed, only stopping if an obstacle is in the way or they hit their target. After charging, exhaustion sets in and reduces their movement speed.</RK_Ability_LanceCharge.description>
+	
+	<RK_Ability_MeleeMoraleBooster.label>Rallying cry</RK_Ability_MeleeMoraleBooster.label>
+	<RK_Ability_MeleeMoraleBooster.description>Rallies nearby allies around the flag, boosting the melee attack of everyone around. The effect improves with the banner carrier's Social skill.</RK_Ability_MeleeMoraleBooster.description>
+	
+	<RK_WyvernFire_Ability.label>Wyvern Fire</RK_WyvernFire_Ability.label>
+	<RK_WyvernFire_Ability.description>Unleash a powerful cone-shaped explosion in front of the wielder which sets anything that survived it on fire. Consumes one shell.</RK_WyvernFire_Ability.description>
+
+</LanguageData>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RK_ThingCategory_Ammo.label>ballista bolts</RK_ThingCategory_Ammo.label>
+  <RK_Apparel.label>ratkin apparel</RK_Apparel.label>
+  <RK_Headgear.label>ratkin headgear</RK_Headgear.label>
+  <RK_ThingCategory_Melee.label>ratkin melee weapons</RK_ThingCategory_Melee.label>
+  <RK_ThingCategory_Range.label>ratkin ranged weapons</RK_ThingCategory_Range.label>
+  <RK_ThingCategory_Util.label>ratkin utility</RK_ThingCategory_Util.label>
+  <RK_ApparelArmor.label>ratkin armor</RK_ApparelArmor.label>
+  <RK_ArmorHeadgear.label>ratkin armor headgear</RK_ArmorHeadgear.label>
+  <RK_ApparelNoble.label>ratkin noble apparel</RK_ApparelNoble.label>
+  <RK_HeadgearNoble.label>ratkin noble headgear</RK_HeadgearNoble.label>
+</LanguageData>

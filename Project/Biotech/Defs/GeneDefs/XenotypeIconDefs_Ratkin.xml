@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- 커스텀 제노타입 편집기의 인종형 아이콘 목록용 (RK_XenoType_Ratkin과 동일 텍스처) -->
+	<XenotypeIconDef>
+		<defName>RK_XenotypeIcon_Ratkin</defName>
+		<texPath>UI/Icons/RK_Texture_XenoType</texPath>
+	</XenotypeIconDef>
+</Defs>

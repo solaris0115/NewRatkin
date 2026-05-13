@@ -105,6 +105,13 @@
   <RK_WinterRobe.label>鼠族冬季外袍</RK_WinterRobe.label>
   <RK_WinterRobe.description>一個冬天的長袍。在極地工作時要穿戴它。</RK_WinterRobe.description>
 
+  <RK_Apparel_ChildrenWinterRobe.label>鼠族兒童冬季外袍</RK_Apparel_ChildrenWinterRobe.label>
+  <RK_Apparel_ChildrenWinterRobe.description>為兒童裁製的冬季外袍，用途與成人款相同。</RK_Apparel_ChildrenWinterRobe.description>
+  <RK_Apparel_ChildrenSummerDress.label>鼠族兒童夏季連衣裙</RK_Apparel_ChildrenSummerDress.label>
+  <RK_Apparel_ChildrenSummerDress.description>兒童夏季連衣裙，通風良好，適合炎熱天氣。</RK_Apparel_ChildrenSummerDress.description>
+  <RK_Apparel_ChildrenCardigan.label>鼠族兒童羊毛衫</RK_Apparel_ChildrenCardigan.label>
+  <RK_Apparel_ChildrenCardigan.description>兒童尺寸羊毛衫，作為外層抵禦寒冷。</RK_Apparel_ChildrenCardigan.description>
+
 
   <!-- 군용가방 +30 내구도 +20 -->
 

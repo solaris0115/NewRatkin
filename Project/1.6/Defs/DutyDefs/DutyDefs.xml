@@ -8,7 +8,7 @@
 			<subNodes>
 				<li Class="JobGiver_GotoTravelDestination">
 					<exactCell>false</exactCell>
-					<locomotionUrgency>Walk</locomotionUrgency>
+					<locomotionUrgency>Jog</locomotionUrgency>
 				</li>
 
 				<li Class="NewRatkin.ThinkNode_ConditionalAtDutyRoom">

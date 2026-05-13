@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RK_Ability_LanceCharge.label>突撃</RK_Ability_LanceCharge.label>
+  <RK_Ability_LanceCharge.description>敵に向かって短距離を突進します。障害物に当たるまで直線上を移動します。突撃後は疲労により移動速度が低下します。</RK_Ability_LanceCharge.description>
+  <RK_PrayerService.label>礼拝</RK_PrayerService.label>
+  <RK_PrayerService.description>仕える神へ祈りを捧げます。心の安らぎを得られます。</RK_PrayerService.description>
+  <RK_Ability_MeleeMoraleBooster.label>士気高揚</RK_Ability_MeleeMoraleBooster.label>
+  <RK_Ability_MeleeMoraleBooster.description>味方の士気を奮い立たせます。旗手の社交能力が高いほど効果が上がります。</RK_Ability_MeleeMoraleBooster.description>
+  <RK_WyvernFire_Ability.label>竜撃砲</RK_WyvernFire_Ability.label>
+  <RK_WyvernFire_Ability.description>前方へ強力な砲撃を行います。弾を1発消費します。</RK_WyvernFire_Ability.description>
+</LanguageData>

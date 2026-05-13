@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RK_Gene_SmallBody.label>小さな体格</RK_Gene_SmallBody.label>
+  <RK_Gene_SmallBody.labelShortAdj>小柄</RK_Gene_SmallBody.labelShortAdj>
+  <RK_Gene_SmallBody.description>この遺伝子の保持者は小さな体格を持ちます。運搬量がやや低下します。</RK_Gene_SmallBody.description>
+  <RK_Gene_Nimble.label>俊敏</RK_Gene_Nimble.label>
+  <RK_Gene_Nimble.labelShortAdj>身軽</RK_Gene_Nimble.labelShortAdj>
+  <RK_Gene_Nimble.description>この遺伝子の保持者は感覚受容器が鋭くなり、近くの脅威へより素早く対応します。</RK_Gene_Nimble.description>
+  <RK_Gene_PoorEyesight.label>悪い視力</RK_Gene_PoorEyesight.label>
+  <RK_Gene_PoorEyesight.labelShortAdj>ぼやけた視界</RK_Gene_PoorEyesight.labelShortAdj>
+  <RK_Gene_PoorEyesight.description>この遺伝子の保持者は視力がよくありません。照準速度が遅くなり、命中精度が下がります。</RK_Gene_PoorEyesight.description>
+  <RK_Gene_FragilePain.label>敏感な痛覚</RK_Gene_FragilePain.label>
+  <RK_Gene_FragilePain.labelShortAdj>敏感</RK_Gene_FragilePain.labelShortAdj>
+  <RK_Gene_FragilePain.description>この遺伝子の保持者は痛みによるショック閾値が低く、少し傷を負っただけでも倒れやすくなります。</RK_Gene_FragilePain.description>
+  <RK_Gene_GoodGardening.label>園芸の才</RK_Gene_GoodGardening.label>
+  <RK_Gene_GoodGardening.labelShortAdj>栽培上手</RK_Gene_GoodGardening.labelShortAdj>
+  <RK_Gene_GoodGardening.description>この遺伝子の保持者は植物の世話をより巧みにこなします。</RK_Gene_GoodGardening.description>
+  <RK_Skin_PureWhite.label>純白の肌</RK_Skin_PureWhite.label>
+  <RK_Skin_PureWhite.labelShortAdj>純白の肌</RK_Skin_PureWhite.labelShortAdj>
+  <RK_Skin_PureWhite.description>この遺伝子の保持者は純白の肌を持ちます。</RK_Skin_PureWhite.description>
+  <RK_Gene_LargeEars.label>大きな丸耳</RK_Gene_LargeEars.label>
+  <RK_Gene_LargeEars.labelShortAdj>大きな耳</RK_Gene_LargeEars.labelShortAdj>
+  <RK_Gene_LargeEars.description>この遺伝子の保持者は大きく丸い耳を持つようになります。</RK_Gene_LargeEars.description>
+  <RK_Gene_LargeEars.symbolPack.prefixSymbols.0.symbol>ネズミ</RK_Gene_LargeEars.symbolPack.prefixSymbols.0.symbol>
+  <RK_Gene_LargeEars.symbolPack.prefixSymbols.1.symbol>チュウチュウ</RK_Gene_LargeEars.symbolPack.prefixSymbols.1.symbol>
+  <RK_Gene_LargeEars.symbolPack.prefixSymbols.2.symbol>ヒゲ</RK_Gene_LargeEars.symbolPack.prefixSymbols.2.symbol>
+  <RK_Gene_LargeEars.symbolPack.suffixSymbols.0.symbol>ネズミ</RK_Gene_LargeEars.symbolPack.suffixSymbols.0.symbol>
+  <RK_Gene_LargeEars.symbolPack.suffixSymbols.1.symbol>耳</RK_Gene_LargeEars.symbolPack.suffixSymbols.1.symbol>
+  <RK_Gene_LargeEars.symbolPack.suffixSymbols.2.symbol>チュウチュウ</RK_Gene_LargeEars.symbolPack.suffixSymbols.2.symbol>
+  <RK_Gene_ThinTail.label>細い尻尾</RK_Gene_ThinTail.label>
+  <RK_Gene_ThinTail.labelShortAdj>細い尻尾</RK_Gene_ThinTail.labelShortAdj>
+  <RK_Gene_ThinTail.description>この遺伝子の保持者には、なめらかで細長い尻尾が生えます。</RK_Gene_ThinTail.description>
+  <RK_Gene_ThinTail.symbolPack.prefixSymbols.0.symbol>尻尾</RK_Gene_ThinTail.symbolPack.prefixSymbols.0.symbol>
+  <RK_Gene_ThinTail.symbolPack.prefixSymbols.1.symbol>ネズミ</RK_Gene_ThinTail.symbolPack.prefixSymbols.1.symbol>
+  <RK_Gene_ThinTail.symbolPack.suffixSymbols.0.symbol>尻尾</RK_Gene_ThinTail.symbolPack.suffixSymbols.0.symbol>
+  <RK_Gene_ThinTail.symbolPack.suffixSymbols.1.symbol>ネズミ</RK_Gene_ThinTail.symbolPack.suffixSymbols.1.symbol>
+  <RK_Gene_CuteFace.label>かわいい顔</RK_Gene_CuteFace.label>
+  <RK_Gene_CuteFace.labelShortAdj>かわいい</RK_Gene_CuteFace.labelShortAdj>
+  <RK_Gene_CuteFace.description>この遺伝子の保持者はかわいらしい印象を与えます。社会的な関係づくりには役立ちますが、集団を代表する場面では軽く見られることもあります。</RK_Gene_CuteFace.description>
+  <RK_Gene_CuteFace.symbolPack.prefixSymbols.0.symbol>かわいい</RK_Gene_CuteFace.symbolPack.prefixSymbols.0.symbol>
+  <RK_Gene_CuteFace.symbolPack.prefixSymbols.1.symbol>甘い</RK_Gene_CuteFace.symbolPack.prefixSymbols.1.symbol>
+  <RK_Gene_CuteFace.symbolPack.prefixSymbols.2.symbol>魅力</RK_Gene_CuteFace.symbolPack.prefixSymbols.2.symbol>
+  <RK_Gene_CuteFace.symbolPack.suffixSymbols.0.symbol>魅力</RK_Gene_CuteFace.symbolPack.suffixSymbols.0.symbol>
+  <RK_Gene_CuteFace.symbolPack.suffixSymbols.1.symbol>かわいさ</RK_Gene_CuteFace.symbolPack.suffixSymbols.1.symbol>
+</LanguageData>

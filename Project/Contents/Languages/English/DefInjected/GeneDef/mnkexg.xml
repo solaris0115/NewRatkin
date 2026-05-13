@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RK_Gene_SmallBody.label>small body</RK_Gene_SmallBody.label>
+  <RK_Gene_SmallBody.labelShortAdj>small-bodied</RK_Gene_SmallBody.labelShortAdj>
+  <RK_Gene_SmallBody.description>Carriers of this gene have a small frame. Having a small frame reduces makes carrying a bunch of items more difficult without assistance.</RK_Gene_SmallBody.description>
+  <RK_Gene_Nimble.label>nimble</RK_Gene_Nimble.label>
+  <RK_Gene_Nimble.labelShortAdj>nimble</RK_Gene_Nimble.labelShortAdj>
+  <RK_Gene_Nimble.description>Carriers of this gene have sharp senses that allow them to respond more quickly to incoming threats.</RK_Gene_Nimble.description>
+  <RK_Gene_PoorEyesight.label>poor eyesight</RK_Gene_PoorEyesight.label>
+  <RK_Gene_PoorEyesight.labelShortAdj>blurry-eyed</RK_Gene_PoorEyesight.labelShortAdj>
+  <RK_Gene_PoorEyesight.description>Carriers of this gene have poor eyesight. They take longer to aim and suffer reduced accuracy when forced to fire at long distances.</RK_Gene_PoorEyesight.description>
+  <RK_Gene_FragilePain.label>pain sensitivity</RK_Gene_FragilePain.label>
+  <RK_Gene_FragilePain.labelShortAdj>sensitive</RK_Gene_FragilePain.labelShortAdj>
+  <RK_Gene_FragilePain.description>Carriers of this gene have a sensitivity to pain, feeling the pain of even small injuries that would otherwise go unnoticed.</RK_Gene_FragilePain.description>
+  <RK_Gene_GoodGardening.label>gardening talent</RK_Gene_GoodGardening.label>
+  <RK_Gene_GoodGardening.labelShortAdj>green-thumbed</RK_Gene_GoodGardening.labelShortAdj>
+  <RK_Gene_GoodGardening.description>Carriers of this gene are more skilled at harvesting plants.</RK_Gene_GoodGardening.description>
+  <RK_Skin_PureWhite.label>pure white skin</RK_Skin_PureWhite.label>
+  <RK_Skin_PureWhite.labelShortAdj>pure white skin</RK_Skin_PureWhite.labelShortAdj>
+  <RK_Skin_PureWhite.description>Carriers of this gene have pure white skin.</RK_Skin_PureWhite.description>
+  <RK_Gene_LargeEars.label>large round ears</RK_Gene_LargeEars.label>
+  <RK_Gene_LargeEars.labelShortAdj>large-eared</RK_Gene_LargeEars.labelShortAdj>
+  <RK_Gene_LargeEars.description>Carriers of this gene grow large, round ears.</RK_Gene_LargeEars.description>
+  <RK_Gene_LargeEars.symbolPack.prefixSymbols.0.symbol>rat</RK_Gene_LargeEars.symbolPack.prefixSymbols.0.symbol>
+  <RK_Gene_LargeEars.symbolPack.prefixSymbols.1.symbol>squeak</RK_Gene_LargeEars.symbolPack.prefixSymbols.1.symbol>
+  <RK_Gene_LargeEars.symbolPack.prefixSymbols.2.symbol>whisker</RK_Gene_LargeEars.symbolPack.prefixSymbols.2.symbol>
+  <RK_Gene_LargeEars.symbolPack.suffixSymbols.0.symbol>rat</RK_Gene_LargeEars.symbolPack.suffixSymbols.0.symbol>
+  <RK_Gene_LargeEars.symbolPack.suffixSymbols.1.symbol>ear</RK_Gene_LargeEars.symbolPack.suffixSymbols.1.symbol>
+  <RK_Gene_LargeEars.symbolPack.suffixSymbols.2.symbol>squeak</RK_Gene_LargeEars.symbolPack.suffixSymbols.2.symbol>
+  <RK_Gene_ThinTail.label>slender tail</RK_Gene_ThinTail.label>
+  <RK_Gene_ThinTail.labelShortAdj>slender-tailed</RK_Gene_ThinTail.labelShortAdj>
+  <RK_Gene_ThinTail.description>Carriers of this gene grow smooth, slender tails.</RK_Gene_ThinTail.description>
+  <RK_Gene_ThinTail.symbolPack.prefixSymbols.0.symbol>tail</RK_Gene_ThinTail.symbolPack.prefixSymbols.0.symbol>
+  <RK_Gene_ThinTail.symbolPack.prefixSymbols.1.symbol>rat</RK_Gene_ThinTail.symbolPack.prefixSymbols.1.symbol>
+  <RK_Gene_ThinTail.symbolPack.suffixSymbols.0.symbol>tail</RK_Gene_ThinTail.symbolPack.suffixSymbols.0.symbol>
+  <RK_Gene_ThinTail.symbolPack.suffixSymbols.1.symbol>rat</RK_Gene_ThinTail.symbolPack.suffixSymbols.1.symbol>
+  <RK_Gene_CuteFace.label>cute face</RK_Gene_CuteFace.label>
+  <RK_Gene_CuteFace.labelShortAdj>cute</RK_Gene_CuteFace.labelShortAdj>
+  <RK_Gene_CuteFace.description>Carriers of this gene have facial features that give off a cute impression. It helps them form social relationships, but does make them appear less threatening when trying to act serious during negotiations.</RK_Gene_CuteFace.description>
+  <RK_Gene_CuteFace.symbolPack.prefixSymbols.0.symbol>cute</RK_Gene_CuteFace.symbolPack.prefixSymbols.0.symbol>
+  <RK_Gene_CuteFace.symbolPack.prefixSymbols.1.symbol>sweet</RK_Gene_CuteFace.symbolPack.prefixSymbols.1.symbol>
+  <RK_Gene_CuteFace.symbolPack.prefixSymbols.2.symbol>charm</RK_Gene_CuteFace.symbolPack.prefixSymbols.2.symbol>
+  <RK_Gene_CuteFace.symbolPack.suffixSymbols.0.symbol>charm</RK_Gene_CuteFace.symbolPack.suffixSymbols.0.symbol>
+  <RK_Gene_CuteFace.symbolPack.suffixSymbols.1.symbol>cuteness</RK_Gene_CuteFace.symbolPack.suffixSymbols.1.symbol>
+</LanguageData>

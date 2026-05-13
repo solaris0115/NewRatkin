@@ -78,6 +78,16 @@
   <Make_RK_WinterRobe.description>랫킨 겨울 예복 제작합니다.</Make_RK_WinterRobe.description>
   <Make_RK_WinterRobe.jobString>랫킨 겨울 예복 제작 중.</Make_RK_WinterRobe.jobString>
 
+  <Make_RK_Apparel_ChildrenWinterRobe.label>랫킨 어린이 겨울 예복 제작</Make_RK_Apparel_ChildrenWinterRobe.label>
+  <Make_RK_Apparel_ChildrenWinterRobe.description>랫킨 어린이 겨울 예복 제작합니다.</Make_RK_Apparel_ChildrenWinterRobe.description>
+  <Make_RK_Apparel_ChildrenWinterRobe.jobString>랫킨 어린이 겨울 예복 제작 중.</Make_RK_Apparel_ChildrenWinterRobe.jobString>
+  <Make_RK_Apparel_ChildrenSummerDress.label>랫킨 어린이 여름 드레스 제작</Make_RK_Apparel_ChildrenSummerDress.label>
+  <Make_RK_Apparel_ChildrenSummerDress.description>랫킨 어린이 여름 드레스 제작합니다.</Make_RK_Apparel_ChildrenSummerDress.description>
+  <Make_RK_Apparel_ChildrenSummerDress.jobString>랫킨 어린이 여름 드레스 제작 중.</Make_RK_Apparel_ChildrenSummerDress.jobString>
+  <Make_RK_Apparel_ChildrenCardigan.label>랫킨 어린이 가디건 제작</Make_RK_Apparel_ChildrenCardigan.label>
+  <Make_RK_Apparel_ChildrenCardigan.description>랫킨 어린이 가디건 제작합니다.</Make_RK_Apparel_ChildrenCardigan.description>
+  <Make_RK_Apparel_ChildrenCardigan.jobString>랫킨 어린이 가디건 제작 중.</Make_RK_Apparel_ChildrenCardigan.jobString>
+
   <Make_RK_OutdoorBackpack.label>랫킨 등짐 가방 제작</Make_RK_OutdoorBackpack.label>
   <Make_RK_OutdoorBackpack.description>랫킨 등짐 가방 제작합니다.</Make_RK_OutdoorBackpack.description>
   <Make_RK_OutdoorBackpack.jobString>랫킨 등짐 가방 제작 중.</Make_RK_OutdoorBackpack.jobString>

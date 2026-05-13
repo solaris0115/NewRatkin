@@ -16,6 +16,8 @@
 		<canStageAttacks>true</canStageAttacks>
 		<factionIconPath>Icon/RK_icon</factionIconPath>
 		<techLevel>Industrial</techLevel>
+		<!-- HAR/지도자 생성: GetRaceOfFaction 등이 참조. 미지정 시 세력 스폰·지도자 생성에서 NRE 가능 -->
+		<basicMemberKind>RatkinColonist</basicMemberKind>
 		<melaninRange>0~0.3</melaninRange>
 		<backstoryCategories>
 			<li>Offworld</li>

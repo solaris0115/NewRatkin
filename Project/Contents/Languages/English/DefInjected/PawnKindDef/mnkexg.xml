@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RK_PawnKind_Pilgrim.label>pilgrim</RK_PawnKind_Pilgrim.label>
+
+  <RK_PawnKind_Priest.label>order pilgrim</RK_PawnKind_Priest.label>
+
+  <RK_PawnKind_NoblePilgrim.label>noble pilgrim</RK_PawnKind_NoblePilgrim.label>
+
+  <RatkinColonist.label>ratkin colonist</RatkinColonist.label>
+  <RatkinColonist.modExtensions.0.conditions.0.desc.0>With this much wealth, I think I could start over.</RatkinColonist.modExtensions.0.conditions.0.desc.0>
+  <RatkinColonist.modExtensions.0.conditions.0.desc.1>I am done living in poverty.</RatkinColonist.modExtensions.0.conditions.0.desc.1>
+  <RatkinColonist.modExtensions.0.conditions.1.desc.0>Good to meet you!</RatkinColonist.modExtensions.0.conditions.1.desc.0>
+  <RatkinColonist.modExtensions.0.conditions.1.desc.1>I look forward to working with you!</RatkinColonist.modExtensions.0.conditions.1.desc.1>
+
+  <RatkinNoble.label>ratkin noble</RatkinNoble.label>
+
+  <RatkinServant.label>ratkin servant</RatkinServant.label>
+  <RatkinServant.modExtensions.0.conditions.0.desc.0>I want to live in a decent-sized town. Wandering aimlessly has become too hard.</RatkinServant.modExtensions.0.conditions.0.desc.0>
+  <RatkinServant.modExtensions.0.conditions.0.desc.1>I want to live somewhere stable. I don't feel comfortable living in a tiny village.</RatkinServant.modExtensions.0.conditions.0.desc.1>
+  <RatkinServant.modExtensions.0.conditions.1.desc.0>Good to meet you!</RatkinServant.modExtensions.0.conditions.1.desc.0>
+  <RatkinServant.modExtensions.0.conditions.1.desc.1>I look forward to working with you!</RatkinServant.modExtensions.0.conditions.1.desc.1>
+  <RatkinServant.modExtensions.0.conditions.2.desc.0>I am tired of spending my life pleasing important people.</RatkinServant.modExtensions.0.conditions.2.desc.0>
+  <RatkinServant.modExtensions.0.conditions.2.desc.1>I do not want anything more to do with nobles.</RatkinServant.modExtensions.0.conditions.2.desc.1>
+  <RatkinServant.modExtensions.0.conditions.3.desc.0>I am tired of spending my life pleasing important people.</RatkinServant.modExtensions.0.conditions.3.desc.0>
+  <RatkinServant.modExtensions.0.conditions.3.desc.1>I choose who I serve.</RatkinServant.modExtensions.0.conditions.3.desc.1>
+
+  <RatkinPriest.label>ratkin priest</RatkinPriest.label>
+  <RatkinPriest.modExtensions.0.conditions.0.desc.0>Do you need a helping hand?</RatkinPriest.modExtensions.0.conditions.0.desc.0>
+  <RatkinPriest.modExtensions.0.conditions.0.desc.1>With faith, you can overcome hardship!</RatkinPriest.modExtensions.0.conditions.0.desc.1>
+  <RatkinPriest.modExtensions.0.conditions.1.desc.0>I hope there are enough relief supplies.</RatkinPriest.modExtensions.0.conditions.1.desc.0>
+  <RatkinPriest.modExtensions.0.conditions.1.desc.1>With enough medicine, we could help so many more people...</RatkinPriest.modExtensions.0.conditions.1.desc.1>
+  <RatkinPriest.modExtensions.0.conditions.2.desc.0>Good to meet you!</RatkinPriest.modExtensions.0.conditions.2.desc.0>
+  <RatkinPriest.modExtensions.0.conditions.2.desc.1>I look forward to working with you!</RatkinPriest.modExtensions.0.conditions.2.desc.1>
+
+  <RatkinMerchant.label>ratkin merchant</RatkinMerchant.label>
+
+  <RatkinCombatant.label>ratkin combatant</RatkinCombatant.label>
+
+  <RatkinVanguard.label>ratkin vanguard</RatkinVanguard.label>
+
+  <RatkinDefender.label>ratkin defender</RatkinDefender.label>
+
+  <RatkinSoldier.label>ratkin soldier</RatkinSoldier.label>
+
+  <RatkinEliteGuardener.label>ratkin elite guardener</RatkinEliteGuardener.label>
+  <RatkinEliteGuardener.modExtensions.0.conditions.0.desc.0>I want to live in a decent-sized town. Wandering aimlessly has become too hard.</RatkinEliteGuardener.modExtensions.0.conditions.0.desc.0>
+  <RatkinEliteGuardener.modExtensions.0.conditions.0.desc.1>I want to live somewhere stable. I don't feel comfortable living in a tiny village.</RatkinEliteGuardener.modExtensions.0.conditions.0.desc.1>
+  <RatkinEliteGuardener.modExtensions.0.conditions.1.desc.0>Good to meet you!</RatkinEliteGuardener.modExtensions.0.conditions.1.desc.0>
+  <RatkinEliteGuardener.modExtensions.0.conditions.1.desc.1>I look forward to working with you!</RatkinEliteGuardener.modExtensions.0.conditions.1.desc.1>
+
+  <RatkinKnight.label>ratkin knight</RatkinKnight.label>
+
+  <RatkinEliteDefender.label>ratkin elite defender</RatkinEliteDefender.label>
+
+  <RatkinKnightCommander.label>ratkin knight commander</RatkinKnightCommander.label>
+
+  <RK_PawnKind_StandardBearer.label>standard bearer</RK_PawnKind_StandardBearer.label>
+
+  <RatkinEliteSoldier.label>ratkin elite soldier</RatkinEliteSoldier.label>
+
+  <RatkinDemonMan.label>ratkin demoman</RatkinDemonMan.label>
+
+  <RatkinPettyThief.label>ratkin petty thief</RatkinPettyThief.label>
+
+  <RatkinMurderer.label>ratkin Murderer</RatkinMurderer.label>
+
+  <RatkinVagabond.label>vagabond</RatkinVagabond.label>
+
+  <RatkinMercenaryLight.label>ratkin mercenary</RatkinMercenaryLight.label>
+
+  <RatkinMercenary.label>ratkin mercenary</RatkinMercenary.label>
+
+  <Ratkin_KingHamster.label>king hamster</Ratkin_KingHamster.label>
+  <Ratkin_KingHamster.lifeStages.0.label>king hamster calf</Ratkin_KingHamster.lifeStages.0.label>
+  <Ratkin_KingHamster.lifeStages.0.labelPlural>king hamster calves</Ratkin_KingHamster.lifeStages.0.labelPlural>
+
+  <RK_PawnKind_Nomad.label>nomad</RK_PawnKind_Nomad.label>
+  <RK_PawnKind_Nomad.modExtensions.0.conditions.0.desc.0>I want to live in a decent-sized town. Wandering aimlessly has become too hard.</RK_PawnKind_Nomad.modExtensions.0.conditions.0.desc.0>
+  <RK_PawnKind_Nomad.modExtensions.0.conditions.0.desc.1>I want to live somewhere stable. I don't feel comfortable living in a tiny village.</RK_PawnKind_Nomad.modExtensions.0.conditions.0.desc.1>
+  <RK_PawnKind_Nomad.modExtensions.0.conditions.1.desc.0>Good to meet you!</RK_PawnKind_Nomad.modExtensions.0.conditions.1.desc.0>
+  <RK_PawnKind_Nomad.modExtensions.0.conditions.1.desc.1>I look forward to working with you!</RK_PawnKind_Nomad.modExtensions.0.conditions.1.desc.1>
+  <RK_PawnKind_Nomad.modExtensions.0.conditions.2.desc.0>Life on the road is nice, but staying awhile has its charm.</RK_PawnKind_Nomad.modExtensions.0.conditions.2.desc.0>
+  <RK_PawnKind_Nomad.modExtensions.0.conditions.2.desc.1>Even a wanderer has standards. I need at least a few things worth using.</RK_PawnKind_Nomad.modExtensions.0.conditions.2.desc.1>
+
+  <RK_PawnKind_Wanderer.label>wanderer</RK_PawnKind_Wanderer.label>
+  <RK_PawnKind_Wanderer.modExtensions.0.conditions.0.desc.0>I only take orders from someone stronger than me.</RK_PawnKind_Wanderer.modExtensions.0.conditions.0.desc.0>
+  <RK_PawnKind_Wanderer.modExtensions.0.conditions.0.desc.1>I am looking for strength. Anyone here know how to fight?</RK_PawnKind_Wanderer.modExtensions.0.conditions.0.desc.1>
+  <RK_PawnKind_Wanderer.modExtensions.0.conditions.1.desc.0>I want enough strength to protect myself.</RK_PawnKind_Wanderer.modExtensions.0.conditions.1.desc.0>
+  <RK_PawnKind_Wanderer.modExtensions.0.conditions.1.desc.1>Whether fighting or crafting, there had better be someone here who knows at least one these skills.</RK_PawnKind_Wanderer.modExtensions.0.conditions.1.desc.1>
+  <RK_PawnKind_Wanderer.modExtensions.0.conditions.2.desc.0>Life on the road is nice, but staying awhile has its charm.</RK_PawnKind_Wanderer.modExtensions.0.conditions.2.desc.0>
+  <RK_PawnKind_Wanderer.modExtensions.0.conditions.2.desc.1>Even a wanderer has standards. I need at least a few things worth using.</RK_PawnKind_Wanderer.modExtensions.0.conditions.2.desc.1>
+
+  <RK_PawnKind_CaravanLeader.label>caravan leader</RK_PawnKind_CaravanLeader.label>
+
+  <RK_PawnKind_CaravanGuard.label>caravan guard</RK_PawnKind_CaravanGuard.label>
+</LanguageData>

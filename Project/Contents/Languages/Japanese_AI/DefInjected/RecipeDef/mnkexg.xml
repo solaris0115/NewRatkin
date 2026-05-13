@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RK_Recipe_InstallFakeEar.label>偽耳を装着</RK_Recipe_InstallFakeEar.label>
+  <RK_Recipe_InstallFakeEar.description>偽耳を装着します。</RK_Recipe_InstallFakeEar.description>
+  <RK_Recipe_InstallFakeEar.jobString>偽耳を装着中</RK_Recipe_InstallFakeEar.jobString>
+  <RK_Recipe_InstallFakeTail.label>偽尻尾を装着</RK_Recipe_InstallFakeTail.label>
+  <RK_Recipe_InstallFakeTail.description>偽尻尾を装着します。</RK_Recipe_InstallFakeTail.description>
+  <RK_Recipe_InstallFakeTail.jobString>偽尻尾を装着中</RK_Recipe_InstallFakeTail.jobString>
+  <RK_Recipe_InstallBionicTail.label>生体工学尻尾を移植</RK_Recipe_InstallBionicTail.label>
+  <RK_Recipe_InstallBionicTail.description>生体工学尻尾を移植します。</RK_Recipe_InstallBionicTail.description>
+  <RK_Recipe_InstallBionicTail.jobString>生体工学尻尾を移植中</RK_Recipe_InstallBionicTail.jobString>
+  <RK_Recipe_InstallArchotechTail.label>アーキテック尻尾（ラットキン）を移植</RK_Recipe_InstallArchotechTail.label>
+  <RK_Recipe_InstallArchotechTail.description>アーキテック製のラットキン用人工尻尾を移植します。</RK_Recipe_InstallArchotechTail.description>
+  <RK_Recipe_InstallArchotechTail.jobString>アーキテック尻尾（ラットキン）を移植中</RK_Recipe_InstallArchotechTail.jobString>
+  <Make_RK_Ammo_CannonBall.label>ラットキン砲弾を作る</Make_RK_Ammo_CannonBall.label>
+  <Make_RK_Ammo_CannonBall.description>ラットキン砲弾を作ります。</Make_RK_Ammo_CannonBall.description>
+  <Make_RK_Ammo_CannonBall.jobString>ラットキン砲弾を作成中</Make_RK_Ammo_CannonBall.jobString>
+  <Make_RK_StrawberryBeer.label>イチゴビールを作る</Make_RK_StrawberryBeer.label>
+  <Make_RK_StrawberryBeer.description>ビールとイチゴを混ぜてイチゴビールを作ります。</Make_RK_StrawberryBeer.description>
+  <Make_RK_StrawberryBeer.jobString>イチゴビールを作成中</Make_RK_StrawberryBeer.jobString>
+  <Make_RK_StrawberryBeer_Bulk.label>イチゴビールを作る x4</Make_RK_StrawberryBeer_Bulk.label>
+  <Make_RK_StrawberryBeer_Bulk.description>ビールとイチゴを混ぜてイチゴビールを作ります。</Make_RK_StrawberryBeer_Bulk.description>
+  <Make_RK_StrawberryBeer_Bulk.jobString>イチゴビール x4 を作成中</Make_RK_StrawberryBeer_Bulk.jobString>
+  <RK_Recipe_Hardtack.label>堅パンを作る</RK_Recipe_Hardtack.label>
+  <RK_Recipe_Hardtack.description>植物性の食材から堅パンを作ります。長く保存できる携行食で、旅に向いています。</RK_Recipe_Hardtack.description>
+  <RK_Recipe_Hardtack.jobString>堅パンを作成中</RK_Recipe_Hardtack.jobString>
+  <RK_Recipe_HardtackBulk.label>堅パンを作る (x8)</RK_Recipe_HardtackBulk.label>
+  <RK_Recipe_HardtackBulk.description>植物性の食材から堅パンを8個まとめて作ります。長く保存できる携行食で、旅に向いています。</RK_Recipe_HardtackBulk.description>
+  <RK_Recipe_HardtackBulk.jobString>堅パンを大量作成中</RK_Recipe_HardtackBulk.jobString>
+</LanguageData>

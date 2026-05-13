@@ -25,6 +25,11 @@ namespace NewRatkin
 			this.faction = faction;
 		}
 
+		public override bool CanOpenAnyDoor(Pawn p)
+		{
+			return p.RaceProps.FenceBlocked;
+		}
+
 		public override StateGraph CreateGraph()
 		{
 			StateGraph stateGraph = new StateGraph();

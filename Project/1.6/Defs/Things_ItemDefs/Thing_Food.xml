@@ -94,8 +94,8 @@
     <!-- Make Hardtack Bulk Recipe -->
     <RecipeDef>
         <defName>RK_Recipe_HardtackBulk</defName>
-        <label>make hardtack x4</label>
-        <description>Make bulk hardtack from corn and plant ingredients. A long-lasting food that can be stored for a long time. It is a good food for traveling.</description>
+        <label>make hardtack x8</label>
+        <description>Make bulk hardtack from corn and plant ingredients (8 units). A long-lasting food that can be stored for a long time. It is a good food for traveling.</description>
         <jobString>Making bulk hardtack.</jobString>
         <workAmount>1800</workAmount>
         <workSpeedStat>CookSpeed</workSpeedStat>

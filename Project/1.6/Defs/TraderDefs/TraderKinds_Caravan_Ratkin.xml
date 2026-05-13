@@ -155,12 +155,11 @@
 
 			<!-- Buying -->
 			<li Class="StockGenerator_BuyExpensiveSimple" />
-			<li Class="StockGenerator_BuyTradeTag">
-				<tag>Art</tag>
-			</li>
-			<li Class="StockGenerator_BuyTradeTag">
-				<tag>MusicalInstrument</tag>
-			</li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>MusicalInstrument</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>RK_Apparel</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>BasicClothing</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>Clothing</tag></li>
 
 		</stockGenerators>
 	</TraderKindDef>
@@ -232,12 +231,12 @@
 
 			<!-- Buying -->
 			<li Class="StockGenerator_BuyExpensiveSimple" />
-			<li Class="StockGenerator_BuyTradeTag">
-				<tag>Art</tag>
-			</li>
-			<li Class="StockGenerator_BuyTradeTag">
-				<tag>MusicalInstrument</tag>
-			</li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>MusicalInstrument</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>RK_Apparel</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>BasicClothing</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>Clothing</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>Armor</tag></li>
 
 		</stockGenerators>
 	</TraderKindDef>
@@ -330,21 +329,15 @@
 
 			<!-- Buying -->
 			<li Class="StockGenerator_BuyExpensiveSimple" />
-			<li Class="StockGenerator_BuyTradeTag">
-				<tag>Art</tag>
-			</li>
-			<li Class="StockGenerator_BuyTradeTag">
-				<tag>HiTechArmor</tag>
-			</li>
-			<li Class="StockGenerator_BuyTradeTag">
-				<tag>MusicalInstrument</tag>
-			</li>
-			<li Class="StockGenerator_BuyTradeTag">
-				<tag>Drugs</tag>
-			</li>
-			<li Class="StockGenerator_BuyTradeTag">
-				<tag>HoraxWeapon</tag>
-			</li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>HiTechArmor</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>MusicalInstrument</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>Drugs</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>HoraxWeapon</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>RK_TradeTag_Armor</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>Armor</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>WeaponRanged</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>WeaponMelee</tag></li>
 
 		</stockGenerators>
 	</TraderKindDef>
@@ -517,6 +510,12 @@
 			<li Class="StockGenerator_BuyTradeTag"><tag>ExoticBuilding</tag></li>
 			<li Class="StockGenerator_BuyTradeTag"><tag>MusicalInstrument</tag></li>
 			<li Class="StockGenerator_BuyTradeTag"><tag>UtilitySpecial</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>RK_TradeTag_ArmorHighTech</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>Clothing</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>Armor</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>HiTechArmor</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>WeaponRanged</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>WeaponMelee</tag></li>
 			<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>Shell_Deadlife</thingDef></li>
 			<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>VoidSculpture</thingDef></li>
 			<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>Shard</thingDef></li>
@@ -605,12 +604,10 @@
 
 			<!-- Buying -->
 			<li Class="StockGenerator_BuyExpensiveSimple" />
-			<li Class="StockGenerator_BuyTradeTag">
-				<tag>Art</tag>
-			</li>
-			<li Class="StockGenerator_BuyTradeTag">
-				<tag>MusicalInstrument</tag>
-			</li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>MusicalInstrument</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>RK_Apparel</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>BasicClothing</tag></li>
 
 		</stockGenerators>
 	</TraderKindDef>
@@ -657,12 +654,11 @@
 
 			<!-- Buying -->
 			<li Class="StockGenerator_BuyExpensiveSimple" />
-			<li Class="StockGenerator_BuyTradeTag">
-				<tag>Art</tag>
-			</li>
-			<li Class="StockGenerator_BuyTradeTag">
-				<tag>MusicalInstrument</tag>
-			</li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>MusicalInstrument</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>RK_Apparel</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>BasicClothing</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>Clothing</tag></li>
 
 		</stockGenerators>
 	</TraderKindDef>

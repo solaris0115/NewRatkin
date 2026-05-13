@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <NamerSettlement_RatkinKingdom.rulePack.rulesStrings>
+    <li>r_name-&gt;[townname_wordgen]</li>
+    <li>r_name-&gt;[townname_fixed]</li>
+    <li>townname_wordgen-&gt;[WordImperial]</li>
+    <li>townname_wordgen-&gt;[WordImperial][townend]</li>
+    <li>townend(p=3)-&gt;ウム</li>
+    <li>townend(p=3)-&gt;イア</li>
+    <li>townend(p=3)-&gt;ポリス</li>
+    <li>townend-&gt;ノル</li>
+    <li>townend-&gt;ルアン</li>
+    <li>townend-&gt;ラックス</li>
+    <li>townend-&gt;リス</li>
+    <li>townend-&gt;リン</li>
+    <li>townend-&gt;リアン</li>
+    <li>townend-&gt;フラム</li>
+    <li>townend-&gt;フォル</li>
+    <li>townend-&gt;テオル</li>
+    <li>townend-&gt;オプル</li>
+    <li>townend-&gt;オプニウム</li>
+    <li>townend-&gt;オア</li>
+    <li>townend-&gt;エトル</li>
+    <li>townend-&gt;エヌム</li>
+    <li>townend-&gt;エティウム</li>
+    <li>townend-&gt;アム</li>
+    <li>townend-&gt;エウム</li>
+  </NamerSettlement_RatkinKingdom.rulePack.rulesStrings>
+</LanguageData>

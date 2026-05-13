@@ -22,7 +22,6 @@ namespace NewRatkin
                 {
                     attackerAngle += -360;
                 }
-                //바라보는 시야 140도 이내만 방어
                 if (defenderAngle- attackerAngle >=-70 && defenderAngle - attackerAngle<=70)
                 {
                     float blockRateBySkill = GetDeflectChanceByMeleeSkillLevel(pawn.skills.GetSkill(SkillDefOf.Melee).levelInt);
@@ -46,11 +45,7 @@ namespace NewRatkin
 
                     if (Rand.Value <= totalDeflectChance)
                     {
-                        // if (Prefs.DevMode) Log.Message(pawn + "ShieldBlockChance".Translate() + totalDeflectChance.ToStringPercent());
-
-                        //튕겨냄 TxtMote
                         MoteMaker.ThrowText(pawn.DrawPos, pawn.Map, "ShieldBlock".Translate(), 1.9f);
-                        //튕겨내는 이펙트
                         EffecterDefOf.Deflect_Metal.Spawn().Trigger(pawn, dinfo.Instigator ?? pawn);
                         return true;
                     }
@@ -113,18 +108,13 @@ namespace NewRatkin
         /// <summary>
         /// 소재로 인한 튕겨낼 확률을 최대 50% 이하로 고정시켜버린다.
         /// </summary>
-        /// <param name="armorRate"></param>
-        /// <returns></returns>
         private float GetDeflectChanceByArmorRate(float armorRate)
         {
-            //괴물 소재로 인해 200% 방어력 넘는거에 대한 제한
             return Mathf.Clamp01(armorRate / 2) / 2;
         }
         /// <summary>
         /// 근접 전투 스킬 레벨 기반 공격을 튕겨낼 확률
         /// </summary>
-        /// <param name="level"></param>
-        /// <returns></returns>
         private float GetDeflectChanceByMeleeSkillLevel(int level)
         {
             return level * BLOCK_RATE_FACTOR_BY_SKILL;

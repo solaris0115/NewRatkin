@@ -12,5 +12,11 @@ namespace NewRatkin
 		/// 생략 시 기본 -1은 투사체의 <see cref="Projectile.DamageAmount"/>와 동일하게 처리.
 		/// </summary>
 		public int groundTouchDamageAmount = -1;
+
+		/// <summary>
+		/// 빈 지면 도탄 후 같은 방향으로 추가 비행할 수 있는 최대 거리(셀).
+		/// 첫 비행 구간 길이의 절반과 비교해 더 작은 값이 적용된다.
+		/// </summary>
+		public float groundBounceMaxDistance = 13f;
 	}
 }

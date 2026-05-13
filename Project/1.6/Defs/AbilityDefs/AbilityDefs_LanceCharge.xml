@@ -6,6 +6,7 @@
 		<defName>RK_Ability_LanceCharge</defName>
 		<label>charge</label>
 		<description>Short-range charge toward a hostile target (3-5 tiles). Stops at the last clear tile before obstacles. After landing, movement speed is reduced but melee hit chance increases.</description>
+		<iconPath>UI/Commands/RK_Icon_LanceCharge</iconPath>
 		<cooldownTicksRange>12000~12000</cooldownTicksRange>
 		<ai_IsOffensive>true</ai_IsOffensive>
 		<aiCanUse>true</aiCanUse>

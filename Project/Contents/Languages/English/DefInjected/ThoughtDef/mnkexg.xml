@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RK_PriestPray.stages.0.label>blessed</RK_PriestPray.stages.0.label>
+  <RK_PriestPrayMood.stages.0.label>blessed</RK_PriestPrayMood.stages.0.label>
+  <RK_PriestPrayMood.stages.0.description>I was blessed by a priest recently, it makes me feel better.</RK_PriestPrayMood.stages.0.description>
+  <RK_AttendPrayerMeetingMood.stages.0.label>Attended service</RK_AttendPrayerMeetingMood.stages.0.label>
+  <RK_AttendPrayerMeetingMood.stages.0.description>The words given by the priest were inspirational, perhaps there is a path forward after all.</RK_AttendPrayerMeetingMood.stages.0.description>
+</LanguageData>

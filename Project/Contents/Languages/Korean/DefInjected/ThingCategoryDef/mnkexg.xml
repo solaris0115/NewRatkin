@@ -4,5 +4,10 @@
   <RK_Apparel.label>랫킨 의류</RK_Apparel.label>
   <RK_Headgear.label>랫킨 머리 장비</RK_Headgear.label>
   <RK_ThingCategory_Melee.label>랫킨 근접무기</RK_ThingCategory_Melee.label>
+  <RK_ThingCategory_Range.label>랫킨 원거리무기</RK_ThingCategory_Range.label>
   <RK_ThingCategory_Util.label>랫킨 다용도구</RK_ThingCategory_Util.label>
+  <RK_ApparelArmor.label>랫킨 갑옷</RK_ApparelArmor.label>
+  <RK_ArmorHeadgear.label>랫킨 갑옷 머리장비</RK_ArmorHeadgear.label>
+  <RK_ApparelNoble.label>랫킨 귀족 의류</RK_ApparelNoble.label>
+  <RK_HeadgearNoble.label>랫킨 귀족 머리장비</RK_HeadgearNoble.label>
 </LanguageData>

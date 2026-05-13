@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RK_Maneuver_Shell.rulePack.rulesStrings>
+    <li>damaged_inf(p=4)-&gt;shelling</li>
+    <li>damaged_inf(deflected!=True)-&gt;shelling</li>
+    <li>damaged_inf-&gt;shelling</li>
+    <li>damaged_past(p=4)-&gt;shelled</li>
+    <li>damaged_past(deflected!=True)-&gt;shelled</li>
+    <li>damaged_past-&gt;shelled</li>
+    <li>damaged_present-&gt;being shelled</li>
+    <li>damaged_present(deflected!=True)-&gt;being shelled</li>
+    <li>destroyed_past-&gt;reduced to ash</li>
+    <li>destroyed_past-&gt;incinerated</li>
+    <li>destroyed_past-&gt;burned away</li>
+    <li>destroyed_past-&gt;erased without a trace</li>
+    <li>destroyed_past-&gt;smashed completely</li>
+    <li>destroyed_past-&gt;blown apart</li>
+    <li>destroyed_past-&gt;shattered</li>
+    <li>destroyed_past-&gt;crushed</li>
+    <li>destroyed_present-&gt;being reduced to ash</li>
+    <li>destroyed_present-&gt;being incinerated</li>
+    <li>destroyed_present-&gt;burning away</li>
+    <li>destroyed_present-&gt;disappearing</li>
+    <li>destroyed_present-&gt;being smashed apart</li>
+    <li>destroyed_present-&gt;exploding</li>
+  </RK_Maneuver_Shell.rulePack.rulesStrings>
+</LanguageData>

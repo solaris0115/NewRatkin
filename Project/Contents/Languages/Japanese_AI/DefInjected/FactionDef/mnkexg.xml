@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rakinia.pawnSingular>ラットキン</Rakinia.pawnSingular>
+  <Rakinia.pawnsPlural>ラットキンたち</Rakinia.pawnsPlural>
+  <Rakinia.leaderTitle>執行官</Rakinia.leaderTitle>
+  <Rakinia.label>ラットキン王国</Rakinia.label>
+  <Rakinia.description>農耕を営みながら暮らす、封建的なラットキンの王国です。小柄な体ゆえに長く身を隠していましたが、近年は他文明との交流を始めました。交流を通じて現代的な道具も使うようになった一方で、中世風の武器もよく用います。基本的には友好的ですが、追い詰められれば攻撃に出ることもあります。</Rakinia.description>
+
+  <RK_Faction_Pilgrims.label>巡礼者の一団</RK_Faction_Pilgrims.label>
+  <RK_Faction_Pilgrims.pawnSingular>巡礼者</RK_Faction_Pilgrims.pawnSingular>
+  <RK_Faction_Pilgrims.pawnsPlural>巡礼者たち</RK_Faction_Pilgrims.pawnsPlural>
+  <RK_Faction_Pilgrims.description>さまざまな理由で巡礼の旅に出た者たちの一団です。貴族もいれば兵士もおり、それぞれの事情を抱えて厳しい巡礼路を歩いています。</RK_Faction_Pilgrims.description>
+  <RK_Faction_Pilgrims.leaderTitle>指導者</RK_Faction_Pilgrims.leaderTitle>
+
+  <RK_Faction_Caravan.label>ラットキン商隊</RK_Faction_Caravan.label>
+  <RK_Faction_Caravan.pawnSingular>ラットキン商人</RK_Faction_Caravan.pawnSingular>
+  <RK_Faction_Caravan.pawnsPlural>ラットキン商人たち</RK_Faction_Caravan.pawnsPlural>
+  <RK_Faction_Caravan.description>世界各地を渡り歩いて取引する行商の一団です。一部の旅人には、会話を通じて加入を提案できます。</RK_Faction_Caravan.description>
+  <RK_Faction_Caravan.leaderTitle>隊商長</RK_Faction_Caravan.leaderTitle>
+  
+  <RK_PlayerFaction.label>新たな始まり</RK_PlayerFaction.label>
+  <RK_PlayerFaction.description>あなたのラットキン入植地です。</RK_PlayerFaction.description>
+  <RK_PlayerFaction.pawnSingular>住民</RK_PlayerFaction.pawnSingular>
+  <RK_PlayerFaction.pawnsPlural>住民たち</RK_PlayerFaction.pawnsPlural>
+  <RK_PlayerFaction.leaderTitle>指導者</RK_PlayerFaction.leaderTitle>
+</LanguageData>

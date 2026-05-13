@@ -23,6 +23,9 @@
   <RK_Hediff_BionicTail.label>생체공학 꼬리</RK_Hediff_BionicTail.label>
   <RK_Hediff_BionicTail.description>이식된 첨단 인공 꼬리입니다. 소형 AI가 사용자의 몸 균형을 자동으로 잡아 줍니다.</RK_Hediff_BionicTail.description>
   <RK_Hediff_BionicTail.labelNoun>생체공학 꼬리</RK_Hediff_BionicTail.labelNoun>
+  <RK_Hediff_ArchotechTail.label>초월공학 랫킨 꼬리</RK_Hediff_ArchotechTail.label>
+  <RK_Hediff_ArchotechTail.description>이식된 초월공학 랫킨 꼬리입니다. 자세와 미세한 움직임을 감지해 완벽에 가까운 균형을 잡아 주며, 살과 같은 감촉이지만 플라스틸보다 손상되기 어렵습니다. 손상되어도 시간이 지나면 스스로 복구합니다. 내부 구조는 인간의 이해를 벗어납니다.</RK_Hediff_ArchotechTail.description>
+  <RK_Hediff_ArchotechTail.labelNoun>초월공학 랫킨 꼬리</RK_Hediff_ArchotechTail.labelNoun>
   <RK_Hediff_Torn.label>찢김</RK_Hediff_Torn.label>
   <RK_Hediff_Torn.labelNoun>찢어진 상처</RK_Hediff_Torn.labelNoun>
   <RK_Hediff_Torn.description>찢어진 상처입니다.</RK_Hediff_Torn.description>

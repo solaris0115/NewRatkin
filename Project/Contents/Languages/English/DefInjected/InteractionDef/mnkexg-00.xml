@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RK_PriestPray.logRulesInitiator.rulesStrings>
+    <li>r_logentry-&gt;[INITIATOR_nameDef] [prayed] for [RECIPIENT_nameDef]'s safety.</li>
+    <li>prayed(p=3)-&gt;prayed</li>
+    <li>prayed-&gt;offered a prayer</li>
+  </RK_PriestPray.logRulesInitiator.rulesStrings>
+</LanguageData>

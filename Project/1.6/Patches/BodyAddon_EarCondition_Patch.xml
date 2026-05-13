@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- 바이오텍 DLC가 있으면 귀 애드온의 Race 조건을 Gene 조건으로 교체 -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/AlienRace.RaceSettings[defName="RK_Race_Setting"]/universalBodyAddons/li[path="Things/Ratkin/BodyAddon/RK_Texture_EarLeft"]/conditions/Race</xpath>
+					<value>
+						<Gene>RK_Gene_LargeEars</Gene>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/AlienRace.RaceSettings[defName="RK_Race_Setting"]/universalBodyAddons/li[path="Things/Ratkin/BodyAddon/RK_Texture_EarRight"]/conditions/Race</xpath>
+					<value>
+						<Gene>RK_Gene_LargeEars</Gene>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

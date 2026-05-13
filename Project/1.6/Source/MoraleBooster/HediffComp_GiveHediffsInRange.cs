@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using RimWorld;
 using UnityEngine;
@@ -8,6 +7,12 @@ namespace NewRatkin
 {
 	public class HediffComp_GiveHediffsInRange : HediffComp
 	{
+		private const int BuffApplyIntervalTicks = 15;
+
+		private const int DisappearTicksAfterRefresh = 15;
+
+		private int ticksUntilNextBuffSweep;
+
 		private Mote mote;
 
 		public HediffCompProperties_GiveHediffsInRange Props
@@ -72,20 +77,14 @@ namespace NewRatkin
 			return false;
 		}
 
-		private Hediff FindMoraleBuffFromCaster(Pawn target, Pawn caster)
+		private Hediff FindExistingMoraleBuff(Pawn target)
 		{
 			List<Hediff> hediffs = target.health.hediffSet.hediffs;
 			for (int i = 0; i < hediffs.Count; i++)
 			{
-				Hediff h = hediffs[i];
-				if (!this.IsConfiguredBuffDef(h.def))
+				if (this.IsConfiguredBuffDef(hediffs[i].def))
 				{
-					continue;
-				}
-				HediffComp_Link link = h.TryGetComp<HediffComp_Link>();
-				if (link != null && link.other == caster)
-				{
-					return h;
+					return hediffs[i];
 				}
 			}
 			return null;
@@ -110,6 +109,12 @@ namespace NewRatkin
 					this.mote.Maintain();
 				}
 			}
+			if (this.ticksUntilNextBuffSweep > 0)
+			{
+				this.ticksUntilNextBuffSweep--;
+				return;
+			}
+			this.ticksUntilNextBuffSweep = BuffApplyIntervalTicks - 1;
 			IReadOnlyList<Pawn> readOnlyList;
 			if (this.Props.onlyPawnsInSameFaction && caster.Faction != null)
 			{
@@ -138,7 +143,7 @@ namespace NewRatkin
 				{
 					continue;
 				}
-				Hediff hediff = this.FindMoraleBuffFromCaster(pawn, caster);
+				Hediff hediff = this.FindExistingMoraleBuff(pawn);
 				if (hediff != null && hediff.def != buffDef)
 				{
 					pawn.health.RemoveHediff(hediff);
@@ -148,23 +153,6 @@ namespace NewRatkin
 				{
 					hediff = pawn.health.AddHediff(buffDef, pawn.health.hediffSet.GetBrain(), null, null);
 					hediff.Severity = this.Props.initialSeverity;
-					
-					// HediffComp_Link의 other 설정 (필수: other가 null이면 CompShouldRemove가 true가 되어 Hediff가 즉시 제거됨)
-					HediffComp_Link hediffComp_Link = hediff.TryGetComp<HediffComp_Link>();
-					if (hediffComp_Link != null)
-					{
-						hediffComp_Link.other = caster;
-						hediffComp_Link.drawConnection = false;
-					}
-				}
-				else
-				{
-					// 기존 Hediff의 other도 확인 및 업데이트
-					HediffComp_Link hediffComp_Link = hediff.TryGetComp<HediffComp_Link>();
-					if (hediffComp_Link != null && hediffComp_Link.other != caster)
-					{
-						hediffComp_Link.other = caster;
-					}
 				}
 				HediffComp_Disappears hediffComp_Disappears = hediff.TryGetComp<HediffComp_Disappears>();
 				if (hediffComp_Disappears == null)
@@ -173,7 +161,7 @@ namespace NewRatkin
 				}
 				else
 				{
-					hediffComp_Disappears.ticksToDisappear = 5;
+					hediffComp_Disappears.ticksToDisappear = DisappearTicksAfterRefresh;
 				}
 			}
 		}
