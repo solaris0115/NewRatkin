@@ -82,7 +82,7 @@
   <!-- separation dynamics -->
 
   <RK_Research_SeparationMechanics.label>分離力学</RK_Research_SeparationMechanics.label>
-  <!-- <RK_Research_SeparationMechanics.description>投射体分離機能が使用可能になります.BFR 3000のAP/HE弾種トグルが解放されます.</RK_Research_SeparationMechanics.description> -->
+  <RK_Research_SeparationMechanics.description>投射体分離機能が使用可能になります.BFR 3000のAP/HE弾種トグルが解放されます.</RK_Research_SeparationMechanics.description>
 
 
   <!-- flame of a dragon -->
